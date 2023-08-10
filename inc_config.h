@@ -7,9 +7,12 @@
    #define C_PIN_ENABLED  1
    #define C_PIN_DISABLED 0
    #define C_END_ARR      9   
+   #define C_END_LIN      8
+      
    #define O              C_PIN_DISABLED
    #define I              C_PIN_ENABLED
    #define EA             C_END_ARR
+   #define EL             C_END_LIN
 
 /*
     static const int PROGMEM CPanel[]={ 
