@@ -1,3 +1,4 @@
+
 #include "inc_include.h"
 
 
@@ -29,7 +30,7 @@ void setup() {
     aFrame=convProgToArray(C_L1,(sizeof(C_L1)/2));
     aPacman=convProgToArray(C_PACMAN_01,(sizeof(C_PACMAN_01)/2));
 
-    aChar=getCharMatrix('A');
+    aChar=getCharMatrix('B');
     /*
     aFrame[1]=convProgToArray(C_PACMAN_01,(sizeof(C_PACMAN_01)/2));
     aFrame[2]=convProgToArray(C_PACMAN_02,(sizeof(C_PACMAN_02)/2));

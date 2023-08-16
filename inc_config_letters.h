@@ -5,17 +5,18 @@
 
 
 //const int PROGMEM C_LET_A[]={O,I,O,I,O,I,I,I,I,I,O,I,I,O,I,EA};
+/*
  static const int PROGMEM C_LET_A[]={ O,O,O,O,O,I,O,
                                       O,O,O,O,I,O,I,
                                       O,O,O,O,I,I,I,
                                       O,O,O,O,I,O,I,
                                       O,O,O,O,I,O,I,EA};   
-
-/*const int PROGMEM C_LET_A[] = {         O,O,I,O,EL,
+*/
+const int PROGMEM C_LET_A[] = {         O,O,I,O,EL,
                                         O,I,O,I,EL,
                                         O,I,I,I,EL,
                                         O,I,O,I,EL,
-                                        O,I,O,I,EA};*/
+                                        O,I,O,I,EA};
 
 const PROGMEM int C_LET_B[]={           O,I,I,O,EL,
                                         O,I,O,I,EL,
