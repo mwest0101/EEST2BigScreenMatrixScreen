@@ -27,12 +27,14 @@ void ShowMatrix::PrintLed(int ledNum,int pintToActive,int ledState){
     int posY = 0;
     posX = (int)(ledNum / 7);
     posY = (int)(ledNum % 7);
+    /*
     Serial.print("posX=");Serial.print(posX);
     Serial.print(" posY=");Serial.print(posY);
     Serial.print(" pintToActive=");Serial.print(pintToActive);
     Serial.print(" ledState=");Serial.print(ledState);
 
     Serial.println("");
+    */
     if (IS_BIGSCREEN){
         digitalWrite(pintToActive, ledState);
     }else{
@@ -78,9 +80,10 @@ void ShowMatrix::PrintLedMatrix(int *aFrame, int *aPins, int nFrameElements)
       }else{
         Serial.print("==");
       }
+      */
       Serial.print(aFrame[i]);
       Serial.print(" ");
-      */
+      
 
       //Serial.print(aLastFrame[i]);
       
