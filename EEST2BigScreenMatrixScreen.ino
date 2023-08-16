@@ -10,6 +10,9 @@ int nFrameElements1=0;
 static int * aFrame2;
 static int * aPins2;
 int nFrameElements2=0;
+
+
+
 int pinState=0;
 MatrizLed pantalla;
 ShowMatrix sm(10);
@@ -18,7 +21,7 @@ ShowMatrix sm(10);
 void setup() {
     Serial.begin(9600);
     pantalla.begin(12, 11, 10, 2); // dataPin, clkPin, csPin, numero de matrices de 8x8
-    
+    pantalla.setIntensidad(1); 
     
     pantalla.borrar();
     aFrame=convProgToArray(C_T2,(sizeof(C_T2)/2));
@@ -26,13 +29,15 @@ void setup() {
     nFrameElements = sizeof(C_Pins) / sizeof(int);
     sm.InitMatrix(aPins,nFrameElements,pantalla);
 
-    aFrame1=convProgToArray(C_L1,(sizeof(C_L1)/2));
+    aFrame1=convProgToArray(C_PACMAN_01,(sizeof(C_PACMAN_01)/2));
     aPins1=convProgToArray(C_Pins,(sizeof(C_Pins)/2));
     nFrameElements1 = sizeof(C_Pins) / sizeof(int);
 
-    aFrame2=convProgToArray(C_MARCO,(sizeof(C_MARCO)/2));
+    aFrame2=convProgToArray(C_PACMAN_02,(sizeof(C_PACMAN_02)/2));
     aPins2=convProgToArray(C_Pins,(sizeof(C_Pins)/2));
     nFrameElements2 = sizeof(C_Pins) / sizeof(int);
+
+    
 
 }
 // Secuencia de la matriz
@@ -46,5 +51,8 @@ void loop() {
     
     sm.PrintLedMatrix(aFrame2,aPins2,nFrameElements2);
     delay(1000);
+
+ 
+     
      
 }

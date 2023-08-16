@@ -4,6 +4,7 @@
   #include <stdlib.h>
   #include <avr/pgmspace.h>
   #include "inc_config.h"
+  #include "inc_config_pacman.h"
   #include "inc_config_letters.h"
   #include "inc_functions.h" 
   #include <MatrizLed.h>

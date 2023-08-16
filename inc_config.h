@@ -12,8 +12,8 @@
 #define I               C_PIN_ENABLED
 #define EA              C_END_ARR
 #define EL              C_END_LIN
-#define DEBUG           true
-#define DEBUG_MATRIX    true
+#define DEBUG           false
+#define DEBUG_MATRIX    false
 #define IS_BIGSCREEN    false
 
 

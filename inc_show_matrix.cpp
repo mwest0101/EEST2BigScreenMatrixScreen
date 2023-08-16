@@ -49,66 +49,36 @@ void ShowMatrix::PrintLedMatrix(int *aFrame, int *aPins, int nFrameElements)
   int posX = 0;
   int posY = 0;
   int lastPosX = 0;
-  Serial.println(" ");
-  Serial.println("==============================");
+  if (DEBUG_MATRIX){
+    Serial.println(" ");
+    Serial.println("==============================");
+  }
   for (int i = 0; i < nFrameElements; i++)
   {
     posX = (int)(i / 7);
     posY = (int)(i % 7);
     
 
-     if (DEBUG_MATRIX)
-      {
-        if (lastPosX != posX)
-        {
+     if (DEBUG_MATRIX){
+        if (lastPosX != posX){
           Serial.println(" ");
           lastPosX = posX;
-        }
-      //  Serial.print(pinState);
-      //  Serial.print(" ");
+        }      
       }
+
     pinState = aFrame[i];
     pinNum=aPins[i];
     if (pinState < 2 ){
    
-      //Serial.print(" ps=");
-      //Serial.print("(");
-      
-      /*
-      if(aFrame[i] != aLastFrame[i]){    
-        Serial.print("!=");
-      }else{
-        Serial.print("==");
+      if (DEBUG_MATRIX){
+        Serial.print(aFrame[i]);
+        Serial.print(" ");
       }
-      */
-      Serial.print(aFrame[i]);
-      Serial.print(" ");
-      
-
-      //Serial.print(aLastFrame[i]);
-      
-    //Serial.println(" ");
     
-      if(aFrame[i] != aLastFrame[i]){    
-        
+      if(aFrame[i] != aLastFrame[i]){            
           aLastFrame[i] = aFrame[i]; // update the values of matriz temp to only update the changed values
-          //Serial.print("aFrame[i]=");
-          //Serial.println(aFrame[i]);
-
-          /*
-          Serial.print("i=");Serial.print(i);
-          Serial.print("aPins[i]=");Serial.print(pinNum);
-          Serial.print("pinState=");Serial.print(pinState);
-          Serial.println("");
-          */
-
-          ShowMatrix::PrintLed(i,pinNum,pinState);
-         // Serial.print("!=");
-      }//else{
-        //Serial.print("==");
-      //}
-      
-     
+          ShowMatrix::PrintLed(i,pinNum,pinState);       
+      }           
     }
   }
 }
