@@ -1,12 +1,11 @@
 #include "inc_show_matrix.h"
 #include "inc_include.h"
 
-ShowMatrix::ShowMatrix(int pinNumber)
+ShowMatrix::ShowMatrix()
 {
-  pin = pinNumber;
-  
-  pinMode(pin, OUTPUT);
+  Serial.println("");
 }
+
 
 void ShowMatrix::InitMatrix(int *aPins, int nFrameElements, MatrizLed vPantalla)
 {
@@ -19,6 +18,7 @@ void ShowMatrix::InitMatrix(int *aPins, int nFrameElements, MatrizLed vPantalla)
 }
 
 void ShowMatrix::PrintData(int data){
+  Serial.print(data);
   Serial.print("text");
 }
 

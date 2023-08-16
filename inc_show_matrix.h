@@ -17,7 +17,7 @@ class ShowMatrix {
     
 
   public:
-    ShowMatrix(int pinNumber);
+    ShowMatrix();
     void InitMatrix(int * aPins,int nFrameElements, MatrizLed vPantalla);
     void PrintLed(int ledNum,int pintToActive,int ledState);
     void PrintData(int pinNumber);
