@@ -44,11 +44,11 @@
                                         I,I,I,I,I,I,I,EA};     
 
 
-  static const int PROGMEM C_L1[]={ O,O,O,O,I,O,O,
-                                    O,O,O,O,I,O,O,
-                                    O,O,O,O,I,O,O,
-                                    O,I,I,I,I,O,O,
-                                    O,O,O,O,I,O,O,EA};                                
+  static const int PROGMEM C_L1[]={ O,O,O,O,O,O,O,
+                                    O,O,O,O,O,I,O,
+                                    O,O,O,O,O,I,O,
+                                    O,O,O,O,O,I,I,
+                                    O,O,O,O,O,I,I,EA};                                
 
 
   static const int PROGMEM C_L2[]={ O,I,O,O,O,O,O,

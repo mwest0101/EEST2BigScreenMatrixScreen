@@ -7,6 +7,7 @@ static int * aPins;
 int nElements=0;
 static int * aFrame;
 static int * aPacman;
+static int * aChar;
 
 
 int pinState=0;
@@ -25,8 +26,10 @@ void setup() {
 
     sm.InitMatrix(aPins,nElements,pantalla);     
     
-    aFrame=convProgToArray(C_T2,(sizeof(C_T2)/2));
+    aFrame=convProgToArray(C_L1,(sizeof(C_L1)/2));
     aPacman=convProgToArray(C_PACMAN_01,(sizeof(C_PACMAN_01)/2));
+
+    aChar=getCharMatrix('A');
     /*
     aFrame[1]=convProgToArray(C_PACMAN_01,(sizeof(C_PACMAN_01)/2));
     aFrame[2]=convProgToArray(C_PACMAN_02,(sizeof(C_PACMAN_02)/2));
@@ -42,9 +45,11 @@ void setup() {
 void loop() {
     
     
-    sm.PrintLedMatrix(aFrame,aPins,nElements);
+    /*sm.PrintLedMatrix(aFrame,aPins,nElements);
     delay(1000);
     sm.PrintLedMatrix(aPacman,aPins,nElements);
+    delay(1000);*/
+    sm.PrintLedMatrix(aChar,aPins,nElements);
     delay(1000);
     /*
     sm.PrintLedMatrix(aFrame[1],aPins1,nFrameElements1);
