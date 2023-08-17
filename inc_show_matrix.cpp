@@ -64,12 +64,12 @@ void ShowMatrix::PrintLedMatrix(int *aFrame, int *aPins, int nFrameElements)
     if (pinState < 2 ){
    
       if (DEBUG_MATRIX){
-        Serial.print(aFrame[i]);
+        Serial.print(pinState);
         Serial.print(" ");
       }
     
       if(aFrame[i] != aLastFrame[i]){            
-          aLastFrame[i] = aFrame[i]; // update the values of matriz temp to only update the changed values
+          aLastFrame[i] = pinState; // update the values of matriz temp to only update the changed values
           ShowMatrix::PrintLed(i,pinNum,pinState);       
       }           
     }

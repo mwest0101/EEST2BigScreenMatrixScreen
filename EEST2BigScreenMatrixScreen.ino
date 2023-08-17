@@ -8,8 +8,10 @@ static int * aPins;
 int nElements=0;
 static int * aFrame;
 static int * aPacman;
-static int * aChar;
-
+static int * AChar;
+static int * BChar;
+//static int** matrix; 
+Vector<Vector<int>> matriz;
 
 int pinState=0;
 MatrizLed pantalla;
@@ -30,7 +32,11 @@ void setup() {
     aFrame=convProgToArray(C_L1,(sizeof(C_L1)/2));
     aPacman=convProgToArray(C_PACMAN_01,(sizeof(C_PACMAN_01)/2));
 
-    aChar=getCharMatrix('B');
+    AChar=getCharMatrix('A');
+    BChar=getCharMatrix('B');
+    
+    matriz=convProgToMatrix(C_PACMAN_01,(sizeof(C_PACMAN_01)/2));
+    printMatrix(matriz);
     /*
     aFrame[1]=convProgToArray(C_PACMAN_01,(sizeof(C_PACMAN_01)/2));
     aFrame[2]=convProgToArray(C_PACMAN_02,(sizeof(C_PACMAN_02)/2));
@@ -48,10 +54,13 @@ void loop() {
     
     /*sm.PrintLedMatrix(aFrame,aPins,nElements);
     delay(1000);
+    */
     sm.PrintLedMatrix(aPacman,aPins,nElements);
-    delay(1000);*/
-    sm.PrintLedMatrix(aChar,aPins,nElements);
     delay(1000);
+    /*
+    sm.PrintLedMatrix(AChar,aPins,nElements);
+    delay(1000);
+    */
     /*
     sm.PrintLedMatrix(aFrame[1],aPins1,nFrameElements1);
     delay(1000);

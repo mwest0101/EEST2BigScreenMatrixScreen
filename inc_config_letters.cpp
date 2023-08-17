@@ -66,4 +66,5 @@ int *getCharMatrix(char character){
   return aChar;
 }
 
+
 #endif /* _INC_CONFIG_LETTERS_CPP_ */
