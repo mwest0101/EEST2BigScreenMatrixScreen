@@ -24,17 +24,19 @@
                                           O,I,I,I,I,I,O,
                                           O,O,I,I,I,O,O};    
 
+
  static const int PROGMEM C_PACMAN_02[]={ O,O,I,I,I,O,O,
                                           O,I,O,I,I,I,O,
                                           O,I,I,O,O,O,O,
                                           O,I,I,I,I,I,O,
-                                          O,O,I,I,I,O,O};  
+                                          O,O,I,I,I,O,O};    
 
-static const int PROGMEM C_PACMAN_03[]={  O,O,I,I,I,O,O,
-                                          O,I,O,I,I,I,O,
+ static const int PROGMEM C_PACMAN_03[]={ O,O,I,I,I,O,O,
+                                          O,I,O,I,O,O,O,
                                           O,I,I,O,O,O,O,
                                           O,I,I,I,O,O,O,
-                                          O,O,I,I,I,O,O};                                              
+                                          O,O,I,I,I,O,O};    
+                                          
 /*
 
 static const int PROGMEM C_PACMAN_01[]={ O,O,I,I,I,O,O,

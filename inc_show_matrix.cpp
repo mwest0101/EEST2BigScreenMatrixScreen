@@ -1,5 +1,6 @@
-#include "inc_show_matrix.h"
 #include "inc_include.h"
+#include "inc_show_matrix.h"
+
 
 ShowMatrix::ShowMatrix()
 {
@@ -44,14 +45,15 @@ void ShowMatrix::PrintLedMatrix(int *aFrame, int *aPins, int nFrameElements)
   int lastPosX = 0;
   int ia=0;
   if (DEBUG_MATRIX){
-    Serial.println(" ");
-    Serial.println("==============================");
+    
+    Serial.println("___________________________________________");
   }
 
   for (int i = 0; i < nFrameElements; i++)
   {
     posX = (int)(i / 7);
-    posY = (int)(i % 7);    
+    posY = (int)(i % 7);   
+    
      if (DEBUG_MATRIX){
         if (lastPosX != posX){
           Serial.println(" ");

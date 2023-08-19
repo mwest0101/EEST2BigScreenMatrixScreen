@@ -1,7 +1,7 @@
 #include "inc_include.h"
 
-#ifndef INC_CONFIG_H
-#define INC_CONFIG_H 
+#ifndef _INC_CONFIG_H_
+#define _INC_CONFIG_H_ 
    
 #define C_PIN_ENABLED  1
 #define C_PIN_DISABLED 0
@@ -12,8 +12,8 @@
 #define I               C_PIN_ENABLED
 #define EA              C_END_ARR
 #define EL              C_END_LIN
-#define DEBUG           false
-#define DEBUG_MATRIX    false
+#define DEBUG           true
+#define DEBUG_MATRIX    true
 #define IS_BIGSCREEN    false
 
 
@@ -56,4 +56,4 @@
                                     O,I,O,O,O,O,O,
                                     O,I,O,O,O,O,O,
                                     O,I,O,O,O,O,O,EA};                                
-#endif /* INC_CONFIG_H */
+#endif /* _INC_CONFIG_H_ */

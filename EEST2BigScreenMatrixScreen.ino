@@ -8,6 +8,8 @@ static int * aPins;
 int nElements=0;
 static int * aFrame;
 static int * aPacman;
+static int * aPacman2;
+static int * aPacman3;
 static int * aChar;
 
 
@@ -29,6 +31,8 @@ void setup() {
     
     aFrame=convProgToArray(C_L1,(sizeof(C_L1)/2));
     aPacman=convProgToArray(C_PACMAN_01,(sizeof(C_PACMAN_01)/2));
+    aPacman2=convProgToArray(C_PACMAN_02,(sizeof(C_PACMAN_01)/2));
+    aPacman3=convProgToArray(C_PACMAN_03,(sizeof(C_PACMAN_01)/2));
 
     aChar=getCharMatrix('B');
     /*
@@ -48,10 +52,19 @@ void loop() {
     
     /*sm.PrintLedMatrix(aFrame,aPins,nElements);
     delay(1000);
+    */
+    
     sm.PrintLedMatrix(aPacman,aPins,nElements);
-    delay(1000);*/
+    delay(500);
+    sm.PrintLedMatrix(aPacman2,aPins,nElements);
+    delay(500);
+    sm.PrintLedMatrix(aPacman3,aPins,nElements);
+    delay(500);
+    sm.PrintLedMatrix(aPacman2,aPins,nElements);
+    delay(500);
+    /*
     sm.PrintLedMatrix(aChar,aPins,nElements);
-    delay(1000);
+    delay(1000);*/
     /*
     sm.PrintLedMatrix(aFrame[1],aPins1,nFrameElements1);
     delay(1000);
