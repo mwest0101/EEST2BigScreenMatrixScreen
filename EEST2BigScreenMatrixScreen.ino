@@ -8,9 +8,16 @@ static int * aPins;
 int nElements=0;
 static int * aFrame;
 static int * aPacman;
+
 static int * aPacman2;
 static int * aPacman3;
-static int * aChar;
+//static int * aChar;
+
+
+int * AChar;
+int * BChar;
+//static int** matrix; 
+Vector<Vector<int>> matriz;
 
 
 int pinState=0;
@@ -29,12 +36,17 @@ void setup() {
 
     sm.InitMatrix(aPins,nElements,pantalla);     
     
-    aFrame=convProgToArray(C_L1,(sizeof(C_L1)/2));
+    aFrame=convProgToArray(C_T2,(sizeof(C_T2)/2));
     aPacman=convProgToArray(C_PACMAN_01,(sizeof(C_PACMAN_01)/2));
     aPacman2=convProgToArray(C_PACMAN_02,(sizeof(C_PACMAN_01)/2));
     aPacman3=convProgToArray(C_PACMAN_03,(sizeof(C_PACMAN_01)/2));
 
-    aChar=getCharMatrix('B');
+    AChar=getCharMatrix("A");
+    BChar=getCharMatrix("B");
+    /*
+    matriz=convProgToMatrix(C_PACMAN_01,(sizeof(C_PACMAN_01)/2));
+    printMatrix(matriz);
+    */
     /*
     aFrame[1]=convProgToArray(C_PACMAN_01,(sizeof(C_PACMAN_01)/2));
     aFrame[2]=convProgToArray(C_PACMAN_02,(sizeof(C_PACMAN_02)/2));
@@ -56,15 +68,26 @@ void loop() {
     
     sm.PrintLedMatrix(aPacman,aPins,nElements);
     delay(500);
+    
     sm.PrintLedMatrix(aPacman2,aPins,nElements);
     delay(500);
+    
     sm.PrintLedMatrix(aPacman3,aPins,nElements);
     delay(500);
+    
+
+    /*
     sm.PrintLedMatrix(aPacman2,aPins,nElements);
     delay(500);
+    */
     /*
     sm.PrintLedMatrix(aChar,aPins,nElements);
     delay(1000);*/
+
+    /*
+    sm.PrintLedMatrix(AChar,aPins,nElements);
+    delay(1000);
+    */
     /*
     sm.PrintLedMatrix(aFrame[1],aPins1,nFrameElements1);
     delay(1000);

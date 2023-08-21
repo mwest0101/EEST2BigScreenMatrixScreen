@@ -1,5 +1,5 @@
 #include "inc_include.h"
-#include "inc_show_matrix.h"
+//#include "inc_show_matrix.h"
 
 
 ShowMatrix::ShowMatrix()
@@ -41,22 +41,22 @@ void ShowMatrix::PrintLedMatrix(int *aFrame, int *aPins, int nFrameElements)
   int pinState = 0;
   int pinNum = 0;
   int posX = 0;
-  int posY = 0;
+  //int posY = 0;
   int lastPosX = 0;
-  int ia=0;
-  if (DEBUG_MATRIX){
+  //int ia=0;
+  
     
-    Serial.println("___________________________________________");
-  }
+  debugl("___________________________________________");
+  
 
   for (int i = 0; i < nFrameElements; i++)
   {
     posX = (int)(i / 7);
-    posY = (int)(i % 7);   
+    //posY = (int)(i % 7);   
     
      if (DEBUG_MATRIX){
         if (lastPosX != posX){
-          Serial.println(" ");
+          debugl(" ");
           lastPosX = posX;
         }      
       }
@@ -66,12 +66,12 @@ void ShowMatrix::PrintLedMatrix(int *aFrame, int *aPins, int nFrameElements)
     if (pinState < 2 ){
    
       if (DEBUG_MATRIX){
-        Serial.print(aFrame[i]);
-        Serial.print(" ");
+        debug(pinState);
+        debug(" ");
       }
     
       if(aFrame[i] != aLastFrame[i]){            
-          aLastFrame[i] = aFrame[i]; // update the values of matriz temp to only update the changed values
+          aLastFrame[i] = pinState; // update the values of matriz temp to only update the changed values
           ShowMatrix::PrintLed(i,pinNum,pinState);       
       }           
     }

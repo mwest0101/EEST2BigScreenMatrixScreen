@@ -4,14 +4,7 @@
 #define _INC_CONFIG_LETTERS_H_
 
 
-//const int PROGMEM C_LET_A[]={O,I,O,I,O,I,I,I,I,I,O,I,I,O,I,EA};
-/*
- static const int PROGMEM C_LET_A[]={ O,O,O,O,O,I,O,
-                                      O,O,O,O,I,O,I,
-                                      O,O,O,O,I,I,I,
-                                      O,O,O,O,I,O,I,
-                                      O,O,O,O,I,O,I,EA};   
-*/
+
 const int PROGMEM C_LET_A[] = {         O,O,I,O,EL,
                                         O,I,O,I,EL,
                                         O,I,I,I,EL,
@@ -342,6 +335,6 @@ const PROGMEM int C_LET_z[]={           O,O,O,O,EL,
                                         O,I,I,I,EA};   
                                                                                              
 // const PROGMEM uintI6_t charSet[] = { 65OOO, 32796, I6843, IO, II234};
- int *getCharMatrix(char character);
+ int *getCharMatrix(String character);
 
 #endif /* _INC_CONFIG_LETTERS_H_ */

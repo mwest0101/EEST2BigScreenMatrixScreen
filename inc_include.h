@@ -2,14 +2,16 @@
 #define INC_INCLUDES_H_
   #include <Arduino.h>
   #include <stdlib.h>
+  #include <stdio.h>
   #include <avr/pgmspace.h>
   #include <MatrizLed.h>
-  
+  #include <Vector.h>
   #include "inc_config.h"
   #include "inc_config_pacman.h"
   #include "inc_config_letters.h"
   #include "inc_functions.h" 
-  
+  //#include "avr8-stub.h"
+  //#include "app_api.h" // only needed with flash breakpoints
 
 //  #include "inc_effects.h"
   
