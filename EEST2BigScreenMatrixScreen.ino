@@ -1,40 +1,43 @@
 
 #include "inc_include.h"
 
-
-
-
-static int * aPins;
+int * aPins;
 int nElements=0;
-static int * aFrame;
-static int * aPacman;
+int * aFrame;
+int * aPacman;
 
-static int * aPacman2;
-static int * aPacman3;
+int * aPacman2;
+int * aPacman3;
 //static int * aChar;
 
 
 int * AChar;
 int * BChar;
 //static int** matrix; 
-Vector<Vector<int>> matriz;
-
-
 int pinState=0;
 MatrizLed pantalla;
+DriveMatrix dm;
+ShowMatrix sm;
 
-static ShowMatrix sm;
 
 void setup() {
     Serial.begin(9600);
+    //printf("I'm alive!\n");
     pantalla.begin(12, 11, 10, 2); // dataPin, clkPin, csPin, numero de matrices de 8x8
     pantalla.setIntensidad(1); 
+    
     sm=ShowMatrix();
+    dm=DriveMatrix();
+
+    dm.InitDriveMatrix(21,5);
+    
+    
+    //dm.CreateMatrix();
     pantalla.borrar();
     aPins=convProgToArray(C_Pins,(sizeof(C_Pins)/2));
     nElements = sizeof(C_Pins) / sizeof(int);
-
-    sm.InitMatrix(aPins,nElements,pantalla);     
+    
+    sm.InitShowMatrix(aPins,nElements,pantalla);     
     
     aFrame=convProgToArray(C_T2,(sizeof(C_T2)/2));
     aPacman=convProgToArray(C_PACMAN_01,(sizeof(C_PACMAN_01)/2));
@@ -43,10 +46,18 @@ void setup() {
 
     AChar=getCharMatrix("A");
     BChar=getCharMatrix("B");
-    /*
-    matriz=convProgToMatrix(C_PACMAN_01,(sizeof(C_PACMAN_01)/2));
-    printMatrix(matriz);
-    */
+    
+    //printMatrix(AChar);
+    
+    dm.AddConsToMatrix(AChar);
+    dm.AddConsToMatrix(BChar);
+    dm.AddConsToMatrix(AChar);
+    dm.AddConsToMatrix(BChar);
+    dm.Print();
+
+    
+    
+    
     /*
     aFrame[1]=convProgToArray(C_PACMAN_01,(sizeof(C_PACMAN_01)/2));
     aFrame[2]=convProgToArray(C_PACMAN_02,(sizeof(C_PACMAN_02)/2));
@@ -65,15 +76,20 @@ void loop() {
     /*sm.PrintLedMatrix(aFrame,aPins,nElements);
     delay(1000);
     */
-    
+    /*
+    matriz=convProgToMatrix(C_LET_A,(sizeof(C_LET_A)/2));
+    printMatrix(matriz);*/
+    /*
     sm.PrintLedMatrix(aPacman,aPins,nElements);
     delay(500);
-    
+    */
+
+    /*    
     sm.PrintLedMatrix(aPacman2,aPins,nElements);
     delay(500);
-    
+    /*
     sm.PrintLedMatrix(aPacman3,aPins,nElements);
-    delay(500);
+    delay(500);*/
     
 
     /*

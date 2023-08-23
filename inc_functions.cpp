@@ -5,41 +5,43 @@
 
 int *convProgToArray(const int *phrase,size_t size){
   int* arrayReturn;
-  arrayReturn=(int*)calloc((size),sizeof(int));
+  arrayReturn=(int*)calloc((size+1),sizeof(int));
+  arrayReturn[0]=size;
   for (size_t i=0; i < size; i++){
-      arrayReturn[i]=pgm_read_word(phrase+i);
+      arrayReturn[i+1]=pgm_read_word(phrase+i);
   }
   return arrayReturn;
 }
 
-Vector<Vector<int>> convProgToMatrix(const int *phrase,size_t size){
-  Vector<Vector<int>> matriz;
-  int data=0;
-  Vector<int> fila;
-  for (size_t i=0; i < size; i++){
-    data=pgm_read_word(phrase+i);
-    if(data==EL){
-        Vector<int> fila;
-        matriz.push_back(fila);
-    
-     
-    }else{
-      fila.push_back(data);
-    }
+
+void printMatrix(int *vMatrix){
+  
+  
+  int tam=vMatrix[0];
+  for (int i=0;i<tam; i++){
+      if(vMatrix[i+1]!=EL && vMatrix[i+1]!=EA){      
+        debuge(vMatrix[i+1]);
+      }else{
+        debugl("");
+      }
   }
   
-  return matriz;
 }
 
+/*
 void printMatrix(Vector<Vector<int>> matriz){
-  for (size_t i=0; i < matriz.size(); i++){
-    for (size_t j=0; j < matriz[i].size(); j++){
-      Serial.print(matriz[i][j]);
+  debugl("");
+  debugl("-------------------------------");
+  for (size_t i=0; i < 5; i++){
+    for (size_t j=0; j < 7; j++){
+      debug(matriz[j][i]);
+      
     }
+    debugl("");
   }
-}
+}*/
 
-
+/*
 int **createMatrix(int rows,int cols){  
   int** matrix;   
   matrix = new int*[rows];
@@ -51,7 +53,7 @@ int **createMatrix(int rows,int cols){
     }
   }
   return matrix;
-}
+}*/
 /*
 int selectRandom(long arrrayInt[],int cantElements){
 

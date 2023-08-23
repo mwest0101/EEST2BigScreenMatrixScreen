@@ -17,13 +17,32 @@
   #define IS_BIGSCREEN    false
   
   #ifdef DEBUG
-    #define debug(x)   Serial.print(x)    
-    #define debugl(x)   Serial.println(x)    
-  #else
-    #define debug(x)
-    #define debugl(x)
+    #define debug(x)   Serial.print(x)
+    #define debugl(x)   Serial.println(x)        
     
+    #define debuge(x)     do {Serial.print(" "); Serial.print(x); } while(0)
+    #define debugel(x)    do {Serial.print(" "); Serial.println(x); } while(0)
+    #define debug1(x)     do {Serial.print(">"); Serial.print(x); } while(0)
+    #define debug1l(x)    do {Serial.print(">"); Serial.println(x); } while(0)
+    #define debug2(x)     do {Serial.print("--->"); Serial.print(x); } while(0)
+    #define debug2l(x)    do {Serial.print("--->"); Serial.println(x); }  while(0)
+    #define debug3(x)     do {Serial.print("------->"); Serial.print(x); } while(0)
+    #define debug3l(x)    do {Serial.print("------->"); Serial.println(x); } while(0)
+
+   
+  #else
+    #define debug(x)  
+    #define debugl(x) 
+    #define debuge(x) 
+    #define debugel(x)
+    #define debug1(x) 
+    #define debug1l(x)
+    #define debug2(x) 
+    #define debug2l(x)
+    #define debug3(x) 
+    #define debug3l(x)
   #endif
+
 
   
   static const int PROGMEM C_Pins[]={ 2,7,12,17,22,27,32,

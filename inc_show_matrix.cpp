@@ -8,7 +8,7 @@ ShowMatrix::ShowMatrix()
 }
 
 
-void ShowMatrix::InitMatrix(int *aPins, int nFrameElements, MatrizLed vPantalla)
+void ShowMatrix::InitShowMatrix(int *aPins, int nFrameElements, MatrizLed vPantalla)
 {
   pantalla=vPantalla;
   for (int i = 0; i < nFrameElements; i++)
@@ -45,7 +45,7 @@ void ShowMatrix::PrintLedMatrix(int *aFrame, int *aPins, int nFrameElements)
   int lastPosX = 0;
   //int ia=0;
   
-    
+  debugl("");  
   debugl("___________________________________________");
   
 
@@ -66,8 +66,8 @@ void ShowMatrix::PrintLedMatrix(int *aFrame, int *aPins, int nFrameElements)
     if (pinState < 2 ){
    
       if (DEBUG_MATRIX){
-        debug(pinState);
-        debug(" ");
+        debuge(pinState);
+        //dd(" ");
       }
     
       if(aFrame[i] != aLastFrame[i]){            

@@ -9,9 +9,11 @@
 #define INC_FUNCTIONS_H_
 
 int *convProgToArray(const int *phrase,size_t size);
-Vector<Vector<int>> convProgToMatrix(const int *phrase,size_t size);
-void printMatrix(Vector<Vector<int>> matriz);
-int **createMatrix(int rows,int cols);
+//Vector<Vector<int>> convProgToMatrix(const int *phrase,size_t size);
+//void printMatrix(Vector<Vector<int>> matriz);
+
+void printMatrix(int vMatrix[]);
+//int **createMatrix(int rows,int cols);
 
 //int selectRandom(long[],int);
 #endif /* INC_FUNCTIONS_H_ */
