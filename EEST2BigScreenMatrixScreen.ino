@@ -49,10 +49,11 @@ void setup() {
     
     //printMatrix(AChar);
     
-    dm.AddConsToMatrix(AChar);
-    dm.AddConsToMatrix(BChar);
-    dm.AddConsToMatrix(AChar);
-    dm.AddConsToMatrix(BChar);
+    dm.AddConsToMatrix(getCharMatrix("m"));
+    dm.AddConsToMatrix(getCharMatrix("a"));
+    dm.AddConsToMatrix(getCharMatrix("u"));
+    dm.AddConsToMatrix(getCharMatrix("r"));
+    dm.AddConsToMatrix(getCharMatrix("i"));
     dm.Print();
 
     

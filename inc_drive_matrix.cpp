@@ -50,13 +50,14 @@ void DriveMatrix::AddConsToMatrix(int *aData){
   int relPosX=0;
   int maxPosX=0;
   int cont=aData[0];
+  
   for (int i=0; i < cont; i++){      
       
     value=aData[i+1];
     
 
     if(value!=EL && value!=EA) {
-      
+      /*
       debuge("totPosX");
       debuge(totPosX);
       debuge("y");
@@ -66,16 +67,20 @@ void DriveMatrix::AddConsToMatrix(int *aData){
       debuge("=");
       debuge(value);
       debuge(" | ");
-      
+      */
       matrix[relPosY][totPosX+relPosX]=value;
       
+      /*
       debuge(matrix[relPosY][totPosX+relPosX]);
       debuge(" | ");
+      */
       
       relPosX++;
-      if(relPosX>totPosX){
-        tempTotPosX=relPosX;
+      if(relPosX>maxPosX){
+        maxPosX=relPosX;
+      
       }
+      
     }else{
       debugl("");
       relPosY++;
@@ -85,7 +90,9 @@ void DriveMatrix::AddConsToMatrix(int *aData){
 
     
   }
-  totPosX+=tempTotPosX;
+  
+  totPosX+=maxPosX;
+  maxPosX=0;
   /*
   matrix = new int*[matrixRows];  
   for (unsigned int i = 0; i < matrixRows; i++) {    
