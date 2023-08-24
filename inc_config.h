@@ -15,7 +15,11 @@
   #define DEBUG           true
   #define DEBUG_MATRIX    true
   #define IS_BIGSCREEN    false
-  
+  #define MATRIX_WIDTH 7
+  #define MATRIX_HEIGHT 5
+  #define BUILD_MATRIX_WIDTH 21
+  #define BUILD_MATRIX_HEIGHT 5
+
   #ifdef DEBUG
     #define debug(x)   Serial.print(x)
     #define debugl(x)   Serial.println(x)        

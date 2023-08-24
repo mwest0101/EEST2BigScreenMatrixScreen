@@ -13,6 +13,7 @@ int * aPacman3;
 
 int * AChar;
 int * BChar;
+//int * aFrame;
 //static int** matrix; 
 int pinState=0;
 MatrizLed pantalla;
@@ -29,21 +30,22 @@ void setup() {
     sm=ShowMatrix();
     dm=DriveMatrix();
 
-    dm.InitDriveMatrix(21,5);
+    dm.InitDriveMatrix(BUILD_MATRIX_WIDTH,BUILD_MATRIX_HEIGHT);
     
     
     //dm.CreateMatrix();
     pantalla.borrar();
-    aPins=convProgToArray(C_Pins,(sizeof(C_Pins)/2));
+    //aPins=convProgToArray(C_Pins,(sizeof(C_Pins)/2));
     nElements = sizeof(C_Pins) / sizeof(int);
     
     sm.InitShowMatrix(aPins,nElements,pantalla);     
     
-    aFrame=convProgToArray(C_T2,(sizeof(C_T2)/2));
+    //aFrame=convProgToArray(C_T2,(sizeof(C_T2)/2));
+    /*
     aPacman=convProgToArray(C_PACMAN_01,(sizeof(C_PACMAN_01)/2));
     aPacman2=convProgToArray(C_PACMAN_02,(sizeof(C_PACMAN_01)/2));
     aPacman3=convProgToArray(C_PACMAN_03,(sizeof(C_PACMAN_01)/2));
-
+    */
     AChar=getCharMatrix("A");
     BChar=getCharMatrix("B");
     
@@ -55,7 +57,8 @@ void setup() {
     dm.AddConsToMatrix(getCharMatrix("r"));
     dm.AddConsToMatrix(getCharMatrix("i"));
     dm.Print();
-
+    aFrame=dm.GetFrame();
+    
     
     
     
@@ -74,9 +77,9 @@ void setup() {
 void loop() {
     
     
-    /*sm.PrintLedMatrix(aFrame,aPins,nElements);
+    sm.PrintLedMatrix(aFrame,aPins,nElements);
     delay(1000);
-    */
+    
     /*
     matriz=convProgToMatrix(C_LET_A,(sizeof(C_LET_A)/2));
     printMatrix(matriz);*/

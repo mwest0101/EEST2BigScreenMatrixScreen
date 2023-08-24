@@ -19,10 +19,11 @@
       DriveMatrix();
       
       void InitDriveMatrix(int rows,int cols);
-      void CreateMatrix();
+      void CreateMatrix(int cols,int rows);
       void Print();
       void Clear();
       void AddConsToMatrix(int *aData);
+      int *GetFrame();
       
   };
 

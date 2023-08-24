@@ -41,9 +41,7 @@ void ShowMatrix::PrintLedMatrix(int *aFrame, int *aPins, int nFrameElements)
   int pinState = 0;
   int pinNum = 0;
   int posX = 0;
-  //int posY = 0;
   int lastPosX = 0;
-  //int ia=0;
   
   debugl("");  
   debugl("___________________________________________");
@@ -61,8 +59,9 @@ void ShowMatrix::PrintLedMatrix(int *aFrame, int *aPins, int nFrameElements)
         }      
       }
 
-    pinState = aFrame[i];
+    pinState=aFrame[i];
     pinNum=aPins[i];
+
     if (pinState < 2 ){
    
       if (DEBUG_MATRIX){
