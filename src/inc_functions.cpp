@@ -3,12 +3,12 @@
 
 
 
-int *convProgToArray(const int *phrase,size_t size){
+int *convProgToArray(const int *phrase,int starIn,size_t size){
   int* arrayReturn;
   arrayReturn=(int*)calloc((size+1),sizeof(int));
   arrayReturn[0]=size;
   for (size_t i=0; i < size; i++){
-      arrayReturn[i+1]=pgm_read_word(phrase+i);
+      arrayReturn[i+starIn]=pgm_read_word(phrase+i);
   }
   return arrayReturn;
 }

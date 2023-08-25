@@ -13,13 +13,15 @@
       int * aLastFrame;
       MatrizLed pantalla;
       int aLastFrameEmpty=0;
+      int *aPins;
+      int nElements=0;
       
     public:
       ShowMatrix();
       void InitShowMatrix(int * aPins,int nFrameElements, MatrizLed vPantalla);
       void PrintLed(int ledNum,int pintToActive,int ledState);
       void PrintData(int pinNumber);
-      void PrintLedMatrix(int * aFrame,int * aPins,int nFrameElements);
+      void PrintLedMatrix(int * aFrame);
       
       
   };
