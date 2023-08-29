@@ -2,7 +2,7 @@
 
 DriveMatrix::DriveMatrix()
 {
-  Serial.println("");
+  //Serial.println("");
 }
 
 void DriveMatrix::InitDriveMatrix(int cols, int rows)
@@ -51,13 +51,16 @@ void DriveMatrix::Clear()
     }
   }
 }
-void DriveMatrix::AddConsToMatrix(int *aData)
+void DriveMatrix::AddConsToMatrix(int *aData,String caracter)
 {
   int value = 0;
   int relPosY = 0;
   int relPosX = 0;
   int maxPosX = 0;
   int cont = aData[0];
+  infMat[posInfMat]=caracter;
+  debug(caracter);
+  posInfMat++;
   for (int i = 0; i < cont; i++)
   {
     value = aData[i + 1];
@@ -83,7 +86,7 @@ void DriveMatrix::AddConsToMatrix(int *aData)
   debugl(" ");
 }
 void DriveMatrix::despIzq(){
-  if(despMat<10){
+  if(despMat<BUILD_MATRIX_WIDTH){
     despMat++;
   }else{
     despMat=0;
@@ -92,6 +95,7 @@ void DriveMatrix::despIzq(){
 int *DriveMatrix::GetFrame()
 {
   // 
+  debugl("");
   debug1l("Inicio GetFrame");
   int size = MATRIX_WIDTH * MATRIX_HEIGHT;
   int *frame = (int *)calloc((size + 1), sizeof(int));
@@ -103,12 +107,24 @@ int *DriveMatrix::GetFrame()
       frame[contPos] = matrix[i][j+despMat];
       //debuge(i);
       //debuge(j);
-      debuge(frame[contPos]);
+      //debuge(frame[contPos]);
       //debuge("|");
       contPos++;
     }
-    debugl(" ");
+    //debugl(" ");
   }
+
   debug1l("Fin GetFrame");
   return frame;
+}
+void DriveMatrix::moveMatrixToLeft(){
+  for (int i = 0; i < MATRIX_HEIGHT ; i++){
+    for (int j = 0; j < ((MATRIX_WIDTH*2)-1); j++){
+      matrix[i][j]=matrix[i][j+1];
+    }
+    movMat++;
+  }
+}
+int DriveMatrix::getMovMat(){
+  return movMat;
 }

@@ -4,23 +4,27 @@
 
 ShowMatrix::ShowMatrix()
 {
-  Serial.println("");
+  debugl("");
 }
 
 
-void ShowMatrix::InitShowMatrix(int *aPins, int nFrameElements, MatrizLed vPantalla)
+void ShowMatrix::InitShowMatrix(int *vaPins, int nFrameElements, MatrizLed vPantalla)
 {
   pantalla=vPantalla;
+  aPins=vaPins;
+  nElements=nFrameElements;
   for (int i = 0; i < nFrameElements; i++)
   {
     pinMode(aPins[i], OUTPUT);
+    debug(vaPins[i]);
   }
-  aLastFrame = convProgToArray(C_EMPTY, (sizeof(C_EMPTY) / 2));
+  debugl("");
+  aLastFrame = convProgToArray(C_EMPTY,0, nFrameElements);
 }
 
 void ShowMatrix::PrintData(int data){
-  Serial.print(data);
-  Serial.print("text");
+  debug(data);
+  debug("text");
 }
 
 void ShowMatrix::PrintLed(int ledNum,int pintToActive,int ledState){
@@ -36,43 +40,52 @@ void ShowMatrix::PrintLed(int ledNum,int pintToActive,int ledState){
     }
 }
 
-void ShowMatrix::PrintLedMatrix(int *aFrame, int *aPins, int nFrameElements)
+void ShowMatrix::PrintLedMatrix(int *vlFrame)
 {
   int pinState = 0;
-  int pinNum = 0;
+  //int pinNum = 0;
   int posX = 0;
   int lastPosX = 0;
-  
+  /*
   debugl("");  
-  debugl("___________________________________________");
+  debugl("___________________________________________");*/
   
-
-  for (int i = 0; i < nFrameElements; i++)
+  lastPosX = posX;
+  for (int i = 0; i < nElements; i++)
   {
-    posX = (int)(i / 7);
+    
     //posY = (int)(i % 7);   
     
-     if (DEBUG_MATRIX){
-        if (lastPosX != posX){
-          debugl(" ");
-          lastPosX = posX;
-        }      
-      }
-
-    pinState=aFrame[i];
-    pinNum=aPins[i];
+  
+    posX = (int)(i / MATRIX_WIDTH);
+    pinState=vlFrame[i];
+    //pinNum=aPins[i];
 
     if (pinState < 2 ){
-   
+      if (lastPosX != posX){
+          debugl(" ");
+          lastPosX = posX;
+        } 
       if (DEBUG_MATRIX){
-        debuge(pinState);
+        debug("|");
+        // debug(i);
+        // debug(":");
+        debug(pinState);
+        // debug(":");
+        // debug(pinNum);
+        debuge("|");
+        //debuge(" ");
         //dd(" ");
+       
+         
       }
-    
-      if(aFrame[i] != aLastFrame[i]){            
+      if(vlFrame[i] != aLastFrame[i]){            
           aLastFrame[i] = pinState; // update the values of matriz temp to only update the changed values
-          ShowMatrix::PrintLed(i,pinNum,pinState);       
+          //ShowMatrix::PrintLed(i,pinNum,pinState);       
       }           
     }
+  
   }
+  
+  
 }

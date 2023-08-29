@@ -1,9 +1,13 @@
 
 #include "inc_include.h"
+#include "avr8-stub.h"
+#include "app_api.h"
 
 int * aPins;
 int nElements=0;
 int * aFrame;
+int * aT2;
+
 int * aPacman;
 
 int * aPacman2;
@@ -13,50 +17,54 @@ int * aPacman3;
 
 int * AChar;
 int * BChar;
+int posLetDesp=0;
 //int * aFrame;
 //static int** matrix; 
 int pinState=0;
 MatrizLed pantalla;
 DriveMatrix dm;
 ShowMatrix sm;
-
+String strToShow="BIENVENIDOS A LA EEST N 2";
 
 void setup() {
-    Serial.begin(9600);
+    // Serial.begin(9600);
     //printf("I'm alive!\n");
+    debug_init();
     pantalla.begin(12, 11, 10, 2); // dataPin, clkPin, csPin, numero de matrices de 8x8
     pantalla.setIntensidad(1); 
     
     sm=ShowMatrix();
     dm=DriveMatrix();
+    
 
     dm.InitDriveMatrix(BUILD_MATRIX_WIDTH,BUILD_MATRIX_HEIGHT);
     
     
     //dm.CreateMatrix();
     pantalla.borrar();
-    //aPins=convProgToArray(C_Pins,(sizeof(C_Pins)/2));
-    nElements = sizeof(C_Pins) / sizeof(int);
+    aPins=convProgToArray(C_Pins,0,(sizeof(C_Pins)/2));
+    nElements = sizeof(C_Pins) / 2;
     
     sm.InitShowMatrix(aPins,nElements,pantalla);     
     
-    //aFrame=convProgToArray(C_T2,(sizeof(C_T2)/2));
+    aT2=convProgToArray(C_T2,0,(sizeof(C_T2)/2));
+    
+    aPacman=convProgToArray(C_PACMAN_01,0,(sizeof(C_PACMAN_01)/2));
     /*
-    aPacman=convProgToArray(C_PACMAN_01,(sizeof(C_PACMAN_01)/2));
     aPacman2=convProgToArray(C_PACMAN_02,(sizeof(C_PACMAN_01)/2));
     aPacman3=convProgToArray(C_PACMAN_03,(sizeof(C_PACMAN_01)/2));
     */
-    AChar=getCharMatrix("A");
-    BChar=getCharMatrix("B");
+    
     
     //printMatrix(AChar);
     
-    dm.AddConsToMatrix(getCharMatrix("M"));
-    dm.AddConsToMatrix(getCharMatrix("A"));
-    dm.AddConsToMatrix(getCharMatrix("U"));
-    dm.AddConsToMatrix(getCharMatrix("R"));
-    dm.AddConsToMatrix(getCharMatrix("I"));
-    dm.Print();
+    //dm.AddConsToMatrix(getCharMatrix("E"));
+    // dm.AddConsToMatrix(getCharMatrix("E"));
+    // dm.AddConsToMatrix(getCharMatrix("S"));
+    // dm.AddConsToMatrix(getCharMatrix("T"));
+    // dm.AddConsToMatrix(getCharMatrix("2"));
+    //dm.Print();
+    
     //aFrame=dm.GetFrame();
     
     
@@ -67,26 +75,44 @@ void setup() {
     aFrame[2]=convProgToArray(C_PACMAN_02,(sizeof(C_PACMAN_02)/2));
     */
     
-
-
+    
+    for (unsigned int i = 0; i < 3; i++) {
+        char caracter = strToShow[i];
+        
+        debug3l(caracter);
+        dm.AddConsToMatrix(getCharMatrix(String(caracter)),String(caracter));
+    }
 
     
 
 }
 // Secuencia de la matriz
 void loop() {
-    
+     
     
     aFrame=dm.GetFrame();
-    dm.despIzq();
-    sm.PrintLedMatrix(aFrame,aPins,nElements);
+    //dm.despIzq();
+    //dm.moveMatrixToLeft();
+    sm.PrintLedMatrix(aFrame);
+    
     delay(500);
+    //int *aChars;
+     /*
+    for (unsigned int i = 0; i < strToShow.length(); i++) {
+        char caracter = strToShow[i];
+        String caracterString = String(caracter); // Convierte el carácter en un objeto String
+        Serial.println(caracterString);
+    }*/
+    //    dm.AddConsToMatrix(aChars);
+        //    Serial.println(caracter);
     
     /*
     matriz=convProgToMatrix(C_LET_A,(sizeof(C_LET_A)/2));
-    printMatrix(matriz);*/
-    /*
-    sm.PrintLedMatrix(aPacman,aPins,nElements);
+    printMatrix(matriz);
+    
+    sm.PrintLedMatrix(aT2);
+    delay(500);
+    sm.PrintLedMatrix(aPacman);
     delay(500);
     */
 

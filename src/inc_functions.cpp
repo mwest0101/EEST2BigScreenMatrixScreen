@@ -3,12 +3,12 @@
 
 
 
-int *convProgToArray(const int *phrase,size_t size){
+int *convProgToArray(const int *phrase,int starIn,size_t size){
   int* arrayReturn;
   arrayReturn=(int*)calloc((size+1),sizeof(int));
   arrayReturn[0]=size;
   for (size_t i=0; i < size; i++){
-      arrayReturn[i+1]=pgm_read_word(phrase+i);
+      arrayReturn[i+starIn]=pgm_read_word(phrase+i);
   }
   return arrayReturn;
 }
@@ -20,7 +20,7 @@ void printMatrix(int *vMatrix){
   int tam=vMatrix[0];
   for (int i=0;i<tam; i++){
       if(vMatrix[i+1]!=EL && vMatrix[i+1]!=EA){      
-        debuge(vMatrix[i+1]);
+        debug3l(vMatrix[i+1]);
       }else{
         debugl("");
       }
