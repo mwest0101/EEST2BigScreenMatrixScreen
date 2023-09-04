@@ -5,7 +5,7 @@
  
 int *convProgToArray(const int *phrase,int starIn, int size){
   int* arrayReturn;
-  arrayReturn=(int*)calloc((size+1),sizeof(int));
+  arrayReturn=(int*)calloc((size+starIn),sizeof(int));
   arrayReturn[0]=size;
   for (int i=0; i < size; i++){
       arrayReturn[i+starIn]=pgm_read_word(phrase+i);

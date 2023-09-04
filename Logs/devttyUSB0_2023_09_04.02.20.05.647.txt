@@ -1,0 +1,181 @@
+R
+______
+LOOOP
+3)-------->Pase 1
+ 
+[M (77) ] 
+[a (97) ] 
+[u (117) ] 
+[r (114) ] 
+[i (105) ]
+getCharMatrix: (77 : M)
+ 
+=========AddConsToMatrix===============
+cont:35  1 0 0 0 1 0
+ 1 1 0 1 1 0
+ 1 0 1 0 1 0
+ 1 0 0 0 1 0
+ 1 0 0 0 1 0
+ 
+
+getCharMatrix: (97 : a)
+ 
+=========AddConsToMatrix===============
+cont:20  0 0 0
+ 1 1 0
+ 0 1 0
+ 1 1 0
+ 1 1 0
+ 
+
+getCharMatrix: (117 : u)
+ 
+=========AddConsToMatrix===============
+cont:25  0 0 0 0
+ 1 0 1 0
+ 1 0 1 0
+ 1 0 1 0
+ 1 1 1 0
+ 
+
+getCharMatrix: (114 : r)
+ 
+=========AddConsToMatrix===============
+cont:25  0 0 0 0
+ 1 1 1 0
+ 1 0 1 0
+ 1 0 0 0
+ 1 0 0 0
+ 
+
+getCharMatrix: (105 : i)
+ 
+=========AddConsToMatrix===============
+cont:20  0 0 0
+ 0 1 0
+ 0 0 0
+ 0 1 0
+ 0 1 0
+ 
+
+Inicio GetFrame
+1)->Fin GetFrame
+|1|0|0|0|1|0|0 
+|1|1|0|1|1|1|1 
+|1|0|1|0|1|0|1 
+|1|0|0|0|1|1|1 
+|1|0|0|0|1|1|1
+getCharMatrix: (77 : M)
+ 
+=========AddConsToMatrix===============
+cont:35  1 0 0 0 1 0
+ 1 1 0 1 1 0
+ 1 0 1 0 1 0
+ 1 0 0 0 1 0
+ 1 0 0 0 1 0
+ 
+
+getCharMatrix: (97 : a)
+ 
+=========AddConsToMatrix===============
+cont:20  0 0 0
+ 1 1 0
+ 0 1 0
+ 1 1 0
+ 1 1 0
+ 
+
+getCharMatrix: (117 : u)
+ 
+=========AddConsToMatrix===============
+cont:25  0 0 0 0
+ 1 0 1 0
+ 1 0 1 0
+ 1 0 1 0
+ 1 1 1 0
+ 
+
+getCharMatrix: (114 : r)
+ 
+=========AddConsToMatrix===============
+cont:25  0 0 0 0
+ 1 1 1 0
+ 1 0 1 0
+ 1 0 0 0
+ 1 0 0 0
+ 
+
+getCharMatrix: (105 : i)
+ 
+=========AddConsToMatrix===============
+cont:20  0 0 0
+ 0 1 0
+ 0 0 0
+ 0 1 0
+ 0 1 0
+ 
+
+Inicio GetFrame
+1)->Fin GetFrame
+|1|0|0|0|1|0|0 
+|0|0|0|0|0|0|0 
+|1|0|1|1|1|1|0 
+|1|0|1|1|0|1|0 
+|1|0|1|1|0|0|0
+getCharMatrix: (77 : M)
+ 
+=========AddConsToMatrix===============
+cont:35  1 0 0 0 1 0
+ 1 1 0 1 1 0
+ 1 0 1 0 1 0
+ 1 0 0 0 1 0
+ 1 0 0 0 1 0
+ 
+
+getCharMatrix: (97 : a)
+ 
+=========AddConsToMatrix===============
+cont:20  0 0 0
+ 1 1 0
+ 0 1 0
+ 1 1 0
+ 1 1 0
+ 
+
+getCharMatrix: (117 : u)
+ 
+=========AddConsToMatrix===============
+cont:25  0 0 0 0
+ 1 0 1 0
+ 1 0 1 0
+ 1 0 1 0
+ 1 1 1 0
+ 
+
+getCharMatrix: (114 : r)
+ 
+=========AddConsToMatrix===============
+cont:25  0 0 0 0
+ 1 1 1 0
+ 1 0 1 0
+ 1 0 0 0
+ 1 0 0 0
+ 
+
+getCharMatrix: (105 : i)
+ 
+=========AddConsToMatrix===============
+cont:20  0 0 0
+ 0 1 0
+ 0 0 0
+ 0 1 0
+ 0 1 0
+ 
+
+Inicio GetFrame
+1)->Fin GetFrame
+|1|0|0|0|1|0|0 
+|0|0|0|0|0|0|0 
+|0|0|1|1|1|1|0 
+|1|0|1|1|0|1|0 
+|0|0|1|1|0|0|0

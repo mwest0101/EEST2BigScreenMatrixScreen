@@ -18,12 +18,15 @@
       int **matrix; 
       int *infMat; 
       int posInfMat=0;
- 
+      String lastStrToShow="";
+       int numOfcharacter = 0;
+       int *aCharsBlock;
+       
     public:        
       DriveMatrix();
       
       void InitDriveMatrix(int rows,int cols);
-      void CreateMatrix(int cols,int rows);
+      //void CreateMatrix(int cols,int rows);
       void Print();
       void Clear();
       void ResetInitPosMatrix();

@@ -1,0 +1,137 @@
+�R
+______
+LOOOP
+3)-------->Pase 1
+ 
+[M (77) ] 
+[a (97) ] 
+[u (117) ] 
+[r (114) ] 
+[i (105) ]
+getCharMatrix: (77 : M)
+ 
+=========AddConsToMatrix===============
+cont:35  
+
+getCharMatrix: (97 : a)
+ 
+=========AddConsToMatrix===============
+cont:20  
+
+getCharMatrix: (117 : u)
+ 
+=========AddConsToMatrix===============
+cont:25  
+
+getCharMatrix: (114 : r)
+ 
+=========AddConsToMatrix===============
+cont:25  
+
+getCharMatrix: (105 : i)
+ 
+=========AddConsToMatrix===============
+cont:20  
+
+Inicio GetFrame
+|0|0|0|0 
+|0|1|1|1 
+|-256|-512|0 
+|0|0 
+|0|0|-25600|0
+getCharMatrix: (77 : M)
+ 
+=========AddConsToMatrix===============
+cont:35  
+
+getCharMatrix: (97 : a)
+ 
+=========AddConsToMatrix===============
+cont:20  
+
+getCharMatrix: (117 : u)
+ 
+=========AddConsToMatrix===============
+cont:25  
+
+getCharMatrix: (114 : r)
+ 
+=========AddConsToMatrix===============
+cont:25  
+
+getCharMatrix: (105 : i)
+ 
+=========AddConsToMatrix===============
+cont:20  
+
+Inicio GetFrame
+|0|0|0|0 
+|0|1|1|1 
+|-256|-512|0 
+|0|0 
+|0|0|-25600|0
+getCharMatrix: (77 : M)
+ 
+=========AddConsToMatrix===============
+cont:35  
+
+getCharMatrix: (97 : a)
+ 
+=========AddConsToMatrix===============
+cont:20  
+
+getCharMatrix: (117 : u)
+ 
+=========AddConsToMatrix===============
+cont:25  
+
+getCharMatrix: (114 : r)
+ 
+=========AddConsToMatrix===============
+cont:25  
+
+getCharMatrix: (105 : i)
+ 
+=========AddConsToMatrix===============
+cont:20  
+
+Inicio GetFrame
+|0|0|0|0 
+|0|1|1|1 
+|-256|-512|0 
+|0|0 
+|0|0|-25600|0
+getCharMatrix: (77 : M)
+ 
+=========AddConsToMatrix===============
+cont:35  
+
+getCharMatrix: (97 : a)
+ 
+=========AddConsToMatrix===============
+cont:20  
+
+getCharMatrix: (117 : u)
+ 
+=========AddConsToMatrix===============
+cont:25  
+
+getCharMatrix: (114 : r)
+ 
+=========AddConsToMatrix===============
+cont:25  
+
+getCharMatrix: (105 : i)
+ 
+=========AddConsToMatrix===============
+cont:20  
+
+Inicio GetFrame
+|0|0|0|0 
+|0|1|1|1 
+|-256|-512|0 
+|0|0 
+|0|0|-25600|0
+getCharMatrix: (77 : M)
+ 
+=========AddConsToMatrix==========

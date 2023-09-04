@@ -1,0 +1,68 @@
+�R
+______
+LOOOP
+3)-------->Pase 1
+ 
+[M (77) ] 
+[a (97) ] 
+[u (117) ] 
+[r (114) ] 
+[i (105) ]
+getCharMatrix: (77 : M)
+ 
+=========AddConsToMatrix===============
+cont:35 =========TOTALS===============
+totPosX:0 totPosX+relPosX:0posInfMat:0 77
+ 
+
+getCharMatrix: (97 : a)
+ 
+=========AddConsToMatrix===============
+cont:20 =========TOTALS===============
+totPosX:0 totPosX+relPosX:0posInfMat:0 97
+ 
+
+getCharMatrix: (117 : u)
+ 
+=========AddConsToMatrix===============
+cont:25 =========TOTALS===============
+totPosX:0 totPosX+relPosX:0posInfMat:0 117
+ 
+
+getCharMatrix: (114 : r)
+ 
+=========AddConsToMatrix===============
+cont:25 =========TOTALS===============
+totPosX:0 totPosX+relPosX:0posInfMat:0 114
+ 
+
+getCharMatrix: (105 : i)
+ 
+=========AddConsToMatrix===============
+cont:20 =========TOTALS===============
+totPosX:0 totPosX+relPosX:0posInfMat:0 105
+ 
+
+Inicio GetFrame
+|0|0|0|0 
+|0|1|1|1 
+|-256|-512|0 
+|0|0 
+|0|0|-25600|0
+getCharMatrix: (77 : M)
+ 
+=========AddConsToMatrix===============
+cont:35 =========TOTALS===============
+totPosX:0 totPosX+relPosX:0posInfMat:0 77
+ 
+
+getCharMatrix: (97 : a)
+ 
+=========AddConsToMatrix===============
+cont:20 =========TOTALS===============
+totPosX:0 totPosX+relPosX:0posInfMat:0 97
+ 
+
+getCharMatrix: (117 : u)
+ 
+=======

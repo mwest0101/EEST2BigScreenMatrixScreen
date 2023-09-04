@@ -50,7 +50,7 @@ void setup()
 
     sm = ShowMatrix();
     dm = DriveMatrix();
-    aCharsBlock=(int*)calloc((300+1),sizeof(int));
+    aCharsBlock=(int*)calloc((300),sizeof(int));
     for (int i = 0; i < 300; i++) aCharsBlock[i]=0;
 
     dm.InitDriveMatrix(BUILD_MATRIX_WIDTH, BUILD_MATRIX_HEIGHT);
@@ -99,6 +99,7 @@ void loop()
     int elements=0;
    
     dm.ResetInitPosMatrix();
+    //dm.Clear();
     //debugl("==========================================");
     for (int i=0;i<contChars;i++){    
         elements=aCharsBlock[i];
