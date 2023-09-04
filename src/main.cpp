@@ -39,11 +39,11 @@ int *aIntCharMatrix;
 
 void setup()
 {
-#ifdef DEBUG
-    Serial.begin(9600);
-#else
-    debug_init();
-#endif
+    #ifdef DEBUG
+        Serial.begin(9600);
+    #else
+        debug_init();
+    #endif
 
     pantalla.begin(12, 11, 10, 2); // dataPin, clkPin, csPin, numero de matrices de 8x8
     pantalla.setIntensidad(1);
@@ -62,59 +62,42 @@ void setup()
 
     sm.InitShowMatrix(aPins, nElements, pantalla);
 
-    aT2 = convProgToArray(C_T2, 0, (sizeof(C_T2) / 2));
+    //aT2 = convProgToArray(C_T2, 0, (sizeof(C_T2) / 2));
 
-    aPacman = convProgToArray(C_PACMAN_01, 0, (sizeof(C_PACMAN_01) / 2));
+    //aPacman = convProgToArray(C_PACMAN_01, 0, (sizeof(C_PACMAN_01) / 2));
 
 
-    debugl("______");
-    debugl("LOOOP");
-    dm.ResetInitPosMatrix();
+    debugl("test");
     
-    //int * busCharsTemp;    
+    dm.ResetInitPosMatrix();       
     if(lastStrToShow!=strToShow){
-        debug3l("Pase 1");
-      //  busChars = (int *)calloc((strToShow.length() + 1), sizeof(int));
-        for (unsigned int i = 0; i < strToShow.length(); i++) {    
-            //numOfcharacter = calcNumberOfChar(strToShow[i]);
-            numOfcharacter = calcNumberOfChar(strToShow[i]);
-            if (numOfcharacter!=0) {
-                aCharsBlock[contChars]=(numOfcharacter);
-                contChars++;  
-                //busChars[i] = numOfcharacter; 
-                //aCharsBlock[contChars]=(numOfcharacter);
-            }
-            //debug2l((int)numOfcharacter);
-
-        }
+        
+        dm.getArrayOfCharsOfString(strToShow);
         lastStrToShow=strToShow;
     }
-
+    /*
+    debugl("");
+    debuge("getContChars:");
+    debuge(dm.getContChars());*/
 }
 // Secuencia de la matriz
 void loop()
 {
 
   
-    int elements=0;
+    //int elements=0;
    
-    dm.ResetInitPosMatrix();
-    //dm.Clear();
-    //debugl("==========================================");
-    for (int i=0;i<contChars;i++){    
-        elements=aCharsBlock[i];
-        //test=getCharMatrix(element);
-        //debugl("---------------------------------------");
-        //debug("Antes getCharMatrix element:");
-        //debugl(elements);
+    //dm.ResetInitPosMatrix();
+    /*
+    for (int i=0;i<dm.getContChars();i++){    
+        elements=dm.getValueFromChar(i);        
         aIntCharMatrix=getCharMatrix(elements);
-        dm.AddConsToMatrix(aIntCharMatrix, elements);
-        //debug("Despues getCharMatrix element:");
-        //debugl(elements);
+        dm.AddConsToMatrix(aIntCharMatrix, elements);        
     }
     
     aFrame = dm.GetFrame();
     sm.PrintLedMatrix(aFrame);
+    */
     // dm.despIzq();
     // dm.moveMatrixToLeft();
     

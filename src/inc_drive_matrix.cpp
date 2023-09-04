@@ -150,3 +150,22 @@ void DriveMatrix::moveMatrixToLeft(){
 int DriveMatrix::getMovMat(){
   return movMat;
 }
+void DriveMatrix::getArrayOfCharsOfString(String strData){    
+  int numOfcharacter = 0;
+  for (unsigned int i = 0; i < strData.length(); i++) {                
+    numOfcharacter = calcNumberOfChar(strData[i]);
+    if (numOfcharacter!=0) {
+      aCharsBlock[contChars]=numOfcharacter;
+      debug("|>>");debuge(numOfcharacter);
+      contChars++;                  
+    }            
+  }
+
+  //return aCharsBlock;
+}
+int DriveMatrix::getContChars(){
+  return contChars;
+}
+int DriveMatrix::getValueFromChar(int number){
+  return aCharsBlock[number];
+}

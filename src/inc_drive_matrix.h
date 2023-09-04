@@ -21,6 +21,7 @@
       String lastStrToShow="";
        int numOfcharacter = 0;
        int *aCharsBlock;
+       int contChars=0;
        
     public:        
       DriveMatrix();
@@ -35,6 +36,9 @@
       void despIzq();
       void moveMatrixToLeft();
       int getMovMat();
+      void getArrayOfCharsOfString(String strData);
+      int getContChars();
+      int getValueFromChar(int number);
       
   };
 
