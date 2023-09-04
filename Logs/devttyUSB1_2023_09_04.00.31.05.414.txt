@@ -1,0 +1,240 @@
+)
+______
+LOOOP
+3)-------->Pase 1
+ 
+[M (77) ] 
+[a (97) ] 
+[u (117) ] 
+[r (114) ] 
+[i (105) ] 
+[c (99) ] 
+[i (105) ] 
+[o (111) ] 
+[  (32) ] 
+[P (80) ] 
+[a (97) ] 
+[b (98) ] 
+[l (108) ] 
+[o (111) ] 
+[  (32) ] 
+[W (87) ] 
+[e (101) ] 
+[s (115) ] 
+[t (116) ]==========================================
+---------------------------------------
+Antes getCharMatrix element:77
+
+getCharMatrix: (77 : M)
+Despues getCharMatrix element:77
+---------------------------------------
+Antes getCharMatrix element:97
+
+getCharMatrix: (97 : a)
+Despues getCharMatrix element:97
+---------------------------------------
+Antes getCharMatrix element:117
+
+getCharMatrix: (117 : u)
+Despues getCharMatrix element:117
+---------------------------------------
+Antes getCharMatrix element:114
+
+getCharMatrix: (114 : r)
+Despues getCharMatrix element:114
+---------------------------------------
+Antes getCharMatrix element:105
+
+getCharMatrix: (105 : i)
+Despues getCharMatrix element:105
+---------------------------------------
+Antes getCharMatrix element:99
+
+getCharMatrix: (99 : c)
+Despues getCharMatrix element:99
+---------------------------------------
+Antes getCharMatrix element:105
+
+getCharMatrix: (105 : i)
+Despues getCharMatrix element:105
+---------------------------------------
+Antes getCharMatrix element:111
+
+getCharMatrix: (111 : o)
+Despues getCharMatrix element:111
+---------------------------------------
+Antes getCharMatrix element:32
+
+getCharMatrix: (32 : _)
+Despues getCharMatrix element:32
+---------------------------------------
+Antes getCharMatrix element:80
+
+getCharMatrix: (80 : P)
+Despues getCharMatrix element:80
+---------------------------------------
+Antes getCharMatrix element:97
+
+getCharMatrix: (97 : a)
+Despues getCharMatrix element:97
+---------------------------------------
+Antes getCharMatrix element:98
+
+getCharMatrix: (98 : b)
+Despues getCharMatrix element:98
+---------------------------------------
+Antes getCharMatrix element:108
+
+getCharMatrix: (108 : l)
+Despues getCharMatrix element:108
+---------------------------------------
+Antes getCharMatrix element:111
+
+getCharMatrix: (111 : o)
+Despues getCharMatrix element:111
+---------------------------------------
+Antes getCharMatrix element:32
+
+getCharMatrix: (32 : _)
+Despues getCharMatrix element:32
+---------------------------------------
+Antes getCharMatrix element:87
+
+getCharMatrix: (87 : W)
+Despues getCharMatrix element:87
+---------------------------------------
+Antes getCharMatrix element:101
+
+getCharMatrix: (101 : e)
+Despues getCharMatrix element:101
+---------------------------------------
+Antes getCharMatrix element:115
+
+getCharMatrix: (115 : s)
+Despues getCharMatrix element:115
+---------------------------------------
+Antes getCharMatrix element:116
+
+getCharMatrix: (116 : t)
+Despues getCharMatrix element:116
+==========================================
+---------------------------------------
+Antes getCharMatrix element:77
+
+getCharMatrix: (77 : M)
+Despues getCharMatrix element:77
+---------------------------------------
+Antes getCharMatrix element:97
+
+getCharMatrix: (97 : a)
+Despues getCharMatrix element:97
+---------------------------------------
+Antes getCharMatrix element:117
+
+getCharMatrix: (117 : u)
+Despues getCharMatrix element:117
+---------------------------------------
+Antes getCharMatrix element:114
+
+getCharMatrix: (114 : r)
+Despues getCharMatrix element:114
+---------------------------------------
+Antes getCharMatrix element:105
+
+getCharMatrix: (105 : i)
+Despues getCharMatrix element:105
+---------------------------------------
+Antes getCharMatrix element:99
+
+getCharMatrix: (99 : c)
+Despues getCharMatrix element:99
+---------------------------------------
+Antes getCharMatrix element:105
+
+getCharMatrix: (105 : i)
+Despues getCharMatrix element:105
+---------------------------------------
+Antes getCharMatrix element:111
+
+getCharMatrix: (111 : o)
+Despues getCharMatrix element:111
+---------------------------------------
+Antes getCharMatrix element:32
+
+getCharMatrix: (32 : _)
+Despues getCharMatrix element:32
+---------------------------------------
+Antes getCharMatrix element:80
+
+getCharMatrix: (80 : P)
+Despues getCharMatrix element:80
+---------------------------------------
+Antes getCharMatrix element:97
+
+getCharMatrix: (97 : a)
+Despues getCharMatrix element:97
+---------------------------------------
+Antes getCharMatrix element:98
+
+getCharMatrix: (98 : b)
+Despues getCharMatrix element:98
+---------------------------------------
+Antes getCharMatrix element:108
+
+getCharMatrix: (108 : l)
+Despues getCharMatrix element:108
+---------------------------------------
+Antes getCharMatrix element:111
+
+getCharMatrix: (111 : o)
+Despues getCharMatrix element:111
+---------------------------------------
+Antes getCharMatrix element:32
+
+getCharMatrix: (32 : _)
+Despues getCharMatrix element:32
+---------------------------------------
+Antes getCharMatrix element:87
+
+getCharMatrix: (87 : W)
+Despues getCharMatrix element:87
+---------------------------------------
+Antes getCharMatrix element:101
+
+getCharMatrix: (101 : e)
+Despues getCharMatrix element:101
+---------------------------------------
+Antes getCharMatrix element:115
+
+getCharMatrix: (115 : s)
+Despues getCharMatrix element:115
+---------------------------------------
+Antes getCharMatrix element:116
+
+getCharMatrix: (116 : t)
+Despues getCharMatrix element:116
+==========================================
+---------------------------------------
+Antes getCharMatrix element:77
+
+getCharMatrix: (77 : M)
+Despues getCharMatrix element:77
+---------------------------------------
+Antes getCharMatrix element:97
+
+getCharMatrix: (97 : a)
+Despues getCharMatrix element:97
+---------------------------------------
+Antes getCharMatrix element:117
+
+getCharMatrix: (117 : u)
+Despues getCharMatrix element:117
+---------------------------------------
+Antes getCharMatrix element:114
+
+getCharMatrix: (114 : r)
+Despues getCharMatrix element:114
+---------------------------------------
+Antes getCharMatrix element:105
+
+getCharMat

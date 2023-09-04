@@ -16,9 +16,9 @@
       int movMat=0;
       //int totPosY;
       int **matrix; 
-      String  *infMat; 
+      int *infMat; 
       int posInfMat=0;
-
+ 
     public:        
       DriveMatrix();
       
@@ -26,7 +26,8 @@
       void CreateMatrix(int cols,int rows);
       void Print();
       void Clear();
-      void AddConsToMatrix(int *aData,String caracter);
+      void ResetInitPosMatrix();
+      void AddConsToMatrix(int *aData,int caracter);
       int *GetFrame();
       void despIzq();
       void moveMatrixToLeft();

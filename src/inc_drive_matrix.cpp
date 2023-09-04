@@ -50,37 +50,53 @@ void DriveMatrix::Clear()
       matrix[i][j] = 0;
     }
   }
+  ResetInitPosMatrix();
 }
-void DriveMatrix::AddConsToMatrix(int *aData,String caracter)
+void DriveMatrix::ResetInitPosMatrix(){
+  totPosX=0;        
+  posInfMat=0;
+}
+ 
+void DriveMatrix::AddConsToMatrix(int *aData,int caracter)
 {
+  debugl(" ");
+  debugl("=========AddConsToMatrix===============");
+  ResetInitPosMatrix(); //sacar esto una vez probado que funciona
   int value = 0;
   int relPosY = 0;
   int relPosX = 0;
   int maxPosX = 0;
   int cont = aData[0];
   infMat[posInfMat]=caracter;
-  debug(caracter);
-  posInfMat++;
-  for (int i = 0; i < cont; i++)
-  {
+  debug("cont:");debug(cont);debug(" ");
+  for (int i = 0; i < cont; i++) {
     value = aData[i + 1];
-    if (value != EL && value != EA)
-    {
+    if (value != EL && value != EA) {
       matrix[relPosY][totPosX + relPosX] = value;
 
-      relPosX++;
-      if (relPosX > maxPosX)
-      {
+      
+      if (relPosX > maxPosX) {
         maxPosX = relPosX;
       }
-    }
-    else
-    {
+      debug("relPosY:");debug(relPosY);debug(" ");
+      debug("relPosX:");debug(relPosX);debug(" ");
+
+      if(value<0 || value>1) { debug("ATENTION =============== ERROR---------------->");}
+      debug("value:");debug(value);debug(" (i+1)=");debugl(i+1);
+      relPosX++;
+    }else{
       // debugl("");
       relPosY++;
       relPosX = 0;
     }
   }
+  debugl("=========TOTALS===============");
+  debug("totPosX:");debug(totPosX);debug(" ");debug("");
+  debug("totPosX+relPosX:");debug(totPosX + relPosX);debug("");
+  debug("posInfMat:");debug(posInfMat);debug(" ");debug(caracter);debugl("");
+
+  
+  posInfMat+=maxPosX;
   totPosX += maxPosX;
   maxPosX = 0;
   debugl(" ");
@@ -96,8 +112,8 @@ int *DriveMatrix::GetFrame()
 {
   // 
   debugl("");
-  debug1l("Inicio GetFrame");
-  int size = MATRIX_WIDTH * MATRIX_HEIGHT;
+  debugl("Inicio GetFrame");
+  /*int size = MATRIX_WIDTH * MATRIX_HEIGHT;
   int *frame = (int *)calloc((size + 1), sizeof(int));
   int contPos = 0;
   for (int i = 0; i < MATRIX_HEIGHT ; i++)
@@ -115,7 +131,8 @@ int *DriveMatrix::GetFrame()
   }
 
   debug1l("Fin GetFrame");
-  return frame;
+  return frame;*/
+  return NULL;
 }
 void DriveMatrix::moveMatrixToLeft(){
   for (int i = 0; i < MATRIX_HEIGHT ; i++){

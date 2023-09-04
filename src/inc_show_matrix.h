@@ -3,7 +3,7 @@
 #ifndef _INC_SHOW_MATRIX_H_
   #define _INC_SHOW_MATRIX_H_
   #include "inc_include.h"  
-
+ 
 
   class ShowMatrix {
     private:

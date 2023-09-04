@@ -1,0 +1,65 @@
+R
+______
+LOOOP
+3)-------->Pase 1
+ 
+[M (77) ] 
+[a (97) ] 
+[u (117) ] 
+[r (114) ] 
+[i (105) ]
+getCharMatrix: (77 : M)
+
+getCharMatrix: (97 : a)
+
+getCharMatrix: (117 : u)
+
+getCharMatrix: (114 : r)
+
+getCharMatrix: (105 : i)
+
+getCharMatrix: (77 : M)
+
+getCharMatrix: (97 : a)
+
+getCharMatrix: (117 : u)
+
+getCharMatrix: (114 : r)
+
+getCharMatrix: (105 : i)
+
+getCharMatrix: (77 : M)
+
+getCharMatrix: (97 : a)
+
+getCharMatrix: (117 : u)
+
+getCharMatrix: (114 : r)
+
+getCharMatrix: (105 : i)
+
+getCharMatrix: (77 : M)
+
+getCharMatrix: (97 : a)
+
+getCharMatrix: (117 : u)
+
+getCharMatrix: (114 : r)
+
+getCharMatrix: (105 : i)
+
+getCharMatrix: (77 : M)
+
+getCharMatrix: (97 : a)
+
+getCharMatrix: (117 : u)
+
+getCharMatrix: (114 : r)
+
+getCharMatrix: (105 : i)
+
+getCharMatrix: (77 : M)
+
+getCharMatrix: (97 : a)
+
+getCharM

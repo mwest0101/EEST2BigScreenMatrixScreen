@@ -2,12 +2,12 @@
 #include "inc_include.h"
 
 
-
-int *convProgToArray(const int *phrase,int starIn,size_t size){
+ 
+int *convProgToArray(const int *phrase,int starIn, int size){
   int* arrayReturn;
   arrayReturn=(int*)calloc((size+1),sizeof(int));
   arrayReturn[0]=size;
-  for (size_t i=0; i < size; i++){
+  for (int i=0; i < size; i++){
       arrayReturn[i+starIn]=pgm_read_word(phrase+i);
   }
   return arrayReturn;
@@ -27,7 +27,20 @@ void printMatrix(int *vMatrix){
   }
   
 }
+int **CreateMatrix(int cols, int rows)
+{
 
+  int **tempMatrix = new int *[rows];
+  for (int i = 0; i < rows; i++)
+  {
+    tempMatrix[i] = new int[cols];
+    for (int j = 0; j < cols; j++)
+    {
+      tempMatrix[i][j] = 0;
+    }
+  }
+  return tempMatrix;
+}
 /*
 void printMatrix(Vector<Vector<int>> matriz){
   debugl("");
