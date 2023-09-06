@@ -3,7 +3,7 @@
 #ifndef _INC_CONFIG_LETTERS_CPP_
 #define _INC_CONFIG_LETTERS_CPP_
 int calcNumberOfChar(char caracter){
-    static int charVal=0;
+    int charVal=0;
     int valRet=0;
     int valorCaracter = (int)caracter;  // Convertir el carácter a su valor numérico
 

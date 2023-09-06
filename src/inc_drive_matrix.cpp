@@ -152,17 +152,34 @@ int DriveMatrix::getMovMat(){
 }
 void DriveMatrix::getArrayOfCharsOfString(String strData){    
   int numOfcharacter = 0;
+
+  for (unsigned int i = 0; i < strData.length(); i++) { 
+    if (calcNumberOfChar(strData[i])!=0) contChars++;                      
+  }   
+
+  int *aCharsBlock = (int *)calloc((contChars), sizeof(int));
+ 
+
   for (unsigned int i = 0; i < strData.length(); i++) {                
     numOfcharacter = calcNumberOfChar(strData[i]);
+ 
+    
+    debuge("i=");                     debug(i);                      debuge(" | ");
+    debuge("contChars=");             debuge(contChars);              debuge(" | ");
+    debuge("numOfcharacter=");        debuge(numOfcharacter);         debuge(" | ");
+    debuge("aCharsBlock[contChars]=");
+    
     if (numOfcharacter!=0) {
       aCharsBlock[contChars]=numOfcharacter;
-      debug("|>>");debuge(numOfcharacter);
+      debuge(aCharsBlock[contChars]);debugel(" ] ");  
       contChars++;                  
     }            
+    
   }
 
   //return aCharsBlock;
 }
+
 int DriveMatrix::getContChars(){
   return contChars;
 }

@@ -67,7 +67,7 @@ void setup()
     //aPacman = convProgToArray(C_PACMAN_01, 0, (sizeof(C_PACMAN_01) / 2));
 
 
-    debugl("test");
+    
     
     dm.ResetInitPosMatrix();       
     if(lastStrToShow!=strToShow){
@@ -94,7 +94,8 @@ void loop()
         aIntCharMatrix=getCharMatrix(elements);
         dm.AddConsToMatrix(aIntCharMatrix, elements);        
     }
-    
+    */
+    /*
     aFrame = dm.GetFrame();
     sm.PrintLedMatrix(aFrame);
     */
