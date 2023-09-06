@@ -14,7 +14,8 @@ int *convProgToArray(const int *phrase,int starIn,int size);
 //void printMatrix(Vector<Vector<int>> matriz);
 
 void printMatrix(int vMatrix[]);
-int **CreateMatrix(int cols, int rows);
+//int **CreateMatrix(int cols, int rows);
+int **CreateMatrix(int **matrix,int cols, int rows);
 //int **createMatrix(int rows,int cols);
 
 //int selectRandom(long[],int);

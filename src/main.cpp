@@ -18,7 +18,7 @@ int *AChar;
 int *BChar;
 int posLetDesp = 0;
 // int * aFrame;
-// static int** matrix;
+int** matrix;
 int pinState = 0;
 MatrizLed pantalla;
 DriveMatrix dm;
@@ -53,8 +53,8 @@ void setup()
     aCharsBlock=(int*)calloc((300),sizeof(int));
     for (int i = 0; i < 300; i++) aCharsBlock[i]=0;
 
-    dm.InitDriveMatrix(BUILD_MATRIX_WIDTH, BUILD_MATRIX_HEIGHT);
-    dm.Clear();
+    matrix=dm.InitDriveMatrix(matrix,BUILD_MATRIX_WIDTH, BUILD_MATRIX_HEIGHT);
+    dm.Clear(matrix);
     // dm.CreateMatrix();
     pantalla.borrar();
     aPins = convProgToArray(C_Pins, 0, (sizeof(C_Pins) / 2));
@@ -67,14 +67,8 @@ void setup()
     //aPacman = convProgToArray(C_PACMAN_01, 0, (sizeof(C_PACMAN_01) / 2));
 
 
-    
-    
-    dm.ResetInitPosMatrix();       
-    if(lastStrToShow!=strToShow){
-        
-        dm.getArrayOfCharsOfString(strToShow);
-        lastStrToShow=strToShow;
-    }
+    debugl("test");
+
     /*
     debugl("");
     debuge("getContChars:");
@@ -84,21 +78,34 @@ void setup()
 void loop()
 {
 
-  
-    //int elements=0;
+      
+    dm.ResetInitPosMatrix();       
+    if(lastStrToShow!=strToShow){        
+        aCharsBlock=dm.getArrayOfCharsOfString(strToShow);
+        lastStrToShow=strToShow;
+    }
+
+    
    
     //dm.ResetInitPosMatrix();
-    /*
+
+    int elements=0;
     for (int i=0;i<dm.getContChars();i++){    
-        elements=dm.getValueFromChar(i);        
+        elements=aCharsBlock[i];   
+        debug("i=");     
+        debuge(i);
+        debug(" elements=");     
+        debugel(elements);
+
         aIntCharMatrix=getCharMatrix(elements);
-        dm.AddConsToMatrix(aIntCharMatrix, elements);        
+        
+        matrix=dm.AddConsToMatrix(matrix,aIntCharMatrix, elements);        
     }
-    */
-    /*
-    aFrame = dm.GetFrame();
+    
+    
+    aFrame = dm.GetFrame(matrix);
     sm.PrintLedMatrix(aFrame);
-    */
+    
     // dm.despIzq();
     // dm.moveMatrixToLeft();
     

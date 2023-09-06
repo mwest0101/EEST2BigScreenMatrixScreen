@@ -27,19 +27,19 @@ void printMatrix(int *vMatrix){
   }
   
 }
-int **CreateMatrix(int cols, int rows)
+int **CreateMatrix(int **matrix,int cols, int rows)
 {
 
-  int **tempMatrix = new int *[rows];
+  matrix = new int *[rows];
   for (int i = 0; i < rows; i++)
   {
-    tempMatrix[i] = new int[cols];
+    matrix[i] = new int[cols];
     for (int j = 0; j < cols; j++)
     {
-      tempMatrix[i][j] = 0;
+      matrix[i][j] = 0;
     }
   }
-  return tempMatrix;
+  return matrix;
 }
 /*
 void printMatrix(Vector<Vector<int>> matriz){

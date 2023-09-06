@@ -15,30 +15,32 @@
       int despMat=0;
       int movMat=0;
       //int totPosY;
-      int **matrix; 
+      //int **matrix; 
       int *infMat; 
       int posInfMat=0;
       String lastStrToShow="";
        int numOfcharacter = 0;
-       int *aCharsBlock;
-       int contChars=0;
+       //int *aCharsBlock;
+      int contChars=0;
        
     public:        
       DriveMatrix();
       
-      void InitDriveMatrix(int rows,int cols);
+      //void InitDriveMatrix(int rows,int cols);
+      int **InitDriveMatrix(int **matrix,int cols, int rows);
       //void CreateMatrix(int cols,int rows);
-      void Print();
-      void Clear();
+      void Print(int **matrix);
+      int **Clear(int **matrix);
       void ResetInitPosMatrix();
-      void AddConsToMatrix(int *aData,int caracter);
-      int *GetFrame();
+      int **AddConsToMatrix(int **matrix,int *aData,int caracter);
+      int *GetFrame(int **matrix);
       void despIzq();
-      void moveMatrixToLeft();
+      //void moveMatrixToLeft();
+      int **moveMatrixToLeft(int **matrix);
       int getMovMat();
-      void getArrayOfCharsOfString(String strData);
+      int *getArrayOfCharsOfString(String strData);
       int getContChars();
-      int getValueFromChar(int number);
+      //int getValueFromChar(int number);
       
   };
 

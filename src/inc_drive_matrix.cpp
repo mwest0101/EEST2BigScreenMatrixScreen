@@ -5,11 +5,12 @@ DriveMatrix::DriveMatrix()
   //Serial.println("");
 }
 
-void DriveMatrix::InitDriveMatrix(int cols, int rows)
+int **DriveMatrix::InitDriveMatrix(int **matrix,int cols, int rows)
 {
   matrixCols = cols;
   matrixRows = rows;
-  matrix=CreateMatrix(matrixCols, matrixRows);
+  matrix=CreateMatrix(matrix,matrixCols, matrixRows);
+  return matrix;
 }
 
 // void DriveMatrix::CreateMatrix(int cols, int rows)
@@ -26,7 +27,7 @@ void DriveMatrix::InitDriveMatrix(int cols, int rows)
 //   }
 // }
 
-void DriveMatrix::Print()
+void DriveMatrix::Print(int **matrix)
 {
 
   for (int i = 0; i < matrixRows; i++)
@@ -41,7 +42,7 @@ void DriveMatrix::Print()
   // digitalWrite(pin, HIGH);
 }
 
-void DriveMatrix::Clear()
+int **DriveMatrix::Clear(int **matrix)
 {
   for (int i = 0; i < matrixRows; i++)
   {
@@ -51,13 +52,14 @@ void DriveMatrix::Clear()
     }
   }
   ResetInitPosMatrix();
+  return matrix;
 }
 void DriveMatrix::ResetInitPosMatrix(){
   totPosX=0;        
   posInfMat=0;
 }
  
-void DriveMatrix::AddConsToMatrix(int *aData,int caracter)
+int **DriveMatrix::AddConsToMatrix(int **matrix,int *aData,int caracter)
 {
   debugl(" ");
   debugl("=========AddConsToMatrix===============");
@@ -91,7 +93,7 @@ void DriveMatrix::AddConsToMatrix(int *aData,int caracter)
       relPosY++;
       relPosX = 0;
     }
-
+   
   }
   debug("totPosX:");debug(totPosX);debugl(" ");
   /*
@@ -105,7 +107,9 @@ void DriveMatrix::AddConsToMatrix(int *aData,int caracter)
   totPosX += (maxPosX+1);
   maxPosX = 0;
   debugl(" ");
+   return matrix;
 }
+
 void DriveMatrix::despIzq(){
   if(despMat<BUILD_MATRIX_WIDTH){
     despMat++;
@@ -113,7 +117,7 @@ void DriveMatrix::despIzq(){
     despMat=0;
   }
 }
-int *DriveMatrix::GetFrame()
+int *DriveMatrix::GetFrame(int **matrix)
 {
   // 
   debugl("");
@@ -139,27 +143,29 @@ int *DriveMatrix::GetFrame()
   return frame;
   return NULL;
 }
-void DriveMatrix::moveMatrixToLeft(){
+int **DriveMatrix::moveMatrixToLeft(int **matrix){
   for (int i = 0; i < MATRIX_HEIGHT ; i++){
     for (int j = 0; j < ((MATRIX_WIDTH*2)-1); j++){
       matrix[i][j]=matrix[i][j+1];
     }
     movMat++;
   }
+  return matrix;
 }
+
 int DriveMatrix::getMovMat(){
   return movMat;
 }
-void DriveMatrix::getArrayOfCharsOfString(String strData){    
+int *DriveMatrix::getArrayOfCharsOfString(String strData){    
   int numOfcharacter = 0;
-
+  contChars=0;
   for (unsigned int i = 0; i < strData.length(); i++) { 
     if (calcNumberOfChar(strData[i])!=0) contChars++;                      
   }   
-
+  
   int *aCharsBlock = (int *)calloc((contChars), sizeof(int));
  
-
+  contChars=0;
   for (unsigned int i = 0; i < strData.length(); i++) {                
     numOfcharacter = calcNumberOfChar(strData[i]);
  
@@ -167,7 +173,9 @@ void DriveMatrix::getArrayOfCharsOfString(String strData){
     debuge("i=");                     debug(i);                      debuge(" | ");
     debuge("contChars=");             debuge(contChars);              debuge(" | ");
     debuge("numOfcharacter=");        debuge(numOfcharacter);         debuge(" | ");
-    debuge("aCharsBlock[contChars]=");
+    debug("aCharsBlock[");
+    debug(contChars);
+    debuge("]=");
     
     if (numOfcharacter!=0) {
       aCharsBlock[contChars]=numOfcharacter;
@@ -176,13 +184,22 @@ void DriveMatrix::getArrayOfCharsOfString(String strData){
     }            
     
   }
+   for (int i = 0; i < contChars; i++) {                
+    debug3l("i=");
+    debuge(i);
+    debug("aCharsBlock[");
+    debug(i);
+    debuge("]=");
+    debugl(aCharsBlock[i]);
+   }
 
-  //return aCharsBlock;
+  return aCharsBlock;
 }
 
 int DriveMatrix::getContChars(){
   return contChars;
 }
+/*
 int DriveMatrix::getValueFromChar(int number){
   return aCharsBlock[number];
-}
+}*/

@@ -1,0 +1,215 @@
+-R
+test
+ 
+[M (77) ] 
+[a (97) ] 
+[u (117) ] 
+[r (114) ] 
+[i (105) ] 
+[M (77) ] i=0  |  contChars= 5  |  numOfcharacter= 77  |  aCharsBlock[contChars]= 77  ] 
+ 
+[a (97) ] i=1  |  contChars= 6  |  numOfcharacter= 97  |  aCharsBlock[contChars]= 97  ] 
+ 
+[u (117) ] i=2  |  contChars= 7  |  numOfcharacter= 117  |  aCharsBlock[contChars]= 117  ] 
+ 
+[r (114) ] i=3  |  contChars= 8  |  numOfcharacter= 114  |  aCharsBlock[contChars]= 114  ] 
+ 
+[i (105) ] i=4  |  contChars= 9  |  numOfcharacter= 105  |  aCharsBlock[contChars]= 105  ] 
+3)-------->i=
+ 0 aCharsBlock[contChars]=0
+3)-------->i=
+ 1 aCharsBlock[contChars]=0
+3)-------->i=
+ 2 aCharsBlock[contChars]=0
+3)-------->i=
+ 3 aCharsBlock[contChars]=0
+3)-------->i=
+ 4 aCharsBlock[contChars]=0
+3)-------->i=
+ 5 aCharsBlock[contChars]=0
+3)-------->i=
+ 6 aCharsBlock[contChars]=0
+3)-------->i=
+ 7 aCharsBlock[contChars]=0
+3)-------->i=
+ 8 aCharsBlock[contChars]=0
+3)-------->i=
+ 9 aCharsBlock[contChars]=0
+
+getCharMatrix: (522 : )
+ 
+=========AddConsToMatrix===============
+cont:0 totPosX:0 
+ 
+
+getCharMatrix: (0 : )
+ 
+=========AddConsToMatrix===============
+cont:0 totPosX:1 
+ 
+
+getCharMatrix: (1000 : )
+ 
+=========AddConsToMatrix===============
+cont:0 totPosX:2 
+ 
+
+getCharMatrix: (0 : )
+ 
+=========AddConsToMatrix===============
+cont:0 totPosX:3 
+ 
+
+getCharMatrix: (0 : )
+ 
+=========AddConsToMatrix===============
+cont:0 totPosX:4 
+ 
+
+getCharMatrix: (0 : )
+ 
+=========AddConsToMatrix===============
+cont:0 totPosX:5 
+ 
+
+getCharMatrix: (197 : )
+ 
+=========AddConsToMatrix===============
+cont:0 totPosX:6 
+ 
+
+getCharMatrix: (196 : )
+ 
+=========AddConsToMatrix===============
+cont:0 totPosX:7 
+ 
+
+getCharMatrix: (192 : )
+ 
+=========AddConsToMatrix===============
+cont:0 totPosX:8 
+ 
+
+getCharMatrix: (193 : )
+ 
+=========AddConsToMatrix===============
+cont:0 totPosX:9 
+ 
+
+getCharMatrix: (522 : )
+ 
+=========AddConsToMatrix===============
+cont:0 totPosX:0 
+ 
+
+getCharMatrix: (0 : )
+ 
+=========AddConsToMatrix===============
+cont:0 totPosX:1 
+ 
+
+getCharMatrix: (1000 : )
+ 
+=========AddConsToMatrix===============
+cont:0 totPosX:2 
+ 
+
+getCharMatrix: (0 : )
+ 
+=========AddConsToMatrix===============
+cont:0 totPosX:3 
+ 
+
+getCharMatrix: (0 : )
+ 
+=========AddConsToMatrix===============
+cont:0 totPosX:4 
+ 
+
+getCharMatrix: (0 : )
+ 
+=========AddConsToMatrix===============
+cont:0 totPosX:5 
+ 
+
+getCharMatrix: (197 : )
+ 
+=========AddConsToMatrix===============
+cont:0 totPosX:6 
+ 
+
+getCharMatrix: (196 : )
+ 
+=========AddConsToMatrix===============
+cont:0 totPosX:7 
+ 
+
+getCharMatrix: (192 : )
+ 
+=========AddConsToMatrix===============
+cont:0 totPosX:8 
+ 
+
+getCharMatrix: (193 : )
+ 
+=========AddConsToMatrix===============
+cont:0 totPosX:9 
+ 
+
+getCharMatrix: (522 : )
+ 
+=========AddConsToMatrix===============
+cont:0 totPosX:0 
+ 
+
+getCharMatrix: (0 : )
+ 
+=========AddConsToMatrix===============
+cont:0 totPosX:1 
+ 
+
+getCharMatrix: (1000 : )
+ 
+=========AddConsToMatrix===============
+cont:0 totPosX:2 
+ 
+
+getCharMatrix: (0 : )
+ 
+=========AddConsToMatrix===============
+cont:0 totPosX:3 
+ 
+
+getCharMatrix: (0 : )
+ 
+=========AddConsToMatrix===============
+cont:0 totPosX:4 
+ 
+
+getCharMatrix: (0 : )
+ 
+=========AddConsToMatrix===============
+cont:0 totPosX:5 
+ 
+
+getCharMatrix: (197 : )
+ 
+=========AddConsToMatrix===============
+cont:0 totPosX:6 
+ 
+
+getCharMatrix: (196 : )
+ 
+=========AddConsToMatrix===============
+cont:0 totPosX:7 
+ 
+
+getCharMatrix: (192 : )
+ 
+=========AddConsToMatrix===============
+cont:0 totPosX:8 
+ 
+
+getCharMatrix: (193 : )
+ 
+=========AddConsToMatrix============
