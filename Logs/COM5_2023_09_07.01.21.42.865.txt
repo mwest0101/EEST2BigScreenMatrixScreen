@@ -1,0 +1,2023 @@
+��
+test
+ 
+[M (77) ] 
+[a (97) ] 
+[u (117) ] 
+[r (114) ] 
+[i (105) ] 
+[M (77) ] i=0  |  contChars= 0  |  numOfcharacter= 77  | aCharsBlock[0 ]= 77  ] 
+ 
+[a (97) ] i=1  |  contChars= 1  |  numOfcharacter= 97  | aCharsBlock[1 ]= 97  ] 
+ 
+[u (117) ] i=2  |  contChars= 2  |  numOfcharacter= 117  | aCharsBlock[2 ]= 117  ] 
+ 
+[r (114) ] i=3  |  contChars= 3  |  numOfcharacter= 114  | aCharsBlock[3 ]= 114  ] 
+ 
+[i (105) ] i=4  |  contChars= 4  |  numOfcharacter= 105  | aCharsBlock[4 ]= 105  ] 
+3)-------->i=
+ 0aCharsBlock[0 ]=77
+3)-------->i=
+ 1aCharsBlock[1 ]=97
+3)-------->i=
+ 2aCharsBlock[2 ]=117
+3)-------->i=
+ 3aCharsBlock[3 ]=114
+3)-------->i=
+ 4aCharsBlock[4 ]=105
+i= 0 elements= 77
+
+getCharMatrix: (77 : M)
+ 
+=========AddConsToMatrix===============
+cont:35 | 1| 0| 0| 0| 1| 0
+| 1| 1| 0| 1| 1| 0
+| 1| 0| 1| 0| 1| 0
+| 1| 0| 0| 0| 1| 0
+| 1| 0| 0| 0| 1| 0
+totPosX:0 
+ 
+i= 1 elements= 97
+
+getCharMatrix: (97 : a)
+ 
+=========AddConsToMatrix===============
+cont:20 | 0| 0| 0
+| 1| 1| 0
+| 0| 1| 0
+| 1| 1| 0
+| 1| 1| 0
+totPosX:6 
+ 
+i= 2 elements= 117
+
+getCharMatrix: (117 : u)
+ 
+=========AddConsToMatrix===============
+cont:25 | 0| 0| 0| 0
+| 1| 0| 1| 0
+| 1| 0| 1| 0
+| 1| 0| 1| 0
+| 1| 1| 1| 0
+totPosX:9 
+ 
+i= 3 elements= 114
+
+getCharMatrix: (114 : r)
+ 
+=========AddConsToMatrix===============
+cont:25 | 0| 0| 0| 0
+| 1| 1| 1| 0
+| 1| 0| 1| 0
+| 1| 0| 0| 0
+| 1| 0| 0| 0
+totPosX:13 
+ 
+i= 4 elements= 105
+
+getCharMatrix: (105 : i)
+ 
+=========AddConsToMatrix===============
+cont:20 | 0| 0| 0
+| 0| 1| 0
+| 0| 0| 0
+| 0| 1| 0
+| 0| 1| 0
+totPosX:17 
+ 
+
+Inicio GetFrame
+1)->Fin GetFrame
+|1|0|0|0|1|0|0 
+|1|1|0|1|1|0|1 
+|1|0|1|0|1|0|0 
+|1|0|0|0|1|0|1 
+|1|0|0|0|1|0|1i= 0 elements= 77
+
+getCharMatrix: (77 : M)
+ 
+=========AddConsToMatrix===============
+cont:35 | 1| 0| 0| 0| 1| 0
+| 1| 1| 0| 1| 1| 0
+| 1| 0| 1| 0| 1| 0
+| 1| 0| 0| 0| 1| 0
+| 1| 0| 0| 0| 1| 0
+totPosX:0 
+ 
+i= 1 elements= 97
+
+getCharMatrix: (97 : a)
+ 
+=========AddConsToMatrix===============
+cont:20 | 0| 0| 0
+| 1| 1| 0
+| 0| 1| 0
+| 1| 1| 0
+| 1| 1| 0
+totPosX:6 
+ 
+i= 2 elements= 117
+
+getCharMatrix: (117 : u)
+ 
+=========AddConsToMatrix===============
+cont:25 | 0| 0| 0| 0
+| 1| 0| 1| 0
+| 1| 0| 1| 0
+| 1| 0| 1| 0
+| 1| 1| 1| 0
+totPosX:9 
+ 
+i= 3 elements= 114
+
+getCharMatrix: (114 : r)
+ 
+=========AddConsToMatrix===============
+cont:25 | 0| 0| 0| 0
+| 1| 1| 1| 0
+| 1| 0| 1| 0
+| 1| 0| 0| 0
+| 1| 0| 0| 0
+totPosX:13 
+ 
+i= 4 elements= 105
+
+getCharMatrix: (105 : i)
+ 
+=========AddConsToMatrix===============
+cont:20 | 0| 0| 0
+| 0| 1| 0
+| 0| 0| 0
+| 0| 1| 0
+| 0| 1| 0
+totPosX:17 
+ 
+
+Inicio GetFrame
+1)->Fin GetFrame
+|1|0|0|0|1|0|0 
+|1|1|0|1|1|0|1 
+|1|0|1|0|1|0|0 
+|1|0|0|0|1|0|1 
+|1|0|0|0|1|0|1i= 0 elements= 77
+
+getCharMatrix: (77 : M)
+ 
+=========AddConsToMatrix===============
+cont:35 | 1| 0| 0| 0| 1| 0
+| 1| 1| 0| 1| 1| 0
+| 1| 0| 1| 0| 1| 0
+| 1| 0| 0| 0| 1| 0
+| 1| 0| 0| 0| 1| 0
+totPosX:0 
+ 
+i= 1 elements= 97
+
+getCharMatrix: (97 : a)
+ 
+=========AddConsToMatrix===============
+cont:20 | 0| 0| 0
+| 1| 1| 0
+| 0| 1| 0
+| 1| 1| 0
+| 1| 1| 0
+totPosX:6 
+ 
+i= 2 elements= 117
+
+getCharMatrix: (117 : u)
+ 
+=========AddConsToMatrix===============
+cont:25 | 0| 0| 0| 0
+| 1| 0| 1| 0
+| 1| 0| 1| 0
+| 1| 0| 1| 0
+| 1| 1| 1| 0
+totPosX:9 
+ 
+i= 3 elements= 114
+
+getCharMatrix: (114 : r)
+ 
+=========AddConsToMatrix===============
+cont:25 | 0| 0| 0| 0
+| 1| 1| 1| 0
+| 1| 0| 1| 0
+| 1| 0| 0| 0
+| 1| 0| 0| 0
+totPosX:13 
+ 
+i= 4 elements= 105
+
+getCharMatrix: (105 : i)
+ 
+=========AddConsToMatrix===============
+cont:20 | 0| 0| 0
+| 0| 1| 0
+| 0| 0| 0
+| 0| 1| 0
+| 0| 1| 0
+totPosX:17 
+ 
+
+Inicio GetFrame
+1)->Fin GetFrame
+|1|0|0|0|1|0|0 
+|1|1|0|1|1|0|1 
+|1|0|1|0|1|0|0 
+|1|0|0|0|1|0|1 
+|1|0|0|0|1|0|1i= 0 elements= 77
+
+getCharMatrix: (77 : M)
+ 
+=========AddConsToMatrix===============
+cont:35 | 1| 0| 0| 0| 1| 0
+| 1| 1| 0| 1| 1| 0
+| 1| 0| 1| 0| 1| 0
+| 1| 0| 0| 0| 1| 0
+| 1| 0| 0| 0| 1| 0
+totPosX:0 
+ 
+i= 1 elements= 97
+
+getCharMatrix: (97 : a)
+ 
+=========AddConsToMatrix===============
+cont:20 | 0| 0| 0
+| 1| 1| 0
+| 0| 1| 0
+| 1| 1| 0
+| 1| 1| 0
+totPosX:6 
+ 
+i= 2 elements= 117
+
+getCharMatrix: (117 : u)
+ 
+=========AddConsToMatrix===============
+cont:25 | 0| 0| 0| 0
+| 1| 0| 1| 0
+| 1| 0| 1| 0
+| 1| 0| 1| 0
+| 1| 1| 1| 0
+totPosX:9 
+ 
+i= 3 elements= 114
+
+getCharMatrix: (114 : r)
+ 
+=========AddConsToMatrix===============
+cont:25 | 0| 0| 0| 0
+| 1| 1| 1| 0
+| 1| 0| 1| 0
+| 1| 0| 0| 0
+| 1| 0| 0| 0
+totPosX:13 
+ 
+i= 4 elements= 105
+
+getCharMatrix: (105 : i)
+ 
+=========AddConsToMatrix===============
+cont:20 | 0| 0| 0
+| 0| 1| 0
+| 0| 0| 0
+| 0| 1| 0
+| 0| 1| 0
+totPosX:17 
+ 
+
+Inicio GetFrame
+1)->Fin GetFrame
+|1|0|0|0|1|0|0 
+|1|1|0|1|1|0|1 
+|1|0|1|0|1|0|0 
+|1|0|0|0|1|0|1 
+|1|0|0|0|1|0|1i= 0 elements= 77
+
+getCharMatrix: (77 : M)
+ 
+=========AddConsToMatrix===============
+cont:35 | 1| 0| 0| 0| 1| 0
+| 1| 1| 0| 1| 1| 0
+| 1| 0| 1| 0| 1| 0
+| 1| 0| 0| 0| 1| 0
+| 1| 0| 0| 0| 1| 0
+totPosX:0 
+ 
+i= 1 elements= 97
+
+getCharMatrix: (97 : a)
+ 
+=========AddConsToMatrix===============
+cont:20 | 0| 0| 0
+| 1| 1| 0
+| 0| 1| 0
+| 1| 1| 0
+| 1| 1| 0
+totPosX:6 
+ 
+i= 2 elements= 117
+
+getCharMatrix: (117 : u)
+ 
+=========AddConsToMatrix===============
+cont:25 | 0| 0| 0| 0
+| 1| 0| 1| 0
+| 1| 0| 1| 0
+| 1| 0| 1| 0
+| 1| 1| 1| 0
+totPosX:9 
+ 
+i= 3 elements= 114
+
+getCharMatrix: (114 : r)
+ 
+=========AddConsToMatrix===============
+cont:25 | 0| 0| 0| 0
+| 1| 1| 1| 0
+| 1| 0| 1| 0
+| 1| 0| 0| 0
+| 1| 0| 0| 0
+totPosX:13 
+ 
+i= 4 elements= 105
+
+getCharMatrix: (105 : i)
+ 
+=========AddConsToMatrix===============
+cont:20 | 0| 0| 0
+| 0| 1| 0
+| 0| 0| 0
+| 0| 1| 0
+| 0| 1| 0
+totPosX:17 
+ 
+
+Inicio GetFrame
+1)->Fin GetFrame
+|1|0|0|0|1|0|0 
+|1|1|0|1|1|0|1 
+|1|0|1|0|1|0|0 
+|1|0|0|0|1|0|1 
+|1|0|0|0|1|0|1i= 0 elements= 77
+
+getCharMatrix: (77 : M)
+ 
+=========AddConsToMatrix===============
+cont:35 | 1| 0| 0| 0| 1| 0
+| 1| 1| 0| 1| 1| 0
+| 1| 0| 1| 0| 1| 0
+| 1| 0| 0| 0| 1| 0
+| 1| 0| 0| 0| 1| 0
+totPosX:0 
+ 
+i= 1 elements= 97
+
+getCharMatrix: (97 : a)
+ 
+=========AddConsToMatrix===============
+cont:20 | 0| 0| 0
+| 1| 1| 0
+| 0| 1| 0
+| 1| 1| 0
+| 1| 1| 0
+totPosX:6 
+ 
+i= 2 elements= 117
+
+getCharMatrix: (117 : u)
+ 
+=========AddConsToMatrix===============
+cont:25 | 0| 0| 0| 0
+| 1| 0| 1| 0
+| 1| 0| 1| 0
+| 1| 0| 1| 0
+| 1| 1| 1| 0
+totPosX:9 
+ 
+i= 3 elements= 114
+
+getCharMatrix: (114 : r)
+ 
+=========AddConsToMatrix===============
+cont:25 | 0| 0| 0| 0
+| 1| 1| 1| 0
+| 1| 0| 1| 0
+| 1| 0| 0| 0
+| 1| 0| 0| 0
+totPosX:13 
+ 
+i= 4 elements= 105
+
+getCharMatrix: (105 : i)
+ 
+=========AddConsToMatrix===============
+cont:20 | 0| 0| 0
+| 0| 1| 0
+| 0| 0| 0
+| 0| 1| 0
+| 0| 1| 0
+totPosX:17 
+ 
+
+Inicio GetFrame
+1)->Fin GetFrame
+|1|0|0|0|1|0|0 
+|1|1|0|1|1|0|1 
+|1|0|1|0|1|0|0 
+|1|0|0|0|1|0|1 
+|1|0|0|0|1|0|1i= 0 elements= 77
+
+getCharMatrix: (77 : M)
+ 
+=========AddConsToMatrix===============
+cont:35 | 1| 0| 0| 0| 1| 0
+| 1| 1| 0| 1| 1| 0
+| 1| 0| 1| 0| 1| 0
+| 1| 0| 0| 0| 1| 0
+| 1| 0| 0| 0| 1| 0
+totPosX:0 
+ 
+i= 1 elements= 97
+
+getCharMatrix: (97 : a)
+ 
+=========AddConsToMatrix===============
+cont:20 | 0| 0| 0
+| 1| 1| 0
+| 0| 1| 0
+| 1| 1| 0
+| 1| 1| 0
+totPosX:6 
+ 
+i= 2 elements= 117
+
+getCharMatrix: (117 : u)
+ 
+=========AddConsToMatrix===============
+cont:25 | 0| 0| 0| 0
+| 1| 0| 1| 0
+| 1| 0| 1| 0
+| 1| 0| 1| 0
+| 1| 1| 1| 0
+totPosX:9 
+ 
+i= 3 elements= 114
+
+getCharMatrix: (114 : r)
+ 
+=========AddConsToMatrix===============
+cont:25 | 0| 0| 0| 0
+| 1| 1| 1| 0
+| 1| 0| 1| 0
+| 1| 0| 0| 0
+| 1| 0| 0| 0
+totPosX:13 
+ 
+i= 4 elements= 105
+
+getCharMatrix: (105 : i)
+ 
+=========AddConsToMatrix===============
+cont:20 | 0| 0| 0
+| 0| 1| 0
+| 0| 0| 0
+| 0| 1| 0
+| 0| 1| 0
+totPosX:17 
+ 
+
+Inicio GetFrame
+1)->Fin GetFrame
+|1|0|0|0|1|0|0 
+|1|1|0|1|1|0|1 
+|1|0|1|0|1|0|0 
+|1|0|0|0|1|0|1 
+|1|0|0|0|1|0|1i= 0 elements= 77
+
+getCharMatrix: (77 : M)
+ 
+=========AddConsToMatrix===============
+cont:35 | 1| 0| 0| 0| 1| 0
+| 1| 1| 0| 1| 1| 0
+| 1| 0| 1| 0| 1| 0
+| 1| 0| 0| 0| 1| 0
+| 1| 0| 0| 0| 1| 0
+totPosX:0 
+ 
+i= 1 elements= 97
+
+getCharMatrix: (97 : a)
+ 
+=========AddConsToMatrix===============
+cont:20 | 0| 0| 0
+| 1| 1| 0
+| 0| 1| 0
+| 1| 1| 0
+| 1| 1| 0
+totPosX:6 
+ 
+i= 2 elements= 117
+
+getCharMatrix: (117 : u)
+ 
+=========AddConsToMatrix===============
+cont:25 | 0| 0| 0| 0
+| 1| 0| 1| 0
+| 1| 0| 1| 0
+| 1| 0| 1| 0
+| 1| 1| 1| 0
+totPosX:9 
+ 
+i= 3 elements= 114
+
+getCharMatrix: (114 : r)
+ 
+=========AddConsToMatrix===============
+cont:25 | 0| 0| 0| 0
+| 1| 1| 1| 0
+| 1| 0| 1| 0
+| 1| 0| 0| 0
+| 1| 0| 0| 0
+totPosX:13 
+ 
+i= 4 elements= 105
+
+getCharMatrix: (105 : i)
+ 
+=========AddConsToMatrix===============
+cont:20 | 0| 0| 0
+| 0| 1| 0
+| 0| 0| 0
+| 0| 1| 0
+| 0| 1| 0
+totPosX:17 
+ 
+
+Inicio GetFrame
+1)->Fin GetFrame
+|1|0|0|0|1|0|0 
+|1|1|0|1|1|0|1 
+|1|0|1|0|1|0|0 
+|1|0|0|0|1|0|1 
+|1|0|0|0|1|0|1i= 0 elements= 77
+
+getCharMatrix: (77 : M)
+ 
+=========AddConsToMatrix===============
+cont:35 | 1| 0| 0| 0| 1| 0
+| 1| 1| 0| 1| 1| 0
+| 1| 0| 1| 0| 1| 0
+| 1| 0| 0| 0| 1| 0
+| 1| 0| 0| 0| 1| 0
+totPosX:0 
+ 
+i= 1 elements= 97
+
+getCharMatrix: (97 : a)
+ 
+=========AddConsToMatrix===============
+cont:20 | 0| 0| 0
+| 1| 1| 0
+| 0| 1| 0
+| 1| 1| 0
+| 1| 1| 0
+totPosX:6 
+ 
+i= 2 elements= 117
+
+getCharMatrix: (117 : u)
+ 
+=========AddConsToMatrix===============
+cont:25 | 0| 0| 0| 0
+| 1| 0| 1| 0
+| 1| 0| 1| 0
+| 1| 0| 1| 0
+| 1| 1| 1| 0
+totPosX:9 
+ 
+i= 3 elements= 114
+
+getCharMatrix: (114 : r)
+ 
+=========AddConsToMatrix===============
+cont:25 | 0| 0| 0| 0
+| 1| 1| 1| 0
+| 1| 0| 1| 0
+| 1| 0| 0| 0
+| 1| 0| 0| 0
+totPosX:13 
+ 
+i= 4 elements= 105
+
+getCharMatrix: (105 : i)
+ 
+=========AddConsToMatrix===============
+cont:20 | 0| 0| 0
+| 0| 1| 0
+| 0| 0| 0
+| 0| 1| 0
+| 0| 1| 0
+totPosX:17 
+ 
+
+Inicio GetFrame
+1)->Fin GetFrame
+|1|0|0|0|1|0|0 
+|1|1|0|1|1|0|1 
+|1|0|1|0|1|0|0 
+|1|0|0|0|1|0|1 
+|1|0|0|0|1|0|1i= 0 elements= 77
+
+getCharMatrix: (77 : M)
+ 
+=========AddConsToMatrix===============
+cont:35 | 1| 0| 0| 0| 1| 0
+| 1| 1| 0| 1| 1| 0
+| 1| 0| 1| 0| 1| 0
+| 1| 0| 0| 0| 1| 0
+| 1| 0| 0| 0| 1| 0
+totPosX:0 
+ 
+i= 1 elements= 97
+
+getCharMatrix: (97 : a)
+ 
+=========AddConsToMatrix===============
+cont:20 | 0| 0| 0
+| 1| 1| 0
+| 0| 1| 0
+| 1| 1| 0
+| 1| 1| 0
+totPosX:6 
+ 
+i= 2 elements= 117
+
+getCharMatrix: (117 : u)
+ 
+=========AddConsToMatrix===============
+cont:25 | 0| 0| 0| 0
+| 1| 0| 1| 0
+| 1| 0| 1| 0
+| 1| 0| 1| 0
+| 1| 1| 1| 0
+totPosX:9 
+ 
+i= 3 elements= 114
+
+getCharMatrix: (114 : r)
+ 
+=========AddConsToMatrix===============
+cont:25 | 0| 0| 0| 0
+| 1| 1| 1| 0
+| 1| 0| 1| 0
+| 1| 0| 0| 0
+| 1| 0| 0| 0
+totPosX:13 
+ 
+i= 4 elements= 105
+
+getCharMatrix: (105 : i)
+ 
+=========AddConsToMatrix===============
+cont:20 | 0| 0| 0
+| 0| 1| 0
+| 0| 0| 0
+| 0| 1| 0
+| 0| 1| 0
+totPosX:17 
+ 
+
+Inicio GetFrame
+1)->Fin GetFrame
+|1|0|0|0|1|0|0 
+|1|1|0|1|1|0|1 
+|1|0|1|0|1|0|0 
+|1|0|0|0|1|0|1 
+|1|0|0|0|1|0|1i= 0 elements= 77
+
+getCharMatrix: (77 : M)
+ 
+=========AddConsToMatrix===============
+cont:35 | 1| 0| 0| 0| 1| 0
+| 1| 1| 0| 1| 1| 0
+| 1| 0| 1| 0| 1| 0
+| 1| 0| 0| 0| 1| 0
+| 1| 0| 0| 0| 1| 0
+totPosX:0 
+ 
+i= 1 elements= 97
+
+getCharMatrix: (97 : a)
+ 
+=========AddConsToMatrix===============
+cont:20 | 0| 0| 0
+| 1| 1| 0
+| 0| 1| 0
+| 1| 1| 0
+| 1| 1| 0
+totPosX:6 
+ 
+i= 2 elements= 117
+
+getCharMatrix: (117 : u)
+ 
+=========AddConsToMatrix===============
+cont:25 | 0| 0| 0| 0
+| 1| 0| 1| 0
+| 1| 0| 1| 0
+| 1| 0| 1| 0
+| 1| 1| 1| 0
+totPosX:9 
+ 
+i= 3 elements= 114
+
+getCharMatrix: (114 : r)
+ 
+=========AddConsToMatrix===============
+cont:25 | 0| 0| 0| 0
+| 1| 1| 1| 0
+| 1| 0| 1| 0
+| 1| 0| 0| 0
+| 1| 0| 0| 0
+totPosX:13 
+ 
+i= 4 elements= 105
+
+getCharMatrix: (105 : i)
+ 
+=========AddConsToMatrix===============
+cont:20 | 0| 0| 0
+| 0| 1| 0
+| 0| 0| 0
+| 0| 1| 0
+| 0| 1| 0
+totPosX:17 
+ 
+
+Inicio GetFrame
+1)->Fin GetFrame
+|1|0|0|0|1|0|0 
+|1|1|0|1|1|0|1 
+|1|0|1|0|1|0|0 
+|1|0|0|0|1|0|1 
+|1|0|0|0|1|0|1i= 0 elements= 77
+
+getCharMatrix: (77 : M)
+ 
+=========AddConsToMatrix===============
+cont:35 | 1| 0| 0| 0| 1| 0
+| 1| 1| 0| 1| 1| 0
+| 1| 0| 1| 0| 1| 0
+| 1| 0| 0| 0| 1| 0
+| 1| 0| 0| 0| 1| 0
+totPosX:0 
+ 
+i= 1 elements= 97
+
+getCharMatrix: (97 : a)
+ 
+=========AddConsToMatrix===============
+cont:20 | 0| 0| 0
+| 1| 1| 0
+| 0| 1| 0
+| 1| 1| 0
+| 1| 1| 0
+totPosX:6 
+ 
+i= 2 elements= 117
+
+getCharMatrix: (117 : u)
+ 
+=========AddConsToMatrix===============
+cont:25 | 0| 0| 0| 0
+| 1| 0| 1| 0
+| 1| 0| 1| 0
+| 1| 0| 1| 0
+| 1| 1| 1| 0
+totPosX:9 
+ 
+i= 3 elements= 114
+
+getCharMatrix: (114 : r)
+ 
+=========AddConsToMatrix===============
+cont:25 | 0| 0| 0| 0
+| 1| 1| 1| 0
+| 1| 0| 1| 0
+| 1| 0| 0| 0
+| 1| 0| 0| 0
+totPosX:13 
+ 
+i= 4 elements= 105
+
+getCharMatrix: (105 : i)
+ 
+=========AddConsToMatrix===============
+cont:20 | 0| 0| 0
+| 0| 1| 0
+| 0| 0| 0
+| 0| 1| 0
+| 0| 1| 0
+totPosX:17 
+ 
+
+Inicio GetFrame
+1)->Fin GetFrame
+|1|0|0|0|1|0|0 
+|1|1|0|1|1|0|1 
+|1|0|1|0|1|0|0 
+|1|0|0|0|1|0|1 
+|1|0|0|0|1|0|1i= 0 elements= 77
+
+getCharMatrix: (77 : M)
+ 
+=========AddConsToMatrix===============
+cont:35 | 1| 0| 0| 0| 1| 0
+| 1| 1| 0| 1| 1| 0
+| 1| 0| 1| 0| 1| 0
+| 1| 0| 0| 0| 1| 0
+| 1| 0| 0| 0| 1| 0
+totPosX:0 
+ 
+i= 1 elements= 97
+
+getCharMatrix: (97 : a)
+ 
+=========AddConsToMatrix===============
+cont:20 | 0| 0| 0
+| 1| 1| 0
+| 0| 1| 0
+| 1| 1| 0
+| 1| 1| 0
+totPosX:6 
+ 
+i= 2 elements= 117
+
+getCharMatrix: (117 : u)
+ 
+=========AddConsToMatrix===============
+cont:25 | 0| 0| 0| 0
+| 1| 0| 1| 0
+| 1| 0| 1| 0
+| 1| 0| 1| 0
+| 1| 1| 1| 0
+totPosX:9 
+ 
+i= 3 elements= 114
+
+getCharMatrix: (114 : r)
+ 
+=========AddConsToMatrix===============
+cont:25 | 0| 0| 0| 0
+| 1| 1| 1| 0
+| 1| 0| 1| 0
+| 1| 0| 0| 0
+| 1| 0| 0| 0
+totPosX:13 
+ 
+i= 4 elements= 105
+
+getCharMatrix: (105 : i)
+ 
+=========AddConsToMatrix===============
+cont:20 | 0| 0| 0
+| 0| 1| 0
+| 0| 0| 0
+| 0| 1| 0
+| 0| 1| 0
+totPosX:17 
+ 
+
+Inicio GetFrame
+1)->Fin GetFrame
+|1|0|0|0|1|0|0 
+|1|1|0|1|1|0|1 
+|1|0|1|0|1|0|0 
+|1|0|0|0|1|0|1 
+|1|0|0|0|1|0|1i= 0 elements= 77
+
+getCharMatrix: (77 : M)
+ 
+=========AddConsToMatrix===============
+cont:35 | 1| 0| 0| 0| 1| 0
+| 1| 1| 0| 1| 1| 0
+| 1| 0| 1| 0| 1| 0
+| 1| 0| 0| 0| 1| 0
+| 1| 0| 0| 0| 1| 0
+totPosX:0 
+ 
+i= 1 elements= 97
+
+getCharMatrix: (97 : a)
+ 
+=========AddConsToMatrix===============
+cont:20 | 0| 0| 0
+| 1| 1| 0
+| 0| 1| 0
+| 1| 1| 0
+| 1| 1| 0
+totPosX:6 
+ 
+i= 2 elements= 117
+
+getCharMatrix: (117 : u)
+ 
+=========AddConsToMatrix===============
+cont:25 | 0| 0| 0| 0
+| 1| 0| 1| 0
+| 1| 0| 1| 0
+| 1| 0| 1| 0
+| 1| 1| 1| 0
+totPosX:9 
+ 
+i= 3 elements= 114
+
+getCharMatrix: (114 : r)
+ 
+=========AddConsToMatrix===============
+cont:25 | 0| 0| 0| 0
+| 1| 1| 1| 0
+| 1| 0| 1| 0
+| 1| 0| 0| 0
+| 1| 0| 0| 0
+totPosX:13 
+ 
+i= 4 elements= 105
+
+getCharMatrix: (105 : i)
+ 
+=========AddConsToMatrix===============
+cont:20 | 0| 0| 0
+| 0| 1| 0
+| 0| 0| 0
+| 0| 1| 0
+| 0| 1| 0
+totPosX:17 
+ 
+
+Inicio GetFrame
+1)->Fin GetFrame
+|1|0|0|0|1|0|0 
+|1|1|0|1|1|0|1 
+|1|0|1|0|1|0|0 
+|1|0|0|0|1|0|1 
+|1|0|0|0|1|0|1i= 0 elements= 77
+
+getCharMatrix: (77 : M)
+ 
+=========AddConsToMatrix===============
+cont:35 | 1| 0| 0| 0| 1| 0
+| 1| 1| 0| 1| 1| 0
+| 1| 0| 1| 0| 1| 0
+| 1| 0| 0| 0| 1| 0
+| 1| 0| 0| 0| 1| 0
+totPosX:0 
+ 
+i= 1 elements= 97
+
+getCharMatrix: (97 : a)
+ 
+=========AddConsToMatrix===============
+cont:20 | 0| 0| 0
+| 1| 1| 0
+| 0| 1| 0
+| 1| 1| 0
+| 1| 1| 0
+totPosX:6 
+ 
+i= 2 elements= 117
+
+getCharMatrix: (117 : u)
+ 
+=========AddConsToMatrix===============
+cont:25 | 0| 0| 0| 0
+| 1| 0| 1| 0
+| 1| 0| 1| 0
+| 1| 0| 1| 0
+| 1| 1| 1| 0
+totPosX:9 
+ 
+i= 3 elements= 114
+
+getCharMatrix: (114 : r)
+ 
+=========AddConsToMatrix===============
+cont:25 | 0| 0| 0| 0
+| 1| 1| 1| 0
+| 1| 0| 1| 0
+| 1| 0| 0| 0
+| 1| 0| 0| 0
+totPosX:13 
+ 
+i= 4 elements= 105
+
+getCharMatrix: (105 : i)
+ 
+=========AddConsToMatrix===============
+cont:20 | 0| 0| 0
+| 0| 1| 0
+| 0| 0| 0
+| 0| 1| 0
+| 0| 1| 0
+totPosX:17 
+ 
+
+Inicio GetFrame
+1)->Fin GetFrame
+|1|0|0|0|1|0|0 
+|1|1|0|1|1|0|1 
+|1|0|1|0|1|0|0 
+|1|0|0|0|1|0|1 
+|1|0|0|0|1|0|1i= 0 elements= 77
+
+getCharMatrix: (77 : M)
+ 
+=========AddConsToMatrix===============
+cont:35 | 1| 0| 0| 0| 1| 0
+| 1| 1| 0| 1| 1| 0
+| 1| 0| 1| 0| 1| 0
+| 1| 0| 0| 0| 1| 0
+| 1| 0| 0| 0| 1| 0
+totPosX:0 
+ 
+i= 1 elements= 97
+
+getCharMatrix: (97 : a)
+ 
+=========AddConsToMatrix===============
+cont:20 | 0| 0| 0
+| 1| 1| 0
+| 0| 1| 0
+| 1| 1| 0
+| 1| 1| 0
+totPosX:6 
+ 
+i= 2 elements= 117
+
+getCharMatrix: (117 : u)
+ 
+=========AddConsToMatrix===============
+cont:25 | 0| 0| 0| 0
+| 1| 0| 1| 0
+| 1| 0| 1| 0
+| 1| 0| 1| 0
+| 1| 1| 1| 0
+totPosX:9 
+ 
+i= 3 elements= 114
+
+getCharMatrix: (114 : r)
+ 
+=========AddConsToMatrix===============
+cont:25 | 0| 0| 0| 0
+| 1| 1| 1| 0
+| 1| 0| 1| 0
+| 1| 0| 0| 0
+| 1| 0| 0| 0
+totPosX:13 
+ 
+i= 4 elements= 105
+
+getCharMatrix: (105 : i)
+ 
+=========AddConsToMatrix===============
+cont:20 | 0| 0| 0
+| 0| 1| 0
+| 0| 0| 0
+| 0| 1| 0
+| 0| 1| 0
+totPosX:17 
+ 
+
+Inicio GetFrame
+1)->Fin GetFrame
+|1|0|0|0|1|0|0 
+|1|1|0|1|1|0|1 
+|1|0|1|0|1|0|0 
+|1|0|0|0|1|0|1 
+|1|0|0|0|1|0|1i= 0 elements= 77
+
+getCharMatrix: (77 : M)
+ 
+=========AddConsToMatrix===============
+cont:35 | 1| 0| 0| 0| 1| 0
+| 1| 1| 0| 1| 1| 0
+| 1| 0| 1| 0| 1| 0
+| 1| 0| 0| 0| 1| 0
+| 1| 0| 0| 0| 1| 0
+totPosX:0 
+ 
+i= 1 elements= 97
+
+getCharMatrix: (97 : a)
+ 
+=========AddConsToMatrix===============
+cont:20 | 0| 0| 0
+| 1| 1| 0
+| 0| 1| 0
+| 1| 1| 0
+| 1| 1| 0
+totPosX:6 
+ 
+i= 2 elements= 117
+
+getCharMatrix: (117 : u)
+ 
+=========AddConsToMatrix===============
+cont:25 | 0| 0| 0| 0
+| 1| 0| 1| 0
+| 1| 0| 1| 0
+| 1| 0| 1| 0
+| 1| 1| 1| 0
+totPosX:9 
+ 
+i= 3 elements= 114
+
+getCharMatrix: (114 : r)
+ 
+=========AddConsToMatrix===============
+cont:25 | 0| 0| 0| 0
+| 1| 1| 1| 0
+| 1| 0| 1| 0
+| 1| 0| 0| 0
+| 1| 0| 0| 0
+totPosX:13 
+ 
+i= 4 elements= 105
+
+getCharMatrix: (105 : i)
+ 
+=========AddConsToMatrix===============
+cont:20 | 0| 0| 0
+| 0| 1| 0
+| 0| 0| 0
+| 0| 1| 0
+cio GetFrame
+1)->Fin GetFrame
+1 
+|1|0|0|0|1|0|1| 0| 1| 0
+totPosX:17 
+ 
+
+Ini
+|1|0|1|0|1|0|0 
+|1|0|0|0|1|0||1|0|0|0|1|0|0 
+|1|1|0|1|1|0|1 i= 0 elements= 77
+
+getCharMatrix: (77 : M)
+ 
+=========AddConsToMatrix===============
+cont:35 | 1| 0| 0| 0| 1| 0
+| 1| 1| 0| 1| 1| 0
+| 1| 0| 1| 0| 1| 0
+| 1| 0| 0| 0| 1| 0
+| 1| 0| 0| 0| 1| 0
+totPosX:0 
+ 
+i= 1 elements= 97
+
+getCharMatrix: (97 : a)
+ 
+=========AddConsToMatrix===============
+cont:20 | 0| 0| 0
+| 1| 1| 0
+| 0| 1| 0
+| 1| 1| 0
+| 1| 1| 0
+totPosX:6 
+ 
+i= 2 elements= 117
+
+getCharMatrix: (117 : u)
+ 
+=========AddConsToMatrix===============
+cont:25 | 0| 0| 0| 0
+| 1| 0| 1| 0
+| 1| 0| 1| 0
+| 1| 0| 1| 0
+| 1| 1| 1| 0
+totPosX:9 
+ 
+i= 3 elements= 114
+
+getCharMatrix: (114 : r)
+ 
+=========AddConsToMatrix===============
+cont:25 | 0| 0| 0| 0
+| 1| 1| 1| 0
+| 1| 0| 1| 0
+| 1| 0| 0| 0
+| 1| 0| 0| 0
+totPosX:13 
+ 
+i= 4 elements= 105
+
+getCharMatrix: (105 : i)
+ 
+=========AddConsToMatrix===============
+cont:20 | 0| 0| 0
+| 0| 1| 0
+| 0| 0| 0
+| 0| 1| 0
+| 0| 1| 0
+totPosX:17 
+ 
+
+Inicio GetFrame
+1)->Fin GetFrame
+|1|0|0|0|1|0|0 
+|1|1|0|1|1|0|1 
+|1|0|1|0|1|0|0 
+|1|0|0|0|1|0|1 
+|1|0|0|0|1|0|1i= 0 elements= 77
+
+getCharMatrix: (77 : M)
+ 
+=========AddConsToMatrix===============
+cont:35 | 1| 0| 0| 0| 1| 0
+| 1| 1| 0| 1| 1| 0
+| 1| 0| 1| 0| 1| 0
+| 1| 0| 0| 0| 1| 0
+| 1| 0| 0| 0| =============
+cont:162 | 0| 162ATENTION =============== ERROR---------------->| 0| 1851ATENTION =============== ERROR----------)
+ 
+=========AddConsToMatrix==------>| 0| 947ATENTION ========6ATENTION =============== ERROR---------------->| 6ATENTION =============== ERROR---------------->| 2971ATENTION ===============1| 0
+totPosX:0 
+ 
+i= 1 elemen ERROR---------------->| 0| 8496======= ERROR---------------->| ts= 97
+
+getCharMatrix: (97 : aATENTION =============== ERROR---------------->| 47ATENTION =============== ERROR---------------->| 12ATENTION =============== ERROR---------------->| 8660ATENTION =============== ERROR---------------->| 30ATENTION =============== ERROR---------------->| -256ATENTION =============== ERROR---------------->| 4096ATENTION =============== ERROR---------------->| 4336ATENTION =============== ERROR---------------->| -512ATENTION =============== ERROR---------------->| 0| 15ATENTION =============== ERROR---------------->| 14339ATENTION =============== ERROR---------------->| 0| 0| 8192ATENTION =============== ERROR---------------->| 1536ATENTION =============== ERROR---------------->| 1807ATENTION =============== ERROR---------------->| 3855ATENTION =============== ERROR---------------->| 15ATENTION =============== ERROR---------------->| 0| 0| 0| 0| 771ATENTION =============== ERROR---------------->| 89ATENTION =============== ERROR---------------->| 0| 0| 0| 0| 48ATENTION =============== ERROR---------------->| 184ATENTION =============== ERROR---------------->| 0| 160ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| 184ATENTION =============== ERROR---------------->| -11264ATENTION =============== ERROR---------------->| -32223ATENTION =============== ERROR---------------->| 0| -24416ATENTION =============== ERROR---------------->| 0| -31355ATENTION =============== ERROR---------------->| 0| 0| 0| 1| 0| 0| 0| -24416ATENTION =============== ERROR---------------->| 0| 135ATENTION =============== ERROR---------------->| 0| 0| 769ATENTION =============== ERROR---------------->| 0| 168ATENTION =============== ERROR---------------->| 0| 0| 0| 0| -24416ATENTION =============== ERROR---------------->| 769ATENTION =============== ERROR---------------->| 0| 215ATENTION =============== ERROR---------------->| 0| 0| 0| 0| -24416ATENTION =============== ERROR---------------->| 769ATENTION =============== ERROR---------------->| 0| 88ATENTION =============== ERROR---------------->| 0| 0| 0| 0| -24416ATENTION =============== ERROR---------------->| 1025ATENTION =============== ERROR---------------->| 26ATENTION =============== ERROR---------------->| 0| 0| -2048ATENTION =============== ERROR---------------->| -2ATENTION =============== ERROR---------------->| 0| -24416ATENTION =============== ERROR---------------->| -18430ATENTION =============== ERROR---------------->| 1542ATENTION =============== ERROR---------------->| 16ATENTION =============== ERROR---------------->| 0| 32ATENTION =============== ERROR---------------->| 1542ATENTION =============== ERROR---------------->| 0| 0| 32ATENTION =============== ERROR---------------->| 6ATENTION =============== ERROR---------------->| 0| 0| -24416ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| 31488ATENTION =============== ERROR---------------->| 0| 3ATENTION =============== ERROR---------------->| 0| 0| 0| -24416ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| 769ATENTION =============== ERROR---------------->| 0| 110ATENTION =============== ERROR---------------->| 0| 0| 0| 0| -24416ATENTION =============== ERROR---------------->| 32ATENTION =============== ERROR---------------->| 1542ATENTION =============== ERROR---------------->| 0| 0| -24416ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->totPosX:6 
+ 
+i= 2 elements= 117
+
+getCharMatrix: (117 : u)
+ 
+=========AddConsToMatrix===============
+cont:162 | 0| 162ATENTION =============== ERROR---------------->| 0| 1851ATENTION =============== ERROR---------------->| 0| 947ATENTION =============== ERROR---------------->| 6ATENTION =============== ERROR---------------->| 6ATENTION =============== ERROR---------------->| 2971ATENTION =============== ERROR---------------->| 0| 8496ATENTION =============== ERROR---------------->| 47ATENTION =============== ERROR---------------->| 12ATENTION =============== ERROR---------------->| 8660ATENTION =============== ERROR---------------->| 30ATENTION =============== ERROR---------------->| -256ATENTION =============== ERROR---------------->| 4096ATENTION =============== ERROR---------------->| 4336ATENTION =============== ERROR---------------->| -512ATENTION =============== ERROR---------------->| 0| 15ATENTION =============== ERROR---------------->| 14339ATENTION =============== ERROR---------------->| 0| 0| 8192ATENTION =============== ERROR---------------->| 1536ATENTION =============== ERROR---------------->| 1807ATENTION =============== ERROR---------------->| 3855ATENTION =============== ERROR---------------->| 15ATENTION =============== ERROR---------------->| 0| 0| 0| 0| 771ATENTION =============== ERROR---------------->| 67ATENTION =============== ERROR---------------->| 0| 0| 0| 0| 48ATENTION =============== ERROR---------------->| 184ATENTION =============== ERROR---------------->| 0| 160ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| 184ATENTION =============== ERROR---------------->| -11264ATENTION =============== ERROR---------------->| -32223ATENTION =============== ERROR---------------->| 0| -24416ATENTION =============== ERROR---------------->| 0| -31355ATENTION =============== ERROR---------------->| 0| 0| 0| 1| 0| 0| 0| -24416ATENTION =============== ERROR---------------->| 0| 135ATENTION =============== ERROR---------------->| 0| 0| 769ATENTION =============== ERROR---------------->| 0| 151ATENTION =============== ERROR---------------->| 0| 0| 0| 0| -24416ATENTION =============== ERROR---------------->| 769ATENTION =============== ERROR---------------->| 0| 23ATENTION =============== ERROR---------------->| 0| 0| 0| 0| -24416ATENTION =============== ERROR---------------->| 769ATENTION =============== ERROR---------------->| 0| 82ATENTION =============== ERROR---------------->| 0| 0| 0| 0| -24416ATENTION =============== ERROR---------------->| 1025ATENTION =============== ERROR---------------->| 144ATENTION =============== ERROR---------------->| 0| 0| -2048ATENTION =============== ERROR---------------->| -2ATENTION =============== ERROR---------------->| 0| -24416ATENTION =============== ERROR---------------->| -18430ATENTION =============== ERROR---------------->| 1542ATENTION =============== ERROR---------------->| 16ATENTION =============== ERROR---------------->| 0| 32ATENTION =============== ERROR---------------->| 1542ATENTION =============== ERROR---------------->| 0| 0| 32ATENTION =============== ERROR---------------->| 6ATENTION =============== ERROR---------------->| 0| 0| -24416ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| 31488ATENTION =============== ERROR---------------->| 0| 3ATENTION =============== ERROR---------------->| 0| 0| 0| -24416ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| 769ATENTION =============== ERROR---------------->| 0| 81ATENTION =============== ERROR---------------->| 0| 0| 0| 0| -24416ATENTION =============== ERROR---------------->| 32ATENTION =============== ERROR---------------->| 1542ATENTION =============== ERROR---------------->| 0| 0| -24416ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->| -18248ATENTION =============== ERROR---------------->totPosX:168 
+ 
+i= 3 elements= 14339
+
+getCharMatrix: (14339 : )
+ 
+=========AddConsToMatrix===============
+cont:0 totPosX:330 
+ 
+i= 4 elements= 0
+
+getCharMatrix: (0 : )
+ 
+=========AddConsToMatrix===============
+cont:0 totPosX:331 
+ 
+
+Inicio GetFrame
+1)->Fin GetFrame
+|0|0|0|0|0 
+|0|1|1|1 
+|-256|-512|0 
+|0|0 
+|0|0|0|0
+Inicio GetFrame
+1)in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1
+in GetFrame
+|0|0|0|0|0 
+|0|1|1
+|-25612
+|0
+|00Inicio GetFrame
+in GetFrame
+|0|0|0|0|0 
+|0|1
