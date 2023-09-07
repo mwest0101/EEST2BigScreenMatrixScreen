@@ -40,7 +40,7 @@ int *aIntCharMatrix;
 void setup()
 {
     #ifdef DEBUG
-        Serial.begin(9600);
+        Serial.begin(115200);
     #else
         debug_init();
     #endif
@@ -89,17 +89,23 @@ void loop()
    
     //dm.ResetInitPosMatrix();
 
-    int elements=0;
+    int onLetterInInt=0;
     for (int i=0;i<dm.getContChars();i++){    
-        elements=aCharsBlock[i];   
+        onLetterInInt=aCharsBlock[i];   
         debug("i=");     
         debuge(i);
-        debug(" elements=");     
-        debugel(elements);
-
-        aIntCharMatrix=getCharMatrix(elements);
+        debug(" onLetterInInt=");     
+        debugel(onLetterInInt);
         
-        matrix=dm.AddConsToMatrix(matrix,aIntCharMatrix, elements);        
+ 		aIntCharMatrix=getCharMatrix(onLetterInInt); 
+        
+        debugl("---------Antes de pasar a AddConstMatrix---------------");
+        debug("aIntCharMatrix=");
+        debugl(aIntCharMatrix[0]);
+
+        
+        
+        matrix=dm.AddConsToMatrix(matrix,aIntCharMatrix, onLetterInInt);        
     }
     
     

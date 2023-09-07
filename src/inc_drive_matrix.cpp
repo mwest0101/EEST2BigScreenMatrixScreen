@@ -29,6 +29,8 @@ int **DriveMatrix::InitDriveMatrix(int **matrix,int cols, int rows)
 
 void DriveMatrix::Print(int **matrix)
 {
+debugl("__________________________________");
+debugl("----------Print Matrix------------");
 
   for (int i = 0; i < matrixRows; i++)
   {
@@ -70,7 +72,8 @@ int **DriveMatrix::AddConsToMatrix(int **matrix,int *aData,int caracter)
   int maxPosX = 0;
   int cont = aData[0];
   infMat[posInfMat]=caracter;
-  debug("cont:");debug(cont);debug(" ");
+  debug("caracter:");debugl(caracter);
+  debug("cont:");debugl(cont);
   for (int i = 0; i < cont; i++) {
     value = aData[i + 1];
 
