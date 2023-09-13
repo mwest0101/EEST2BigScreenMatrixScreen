@@ -88,7 +88,11 @@ int **DriveMatrix::AddConsToMatrix(int **matrix,int *aData,int caracter)
       debug("relPosY:");debug(relPosY);debug(" ");
       debug("relPosX:");debug(relPosX);debug(" ");
       */
-      if(value<0 || value>1) { debug("ATENTION =============== ERROR---------------->");}
+      if(value<0 || value>1) { 
+        debugl("_______________________________________________");
+        debugl("ATENTION =============== ERROR---------------->");
+        }
+
       //debug("value:");debug(value);debug(" (i+1)=");debugl(i+1);
       relPosX++;
     }else{

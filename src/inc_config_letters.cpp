@@ -129,12 +129,12 @@ int *getCharMatrix(int character){
       case (-163):aChar=convProgToArray(C_LET_U,1,(sizeof(C_LET_U)/2));debug("US");break; //'Ú'      
       case (-172):aChar=convProgToArray(C_LET_ENIE,1,(sizeof(C_LET_ENIE)/2));debug("EN");break; //'Ñ'
       default:
- 		debugl("========================================================");
+ 		    debugl("========================================================");
         debugl("==========Error=no encontrado el valor==================");
         debugl(character);
         debugl("========================================================");
         aChar=(int*)calloc((1+1),sizeof(int));
-        aChar[0]=NULL;
+        
   
     
   }

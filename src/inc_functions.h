@@ -4,11 +4,13 @@
  *  Created on: 26 may. 2023
  *      Author: Mauricio West
  */
+//#include "inc_include.h"
  
-#ifndef INC_FUNCTIONS_H_
-#define INC_FUNCTIONS_H_
+#ifndef _INC_FUNCTIONS_H_
+#define _INC_FUNCTIONS_H_
+#include "inc_include.h"
 
-int *convProgToArray(const int *phrase,int starIn,int size);
+VectorClass convProgToArray(const int *phrase, int size);
 
 //Vector<Vector<int>> convProgToMatrix(const int *phrase,size_t size);
 //void printMatrix(Vector<Vector<int>> matriz);
@@ -19,4 +21,4 @@ int **CreateMatrix(int **matrix,int cols, int rows);
 //int **createMatrix(int rows,int cols);
 
 //int selectRandom(long[],int);
-#endif /* INC_FUNCTIONS_H_ */
+#endif /* _INC_FUNCTIONS_H_ */

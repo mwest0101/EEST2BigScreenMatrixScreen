@@ -8,18 +8,27 @@ ShowMatrix::ShowMatrix()
 }
 
 
-void ShowMatrix::InitShowMatrix(int *vaPins, int nFrameElements, MatrizLed vPantalla)
+void::InitShowMatrix(VectorClass vecPins, MatrizLed vPantalla)
 {
   pantalla=vPantalla;
-  aPins=vaPins;
-  nElements=nFrameElements;
-  for (int i = 0; i < nFrameElements; i++)
+  //aPins=vaPins;
+  //nElements=nFrameElements;
+  
+  VectorClass tempVectorLastFrame(35, 0, 10);
+
+  for (int i = 0; i < vecPins.getSize(); i++)
   {
-    pinMode(aPins[i], OUTPUT);
+    pinMode(vecPins.get(i), OUTPUT);
     //debug(vaPins[i]);
   }
   //debugl("");
-  aLastFrame = convProgToArray(C_EMPTY,0, nFrameElements);
+  
+  tempVectorLastFrame = convProgToArray(C_EMPTY, 0, (sizeof(C_EMPTY) / 2));
+  
+  
+  
+  
+  
 }
 
 void ShowMatrix::PrintData(int data){

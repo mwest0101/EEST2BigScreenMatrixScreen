@@ -21,16 +21,18 @@ int posLetDesp = 0;
 int** matrix;
 int pinState = 0;
 MatrizLed pantalla;
-DriveMatrix dm;
-ShowMatrix sm;
+//DriveMatrix dm;
+//ShowMatrix sm;
 String strToShow = "Mauri";
 String lastStrToShow="";
  int *test;
 int contChars=0;
-int *aCharsBlock;
+//int *aCharsBlock;
+VectorClass vecChars(36, 0, 10); 
+VectorClass vecPins(36, 0, 10); 
 
-const int ELEMENT_COUNT_MAX = 30;
-int storage_array[ELEMENT_COUNT_MAX];
+// const int ELEMENT_COUNT_MAX = 30;
+// int storage_array[ELEMENT_COUNT_MAX];
 //Vector<int> vecIntChar(storage_array); //No se puede usar, al usar foreach funciona mal al ejecutarlo varias veces.
 
 
@@ -40,7 +42,7 @@ int *aIntCharMatrix;
 void setup()
 {
     #ifdef DEBUG
-        Serial.begin(115200);
+        Serial.begin(9600);
     #else
         debug_init();
     #endif
@@ -48,19 +50,23 @@ void setup()
     pantalla.begin(12, 11, 10, 2); // dataPin, clkPin, csPin, numero de matrices de 8x8
     pantalla.setIntensidad(1);
 
-    sm = ShowMatrix();
-    dm = DriveMatrix();
-    aCharsBlock=(int*)calloc((300),sizeof(int));
-    for (int i = 0; i < 300; i++) aCharsBlock[i]=0;
+    //sm = ShowMatrix();
+    //dm = DriveMatrix();
+    
+    
 
+    //aCharsBlock=(int*)calloc((300),sizeof(int));
+    //for (int i = 0; i < 300; i++) aCharsBlock[i]=0;
+    /*
     matrix=dm.InitDriveMatrix(matrix,BUILD_MATRIX_WIDTH, BUILD_MATRIX_HEIGHT);
-    dm.Clear(matrix);
+    dm.Clear(matrix);*/
     // dm.CreateMatrix();
     pantalla.borrar();
-    aPins = convProgToArray(C_Pins, 0, (sizeof(C_Pins) / 2));
-    nElements = sizeof(C_Pins) / 2;
+    convProgToArray(C_Pins, (sizeof(C_Pins) / 2));
+    vecPins = convProgToArray(C_Pins, (sizeof(C_Pins) / 2));
+    //nElements = sizeof(C_Pins) / 2;
 
-    sm.InitShowMatrix(aPins, nElements, pantalla);
+    //sm.InitShowMatrix(vecPins, vecPins.getSize(), pantalla);
 
     //aT2 = convProgToArray(C_T2, 0, (sizeof(C_T2) / 2));
 
@@ -78,7 +84,7 @@ void setup()
 void loop()
 {
 
-      
+      /*
     dm.ResetInitPosMatrix();       
     if(lastStrToShow!=strToShow){        
         aCharsBlock=dm.getArrayOfCharsOfString(strToShow);
@@ -105,12 +111,12 @@ void loop()
 
         
         
-        matrix=dm.AddConsToMatrix(matrix,aIntCharMatrix, onLetterInInt);        
+        //matrix=dm.AddConsToMatrix(matrix,aIntCharMatrix, onLetterInInt);        
     }
     
     
     aFrame = dm.GetFrame(matrix);
-    sm.PrintLedMatrix(aFrame);
+    sm.PrintLedMatrix(aFrame);*/
     
     // dm.despIzq();
     // dm.moveMatrixToLeft();
