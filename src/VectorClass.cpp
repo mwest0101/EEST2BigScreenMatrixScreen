@@ -1,4 +1,7 @@
 ﻿#include <Arduino.h>
+#include "inc_include.h"
+#ifndef _VECTOR_CLASS_
+  #define _VECTOR_CLASS_
 
 class VectorClass {
 private:
@@ -6,13 +9,14 @@ private:
   int size;       // Tamaño del vector
   int minRange;   // Valor mínimo permitido
   int maxRange;   // Valor máximo permitido
-
+  int posActual;
 public:
   // Constructor: inicializa el vector y establece los límites
   VectorClass(int size, int minRange, int maxRange) {
     this->size = size;
     this->minRange = minRange;
     this->maxRange = maxRange;
+    this->posActual=0;
     this->data = new int[size];
     for(int i=0; i<size; i++) {
       this->data[i] = 0;
@@ -26,16 +30,21 @@ public:
 
   // Método para establecer un valor en una posición del vector
   void set(int index, int value) {
+        
     if (index >= 0 && index < size) {
       if (value >= minRange && value <= maxRange) {      
         this->data[index] = value;
+        debug("this->data[");
+        debug(index);
+        debug("] = ");
+        debugl(value);
       } else {
-        Serial.print("Out of range, value=");
-        Serial.println(value); 
+        debug("Out of range, value=");
+        debugl(value); 
       }
     } else {
-      Serial.print("Out of Index ");
-      Serial.println(index);
+      debug("Out of Index ");
+      debugl(index);
     }
   }
 
@@ -44,8 +53,8 @@ public:
     if (index >= 0 && index < size) {
       return this->data[index];
     } else {
-      Serial.print("Out of Index ");
-      Serial.println(index);
+      debug("Out of Index ");
+      debugl(index);
     }
     return 0; // O podrías lanzar una excepción o manejar el error de otra manera
   }
@@ -94,7 +103,7 @@ public:
       data = newData;
       size--;
     } else {
-      Serial.println("Vector is empty. Cannot pop.");
+      debugl("Vector is empty. Cannot pop.");
     }
   }
   int getSize() {
@@ -102,9 +111,13 @@ public:
   }
   void print() {
     for(int i = 0; i < size; i++) {
-      Serial.print(data[i]);
-      Serial.print(" ");
+      debug(i);
+      debug("=");
+      debug(data[i]);
+      debug(" |");
     }
-    Serial.println("");
+    debugl("");
   }
 };
+
+#endif //_VECTOR_CLASS_

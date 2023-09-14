@@ -17,7 +17,7 @@ void ShowMatrix::InitShowMatrix(VectorClass vecPins, MatrizLed vPantalla)
   for (int i = 0; i < vecPins.getSize(); i++)
   {
     pinMode(vecPins.get(i), OUTPUT);
-    // debug(vaPins[i]);
+    //debug(vaPins[i]);
   }
   // debugl("");
 

@@ -20,7 +20,7 @@
   #define BUILD_MATRIX_WIDTH 21
   #define BUILD_MATRIX_HEIGHT 5
   #define VECTOR_SIZE 35
-  #define VECTOR_MAX_VALUE 10
+  #define VECTOR_MAX_VALUE 100
   #define VECTOR_MIN_VALUE 0
 
 
@@ -54,7 +54,7 @@
 
 
   
-  static const int PROGMEM C_Pins[]={ 2,7,12,17,22,27,32,
+  static const int PROGMEM C_Pins[]={2,7,12,17,22,27,32,
                                       3,8,13,18,23,28,33,
                                       4,9,14,19,24,29,34,
                                       5,10,15,20,25,30,35,
