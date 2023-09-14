@@ -28,9 +28,9 @@ String lastStrToShow="";
  int *test;
 int contChars=0;
 //int *aCharsBlock;
-VectorClass vecChars(36, 0, 10); 
-VectorClass vecPins(36, 0, 10); 
-
+VectorClass vecChars(VECTOR_SIZE, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE); 
+VectorClass vecPins(VECTOR_SIZE, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
+  
 // const int ELEMENT_COUNT_MAX = 30;
 // int storage_array[ELEMENT_COUNT_MAX];
 //Vector<int> vecIntChar(storage_array); //No se puede usar, al usar foreach funciona mal al ejecutarlo varias veces.
@@ -62,8 +62,9 @@ void setup()
     dm.Clear(matrix);*/
     // dm.CreateMatrix();
     pantalla.borrar();
-    convProgToArray(C_Pins, (sizeof(C_Pins) / 2));
-    vecPins = convProgToArray(C_Pins, (sizeof(C_Pins) / 2));
+    //convProgToArray(vecPins,C_Pins, (sizeof(C_Pins) / 2));
+    vecPins=convProgToArray2(C_Pins, (sizeof(C_Pins) / 2));
+    vecPins.print();
     //nElements = sizeof(C_Pins) / 2;
 
     //sm.InitShowMatrix(vecPins, vecPins.getSize(), pantalla);

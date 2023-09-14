@@ -1,5 +1,6 @@
 
 #include "inc_include.h"  
+
 #ifndef _INC_SHOW_MATRIX_H_
   #define _INC_SHOW_MATRIX_H_
   
@@ -7,7 +8,7 @@
 
   class ShowMatrix {
     private:
-      int pin;
+      static int pin;
       //int posX;
       //int posY;
       //int * aLastFrame;
@@ -20,6 +21,7 @@
       
     public:
       ShowMatrix();
+      
       void InitShowMatrix(VectorClass vecPins, MatrizLed vPantalla);
       void PrintLed(int ledNum,int pintToActive,int ledState);
       void PrintData(int pinNumber);

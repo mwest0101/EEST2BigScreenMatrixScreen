@@ -1,4 +1,4 @@
-//#include "inc_include.h"
+#include "inc_include.h"
 
 #ifndef _INC_CONFIG_LETTERS_H_
 #define _INC_CONFIG_LETTERS_H_
@@ -73,7 +73,7 @@ const PROGMEM int C_LET_ESP[]={O,O,O,EL,O,O,O,EL,O,O,O,EL,O,O,O,EL,O,O,O,EA};
 
 
 int calcNumberOfChar(char numCharacter);
-int *getCharMatrix(int character);
+void getCharMatrix(VectorClass &vecTemp,int character);
 #endif /* _INC_CONFIG_LETTERS_H_ */
 
 

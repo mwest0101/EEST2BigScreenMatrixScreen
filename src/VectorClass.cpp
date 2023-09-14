@@ -1,81 +1,110 @@
-﻿#include "inc_include.h"
-
-
+﻿#include <Arduino.h>
 
 class VectorClass {
+private:
+  int *data;      // Puntero al vector de datos
+  int size;       // Tamaño del vector
+  int minRange;   // Valor mínimo permitido
+  int maxRange;   // Valor máximo permitido
 
-  VectorClass::VectorClass(int capacity, int minRange, int maxRange) {
-    this->capacity = capacity;
+public:
+  // Constructor: inicializa el vector y establece los límites
+  VectorClass(int size, int minRange, int maxRange) {
+    this->size = size;
     this->minRange = minRange;
     this->maxRange = maxRange;
-    this->size = 0; // El vector comienza vacío
-    this->data = new int[capacity];
-    for (int i = 0; i < capacity; i++) {
+    this->data = new int[size];
+    for(int i=0; i<size; i++) {
       this->data[i] = 0;
     }
   }
 
   // Destructor: libera la memoria del vector
-  ~VectorClass::VectorClass() {
+  ~VectorClass() {
     delete[] this->data;
   }
 
-  // Método para agregar un valor al final del vector
-  void VectorClass::pushBack(int value) {
-    if ((this->size < this->capacity) && (value >= this->minRange) && (value <= this->maxRange)) {
-      this->data[this->size] = value;
-      this->size++;
+  // Método para establecer un valor en una posición del vector
+  void set(int index, int value) {
+    if (index >= 0 && index < size) {
+      if (value >= minRange && value <= maxRange) {      
+        this->data[index] = value;
+      } else {
+        Serial.print("Out of range, value=");
+        Serial.println(value); 
+      }
     } else {
-      debug("Unable to push value, out of range or vector is full, value=");
-      debugl(value);
+      Serial.print("Out of Index ");
+      Serial.println(index);
     }
-  }
-
-  // Método para eliminar el último elemento del vector
-  void VectorClass::popBack() {
-    if (this->size > 0) {
-      this->size--;
-    } else {
-      debugl("Vector is empty, cannot pop.");
-    }
-  }
-
-  // Método para obtener el tamaño actual del vector
-  int VectorClass::getSize() {
-    return this->size;
   }
 
   // Método para obtener el valor en una posición del vector
-  int VectorClass::get(int index) {
-    if (index >= 0 && index < this->size) {
+  int get(int index) {
+    if (index >= 0 && index < size) {
       return this->data[index];
     } else {
-      debug("Out of Index ");
-      debugl(index);
+      Serial.print("Out of Index ");
+      Serial.println(index);
     }
     return 0; // O podrías lanzar una excepción o manejar el error de otra manera
   }
-  void VectorClass::set(int index, int value) {
-    if (index >= 0 && index < this->size) {
-      if (value >= this->minRange && value <= this->maxRange) {      
-        this->data[index] = (int)value;
-      }else{
-       debug("Out of range ,value=");
-       debugl(value); 
+
+  // Método para agregar un valor al final del vector (push)
+  void push(int value) {
+    if (size >= 1) {
+      // Crear un nuevo arreglo con un tamaño mayor
+      int *newData = new int[size + 1];
+      
+      // Copiar los datos actuales al nuevo arreglo
+      for (int i = 0; i < size; i++) {
+        newData[i] = data[i];
       }
-    }else{
-       debug("Out of Index ");
-       debugl(index);
+      
+      // Agregar el nuevo valor al final del nuevo arreglo
+      newData[size] = value;
+      
+      // Liberar la memoria del arreglo antiguo
+      delete[] data;
+      
+      // Actualizar el puntero y el tamaño
+      data = newData;
+      size++;
+    } else {
+      // Si el tamaño actual es 0, simplemente establece el valor en la posición 0
+      set(0, value);
     }
   }
-  void VectorClass::print() {
-    for (int i = 0; i < this->size; i++) {
-      debug(this->data[i]);
-      debug(" ");
+
+  // Método para eliminar el último valor del vector (pop)
+  void pop() {
+    if (size > 0) {
+      // Crear un nuevo arreglo con un tamaño menor
+      int *newData = new int[size - 1];
+      
+      // Copiar los datos actuales excepto el último al nuevo arreglo
+      for (int i = 0; i < size - 1; i++) {
+        newData[i] = data[i];
+      }
+      
+      // Liberar la memoria del arreglo antiguo
+      delete[] data;
+      
+      // Actualizar el puntero y el tamaño
+      data = newData;
+      size--;
+    } else {
+      Serial.println("Vector is empty. Cannot pop.");
     }
-    debugl("");
+  }
+  int getSize() {
+    return size;
+  }
+  void print() {
+    for(int i = 0; i < size; i++) {
+      Serial.print(data[i]);
+      Serial.print(" ");
+    }
+    Serial.println("");
   }
 };
-
-
-  
