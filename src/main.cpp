@@ -20,7 +20,9 @@ int posLetDesp = 0;
 // int * aFrame;
 int** matrix;
 int pinState = 0;
-MatrizLed pantalla;
+#ifdef IS_LCDSCREEN
+    MatrizLed pantalla;
+#endif
 //DriveMatrix dm;
 //ShowMatrix sm;
 String strToShow = "Mauri";
@@ -47,8 +49,10 @@ void setup()
         debug_init();
     #endif
 
-    pantalla.begin(12, 11, 10, 2); // dataPin, clkPin, csPin, numero de matrices de 8x8
-    pantalla.setIntensidad(1);
+    #ifdef IS_LCDSCREEN
+        pantalla.begin(12, 11, 10, 2); // dataPin, clkPin, csPin, numero de matrices de 8x8
+        pantalla.setIntensidad(1);
+    #endif
 
     //sm = ShowMatrix();
     //dm = DriveMatrix();
@@ -61,7 +65,9 @@ void setup()
     matrix=dm.InitDriveMatrix(matrix,BUILD_MATRIX_WIDTH, BUILD_MATRIX_HEIGHT);
     dm.Clear(matrix);*/
     // dm.CreateMatrix();
-    pantalla.borrar();
+    #ifdef IS_LCDSCREEN
+        pantalla.borrar();
+    #endif
     //convProgToArray(vecPins,C_Pins, (sizeof(C_Pins) / 2));
     vecPins=convProgToArray2(C_Pins, (sizeof(C_Pins) / 2));
     vecPins.print();

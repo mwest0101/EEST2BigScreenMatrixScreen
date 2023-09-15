@@ -12,9 +12,12 @@
   #define I               C_PIN_ENABLED
   #define EA              C_END_ARR
   #define EL              C_END_LIN
+  
   #define DEBUG           true
   #define DEBUG_MATRIX    true
-  #define IS_BIGSCREEN    false
+  //#define IS_LCDSCREEN    true
+  #define IS_BIGSCREEN    true
+
   #define MATRIX_WIDTH 7
   #define MATRIX_HEIGHT 5
   #define BUILD_MATRIX_WIDTH 21

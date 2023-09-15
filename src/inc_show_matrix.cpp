@@ -5,10 +5,14 @@ ShowMatrix::ShowMatrix()
 {
   debugl("");
 }
-
-void ShowMatrix::InitShowMatrix(VectorClass vecPins, MatrizLed vPantalla)
+#ifdef IS_LCDSCREEN
+  void ShowMatrix::setPantalla(MatrizLed vPantalla){
+    pantalla = vPantalla;
+  }
+#endif
+void ShowMatrix::InitShowMatrix(VectorClass vecPins)
 {
-  pantalla = vPantalla;
+  
   // aPins=vaPins;
   // nElements=nFrameElements;
 
@@ -32,19 +36,22 @@ void ShowMatrix::PrintData(int data)
 
 void ShowMatrix::PrintLed(int ledNum, int pintToActive, int ledState)
 {
-  int posX = 0;
-  int posY = 0;
-  posX = (int)(ledNum / 7);
-  posY = (int)(ledNum % 7);
-
+  #ifdef IS_LCDSCREEN
+    int posX = 0;
+    int posY = 0;
+    posX = (int)(ledNum / 7);
+    posY = (int)(ledNum % 7);
+  #endif
   if (IS_BIGSCREEN)
   {
     digitalWrite(pintToActive, ledState);
   }
+  #ifdef IS_LCDSCREEN
   else
   {
     pantalla.setLed(0, posX, posY, ledState);
   }
+  #endif
 }
 
 void ShowMatrix::PrintLedMatrix(int *vlFrame)

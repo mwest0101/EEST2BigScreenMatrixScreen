@@ -1,10 +1,13 @@
 #ifndef INC_INCLUDES_H_
 #define INC_INCLUDES_H_
   #include <Arduino.h>
+  #include "inc_config.h"
   #include <stdlib.h>
   #include <stdio.h>
   #include <avr/pgmspace.h>
-  #include <MatrizLed.h>
+  #ifdef IS_LCDSCREEN
+    #include <MatrizLed.h>
+  #endif
   
   //#include <LibPrintf.h>
   #ifndef DEBUG
@@ -12,7 +15,7 @@
     #include "app_api.h"
   #endif
  
-  #include "inc_config.h"
+  
   #include "inc_config_pacman.h"
    
   #include "VectorClass.cpp"
