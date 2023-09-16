@@ -31,7 +31,7 @@ String lastStrToShow="";
 int contChars=0;
 //int *aCharsBlock;
 //VectorClass vecChars(VECTOR_SIZE, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE); 
-VectorClass vecPins(VECTOR_SIZE, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
+//VectorClass vecPins(VECTOR_SIZE, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 //VectorClass vecChars(VECTOR_SIZE, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE); 
 // const int ELEMENT_COUNT_MAX = 30;
 // int storage_array[ELEMENT_COUNT_MAX];
@@ -69,7 +69,7 @@ void setup()
         pantalla.borrar();
     #endif
     //convProgToArray(vecPins,C_Pins, (sizeof(C_Pins) / 2));
-     vecPins=convProgToArray2(C_Pins, (sizeof(C_Pins) / 2));
+     VectorClass vecPins=convProgToArray2(C_Pins, (sizeof(C_Pins) / 2));
      vecPins.print();
 
     //convProgToArray2(C_Pins, (sizeof(C_Pins) / 2));

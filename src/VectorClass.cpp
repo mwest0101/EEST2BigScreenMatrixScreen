@@ -14,6 +14,17 @@ public:
   int *data;      // Puntero al vector de datos
 
   // Constructor: inicializa el vector y establece los límites
+   //VectorClass() : data(nullptr), size(0) {}
+
+    // Constructor de copia
+  VectorClass(const VectorClass& other) : size(other.size) {
+        // Realizar una copia profunda de los datos
+        data = new int[size];
+        for (int i = 0; i < size; i++) {
+            data[i] = other.data[i];
+        }
+    }
+
   VectorClass(int size, int minRange, int maxRange) {
     this->size = size;
     this->minRange = minRange;
