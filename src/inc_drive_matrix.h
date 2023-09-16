@@ -40,7 +40,7 @@
       //void moveMatrixToLeft();
       int **moveMatrixToLeft(int **matrix);
       int getMovMat();
-      int *getArrayOfCharsOfString(String strData);
+      VectorClass getArrayOfCharsOfString(String strData);
       int getContChars();
       //int getValueFromChar(int number);
       

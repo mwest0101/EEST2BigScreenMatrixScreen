@@ -163,13 +163,17 @@ int **DriveMatrix::moveMatrixToLeft(int **matrix){
 int DriveMatrix::getMovMat(){
   return movMat;
 }
-int *DriveMatrix::getArrayOfCharsOfString(String strData){    
+VectorClass DriveMatrix::getArrayOfCharsOfString(String strData){   
+  VectorClass vecTemp(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);  
   int numOfcharacter = 0;
   contChars=0;
-  for (unsigned int i = 0; i < strData.length(); i++) { 
-    if (calcNumberOfChar(strData[i])!=0) contChars++;                      
+  for (unsigned int i = 0; i < strData.length(); i++) {
+    numOfcharacter=calcNumberOfChar(strData[i]);
+    if (numOfcharacter!=0){
+      vecTemp.push(numOfcharacter);
+    }                      
   }   
-  
+  /*
   int *aCharsBlock = (int *)calloc((contChars), sizeof(int));
  
   contChars=0;
@@ -188,9 +192,9 @@ int *DriveMatrix::getArrayOfCharsOfString(String strData){
       aCharsBlock[contChars]=numOfcharacter;
       debuge(aCharsBlock[contChars]);debugel(" ] ");  
       contChars++;                  
-    }            
+    }          
     
-  }
+    
    for (int i = 0; i < contChars; i++) {                
     debug3l("i=");
     debuge(i);
@@ -199,8 +203,8 @@ int *DriveMatrix::getArrayOfCharsOfString(String strData){
     debuge("]=");
     debugl(aCharsBlock[i]);
    }
-
-  return aCharsBlock;
+  */
+  return vecTemp;
 }
 
 int DriveMatrix::getContChars(){

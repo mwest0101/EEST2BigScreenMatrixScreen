@@ -23,9 +23,9 @@ int pinState = 0;
 #ifdef IS_LCDSCREEN
     MatrizLed pantalla;
 #endif
-//DriveMatrix dm;
-//ShowMatrix sm;
-String strToShow = "Mauri";
+DriveMatrix dm;
+ShowMatrix sm;
+String strToShow = "Mauricio West";
 String lastStrToShow="";
  int *test;
 int contChars=0;
@@ -54,8 +54,8 @@ void setup()
         pantalla.setIntensidad(1);
     #endif
 
-    //sm = ShowMatrix();
-    //dm = DriveMatrix();
+    sm = ShowMatrix();
+    dm = DriveMatrix();
     
     
 
@@ -95,17 +95,18 @@ void setup()
 void loop()
 {
 
-      /*
+      
     dm.ResetInitPosMatrix();       
     if(lastStrToShow!=strToShow){        
-        aCharsBlock=dm.getArrayOfCharsOfString(strToShow);
-        lastStrToShow=strToShow;
+        VectorClass vecChar=dm.getArrayOfCharsOfString(strToShow);
+        vecChar.print();
+        //lastStrToShow=strToShow;
     }
 
     
    
     //dm.ResetInitPosMatrix();
-
+        /*
     int onLetterInInt=0;
     for (int i=0;i<dm.getContChars();i++){    
         onLetterInInt=aCharsBlock[i];   
@@ -127,11 +128,11 @@ void loop()
     
     
     aFrame = dm.GetFrame(matrix);
-    sm.PrintLedMatrix(aFrame);*/
+    sm.PrintLedMatrix(aFrame);
     
     // dm.despIzq();
     // dm.moveMatrixToLeft();
-    
+    */
 
     /*
     matriz=convProgToMatrix(C_LET_A,(sizeof(C_LET_A)/2));
