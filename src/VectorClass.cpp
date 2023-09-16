@@ -5,21 +5,26 @@
 
 class VectorClass {
 private:
-  int *data;      // Puntero al vector de datos
-  int size;       // Tamaño del vector
+   int size;       // Tamaño del vector
   int minRange;   // Valor mínimo permitido
   int maxRange;   // Valor máximo permitido
   int posActual;
+  int sizeFixed;
 public:
+  int *data;      // Puntero al vector de datos
+
   // Constructor: inicializa el vector y establece los límites
   VectorClass(int size, int minRange, int maxRange) {
     this->size = size;
     this->minRange = minRange;
     this->maxRange = maxRange;
     this->posActual=0;
+    this->sizeFixed = size;
     this->data = new int[size];
+    debug("Size=");
+    debugl(size);
     for(int i=0; i<size; i++) {
-      this->data[i] = 0;
+      this->data[i] = 100+i;
     }
   }
 
@@ -31,21 +36,23 @@ public:
   // Método para establecer un valor en una posición del vector
   void set(int index, int value) {
         
-    if (index >= 0 && index < size) {
-      if (value >= minRange && value <= maxRange) {      
+    /*if (index >= 0 && index < size) {
+      if (value >= minRange && value <= maxRange) {      */
         this->data[index] = value;
         debug("this->data[");
         debug(index);
         debug("] = ");
-        debugl(value);
-      } else {
+        debug(value);
+        debug(" data[index]=");
+        debugl(data[index]);
+      /*} else {
         debug("Out of range, value=");
         debugl(value); 
       }
     } else {
       debug("Out of Index ");
       debugl(index);
-    }
+    }*/
   }
 
   // Método para obtener el valor en una posición del vector
@@ -92,7 +99,7 @@ public:
       int *newData = new int[size - 1];
       
       // Copiar los datos actuales excepto el último al nuevo arreglo
-      for (int i = 0; i < size - 1; i++) {
+      for (int i = 0; i < size; i++) {
         newData[i] = data[i];
       }
       

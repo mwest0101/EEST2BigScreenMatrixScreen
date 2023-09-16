@@ -21,7 +21,7 @@ void convProgToArray(VectorClass &vecTemp,const int *phrase, int size){
  
 VectorClass convProgToArray2(const int *phrase, int size){
   //int* arrayReturn;
-  VectorClass vecTemp(36, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);   
+  VectorClass vecTemp(VECTOR_SIZE, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);   
   //arrayReturn=(int*)calloc((size+starIn),sizeof(int));
   //arrayReturn[0]=size;
   int element=0;
@@ -34,6 +34,7 @@ VectorClass convProgToArray2(const int *phrase, int size){
       vecTemp.set(i,element);
       //arrayReturn[i+starIn]=pgm_read_word(phrase+i); //uint16_t
   }
+  vecTemp.print();
   return vecTemp;
   //return vecTemp;
 }
@@ -44,8 +45,8 @@ void printMatrix(int *vMatrix){
   
   int tam=vMatrix[0];
   for (int i=0;i<tam; i++){
-      if(vMatrix[i+1]!=EL && vMatrix[i+1]!=EA){      
-        debug3l(vMatrix[i+1]);
+      if(vMatrix[i]!=EL && vMatrix[i]!=EA){      
+        debug3l(vMatrix[i]);
       }else{
         debugl("");
       }
