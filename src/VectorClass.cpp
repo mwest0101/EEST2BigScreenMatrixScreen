@@ -5,7 +5,7 @@
 
 class VectorClass {
 private:
-   int size;       // Tamaño del vector
+  int size;       // Tamaño del vector
   int minRange;   // Valor mínimo permitido
   int maxRange;   // Valor máximo permitido
   int posActual;

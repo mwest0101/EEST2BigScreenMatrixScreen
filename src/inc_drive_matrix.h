@@ -24,6 +24,8 @@
        int numOfcharacter = 0;
        //int *aCharsBlock;
       int contChars=0;
+      unsigned long codSumTot=0;
+      
        
     public:        
       DriveMatrix();
@@ -42,6 +44,8 @@
       int getMovMat();
       VectorClass getArrayOfCharsOfString(String strData);
       int getContChars();
+      unsigned long getCodSumTo();
+      
       //int getValueFromChar(int number);
       
   };
