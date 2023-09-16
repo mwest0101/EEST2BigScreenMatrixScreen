@@ -35,7 +35,7 @@ public:
     debug("Size=");
     debugl(size);
     for(int i=0; i<size; i++) {
-      this->data[i] = 100+i;
+      this->data[i] = 0;
     }
   }
 
@@ -47,8 +47,8 @@ public:
   // Método para establecer un valor en una posición del vector
   void set(int index, int value) {
         
-    /*if (index >= 0 && index < size) {
-      if (value >= minRange && value <= maxRange) {      */
+    if (index >= 0 && index < size) {
+      if (value >= minRange && value <= maxRange) {      
         this->data[index] = value;
         debug("this->data[");
         debug(index);
@@ -56,14 +56,14 @@ public:
         debug(value);
         debug(" data[index]=");
         debugl(data[index]);
-      /*} else {
+      } else {
         debug("Out of range, value=");
         debugl(value); 
       }
     } else {
       debug("Out of Index ");
       debugl(index);
-    }*/
+    }
   }
 
   // Método para obtener el valor en una posición del vector
@@ -79,7 +79,7 @@ public:
 
   // Método para agregar un valor al final del vector (push)
   void push(int value) {
-    if (size >= 1) {
+    if (size >= 0) {
       // Crear un nuevo arreglo con un tamaño mayor
       int *newData = new int[size + 1];
       

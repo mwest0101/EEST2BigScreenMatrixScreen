@@ -130,11 +130,11 @@ int calcNumberOfChar(char caracter){
         debugl(character);
         debugl("========================================================");
         
-        
+    }   
     return vecTemp;
     
-  }
-  debugl(")");
+  
+  
   //if(aChar[0]>35){
         /*debugl("================================================================");
         debugl("====getCharMatrix====Valor de cont en achar[0] exede el maximo==");
