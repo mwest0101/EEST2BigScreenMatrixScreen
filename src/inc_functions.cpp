@@ -3,25 +3,10 @@
 //#include "VectorClass.cpp"
 
 
- 
-void convProgToArray(VectorClass &vecTemp,const int *phrase, int size){
+
+VectorClass convProgToArray(const int *phrase, int size){
   //int* arrayReturn;
-  
-  //arrayReturn=(int*)calloc((size+starIn),sizeof(int));
-  //arrayReturn[0]=size;
-  for (int i=0; i < size; i++){
-      //vecTemp.push(((int)pgm_read_word(phrase+i)));
-      vecTemp.set(i,((int)pgm_read_word(phrase+i)));
-      
-      //arrayReturn[i+starIn]=pgm_read_word(phrase+i); //uint16_t
-  }
-  
-  //return vecTemp;
-}
- 
-VectorClass convProgToArray2(const int *phrase, int size){
-  //int* arrayReturn;
-  VectorClass vecTemp(VECTOR_SIZE, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);   
+  VectorClass vecTemp(1, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);   
   //arrayReturn=(int*)calloc((size+starIn),sizeof(int));
   //arrayReturn[0]=size;
   int element=0;

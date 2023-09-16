@@ -69,7 +69,7 @@ void setup()
         pantalla.borrar();
     #endif
     //convProgToArray(vecPins,C_Pins, (sizeof(C_Pins) / 2));
-     VectorClass vecPins=convProgToArray2(C_Pins, (sizeof(C_Pins) / 2));
+     VectorClass vecPins=convProgToArray(C_Pins, (sizeof(C_Pins) / 2));
      vecPins.print();
 
     //convProgToArray2(C_Pins, (sizeof(C_Pins) / 2));

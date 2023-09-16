@@ -10,8 +10,8 @@
 #define _INC_FUNCTIONS_H_
 
 
-void convProgToArray(VectorClass &vecTemp,const int *phrase, int size);
-VectorClass convProgToArray2(const int *phrase, int size);
+
+VectorClass convProgToArray(const int *phrase, int size);
 //Vector<Vector<int>> convProgToMatrix(const int *phrase,size_t size);
 //void printMatrix(Vector<Vector<int>> matriz);
 

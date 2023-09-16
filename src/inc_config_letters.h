@@ -73,7 +73,7 @@ const PROGMEM int C_LET_ESP[]={O,O,O,EL,O,O,O,EL,O,O,O,EL,O,O,O,EL,O,O,O,EA};
 
 
 int calcNumberOfChar(char numCharacter);
-void getCharMatrix(VectorClass &vecTemp,int character);
+VectorClass getCharMatrix(int character);
 #endif /* _INC_CONFIG_LETTERS_H_ */
 
 
