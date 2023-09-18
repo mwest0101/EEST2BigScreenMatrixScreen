@@ -1,8 +1,6 @@
 
+#include <Arduino.h>
 #include "inc_include.h"
-//#include "VectorClass.cpp"
-
-
 
 VectorClass convProgToArray(const int *phrase, int size){
   //int* arrayReturn;
@@ -19,12 +17,12 @@ VectorClass convProgToArray(const int *phrase, int size){
       debug(element);
       debug(" ");
       //vecTemp.set(i,element);
-      vecTemp.push(element);
+      /* vecTemp.push(element); */
       //vecTemp.push(((int)pgm_read_word(phrase+i)));
       //arrayReturn[i+starIn]=pgm_read_word(phrase+i); //uint16_t
   }
   debugl(" ");
-  vecTemp.print();
+  /* vecTemp.print(); */
   return vecTemp;
   //return vecTemp;
 }

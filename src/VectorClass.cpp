@@ -1,19 +1,21 @@
-﻿#include <Arduino.h>
+
+#include <Arduino.h>
 #include "inc_include.h"
+
 #ifndef _VECTOR_CLASS_
   #define _VECTOR_CLASS_
 
 class VectorClass {
 private:
-  int size;       // Tamaño del vector
-  int minRange;   // Valor mínimo permitido
-  int maxRange;   // Valor máximo permitido
+  int size;       // Tama�o del vector
+  int minRange;   // Valor m�nimo permitido
+  int maxRange;   // Valor m�ximo permitido
   int posActual;
   int sizeFixed;
 public:
   int *data;      // Puntero al vector de datos
 
-  // Constructor: inicializa el vector y establece los límites
+  // Constructor: inicializa el vector y establece los l�mites
    //VectorClass() : data(nullptr), size(0) {}
 
     // Constructor de copia
@@ -44,7 +46,7 @@ public:
     delete[] this->data;
   }
 
-  // Método para establecer un valor en una posición del vector
+  // M�todo para establecer un valor en una posici�n del vector
   void set(int index, int value) {
         
     if (index >= 0 && index < size) {
@@ -66,7 +68,7 @@ public:
     }
   }
 
-  // Método para obtener el valor en una posición del vector
+  // M�todo para obtener el valor en una posici�n del vector
   int get(int index) {
     if (index >= 0 && index < size) {
       return this->data[index];
@@ -74,13 +76,13 @@ public:
       debug("Out of Index ");
       debugl(index);
     }
-    return 0; // O podrías lanzar una excepción o manejar el error de otra manera
+    return 0; // O podr�as lanzar una excepci�n o manejar el error de otra manera
   }
 
-  // Método para agregar un valor al final del vector (push)
+  // M�todo para agregar un valor al final del vector (push)
   void push(int value) {
     if (size >= 0) {
-      // Crear un nuevo arreglo con un tamaño mayor
+      // Crear un nuevo arreglo con un tama�o mayor
       int *newData = new int[size + 1];
       
       // Copiar los datos actuales al nuevo arreglo
@@ -94,22 +96,22 @@ public:
       // Liberar la memoria del arreglo antiguo
       delete[] data;
       
-      // Actualizar el puntero y el tamaño
+      // Actualizar el puntero y el tama�o
       data = newData;
       size++;
     } else {
-      // Si el tamaño actual es 0, simplemente establece el valor en la posición 0
+      // Si el tama�o actual es 0, simplemente establece el valor en la posici�n 0
       set(0, value);
     }
   }
 
-  // Método para eliminar el último valor del vector (pop)
+  // M�todo para eliminar el �ltimo valor del vector (pop)
   void pop() {
     if (size > 0) {
-      // Crear un nuevo arreglo con un tamaño menor
+      // Crear un nuevo arreglo con un tama�o menor
       int *newData = new int[size - 1];
       
-      // Copiar los datos actuales excepto el último al nuevo arreglo
+      // Copiar los datos actuales excepto el �ltimo al nuevo arreglo
       for (int i = 0; i < size; i++) {
         newData[i] = data[i];
       }
@@ -117,7 +119,7 @@ public:
       // Liberar la memoria del arreglo antiguo
       delete[] data;
       
-      // Actualizar el puntero y el tamaño
+      // Actualizar el puntero y el tama�o
       data = newData;
       size--;
     } else {

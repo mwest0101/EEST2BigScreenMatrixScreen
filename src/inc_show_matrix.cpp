@@ -1,5 +1,6 @@
-﻿#include "inc_include.h"
-// #include "inc_show_matrix.h"
+
+#include <Arduino.h>
+#include "inc_include.h"
 
 ShowMatrix::ShowMatrix()
 {
@@ -36,12 +37,14 @@ void ShowMatrix::PrintData(int data)
 
 void ShowMatrix::PrintLed(int ledNum, int pintToActive, int ledState)
 {
+  
   #ifdef IS_LCDSCREEN
     int posX = 0;
     int posY = 0;
     posX = (int)(ledNum / 7);
     posY = (int)(ledNum % 7);
   #endif
+    
   if (IS_BIGSCREEN)
   {
     digitalWrite(pintToActive, ledState);

@@ -1,4 +1,4 @@
-﻿
+﻿#include <Arduino.h>
 #include "inc_include.h"
 
 int *aPins;
@@ -31,7 +31,7 @@ int oldCodSumTo = 0;
 int contChars = 0;
 
 VectorClass vecChar(1, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
-VectorClass aIntCharMatrix(1, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
+//VectorClass aIntCharMatrix(1, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 // VectorClass vecChar(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 // int *aCharsBlock;
 // VectorClass vecChars(VECTOR_SIZE, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
@@ -98,6 +98,7 @@ void loop()
     /*
     if (lastStrToShow != strToShow)
     {*/
+        VectorClass aIntCharMatrix(1, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
         VectorClass vecChar = dm.getArrayOfCharsOfString(strToShow);
         vecChar.print();
 
@@ -111,7 +112,7 @@ void loop()
             debug(" vecChar.get(i)=");
             debugel(vecChar.get(i));
             
-            VectorClass aIntCharMatrix=getCharMatrix(vecChar.get(i));
+            aIntCharMatrix=getCharMatrix(vecChar.get(i));
 
             debugl("---------Antes de pasar a AddConstMatrix---------------");
             //debug("aIntCharMatrix=");

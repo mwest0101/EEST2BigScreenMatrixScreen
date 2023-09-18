@@ -1,4 +1,4 @@
-﻿#include "inc_include.h"
+//#include "inc_include.h"
 
 #ifndef INC_CONFIG_TETRIS_H
 #define INC_CONFIG_TETRIS_H 

@@ -1,10 +1,3 @@
-﻿/*conProgToArray
- * inc_functions.h
- *
- *  Created on: 26 may. 2023
- *      Author: Mauricio West
- */
-#include "inc_include.h"
 
 #ifndef _INC_FUNCTIONS_H_
 #define _INC_FUNCTIONS_H_

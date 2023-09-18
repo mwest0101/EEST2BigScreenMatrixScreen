@@ -1,5 +1,4 @@
-﻿#include <Arduino.h>
-
+#include <Arduino.h>
 class MatrixClass {
 private:
   int **matrix;
@@ -44,7 +43,7 @@ public:
   }
 
   int get(int fila, int columna) {
-    // Obtener el valor de la matrix en una posición específica
+    // Obtener el valor de la matrix en una posici�n espec�fica
     if (fila >= 0 && fila < this->row && columna >= 0 && columna < this->column) {
       return matrix[fila][columna];
     } else {
@@ -58,7 +57,7 @@ public:
   }
 
   void set(int fila, int columna, int valor) {
-    // Establecer el valor de la matrix en una posición específica
+    // Establecer el valor de la matrix en una posici�n espec�fica
     if (fila >= 0 && fila < this->row && columna >= 0 && columna < this->column) {
       //matrix[fila][columna] = constrain(valor, minValue, maxValue);
       if (valor >= minValue && valor <= this->maxValue) {

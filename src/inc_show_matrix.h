@@ -1,5 +1,3 @@
-﻿
-#include "inc_include.h"  
 
 #ifndef _INC_SHOW_MATRIX_H_
   #define _INC_SHOW_MATRIX_H_

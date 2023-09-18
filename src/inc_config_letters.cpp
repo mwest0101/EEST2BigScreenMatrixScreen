@@ -1,4 +1,6 @@
-﻿#include "inc_include.h"
+
+#include <Arduino.h>
+#include "inc_include.h"
 
 #ifndef _INC_CONFIG_LETTERS_CPP_
 #define _INC_CONFIG_LETTERS_CPP_
@@ -6,7 +8,7 @@
 int calcNumberOfChar(char caracter){
     int charVal=0;
     int valRet=0;
-    int valorCaracter = (int)caracter;  // Convertir el carácter a su valor numérico
+    int valorCaracter = (int)caracter;  // Convertir el car�cter a su valor num�rico
 
     if (valorCaracter==-61){
         charVal=valorCaracter;
@@ -113,18 +115,18 @@ int calcNumberOfChar(char caracter){
       case 120:    vecTemp=convProgToArray(C_LET_x,(sizeof(C_LET_x)/2));debug("Letter=w");break; //'w'
       case 121:    vecTemp=convProgToArray(C_LET_y,(sizeof(C_LET_y)/2));debug("Letter=y");break; //'y'
       case 122:    vecTemp=convProgToArray(C_LET_z,(sizeof(C_LET_z)/2));debug("Letter=z");break; //'z'
-      case (-156): vecTemp=convProgToArray(C_LET_a,(sizeof(C_LET_a)/2));debug("Letter=as");break; //'á'
-      case (-148): vecTemp=convProgToArray(C_LET_e,(sizeof(C_LET_e)/2));debug("Letter=es");break; //'é'
-      case (-144): vecTemp=convProgToArray(C_LET_i,(sizeof(C_LET_i)/2));debug("Letter=is");break; //'í'
-      case (-138): vecTemp=convProgToArray(C_LET_o,(sizeof(C_LET_o)/2));debug("Letter=os");break; //'ó'
-      case (-131): vecTemp=convProgToArray(C_LET_u,(sizeof(C_LET_u)/2));debug("Letter=us");break; //'ú'
-      case (-140): vecTemp=convProgToArray(C_LET_enie,(sizeof(C_LET_enie)/2));debug("Letter=en");break; //'ñ'
-      case (-188): vecTemp=convProgToArray(C_LET_A,(sizeof(C_LET_A)/2));debug("Letter=AS");break; //'Á'
-      case (-180): vecTemp=convProgToArray(C_LET_E,(sizeof(C_LET_E)/2));debug("Letter=ES");break; //'É'
-      case (-176): vecTemp=convProgToArray(C_LET_I,(sizeof(C_LET_I)/2));debug("Letter=IS");break; //'Í'
-      case (-170): vecTemp=convProgToArray(C_LET_O,(sizeof(C_LET_O)/2));debug("Letter=OS");break; //'Ó'
-      case (-163): vecTemp=convProgToArray(C_LET_U,(sizeof(C_LET_U)/2));debug("Letter=US");break; //'Ú'
-      case (-172): vecTemp=convProgToArray(C_LET_ENIE,(sizeof(C_LET_ENIE)/2));debug("Letter=EN");break; //'Ñ'
+      case (-156): vecTemp=convProgToArray(C_LET_a,(sizeof(C_LET_a)/2));debug("Letter=as");break; //'�'
+      case (-148): vecTemp=convProgToArray(C_LET_e,(sizeof(C_LET_e)/2));debug("Letter=es");break; //'�'
+      case (-144): vecTemp=convProgToArray(C_LET_i,(sizeof(C_LET_i)/2));debug("Letter=is");break; //'�'
+      case (-138): vecTemp=convProgToArray(C_LET_o,(sizeof(C_LET_o)/2));debug("Letter=os");break; //'�'
+      case (-131): vecTemp=convProgToArray(C_LET_u,(sizeof(C_LET_u)/2));debug("Letter=us");break; //'�'
+      case (-140): vecTemp=convProgToArray(C_LET_enie,(sizeof(C_LET_enie)/2));debug("Letter=en");break; //'�'
+      case (-188): vecTemp=convProgToArray(C_LET_A,(sizeof(C_LET_A)/2));debug("Letter=AS");break; //'�'
+      case (-180): vecTemp=convProgToArray(C_LET_E,(sizeof(C_LET_E)/2));debug("Letter=ES");break; //'�'
+      case (-176): vecTemp=convProgToArray(C_LET_I,(sizeof(C_LET_I)/2));debug("Letter=IS");break; //'�'
+      case (-170): vecTemp=convProgToArray(C_LET_O,(sizeof(C_LET_O)/2));debug("Letter=OS");break; //'�'
+      case (-163): vecTemp=convProgToArray(C_LET_U,(sizeof(C_LET_U)/2));debug("Letter=US");break; //'�'
+      case (-172): vecTemp=convProgToArray(C_LET_ENIE,(sizeof(C_LET_ENIE)/2));debug("Letter=EN");break; //'�'
       default:
  		    debugl("========================================================");
         debugl("==========Error=no encontrado el valor==================");
@@ -156,6 +158,6 @@ M 77 - N 78 - O 79 - P 80 - Q 81 - R 82 - S 83 - T 84 - U 85 - V 86 - W 87 - X 8
 Y 89 - Z 90 - esp 32
 1 49 - 2 50 - 3 51 - 4 52 - 5 53 - 6 54 - 7 55 - 8 56 - 9 57 - 0 48 -
 
-� -156 - � -148 - � -144 - � -138 - � -131 - � -188 - � -180 - � -176 - � -170 - � -163 - � -140 - � -172
-á         é         í         ó        ú         Á         É         Í         Ó        Ú         ñ         Ñ
+-156 - -148 - -144 - -138 --131 - -188 - -180 - -176 - -170 - -163 - -140 - -172
+�         �         �         �        �         �         �         �         �        �         �         �
 */
