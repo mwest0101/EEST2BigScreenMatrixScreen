@@ -1,4 +1,4 @@
-
+﻿
 #include "inc_include.h"
 
 int *aPins;
@@ -24,7 +24,7 @@ MatrizLed pantalla;
 #endif
 DriveMatrix dm;
 ShowMatrix sm;    //012345678901234567890123456789
-String strToShow = "Bienvenido a la EEST 2 Junin";
+String strToShow = "Bieoes";
 String lastStrToShow = "";
 int *test;
 int oldCodSumTo = 0;
@@ -111,7 +111,7 @@ void loop()
             debug(" vecChar.get(i)=");
             debugel(vecChar.get(i));
             
-            //VectorClass aIntCharMatrix=getCharMatrix(vecChar.get(i));
+            VectorClass aIntCharMatrix=getCharMatrix(vecChar.get(i));
 
             debugl("---------Antes de pasar a AddConstMatrix---------------");
             //debug("aIntCharMatrix=");

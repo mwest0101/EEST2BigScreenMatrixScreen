@@ -1,4 +1,4 @@
-#include "inc_include.h"
+﻿#include "inc_include.h"
 
 #ifndef _INC_CONFIG_LETTERS_CPP_
 #define _INC_CONFIG_LETTERS_CPP_
@@ -21,7 +21,7 @@ int calcNumberOfChar(char caracter){
     }
 
 
-   
+
        if(valRet>122){
       debug("Letter=--------------------------------------------------");
       debug("Letter=Error valRet");
@@ -36,12 +36,12 @@ int calcNumberOfChar(char caracter){
       debug(valRet);
       debug("Letter=) ]");
       //charVal=0;
-    }   
-    return valRet;       
+    }
+    return valRet;
 }
  VectorClass getCharMatrix(int character){
   //VectorClass aChar(VECTOR_SIZE, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
-  
+
   debugl("");
   debug("Letter=getCharMatrix: (");
   debug(character);
@@ -50,7 +50,7 @@ int calcNumberOfChar(char caracter){
   VectorClass vecTemp(1, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE); // Declarar y asignar un valor por defecto
 
     switch (character) {
-      case 32:     vecTemp=convProgToArray(C_LET_ESP,(sizeof(C_LET_ESP)/2));debug("Letter=_");break; //' ' Espacio      
+      case 32:     vecTemp=convProgToArray(C_LET_ESP,(sizeof(C_LET_ESP)/2));debug("Letter=_");break; //' ' Espacio
       case 48:     vecTemp=convProgToArray(C_LET_0,(sizeof(C_LET_0)/2));debug("Letter=0");break; //'0'
       case 49:     vecTemp=convProgToArray(C_LET_1,(sizeof(C_LET_1)/2));debug("Letter=1");break; //'1'
       case 50:     vecTemp=convProgToArray(C_LET_2,(sizeof(C_LET_2)/2));debug("Letter=2");break; //'2'
@@ -60,7 +60,7 @@ int calcNumberOfChar(char caracter){
       case 54:     vecTemp=convProgToArray(C_LET_6,(sizeof(C_LET_6)/2));debug("Letter=6");break; //'6'
       case 55:     vecTemp=convProgToArray(C_LET_7,(sizeof(C_LET_7)/2));debug("Letter=7");break; //'7'
       case 56:     vecTemp=convProgToArray(C_LET_8,(sizeof(C_LET_8)/2));debug("Letter=8");break; //'8'
-      case 57:     vecTemp=convProgToArray(C_LET_9,(sizeof(C_LET_9)/2));debug("Letter=9");break; //'9' 
+      case 57:     vecTemp=convProgToArray(C_LET_9,(sizeof(C_LET_9)/2));debug("Letter=9");break; //'9'
       case 65:     vecTemp=convProgToArray(C_LET_A,(sizeof(C_LET_A)/2));debug("Letter=A");break; //'A'
       case 66:     vecTemp=convProgToArray(C_LET_B,(sizeof(C_LET_B)/2));debug("Letter=B");break; //'B'
       case 67:     vecTemp=convProgToArray(C_LET_C,(sizeof(C_LET_C)/2));debug("Letter=C");break; //'C'
@@ -74,7 +74,7 @@ int calcNumberOfChar(char caracter){
       case 75:     vecTemp=convProgToArray(C_LET_K,(sizeof(C_LET_K)/2));debug("Letter=K");break; //'K'
       case 76:     vecTemp=convProgToArray(C_LET_L,(sizeof(C_LET_L)/2));debug("Letter=L");break; //'L'
       case 77:     vecTemp=convProgToArray(C_LET_M,(sizeof(C_LET_M)/2));debug("Letter=M");break; //'M'
-      case 78:     vecTemp=convProgToArray(C_LET_N,(sizeof(C_LET_N)/2));debug("Letter=N");break; //'N'                                                                            
+      case 78:     vecTemp=convProgToArray(C_LET_N,(sizeof(C_LET_N)/2));debug("Letter=N");break; //'N'
       case 79:     vecTemp=convProgToArray(C_LET_O,(sizeof(C_LET_O)/2));debug("Letter=O");break; //'O'
       case 80:     vecTemp=convProgToArray(C_LET_P,(sizeof(C_LET_P)/2));debug("Letter=P");break; //'P'
       case 81:     vecTemp=convProgToArray(C_LET_Q,(sizeof(C_LET_Q)/2));debug("Letter=Q");break; //'Q'
@@ -100,7 +100,7 @@ int calcNumberOfChar(char caracter){
       case 107:    vecTemp=convProgToArray(C_LET_k,(sizeof(C_LET_k)/2));debug("Letter=k");break; //'k'
       case 108:    vecTemp=convProgToArray(C_LET_l,(sizeof(C_LET_l)/2));debug("Letter=l");break; //'l'
       case 109:    vecTemp=convProgToArray(C_LET_m,(sizeof(C_LET_m)/2));debug("Letter=m");break; //'m'
-      case 110:    vecTemp=convProgToArray(C_LET_n,(sizeof(C_LET_n)/2));debug("Letter=n");break; //'n'                                                                         
+      case 110:    vecTemp=convProgToArray(C_LET_n,(sizeof(C_LET_n)/2));debug("Letter=n");break; //'n'
       case 111:    vecTemp=convProgToArray(C_LET_o,(sizeof(C_LET_o)/2));debug("Letter=o");break; //'o'
       case 112:    vecTemp=convProgToArray(C_LET_p,(sizeof(C_LET_p)/2));debug("Letter=p");break; //'p'
       case 113:    vecTemp=convProgToArray(C_LET_q,(sizeof(C_LET_q)/2));debug("Letter=q");break; //'q'
@@ -123,38 +123,38 @@ int calcNumberOfChar(char caracter){
       case (-180): vecTemp=convProgToArray(C_LET_E,(sizeof(C_LET_E)/2));debug("Letter=ES");break; //'É'
       case (-176): vecTemp=convProgToArray(C_LET_I,(sizeof(C_LET_I)/2));debug("Letter=IS");break; //'Í'
       case (-170): vecTemp=convProgToArray(C_LET_O,(sizeof(C_LET_O)/2));debug("Letter=OS");break; //'Ó'
-      case (-163): vecTemp=convProgToArray(C_LET_U,(sizeof(C_LET_U)/2));debug("Letter=US");break; //'Ú'      
+      case (-163): vecTemp=convProgToArray(C_LET_U,(sizeof(C_LET_U)/2));debug("Letter=US");break; //'Ú'
       case (-172): vecTemp=convProgToArray(C_LET_ENIE,(sizeof(C_LET_ENIE)/2));debug("Letter=EN");break; //'Ñ'
       default:
  		    debugl("========================================================");
         debugl("==========Error=no encontrado el valor==================");
         debugl(character);
         debugl("========================================================");
-        
-    }   
+
+    }
     return vecTemp;
-    
-  
-  
+
+
+
   //if(aChar[0]>35){
         /*debugl("================================================================");
         debugl("====getCharMatrix====Valor de cont en achar[0] exede el maximo==");
         //debugl(aChar[0]);
         debugl("================================================================");*/
   //}
-  
+
 }
 
 
 #endif /* _INC_CONFIG_LETTERS_CPP_ */
 /*
-a 97 - b 98 - c 99 - d 100 - e 101 - f 102 - g 103 - h 104 - i 105 - j 106 - k 107 - 
-l 108 - m 109 - n 110 - o 111 - p 112 - q 113 - r 114 - s 115 - t 116 - u 117 - 
-v 118 - w 119 - x 120 - y 121 - z 122 - 
-A 65 - B 66 - C 67 - D 68 - E 69 - F 70 - G 71 - H 72 - I 73 - J 74 - K 75 - L 76 - 
-M 77 - N 78 - O 79 - P 80 - Q 81 - R 82 - S 83 - T 84 - U 85 - V 86 - W 87 - X 88 - 
+a 97 - b 98 - c 99 - d 100 - e 101 - f 102 - g 103 - h 104 - i 105 - j 106 - k 107 -
+l 108 - m 109 - n 110 - o 111 - p 112 - q 113 - r 114 - s 115 - t 116 - u 117 -
+v 118 - w 119 - x 120 - y 121 - z 122 -
+A 65 - B 66 - C 67 - D 68 - E 69 - F 70 - G 71 - H 72 - I 73 - J 74 - K 75 - L 76 -
+M 77 - N 78 - O 79 - P 80 - Q 81 - R 82 - S 83 - T 84 - U 85 - V 86 - W 87 - X 88 -
 Y 89 - Z 90 - esp 32
-1 49 - 2 50 - 3 51 - 4 52 - 5 53 - 6 54 - 7 55 - 8 56 - 9 57 - 0 48 - 
+1 49 - 2 50 - 3 51 - 4 52 - 5 53 - 6 54 - 7 55 - 8 56 - 9 57 - 0 48 -
 
 � -156 - � -148 - � -144 - � -138 - � -131 - � -188 - � -180 - � -176 - � -170 - � -163 - � -140 - � -172
 á         é         í         ó        ú         Á         É         Í         Ó        Ú         ñ         Ñ

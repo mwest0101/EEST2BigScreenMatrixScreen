@@ -1,10 +1,19 @@
-#include "inc_include.h"
+﻿#include "inc_include.h"
 
 #ifndef _INC_CONFIG_LETTERS_H_
 #define _INC_CONFIG_LETTERS_H_
 
-
-
+const PROGMEM int C_LET_ESP[]={O,O,O,EL,O,O,O,EL,O,O,O,EL,O,O,O,EL,O,O,O,EA};
+const PROGMEM int C_LET_1[]={O,O,I,O,EL,O,I,I,O,EL,I,I,I,O,EL,I,I,I,O,EL,I,I,I,O,EA};
+const PROGMEM int C_LET_2[]={I,I,O,O,EL,O,O,I,O,EL,O,I,O,O,EL,I,O,O,O,EL,I,I,I,O,EA};
+const PROGMEM int C_LET_3[]={I,I,I,O,EL,O,O,I,O,EL,I,I,I,O,EL,O,O,I,O,EL,I,I,I,O,EA};
+const PROGMEM int C_LET_4[]={I,O,I,O,EL,I,O,I,O,EL,I,I,I,O,EL,O,O,I,O,EL,O,O,I,O,EA};
+const PROGMEM int C_LET_5[]={I,I,I,O,EL,I,O,O,O,EL,I,I,O,O,EL,O,O,I,O,EL,I,I,O,O,EA};
+const PROGMEM int C_LET_6[]={O,O,I,O,EL,O,I,O,O,EL,I,I,O,O,EL,I,O,I,O,EL,O,I,O,O,EA};
+const PROGMEM int C_LET_7[]={I,I,I,O,EL,O,O,I,O,EL,O,I,O,O,EL,O,I,O,O,EL,I,O,O,O,EA};
+const PROGMEM int C_LET_8[]={O,I,O,O,EL,I,O,I,O,EL,O,I,O,O,EL,I,O,I,O,EL,I,I,O,O,EA};
+const PROGMEM int C_LET_9[]={O,I,I,O,EL,I,O,I,O,EL,O,I,I,O,EL,O,O,I,O,EL,O,O,I,O,EA};
+const PROGMEM int C_LET_0[]={I,I,I,O,EL,I,O,I,O,EL,I,O,I,O,EL,I,O,I,O,EL,I,I,I,O,EA};
 const PROGMEM int C_LET_A[]={O,I,O,O,EL,I,O,I,O,EL,I,I,I,O,EL,I,O,I,O,EL,I,O,I,O,EA};
 const PROGMEM int C_LET_B[]={I,I,O,O,EL,I,O,I,O,EL,I,I,O,O,EL,I,O,I,O,EL,I,I,O,O,EA};
 const PROGMEM int C_LET_C[]={I,I,I,O,EL,I,O,O,O,EL,I,O,O,O,EL,I,O,O,O,EL,I,I,I,O,EA};
@@ -59,17 +68,7 @@ const PROGMEM int C_LET_w[]={O,O,O,O,EL,I,O,I,O,EL,I,O,I,O,EL,I,I,I,O,EL,I,O,I,O
 const PROGMEM int C_LET_x[]={O,O,O,O,EL,O,O,O,O,EL,I,O,I,O,EL,I,I,I,O,EL,I,O,I,O,EA};
 const PROGMEM int C_LET_y[]={O,O,O,O,EL,I,O,I,O,EL,O,I,O,O,EL,O,I,O,O,EL,O,I,O,O,EA};
 const PROGMEM int C_LET_z[]={O,O,O,O,EL,I,I,I,O,EL,O,I,O,O,EL,I,O,O,O,EL,I,I,I,O,EA};
-const PROGMEM int C_LET_1[]={O,O,I,O,EL,O,I,I,O,EL,I,I,I,O,EL,I,I,I,O,EL,I,I,I,O,EA};
-const PROGMEM int C_LET_2[]={I,I,O,O,EL,O,O,I,O,EL,O,I,O,O,EL,I,O,O,O,EL,I,I,I,O,EA};
-const PROGMEM int C_LET_3[]={I,I,I,O,EL,O,O,I,O,EL,I,I,I,O,EL,O,O,I,O,EL,I,I,I,O,EA};
-const PROGMEM int C_LET_4[]={I,O,I,O,EL,I,O,I,O,EL,I,I,I,O,EL,O,O,I,O,EL,O,O,I,O,EA};
-const PROGMEM int C_LET_5[]={I,I,I,O,EL,I,O,O,O,EL,I,I,O,O,EL,O,O,I,O,EL,I,I,O,O,EA};
-const PROGMEM int C_LET_6[]={O,O,I,O,EL,O,I,O,O,EL,I,I,O,O,EL,I,O,I,O,EL,O,I,O,O,EA};
-const PROGMEM int C_LET_7[]={I,I,I,O,EL,O,O,I,O,EL,O,I,O,O,EL,O,I,O,O,EL,I,O,O,O,EA};
-const PROGMEM int C_LET_8[]={O,I,O,O,EL,I,O,I,O,EL,O,I,O,O,EL,I,O,I,O,EL,I,I,O,O,EA};
-const PROGMEM int C_LET_9[]={O,I,I,O,EL,I,O,I,O,EL,O,I,I,O,EL,O,O,I,O,EL,O,O,I,O,EA};
-const PROGMEM int C_LET_0[]={I,I,I,O,EL,I,O,I,O,EL,I,O,I,O,EL,I,O,I,O,EL,I,I,I,O,EA};
-const PROGMEM int C_LET_ESP[]={O,O,O,EL,O,O,O,EL,O,O,O,EL,O,O,O,EL,O,O,O,EA};
+
 
 
 int calcNumberOfChar(char numCharacter);

@@ -1,4 +1,4 @@
-/*conProgToArray
+﻿/*conProgToArray
  * inc_functions.h
  *
  *  Created on: 26 may. 2023
