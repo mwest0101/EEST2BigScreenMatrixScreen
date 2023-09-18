@@ -23,14 +23,15 @@ int pinState = 0;
 MatrizLed pantalla;
 #endif
 DriveMatrix dm;
-ShowMatrix sm;
-String strToShow = "Mauricio West";
+ShowMatrix sm;    //012345678901234567890123456789
+String strToShow = "Bienvenido a la EEST 2 Junin";
 String lastStrToShow = "";
 int *test;
 int oldCodSumTo = 0;
 int contChars = 0;
 
 VectorClass vecChar(1, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
+VectorClass aIntCharMatrix(1, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 // VectorClass vecChar(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 // int *aCharsBlock;
 // VectorClass vecChars(VECTOR_SIZE, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
@@ -40,7 +41,7 @@ VectorClass vecChar(1, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 //  int storage_array[ELEMENT_COUNT_MAX];
 // Vector<int> vecIntChar(storage_array); //No se puede usar, al usar foreach funciona mal al ejecutarlo varias veces.
 
-int *aIntCharMatrix;
+//int *aIntCharMatrix;
 int numOfcharacter = 0;
 
 void setup()
@@ -94,29 +95,35 @@ void loop()
 {
 
     dm.ResetInitPosMatrix();
+    /*
     if (lastStrToShow != strToShow)
-    {
+    {*/
         VectorClass vecChar = dm.getArrayOfCharsOfString(strToShow);
         vecChar.print();
 
         for (int i = 0; i < dm.getContChars(); i++)
-        {
+        {   debugl("_________________________________________________________________________");
+            debugl("=========================================================================");
+            debugl("---------Bucle de captura de caracteres y pasaje de letras---------------");
             // onLetterInInt=aCharsBlock[i];
             debug("i=");
             debuge(i);
             debug(" vecChar.get(i)=");
             debugel(vecChar.get(i));
-            /*
-            aIntCharMatrix=getCharMatrix(vecChar.get(i));
+            
+            //VectorClass aIntCharMatrix=getCharMatrix(vecChar.get(i));
 
             debugl("---------Antes de pasar a AddConstMatrix---------------");
-            debug("aIntCharMatrix=");
-            debugl(aIntCharMatrix[0]);
+            //debug("aIntCharMatrix=");
+            //aIntCharMatrix.print();
+            //delay(200);
 
-            */
+            //debugl(aIntCharMatrix[0]);
+
+            
 
             // matrix=dm.AddConsToMatrix(matrix,aIntCharMatrix, onLetterInInt);
-        }
+        //}
         /*
 
         aFrame = dm.GetFrame(matrix);

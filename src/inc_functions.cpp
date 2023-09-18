@@ -13,14 +13,17 @@ VectorClass convProgToArray(const int *phrase, int size){
   for (int i=0; i < size; i++){
       //vecTemp.push(((int)pgm_read_word(phrase+i)));
       element=((int)pgm_read_word(phrase + i));
-      debug3("element=");
+      debug("e=(");
+      debug(i);
+      debug(")=");
       debug(element);
-      debugl("");
+      debug(" ");
       //vecTemp.set(i,element);
       vecTemp.push(element);
       //vecTemp.push(((int)pgm_read_word(phrase+i)));
       //arrayReturn[i+starIn]=pgm_read_word(phrase+i); //uint16_t
   }
+  debugl(" ");
   vecTemp.print();
   return vecTemp;
   //return vecTemp;
