@@ -24,13 +24,14 @@ MatrizLed pantalla;
 #endif
 DriveMatrix dm;
 ShowMatrix sm;    //012345678901234567890123456789
-String strToShow = "Bieoes";
+String strToShow = "Mauricio Pablo West";
 String lastStrToShow = "";
 int *test;
 int oldCodSumTo = 0;
 int contChars = 0;
-
+VectorClass aIntCharMatrix(1, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 VectorClass vecChar(1, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
+VectorClass vecPins(1, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 //VectorClass aIntCharMatrix(1, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 // VectorClass vecChar(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 // int *aCharsBlock;
@@ -70,7 +71,7 @@ dm.Clear(matrix);*/
     pantalla.borrar();
 #endif
     // convProgToArray(vecPins,C_Pins, (sizeof(C_Pins) / 2));
-    VectorClass vecPins = convProgToArray(C_Pins, (sizeof(C_Pins) / 2));
+    convProgToArray(vecPins,C_Pins, (sizeof(C_Pins) / 2));
     vecPins.print();
 
     // convProgToArray2(C_Pins, (sizeof(C_Pins) / 2));
@@ -98,7 +99,7 @@ void loop()
     /*
     if (lastStrToShow != strToShow)
     {*/
-        VectorClass aIntCharMatrix(1, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
+        
         VectorClass vecChar = dm.getArrayOfCharsOfString(strToShow);
         vecChar.print();
 
@@ -111,8 +112,9 @@ void loop()
             debuge(i);
             debug(" vecChar.get(i)=");
             debugel(vecChar.get(i));
-            
-            aIntCharMatrix=getCharMatrix(vecChar.get(i));
+            aIntCharMatrix.clear();
+            getCharMatrix(aIntCharMatrix,vecChar.get(i));
+            //aIntCharMatrix=getCharMatrix(vecChar.get(i));
 
             debugl("---------Antes de pasar a AddConstMatrix---------------");
             //debug("aIntCharMatrix=");

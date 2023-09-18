@@ -1,4 +1,4 @@
-
+﻿
 #include <Arduino.h>
 #include "inc_include.h"
 
@@ -41,7 +41,7 @@ int calcNumberOfChar(char caracter){
     }
     return valRet;
 }
- VectorClass getCharMatrix(int character){
+ void getCharMatrix(VectorClass &aIntCharMatrix,int character){
   //VectorClass aChar(VECTOR_SIZE, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 
   debugl("");
@@ -49,84 +49,84 @@ int calcNumberOfChar(char caracter){
   debug(character);
   debug(") : ");
   delay(1000);
-  VectorClass vecTemp(1, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE); // Declarar y asignar un valor por defecto
+  
 
     switch (character) {
-      case 32:     vecTemp=convProgToArray(C_LET_ESP,(sizeof(C_LET_ESP)/2));debug("Letter=_");break; //' ' Espacio
-      case 48:     vecTemp=convProgToArray(C_LET_0,(sizeof(C_LET_0)/2));debug("Letter=0");break; //'0'
-      case 49:     vecTemp=convProgToArray(C_LET_1,(sizeof(C_LET_1)/2));debug("Letter=1");break; //'1'
-      case 50:     vecTemp=convProgToArray(C_LET_2,(sizeof(C_LET_2)/2));debug("Letter=2");break; //'2'
-      case 51:     vecTemp=convProgToArray(C_LET_3,(sizeof(C_LET_3)/2));debug("Letter=3");break; //'3'
-      case 52:     vecTemp=convProgToArray(C_LET_4,(sizeof(C_LET_4)/2));debug("Letter=4");break; //'4'
-      case 53:     vecTemp=convProgToArray(C_LET_5,(sizeof(C_LET_5)/2));debug("Letter=5");break; //'5'
-      case 54:     vecTemp=convProgToArray(C_LET_6,(sizeof(C_LET_6)/2));debug("Letter=6");break; //'6'
-      case 55:     vecTemp=convProgToArray(C_LET_7,(sizeof(C_LET_7)/2));debug("Letter=7");break; //'7'
-      case 56:     vecTemp=convProgToArray(C_LET_8,(sizeof(C_LET_8)/2));debug("Letter=8");break; //'8'
-      case 57:     vecTemp=convProgToArray(C_LET_9,(sizeof(C_LET_9)/2));debug("Letter=9");break; //'9'
-      case 65:     vecTemp=convProgToArray(C_LET_A,(sizeof(C_LET_A)/2));debug("Letter=A");break; //'A'
-      case 66:     vecTemp=convProgToArray(C_LET_B,(sizeof(C_LET_B)/2));debug("Letter=B");break; //'B'
-      case 67:     vecTemp=convProgToArray(C_LET_C,(sizeof(C_LET_C)/2));debug("Letter=C");break; //'C'
-      case 68:     vecTemp=convProgToArray(C_LET_D,(sizeof(C_LET_D)/2));debug("Letter=D");break; //'D'
-      case 69:     vecTemp=convProgToArray(C_LET_E,(sizeof(C_LET_E)/2));debug("Letter=E");break; //'E'
-      case 70:     vecTemp=convProgToArray(C_LET_F,(sizeof(C_LET_F)/2));debug("Letter=F");break; //'F'
-      case 71:     vecTemp=convProgToArray(C_LET_G,(sizeof(C_LET_G)/2));debug("Letter=G");break; //'G'
-      case 72:     vecTemp=convProgToArray(C_LET_H,(sizeof(C_LET_H)/2));debug("Letter=H");break; //'H'
-      case 73:     vecTemp=convProgToArray(C_LET_I,(sizeof(C_LET_I)/2));debug("Letter=I");break; //'I'
-      case 74:     vecTemp=convProgToArray(C_LET_J,(sizeof(C_LET_J)/2));debug("Letter=J");break; //'J'
-      case 75:     vecTemp=convProgToArray(C_LET_K,(sizeof(C_LET_K)/2));debug("Letter=K");break; //'K'
-      case 76:     vecTemp=convProgToArray(C_LET_L,(sizeof(C_LET_L)/2));debug("Letter=L");break; //'L'
-      case 77:     vecTemp=convProgToArray(C_LET_M,(sizeof(C_LET_M)/2));debug("Letter=M");break; //'M'
-      case 78:     vecTemp=convProgToArray(C_LET_N,(sizeof(C_LET_N)/2));debug("Letter=N");break; //'N'
-      case 79:     vecTemp=convProgToArray(C_LET_O,(sizeof(C_LET_O)/2));debug("Letter=O");break; //'O'
-      case 80:     vecTemp=convProgToArray(C_LET_P,(sizeof(C_LET_P)/2));debug("Letter=P");break; //'P'
-      case 81:     vecTemp=convProgToArray(C_LET_Q,(sizeof(C_LET_Q)/2));debug("Letter=Q");break; //'Q'
-      case 82:     vecTemp=convProgToArray(C_LET_R,(sizeof(C_LET_R)/2));debug("Letter=R");break; //'R'
-      case 83:     vecTemp=convProgToArray(C_LET_S,(sizeof(C_LET_S)/2));debug("Letter=S");break; //'S'
-      case 84:     vecTemp=convProgToArray(C_LET_T,(sizeof(C_LET_T)/2));debug("Letter=T");break; //'T'
-      case 85:     vecTemp=convProgToArray(C_LET_U,(sizeof(C_LET_U)/2));debug("Letter=U");break; //'U'
-      case 86:     vecTemp=convProgToArray(C_LET_V,(sizeof(C_LET_V)/2));debug("Letter=V");break; //'V'
-      case 87:     vecTemp=convProgToArray(C_LET_W,(sizeof(C_LET_W)/2));debug("Letter=W");break; //'W'
-      case 88:     vecTemp=convProgToArray(C_LET_X,(sizeof(C_LET_X)/2));debug("Letter=X");break; //'X'
-      case 89:     vecTemp=convProgToArray(C_LET_Y,(sizeof(C_LET_Y)/2));debug("Letter=Y");break; //'Y'
-      case 90:     vecTemp=convProgToArray(C_LET_Z,(sizeof(C_LET_Z)/2));debug("Letter=Z");break; //'Z'
-      case 97:     vecTemp=convProgToArray(C_LET_a,(sizeof(C_LET_a)/2));debug("Letter=a");break; //'a'
-      case 98:     vecTemp=convProgToArray(C_LET_b,(sizeof(C_LET_b)/2));debug("Letter=b");break; //'b'
-      case 99:     vecTemp=convProgToArray(C_LET_c,(sizeof(C_LET_c)/2));debug("Letter=c");break; //'c'
-      case 100:    vecTemp=convProgToArray(C_LET_d,(sizeof(C_LET_d)/2));debug("Letter=d");break; //'d'
-      case 101:    vecTemp=convProgToArray(C_LET_e,(sizeof(C_LET_e)/2));debug("Letter=e");break; //'e'
-      case 102:    vecTemp=convProgToArray(C_LET_f,(sizeof(C_LET_f)/2));debug("Letter=f");break; //'f'
-      case 103:    vecTemp=convProgToArray(C_LET_g,(sizeof(C_LET_g)/2));debug("Letter=g");break; //'g'
-      case 104:    vecTemp=convProgToArray(C_LET_h,(sizeof(C_LET_h)/2));debug("Letter=h");break; //'h'
-      case 105:    vecTemp=convProgToArray(C_LET_i,(sizeof(C_LET_i)/2));debug("Letter=i");break; //'i'
-      case 106:    vecTemp=convProgToArray(C_LET_j,(sizeof(C_LET_j)/2));debug("Letter=j");break; //'j'
-      case 107:    vecTemp=convProgToArray(C_LET_k,(sizeof(C_LET_k)/2));debug("Letter=k");break; //'k'
-      case 108:    vecTemp=convProgToArray(C_LET_l,(sizeof(C_LET_l)/2));debug("Letter=l");break; //'l'
-      case 109:    vecTemp=convProgToArray(C_LET_m,(sizeof(C_LET_m)/2));debug("Letter=m");break; //'m'
-      case 110:    vecTemp=convProgToArray(C_LET_n,(sizeof(C_LET_n)/2));debug("Letter=n");break; //'n'
-      case 111:    vecTemp=convProgToArray(C_LET_o,(sizeof(C_LET_o)/2));debug("Letter=o");break; //'o'
-      case 112:    vecTemp=convProgToArray(C_LET_p,(sizeof(C_LET_p)/2));debug("Letter=p");break; //'p'
-      case 113:    vecTemp=convProgToArray(C_LET_q,(sizeof(C_LET_q)/2));debug("Letter=q");break; //'q'
-      case 114:    vecTemp=convProgToArray(C_LET_r,(sizeof(C_LET_r)/2));debug("Letter=r");break; //'r'
-      case 115:    vecTemp=convProgToArray(C_LET_s,(sizeof(C_LET_s)/2));debug("Letter=s");break; //'s'
-      case 116:    vecTemp=convProgToArray(C_LET_t,(sizeof(C_LET_t)/2));debug("Letter=t");break; //'t'
-      case 117:    vecTemp=convProgToArray(C_LET_u,(sizeof(C_LET_u)/2));debug("Letter=u");break; //'u'
-      case 118:    vecTemp=convProgToArray(C_LET_v,(sizeof(C_LET_v)/2));debug("Letter=v");break; //'v'
-      case 119:    vecTemp=convProgToArray(C_LET_w,(sizeof(C_LET_w)/2));debug("Letter=w");break; //'w'
-      case 120:    vecTemp=convProgToArray(C_LET_x,(sizeof(C_LET_x)/2));debug("Letter=w");break; //'w'
-      case 121:    vecTemp=convProgToArray(C_LET_y,(sizeof(C_LET_y)/2));debug("Letter=y");break; //'y'
-      case 122:    vecTemp=convProgToArray(C_LET_z,(sizeof(C_LET_z)/2));debug("Letter=z");break; //'z'
-      case (-156): vecTemp=convProgToArray(C_LET_a,(sizeof(C_LET_a)/2));debug("Letter=as");break; //'�'
-      case (-148): vecTemp=convProgToArray(C_LET_e,(sizeof(C_LET_e)/2));debug("Letter=es");break; //'�'
-      case (-144): vecTemp=convProgToArray(C_LET_i,(sizeof(C_LET_i)/2));debug("Letter=is");break; //'�'
-      case (-138): vecTemp=convProgToArray(C_LET_o,(sizeof(C_LET_o)/2));debug("Letter=os");break; //'�'
-      case (-131): vecTemp=convProgToArray(C_LET_u,(sizeof(C_LET_u)/2));debug("Letter=us");break; //'�'
-      case (-140): vecTemp=convProgToArray(C_LET_enie,(sizeof(C_LET_enie)/2));debug("Letter=en");break; //'�'
-      case (-188): vecTemp=convProgToArray(C_LET_A,(sizeof(C_LET_A)/2));debug("Letter=AS");break; //'�'
-      case (-180): vecTemp=convProgToArray(C_LET_E,(sizeof(C_LET_E)/2));debug("Letter=ES");break; //'�'
-      case (-176): vecTemp=convProgToArray(C_LET_I,(sizeof(C_LET_I)/2));debug("Letter=IS");break; //'�'
-      case (-170): vecTemp=convProgToArray(C_LET_O,(sizeof(C_LET_O)/2));debug("Letter=OS");break; //'�'
-      case (-163): vecTemp=convProgToArray(C_LET_U,(sizeof(C_LET_U)/2));debug("Letter=US");break; //'�'
-      case (-172): vecTemp=convProgToArray(C_LET_ENIE,(sizeof(C_LET_ENIE)/2));debug("Letter=EN");break; //'�'
+      case 32:     convProgToArray(aIntCharMatrix,C_LET_ESP,(sizeof(C_LET_ESP)/2));debug("Letter=_");break; //' ' Espacio
+      case 48:     convProgToArray(aIntCharMatrix,C_LET_0,(sizeof(C_LET_0)/2));debug("Letter=0");break; //'0'
+      case 49:     convProgToArray(aIntCharMatrix,C_LET_1,(sizeof(C_LET_1)/2));debug("Letter=1");break; //'1'
+      case 50:     convProgToArray(aIntCharMatrix,C_LET_2,(sizeof(C_LET_2)/2));debug("Letter=2");break; //'2'
+      case 51:     convProgToArray(aIntCharMatrix,C_LET_3,(sizeof(C_LET_3)/2));debug("Letter=3");break; //'3'
+      case 52:     convProgToArray(aIntCharMatrix,C_LET_4,(sizeof(C_LET_4)/2));debug("Letter=4");break; //'4'
+      case 53:     convProgToArray(aIntCharMatrix,C_LET_5,(sizeof(C_LET_5)/2));debug("Letter=5");break; //'5'
+      case 54:     convProgToArray(aIntCharMatrix,C_LET_6,(sizeof(C_LET_6)/2));debug("Letter=6");break; //'6'
+      case 55:     convProgToArray(aIntCharMatrix,C_LET_7,(sizeof(C_LET_7)/2));debug("Letter=7");break; //'7'
+      case 56:     convProgToArray(aIntCharMatrix,C_LET_8,(sizeof(C_LET_8)/2));debug("Letter=8");break; //'8'
+      case 57:     convProgToArray(aIntCharMatrix,C_LET_9,(sizeof(C_LET_9)/2));debug("Letter=9");break; //'9'
+      case 65:     convProgToArray(aIntCharMatrix,C_LET_A,(sizeof(C_LET_A)/2));debug("Letter=A");break; //'A'
+      case 66:     convProgToArray(aIntCharMatrix,C_LET_B,(sizeof(C_LET_B)/2));debug("Letter=B");break; //'B'
+      case 67:     convProgToArray(aIntCharMatrix,C_LET_C,(sizeof(C_LET_C)/2));debug("Letter=C");break; //'C'
+      case 68:     convProgToArray(aIntCharMatrix,C_LET_D,(sizeof(C_LET_D)/2));debug("Letter=D");break; //'D'
+      case 69:     convProgToArray(aIntCharMatrix,C_LET_E,(sizeof(C_LET_E)/2));debug("Letter=E");break; //'E'
+      case 70:     convProgToArray(aIntCharMatrix,C_LET_F,(sizeof(C_LET_F)/2));debug("Letter=F");break; //'F'
+      case 71:     convProgToArray(aIntCharMatrix,C_LET_G,(sizeof(C_LET_G)/2));debug("Letter=G");break; //'G'
+      case 72:     convProgToArray(aIntCharMatrix,C_LET_H,(sizeof(C_LET_H)/2));debug("Letter=H");break; //'H'
+      case 73:     convProgToArray(aIntCharMatrix,C_LET_I,(sizeof(C_LET_I)/2));debug("Letter=I");break; //'I'
+      case 74:     convProgToArray(aIntCharMatrix,C_LET_J,(sizeof(C_LET_J)/2));debug("Letter=J");break; //'J'
+      case 75:     convProgToArray(aIntCharMatrix,C_LET_K,(sizeof(C_LET_K)/2));debug("Letter=K");break; //'K'
+      case 76:     convProgToArray(aIntCharMatrix,C_LET_L,(sizeof(C_LET_L)/2));debug("Letter=L");break; //'L'
+      case 77:     convProgToArray(aIntCharMatrix,C_LET_M,(sizeof(C_LET_M)/2));debug("Letter=M");break; //'M'
+      case 78:     convProgToArray(aIntCharMatrix,C_LET_N,(sizeof(C_LET_N)/2));debug("Letter=N");break; //'N'
+      case 79:     convProgToArray(aIntCharMatrix,C_LET_O,(sizeof(C_LET_O)/2));debug("Letter=O");break; //'O'
+      case 80:     convProgToArray(aIntCharMatrix,C_LET_P,(sizeof(C_LET_P)/2));debug("Letter=P");break; //'P'
+      case 81:     convProgToArray(aIntCharMatrix,C_LET_Q,(sizeof(C_LET_Q)/2));debug("Letter=Q");break; //'Q'
+      case 82:     convProgToArray(aIntCharMatrix,C_LET_R,(sizeof(C_LET_R)/2));debug("Letter=R");break; //'R'
+      case 83:     convProgToArray(aIntCharMatrix,C_LET_S,(sizeof(C_LET_S)/2));debug("Letter=S");break; //'S'
+      case 84:     convProgToArray(aIntCharMatrix,C_LET_T,(sizeof(C_LET_T)/2));debug("Letter=T");break; //'T'
+      case 85:     convProgToArray(aIntCharMatrix,C_LET_U,(sizeof(C_LET_U)/2));debug("Letter=U");break; //'U'
+      case 86:     convProgToArray(aIntCharMatrix,C_LET_V,(sizeof(C_LET_V)/2));debug("Letter=V");break; //'V'
+      case 87:     convProgToArray(aIntCharMatrix,C_LET_W,(sizeof(C_LET_W)/2));debug("Letter=W");break; //'W'
+      case 88:     convProgToArray(aIntCharMatrix,C_LET_X,(sizeof(C_LET_X)/2));debug("Letter=X");break; //'X'
+      case 89:     convProgToArray(aIntCharMatrix,C_LET_Y,(sizeof(C_LET_Y)/2));debug("Letter=Y");break; //'Y'
+      case 90:     convProgToArray(aIntCharMatrix,C_LET_Z,(sizeof(C_LET_Z)/2));debug("Letter=Z");break; //'Z'
+      case 97:     convProgToArray(aIntCharMatrix,C_LET_a,(sizeof(C_LET_a)/2));debug("Letter=a");break; //'a'
+      case 98:     convProgToArray(aIntCharMatrix,C_LET_b,(sizeof(C_LET_b)/2));debug("Letter=b");break; //'b'
+      case 99:     convProgToArray(aIntCharMatrix,C_LET_c,(sizeof(C_LET_c)/2));debug("Letter=c");break; //'c'
+      case 100:    convProgToArray(aIntCharMatrix,C_LET_d,(sizeof(C_LET_d)/2));debug("Letter=d");break; //'d'
+      case 101:    convProgToArray(aIntCharMatrix,C_LET_e,(sizeof(C_LET_e)/2));debug("Letter=e");break; //'e'
+      case 102:    convProgToArray(aIntCharMatrix,C_LET_f,(sizeof(C_LET_f)/2));debug("Letter=f");break; //'f'
+      case 103:    convProgToArray(aIntCharMatrix,C_LET_g,(sizeof(C_LET_g)/2));debug("Letter=g");break; //'g'
+      case 104:    convProgToArray(aIntCharMatrix,C_LET_h,(sizeof(C_LET_h)/2));debug("Letter=h");break; //'h'
+      case 105:    convProgToArray(aIntCharMatrix,C_LET_i,(sizeof(C_LET_i)/2));debug("Letter=i");break; //'i'
+      case 106:    convProgToArray(aIntCharMatrix,C_LET_j,(sizeof(C_LET_j)/2));debug("Letter=j");break; //'j'
+      case 107:    convProgToArray(aIntCharMatrix,C_LET_k,(sizeof(C_LET_k)/2));debug("Letter=k");break; //'k'
+      case 108:    convProgToArray(aIntCharMatrix,C_LET_l,(sizeof(C_LET_l)/2));debug("Letter=l");break; //'l'
+      case 109:    convProgToArray(aIntCharMatrix,C_LET_m,(sizeof(C_LET_m)/2));debug("Letter=m");break; //'m'
+      case 110:    convProgToArray(aIntCharMatrix,C_LET_n,(sizeof(C_LET_n)/2));debug("Letter=n");break; //'n'
+      case 111:    convProgToArray(aIntCharMatrix,C_LET_o,(sizeof(C_LET_o)/2));debug("Letter=o");break; //'o'
+      case 112:    convProgToArray(aIntCharMatrix,C_LET_p,(sizeof(C_LET_p)/2));debug("Letter=p");break; //'p'
+      case 113:    convProgToArray(aIntCharMatrix,C_LET_q,(sizeof(C_LET_q)/2));debug("Letter=q");break; //'q'
+      case 114:    convProgToArray(aIntCharMatrix,C_LET_r,(sizeof(C_LET_r)/2));debug("Letter=r");break; //'r'
+      case 115:    convProgToArray(aIntCharMatrix,C_LET_s,(sizeof(C_LET_s)/2));debug("Letter=s");break; //'s'
+      case 116:    convProgToArray(aIntCharMatrix,C_LET_t,(sizeof(C_LET_t)/2));debug("Letter=t");break; //'t'
+      case 117:    convProgToArray(aIntCharMatrix,C_LET_u,(sizeof(C_LET_u)/2));debug("Letter=u");break; //'u'
+      case 118:    convProgToArray(aIntCharMatrix,C_LET_v,(sizeof(C_LET_v)/2));debug("Letter=v");break; //'v'
+      case 119:    convProgToArray(aIntCharMatrix,C_LET_w,(sizeof(C_LET_w)/2));debug("Letter=w");break; //'w'
+      case 120:    convProgToArray(aIntCharMatrix,C_LET_x,(sizeof(C_LET_x)/2));debug("Letter=w");break; //'w'
+      case 121:    convProgToArray(aIntCharMatrix,C_LET_y,(sizeof(C_LET_y)/2));debug("Letter=y");break; //'y'
+      case 122:    convProgToArray(aIntCharMatrix,C_LET_z,(sizeof(C_LET_z)/2));debug("Letter=z");break; //'z'
+      case (-156): convProgToArray(aIntCharMatrix,C_LET_a,(sizeof(C_LET_a)/2));debug("Letter=as");break; //''
+      case (-148): convProgToArray(aIntCharMatrix,C_LET_e,(sizeof(C_LET_e)/2));debug("Letter=es");break; //''
+      case (-144): convProgToArray(aIntCharMatrix,C_LET_i,(sizeof(C_LET_i)/2));debug("Letter=is");break; //''
+      case (-138): convProgToArray(aIntCharMatrix,C_LET_o,(sizeof(C_LET_o)/2));debug("Letter=os");break; //''
+      case (-131): convProgToArray(aIntCharMatrix,C_LET_u,(sizeof(C_LET_u)/2));debug("Letter=us");break; //''
+      case (-140): convProgToArray(aIntCharMatrix,C_LET_enie,(sizeof(C_LET_enie)/2));debug("Letter=en");break; //''
+      case (-188): convProgToArray(aIntCharMatrix,C_LET_A,(sizeof(C_LET_A)/2));debug("Letter=AS");break; //''
+      case (-180): convProgToArray(aIntCharMatrix,C_LET_E,(sizeof(C_LET_E)/2));debug("Letter=ES");break; //''
+      case (-176): convProgToArray(aIntCharMatrix,C_LET_I,(sizeof(C_LET_I)/2));debug("Letter=IS");break; //''
+      case (-170): convProgToArray(aIntCharMatrix,C_LET_O,(sizeof(C_LET_O)/2));debug("Letter=OS");break; //''
+      case (-163): convProgToArray(aIntCharMatrix,C_LET_U,(sizeof(C_LET_U)/2));debug("Letter=US");break; //''
+      case (-172): convProgToArray(aIntCharMatrix,C_LET_ENIE,(sizeof(C_LET_ENIE)/2));debug("Letter=EN");break; //''
       default:
  		    debugl("========================================================");
         debugl("==========Error=no encontrado el valor==================");
@@ -134,7 +134,7 @@ int calcNumberOfChar(char caracter){
         debugl("========================================================");
 
     }
-    return vecTemp;
+    //return vecTemp;
 
 
 

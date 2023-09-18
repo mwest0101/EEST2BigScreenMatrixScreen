@@ -45,7 +45,21 @@ public:
   ~VectorClass() {
     delete[] this->data;
   }
+  void clear() {
+    if (size > 0) {
+      // Liberar la memoria del arreglo actual
+      delete[] data;
 
+      // Crear un nuevo arreglo vacío
+      data = new int[sizeFixed];
+      size = sizeFixed;
+
+      // Reinicializar todos los elementos a 0
+      for (int i = 0; i < size; i++) {
+        data[i] = 0;
+      }
+    }
+  }
   // M�todo para establecer un valor en una posici�n del vector
   void set(int index, int value) {
         

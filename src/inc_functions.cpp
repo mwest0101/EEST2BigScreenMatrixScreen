@@ -2,9 +2,9 @@
 #include <Arduino.h>
 #include "inc_include.h"
 
-VectorClass convProgToArray(const int *phrase, int size){
+void convProgToArray(VectorClass &aIntCharMatrix,const int *phrase, int size){
   //int* arrayReturn;
-  VectorClass vecTemp(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);   
+  //VectorClass vecTemp(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);   
   //arrayReturn=(int*)calloc((size+starIn),sizeof(int));
   //arrayReturn[0]=size;
   int element=0;
@@ -17,13 +17,14 @@ VectorClass convProgToArray(const int *phrase, int size){
       debug(element);
       debug(" ");
       //vecTemp.set(i,element);
-      /* vecTemp.push(element); */
+      aIntCharMatrix.push(element); 
       //vecTemp.push(((int)pgm_read_word(phrase+i)));
       //arrayReturn[i+starIn]=pgm_read_word(phrase+i); //uint16_t
   }
   debugl(" ");
-  /* vecTemp.print(); */
-  return vecTemp;
+  aIntCharMatrix.print();
+  
+  //return vecTemp;
   //return vecTemp;
 }
 

@@ -4,7 +4,7 @@
 
 
 
-VectorClass convProgToArray(const int *phrase, int size);
+void convProgToArray(VectorClass &aIntCharMatrix,const int *phrase, int size);
 //Vector<Vector<int>> convProgToMatrix(const int *phrase,size_t size);
 //void printMatrix(Vector<Vector<int>> matriz);
 
