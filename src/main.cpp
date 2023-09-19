@@ -88,7 +88,10 @@ void loop(){
         vecChar.print();
         debugl("______________________________________________________");
         debugl("---------Antes de  bucle de loop----------------------");
-        for (int i = 0; i < dm.getContChars(); i++)
+        
+        matrix.clear();
+        //for (int i = 0; i < dm.getContChars(); i++)
+        for (int i = 0; i < 3; i++)
         { 
         debugl("------------------Inicio de for-----------------------");
             /* debugl("_________________________________________________________________________");
@@ -105,11 +108,12 @@ void loop(){
             //debugl("---------Antes de pasar a AddConstMatrix---------------");
             debug("aIntCharMatrix.getSize=");
             debugl(aIntCharMatrix.getSize());
-            aIntCharMatrix.print();
+            //aIntCharMatrix.print();
             //delay(200);
             //debugl(aIntCharMatrix[0]);
             
              dm.AddConsToMatrix(matrix,aIntCharMatrix, vecChar.get(i));
+             matrix.print();
         //}
         /*
         aFrame = dm.GetFrame(matrix);
