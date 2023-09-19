@@ -11,18 +11,20 @@ void convProgToArray(VectorClass &aIntCharMatrix,const int *phrase, int size){
   for (int i=0; i < size; i++){
       //vecTemp.push(((int)pgm_read_word(phrase+i)));
       element=((int)pgm_read_word(phrase + i));
+      /*
       debug("e=(");
       debug(i);
       debug(")=");
       debug(element);
       debug(" ");
+      */
       //vecTemp.set(i,element);
       aIntCharMatrix.push(element); 
       //vecTemp.push(((int)pgm_read_word(phrase+i)));
       //arrayReturn[i+starIn]=pgm_read_word(phrase+i); //uint16_t
   }
   debugl(" ");
-  aIntCharMatrix.print();
+  //aIntCharMatrix.print();
   
   //return vecTemp;
   //return vecTemp;

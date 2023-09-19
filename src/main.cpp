@@ -104,21 +104,21 @@ void loop()
         vecChar.print();
 
         for (int i = 0; i < dm.getContChars(); i++)
-        {   debugl("_________________________________________________________________________");
+        {  /* debugl("_________________________________________________________________________");
             debugl("=========================================================================");
             debugl("---------Bucle de captura de caracteres y pasaje de letras---------------");
             // onLetterInInt=aCharsBlock[i];
             debug("i=");
             debuge(i);
             debug(" vecChar.get(i)=");
-            debugel(vecChar.get(i));
+            debugel(vecChar.get(i));*/
             aIntCharMatrix.clear();
             getCharMatrix(aIntCharMatrix,vecChar.get(i));
-            //aIntCharMatrix=getCharMatrix(vecChar.get(i));
+            
 
-            debugl("---------Antes de pasar a AddConstMatrix---------------");
+            //debugl("---------Antes de pasar a AddConstMatrix---------------");
             //debug("aIntCharMatrix=");
-            //aIntCharMatrix.print();
+            aIntCharMatrix.print();
             //delay(200);
 
             //debugl(aIntCharMatrix[0]);

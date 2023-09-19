@@ -30,6 +30,7 @@ int calcNumberOfChar(char caracter){
       debug("Letter=valRet=");
       debugl(valRet);
     }
+    /*
     if(valRet!=0){
       debugl(" ");
       debug("Letter=[");
@@ -38,7 +39,7 @@ int calcNumberOfChar(char caracter){
       debug(valRet);
       debug("Letter=) ]");
       //charVal=0;
-    }
+    }*/
     return valRet;
 }
  void getCharMatrix(VectorClass &aIntCharMatrix,int character){

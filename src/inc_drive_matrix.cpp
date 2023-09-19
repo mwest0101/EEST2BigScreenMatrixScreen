@@ -199,8 +199,8 @@ VectorClass DriveMatrix::getArrayOfCharsOfString(String strData)
       this->contChars++;
     }
   }
-  debugl("");
-  vecTemp.print();
+  //debugl("");
+  //vecTemp.print();
   return vecTemp;
 }
 unsigned long DriveMatrix::getCodSumTo()

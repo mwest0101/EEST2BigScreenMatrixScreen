@@ -1,4 +1,4 @@
-
+﻿
 #include <Arduino.h>
 #include "inc_include.h"
 
@@ -34,8 +34,8 @@ public:
     this->posActual=0;
     this->sizeFixed = size;
     this->data = new int[size];
-    debug("Size=");
-    debugl(size);
+    //debug("Size=");
+    //debugl(size);
     for(int i=0; i<size; i++) {
       this->data[i] = 0;
     }
