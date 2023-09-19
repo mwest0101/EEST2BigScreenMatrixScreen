@@ -3,8 +3,7 @@
   #define _INC_SHOW_MATRIX_H_
   
  
-
-  class ShowMatrix {
+  class ShowMatrix{
     private:
       static int pin;
       //int posX;
@@ -30,6 +29,4 @@
       
       
   };
-
-
 #endif /* _INC_SHOW_MATRIX_H_ */

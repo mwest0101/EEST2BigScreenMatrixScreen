@@ -1,0 +1,530 @@
+5
+ 
+0=0 |1=2 |2=7 |3=12 |4=17 |5=22 |6=27 |7=32 |8=3 |9=8 |10=13 |11=18 |12=23 |13=28 |14=33 |15=4 |16=9 |17=14 |18=19 |19=24 |20=29 |21=34 |22=5 |23=10 |24=15 |25=20 |26=25 |27=30 |28=35 |29=6 |30=11 |31=16 |32=21 |33=26 |34=31 |35=36 |
+test
+0=77 |1=97 |2=117 |3=114 |4=105 |5=99 |6=105 |7=111 |8=32 |9=80 |10=97 |11=98 |12=108 |13=111 |14=32 |15=87 |16=101 |17=115 |18=116 |
+______________________________________________________
+---------Antes de  bucle de loop----------------------
+------------------Inicio de for-----------------------
+
+Letter=getCharMatrix: (77) :  
+Letter=M
+aIntCharMatrix.getSize=26
+0=0 |1=1 |2=0 |3=1 |4=0 |5=8 |6=1 |7=1 |8=1 |9=0 |10=8 |11=1 |12=0 |13=1 |14=0 |15=8 |16=1 |17=0 |18=1 |19=0 |20=8 |21=1 |22=0 |23=1 |24=0 |25=9 |
+ 
+=========AddConsToMatrix===============
+caracter:77
+cont:26
+ |relPosY:0relPosX:0(0 ) |relPosY:0relPosX:1(1 ) |relPosY:0relPosX:2(0 ) |relPosY:0relPosX:3(1 ) |relPosY:0relPosX:4(0 )
+ |relPosY:1relPosX:0(1 ) |relPosY:1relPosX:1(1 ) |relPosY:1relPosX:2(1 ) |relPosY:1relPosX:3(0 )
+ |relPosY:2relPosX:0(1 ) |relPosY:2relPosX:1(0 ) |relPosY:2relPosX:2(1 ) |relPosY:2relPosX:3(0 )
+ |relPosY:3relPosX:0(1 ) |relPosY:3relPosX:1(0 ) |relPosY:3relPosX:2(1 ) |relPosY:3relPosX:3(0 )
+ |relPosY:4relPosX:0(1 ) |relPosY:4relPosX:1(0 ) |relPosY:4relPosX:2(1 ) |relPosY:4relPosX:3(0 )
+this->totPosX:0 
+ 
+------------------Inicio de for-----------------------
+
+Letter=getCharMatrix: (97) :  
+Letter=a
+aIntCharMatrix.getSize=21
+0=0 |1=0 |2=0 |3=0 |4=8 |5=1 |6=1 |7=0 |8=8 |9=0 |10=1 |11=0 |12=8 |13=1 |14=1 |15=0 |16=8 |17=1 |18=1 |19=0 |20=9 |
+ 
+=========AddConsToMatrix===============
+caracter:97
+cont:21
+ |relPosY:0relPosX:0(0 ) |relPosY:0relPosX:1(0 ) |relPosY:0relPosX:2(0 ) |relPosY:0relPosX:3(0 )
+ |relPosY:1relPosX:0(1 ) |relPosY:1relPosX:1(1 ) |relPosY:1relPosX:2(0 )
+ |relPosY:2relPosX:0(0 ) |relPosY:2relPosX:1(1 ) |relPosY:2relPosX:2(0 )
+ |relPosY:3relPosX:0(1 ) |relPosY:3relPosX:1(1 ) |relPosY:3relPosX:2(0 )
+ |relPosY:4relPosX:0(1 ) |relPosY:4relPosX:1(1 ) |relPosY:4relPosX:2(0 )
+this->totPosX:5 
+ 
+------------------Inicio de for-----------------------
+
+Letter=getCharMatrix: (117) :  
+Letter=u
+aIntCharMatrix.getSize=26
+0=0 |1=0 |2=0 |3=0 |4=0 |5=8 |6=1 |7=0 |8=1 |9=0 |10=8 |11=1 |12=0 |13=1 |14=0 |15=8 |16=1 |17=0 |18=1 |19=0 |20=8 |21=1 |22=1 |23=1 |24=0 |25=9 |
+ 
+=========AddConsToMatrix===============
+caracter:117
+cont:26
+ |relPosY:0relPosX:0(0 ) |relPosY:0relPosX:1(0 ) |relPosY:0relPosX:2(0 ) |relPosY:0relPosX:3(0 ) |relPosY:0relPosX:4(0 )
+ |relPosY:1relPosX:0(1 ) |relPosY:1relPosX:1(0 ) |relPosY:1relPosX:2(1 ) |relPosY:1relPosX:3(0 )
+ |relPosY:2relPosX:0(1 ) |relPosY:2relPosX:1(0 ) |relPosY:2relPosX:2(1 ) |relPosY:2relPosX:3(0 )
+ |relPosY:3relPosX:0(1 ) |relPosY:3relPosX:1(0 ) |relPosY:3relPosX:2(1 ) |relPosY:3relPosX:3(0 )
+ |relPosY:4relPosX:0(1 ) |relPosY:4relPosX:1(1 ) |relPosY:4relPosX:2(1 ) |relPosY:4relPosX:3(0 )
+this->totPosX:9 
+ 
+------------------Inicio de for-----------------------
+
+Letter=getCharMatrix: (114) :  
+Letter=r
+aIntCharMatrix.getSize=26
+0=0 |1=0 |2=0 |3=0 |4=0 |5=8 |6=1 |7=1 |8=1 |9=0 |10=8 |11=1 |12=0 |13=1 |14=0 |15=8 |16=1 |17=0 |18=0 |19=0 |20=8 |21=1 |22=0 |23=0 |24=0 |25=9 |
+ 
+=========AddConsToMatrix===============
+caracter:114
+cont:26
+ |relPosY:0relPosX:0(0 ) |relPosY:0relPosX:1(0 ) |relPosY:0relPosX:2(0 ) |relPosY:0relPosX:3(0 ) |relPosY:0relPosX:4(0 )
+ |relPosY:1relPosX:0(1 ) |relPosY:1relPosX:1(1 ) |relPosY:1relPosX:2(1 ) |relPosY:1relPosX:3(0 )
+ |relPosY:2relPosX:0(1 ) |relPosY:2relPosX:1(0 ) |relPosY:2relPosX:2(1 ) |relPosY:2relPosX:3(0 )
+ |relPosY:3relPosX:0(1 ) |relPosY:3relPosX:1(0 ) |relPosY:3relPosX:2(0 ) |relPosY:3relPosX:3(0 )
+ |relPosY:4relPosX:0(1 ) |relPosY:4relPosX:1(0 ) |relPosY:4relPosX:2(0 ) |relPosY:4relPosX:3(0 )
+this->totPosX:14 
+ 
+------------------Inicio de for-----------------------
+
+Letter=getCharMatrix: (105) :  
+Letter=i
+aIntCharMatrix.getSize=21
+0=0 |1=0 |2=0 |3=0 |4=8 |5=0 |6=1 |7=0 |8=8 |9=0 |10=0 |11=0 |12=8 |13=0 |14=1 |15=0 |16=8 |17=0 |18=1 |19=0 |20=9 |
+ 
+=========AddConsToMatrix===============
+caracter:105
+cont:21
+ |relPosY:0relPosX:0(0 ) |relPosY:0relPosX:1(0 ) SET:
+Error: Index fuera de rango: row:0 column:21
+ |relPosY:0relPosX:2(0 ) SET:
+Error: Index fuera de rango: row:0 column:22
+ |relPosY:0relPosX:3(0 )
+ |relPosY:1relPosX:0(0 ) |relPosY:1relPosX:1(1 ) SET:
+Error: Index fuera de rango: row:1 column:21
+ |relPosY:1relPosX:2(0 )
+ |relPosY:2relPosX:0(0 ) |relPosY:2relPosX:1(0 ) SET:
+Error: Index fuera de rango: row:2 column:21
+ |relPosY:2relPosX:2(0 )
+ |relPosY:3relPosX:0(0 ) |relPosY:3relPosX:1(1 ) SET:
+Error: Index fuera de rango: row:3 column:21
+ |relPosY:3relPosX:2(0 )
+ |relPosY:4relPosX:0(0 ) |relPosY:4relPosX:1(1 ) SET:
+Error: Index fuera de rango: row:4 column:21
+ |relPosY:4relPosX:2(0 )
+this->totPosX:19 
+ 
+------------------Inicio de for-----------------------
+
+Letter=getCharMatrix: (99) :  
+Letter=c
+aIntCharMatrix.getSize=21
+0=0 |1=0 |2=0 |3=0 |4=8 |5=1 |6=1 |7=0 |8=8 |9=1 |10=0 |11=0 |12=8 |13=1 |14=0 |15=0 |16=8 |17=1 |18=1 |19=0 |20=9 |
+ 
+=========AddConsToMatrix===============
+caracter:99
+cont:21
+ SET:
+Error: Index fuera de rango: row:0 column:23
+ |relPosY:0relPosX:0(0 ) SET:
+Error: Index fuera de rango: row:0 column:24
+ |relPosY:0relPosX:1(0 ) SET:
+Error: Index fuera de rango: row:0 column:25
+ |relPosY:0relPosX:2(0 ) SET:
+Error: Index fuera de rango: row:0 column:26
+ |relPosY:0relPosX:3(0 )
+ SET:
+Error: Index fuera de rango: row:1 column:23
+ |relPosY:1relPosX:0(1 ) SET:
+Error: Index fuera de rango: row:1 column:24
+ |relPosY:1relPosX:1(1 ) SET:
+Error: Index fuera de rango: row:1 column:25
+ |relPosY:1relPosX:2(0 )
+ SET:
+Error: Index fuera de rango: row:2 column:23
+ |relPosY:2relPosX:0(1 ) SET:
+Error: Index fuera de rango: row:2 column:24
+ |relPosY:2relPosX:1(0 ) SET:
+Error: Index fuera de rango: row:2 column:25
+ |relPosY:2relPosX:2(0 )
+ SET:
+Error: Index fuera de rango: row:3 column:23
+ |relPosY:3relPosX:0(1 ) SET:
+Error: Index fuera de rango: row:3 column:24
+ |relPosY:3relPosX:1(0 ) SET:
+Error: Index fuera de rango: row:3 column:25
+ |relPosY:3relPosX:2(0 )
+ SET:
+Error: Index fuera de rango: row:4 column:23
+ |relPosY:4relPosX:0(1 ) SET:
+Error: Index fuera de rango: row:4 column:24
+ |relPosY:4relPosX:1(1 ) SET:
+Error: Index fuera de rango: row:4 column:25
+ |relPosY:4relPosX:2(0 )
+this->totPosX:23 
+ 
+------c
+
+Letter=getCharMatrix: (105) :  
+Letter=i
+aIntCharMatrix.getSize=21
+0=0 |1=0 |2=0 |3=0 |4=8 |5=0 |6=1 |7=0 |8=8 |9=0 |10=0 |11=0 |12=8 |13=0 |14=1 |15=0 |16=8 |17=0 |18=1 |19=0 |20=9 |
+ 
+=========AddConsToMatrix===============
+caracter:105
+cont:21
+ SET:
+Error: Index fuera de rango: row:0 column:27
+ |relPosY:0relPosX:0(0 ) SET:
+Error: Index fuera de rango: row:0 column:28
+ |relPosY:0relPosX:1(0 ) SET:
+Error: Index fuera de rango: row:0 column:29
+ |relPosY:0relPosX:2(0 ) SET:
+Error: Index fuera de rango: row:0 column:30
+ |relPosY:0relPosX:3(0 )
+ SET:
+Error: Index fuera de rango: row:1 column:27
+ |relPosY:1relPosX:0(0 ) SET:
+Error: Index fuera de rango: row:1 column:28
+ |relPosY:1relPosX:1(1 ) SET:
+Error: Index fuera de rango: row:1 column:29
+ |relPosY:1relPosX:2(0 )
+ SET:
+Error: Index fuera de rango: row:2 column:27
+ |relPosY:2relPosX:0(0 ) SET:
+Error: Index fuera de rango: row:2 column:28
+ |relPosY:2relPosX:1(0 ) SET:
+Error: Index fuera de rango: row:2 column:29
+ |relPosY:2relPosX:2(0 )
+ SET:
+Error: Index fuera de rango: row:3 column:27
+ |relPosY:3relPosX:0(0 ) SET:
+Error: Index fuera de rango: row:3 column:28
+ |relPosY:3relPosX:1(1 ) SET:
+Error: Index fuera de rango: row:3 column:29
+ |relPosY:3relPosX:2(0 )
+ SET:
+Error: Index fuera de rango: row:4 column:27
+ |relPosY:4relPosX:0(0 ) SET:
+Error: Index fuera de rango: row:4 column:28
+ |relPosY:4relPosX:1(1 ) SET:
+Error: Index fuera de rango: row:4 column:29
+ |relPosY:4relPosX:2(0 )
+this->totPosX:27 
+ 
+------c
+
+Letter=getCharMatrix: (111) :  
+Letter=o
+aIntCharMatrix.getSize=26
+0=0 |1=0 |2=0 |3=0 |4=0 |5=8 |6=0 |7=1 |8=0 |9=0 |10=8 |11=1 |12=0 |13=1 |14=0 |15=8 |16=1 |17=0 |18=1 |19=0 |20=8 |21=0 |22=1 |23=0 |24=0 |25=9 |
+ 
+=========AddConsToMatrix===============
+caracter:111
+cont:26
+ SET:
+Error: Index fuera de rango: row:0 column:31
+ |relPosY:0relPosX:0(0 ) SET:
+Error: Index fuera de rango: row:0 column:32
+ |relPosY:0relPosX:1(0 ) SET:
+Error: Index fuera de rango: row:0 column:33
+ |relPosY:0relPosX:2(0 ) SET:
+Error: Index fuera de rango: row:0 column:34
+ |relPosY:0relPosX:3(0 ) SET:
+Error: Index fuera de rango: row:0 column:35
+ |relPosY:0relPosX:4(0 )
+ SET:
+Error: Index fuera de rango: row:1 column:31
+ |relPosY:1relPosX:0(0 ) SET:
+Error: Index fuera de rango: row:1 column:32
+ |relPosY:1relPosX:1(1 ) SET:
+Error: Index fuera de rango: row:1 column:33
+ |relPosY:1relPosX:2(0 ) SET:
+Error: Index fuera de rango: row:1 column:34
+ |relPosY:1relPosX:3(0 )
+ SET:
+Error: Index fuera de rango: row:2 column:31
+ |relPosY:2relPosX:0(1 ) SET:
+Error: Index fuera de rango: row:2 column:32
+ |relPosY:2relPosX:1(0 ) SET:
+Error: Index fuera de rango: row:2 column:33
+ |relPosY:2relPosX:2(1 ) SET:
+Error: Index fuera de rango: row:2 column:34
+ |relPosY:2relPosX:3(0 )
+ SET:
+Error: Index fuera de rango: row:3 column:31
+ |relPosY:3relPosX:0(1 ) SET:
+Error: Index fuera de rango: row:3 column:32
+ |relPosY:3relPosX:1(0 ) SET:
+Error: Index fuera de rango: row:3 column:33
+ |relPosY:3relPosX:2(1 ) SET:
+Error: Index fuera de rango: row:3 column:34
+ |relPosY:3relPosX:3(0 )
+ SET:
+Error: Index fuera de rango: row:4 column:31
+ |relPosY:4relPosX:0(0 ) SET:
+Error: Index fuera de rango: row:4 column:32
+ |relPosY:4relPosX:1(1 ) SET:
+Error: Index fuera de rango: row:4 column:33
+ |relPosY:4relPosX:2(0 ) SET:
+Error: Index fuera de rango: row:4 column:34
+ |relPosY:4relPosX:3(0 )
+this->totPosX:31 
+ 
+------c
+
+Letter=getCharMatrix: (32) :  
+Letter=_
+aIntCharMatrix.getSize=21
+0=0 |1=0 |2=0 |3=0 |4=8 |5=0 |6=0 |7=0 |8=8 |9=0 |10=0 |11=0 |12=8 |13=0 |14=0 |15=0 |16=8 |17=0 |18=0 |19=0 |20=9 |
+ 
+=========AddConsToMatrix===============
+caracter:32
+cont:21
+ SET:
+Error: Index fuera de rango: row:0 column:36
+ |relPosY:0relPosX:0(0 ) SET:
+Error: Index fuera de rango: row:0 column:37
+ |relPosY:0relPosX:1(0 ) SET:
+Error: Index fuera de rango: row:0 column:38
+ |relPosY:0relPosX:2(0 ) SET:
+Error: Index fuera de rango: row:0 column:39
+ |relPosY:0relPosX:3(0 )
+ SET:
+Error: Index fuera de rango: row:1 column:36
+ |relPosY:1relPosX:0(0 ) SET:
+Error: Index fuera de rango: row:1 column:37
+ |relPosY:1relPosX:1(0 ) SET:
+Error: Index fuera de rango: row:1 column:38
+ |relPosY:1relPosX:2(0 )
+ SET:
+Error: Index fuera de rango: row:2 column:36
+ |relPosY:2relPosX:0(0 ) SET:
+Error: Index fuera de rango: row:2 column:37
+ |relPosY:2relPosX:1(0 ) SET:
+Error: Index fuera de rango: row:2 column:38
+ |relPosY:2relPosX:2(0 )
+ SET:
+Error: Index fuera de rango: row:3 column:36
+ |relPosY:3relPosX:0(0 ) SET:
+Error: Index fuera de rango: row:3 column:37
+ |relPosY:3relPosX:1(0 ) SET:
+Error: Index fuera de rango: row:3 column:38
+ |relPosY:3relPosX:2(0 )
+ SET:
+Error: Index fuera de rango: row:4 column:36
+ |relPosY:4relPosX:0(0 ) SET:
+Error: Index fuera de rango: row:4 column:37
+ |relPosY:4relPosX:1(0 ) SET:
+Error: Index fuera de rango: row:4 column:38
+ |relPosY:4relPosX:2(0 )
+this->totPosX:36 
+ 
+------c
+
+Letter=getCharMatrix: (80) :  
+Letter=P
+aIntCharMatrix.getSize=26
+0=0 |1=1 |2=1 |3=0 |4=0 |5=8 |6=1 |7=0 |8=1 |9=0 |10=8 |11=1 |12=1 |13=0 |14=0 |15=8 |16=1 |17=0 |18=0 |19=0 |20=8 |21=1 |22=0 |23=0 |24=0 |25=9 |
+ 
+=========AddConsToMatrix===============
+caracter:80
+cont:26
+ SET:
+Error: Index fuera de rango: row:0 column:40
+ |relPosY:0relPosX:0(0 ) SET:
+Error: Index fuera de rango: row:0 column:41
+ |relPosY:0relPosX:1(1 ) SET:
+Error: Index fuera de rango: row:0 column:42
+ |relPosY:0relPosX:2(1 ) SET:
+Error: Index fuera de rango: row:0 column:43
+ |relPosY:0relPosX:3(0 ) SET:
+Error: Index fuera de rango: row:0 column:44
+ |relPosY:0relPosX:4(0 )
+ SET:
+Error: Index fuera de rango: row:1 column:40
+ |relPosY:1relPosX:0(1 ) SET:
+Error: Index fuera de rango: row:1 column:41
+ |relPosY:1relPosX:1(0 ) SET:
+Error: Index fuera de rango: row:1 column:42
+ |relPosY:1relPosX:2(1 ) SET:
+Error: Index fuera de rango: row:1 column:43
+ |relPosY:1relPosX:3(0 )
+ SET:
+Error: Index fuera de rango: row:2 column:40
+ |relPosY:2relPosX:0(1 ) SET:
+Error: Index fuera de rango: row:2 column:41
+ |relPosY:2relPosX:1(1 ) SET:
+Error: Index fuera de rango: row:2 column:42
+ |relPosY:2relPosX:2(0 ) SET:
+Error: Index fuera de rango: row:2 column:43
+ |relPosY:2relPosX:3(0 )
+ SET:
+Error: Index fuera de rango: row:3 column:40
+ |relPosY:3relPosX:0(1 ) SET:
+Error: Index fuera de rango: row:3 column:41
+ |relPosY:3relPosX:1(0 ) SET:
+Error: Index fuera de rango: row:3 column:42
+ |relPosY:3relPosX:2(0 ) SET:
+Error: Index fuera de rango: row:3 column:43
+ |relPosY:3relPosX:3(0 )
+ SET:
+Error: Index fuera de rango: row:4 column:40
+ |relPosY:4relPosX:0(1 ) SET:
+Error: Index fuera de rango: row:4 column:41
+ |relPosY:4relPosX:1(0 ) SET:
+Error: Index fuera de rango: row:4 column:42
+ |relPosY:4relPosX:2(0 ) SET:
+Error: Index fuera de rango: row:4 column:43
+ |relPosY:4relPosX:3(0 )
+this->totPosX:40 
+ 
+------c
+
+Letter=getCharMatrix: (97) :  
+Letter=a
+aIntCharMatrix.getSize=21
+0=0 |1=0 |2=0 |3=0 |4=8 |5=1 |6=1 |7=0 |8=8 |9=0 |10=1 |11=0 |12=8 |13=1 |14=1 |15=0 |16=8 |17=1 |18=1 |19=0 |20=9 |
+ 
+=========AddConsToMatrix===============
+caracter:97
+cont:21
+ SET:
+Error: Index fuera de rango: row:0 column:45
+ |relPosY:0relPosX:0(0 ) SET:
+Error: Index fuera de rango: row:0 column:46
+ |relPosY:0relPosX:1(0 ) SET:
+Error: Index fuera de rango: row:0 column:47
+ |relPosY:0relPosX:2(0 ) SET:
+Error: Index fuera de rango: row:0 column:48
+ |relPosY:0relPosX:3(0 )
+ SET:
+Error: Index fuera de rango: row:1 column:45
+ |relPosY:1relPosX:0(1 ) SET:
+Error: Index fuera de rango: row:1 column:46
+ |relPosY:1relPosX:1(1 ) SET:
+Error: Index fuera de rango: row:1 column:47
+ |relPosY:1relPosX:2(0 )
+ SET:
+Error: Index fuera de rango: row:2 column:45
+ |relPosY:2relPosX:0(0 ) SET:
+Error: Index fuera de rango: row:2 column:46
+ |relPosY:2relPosX:1(1 ) SET:
+Error: Index fuera de rango: row:2 column:47
+ |relPosY:2relPosX:2(0 )
+ SET:
+Error: Index fuera de rango: row:3 column:45
+ |relPosY:3relPosX:0(1 ) SET:
+Error: Index fuera de rango: row:3 column:46
+ |relPosY:3relPosX:1(1 ) SET:
+Error: Index fuera de rango: row:3 column:47
+ |relPosY:3relPosX:2(0 )
+ SET:
+Error: Index fuera de rango: row:4 column:45
+ |relPosY:4relPosX:0(1 ) SET:
+Error: Index fuera de rango: row:4 column:46
+ |relPosY:4relPosX:1(1 ) SET:
+Error: Index fuera de rango: row:4 column:47
+ |relPosY:4relPosX:2(0 )
+this->totPosX:45 
+ 
+------c
+
+Letter=getCharMatrix: (98) :  
+Letter=b
+aIntCharMatrix.getSize=21
+0=0 |1=0 |2=0 |3=0 |4=8 |5=1 |6=0 |7=0 |8=8 |9=1 |10=0 |11=0 |12=8 |13=1 |14=1 |15=0 |16=8 |17=1 |18=1 |19=0 |20=9 |
+ 
+=========AddConsToMatrix===============
+caracter:98
+cont:21
+ SET:
+Error: Index fuera de rango: row:0 column:49
+ |relPosY:0relPosX:0(0 ) SET:
+Error: Index fuera de rango: row:0 column:50
+ |relPosY:0relPosX:1(0 ) SET:
+Error: Index fuera de rango: row:0 column:51
+ |relPosY:0relPosX:2(0 ) SET:
+Error: Index fuera de rango: row:0 column:52
+ |relPosY:0relPosX:3(0 )
+ SET:
+Error: Index fuera de rango: row:1 column:49
+ |relPosY:1relPosX:0(1 ) SET:
+Error: Index fuera de rango: row:1 column:50
+ |relPosY:1relPosX:1(0 ) SET:
+Error: Index fuera de rango: row:1 column:51
+ |relPosY:1relPosX:2(0 )
+ SET:
+Error: Index fuera de rango: row:2 column:49
+ |relPosY:2relPosX:0(1 ) SET:
+Error: Index fuera de rango: row:2 column:50
+ |relPosY:2relPosX:1(0 ) SET:
+Error: Index fuera de rango: row:2 column:51
+ |relPosY:2relPosX:2(0 )
+ SET:
+Error: Index fuera de rango: row:3 column:49
+ |relPosY:3relPosX:0(1 ) SET:
+Error: Index fuera de rango: row:3 column:50
+ |relPosY:3relPosX:1(1 ) SET:
+Error: Index fuera de rango: row:3 column:51
+ |relPosY:3relPosX:2(0 )
+ SET:
+Error: Index fuera de rango: row:4 column:49
+ |relPosY:4relPosX:0(1 ) SET:
+Error: Index fuera de rango: row:4 column:50
+ |relPosY:4relPosX:1(1 ) SET:
+Error: Index fuera de rango: row:4 column:51
+ |relPosY:4relPosX:2(0 )
+this->totPosX:49 
+ 
+------c
+
+Letter=getCharMatrix: (108) :  
+Letter=l
+aInb21
+0=0 |1=0 |2=0 |3=0 |4=8 |5=1 |6=0 |7=0 |8=8 |9=1 |10=0 |11=0 |12=8 |13=1 |14=0 |15=0 |16=8 |17=1 |18=1 |19=0 |20=9 |
+ 
+=========AddConsToMatrix===============
+caracter:108
+cont:21
+ SET:
+Error: Index fuera de rango: row:0 column:53
+ |relPosY:0relPosX:0(0 ) SET:
+Error: Index fuera de rango: row:0 column:54
+ |relPosY:0relPosX:1(0 ) SET:
+Error: Index fuera de rango: row:0 column:55
+ |relPosY:0relPosX:2(0 ) SET:
+Error: Index fuera de rango: row:0 column:56
+ |relPosY:0relPosX:3(0 )
+ SET:
+Error: Index fuera de rango: row:1 column:53
+ |relPosY:1relPosX:0(1 ) SET:
+Error: Index fuera de rango: row:1 column:54
+ |relPosY:1relPosX:1(0 ) SET:
+Error: Index fuera de rango: row:1 column:55
+ |relPosY:1relPosX:2(0 )
+ SET:
+Error: Index fuera de rango: row:2 column:53
+ |relPosY:2relPosX:0(1 ) SET:
+Error: Index fuera de rango: row:2 column:54
+ |relPosY:2relPosX:1(0 ) SET:
+Error: Index fuera de rango: row:2 column:55
+ |relPosY:2relPosX:2(0 )
+ SET:
+Error: Index fuera de rango: row:3 column:53
+ |relPosY:3relPosX:0(1 ) SET:
+Error: Index fuera de rango: row:3 column:54
+ |relPosY:3relPosX:1(0 ) SET:
+Error: Index fuera de rango: row:3 column:55
+ |relPosY:3relPosX:2(0 )
+ SET:
+Error: Index fuera de rango: row:4 column:53
+ |relPosY:4relPosX:0(1 ) SET:
+Error: Index fuera de rango: row:4 column:54
+ |relPosY:4relPosX:1(1 ) SET:
+Error: Index fuera de rango: row:4 column:55
+ |relPosY:4relPosX:2(0 )
+this->totPosX:53 
+ 
+------c
+
+Letter=getCharMatrix: (111) :  
+Letter=o
+aInb26
+0=0 |1=0 |2=0 |3=0 |4=0 |5=8 |6=0 |7=1 |8=0 |9=0 |10=8 |11=1 |12=0 |13=1 |14=0 |15=8 |16=1 |17=0 |18=1 |19=0 |20=8 |21=0 |22=1 |23=0 |24=0 |25=9 |
+ 
+=========AddConsToMatrix===============
+caracter:111
+cont:26
+ SET:
+Error: Index fuera de rango: row:0 column:57
+ |relPosY:0relPosX:0(0 ) SET:
+Error: Index fu�  

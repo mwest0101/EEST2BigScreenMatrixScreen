@@ -1,7 +1,6 @@
 
 #include <Arduino.h>
 #include "inc_include.h"
-
 void convProgToArray(VectorClass &aIntCharMatrix,const int *phrase, int size){
   //int* arrayReturn;
   //VectorClass vecTemp(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);   
@@ -29,8 +28,8 @@ void convProgToArray(VectorClass &aIntCharMatrix,const int *phrase, int size){
   //return vecTemp;
   //return vecTemp;
 }
-
-
+//____________________________________________________________________
+//------------Function------------------------------------------------
 void printMatrix(int *vMatrix){
   
   
@@ -44,15 +43,16 @@ void printMatrix(int *vMatrix){
   }
   
 }
-int **CreateMatrix(int **matrix,int cols, int rows)
-{
+//____________________________________________________________________
+//------------Function------------------------------------------------
+int **CreateMatrix(int **matrix,int cols, int rows){
 
   matrix = new int *[rows];
-  for (int i = 0; i < rows; i++)
-  {
+  for (int i = 0; i < rows; i++){
+
     matrix[i] = new int[cols];
     for (int j = 0; j < cols; j++)
-    {
+ {
       matrix[i][j] = 0;
     }
   }

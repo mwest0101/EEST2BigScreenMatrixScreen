@@ -1,10 +1,7 @@
 
-
 #ifndef _INC_DRIVE_MATRIX_H_
   #define _INC_DRIVE_MATRIX_H_
-
-
-  class DriveMatrix {
+  class DriveMatrix{
     private:
       
       int matrixCols=0;
@@ -36,7 +33,7 @@
       void Print(int **matrix);
       int **Clear(int **matrix);
       void ResetInitPosMatrix();
-      int **AddConsToMatrix(int **matrix,int *aData,int caracter);
+      void AddConsToMatrix(MatrixClass &matrix,VectorClass &IntCharMatrix,int caracter);
       int *GetFrame(int **matrix);
       void despIzq();
       //void moveMatrixToLeft();
@@ -49,5 +46,4 @@
       //int getValueFromChar(int number);
       
   };
-
 #endif /* _INC_DRIVE_MATRIX_H_ */

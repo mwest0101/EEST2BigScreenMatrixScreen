@@ -1,9 +1,8 @@
 
 #include <Arduino.h>
 #include "inc_include.h"
+ShowMatrix::ShowMatrix(){
 
-ShowMatrix::ShowMatrix()
-{
   debugl("");
 }
 #ifdef IS_LCDSCREEN
@@ -11,32 +10,31 @@ ShowMatrix::ShowMatrix()
     pantalla = vPantalla;
   }
 #endif
-void ShowMatrix::InitShowMatrix(VectorClass vecPins)
-{
+void ShowMatrix::InitShowMatrix(VectorClass vecPins){
+
   
   // aPins=vaPins;
   // nElements=nFrameElements;
-
   VectorClass tempVectorLastFrame(35, 0, 10);
+  for (int i = 0; i < vecPins.getSize(); i++){
 
-  for (int i = 0; i < vecPins.getSize(); i++)
-  {
     pinMode(vecPins.get(i), OUTPUT);
     //debug(vaPins[i]);
   }
   // debugl("");
-
   // tempVectorLastFrame = convProgToArray(C_EMPTY, 0, (sizeof(C_EMPTY) / 2));
 }
+//____________________________________________________________________
+//------------Function------------------------------------------------
+void ShowMatrix::PrintData(int data){
 
-void ShowMatrix::PrintData(int data)
-{
   debug(data);
   debug("text");
 }
+//____________________________________________________________________
+//------------Function------------------------------------------------
+void ShowMatrix::PrintLed(int ledNum, int pintToActive, int ledState){
 
-void ShowMatrix::PrintLed(int ledNum, int pintToActive, int ledState)
-{
   
   #ifdef IS_LCDSCREEN
     int posX = 0;
@@ -45,20 +43,21 @@ void ShowMatrix::PrintLed(int ledNum, int pintToActive, int ledState)
     posY = (int)(ledNum % 7);
   #endif
     
-  if (IS_BIGSCREEN)
-  {
+  if (IS_BIGSCREEN){
+
     digitalWrite(pintToActive, ledState);
   }
   #ifdef IS_LCDSCREEN
-  else
-  {
+  else{
+
     pantalla.setLed(0, posX, posY, ledState);
   }
   #endif
 }
+//____________________________________________________________________
+//------------Function------------------------------------------------
+void ShowMatrix::PrintLedMatrix(int *vlFrame){
 
-void ShowMatrix::PrintLedMatrix(int *vlFrame)
-{
   int pinState = 0;
   int pinNum = 0;
   int posX = 0;
@@ -66,25 +65,20 @@ void ShowMatrix::PrintLedMatrix(int *vlFrame)
   /*
   debugl("");
   debugl("___________________________________________");*/
-
   lastPosX = posX;
-  for (int i = 0; i < nElements; i++)
-  {
+  for (int i = 0; i < nElements; i++){
 
     // posY = (int)(i % 7);
-
     posX = (int)(i / MATRIX_WIDTH);
     pinState = vlFrame[i];
     pinNum = aPins[i];
-
     if (pinState < 2)
-    {
+ {
       if (lastPosX != posX)
-      {
+   {
         debugl(" ");
         lastPosX = posX;
       }
-
 #ifdef DEBUG_MATRIX
       debug("|");
       debug(pinState);
@@ -102,7 +96,6 @@ void ShowMatrix::PrintLedMatrix(int *vlFrame)
        
 #endif
       /*
-
     if(vlFrame[i] != aLastFrame[i]){
         aLastFrame[i] = pinState; // update the values of matriz temp to only update the changed values
         ShowMatrix::PrintLed(i,pinNum,pinState);

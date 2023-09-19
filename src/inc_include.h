@@ -21,7 +21,7 @@
   #include "inc_config_pacman.h"
   
   #include "VectorClass.cpp"
-  //#include "MatrixClass.cpp"
+  #include "MatrixClass.cpp"
   #include "inc_functions.h"   
   #include "inc_show_matrix.h"
   #include "inc_drive_matrix.h"
