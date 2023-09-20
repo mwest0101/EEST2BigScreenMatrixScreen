@@ -16,10 +16,11 @@
   #define DEBUG_MATRIX    true
   //#define IS_LCDSCREEN    true
   #define IS_BIGSCREEN    true
-  #define MATRIX_WIDTH 21
+  #define MATRIX_WIDTH 7
   #define MATRIX_HEIGHT 5
-  #define BUILD_MATRIX_WIDTH 21
-  #define BUILD_MATRIX_HEIGHT 5
+  
+  #define BUILD_MATRIX_COLS 21
+  #define BUILD_MATRIX_ROWS 5
   #define VECTOR_SIZE 40
   #define VECTOR_MAX_VALUE 100
   #define VECTOR_MIN_VALUE 0

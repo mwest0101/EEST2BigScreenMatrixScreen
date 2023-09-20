@@ -6,23 +6,24 @@ class MatrixClass{
 
 private:
   int **matrix;
-  int row;
-  int column;
+  int rows;
+  int cols;
   int minValue;
   int maxValue;
 public:
-  MatrixClass(int column, int row, int min, int max){
+  MatrixClass(int rows,int cols, int min, int max){
 
-    this->column = column;
-    this->row = row;
+    this->rows = rows;
+    this->cols = cols;
+    
     this->minValue = min;
     this->maxValue = max;
     // Inicializar la matrix con valuees aleatorios dentro del rango especificado
-    matrix = new int *[row];
-    for (int i = 0; i < row; i++)
+    matrix = new int *[rows];
+    for (int i = 0; i < rows; i++)
  {
-      matrix[i] = new int[column];
-      for (int j = 0; j < column; j++)
+      matrix[i] = new int[cols];
+      for (int j = 0; j < cols; j++)
    {
         matrix[i][j] = 0;
         }
@@ -31,7 +32,7 @@ public:
   ~MatrixClass(){
 
     // Liberar la memoria de la matrix
-    for (int i = 0; i < row; i++)
+    for (int i = 0; i < rows; i++)
  {
       delete[] matrix[i];
     }
@@ -40,12 +41,17 @@ public:
 //____________________________________________________________________
 //------------Function------------------------------------------------
 void print(){
-
-    for (int i = 0; i < row; i++)
- {
-      for (int j = 0; j < column; j++){
+  debug("============================================================");
+  debug("this->rows:");
+  debug(this->rows);
+  debug(" this->cols:");
+  debugl(this->cols);
+    for (int i = 0; i < this->rows; i++)
+    {
+      for (int j = 0; j < this->cols; j++){
         debug("|");
         debug(matrix[i][j]);
+        //debug(this->get(i, j));
         //debug(" ");
       }
       debugl();
@@ -53,51 +59,63 @@ void print(){
   }
 //____________________________________________________________________
 //------------Function------------------------------------------------
-int get(int row, int column){
+int getNumRows(){
+  return this->rows;
+}
 
+//____________________________________________________________________
+//------------Function------------------------------------------------
+int getNumCols(){
+  return this->cols;
+}
+
+//____________________________________________________________________
+//------------Function------------------------------------------------
+int get(int rows,int cols){
+    int value=-1;
     // Obtener el value de la matrix en una posici�n espec�fica
-    if (row >= 0 && row < this->row && column >= 0 && column < this->column)
- {
-      return matrix[row][column];
-    }
-    else
- {
+    if (rows >= 0 && rows < this->rows && cols >= 0 && cols < this->cols){
+      value=matrix[rows][cols];
+      debug("MatrixClass.GET OK: ");
+      debug("row=:");
+      debug(rows);
+      debug(" col:");
+      debugl(cols);
+      debug(" value:");
+      debugl(value);
+      //return matrix[rows][cols];
+    }else{
       // Manejar un value fuera de rango
-      debug("Row: Out of index =");
-      debug(row);
-      debug("Col: Out of index =");
-      debugl(column);
-      return -1;
+      debug("MatrixClass.GET Out of index: ");
+      debug("row=:");
+      debug(rows);
+      debug(" col:");
+      debugl(cols);
+      value=-1;
     }
+    return value;
   }
 //____________________________________________________________________
 //------------Function------------------------------------------------
-void set(int row, int column, int value){
+void set(int rows,int cols, int value){
 
     // Establecer el value de la matrix en una posici�n espec�fica
-    if (row >= 0 && row < this->row && column >= 0 && column < this->column)
- {
-      // matrix[row][column] = constrain(value, minValue, maxValue);
-      if (value >= minValue && value <= this->maxValue)
-   {
-        matrix[row][column] = value;
-      }
-      else
-   {
-        debugl(" SET:");
-        debug("Error: Value fuera de rango:");
+    if (rows >= 0 && rows < this->rows && cols >= 0 && cols < this->cols){
+      // matrix[rows][cols] = constrain(value, minValue, maxValue);
+      if (value >= minValue && value <= this->maxValue){
+        matrix[rows][cols] = value;
+      }else{
+        debug("MatrixClass.SET: Value out of range");
+        debug("Value: ");
         debugl(value);
         
         }
-}
-    else
- {
-      debugl(" SET:");
-      debug("Error: Index fuera de rango:");      
-      debug(" row:");
-      debug(row);
-      debug(" column:");
-      debugl(column);
+    }else{      
+      debug("MatrixClass.SET Out of index: ");
+      debug("row=:");
+      debug(rows);
+      debug(" col:");
+      debugl(cols);
     }
   }
 //____________________________________________________________________
@@ -105,25 +123,25 @@ void set(int row, int column, int value){
 void clear(){
 
     // Liberar la memoria de la matrix
-    for (int i = 0; i < row; i++)
+    for (int i = 0; i < rows; i++)
  {
       delete[] matrix[i];
     }
     delete[] matrix;
     // Establecer la matriz a NULL para evitar problemas de doble liberación
     matrix = nullptr;
-    matrix = new int *[row];
-    for (int i = 0; i < row; i++)
+    matrix = new int *[rows];
+    for (int i = 0; i < rows; i++)
  {
-      matrix[i] = new int[column];
-      for (int j = 0; j < column; j++)
+      matrix[i] = new int[cols];
+      for (int j = 0; j < cols; j++)
    {
         matrix[i][j] = 0;
         }
 }
     // Restablecer las dimensiones de la matriz a 0
-    /*row = 0;
-    column = 0;*/
+    /*rows = 0;
+    cols = 0;*/
   }
 };
 #endif // _MATRIX_CLASS_

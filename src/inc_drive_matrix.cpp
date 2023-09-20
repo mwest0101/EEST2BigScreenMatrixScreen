@@ -73,9 +73,9 @@ void DriveMatrix::AddConsToMatrix(MatrixClass &matrix, VectorClass &aIntCharMatr
   debugl("=========AddConsToMatrix===============");
   // ResetInitPosMatrix(); //sacar esto una vez probado que funciona
   int value = 0;
-  int relPosY = 0;
-  int relPosX = 0;
-  int maxPosX = 0;
+  int relPosRow = 0;
+  int relPosCols = 0;
+  int maxPosCol = 0;
   int cont = aIntCharMatrix.getSize();
   this->infMat[posInfMat] = caracter;
   debug("caracter:");
@@ -86,21 +86,24 @@ void DriveMatrix::AddConsToMatrix(MatrixClass &matrix, VectorClass &aIntCharMatr
 
     value = aIntCharMatrix.get(i);
     if (value != EL && value != EA){
-      matrix.set(relPosY, (this->totPosX + relPosX), value);
+      
+      matrix.set(relPosRow,(this->totPosX + relPosCols), value);
       debug(" |");
+      /*
       debug("t:");
       debug(this->totPosX);
       debug(" Y:");
-      debug(relPosY);
+      debug(relPosRow);
       debug(" X:");
-      debug(relPosX);
+      debug(relPosCols);
       debug(" (");
+      */
       debug(value);
-      debuge(")");
-      if (relPosX > maxPosX) maxPosX = relPosX;
+      //debuge(")");
+      if (relPosCols > maxPosCol) maxPosCol = relPosCols;
       /*
-      debug("relPosY:");debug(relPosY);debug(" ");
-      debug("relPosX:");debug(relPosX);debug(" ");
+      debug("relPosRow:");debug(relPosRow);debug(" ");
+      debug("relPosCols:");debug(relPosCols);debug(" ");
       */
       if (value < 0 || value > 1)
       {
@@ -108,21 +111,21 @@ void DriveMatrix::AddConsToMatrix(MatrixClass &matrix, VectorClass &aIntCharMatr
         debugl("ATENTION =============== ERROR---------------->");
       }
       // debug("value:");debug(value);debug(" (i+1)=");debugl(i+1);
-      relPosX++;
+      relPosCols++;
     }else{  
       debug(" ||");
-      debug("t:");
+    /*  debug("t:");
       debug(this->totPosX);
       debug(" Y:");
-      debug(relPosY);
+      debug(relPosRow);
       debug(" X:");
-      debug(relPosX);
-      debug(" (");
-      debug(value);
-      debugl(")");
+      debug(relPosCols);
+      debug(" (");*/
+      debugl(value);
+      //debugl(")");
       
-      relPosY++;
-      relPosX = 0;
+      relPosRow++;
+      relPosCols = 0;
     }
   }
   debug("this->totPosX:");
@@ -131,19 +134,19 @@ void DriveMatrix::AddConsToMatrix(MatrixClass &matrix, VectorClass &aIntCharMatr
   /*
   debugl("=========TOTALS===============");
   debug("this->totPosX:");debug(this->totPosX);debug(" ");debug("");
-  debug("this->totPosX+relPosX:");debug(this->totPosX + relPosX);debug("");
+  debug("this->totPosX+relPosCols:");debug(this->totPosX + relPosCols);debug("");
   this->debug("posInfMat:");debug(posInfMat);debug(" ");debug(caracter);debugl("");
   */
-  this->posInfMat += (maxPosX + 1);
-  this->totPosX += (maxPosX + 1);
-  maxPosX = 0;
+  this->posInfMat += (maxPosCol + 1);
+  this->totPosX += (maxPosCol + 1);
+  maxPosCol = 0;
   debugl(" ");
 }
 //____________________________________________________________________
 //------------Function------------------------------------------------
 void DriveMatrix::despIzq(){
 
-  if (despMat < BUILD_MATRIX_WIDTH){
+  if (despMat < BUILD_MATRIX_COLS){
 
     despMat++;
   }else{
@@ -180,16 +183,16 @@ int *DriveMatrix::GetFrame(int **matrix){
 }
 //____________________________________________________________________
 //------------Function------------------------------------------------
-int **DriveMatrix::moveMatrixToLeft(int **matrix){
+void DriveMatrix::moveMatrixToLeft(MatrixClass &matrix){
 
   for (int i = 0; i < MATRIX_HEIGHT; i++){
 
-    for (int j = 0; j < ((MATRIX_WIDTH * 2) - 1); j++){
-      matrix[i][j] = matrix[i][j + 1];
+    for (int j = 0; j < ((MATRIX_WIDTH*2) - 1); j++){
+      matrix.set(j,i,matrix.get(j,(i+1)));
     }
     movMat++;
   }
-  return matrix;
+  
 }
 //____________________________________________________________________
 //------------Function------------------------------------------------

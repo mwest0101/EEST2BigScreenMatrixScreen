@@ -1,0 +1,86 @@
+5
+ 
+0=0 |1=2 |2=7 |3=12 |4=17 |5=22 |6=27 |7=32 |8=3 |9=8 |10=13 |11=18 |12=23 |13=28 |14=33 |15=4 |16=9 |17=14 |18=19 |19=24 |20=29 |21=34 |22=5 |23=10 |24=15 |25=20 |26=25 |27=30 |28=35 |29=6 |30=11 |31=16 |32=21 |33=26 |34=31 |35=36 |
+0=77 |1=97 |2=117 |3=114 |4=105 |5=99 |6=105 |7=111 |8=32 |9=80 |10=97 |11=98 |12=108 |13=111 |14=32 |15=87 |16=101 |17=115 |18=116 |
+______________________________________________________
+---------Antes de  bucle de loop----------------------
+------------------Inicio de for-----------------------
+
+Letter=getCharMatrix: (77) :  
+Letter=M
+aIntCharMatrix.getSize=35
+ 
+=========AddConsToMatrix===============
+caracter:77
+cont:35
+ SET Out of index: row=:0 col:0
+ |1 SET Out of index: row=:0 col:1
+ |0 SET Out of index: row=:0 col:2
+ |0 SET Out of index: row=:0 col:3
+ |0 SET Out of index: row=:0 col:4
+ |1 SET Out of index: row=:0 col:5
+ |0 ||8
+ SET Out of index: row=:1 col:0
+ |1 SET Out of index: row=:1 col:1
+ |1 SET Out of index: row=:1 col:2
+ |0 SET Out of index: row=:1 col:3
+ |1 SET Out of index: row=:1 col:4
+ |1 SET Out of index: row=:1 col:5
+ |0 ||8
+ SET Out of index: row=:2 col:0
+ |1 SET Out of index: row=:2 col:1
+ |0 SET Out of index: row=:2 col:2
+ |1 SET Out of index: row=:2 col:3
+ |0 SET Out of index: row=:2 col:4
+ |1 SET Out of index: row=:2 col:5
+ |0 ||8
+ SET Out of index: row=:3 col:0
+ |1 SET Out of index: row=:3 col:1
+ |0 SET Out of index: row=:3 col:2
+ |0 SET Out of index: row=:3 col:3
+ |0 SET Out of index: row=:3 col:4
+ |1 SET Out of index: row=:3 col:5
+ |0 ||8
+ SET Out of index: row=:4 col:0
+ |1 SET Out of index: row=:4 col:1
+ |0 SET Out of index: row=:4 col:2
+ |0 SET Out of index: row=:4 col:3
+ |0 SET Out of index: row=:4 col:4
+ |1 SET Out of index: row=:4 col:5
+ |0 ||9
+this->totPosX:0 
+ 
+------------------Inicio de for-----------------------
+
+Letter=getCharMatrix: (97) :  
+Letter=a
+aIntCharMatrix.getSize=20
+ 
+=========AddConsToMatrix===============
+caracter:97
+cont:20
+ SET Out of index: row=:0 col:6
+ |0 SET Out of index: row=:0 col:7
+ |0 SET Out of index: row=:0 col:8
+ |0 ||8
+ SET Out of index: row=:1 col:6
+ |1 SET Out of index: row=:1 col:7
+ |1 SET Out of index: row=:1 col:8
+ |0 ||8
+ SET Out of index: row=:2 col:6
+ |0 SET Out of index: row=:2 col:7
+ |1 SET Out of index: row=:2 col:8
+ |0 ||8
+ SET Out of index: row=:3 col:6
+ |1 SET Out of index: row=:3 col:7
+ |1 SET Out of index: row=:3 col:8
+ |0 ||8
+ SET Out of index: row=:4 col:6
+ |1 SET Out of index: row=:4 col:7
+ |1 SET Out of index: row=:4 col:8
+ |0 ||9
+this->totPosX:6 
+ 
+------------------Inicio de for-----------------------
+
+Letter=getCharMatrix: (117) : 

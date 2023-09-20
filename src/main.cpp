@@ -28,18 +28,8 @@ int contChars = 0;
 VectorClass aIntCharMatrix(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 VectorClass vecChar(1, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 VectorClass vecPins(1, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
-MatrixClass matrix(BUILD_MATRIX_WIDTH, BUILD_MATRIX_HEIGHT, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE); 
-//MatrixClass aMatrix(1, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
-//VectorClass aIntCharMatrix(1, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
-// VectorClass vecChar(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
-// int *aCharsBlock;
-// VectorClass vecChars(VECTOR_SIZE, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
-// VectorClass vecPins(VECTOR_SIZE, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
-// VectorClass vecChars(VECTOR_SIZE, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
-//  const int ELEMENT_COUNT_MAX = 30;
-//  int storage_array[ELEMENT_COUNT_MAX];
-// Vector<int> vecIntChar(storage_array); //No se puede usar, al usar foreach funciona mal al ejecutarlo varias veces.
-//int *aIntCharMatrix;
+MatrixClass matrix(BUILD_MATRIX_ROWS,BUILD_MATRIX_COLS, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE); 
+
 int numOfcharacter = 0;
 void setup(){
 
@@ -54,23 +44,14 @@ void setup(){
 #endif
     sm = ShowMatrix();
     dm = DriveMatrix();
-// aCharsBlock=(int*)calloc((300),sizeof(int));
-// for (int i = 0; i < 300; i++) aCharsBlock[i]=0;
- 
-//dm.Clear(matrix);
-// dm.CreateMatrix();
+
 #ifdef IS_LCDSCREEN
     pantalla.borrar();
 #endif
-    // convProgToArray(vecPins,C_Pins, (sizeof(C_Pins) / 2));
+    
     convProgToArray(vecPins,C_Pins, (sizeof(C_Pins) / 2));
     vecPins.print();
-    // convProgToArray2(C_Pins, (sizeof(C_Pins) / 2));
-    // nElements = sizeof(C_Pins) / 2;
-    // sm.InitShowMatrix(vecPins, vecPins.getSize(), pantalla);
-    // aT2 = convProgToArray(C_T2, 0, (sizeof(C_T2) / 2));
-    // aPacman = convProgToArray(C_PACMAN_01, 0, (sizeof(C_PACMAN_01) / 2));
-    debugl("test");
+    
     /*
     debugl("");
     debuge("getContChars:");
@@ -80,41 +61,31 @@ void setup(){
 void loop(){
 
     dm.ResetInitPosMatrix();
-    /*
-    if (lastStrToShow != strToShow)
-    {*/
+    
+    if (lastStrToShow != strToShow){
         
         VectorClass vecChar = dm.getArrayOfCharsOfString(strToShow);
         vecChar.print();
         debugl("______________________________________________________");
         debugl("---------Antes de  bucle de loop----------------------");
         
-        matrix.clear();
-        //for (int i = 0; i < dm.getContChars(); i++)
-        for (int i = 0; i < 3; i++)
-        { 
-        debugl("------------------Inicio de for-----------------------");
-            /* debugl("_________________________________________________________________________");
-            debugl("=========================================================================");
-            debugl("---------Bucle de captura de caracteres y pasaje de letras---------------");
-            // onLetterInInt=aCharsBlock[i];
-            debug("i=");
-            debuge(i);
-            debug(" vecChar.get(i)=");
-            debugel(vecChar.get(i));*/
+        //matrix.clear();
+        
+        for (int i = 0; i < 3; i++){ 
+            debugl("------------------Inicio de for-----------------------");
             aIntCharMatrix.clear();
             getCharMatrix(aIntCharMatrix,vecChar.get(i));
-            
-            //debugl("---------Antes de pasar a AddConstMatrix---------------");
             debug("aIntCharMatrix.getSize=");
             debugl(aIntCharMatrix.getSize());
-            //aIntCharMatrix.print();
-            //delay(200);
-            //debugl(aIntCharMatrix[0]);
             
              dm.AddConsToMatrix(matrix,aIntCharMatrix, vecChar.get(i));
-             matrix.print();
-        //}
+        
+        
+        }
+    }
+    matrix.print();
+    //dm.moveMatrixToLeft(matrix);
+        
         /*
         aFrame = dm.GetFrame(matrix);
         sm.PrintLedMatrix(aFrame);
@@ -129,7 +100,7 @@ void loop(){
         sm.PrintLedMatrix(aPacman);
         delay(500);
         */
-    }
+    
     lastStrToShow = strToShow;
     delay(500);
 }

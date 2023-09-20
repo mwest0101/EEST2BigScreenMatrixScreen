@@ -37,7 +37,7 @@
       int *GetFrame(int **matrix);
       void despIzq();
       //void moveMatrixToLeft();
-      int **moveMatrixToLeft(int **matrix);
+      void moveMatrixToLeft(MatrixClass &matrix);
       int getMovMat();
       VectorClass getArrayOfCharsOfString(String strData);
       int getContChars();
