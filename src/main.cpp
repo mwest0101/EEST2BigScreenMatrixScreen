@@ -84,7 +84,7 @@ void loop(){
         }
     }
     matrix.print();
-    //dm.moveMatrixToLeft(matrix);
+    dm.moveMatrixToLeft(matrix);
         
         /*
         aFrame = dm.GetFrame(matrix);

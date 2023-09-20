@@ -41,7 +41,7 @@ public:
 //____________________________________________________________________
 //------------Function------------------------------------------------
 void print(){
-  debug("============================================================");
+  debugl("============================================================");
   debug("this->rows:");
   debug(this->rows);
   debug(" this->cols:");
@@ -76,21 +76,21 @@ int get(int rows,int cols){
     // Obtener el value de la matrix en una posici�n espec�fica
     if (rows >= 0 && rows < this->rows && cols >= 0 && cols < this->cols){
       value=matrix[rows][cols];
-      debug("MatrixClass.GET OK: ");
+      /*debug("MatrixClass.GET OK: ");
       debug("row=:");
       debug(rows);
       debug(" col:");
       debugl(cols);
       debug(" value:");
-      debugl(value);
+      debugl(value);*/
       //return matrix[rows][cols];
     }else{
       // Manejar un value fuera de rango
-      debug("MatrixClass.GET Out of index: ");
+      /*debug("MatrixClass.GET Out of index: ");
       debug("row=:");
       debug(rows);
       debug(" col:");
-      debugl(cols);
+      debugl(cols);*/
       value=-1;
     }
     return value;

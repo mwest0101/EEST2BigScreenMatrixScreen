@@ -188,7 +188,7 @@ void DriveMatrix::moveMatrixToLeft(MatrixClass &matrix){
   for (int i = 0; i < MATRIX_HEIGHT; i++){
 
     for (int j = 0; j < ((MATRIX_WIDTH*2) - 1); j++){
-      matrix.set(j,i,matrix.get(j,(i+1)));
+      matrix.set(i,j,matrix.get(i,(j+1)));
     }
     movMat++;
   }
