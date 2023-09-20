@@ -86,11 +86,11 @@ int get(int rows,int cols){
       //return matrix[rows][cols];
     }else{
       // Manejar un value fuera de rango
-      /*debug("MatrixClass.GET Out of index: ");
+      debug("MatrixClass.GET Out of index: ");
       debug("row=:");
       debug(rows);
       debug(" col:");
-      debugl(cols);*/
+      debugl(cols);
       value=-1;
     }
     return value;

@@ -34,14 +34,14 @@
       int **Clear(int **matrix);
       void ResetInitPosMatrix();
       void AddConsToMatrix(MatrixClass &matrix,VectorClass &IntCharMatrix,int caracter);
-      int *GetFrame(int **matrix);
+      void GetFrame(MatrixClass &matrix,VectorClass &aFrame);
       void despIzq();
       //void moveMatrixToLeft();
       void moveMatrixToLeft(MatrixClass &matrix);
       int getPosLastChar();
       int canAddChar();
       int getMovMat();
-      VectorClass getArrayOfCharsOfString(String strData);
+      void getArrayOfCharsOfString(VectorClass &vecTemp,String strData);
       int getContChars();
       unsigned long getCodSumTo();
       

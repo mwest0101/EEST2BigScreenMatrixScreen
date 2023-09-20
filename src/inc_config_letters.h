@@ -2,11 +2,11 @@
 #ifndef _INC_CONFIG_LETTERS_H_
 #define _INC_CONFIG_LETTERS_H_
 							       
-const PROGMEM int C_LET_ESP[]= {O,O,O,EL,
-						       O,O,O,EL,
-						       O,O,O,EL,
-						       O,O,O,EL,
-						       O,O,O,EA};
+const PROGMEM int C_LET_ESP[]= {O,O,EL,
+						        O,O,EL,
+						        O,O,EL,
+						        O,O,EL,
+						        O,O,EA};
 const PROGMEM int C_LET_1[]=  {O,O,I,O,EL,
 						       O,I,I,O,EL,
 						       I,O,I,O,EL,
@@ -232,11 +232,11 @@ const PROGMEM int C_LET_h[]=  {O,O,O,O,EL,
 						       I,I,I,O,EL,
 						       I,I,I,O,EL,
 						       I,O,I,O,EA};
-const PROGMEM int C_LET_i[]=  {O,O,O,EL,
-						       O,I,O,EL,
-						       O,O,O,EL,
-						       O,I,O,EL,
-						       O,I,O,EA};
+const PROGMEM int C_LET_i[]=  {O,O,EL,
+						       I,O,EL,
+						       O,O,EL,
+						       I,O,EL,
+						       I,O,EA};
 const PROGMEM int C_LET_j[]=  {O,O,O,O,EL,
 						       O,I,O,O,EL,
 						       O,I,O,O,EL,

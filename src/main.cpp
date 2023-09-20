@@ -2,7 +2,7 @@
 #include "inc_include.h"
 int *aPins;
 int nElements = 0;
-int *aFrame;
+//int *aFrame;
 int *aT2;
 int *busChars;
 int *aPacman;
@@ -12,7 +12,7 @@ int *aPacman3;
 int *AChar;
 int *BChar;
 int posLetDesp = 0;
-// int * aFrame;
+//int * aFrame;
 //int **matrix;
 int pinState = 0;
 #ifdef IS_LCDSCREEN
@@ -20,23 +20,24 @@ MatrizLed pantalla;
 #endif
 DriveMatrix dm;
 ShowMatrix sm;    //012345678901234567890123456789
-String strToShow = "Maurricio Pablo West";
+String strToShow = "Mauricio Pablo Pest";
 //String strToShow = "Mauricio Pablo West";
 String lastStrToShow = "";
 int *test;
 int oldCodSumTo = 0;
 int contChars = 0;
+VectorClass vecTemp(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 VectorClass aIntCharMatrix(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
-VectorClass vecChar(1, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
+VectorClass vecChar(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 VectorClass vecPins(1, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 MatrixClass matrix(BUILD_MATRIX_ROWS,BUILD_MATRIX_COLS, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE); 
-
+VectorClass aFrame(35, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 int numOfcharacter = 0;
 int contCharAdded=0;
 void setup(){
 
 #ifdef DEBUG
-    Serial.begin(9600);
+    Serial.begin(115200);
 #else
     debug_init();
 #endif
@@ -62,34 +63,42 @@ void setup(){
 // Secuencia de la matriz
 void loop(){
 
-    dm.ResetInitPosMatrix();
+    
     
     if (lastStrToShow != strToShow){
-        
-        VectorClass vecChar = dm.getArrayOfCharsOfString(strToShow);
+        dm.ResetInitPosMatrix();    
+        dm.getArrayOfCharsOfString(vecChar,strToShow);
         vecChar.print();
-        debugl("______________________________________________________");
-        debugl("---------Antes de  bucle de loop----------------------");
-        
-        //matrix.clear();
-        
-        for (int i = 0; i < 3; i++){ 
-            debugl("------------------Inicio de for-----------------------");
-            aIntCharMatrix.clear();
-            getCharMatrix(aIntCharMatrix,vecChar.get(i));
-            debug("aIntCharMatrix.getSize=");
-            debugl(aIntCharMatrix.getSize());
-            
-             dm.AddConsToMatrix(matrix,aIntCharMatrix, vecChar.get(i));
-        
-        
-        }
+        lastStrToShow = strToShow;
     }
+    debugl("______________________________________________________");
+    debugl("---------Antes de  bucle de loop----------------------");
+    
+    //matrix.clear();
+    
+    if(dm.canAddChar()==1){
+        debugl("------------------Inicio de for-----------------------");
+        aIntCharMatrix.clear();
+        getCharMatrix(aIntCharMatrix,vecChar.get(contCharAdded));
+        debug("aIntCharMatrix.getSize=");
+        debugl(aIntCharMatrix.getSize());
+        
+         dm.AddConsToMatrix(matrix,aIntCharMatrix, vecChar.get(contCharAdded));
+         contCharAdded++;
+    }
+    debugl("____________________________________________________________");
+    debugl("============================================================");    
+    debug("LastPoschar:");
+    debugl(dm.getPosLastChar());
+    debugl("============================================================");    
     matrix.print();
     dm.moveMatrixToLeft(matrix);
-    if(dm.canAddChar()){
+    dm.GetFrame(matrix,aFrame);
+    //sm.PrintLedMatrix(aFrame);
 
-    }
+    // if(dm.canAddChar()){
+
+    // }
         
         /*
         aFrame = dm.GetFrame(matrix);
@@ -106,6 +115,6 @@ void loop(){
         delay(500);
         */
     
-    lastStrToShow = strToShow;
-    delay(500);
+    
+    delay(1000);
 }

@@ -42,10 +42,10 @@ int calcNumberOfChar(char caracter){
 void getCharMatrix(VectorClass &aIntCharMatrix,int character){
   //VectorClass aChar(VECTOR_SIZE, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
   debugl("");
-  debug("Letter=getCharMatrix: (");
+  debug("getCharMatrix | Letter=:");
   debug(character);
-  debug(") : ");
-  delay(1000);
+  debugl("  ");
+  //delay(1000);
   
     switch (character){
       case 32:     convProgToArray(aIntCharMatrix,C_LET_ESP,(sizeof(C_LET_ESP)/2));debugl("Letter=_");break; //' ' Espacio
