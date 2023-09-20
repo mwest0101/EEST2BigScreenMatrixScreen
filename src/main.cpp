@@ -20,7 +20,8 @@ MatrizLed pantalla;
 #endif
 DriveMatrix dm;
 ShowMatrix sm;    //012345678901234567890123456789
-String strToShow = "Mauricio Pablo West";
+String strToShow = "Maurricio Pablo West";
+//String strToShow = "Mauricio Pablo West";
 String lastStrToShow = "";
 int *test;
 int oldCodSumTo = 0;
@@ -31,6 +32,7 @@ VectorClass vecPins(1, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 MatrixClass matrix(BUILD_MATRIX_ROWS,BUILD_MATRIX_COLS, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE); 
 
 int numOfcharacter = 0;
+int contCharAdded=0;
 void setup(){
 
 #ifdef DEBUG
@@ -85,6 +87,9 @@ void loop(){
     }
     matrix.print();
     dm.moveMatrixToLeft(matrix);
+    if(dm.canAddChar()){
+
+    }
         
         /*
         aFrame = dm.GetFrame(matrix);

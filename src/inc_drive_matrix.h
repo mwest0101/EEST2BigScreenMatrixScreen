@@ -38,6 +38,8 @@
       void despIzq();
       //void moveMatrixToLeft();
       void moveMatrixToLeft(MatrixClass &matrix);
+      int getPosLastChar();
+      int canAddChar();
       int getMovMat();
       VectorClass getArrayOfCharsOfString(String strData);
       int getContChars();

@@ -187,13 +187,38 @@ void DriveMatrix::moveMatrixToLeft(MatrixClass &matrix){
 
   for (int i = 0; i < MATRIX_HEIGHT; i++){
 
-    for (int j = 0; j < ((MATRIX_WIDTH*2) - 1); j++){
+    for (int j = 0; j < ((MATRIX_WIDTH*3) - 1); j++){
       matrix.set(i,j,matrix.get(i,(j+1)));
+    }
+    //movMat++;
+  }
+  this->totPosX--;
+}
+int DriveMatrix::getPosLastChar(){
+  return this->totPosX;
+}
+
+int DriveMatrix::canAddChar(){
+  if(this->totPosX<MATRIX_WIDTH){
+    return true;
+  }else{
+    return false;
+  }
+}
+//____________________________________________________________________
+//------------Function------------------------------------------------
+/*
+void DriveMatrix::chekEmpty(MatrixClass &matrix){
+
+  for (int i = 0; i < MATRIX_HEIGHT; i++){
+
+    for (int j = 0; j < ((MATRIX_WIDTH) - 1); j++){
+      matrix.get(i,(MATRIX_WIDTH+j));
     }
     movMat++;
   }
   
-}
+}*/
 //____________________________________________________________________
 //------------Function------------------------------------------------
 int DriveMatrix::getMovMat(){
