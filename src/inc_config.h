@@ -13,7 +13,7 @@
   #define EL              C_END_LIN
   
   //#define DEBUG           true
-  
+  #define DEBUG_SERIAL true
   //#define DEBUG_MATRIX    true
   //#define DEBUG_BY_VSCODE
   
@@ -28,7 +28,7 @@
   #define VECTOR_MAX_VALUE 100
   #define VECTOR_MIN_VALUE 0
 
-
+  #define WAIT_TIME_LOOP 1000000;
 
   
   

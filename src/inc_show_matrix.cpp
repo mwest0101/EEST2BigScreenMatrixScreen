@@ -40,12 +40,7 @@ void ShowMatrix::PrintData(int data)
 void ShowMatrix::PrintLed(int ledNum, int pintToActive, int ledState)
 {
 
-#ifdef IS_LCDSCREEN
-  int posX = 0;
-  int posY = 0;
-  posX = (int)(ledNum / 7);
-  posY = (int)(ledNum % 7);
-#endif
+
 
 #ifdef IS_BIGSCREEN
 
@@ -53,6 +48,10 @@ void ShowMatrix::PrintLed(int ledNum, int pintToActive, int ledState)
 #endif
 
 #ifdef IS_LCDSCREEN
+  int posX = 0;
+  int posY = 0;
+  posX = (int)(ledNum / 7);
+  posY = (int)(ledNum % 7);
    /*dsl("IS_LCDSCREEN");
    ds("posX:");
    ds(posX);
@@ -76,16 +75,10 @@ void ShowMatrix::PrintLedMatrix(VectorClass &aFrame, VectorClass &aLastFrame, Ve
   int posX = 0;
   int lastPosX = 0;
   
-  /*
-  dsl("");
-  dsl("___________________________________________");
-  dsl("______PRINTLEDMATRIX_______________________");
-  */
   lastPosX = posX;
   for (int i = 0; i < 35; i++)
   {
 
-    // posY = (int)(i % 7);
     posX = (int)(i / MATRIX_WIDTH);
     pinState = aFrame.get(i);
     pinNum = vecPins.get(i);

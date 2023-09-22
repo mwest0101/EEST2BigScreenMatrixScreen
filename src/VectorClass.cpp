@@ -152,10 +152,10 @@ void print(){
       // ds(i);
       // ds("=");
       
-      dsi(data[i]);
-      dsi(" |");
+      ds3(data[i]);
+      ds3(" |");
     }
-    dsl("");
+    ds3l("");
   }
 };
 #endif //_VECTOR_CLASS_

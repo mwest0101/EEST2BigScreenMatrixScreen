@@ -14,20 +14,7 @@ int **DriveMatrix::InitDriveMatrix(int **matrix, int cols, int rows){
   matrix = CreateMatrix(matrix, matrixCols, matrixRows);
   return matrix;
 }
-// void DriveMatrix::CreateMatrix(int cols, int rows)
-//{
-//   matrix = new int *[rows];
-//   for (int i = 0; i < rows; i++)
-//{
-//     matrix[i] = new int[cols];
-//     for (int j = 0; j < cols; j++)
-//  {
-//       matrix[i][j] = 0;
-//     }
-//   }
-// }
-//____________________________________________________________________
-//------------Function------------------------------------------------
+
 void DriveMatrix::Print(int **matrix){
 
   dsl("__________________________________");
@@ -102,13 +89,10 @@ void DriveMatrix::AddConsToMatrix(MatrixClass &matrix, VectorClass &aIntCharMatr
       ds(value);
       //dse(")");
       if (relPosCols > maxPosCol) maxPosCol = relPosCols;
-      /*
-      ds("relPosRow:");ds(relPosRow);ds(" ");
-      ds("relPosCols:");ds(relPosCols);ds(" ");
-      */
+
       if (value < 0 || value > 1)
       {
-        //dsl("_______________________________________________");
+  
         dses("");
       }
       // ds("value:");ds(value);ds(" (i+1)=");dsl(i+1);
@@ -132,12 +116,7 @@ void DriveMatrix::AddConsToMatrix(MatrixClass &matrix, VectorClass &aIntCharMatr
   ds("this->totPosX:");
   ds(this->totPosX);
   dsl(" ");
-  /*
-  dsl("=========TOTALS===============");
-  ds("this->totPosX:");ds(this->totPosX);ds(" ");ds("");
-  ds("this->totPosX+relPosCols:");ds(this->totPosX + relPosCols);ds("");
-  this->ds("posInfMat:");ds(posInfMat);ds(" ");ds(caracter);dsl("");
-  */
+
   this->posInfMat =this->posInfMat+(maxPosCol + 1);
   this->totPosX =this->totPosX+ (maxPosCol + 1);
   maxPosCol = 0;
@@ -170,10 +149,6 @@ void DriveMatrix::GetFrame(MatrixClass &matrix,VectorClass &aFrame){
     for (int j = 0; j < MATRIX_WIDTH; j++)
  {
       aFrame.set(contPos,matrix.get(i,j));
-      // dse(i);
-      // dse(j);
-      // dse(frame[contPos]);
-      // dse("|");
       contPos++;
     }
     // dsl(" ");
@@ -206,20 +181,7 @@ int DriveMatrix::canAddChar(){
     return 0;
   }
 }
-//____________________________________________________________________
-//------------Function------------------------------------------------
-/*
-void DriveMatrix::chekEmpty(MatrixClass &matrix){
 
-  for (int i = 0; i < MATRIX_HEIGHT; i++){
-
-    for (int j = 0; j < ((MATRIX_WIDTH) - 1); j++){
-      matrix.get(i,(MATRIX_WIDTH+j));
-    }
-    movMat++;
-  }
-  
-}*/
 //____________________________________________________________________
 //------------Function------------------------------------------------
 int DriveMatrix::getMovMat(){
@@ -241,8 +203,7 @@ void DriveMatrix::getArrayOfCharsOfString(VectorClass &vecTemp,String strData){
       this->contChars++;
     }
   }
-  // dsl("");
-  // vecTemp.print();
+
   
 }
 unsigned long DriveMatrix::getCodSumTo(){
@@ -255,7 +216,3 @@ int DriveMatrix::getContChars(){
 
   return contChars;
 }
-/*
-int DriveMatrix::getValueFromChar(int number){
-  return aCharsBlock[number];
-}*/

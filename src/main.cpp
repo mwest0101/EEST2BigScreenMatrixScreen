@@ -36,7 +36,20 @@ VectorClass aFrame(36, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 VectorClass aLastFrame(36, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 int numOfcharacter = 0;
 int contCharAdded=0;
+unsigned long time=0;
+unsigned long lastTime=0;
+unsigned long difTime=0;
+unsigned long waitTime=0;
+
 void setup(){
+    time = micros();
+    lastTime = time;
+    difTime=0;
+    waitTime=WAIT_TIME_LOOP;
+
+    #ifndef WAIT_TIME_LOOP
+        #define WAIT_TIME_LOOP 1000
+    #endif
 
     #ifdef DEBUG_SERIAL
         Serial.begin(9600);
@@ -67,67 +80,76 @@ void setup(){
 }
 // Secuencia de la matriz
 void loop(){
+    time = micros();
+    difTime=time-lastTime;
+    dsi("time:");
+    dsi(time);
+    dsi(" lastTime:");
+    dsi(lastTime);
+    dsi(" difTime:");
+    dsil(difTime);
 
-    
-    
-    if (lastStrToShow != strToShow){
-        dm.ResetInitPosMatrix();    
-        dm.getArrayOfCharsOfString(vecChar,strToShow);
-        vecChar.print();
-        lastStrToShow = strToShow;
+    if (difTime>=waitTime){
+        lastTime=time;
+        if (lastStrToShow != strToShow){
+            dm.ResetInitPosMatrix();    
+            dm.getArrayOfCharsOfString(vecChar,strToShow);
+            //vecChar.print();
+            lastStrToShow = strToShow;
+        }
+
+        dsis("Antes de  bucle de loop");
+
+        //matrix.clear();
+
+        if(firstPass==0 || dm.canAddChar()==1){
+            dsis("Inicio de for");
+            aIntCharMatrix.clear();
+            getCharMatrix(aIntCharMatrix,vecChar.get(contCharAdded));
+            ds("aIntCharMatrix.getSize=");
+            dsl(aIntCharMatrix.getSize());
+
+             dm.AddConsToMatrix(matrix,aIntCharMatrix, vecChar.get(contCharAdded));
+             contCharAdded++;
+             firstPass=1;
+        }
+
+        dsis("LastPoschar:");
+        dsil(dm.getPosLastChar());
+
+        matrix.print();
+
+        aFrame.reset();
+        dm.GetFrame(matrix,aFrame);
+        dsl("aFrame------------------------>");
+        aFrame.print();
+        aLastFrame.print();
+        vecPins.print();
+
+        dsl("------------------------------>");
+
+        sm.PrintLedMatrix(aFrame,aLastFrame,vecPins);
+        dm.moveMatrixToLeft(matrix);
+        // if(dm.canAddChar()){
+
+        // }
+
+            /*
+            aFrame = dm.GetFrame(matrix);
+            sm.PrintLedMatrix(aFrame);
+            // dm.despIzq();
+            // dm.moveMatrixToLeft();
+            */
+            /*
+            matriz=convProgToMatrix(C_LET_A,(sizeof(C_LET_A)/2));
+            printMatrix(matriz);
+            sm.PrintLedMatrix(aT2);
+            delay(500);
+            sm.PrintLedMatrix(aPacman);
+            delay(500);
+            */
+       
+       
+        //delay(1000);
     }
-    
-    dsis("Antes de  bucle de loop");
-    
-    //matrix.clear();
-    
-    if(firstPass==0 && dm.canAddChar()==1){
-        dsis("Inicio de for");
-        aIntCharMatrix.clear();
-        getCharMatrix(aIntCharMatrix,vecChar.get(contCharAdded));
-        ds("aIntCharMatrix.getSize=");
-        dsl(aIntCharMatrix.getSize());
-        
-         dm.AddConsToMatrix(matrix,aIntCharMatrix, vecChar.get(contCharAdded));
-         contCharAdded++;
-         firstPass=1;
-    }
-    
-    dsis("LastPoschar:");
-    dsil(dm.getPosLastChar());
-    
-    matrix.print();
-    
-    aFrame.reset();
-    dm.GetFrame(matrix,aFrame);
-    dsl("aFrame------------------------>");
-    aFrame.print();
-    aLastFrame.print();
-    vecPins.print();
-
-    dsl("------------------------------>");
-    
-    sm.PrintLedMatrix(aFrame,aLastFrame,vecPins);
-    dm.moveMatrixToLeft(matrix);
-    // if(dm.canAddChar()){
-
-    // }
-        
-        /*
-        aFrame = dm.GetFrame(matrix);
-        sm.PrintLedMatrix(aFrame);
-        // dm.despIzq();
-        // dm.moveMatrixToLeft();
-        */
-        /*
-        matriz=convProgToMatrix(C_LET_A,(sizeof(C_LET_A)/2));
-        printMatrix(matriz);
-        sm.PrintLedMatrix(aT2);
-        delay(500);
-        sm.PrintLedMatrix(aPacman);
-        delay(500);
-        */
-    
-    
-    delay(500);
 }
