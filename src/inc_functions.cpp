@@ -11,18 +11,18 @@ void convProgToArray(VectorClass &aIntCharMatrix,const int *phrase, int size){
       //vecTemp.push(((int)pgm_read_word(phrase+i)));
       element=((int)pgm_read_word(phrase + i));
       /*
-      debug("e=(");
-      debug(i);
-      debug(")=");
-      debug(element);
-      debug(" ");
+      ds("e=(");
+      ds(i);
+      ds(")=");
+      ds(element);
+      ds(" ");
       */
       //vecTemp.set(i,element);
       aIntCharMatrix.push(element); 
       //vecTemp.push(((int)pgm_read_word(phrase+i)));
       //arrayReturn[i+starIn]=pgm_read_word(phrase+i); //uint16_t
   }
-  debugl(" ");
+  dsl(" ");
   //aIntCharMatrix.print();
   
   //return vecTemp;
@@ -36,9 +36,9 @@ void printMatrix(int *vMatrix){
   int tam=vMatrix[0];
   for (int i=0;i<tam; i++){
       if(vMatrix[i]!=EL && vMatrix[i]!=EA){      
-        debug3l(vMatrix[i]);
+        ds3(vMatrix[i]);
       }else{
-        debugl("");
+        dsl("");
       }
   }
   

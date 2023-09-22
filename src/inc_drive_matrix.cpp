@@ -2,7 +2,7 @@
 #include <Arduino.h>
 #include "inc_include.h"
 DriveMatrix::DriveMatrix(){
-
+this->totPosX=MATRIX_WIDTH;
   // Serial.println("");
 }
 //____________________________________________________________________
@@ -30,17 +30,17 @@ int **DriveMatrix::InitDriveMatrix(int **matrix, int cols, int rows){
 //------------Function------------------------------------------------
 void DriveMatrix::Print(int **matrix){
 
-  debugl("__________________________________");
-  debugl("----------Print Matrix------------");
+  dsl("__________________________________");
+  dsl("----------Print Matrix------------");
   for (int i = 0; i < matrixRows; i++){
 
     for (int j = 0; j < matrixCols; j++)
  {
-      debuge(matrix[i][j]);
+      ds(matrix[i][j]);ds(" ");
     }
-    debugl("");
+    dsl("");
   }
-  debugl(" ");
+  dsl(" ");
   // digitalWrite(pin, HIGH);
 }
 //____________________________________________________________________
@@ -61,7 +61,7 @@ int **DriveMatrix::Clear(int **matrix){
 //------------Function------------------------------------------------
 void DriveMatrix::ResetInitPosMatrix(){
 
-  this->totPosX = 0;
+  this->totPosX = MATRIX_WIDTH;
   this->posInfMat = 0;
   this->codSumTot = 0;
 }
@@ -69,78 +69,79 @@ void DriveMatrix::ResetInitPosMatrix(){
 //------------Function------------------------------------------------
 void DriveMatrix::AddConsToMatrix(MatrixClass &matrix, VectorClass &aIntCharMatrix, int caracter){
 
-  debugl(" ");
-  debugl("=========AddConsToMatrix===============");
+  
+  dsis("AddConsToMatrix");
   // ResetInitPosMatrix(); //sacar esto una vez probado que funciona
+
   int value = 0;
   int relPosRow = 0;
   int relPosCols = 0;
   int maxPosCol = 0;
   int cont = aIntCharMatrix.getSize();
   this->infMat[posInfMat] = caracter;
-  debug("caracter:");
-  debugl(caracter);
-  debug("cont:");
-  debugl(cont);
+  dsi("caracter:");
+  dsil(caracter);
+  dsi("cont:");
+  dsil(cont);
   for (int i = 0; i < cont; i++){
 
     value = aIntCharMatrix.get(i);
     if (value != EL && value != EA){
       
       matrix.set(relPosRow,(this->totPosX + relPosCols), value);
-      debug(" |");
-      /*
-      debug("t:");
-      debug(this->totPosX);
-      debug(" Y:");
-      debug(relPosRow);
-      debug(" X:");
-      debug(relPosCols);
-      debug(" (");
-      */
-      debug(value);
-      //debuge(")");
+      ds(" |");
+      
+      ds("t:");
+      ds(this->totPosX);
+      ds(" Y:");
+      ds(relPosRow);
+      ds(" X:");
+      ds(relPosCols);
+      ds(" (");
+      
+      ds(value);
+      //dse(")");
       if (relPosCols > maxPosCol) maxPosCol = relPosCols;
       /*
-      debug("relPosRow:");debug(relPosRow);debug(" ");
-      debug("relPosCols:");debug(relPosCols);debug(" ");
+      ds("relPosRow:");ds(relPosRow);ds(" ");
+      ds("relPosCols:");ds(relPosCols);ds(" ");
       */
       if (value < 0 || value > 1)
       {
-        debugl("_______________________________________________");
-        debugl("ATENTION =============== ERROR---------------->");
+        //dsl("_______________________________________________");
+        dses("");
       }
-      // debug("value:");debug(value);debug(" (i+1)=");debugl(i+1);
+      // ds("value:");ds(value);ds(" (i+1)=");dsl(i+1);
       relPosCols++;
     }else{  
-      debug(" ||");
-    /*  debug("t:");
-      debug(this->totPosX);
-      debug(" Y:");
-      debug(relPosRow);
-      debug(" X:");
-      debug(relPosCols);
-      debug(" (");*/
-      debugl(value);
-      //debugl(")");
+      ds(" ||");
+    /*  ds("t:");
+      ds(this->totPosX);
+      ds(" Y:");
+      ds(relPosRow);
+      ds(" X:");
+      ds(relPosCols);
+      ds(" (");*/
+      dsl(value);
+      //dsl(")");
       
       relPosRow++;
       relPosCols = 0;
     }
   }
-  debug("this->totPosX:");
-  debug(this->totPosX);
-  debugl(" ");
+  ds("this->totPosX:");
+  ds(this->totPosX);
+  dsl(" ");
   /*
-  debugl("=========TOTALS===============");
-  debug("this->totPosX:");debug(this->totPosX);debug(" ");debug("");
-  debug("this->totPosX+relPosCols:");debug(this->totPosX + relPosCols);debug("");
-  this->debug("posInfMat:");debug(posInfMat);debug(" ");debug(caracter);debugl("");
+  dsl("=========TOTALS===============");
+  ds("this->totPosX:");ds(this->totPosX);ds(" ");ds("");
+  ds("this->totPosX+relPosCols:");ds(this->totPosX + relPosCols);ds("");
+  this->ds("posInfMat:");ds(posInfMat);ds(" ");ds(caracter);dsl("");
   */
   this->posInfMat =this->posInfMat+(maxPosCol + 1);
   this->totPosX =this->totPosX+ (maxPosCol + 1);
   maxPosCol = 0;
-  debugl(" ");
+  dsl(" ");
 }
 //____________________________________________________________________
 //------------Function------------------------------------------------
@@ -159,8 +160,8 @@ void DriveMatrix::despIzq(){
 void DriveMatrix::GetFrame(MatrixClass &matrix,VectorClass &aFrame){
 
   //
-  debugl("");
-  debugl("Inicio GetFrame");
+  
+  dsis("Inicio GetFrame");
   //int size = MATRIX_WIDTH * MATRIX_HEIGHT;
   //int *frame = (int *)calloc((size + 1), sizeof(int));
   int contPos = 0;
@@ -169,15 +170,15 @@ void DriveMatrix::GetFrame(MatrixClass &matrix,VectorClass &aFrame){
     for (int j = 0; j < MATRIX_WIDTH; j++)
  {
       aFrame.set(contPos,matrix.get(i,j));
-      // debuge(i);
-      // debuge(j);
-      // debuge(frame[contPos]);
-      // debuge("|");
+      // dse(i);
+      // dse(j);
+      // dse(frame[contPos]);
+      // dse("|");
       contPos++;
     }
-    // debugl(" ");
+    // dsl(" ");
   }
-  debug1l("Fin GetFrame");
+  ds1("Fin GetFrame");
   
 }
 //____________________________________________________________________
@@ -240,7 +241,7 @@ void DriveMatrix::getArrayOfCharsOfString(VectorClass &vecTemp,String strData){
       this->contChars++;
     }
   }
-  // debugl("");
+  // dsl("");
   // vecTemp.print();
   
 }

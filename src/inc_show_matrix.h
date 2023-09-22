@@ -15,17 +15,17 @@
       #endif
       int aLastFrameEmpty=0;
       int *aPins;
-      int nElements=0;
+      //int nElements=0;
       
     public:
       ShowMatrix();
       #ifdef IS_LCDSCREEN
-        void setPantalla(MatrizLed vPantalla);
+        void setPantalla(MatrizLed &vPantalla);
       #endif
       void InitShowMatrix(VectorClass vecPins);
       void PrintLed(int ledNum,int pintToActive,int ledState);
       void PrintData(int pinNumber);
-      void PrintLedMatrix(int * aFrame);
+      void PrintLedMatrix(VectorClass &aFrame,VectorClass &aLastFrame,VectorClass &vecPins);
       
       
   };

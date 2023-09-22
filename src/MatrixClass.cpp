@@ -41,20 +41,20 @@ public:
 //____________________________________________________________________
 //------------Function------------------------------------------------
 void print(){
-  debugl("============================================================");
-  debug("this->rows:");
-  debug(this->rows);
-  debug(" this->cols:");
-  debugl(this->cols);
+  dsl("============================================================");
+  ds("this->rows:");
+  ds(this->rows);
+  ds(" this->cols:");
+  dsl(this->cols);
     for (int i = 0; i < this->rows; i++)
     {
       for (int j = 0; j < this->cols; j++){
-        debug("|");
-        debug(matrix[i][j]);
-        //debug(this->get(i, j));
-        //debug(" ");
+        ds("|");
+        ds(matrix[i][j]);
+        //ds(this->get(i, j));
+        //ds(" ");
       }
-      debugl();
+      dsl();
     }
   }
 //____________________________________________________________________
@@ -76,21 +76,21 @@ int get(int rows,int cols){
     // Obtener el value de la matrix en una posici�n espec�fica
     if (rows >= 0 && rows < this->rows && cols >= 0 && cols < this->cols){
       value=matrix[rows][cols];
-      /*debug("MatrixClass.GET OK: ");
-      debug("row=:");
-      debug(rows);
-      debug(" col:");
-      debugl(cols);
-      debug(" value:");
-      debugl(value);*/
+      /*ds("MatrixClass.GET OK: ");
+      ds("row=:");
+      ds(rows);
+      ds(" col:");
+      dsl(cols);
+      ds(" value:");
+      dsl(value);*/
       //return matrix[rows][cols];
     }else{
       // Manejar un value fuera de rango
-      debug("MatrixClass.GET Out of index: ");
-      debug("row=:");
-      debug(rows);
-      debug(" col:");
-      debugl(cols);
+      ds("MatrixClass.GET Out of index: ");
+      ds("row=:");
+      ds(rows);
+      ds(" col:");
+      dsl(cols);
       value=-1;
     }
     return value;
@@ -105,17 +105,17 @@ void set(int rows,int cols, int value){
       if (value >= minValue && value <= this->maxValue){
         matrix[rows][cols] = value;
       }else{
-        debug("MatrixClass.SET: Value out of range");
-        debug("Value: ");
-        debugl(value);
+        ds("MatrixClass.SET: Value out of range");
+        ds("Value: ");
+        dsl(value);
         
         }
     }else{      
-      debug("MatrixClass.SET Out of index: ");
-      debug("row=:");
-      debug(rows);
-      debug(" col:");
-      debugl(cols);
+      ds("MatrixClass.SET Out of index: ");
+      ds("row=:");
+      ds(rows);
+      ds(" col:");
+      dsl(cols);
     }
   }
 //____________________________________________________________________

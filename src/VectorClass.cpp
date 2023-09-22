@@ -1,4 +1,4 @@
-﻿
+
 #include <Arduino.h>
 #include "inc_include.h"
 #ifndef _VECTOR_CLASS_
@@ -29,8 +29,8 @@ public:
     this->posActual=0;
     this->sizeFixed = size;
     this->data = new int[size];
-    //debug("Size=");
-    //debugl(size);
+    //ds("Size=");
+    //dsl(size);
     for(int i=0; i<size; i++){
       this->data[i] = 0;
     }
@@ -56,25 +56,32 @@ void clear(){
     }
     
   }
+  void reset(){
+    for(int i=0; i<size; i++){
+      this->data[i] = 0;
+    }
+  }
   // M�todo para establecer un valor en una posici�n del vector
   void set(int index, int value){
         
     if (index >= 0 && index < size){
       if (value >= minRange && value <= maxRange) {      
         this->data[index] = value;
-        debug("this->data[");
-        debug(index);
-        debug("] = ");
-        debug(value);
-        debug(" data[index]=");
-        debugl(data[index]);
+        /*
+        ds("this->data[");
+        ds(index);
+        ds("] = ");
+        ds(value);
+        ds(" data[index]=");
+        dsl(data[index]);
+        */
       } else{
-        debug("Out of range, value=");
-        debugl(value); 
+        ds("Out of range, value=");
+        dsl(value); 
       }
     } else{
-      debug("Out of Index ");
-      debugl(index);
+      ds("Out of Index ");
+      dsl(index);
     }
   }
   // M�todo para obtener el valor en una posici�n del vector
@@ -82,8 +89,8 @@ void clear(){
     if (index >= 0 && index < size){
       return this->data[index];
     } else{
-      debug("Out of Index ");
-      debugl(index);
+      ds("Out of Index ");
+      dsl(index);
     }
     return 0; // O podr�as lanzar una excepci�n o manejar el error de otra manera
   }
@@ -130,7 +137,7 @@ void clear(){
       data = newData;
       size--;
     } else{
-      debugl("Vector is empty. Cannot pop.");
+      dsl("Vector is empty. Cannot pop.");
     }
   }
 //____________________________________________________________________
@@ -142,12 +149,13 @@ int getSize(){
 //------------Function------------------------------------------------
 void print(){
     for(int i = 0; i < size; i++){
-      debug(i);
-      debug("=");
-      debug(data[i]);
-      debug(" |");
+      // ds(i);
+      // ds("=");
+      
+      dsi(data[i]);
+      dsi(" |");
     }
-    debugl("");
+    dsl("");
   }
 };
 #endif //_VECTOR_CLASS_

@@ -4,6 +4,7 @@
   #define _INC_INCLUDES_H_
   
   #include "inc_config.h"
+  #include "inc_config_debugSerial.h"
   #include <stdlib.h>
   #include <stdio.h>
   #include <avr/pgmspace.h>
@@ -12,7 +13,7 @@
   #endif
   
   //#include <LibPrintf.h>
-  #ifndef DEBUG
+  #if DEBUG
     #include "avr8-stub.h"
     #include "app_api.h"
   #endif

@@ -20,45 +20,50 @@ MatrizLed pantalla;
 #endif
 DriveMatrix dm;
 ShowMatrix sm;    //012345678901234567890123456789
-String strToShow = "Mauricio Pablo Pest";
+String strToShow = "Mauricio Pablo West";
 //String strToShow = "Mauricio Pablo West";
 String lastStrToShow = "";
 int *test;
 int oldCodSumTo = 0;
 int contChars = 0;
+int firstPass=0;
 VectorClass vecTemp(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 VectorClass aIntCharMatrix(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 VectorClass vecChar(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 VectorClass vecPins(1, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 MatrixClass matrix(BUILD_MATRIX_ROWS,BUILD_MATRIX_COLS, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE); 
-VectorClass aFrame(35, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
+VectorClass aFrame(36, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
+VectorClass aLastFrame(36, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 int numOfcharacter = 0;
 int contCharAdded=0;
 void setup(){
 
-#ifdef DEBUG
-    Serial.begin(115200);
-#else
-    debug_init();
-#endif
-#ifdef IS_LCDSCREEN
-    pantalla.begin(12, 11, 10, 2); // dataPin, clkPin, csPin, numero de matrices de 8x8
-    pantalla.setIntensidad(1);
-#endif
-    sm = ShowMatrix();
-    dm = DriveMatrix();
+    #ifdef DEBUG_SERIAL
+        Serial.begin(9600);
+    #endif
 
-#ifdef IS_LCDSCREEN
-    pantalla.borrar();
-#endif
-    
-    convProgToArray(vecPins,C_Pins, (sizeof(C_Pins) / 2));
-    vecPins.print();
-    
-    /*
-    debugl("");
-    debuge("getContChars:");
-    debuge(dm.getContChars());*/
+    #ifdef DEBUG
+        debug_init();
+    #endif
+    #ifdef IS_LCDSCREEN
+        pantalla.begin(12, 11, 10, 1); // dataPin, clkPin, csPin, numero de matrices de 8x8
+        pantalla.setIntensidad(1);
+    #endif
+        sm = ShowMatrix();
+        dm = DriveMatrix();
+
+    #ifdef IS_LCDSCREEN
+        pantalla.borrar();
+        sm.setPantalla(pantalla);
+    #endif
+        
+        convProgToArray(vecPins,C_Pins, (sizeof(C_Pins) / 2));
+        vecPins.print();
+        
+        /*
+        dsl("");
+        dse("getContChars:");
+        dse(dm.getContChars());*/
 }
 // Secuencia de la matriz
 void loop(){
@@ -71,31 +76,39 @@ void loop(){
         vecChar.print();
         lastStrToShow = strToShow;
     }
-    debugl("______________________________________________________");
-    debugl("---------Antes de  bucle de loop----------------------");
+    
+    dsis("Antes de  bucle de loop");
     
     //matrix.clear();
     
-    if(dm.canAddChar()==1){
-        debugl("------------------Inicio de for-----------------------");
+    if(firstPass==0 && dm.canAddChar()==1){
+        dsis("Inicio de for");
         aIntCharMatrix.clear();
         getCharMatrix(aIntCharMatrix,vecChar.get(contCharAdded));
-        debug("aIntCharMatrix.getSize=");
-        debugl(aIntCharMatrix.getSize());
+        ds("aIntCharMatrix.getSize=");
+        dsl(aIntCharMatrix.getSize());
         
          dm.AddConsToMatrix(matrix,aIntCharMatrix, vecChar.get(contCharAdded));
          contCharAdded++;
+         firstPass=1;
     }
-    debugl("____________________________________________________________");
-    debugl("============================================================");    
-    debug("LastPoschar:");
-    debugl(dm.getPosLastChar());
-    debugl("============================================================");    
+    
+    dsis("LastPoschar:");
+    dsil(dm.getPosLastChar());
+    
     matrix.print();
-    dm.moveMatrixToLeft(matrix);
+    
+    aFrame.reset();
     dm.GetFrame(matrix,aFrame);
-    //sm.PrintLedMatrix(aFrame);
+    dsl("aFrame------------------------>");
+    aFrame.print();
+    aLastFrame.print();
+    vecPins.print();
 
+    dsl("------------------------------>");
+    
+    sm.PrintLedMatrix(aFrame,aLastFrame,vecPins);
+    dm.moveMatrixToLeft(matrix);
     // if(dm.canAddChar()){
 
     // }
@@ -116,5 +129,5 @@ void loop(){
         */
     
     
-    delay(1000);
+    delay(500);
 }
