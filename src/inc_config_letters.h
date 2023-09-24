@@ -306,20 +306,20 @@ const PROGMEM int C_LET_l[]=  {O,O,O,EL,
 const PROGMEM int C_LET_m[]=  {O,O,O,O,EL,
 						       I,I,O,O,EL,
 						       I,I,I,O,EL,
+						       I,I,I,O,EL,
+						       I,O,I,O,EA};
+
+const PROGMEM int C_LET_n[]=  {O,O,O,O,EL,
+						       I,I,O,O,EL,
+						       I,O,I,O,EL,
 						       I,O,I,O,EL,
 						       I,O,I,O,EA};
 
-const PROGMEM int C_LET_n[]=  {O,O,O,EL,
-						       I,O,O,EL,
-						       I,I,O,EL,
-						       I,I,O,EL,
-						       I,I,O,EA};
-
-const PROGMEM int C_LET_enie[]={I,I,O,EL,
-							    O,O,O,EL,
-							    I,O,O,EL,
-							    I,I,O,EL,
-							    I,I,O,EA};
+const PROGMEM int C_LET_enie[]={I,I,I,O,EL,
+							    O,O,O,O,EL,
+							    I,I,O,O,EL,
+							    I,O,I,O,EL,
+							    I,O,I,O,EA};
 
 const PROGMEM int C_LET_o[]=  {O,O,O,O,EL,
 						       O,I,O,O,EL,
