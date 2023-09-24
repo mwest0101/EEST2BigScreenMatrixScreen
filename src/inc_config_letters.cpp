@@ -110,7 +110,7 @@ void getCharMatrix(VectorClass &aIntCharMatrix,int character){
       case 119:    convProgToArray(aIntCharMatrix,C_LET_w,(sizeof(C_LET_w)/2));dsl("Letter=w");break; //'w'
       case 120:    convProgToArray(aIntCharMatrix,C_LET_x,(sizeof(C_LET_x)/2));dsl("Letter=w");break; //'w'
       case 121:    convProgToArray(aIntCharMatrix,C_LET_y,(sizeof(C_LET_y)/2));dsl("Letter=y");break; //'y'
-      case 122:    convProgToArray(aIntCharMatrix,C_LET_z,(sizeof(C_LET_z)/2));dsl("Letter=z");break; //'z'      
+      case 122:    convProgToArray(aIntCharMatrix,C_LET_z,(sizeof(C_LET_z)/2));dsl("Letter=z");break; //'z':      
       case (-140): convProgToArray(aIntCharMatrix,C_LET_enie,(sizeof(C_LET_enie)/2));dsl("Letter=en");break; 
       case (-172): convProgToArray(aIntCharMatrix,C_LET_ENIE,(sizeof(C_LET_ENIE)/2));dsl("Letter=EN");break;       
       case (-156): convProgToArray(aIntCharMatrix,C_LET_aas,(sizeof(C_LET_aas)/2));dsl("Letter=l");break; 
