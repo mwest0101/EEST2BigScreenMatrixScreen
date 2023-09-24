@@ -2,7 +2,7 @@
 #ifndef _INC_DEBUG_SERIAL_H_
   #define _INC_DEBUG_SERIAL_H_ 
 
-/*
+
   #define DEBUG_SERIAL_SEPARATOR true
   #define DEBUG_SERIAL_FUN_NAME true
   //#define DEBUG_SERIAL_L0 true
@@ -11,7 +11,6 @@
   // #define DEBUG_SERIAL_L3 true
   //#define DEBUG_SERIAL_INF true
   #define DEBUG_SERIAL_ERR true
-  */
   // 
 // #ifdef DEBUG_SERIAL
     #ifdef DEBUG_SERIAL_SEPARATOR
