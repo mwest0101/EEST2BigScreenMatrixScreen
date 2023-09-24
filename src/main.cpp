@@ -21,7 +21,7 @@ MatrizLed pantalla;
 DriveMatrix dm;
 ShowMatrix sm;    //012345678901234567890123456789
 //String strToShow = "Bienvenidos a la EEST 2  de Junin Buenos Aires 2023";
-String strToShow = "0123456789ºáéíóúÁÉÍÓÚñÑ¿?¡!";
+String strToShow = "abcdefghijklmnopqrstuvwxyz01234";
 //String strToShow = "Mauricio Pablo West";
 String lastStrToShow = "";
 int *test;
