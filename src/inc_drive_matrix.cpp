@@ -197,10 +197,12 @@ void DriveMatrix::getArrayOfCharsOfString(VectorClass &vecTemp,String strData){
 
     numOfcharacter = calcNumberOfChar(strData[i]);
     if (numOfcharacter != 0)
- {
+    {
       vecTemp.push(numOfcharacter);
       this->codSumTot = this->codSumTot + ((i * 10) + numOfcharacter);
       this->contChars++;
+      ds1("numOfcharacter:");
+      ds1l(numOfcharacter);
     }
   }
 

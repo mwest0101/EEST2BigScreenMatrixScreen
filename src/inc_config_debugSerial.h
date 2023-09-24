@@ -2,16 +2,17 @@
 #ifndef _INC_DEBUG_SERIAL_H_
   #define _INC_DEBUG_SERIAL_H_ 
 
-
-  // #define DEBUG_SERIAL_SEPARATOR true
-  // #define DEBUG_SERIAL_FUN_NAME true
-  // #define DEBUG_SERIAL_L0 true
-  // #define DEBUG_SERIAL_L1 true
-  // #define DEBUG_SERIAL_L2 true
-  #define DEBUG_SERIAL_L3 true
-  // #define DEBUG_SERIAL_INF true
-  // #define DEBUG_SERIAL_ERR true
-  
+/*
+  #define DEBUG_SERIAL_SEPARATOR true
+  #define DEBUG_SERIAL_FUN_NAME true
+  //#define DEBUG_SERIAL_L0 true
+  #define DEBUG_SERIAL_L1 true
+  //#define DEBUG_SERIAL_L2 true
+  // #define DEBUG_SERIAL_L3 true
+  //#define DEBUG_SERIAL_INF true
+  #define DEBUG_SERIAL_ERR true
+  */
+  // 
 // #ifdef DEBUG_SERIAL
     #ifdef DEBUG_SERIAL_SEPARATOR
       #define dss(x) Serial.println("----------------------------------------------------------------");        
@@ -28,7 +29,7 @@
     #endif
     #ifdef DEBUG_SERIAL_L1
       #define ds1(x)     Serial.print(x);
-      #define dsl1(x)    Serial.println(x)    
+      #define ds1l(x)    Serial.println(x)    
     #endif
     #ifdef DEBUG_SERIAL_L2
       #define ds2(x)     Serial.print(x);
@@ -63,7 +64,7 @@
       #endif
       #ifndef DEBUG_SERIAL_L1
         #define ds1(x);
-        #define dsl1(x);
+        #define ds1l(x);
       #endif
       #ifndef DEBUG_SERIAL_L2
         #define ds2(x)

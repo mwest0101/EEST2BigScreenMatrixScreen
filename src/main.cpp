@@ -20,7 +20,8 @@ MatrizLed pantalla;
 #endif
 DriveMatrix dm;
 ShowMatrix sm;    //012345678901234567890123456789
-String strToShow = "Bienvenidos a la EEST 2  de Junin Buenos Aires 2023";
+//String strToShow = "Bienvenidos a la EEST 2  de Junin Buenos Aires 2023";
+String strToShow = "áéíóúÁÉÍÓÚñÑ¿?¡!";
 //String strToShow = "Mauricio Pablo West";
 String lastStrToShow = "";
 int *test;
@@ -91,13 +92,15 @@ void loop(){
 
     if (difTime>=waitTime){
         lastTime=time;
+        
         if (lastStrToShow != strToShow){
+            strToShow=strToShow+"   ";
             dm.ResetInitPosMatrix();    
             dm.getArrayOfCharsOfString(vecChar,strToShow);
             //vecChar.print();
             lastStrToShow = strToShow;
         }
-
+        if(contCharAdded>vecChar.getSize()) contCharAdded=0;
         dsis("Antes de  bucle de loop");
 
         //matrix.clear();

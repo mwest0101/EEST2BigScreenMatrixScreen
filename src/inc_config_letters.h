@@ -358,31 +358,31 @@ const PROGMEM int C_LET_uas[]={O,O,O,I,O,EL,//u acento -131
 			       I,O,I,O,O,EL,
 			       I,I,I,O,O,EA};
 
-const PROGMEM int C_LET_Aas[]= {O,I,O,I,O,EL,
+const PROGMEM int C_LET_Aas[]= {O,O,O,I,O,EL,
+						        O,I,O,O,O,EL,
 						        I,O,I,O,O,EL,
 						        I,I,I,O,O,EL,
-						        I,O,I,O,O,EL,
 						        I,O,I,O,O,EA};
 
-const PROGMEM int C_LET_Eas[]={I,I,I,I,O,EL,
-						       I,O,O,O,O,EL,
+const PROGMEM int C_LET_Eas[]={O,O,O,I,O,EL,
 						       I,I,I,O,O,EL,
+						       I,I,O,O,O,EL,
 						       I,O,O,O,O,EL,
+						       I,I,O,O,O,EA};
+
+const PROGMEM int C_LET_Ias[]={O,O,O,I,O,EL,
+						       I,I,I,O,O,EL,
+						       O,I,O,O,O,EL,
+						       O,I,O,O,O,EL,
 						       I,I,I,O,O,EA};
 
-const PROGMEM int C_LET_Ias[]={O,I,O,I,O,EL,
+const PROGMEM int C_LET_Oas[]={O,O,O,I,O,EL,
 						       O,I,O,O,O,EL,
-						       O,I,O,O,O,EL,
-						       O,I,O,O,O,EL,
-						       O,I,O,O,O,EA};
-
-const PROGMEM int C_LET_Oas[]={O,I,O,I,O,EL,
-						       I,O,I,O,O,EL,
 						       I,O,I,O,O,EL,
 						       I,O,I,O,O,EL,
 						       O,I,O,O,O,EA};
 
-const PROGMEM int C_LET_Uas[]={I,O,I,I,O,EL,
+const PROGMEM int C_LET_Uas[]={O,O,O,I,O,EL,
 						       I,O,I,O,O,EL,
 						       I,O,I,O,O,EL,
 						       I,O,I,O,O,EL,
@@ -400,11 +400,11 @@ const PROGMEM int C_LET_punto[]={O,O,O,EL, //46
 						         I,I,O,EL,
 						         I,I,O,EA};
 
-const PROGMEM int C_LET_barrinf[]={O,O,O,EL, //95
-						           O,O,O,EL,
-						           O,O,O,EL,
-						           I,I,O,EL,
-						           I,I,O,EA};
+const PROGMEM int C_LET_barrinf[]={O,O,O,O,EL, //95
+						           O,O,O,O,EL,
+						           O,O,O,O,EL,
+						           O,O,O,O,EL,
+						           I,I,I,O,EA};
 
 const PROGMEM int C_LET_barrmed[]={O,O,O,O,EL, //45
 						           O,O,O,O,EL,

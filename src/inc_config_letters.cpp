@@ -4,27 +4,30 @@
 #ifndef _INC_CONFIG_LETTERS_CPP_
 #define _INC_CONFIG_LETTERS_CPP_
 int calcNumberOfChar(char caracter){
-    int charVal=0;
+    static int charVal=0;
     int valRet=0;
     int valorCaracter = (int)caracter;  // Convertir el car�cter a su valor num�rico
-    if (valorCaracter==-61){
+    if (valorCaracter==(-61) || valorCaracter==(-62)){
         charVal=valorCaracter;
         valRet=0;
-    }else if(valorCaracter<0){
-        charVal+=valorCaracter;
-        valRet=charVal;
+    }else if(valorCaracter<0){        
+        //charVal+=valorCaracter;
+        valRet=charVal+valorCaracter;
         charVal=0;
     }else{
-      charVal=valorCaracter;
-      valRet=charVal;
+      //charVal=valorCaracter;
+      
+      valRet=valorCaracter;
+      charVal=0;
     }
-
-       if(valRet>122){
+    //ds1("---->PAR_valorCaracter:");
+    //ds1l(valorCaracter);
+      /* if(valRet>122){
       ds("Letter=--------------------------------------------------");
       ds("Letter=Error valRet");
       ds("Letter=valRet=");
       dsl(valRet);
-    }
+    }*/
     /*
     if(valRet!=0){
       dsl(" ");
@@ -41,14 +44,14 @@ int calcNumberOfChar(char caracter){
 //------------Function------------------------------------------------
 void getCharMatrix(VectorClass &aIntCharMatrix,int character){
   //VectorClass aChar(VECTOR_SIZE, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
-  dsl("");
-  ds("getCharMatrix | Letter=:");
-  ds(character);
-  dsl("  ");
+  ds1l("");
+  ds1("getCharMatrix | Letter=:");
+  ds1(character);
+  ds1l("  ");
   //delay(1000);
   
     switch (character){
-      case 32:     convProgToArray(aIntCharMatrix,C_LET_ESP,(sizeof(C_LET_ESP)/2));dsl("Letter=_");break; //' ' Espacio
+      case 32:     convProgToArray(aIntCharMatrix,C_LET_ESP,(sizeof(C_LET_ESP)/2));dsl("Letter= ");break; //' ' Espacio
       case 48:     convProgToArray(aIntCharMatrix,C_LET_0,(sizeof(C_LET_0)/2));dsl("Letter=0");break; //'0'
       case 49:     convProgToArray(aIntCharMatrix,C_LET_1,(sizeof(C_LET_1)/2));dsl("Letter=1");break; //'1'
       case 50:     convProgToArray(aIntCharMatrix,C_LET_2,(sizeof(C_LET_2)/2));dsl("Letter=2");break; //'2'
@@ -111,26 +114,27 @@ void getCharMatrix(VectorClass &aIntCharMatrix,int character){
       case 120:    convProgToArray(aIntCharMatrix,C_LET_x,(sizeof(C_LET_x)/2));dsl("Letter=w");break; //'w'
       case 121:    convProgToArray(aIntCharMatrix,C_LET_y,(sizeof(C_LET_y)/2));dsl("Letter=y");break; //'y'
       case 122:    convProgToArray(aIntCharMatrix,C_LET_z,(sizeof(C_LET_z)/2));dsl("Letter=z");break; //'z':      
-      case (-140): convProgToArray(aIntCharMatrix,C_LET_enie,(sizeof(C_LET_enie)/2));dsl("Letter=en");break; 
-      case (-172): convProgToArray(aIntCharMatrix,C_LET_ENIE,(sizeof(C_LET_ENIE)/2));dsl("Letter=EN");break;       
-      case (-156): convProgToArray(aIntCharMatrix,C_LET_aas,(sizeof(C_LET_aas)/2));dsl("Letter=l");break; 
-      case (-148): convProgToArray(aIntCharMatrix,C_LET_eas,(sizeof(C_LET_eas)/2));dsl("Letter=l");break; 
-      case (-144): convProgToArray(aIntCharMatrix,C_LET_ias,(sizeof(C_LET_ias)/2));dsl("Letter=l");break; 
-      case (-138): convProgToArray(aIntCharMatrix,C_LET_oas,(sizeof(C_LET_oas)/2));dsl("Letter=l");break; 
-      case (-131): convProgToArray(aIntCharMatrix,C_LET_uas,(sizeof(C_LET_uas)/2));dsl("Letter=l");break; 
-      case (-188): convProgToArray(aIntCharMatrix,C_LET_Aas,(sizeof(C_LET_Aas)/2));dsl("Letter=l");break; 
-      case (-180): convProgToArray(aIntCharMatrix,C_LET_Eas,(sizeof(C_LET_Eas)/2));dsl("Letter=l");break; 
-      case (-176): convProgToArray(aIntCharMatrix,C_LET_Ias,(sizeof(C_LET_Ias)/2));dsl("Letter=l");break; 
-      case (-170): convProgToArray(aIntCharMatrix,C_LET_Oas,(sizeof(C_LET_Oas)/2));dsl("Letter=l");break; 
-      case (-163): convProgToArray(aIntCharMatrix,C_LET_Uas,(sizeof(C_LET_Uas)/2));dsl("Letter=l");break; 
-      case   (44): convProgToArray(aIntCharMatrix,C_LET_coma,(sizeof(C_LET_coma)/2));dsl("Letter=l");break; 
-      case   (46): convProgToArray(aIntCharMatrix,C_LET_punto,(sizeof(C_LET_punto)/2));dsl("Letter=l");break; 
-      case   (95): convProgToArray(aIntCharMatrix,C_LET_barrinf,(sizeof(C_LET_barrinf)/2));dsl("Letter=l");break; 
-      case   (45): convProgToArray(aIntCharMatrix,C_LET_barrmed,(sizeof(C_LET_barrmed)/2));dsl("Letter=l");break; 
-      case (-127): convProgToArray(aIntCharMatrix,C_LET_sigPreAp,(sizeof(C_LET_sigPreAp)/2));dsl("Letter=l");break; 
-      case   (63): convProgToArray(aIntCharMatrix,C_LET_sigPreCi,(sizeof(C_LET_sigPreCi)/2));dsl("Letter=l");break; 
-      case (-157): convProgToArray(aIntCharMatrix,C_LET_sigExcAp,(sizeof(C_LET_sigExcAp)/2));dsl("Letter=l");break; 
-      case   (33): convProgToArray(aIntCharMatrix,C_LET_sigExcCi,(sizeof(C_LET_sigExcCi)/2));dsl("Letter=l");break; 
+      case (-140): convProgToArray(aIntCharMatrix,C_LET_enie,(sizeof(C_LET_enie)/2));dsl("Letter=enie");break; 
+      case (-172): convProgToArray(aIntCharMatrix,C_LET_ENIE,(sizeof(C_LET_ENIE)/2));dsl("Letter=ENIE");break;       
+      case (-156): convProgToArray(aIntCharMatrix,C_LET_aas,(sizeof(C_LET_aas)/2));dsl("Letter=aas");break; 
+      case (-148): convProgToArray(aIntCharMatrix,C_LET_eas,(sizeof(C_LET_eas)/2));dsl("Letter=eas");break; 
+      case (-144): convProgToArray(aIntCharMatrix,C_LET_ias,(sizeof(C_LET_ias)/2));dsl("Letter=ias");break; 
+      case (-138): convProgToArray(aIntCharMatrix,C_LET_oas,(sizeof(C_LET_oas)/2));dsl("Letter=oas");break; 
+      case (-131): convProgToArray(aIntCharMatrix,C_LET_uas,(sizeof(C_LET_uas)/2));dsl("Letter=uas");break; 
+      
+      case (-188): convProgToArray(aIntCharMatrix,C_LET_Aas,(sizeof(C_LET_Aas)/2));dsl("Letter=Aas");break; 
+      case (-180): convProgToArray(aIntCharMatrix,C_LET_Eas,(sizeof(C_LET_Eas)/2));dsl("Letter=Eas");break; 
+      case (-176): convProgToArray(aIntCharMatrix,C_LET_Ias,(sizeof(C_LET_Ias)/2));dsl("Letter=Ias");break; 
+      case (-170): convProgToArray(aIntCharMatrix,C_LET_Oas,(sizeof(C_LET_Oas)/2));dsl("Letter=Oas");break; 
+      case (-163): convProgToArray(aIntCharMatrix,C_LET_Uas,(sizeof(C_LET_Uas)/2));dsl("Letter=Uas");break; 
+      case   (44): convProgToArray(aIntCharMatrix,C_LET_coma,(sizeof(C_LET_coma)/2));dsl("Letter=,");break; 
+      case   (46): convProgToArray(aIntCharMatrix,C_LET_punto,(sizeof(C_LET_punto)/2));dsl("Letter=.");break; 
+      case   (95): convProgToArray(aIntCharMatrix,C_LET_barrinf,(sizeof(C_LET_barrinf)/2));dsl("Letter=_");break; 
+      case   (45): convProgToArray(aIntCharMatrix,C_LET_barrmed,(sizeof(C_LET_barrmed)/2));dsl("Letter=-");break; 
+      case (-127): convProgToArray(aIntCharMatrix,C_LET_sigPreAp,(sizeof(C_LET_sigPreAp)/2));dsl("Letter=¿");break; 
+      case   (63): convProgToArray(aIntCharMatrix,C_LET_sigPreCi,(sizeof(C_LET_sigPreCi)/2));dsl("Letter=?");break; 
+      case (-157): convProgToArray(aIntCharMatrix,C_LET_sigExcAp,(sizeof(C_LET_sigExcAp)/2));dsl("Letter=¡");break; 
+      case   (33): convProgToArray(aIntCharMatrix,C_LET_sigExcCi,(sizeof(C_LET_sigExcCi)/2));dsl("Letter=!");break; 
       default:
  		    dsl("========================================================");
         dsl("==========Error=no encontrado el valor==================");

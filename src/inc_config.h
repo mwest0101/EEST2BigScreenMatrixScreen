@@ -28,7 +28,8 @@
   #define VECTOR_MAX_VALUE 100
   #define VECTOR_MIN_VALUE 0
 
-  #define WAIT_TIME_LOOP 1000000;
+  //#define WAIT_TIME_LOOP 1000000;
+  #define WAIT_TIME_LOOP 500000;
 
   
   
