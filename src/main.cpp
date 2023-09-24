@@ -20,7 +20,7 @@ MatrizLed pantalla;
 #endif
 DriveMatrix dm;
 ShowMatrix sm;    //012345678901234567890123456789
-String strToShow = "Mauricio Pablo West";
+String strToShow = "Bienvenidos a la EEST 2  de Junin Buenos Aires 2023";
 //String strToShow = "Mauricio Pablo West";
 String lastStrToShow = "";
 int *test;
@@ -30,7 +30,7 @@ int firstPass=0;
 VectorClass vecTemp(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 VectorClass aIntCharMatrix(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 VectorClass vecChar(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
-VectorClass vecPins(1, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
+VectorClass vecPins(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 MatrixClass matrix(BUILD_MATRIX_ROWS,BUILD_MATRIX_COLS, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE); 
 VectorClass aFrame(36, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 VectorClass aLastFrame(36, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);

@@ -70,7 +70,7 @@ void getCharMatrix(VectorClass &aIntCharMatrix,int character){
       case 73:     convProgToArray(aIntCharMatrix,C_LET_I,(sizeof(C_LET_I)/2));dsl("Letter=I");break; //'I'
       case 74:     convProgToArray(aIntCharMatrix,C_LET_J,(sizeof(C_LET_J)/2));dsl("Letter=J");break; //'J'
       case 75:     convProgToArray(aIntCharMatrix,C_LET_K,(sizeof(C_LET_K)/2));dsl("Letter=K");break; //'K'
-      case 76:     convProgToArray(aIntCharMatrix,C_LET_L,(sizeof(C_LET_L)/2));dsl("Letter=L");break; //'L'
+      case 76:     convProgToArray(aIntCharMatrix,C_LET_L,(sizeof(C_LET_L)/2));dsl("Letter=L");break; 
       case 77:     convProgToArray(aIntCharMatrix,C_LET_M,(sizeof(C_LET_M)/2));dsl("Letter=M");break; //'M'
       case 78:     convProgToArray(aIntCharMatrix,C_LET_N,(sizeof(C_LET_N)/2));dsl("Letter=N");break; //'N'
       case 79:     convProgToArray(aIntCharMatrix,C_LET_O,(sizeof(C_LET_O)/2));dsl("Letter=O");break; //'O'
@@ -96,7 +96,7 @@ void getCharMatrix(VectorClass &aIntCharMatrix,int character){
       case 105:    convProgToArray(aIntCharMatrix,C_LET_i,(sizeof(C_LET_i)/2));dsl("Letter=i");break; //'i'
       case 106:    convProgToArray(aIntCharMatrix,C_LET_j,(sizeof(C_LET_j)/2));dsl("Letter=j");break; //'j'
       case 107:    convProgToArray(aIntCharMatrix,C_LET_k,(sizeof(C_LET_k)/2));dsl("Letter=k");break; //'k'
-      case 108:    convProgToArray(aIntCharMatrix,C_LET_l,(sizeof(C_LET_l)/2));dsl("Letter=l");break; //'l'
+      case 108:    convProgToArray(aIntCharMatrix,C_LET_l,(sizeof(C_LET_l)/2));dsl("Letter=l");break; 
       case 109:    convProgToArray(aIntCharMatrix,C_LET_m,(sizeof(C_LET_m)/2));dsl("Letter=m");break; //'m'
       case 110:    convProgToArray(aIntCharMatrix,C_LET_n,(sizeof(C_LET_n)/2));dsl("Letter=n");break; //'n'
       case 111:    convProgToArray(aIntCharMatrix,C_LET_o,(sizeof(C_LET_o)/2));dsl("Letter=o");break; //'o'
@@ -110,19 +110,27 @@ void getCharMatrix(VectorClass &aIntCharMatrix,int character){
       case 119:    convProgToArray(aIntCharMatrix,C_LET_w,(sizeof(C_LET_w)/2));dsl("Letter=w");break; //'w'
       case 120:    convProgToArray(aIntCharMatrix,C_LET_x,(sizeof(C_LET_x)/2));dsl("Letter=w");break; //'w'
       case 121:    convProgToArray(aIntCharMatrix,C_LET_y,(sizeof(C_LET_y)/2));dsl("Letter=y");break; //'y'
-      case 122:    convProgToArray(aIntCharMatrix,C_LET_z,(sizeof(C_LET_z)/2));dsl("Letter=z");break; //'z'
-      case (-156): convProgToArray(aIntCharMatrix,C_LET_a,(sizeof(C_LET_a)/2));dsl("Letter=as");break; //''
-      case (-148): convProgToArray(aIntCharMatrix,C_LET_e,(sizeof(C_LET_e)/2));dsl("Letter=es");break; //''
-      case (-144): convProgToArray(aIntCharMatrix,C_LET_i,(sizeof(C_LET_i)/2));dsl("Letter=is");break; //''
-      case (-138): convProgToArray(aIntCharMatrix,C_LET_o,(sizeof(C_LET_o)/2));dsl("Letter=os");break; //''
-      case (-131): convProgToArray(aIntCharMatrix,C_LET_u,(sizeof(C_LET_u)/2));dsl("Letter=us");break; //''
-      case (-140): convProgToArray(aIntCharMatrix,C_LET_enie,(sizeof(C_LET_enie)/2));dsl("Letter=en");break; //''
-      case (-188): convProgToArray(aIntCharMatrix,C_LET_A,(sizeof(C_LET_A)/2));dsl("Letter=AS");break; //''
-      case (-180): convProgToArray(aIntCharMatrix,C_LET_E,(sizeof(C_LET_E)/2));dsl("Letter=ES");break; //''
-      case (-176): convProgToArray(aIntCharMatrix,C_LET_I,(sizeof(C_LET_I)/2));dsl("Letter=IS");break; //''
-      case (-170): convProgToArray(aIntCharMatrix,C_LET_O,(sizeof(C_LET_O)/2));dsl("Letter=OS");break; //''
-      case (-163): convProgToArray(aIntCharMatrix,C_LET_U,(sizeof(C_LET_U)/2));dsl("Letter=US");break; //''
-      case (-172): convProgToArray(aIntCharMatrix,C_LET_ENIE,(sizeof(C_LET_ENIE)/2));dsl("Letter=EN");break; //''
+      case 122:    convProgToArray(aIntCharMatrix,C_LET_z,(sizeof(C_LET_z)/2));dsl("Letter=z");break; //'z'      
+      case (-140): convProgToArray(aIntCharMatrix,C_LET_enie,(sizeof(C_LET_enie)/2));dsl("Letter=en");break; 
+      case (-172): convProgToArray(aIntCharMatrix,C_LET_ENIE,(sizeof(C_LET_ENIE)/2));dsl("Letter=EN");break;       
+      case (-156): convProgToArray(aIntCharMatrix,C_LET_aas,(sizeof(C_LET_aas)/2));dsl("Letter=l");break; 
+      case (-148): convProgToArray(aIntCharMatrix,C_LET_eas,(sizeof(C_LET_eas)/2));dsl("Letter=l");break; 
+      case (-144): convProgToArray(aIntCharMatrix,C_LET_ias,(sizeof(C_LET_ias)/2));dsl("Letter=l");break; 
+      case (-138): convProgToArray(aIntCharMatrix,C_LET_oas,(sizeof(C_LET_oas)/2));dsl("Letter=l");break; 
+      case (-131): convProgToArray(aIntCharMatrix,C_LET_uas,(sizeof(C_LET_uas)/2));dsl("Letter=l");break; 
+      case (-188): convProgToArray(aIntCharMatrix,C_LET_Aas,(sizeof(C_LET_Aas)/2));dsl("Letter=l");break; 
+      case (-180): convProgToArray(aIntCharMatrix,C_LET_Eas,(sizeof(C_LET_Eas)/2));dsl("Letter=l");break; 
+      case (-176): convProgToArray(aIntCharMatrix,C_LET_Ias,(sizeof(C_LET_Ias)/2));dsl("Letter=l");break; 
+      case (-170): convProgToArray(aIntCharMatrix,C_LET_Oas,(sizeof(C_LET_Oas)/2));dsl("Letter=l");break; 
+      case (-163): convProgToArray(aIntCharMatrix,C_LET_Uas,(sizeof(C_LET_Uas)/2));dsl("Letter=l");break; 
+      case   (44): convProgToArray(aIntCharMatrix,C_LET_coma,(sizeof(C_LET_coma)/2));dsl("Letter=l");break; 
+      case   (46): convProgToArray(aIntCharMatrix,C_LET_punto,(sizeof(C_LET_punto)/2));dsl("Letter=l");break; 
+      case   (95): convProgToArray(aIntCharMatrix,C_LET_barrinf,(sizeof(C_LET_barrinf)/2));dsl("Letter=l");break; 
+      case   (45): convProgToArray(aIntCharMatrix,C_LET_barrmed,(sizeof(C_LET_barrmed)/2));dsl("Letter=l");break; 
+      case (-127): convProgToArray(aIntCharMatrix,C_LET_sigPreAp,(sizeof(C_LET_sigPreAp)/2));dsl("Letter=l");break; 
+      case   (63): convProgToArray(aIntCharMatrix,C_LET_sigPreCi,(sizeof(C_LET_sigPreCi)/2));dsl("Letter=l");break; 
+      case (-157): convProgToArray(aIntCharMatrix,C_LET_sigExcAp,(sizeof(C_LET_sigExcAp)/2));dsl("Letter=l");break; 
+      case   (33): convProgToArray(aIntCharMatrix,C_LET_sigExcCi,(sizeof(C_LET_sigExcCi)/2));dsl("Letter=l");break; 
       default:
  		    dsl("========================================================");
         dsl("==========Error=no encontrado el valor==================");
