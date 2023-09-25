@@ -67,14 +67,7 @@ void clear(){
     if (index >= 0 && index < size){
       if (value >= minRange && value <= maxRange) {      
         this->data[index] = value;
-        /*
-        ds("this->data[");
-        ds(index);
-        ds("] = ");
-        ds(value);
-        ds(" data[index]=");
-        dsl(data[index]);
-        */
+
       } else{
         ds("Out of range, value=");
         dsl(value); 

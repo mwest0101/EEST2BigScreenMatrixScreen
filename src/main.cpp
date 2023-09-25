@@ -20,7 +20,8 @@ MatrizLed pantalla;
 #endif
 DriveMatrix dm;
 ShowMatrix sm;    //012345678901234567890123456789
-String strToShow = "Bienvenidos a la EEST Nº2  de Junin Buenos Aires 2023";
+//String strToShow = "Bienvenidos a la EEST Nº2  de Junin Buenos Aires 2023";
+String strToShow = "(e:1)(a:pa1)(a:te1)E.E.S.T. Nº2";
 //String strToShow = "abcdefghijklmnopqrstuvwxyz01234";
 //String strToShow = "Mauricio Pablo West";
 String lastStrToShow = "";
@@ -79,48 +80,43 @@ void setup(){
 void loop(){
     time = micros();
     difTime=time-lastTime;
-    dsi("time:");
-    dsi(time);
-    dsi(" lastTime:");
-    dsi(lastTime);
-    dsi(" difTime:");
-    dsil(difTime);
+    // dsi("time:");
+    // dsi(time);
+    // dsi(" lastTime:");
+    // dsi(lastTime);
+    // dsi(" difTime:");
+    // dsil(difTime);
     // dm.fillArrrayOfChars(vecChar,strShow)
     if (difTime>=waitTime){
-        lastTime=time;
-        /*
-        if (lastStrToShow != strToShow){
-            strToShow=strToShow+MARQUE_SEPARATOR;
-            dm.ResetInitPosMatrix();    
-            dm.getArrayOfCharsOfString(vecChar,strToShow);
-            //vecChar.print();
-            lastStrToShow = strToShow;
-        }*/
+        lastTime=time;        
         dm.fillArrrayOfChars(vecChar,strToShow);
+        
 
         if(contCharAdded>vecChar.getSize()) contCharAdded=0;
         dsis("Antes de  bucle de loop");
+        dsil("char : ");
+        dsil((char)vecChar.get(contCharAdded));
+        dsil(" int : ");
+        dsil(vecChar.get(contCharAdded));
 
         if(firstPass==0 || dm.canAddChar()==1){
             dsis("Inicio de for");
             dm.getValuesOfCharMatrixAndAddToMatrix(matrix,aIntCharMatrix,vecChar,contCharAdded);
-            // aIntCharMatrix.clear();
-            // getCharMatrix(aIntCharMatrix,vecChar.get(contCharAdded));
-            // ds("aIntCharMatrix.getSize=");
-            // dsl(aIntCharMatrix.getSize());
-            //  dm.AddConsToMatrix(matrix,aIntCharMatrix, vecChar.get(contCharAdded));
-             contCharAdded++;
-             firstPass=1;
+            contCharAdded++;
+            firstPass=1;
         }
 
-        dsis("LastPoschar:");
-        dsil(dm.getPosLastChar());
+        /*dsis("LastPoschar:");
+        dsil(dm.getPosLastChar());*/
         matrix.print();
         aFrame.reset();
+
         dm.GetFrame(matrix,aFrame);
         dsl("aFrame------------------------>");
         aFrame.print();
-        aLastFrame.print();
+
+        //aLastFrame.print();
+
         vecPins.print();
 
         dsl("------------------------------>");

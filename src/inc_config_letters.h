@@ -477,6 +477,13 @@ const PROGMEM int C_LET_punto[]={O,O,O,EL, //46
 						         I,I,O,EL,
 						         I,I,O,EA};
 
+const PROGMEM int C_LET_dospuntos[]={I,I,O,EL, //46
+						         	 I,I,O,EL,
+						         	 O,O,O,EL,
+						         	 I,I,O,EL,
+						         	 I,I,O,EA};
+
+
 
 const PROGMEM int C_LET_barrinf[]={O,O,O,O,EL, //95
 						           O,O,O,O,EL,

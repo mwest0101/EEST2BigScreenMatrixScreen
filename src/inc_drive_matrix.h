@@ -41,7 +41,7 @@
       int getPosLastChar();
       int canAddChar();
       int getMovMat();
-      void getArrayOfCharsOfString(VectorClass &vecTemp,String strData);
+      void getArrayOfCharsOfString(VectorClass &vecTemp,String strData); 
       int getContChars();
       unsigned long getCodSumTo();
       void fillArrrayOfChars(VectorClass &vecChar,String strToShow);
