@@ -20,8 +20,8 @@ MatrizLed pantalla;
 #endif
 DriveMatrix dm;
 ShowMatrix sm;    //012345678901234567890123456789
-//String strToShow = "Bienvenidos a la EEST 2  de Junin Buenos Aires 2023";
-String strToShow = "abcdefghijklmnopqrstuvwxyz01234";
+String strToShow = "Bienvenidos a la EEST Nº2  de Junin Buenos Aires 2023";
+//String strToShow = "abcdefghijklmnopqrstuvwxyz01234";
 //String strToShow = "Mauricio Pablo West";
 String lastStrToShow = "";
 int *test;
@@ -49,7 +49,7 @@ void setup(){
     waitTime=WAIT_TIME_LOOP;
 
     #ifndef WAIT_TIME_LOOP
-        #define WAIT_TIME_LOOP 1000
+        #define WAIT_TIME_LOOP 500000
     #endif
 
     #ifdef DEBUG_SERIAL
@@ -74,10 +74,6 @@ void setup(){
         convProgToArray(vecPins,C_Pins, (sizeof(C_Pins) / 2));
         vecPins.print();
         
-        /*
-        dsl("");
-        dse("getContChars:");
-        dse(dm.getContChars());*/
 }
 // Secuencia de la matriz
 void loop(){
@@ -89,21 +85,21 @@ void loop(){
     dsi(lastTime);
     dsi(" difTime:");
     dsil(difTime);
-
+    // dm.fillArrrayOfChars(vecChar,strShow)
     if (difTime>=waitTime){
         lastTime=time;
-        
+        /*
         if (lastStrToShow != strToShow){
-            strToShow=strToShow+"   ";
+            strToShow=strToShow+MARQUE_SEPARATOR;
             dm.ResetInitPosMatrix();    
             dm.getArrayOfCharsOfString(vecChar,strToShow);
             //vecChar.print();
             lastStrToShow = strToShow;
-        }
+        }*/
+        dm.fillArrrayOfChars(dm,vecChar,strToShow);
+
         if(contCharAdded>vecChar.getSize()) contCharAdded=0;
         dsis("Antes de  bucle de loop");
-
-        //matrix.clear();
 
         if(firstPass==0 || dm.canAddChar()==1){
             dsis("Inicio de for");
@@ -111,7 +107,6 @@ void loop(){
             getCharMatrix(aIntCharMatrix,vecChar.get(contCharAdded));
             ds("aIntCharMatrix.getSize=");
             dsl(aIntCharMatrix.getSize());
-
              dm.AddConsToMatrix(matrix,aIntCharMatrix, vecChar.get(contCharAdded));
              contCharAdded++;
              firstPass=1;
@@ -119,9 +114,7 @@ void loop(){
 
         dsis("LastPoschar:");
         dsil(dm.getPosLastChar());
-
         matrix.print();
-
         aFrame.reset();
         dm.GetFrame(matrix,aFrame);
         dsl("aFrame------------------------>");
@@ -133,26 +126,6 @@ void loop(){
 
         sm.PrintLedMatrix(aFrame,aLastFrame,vecPins);
         dm.moveMatrixToLeft(matrix);
-        // if(dm.canAddChar()){
 
-        // }
-
-            /*
-            aFrame = dm.GetFrame(matrix);
-            sm.PrintLedMatrix(aFrame);
-            // dm.despIzq();
-            // dm.moveMatrixToLeft();
-            */
-            /*
-            matriz=convProgToMatrix(C_LET_A,(sizeof(C_LET_A)/2));
-            printMatrix(matriz);
-            sm.PrintLedMatrix(aT2);
-            delay(500);
-            sm.PrintLedMatrix(aPacman);
-            delay(500);
-            */
-       
-       
-        //delay(1000);
     }
 }

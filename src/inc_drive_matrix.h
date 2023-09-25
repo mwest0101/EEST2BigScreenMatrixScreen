@@ -17,12 +17,12 @@
       //int **matrix; 
       int *infMat; 
       int posInfMat=0;
-      String lastStrToShow="";
+      //String lastStrToShow="";
        int numOfcharacter = 0;
        //int *aCharsBlock;
       int contChars=0;
       unsigned long codSumTot=0;
-      
+      String lastStrToShow="";
        
     public:        
       DriveMatrix();
@@ -44,6 +44,7 @@
       void getArrayOfCharsOfString(VectorClass &vecTemp,String strData);
       int getContChars();
       unsigned long getCodSumTo();
+      void fillArrrayOfChars(DriveMatrix dm,VectorClass &vecChar,String strToShow);
       
       //int getValueFromChar(int number);
       
