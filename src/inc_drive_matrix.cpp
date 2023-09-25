@@ -218,16 +218,24 @@ int DriveMatrix::getContChars(){
 
   return contChars;
 }
-void DriveMatrix::fillArrrayOfChars(DriveMatrix dm,VectorClass &vecChar,String strToShow){
+void DriveMatrix::fillArrrayOfChars(VectorClass &vecChar,String strToShow){
         //static String lastStrToShow="";
         String tempStr="";
         if (this->lastStrToShow != strToShow){
           dsil("Cambio el string");
             tempStr=strToShow+MARQUE_SEPARATOR;
-            dm.ResetInitPosMatrix();    
-            dm.getArrayOfCharsOfString(vecChar,tempStr);
+            this->ResetInitPosMatrix();    
+            this->getArrayOfCharsOfString(vecChar,tempStr);
             //vecChar.print();
             this->lastStrToShow = strToShow;
         }
         
+}
+void DriveMatrix::getValuesOfCharMatrixAndAddToMatrix(MatrixClass &matrix,VectorClass &aIntCharMatrix,VectorClass &vecChar,int contCharAdded){
+  aIntCharMatrix.clear();
+  getCharMatrix(aIntCharMatrix,vecChar.get(contCharAdded));
+  ds("aIntCharMatrix.getSize=");
+  dsl(aIntCharMatrix.getSize());
+  this->AddConsToMatrix(matrix,aIntCharMatrix, vecChar.get(contCharAdded));
+
 }

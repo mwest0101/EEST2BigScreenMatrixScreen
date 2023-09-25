@@ -44,8 +44,8 @@
       void getArrayOfCharsOfString(VectorClass &vecTemp,String strData);
       int getContChars();
       unsigned long getCodSumTo();
-      void fillArrrayOfChars(DriveMatrix dm,VectorClass &vecChar,String strToShow);
-      
+      void fillArrrayOfChars(VectorClass &vecChar,String strToShow);
+      void getValuesOfCharMatrixAndAddToMatrix(MatrixClass &matrix,VectorClass &aIntCharMatrix,VectorClass &vecChar,int contCharAdded);
       //int getValueFromChar(int number);
       
   };

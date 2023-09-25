@@ -96,18 +96,19 @@ void loop(){
             //vecChar.print();
             lastStrToShow = strToShow;
         }*/
-        dm.fillArrrayOfChars(dm,vecChar,strToShow);
+        dm.fillArrrayOfChars(vecChar,strToShow);
 
         if(contCharAdded>vecChar.getSize()) contCharAdded=0;
         dsis("Antes de  bucle de loop");
 
         if(firstPass==0 || dm.canAddChar()==1){
             dsis("Inicio de for");
-            aIntCharMatrix.clear();
-            getCharMatrix(aIntCharMatrix,vecChar.get(contCharAdded));
-            ds("aIntCharMatrix.getSize=");
-            dsl(aIntCharMatrix.getSize());
-             dm.AddConsToMatrix(matrix,aIntCharMatrix, vecChar.get(contCharAdded));
+            dm.getValuesOfCharMatrixAndAddToMatrix(matrix,aIntCharMatrix,vecChar,contCharAdded);
+            // aIntCharMatrix.clear();
+            // getCharMatrix(aIntCharMatrix,vecChar.get(contCharAdded));
+            // ds("aIntCharMatrix.getSize=");
+            // dsl(aIntCharMatrix.getSize());
+            //  dm.AddConsToMatrix(matrix,aIntCharMatrix, vecChar.get(contCharAdded));
              contCharAdded++;
              firstPass=1;
         }
