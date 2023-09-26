@@ -66,17 +66,17 @@ void DriveMatrix::AddConsToMatrix(MatrixClass &matrix, VectorClass &aIntCharMatr
   int maxPosCol = 0;
   int cont = aIntCharMatrix.getSize();
   this->infMat[posInfMat] = caracter;
-  // dsi("caracter:");
-  // dsil(caracter);
-  // dsi("cont:");
-  // dsil(cont);
+  dsi("caracter:");
+  dsil(caracter);
+  dsi("cont:");
+  dsil(cont);
   for (int i = 0; i < cont; i++){
 
     value = aIntCharMatrix.get(i);
     if (value != EL && value != EA){
       
       matrix.set(relPosRow,(this->totPosX + relPosCols), value);
-      /*ds(" |");
+      ds(" |");
       
       ds("t:");
       ds(this->totPosX);
@@ -84,7 +84,7 @@ void DriveMatrix::AddConsToMatrix(MatrixClass &matrix, VectorClass &aIntCharMatr
       ds(relPosRow);
       ds(" X:");
       ds(relPosCols);
-      ds(" (");*/
+      ds(" (");
       
       ds(value);
       //dse(")");
@@ -140,7 +140,7 @@ void DriveMatrix::GetFrame(MatrixClass &matrix,VectorClass &aFrame){
 
   //
   
-  //dsis("Inicio GetFrame");
+  dsis("Inicio GetFrame");
   //int size = MATRIX_WIDTH * MATRIX_HEIGHT;
   //int *frame = (int *)calloc((size + 1), sizeof(int));
   int contPos = 0;
@@ -153,7 +153,7 @@ void DriveMatrix::GetFrame(MatrixClass &matrix,VectorClass &aFrame){
     }
     // dsl(" ");
   }
-  //ds1("Fin GetFrame");
+  ds1("Fin GetFrame");
   
 }
 //____________________________________________________________________
@@ -234,8 +234,8 @@ void DriveMatrix::fillArrrayOfChars(VectorClass &vecChar,String strToShow){
 void DriveMatrix::getValuesOfCharMatrixAndAddToMatrix(MatrixClass &matrix,VectorClass &aIntCharMatrix,VectorClass &vecChar,int contCharAdded){
   aIntCharMatrix.clear();
   getCharMatrix(aIntCharMatrix,vecChar.get(contCharAdded));
-  // ds("aIntCharMatrix.getSize=");
-  // dsl(aIntCharMatrix.getSize());
+  ds("aIntCharMatrix.getSize=");
+  dsl(aIntCharMatrix.getSize());
   this->AddConsToMatrix(matrix,aIntCharMatrix, vecChar.get(contCharAdded));
 
 }

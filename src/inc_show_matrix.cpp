@@ -52,13 +52,13 @@ void ShowMatrix::PrintLed(int ledNum, int pintToActive, int ledState)
   int posY = 0;
   posX = (int)(ledNum / 7);
   posY = (int)(ledNum % 7);
-   /*dsl("IS_LCDSCREEN");
+   dsl("IS_LCDSCREEN");
    ds("posX:");
    ds(posX);
    ds("| posY:");
    ds(posY);
    ds("| ledState:");
-   dsl(ledState);*/
+   dsl(ledState);
    
 
   this->pantalla.setLed(0, posX, posY, ledState);
@@ -89,10 +89,10 @@ void ShowMatrix::PrintLedMatrix(VectorClass &aFrame, VectorClass &aLastFrame, Ve
         dsl(" ");
         lastPosX = posX;
       }
-   
+      //dsl("===>es igual");
       if (aFrame.get(i) != aLastFrame.get(i))
       {
-        
+        dsl("===>es distinto");
         aLastFrame.set(i, aFrame.get(i)); // update the values of matriz temp to only update the changed values
         ShowMatrix::PrintLed(i, pinNum, pinState);
       }
