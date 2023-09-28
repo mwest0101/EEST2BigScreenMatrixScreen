@@ -74,6 +74,12 @@ static const int PROGMEM C_PACMAN_ANIM_01[]={
     O,O,O,O,O,O,I,EL,
     O,O,O,O,O,O,I,EL,
     O,O,O,O,O,O,I,EL,
+    O,O,O,O,O,O,O,EA,
+
+    O,O,O,O,O,O,O,EL,
+    O,O,O,O,O,O,O,EL,
+    O,O,O,O,O,O,O,EL,
+    O,O,O,O,O,O,O,EL,
     O,O,O,O,O,O,O,EA};
 
 static const int PROGMEM C_PACMAN_ANIM_02[]={
@@ -147,6 +153,12 @@ static const int PROGMEM C_PACMAN_ANIM_02[]={
     I,O,O,O,O,O,O,EL,
     I,O,O,O,O,O,O,EL,
     I,O,O,O,O,O,O,EL,
+    O,O,O,O,O,O,O,EA,
+    
+    O,O,O,O,O,O,O,EL,
+    O,O,O,O,O,O,O,EL,
+    O,O,O,O,O,O,O,EL,
+    O,O,O,O,O,O,O,EL,
     O,O,O,O,O,O,O,EA};
 
 static const int PROGMEM C_PACMAN_ANIM_03[]={

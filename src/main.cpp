@@ -22,7 +22,7 @@ DriveMatrix dm;
 ShowMatrix sm;
 ProgmemManager pm;
 // String strToShow = "Bienvenidos a la EEST Nº2  de Junin Buenos Aires 2023";
-String strToShow = "(a:pac1)E.E.S.T. Nº2";
+String strToShow = "(a:pac1)(a:tet1)(a:pac2)E.E.S.T. Nº2";
 // String strToShow = "abcdefghijklmnopqrstuvwxyz01234";
 // String strToShow = "Mauricio Pablo West";
 String lastStrToShow = "";
@@ -170,6 +170,19 @@ void loop()
                 aFrame.clear();
                 pm.convProgToArrayByFrame(aFrame, C_PACMAN_ANIM_01, (sizeof(C_PACMAN_ANIM_01) / 2));
             }
+            if (strOption == "a:pac2")
+            {
+                dsl("----->Paso por a:pac2");
+                aFrame.clear();
+                pm.convProgToArrayByFrame(aFrame, C_PACMAN_ANIM_02, (sizeof(C_PACMAN_ANIM_02) / 2));
+            }
+            if (strOption == "a:tet1")
+            {
+                dsl("----->Paso por a:tet1");
+                aFrame.clear();
+                pm.convProgToArrayByFrame(aFrame, C_TETRIS_ANIM_01, (sizeof(C_TETRIS_ANIM_01) / 2));
+            }
+            
             dsl("Despues de if strOption");
             ds(" strOption: ");
             dsl(strOption);
