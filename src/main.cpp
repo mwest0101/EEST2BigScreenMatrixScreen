@@ -22,7 +22,7 @@ DriveMatrix dm;
 ShowMatrix sm;
 ProgmemManager pm;
 // String strToShow = "Bienvenidos a la EEST Nº2  de Junin Buenos Aires 2023";
-String strToShow = "(a:pac1)(a:pac1)E.E.S.T. Nº2";
+String strToShow = "(a:pac1)E.E.S.T. Nº2";
 // String strToShow = "abcdefghijklmnopqrstuvwxyz01234";
 // String strToShow = "Mauricio Pablo West";
 String lastStrToShow = "";
@@ -108,7 +108,7 @@ void loop()
         dsl(getIfisEnd);
 
         //if (pm.getIfisEnd() && dm.canAddChar())
-        if(action!=15)
+        if(action!=15 && dm.canAddChar())
         {
             dss();
             dsl("Inicio de proceso");
@@ -178,14 +178,14 @@ void loop()
         // action=0;
         /*dsis("LastPoschar:");
         dsil(dm.getPosLastChar());*/
-        ds("action=");
-        dsl(action);
+        
         // if(action==0){
         //-->matrix.print();
         if (action == 0)
         {
             aFrame.reset();
             dm.GetFrame(matrix, aFrame);
+            matrix.print();
             
         }
         // dsl("aFrame------------------------>");
@@ -205,7 +205,9 @@ void loop()
 
         sm.PrintLedMatrix(aFrame, aLastFrame, vecPins);
         if (action == 0 && dm.getPosLastChar() > 0)
+        {    
             dm.moveMatrixToLeft(matrix);
+        }
 
         //}
         //matrix.print();
@@ -216,5 +218,7 @@ void loop()
             action=0;
             // action = 0;
         }
+        ds("action=");
+        dsl(action);
     }
 }
