@@ -2,20 +2,24 @@
 #ifndef _INC_DEBUG_SERIAL_H_
   #define _INC_DEBUG_SERIAL_H_ 
 
-
+#ifdef DEBUG_SERIAL
   #define DEBUG_SERIAL_SEPARATOR true
   #define DEBUG_SERIAL_FUN_NAME true
-  //#define DEBUG_SERIAL_L0 true
-  //#define DEBUG_SERIAL_L1 true
-  //#define DEBUG_SERIAL_L2 true
-  // #define DEBUG_SERIAL_L3 true
-  //#define DEBUG_SERIAL_INF true
-  //#define DEBUG_SERIAL_ERR true
+  #define DEBUG_SERIAL_L0 true
+  #define DEBUG_SERIAL_L1 true
+  #define DEBUG_SERIAL_L2 true
+  #define DEBUG_SERIAL_L3 true
+  #define DEBUG_SERIAL_L4 true
+  #define DEBUG_SERIAL_L5 true
+  #define DEBUG_SERIAL_INF true
+  #define DEBUG_SERIAL_ERR true
+#endif
+  
   // 
-// #ifdef DEBUG_SERIAL
+ //#ifdef DEBUG_SERIAL
     #ifdef DEBUG_SERIAL_SEPARATOR
-      #define dss(x) Serial.println("----------------------------------------------------------------");        
-      #define dsd(x) Serial.println("================================================================");
+      #define dss() Serial.println("----------------------------------------------------------------");
+      #define dsd() Serial.println("================================================================");
       #define dst(x)  do {Serial.println("_______________________________________________________________");Serial.println("================================================================");} while(0);
       
     #endif
@@ -23,39 +27,47 @@
       #define dsf(x)  do {Serial.println("===============================================================");Serial.println(x);Serial.println("---------------------------------------------------------------");} while(0);
     #endif
     #ifdef DEBUG_SERIAL_L0
-      #define ds(x)     Serial.print(x);
-      #define dsl(x)    Serial.println(x)    
+      #define ds(x)     do {Serial.print(x);}while(0);
+      #define dsl(x)    do {Serial.println(x);}while(0);
     #endif
     #ifdef DEBUG_SERIAL_L1
-      #define ds1(x)     Serial.print(x);
-      #define ds1l(x)    Serial.println(x)    
+      #define ds1(x)     do {Serial.print(x);}while(0);
+      #define ds1l(x)    do {Serial.println(x);}while(0);
     #endif
     #ifdef DEBUG_SERIAL_L2
-      #define ds2(x)     Serial.print(x);
-      #define ds2l(x)    Serial.println(x)    
+      #define ds2(x)     do {Serial.print(x);}while(0);
+      #define ds2l(x)    do {Serial.println(x);}while(0);
     #endif
     #ifdef DEBUG_SERIAL_L3
-      #define ds3(x)     Serial.print(x);
-      #define ds3l(x)    Serial.println(x)    
+      #define ds3(x)     do {Serial.print(x);}while(0);
+      #define ds3l(x)    do {Serial.println(x);}while(0);
+    #endif
+    #ifdef DEBUG_SERIAL_L4
+      #define ds4(x)     do {Serial.print(x);}while(0);
+      #define ds4l(x)    do {Serial.println(x);}while(0);
+    #endif
+    #ifdef DEBUG_SERIAL_L5
+      #define ds5(x)     do {Serial.print(x);}while(0);
+      #define ds5l(x)    do {Serial.println(x);}while(0);
     #endif
     #ifdef DEBUG_SERIAL_INF
       #define dsi(x)     Serial.print(x);
-      #define dsil(x)    Serial.println(x)   
-      #define dsis(x)  do {Serial.println("_______________________________________________________________");Serial.println("================================================================");Serial.println(x);} while(0); 
+      #define dsil(x)    Serial.println(x);
+      #define dsis(x)  do {Serial.println("_______________________________________________________________");Serial.println("================================================================");Serial.println(x);} while(0);
     #endif
     #ifdef DEBUG_SERIAL_ERR
       #define dse(x)     Serial.print(x);
-      #define dsel(x)    Serial.println(x)    
-      #define dses(x)  do { Serial.println("_______________________________________________________________");Serial.println("==ERROR:=======================================================");Serial.println(x);} while(0); 
+      #define dsel(x)    Serial.println(x);
+      #define dses(x)  do { Serial.println("_______________________________________________________________");Serial.println("==ERROR:=======================================================");Serial.println(x);} while(0);
     #endif
-  // #else
+  //#else
      #ifndef DEBUG_SERIAL_SEPARATOR
-        #define dss(x)
-        #define dsd(x)
-        #define dst(x)
+        #define dss(x);
+        #define dsd(x);
+        #define dst(x);
       #endif
       #ifndef DEBUG_SERIAL_FUN_NAME      
-        #define dsf(x)
+        #define dsf(x);
       #endif
     #ifndef DEBUG_SERIAL_L0
         #define ds(x);
@@ -66,23 +78,31 @@
         #define ds1l(x);
       #endif
       #ifndef DEBUG_SERIAL_L2
-        #define ds2(x)
-        #define ds2l(x)
+        #define ds2(x);
+        #define ds2l(x);
       #endif
       #ifndef DEBUG_SERIAL_L3
-        #define ds3(x)
-        #define ds3l(x)
+        #define ds3(x);
+        #define ds3l(x);
       #endif  
+      #ifndef DEBUG_SERIAL_L4
+        #define ds4(x);
+        #define ds4l(x);
+      #endif
+      #ifndef DEBUG_SERIAL_L5
+        #define ds5(x);
+        #define ds5l(x);
+      #endif
       #ifndef DEBUG_SERIAL_INF
-        #define dsi(x)
-        #define dsil(x)
-        #define dsis(x)
+        #define dsi(x);
+        #define dsil(x);
+        #define dsis(x);
       #endif
       #ifndef DEBUG_SERIAL_ERR
-        #define dse(x)
-        #define dsel(x)
-        #define dses(x) 
+        #define dse(x);
+        #define dsel(x);
+        #define dses(x) ;
       #endif
-  //#endif
+  
 
   #endif /* _INC_DEBUG_SERIAL_H_ */

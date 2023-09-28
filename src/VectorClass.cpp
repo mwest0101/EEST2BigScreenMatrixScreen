@@ -29,8 +29,8 @@ public:
     this->posActual=0;
     this->sizeFixed = size;
     this->data = new int[size];
-    //ds("Size=");
-    //dsl(size);
+    //ds5("Size=");
+    //ds5l(size);
     for(int i=0; i<size; i++){
       this->data[i] = 0;
     }
@@ -67,21 +67,14 @@ void clear(){
     if (index >= 0 && index < size){
       if (value >= minRange && value <= maxRange) {      
         this->data[index] = value;
-        /*
-        ds("this->data[");
-        ds(index);
-        ds("] = ");
-        ds(value);
-        ds(" data[index]=");
-        dsl(data[index]);
-        */
+
       } else{
-        ds("Out of range, value=");
-        dsl(value); 
+        ds5("Out of range, value=");
+        ds5l(value); 
       }
     } else{
-      ds("Out of Index ");
-      dsl(index);
+      ds5("Out of Index ");
+      ds5l(index);
     }
   }
   // M�todo para obtener el valor en una posici�n del vector
@@ -89,8 +82,8 @@ void clear(){
     if (index >= 0 && index < size){
       return this->data[index];
     } else{
-      ds("Out of Index ");
-      dsl(index);
+      ds5("Out of Index ");
+      ds5l(index);
     }
     return 0; // O podr�as lanzar una excepci�n o manejar el error de otra manera
   }
@@ -137,7 +130,7 @@ void clear(){
       data = newData;
       size--;
     } else{
-      dsl("Vector is empty. Cannot pop.");
+      ds5l("Vector is empty. Cannot pop.");
     }
   }
 //____________________________________________________________________
@@ -148,14 +141,18 @@ int getSize(){
 //____________________________________________________________________
 //------------Function------------------------------------------------
 void print(){
-    for(int i = 0; i < size; i++){
-      // ds(i);
-      // ds("=");
-      
-      ds3(data[i]);
-      ds3(" |");
+    ds5("i=");
+    for(int i = 0; i < size; i++){      
+      if(i<10) ds5(" ");
+      ds5(i);ds5("|");
     }
-    ds3l("");
+    ds5l("");
+    ds5("d=");
+    for(int i = 0; i < size; i++){
+      if(data[i]<10) ds5(" ");
+      ds5(data[i]);ds5("|");
+    }
+    ds5l("");
   }
 };
 #endif //_VECTOR_CLASS_

@@ -18,9 +18,41 @@ void convProgToArray(VectorClass &aIntCharMatrix,const int *phrase, int size){
       ds(" ");
       */
       //vecTemp.set(i,element);
+
       aIntCharMatrix.push(element); 
       //vecTemp.push(((int)pgm_read_word(phrase+i)));
       //arrayReturn[i+starIn]=pgm_read_word(phrase+i); //uint16_t
+  }
+  dsl(" ");
+  //aIntCharMatrix.print();
+  
+  //return vecTemp;
+  //return vecTemp;
+}
+void convProgToArrayByFrame(VectorClass &aIntCharMatrix,const int *phrase, int size){
+  //int* arrayReturn;
+  //VectorClass vecTemp(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);   
+  //arrayReturn=(int*)calloc((size+starIn),sizeof(int));
+  //arrayReturn[0]=size;
+  int element=0;
+  static int i=0;
+  while (i<size and element!=EA){
+  //for (int i=0; i < size; i++){
+      //vecTemp.push(((int)pgm_read_word(phrase+i)));
+      element=((int)pgm_read_word(phrase + i));
+      /*
+      ds("e=(");
+      ds(i);
+      ds(")=");
+      ds(element);
+      ds(" ");
+      */
+      //vecTemp.set(i,element);
+      
+      aIntCharMatrix.push(element); 
+      //vecTemp.push(((int)pgm_read_word(phrase+i)));
+      //arrayReturn[i+starIn]=pgm_read_word(phrase+i); //uint16_t
+      i++;
   }
   dsl(" ");
   //aIntCharMatrix.print();

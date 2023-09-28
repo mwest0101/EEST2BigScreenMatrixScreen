@@ -17,12 +17,13 @@
       //int **matrix; 
       int *infMat; 
       int posInfMat=0;
-      String lastStrToShow="";
+      //String lastStrToShow="";
        int numOfcharacter = 0;
        //int *aCharsBlock;
       int contChars=0;
+      bool vCanAddChar=true;
       unsigned long codSumTot=0;
-      
+      String lastStrToShow="";
        
     public:        
       DriveMatrix();
@@ -39,12 +40,13 @@
       //void moveMatrixToLeft();
       void moveMatrixToLeft(MatrixClass &matrix);
       int getPosLastChar();
-      int canAddChar();
+      bool canAddChar();
       int getMovMat();
-      void getArrayOfCharsOfString(VectorClass &vecTemp,String strData);
+      void getArrayOfCharsOfString(VectorClass &vecTemp,String strData); 
       int getContChars();
       unsigned long getCodSumTo();
-      
+      void fillArrrayOfChars(VectorClass &vecChar,String strToShow);
+      void getValuesOfCharMatrixAndAddToMatrix(MatrixClass &matrix,VectorClass &aIntCharMatrix,VectorClass &vecChar,int contCharAdded);
       //int getValueFromChar(int number);
       
   };

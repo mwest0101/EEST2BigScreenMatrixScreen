@@ -51,6 +51,7 @@ void DriveMatrix::ResetInitPosMatrix(){
   this->totPosX = MATRIX_WIDTH;
   this->posInfMat = 0;
   this->codSumTot = 0;
+  this->vCanAddChar = true;
 }
 //____________________________________________________________________
 //------------Function------------------------------------------------
@@ -66,17 +67,17 @@ void DriveMatrix::AddConsToMatrix(MatrixClass &matrix, VectorClass &aIntCharMatr
   int maxPosCol = 0;
   int cont = aIntCharMatrix.getSize();
   this->infMat[posInfMat] = caracter;
-  dsi("caracter:");
-  dsil(caracter);
-  dsi("cont:");
-  dsil(cont);
+  // dsi("caracter:");
+  // dsil(caracter);
+  // dsi("cont:");
+  // dsil(cont);
   for (int i = 0; i < cont; i++){
 
     value = aIntCharMatrix.get(i);
     if (value != EL && value != EA){
       
       matrix.set(relPosRow,(this->totPosX + relPosCols), value);
-      ds(" |");
+      /*ds(" |");
       
       ds("t:");
       ds(this->totPosX);
@@ -84,21 +85,22 @@ void DriveMatrix::AddConsToMatrix(MatrixClass &matrix, VectorClass &aIntCharMatr
       ds(relPosRow);
       ds(" X:");
       ds(relPosCols);
-      ds(" (");
+      ds(" (");*/
       
       ds(value);
+      ds("|");
       //dse(")");
       if (relPosCols > maxPosCol) maxPosCol = relPosCols;
 
       if (value < 0 || value > 1)
       {
   
-        dses("");
+        dses(value);
       }
       // ds("value:");ds(value);ds(" (i+1)=");dsl(i+1);
       relPosCols++;
     }else{  
-      ds(" ||");
+      ds("||");
     /*  ds("t:");
       ds(this->totPosX);
       ds(" Y:");
@@ -140,7 +142,7 @@ void DriveMatrix::GetFrame(MatrixClass &matrix,VectorClass &aFrame){
 
   //
   
-  dsis("Inicio GetFrame");
+  //dsis("Inicio GetFrame");
   //int size = MATRIX_WIDTH * MATRIX_HEIGHT;
   //int *frame = (int *)calloc((size + 1), sizeof(int));
   int contPos = 0;
@@ -153,7 +155,7 @@ void DriveMatrix::GetFrame(MatrixClass &matrix,VectorClass &aFrame){
     }
     // dsl(" ");
   }
-  ds1("Fin GetFrame");
+  //ds1("Fin GetFrame");
   
 }
 //____________________________________________________________________
@@ -168,20 +170,21 @@ void DriveMatrix::moveMatrixToLeft(MatrixClass &matrix){
     //movMat++;
   }
   this->totPosX--;
+  if(this->totPosX<MATRIX_WIDTH){
+    this->vCanAddChar=true;
+  }else{
+    this->vCanAddChar=false;
+  }
+
 }
 
 int DriveMatrix::getPosLastChar(){
   return this->totPosX;
 }
 
-int DriveMatrix::canAddChar(){
-  if(this->totPosX<MATRIX_WIDTH){
-    return 1;
-  }else{
-    return 0;
-  }
+bool DriveMatrix::canAddChar(){
+  return this->vCanAddChar;
 }
-
 //____________________________________________________________________
 //------------Function------------------------------------------------
 int DriveMatrix::getMovMat(){
@@ -201,8 +204,8 @@ void DriveMatrix::getArrayOfCharsOfString(VectorClass &vecTemp,String strData){
       vecTemp.push(numOfcharacter);
       this->codSumTot = this->codSumTot + ((i * 10) + numOfcharacter);
       this->contChars++;
-      ds1("numOfcharacter:");
-      ds1l(numOfcharacter);
+      //ds1("numOfcharacter:");
+      //ds1l(numOfcharacter);
     }
   }
 
@@ -217,4 +220,25 @@ unsigned long DriveMatrix::getCodSumTo(){
 int DriveMatrix::getContChars(){
 
   return contChars;
+}
+void DriveMatrix::fillArrrayOfChars(VectorClass &vecChar,String strToShow){
+        //static String lastStrToShow="";
+        String tempStr="";
+        if (this->lastStrToShow != strToShow){
+          dsil("Cambio el string");
+            tempStr=strToShow+MARQUE_SEPARATOR;
+            this->ResetInitPosMatrix();    
+            this->getArrayOfCharsOfString(vecChar,tempStr);
+            //vecChar.print();
+            this->lastStrToShow = strToShow;
+        }
+        
+}
+void DriveMatrix::getValuesOfCharMatrixAndAddToMatrix(MatrixClass &matrix,VectorClass &aIntCharMatrix,VectorClass &vecChar,int contCharAdded){
+  aIntCharMatrix.clear();
+  getCharMatrix(aIntCharMatrix,vecChar.get(contCharAdded));
+  // ds("aIntCharMatrix.getSize=");
+  // dsl(aIntCharMatrix.getSize());
+  this->AddConsToMatrix(matrix,aIntCharMatrix, vecChar.get(contCharAdded));
+
 }

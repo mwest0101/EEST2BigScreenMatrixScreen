@@ -30,6 +30,7 @@
 
   //#define WAIT_TIME_LOOP 1000000;
   #define WAIT_TIME_LOOP 500000;
+  #define MARQUE_SEPARATOR "   ";
 
   
   
