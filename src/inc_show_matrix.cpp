@@ -52,6 +52,7 @@ void ShowMatrix::PrintLed(int ledNum, int pintToActive, int ledState)
   int posY = 0;
   posX = (int)(ledNum / 7);
   posY = (int)(ledNum % 7);
+
    ds3l("IS_LCDSCREEN");
    ds3("posX:");
    ds3(posX);
@@ -59,6 +60,7 @@ void ShowMatrix::PrintLed(int ledNum, int pintToActive, int ledState)
    ds3(posY);
    ds3("| ledState:");
    ds3l(ledState);
+
    
 
   this->pantalla.setLed(0, posX, posY, ledState);
