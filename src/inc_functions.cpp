@@ -1,92 +1,98 @@
 
 #include <Arduino.h>
 #include "inc_include.h"
-void convProgToArray(VectorClass &aIntCharMatrix,const int *phrase, int size){
-  //int* arrayReturn;
-  //VectorClass vecTemp(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);   
-  //arrayReturn=(int*)calloc((size+starIn),sizeof(int));
-  //arrayReturn[0]=size;
-  int element=0;
-  for (int i=0; i < size; i++){
-      //vecTemp.push(((int)pgm_read_word(phrase+i)));
-      element=((int)pgm_read_word(phrase + i));
-      /*
-      ds("e=(");
-      ds(i);
-      ds(")=");
-      ds(element);
-      ds(" ");
-      */
-      //vecTemp.set(i,element);
-
-      aIntCharMatrix.push(element); 
-      //vecTemp.push(((int)pgm_read_word(phrase+i)));
-      //arrayReturn[i+starIn]=pgm_read_word(phrase+i); //uint16_t
+void convProgToArray(VectorClass &aIntCharMatrix, const int *phrase, int size)
+{
+  int element = 0;
+  for (int i = 0; i < size; i++)
+  {
+    element = ((int)pgm_read_word(phrase + i));
+    aIntCharMatrix.push(element);
   }
   dsl(" ");
-  //aIntCharMatrix.print();
-  
-  //return vecTemp;
-  //return vecTemp;
 }
+/*
 void convProgToArrayByFrame(VectorClass &aIntCharMatrix,const int *phrase, int size){
-  //int* arrayReturn;
-  //VectorClass vecTemp(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);   
-  //arrayReturn=(int*)calloc((size+starIn),sizeof(int));
-  //arrayReturn[0]=size;
+
   int element=0;
   static int i=0;
   while (i<size and element!=EA){
-  //for (int i=0; i < size; i++){
-      //vecTemp.push(((int)pgm_read_word(phrase+i)));
       element=((int)pgm_read_word(phrase + i));
-      /*
-      ds("e=(");
-      ds(i);
-      ds(")=");
-      ds(element);
-      ds(" ");
-      */
-      //vecTemp.set(i,element);
-      
-      aIntCharMatrix.push(element); 
-      //vecTemp.push(((int)pgm_read_word(phrase+i)));
-      //arrayReturn[i+starIn]=pgm_read_word(phrase+i); //uint16_t
+      aIntCharMatrix.push(element);
       i++;
   }
   dsl(" ");
-  //aIntCharMatrix.print();
-  
-  //return vecTemp;
-  //return vecTemp;
-}
+}*/
 //____________________________________________________________________
 //------------Function------------------------------------------------
-void printMatrix(int *vMatrix){
-  
-  
-  int tam=vMatrix[0];
-  for (int i=0;i<tam; i++){
-      if(vMatrix[i]!=EL && vMatrix[i]!=EA){      
-        ds3(vMatrix[i]);
-      }else{
-        dsl("");
-      }
+void printMatrix(int *vMatrix)
+{
+  int tam = vMatrix[0];
+  for (int i = 0; i < tam; i++)
+  {
+    if (vMatrix[i] != EL && vMatrix[i] != EA)
+    {
+      ds3(vMatrix[i]);
+    }
+    else
+    {
+      dsl("");
+    }
   }
-  
 }
 //____________________________________________________________________
 //------------Function------------------------------------------------
-int **CreateMatrix(int **matrix,int cols, int rows){
+int **CreateMatrix(int **matrix, int cols, int rows)
+{
 
   matrix = new int *[rows];
-  for (int i = 0; i < rows; i++){
+  for (int i = 0; i < rows; i++)
+  {
 
     matrix[i] = new int[cols];
     for (int j = 0; j < cols; j++)
- {
+    {
       matrix[i][j] = 0;
     }
   }
   return matrix;
+}
+
+String concParamsOfString(char charReaded,String strOption,int &action)
+{
+  
+  if (charReaded == '(')
+  {
+    dss();ds("se encuentra (");ds(" contCharAdded: ");dsl(contCharAdded);
+    strOption = "";
+    action = 10;
+    //contCharAdded++;
+  }
+  else if (charReaded == ')')
+  {
+    dss();
+    dsl("se encuentra )");
+    ds(" contCharAdded: ");
+    dsl(contCharAdded);
+    //contCharAdded++;
+    //--ver-->pm.setIfisEnd(false);
+    action = 15;
+  }
+  else if (action == 10)
+  {
+
+    strOption = strOption + charReaded;
+    dss();
+    dsl("Concatena:");
+    ds("strOption:");
+    dsl(strOption);
+
+    //contCharAdded++;
+    ds("Entre a concatenacion de efectos ");
+    ds(" contCharAdded: ");
+    dsl(contCharAdded);
+    ds(" strOption: ");
+    dsl(strOption);
+  }
+  return strOption;
 }
