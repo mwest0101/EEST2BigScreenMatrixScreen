@@ -3,6 +3,7 @@
 #ifndef _INC_BIG_WALL_MATRIX_
 #define _INC_BIG_WALL_MATRIX_
 #include "VectorClass.cpp"
+#include "MatrixClass.cpp"
 class BigWallMatrix
 {
 private:
@@ -48,7 +49,15 @@ private:
   String strOption = "";
   bool getIfisEnd = false;
   bool canAddChar = false;
-  
+    VectorClass vecTemp= VectorClass(0, 0, 100);
+    VectorClass aIntCharMatrix= VectorClass(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
+    VectorClass vecChar= VectorClass(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
+    VectorClass vecPins= VectorClass(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
+    MatrixClass matrix= MatrixClass(BUILD_MATRIX_ROWS, BUILD_MATRIX_COLS, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
+    VectorClass aFrame= VectorClass(36, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
+    VectorClass aLastFrame= VectorClass(36, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
+
+   
   // VectorClass vecTemp;
   // VectorClass aIntCharMatrix;
   // VectorClass vecChar;
@@ -61,7 +70,13 @@ private:
   // VectorClass aIntCharMatrix;
   // VectorClass vecChar;
   //VectorClass vecPins;
-  VectorClass vecTemp= VectorClass(0, 0, 100);
+ 
+  
+
+
+
+
+
   // VectorClass matrix;
   // VectorClass aFrame;
   // VectorClass aLastFrame;
