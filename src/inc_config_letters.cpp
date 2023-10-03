@@ -3,6 +3,7 @@
 #include "inc_include.h"
 #ifndef _INC_CONFIG_LETTERS_CPP_
 #define _INC_CONFIG_LETTERS_CPP_
+
 int calcNumberOfChar(char caracter){
     static int charVal=0;
     int valRet=0;
