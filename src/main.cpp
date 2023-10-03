@@ -21,6 +21,7 @@ MatrizLed pantalla;
 DriveMatrix dm;
 ShowMatrix sm;
 ProgmemManager pm;
+AnimManager an;
 // String strToShow = "Bienvenidos a la EEST Nº2  de Junin Buenos Aires 2023";
 String strToShow = "(a:pac1)(a:tet1)(a:pac2)E.E.S.T. Nº2";
 // String strToShow = "abcdefghijklmnopqrstuvwxyz01234";
@@ -75,6 +76,7 @@ void setup()
     sm = ShowMatrix();
     dm = DriveMatrix();
     pm = ProgmemManager();
+    an = AnimManager();
 
 #ifdef IS_LCDSCREEN
     pantalla.borrar();
@@ -164,7 +166,10 @@ void loop()
         }
         if (action == 15)
         {
-            if (strOption == "a:pac1")
+            an.getAnim(aFrame,strOption);
+
+            //getAnim(VectorClass &aFrame,String strOption,ProgmemManager pm)
+            /*if (strOption == "a:pac1")
             {
                 dsl("----->Paso por a:pac1");
                 aFrame.clear();
@@ -182,7 +187,7 @@ void loop()
                 aFrame.clear();
                 pm.convProgToArrayByFrame(aFrame, C_TETRIS_ANIM_01, (sizeof(C_TETRIS_ANIM_01) / 2));
             }
-            
+            */
             dsl("Despues de if strOption");
             ds(" strOption: ");
             dsl(strOption);
@@ -224,9 +229,9 @@ void loop()
 
         //}
         //matrix.print();
-        if (pm.getIfisEnd())
+        if (an.getIfisEnd())
         {
-            pm.reset();
+            an.reset();
             strOption="";
             action=0;
             // action = 0;
