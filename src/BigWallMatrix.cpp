@@ -9,7 +9,8 @@ BigWallMatrix::BigWallMatrix()
 
     dsl("");
     #ifdef IS_LCDSCREEN
-    void setPantalla(MatrizLed &vPantalla);
+    MatrizLed vPantalla;
+    
     #endif
     this->time = micros();
     this->lastTime = time;
@@ -22,8 +23,8 @@ BigWallMatrix::BigWallMatrix()
     // this->matrix(BUILD_MATRIX_ROWS, BUILD_MATRIX_COLS, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
     // this->aFrame(36, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
     // this->aLastFrame(36, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
-    VectorClass vecTemp(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
-    VectorClass aIntCharMatrix(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
+    //this->vecTemp=VectorClass(0, 0, 100);
+   /* VectorClass aIntCharMatrix(0, VECTºOR_MIN_VALUE, VECTOR_MAX_VALUE);
     VectorClass vecChar(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
     VectorClass vecPins(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
     VectorClass aFrame(36, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
@@ -52,17 +53,17 @@ BigWallMatrix::BigWallMatrix()
     #endif
     
     #ifdef IS_LCDSCREEN
-        this->pantalla.begin(12, 11, 10, 1); // dataPin, clkPin, csPin, numero de matrices de 8x8
-        this->pantalla.setIntensidad(1);
+        vPantalla.begin(12, 11, 10, 1); // dataPin, clkPin, csPin, numero de matrices de 8x8
+        vPantalla.setIntensidad(1);
     #endif
 
     #ifdef IS_LCDSCREEN
-        this->pantalla.borrar();
-        ShowMatrix::setPantalla(this->pantalla);
+        vPantalla.borrar();
+        
     #endif
 
     convProgToArray(this->vecPins, C_Pins, (sizeof(C_Pins) / 2));
-    this->vecPins.print();
+    this->vecPins.print();*/
 
 }
 /*
@@ -70,7 +71,7 @@ void BigWallMatrix::init()
 {
     
 }*/
-
+/*
 void BigWallMatrix::setText(String text)
 {
     this->strToShow = text;
@@ -173,4 +174,4 @@ void BigWallMatrix::nextFrame()
     }
     ds("action=");
     dsl(action);
-}
+}*/

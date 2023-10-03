@@ -75,7 +75,7 @@ String concParamsOfString(char charReaded,String strOption,int &action)
     ds(" contCharAdded: ");
     dsl(contCharAdded);
     //contCharAdded++;
-    pm.setIfisEnd(false);
+    //--ver-->pm.setIfisEnd(false);
     action = 15;
   }
   else if (action == 10)
@@ -94,4 +94,5 @@ String concParamsOfString(char charReaded,String strOption,int &action)
     ds(" strOption: ");
     dsl(strOption);
   }
+  return strOption;
 }

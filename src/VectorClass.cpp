@@ -1,13 +1,13 @@
-
 #include <Arduino.h>
 #include "inc_include.h"
+
 #ifndef _VECTOR_CLASS_
   #define _VECTOR_CLASS_
 class VectorClass{
 private:
   int size;       // Tama�o del vector
-  int minRange;   // Valor m�nimo permitido
-  int maxRange;   // Valor m�ximo permitido
+  int minRange;   // Valor mnimo permitido
+  int maxRange;   // Valor maximo permitido
   int posActual;
   int sizeFixed;
 public:
@@ -15,6 +15,7 @@ public:
   // Constructor: inicializa el vector y establece los l�mites
    //VectorClass() : data(nullptr), size(0) {}
     // Constructor de copia
+  
   VectorClass(const VectorClass& other) : size(other.size){
         // Realizar una copia profunda de los datos
         data = new int[size];

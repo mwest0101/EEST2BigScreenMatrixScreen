@@ -1,7 +1,9 @@
 
+
 #ifndef _INC_BIG_WALL_MATRIX_
 #define _INC_BIG_WALL_MATRIX_
-
+#include "VectorClass.cpp"
+#include "MatrixClass.cpp"
 class BigWallMatrix
 {
 private:
@@ -20,9 +22,9 @@ private:
   // int * aFrame;
   // int **matrix;
   int pinState = 0;
-  #ifdef IS_LCDSCREEN
-    MatrizLed pantalla;
-  #endif
+#ifdef IS_LCDSCREEN
+  MatrizLed pantalla;
+#endif
 
   // String strToShow = "Bienvenidos a la EEST Nº2  de Junin Buenos Aires 2023";
   // String strToShow = "(a:efe1)(a:efe2)(a:efe3)(a:efe4)(a:efe5)(a:efe6)(a:efe7)(a:tec1)(a:tec2)(a:tec3)(a:tec4)(a:tec5)(a:tec6)(a:tec7)E.E.S.T. Nº2";
@@ -47,25 +49,39 @@ private:
   String strOption = "";
   bool getIfisEnd = false;
   bool canAddChar = false;
+    VectorClass vecTemp= VectorClass(0, 0, 100);
+    VectorClass aIntCharMatrix= VectorClass(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
+    VectorClass vecChar= VectorClass(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
+    VectorClass vecPins= VectorClass(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
+    MatrixClass matrix= MatrixClass(BUILD_MATRIX_ROWS, BUILD_MATRIX_COLS, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
+    VectorClass aFrame= VectorClass(36, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
+    VectorClass aLastFrame= VectorClass(36, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 
-  //VectorClass vecTemp;
-  //VectorClass aIntCharMatrix;
-  //VectorClass vecChar;
-  VectorClass vecPins;
-  //VectorClass aFrame;
-  //VectorClass aLastFrame;
-//
+   
+  // VectorClass vecTemp;
+  // VectorClass aIntCharMatrix;
+  // VectorClass vecChar;
+  // VectorClass vecPins;
+  // VectorClass aFrame;
+  // VectorClass aLastFrame;
+  //
+
+  // VectorClass vecTemp;
+  // VectorClass aIntCharMatrix;
+  // VectorClass vecChar;
+  //VectorClass vecPins;
+ 
+  
 
 
-    //VectorClass vecTemp;
-    //VectorClass aIntCharMatrix;
-    //VectorClass vecChar;
-    //VectorClass vecPins;
-    //VectorClass matrix;
-    //VectorClass aFrame;
-    //VectorClass aLastFrame;
 
-  //MatrixClass matrix;
+
+
+  // VectorClass matrix;
+  // VectorClass aFrame;
+  // VectorClass aLastFrame;
+
+  // MatrixClass matrix;
 
   // DriveMatrix dm;
   // ShowMatrix sm;
@@ -79,11 +95,13 @@ private:
 public:
   BigWallMatrix();
 
-  //void init();
+  // void init();
+  /*
   void setText(String vecPins);
   bool ifWaitTime();
   void getTime();
   void nextFrame();
+  */
 
   //   void InitShowMatrix(VectorClass vecPins);
   //   void PrintLed(int ledNum,int pintToActive,int ledState);

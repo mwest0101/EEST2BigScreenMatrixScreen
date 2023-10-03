@@ -11,9 +11,8 @@ void setup()
 void loop()
 {
       //bm.init();
-      bm.setText("test");
+     /* bm.setText("test");
       bm.ifWaitTime();
-
-      bm.nextFrame();
+      bm.nextFrame();*/
       
 }
