@@ -2,8 +2,7 @@
 
 #ifndef _INC_BIG_WALL_MATRIX_
 #define _INC_BIG_WALL_MATRIX_
-#include "VectorClass.cpp"
-#include "MatrixClass.cpp"
+#include "inc_include.h"
 class BigWallMatrix
 {
 private:
@@ -57,36 +56,10 @@ private:
     VectorClass aFrame= VectorClass(36, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
     VectorClass aLastFrame= VectorClass(36, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 
-   
-  // VectorClass vecTemp;
-  // VectorClass aIntCharMatrix;
-  // VectorClass vecChar;
-  // VectorClass vecPins;
-  // VectorClass aFrame;
-  // VectorClass aLastFrame;
-  //
-
-  // VectorClass vecTemp;
-  // VectorClass aIntCharMatrix;
-  // VectorClass vecChar;
-  //VectorClass vecPins;
- 
-  
-
-
-
-
-
-  // VectorClass matrix;
-  // VectorClass aFrame;
-  // VectorClass aLastFrame;
-
-  // MatrixClass matrix;
-
-  // DriveMatrix dm;
-  // ShowMatrix sm;
-  // ProgmemManager pm;
-  // AnimManager an;
+    ShowMatrix sm = ShowMatrix();
+    DriveMatrix dm = DriveMatrix();
+    ProgmemManager pm = ProgmemManager();
+    AnimManager an = AnimManager();
 
 #ifndef WAIT_TIME_LOOP
 #define WAIT_TIME_LOOP 500000
@@ -96,12 +69,12 @@ public:
   BigWallMatrix();
 
   // void init();
-  /*
+  
   void setText(String vecPins);
   bool ifWaitTime();
   void getTime();
   void nextFrame();
-  */
+  
 
   //   void InitShowMatrix(VectorClass vecPins);
   //   void PrintLed(int ledNum,int pintToActive,int ledState);

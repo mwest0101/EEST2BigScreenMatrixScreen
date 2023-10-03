@@ -16,34 +16,7 @@ BigWallMatrix::BigWallMatrix()
     this->lastTime = time;
     this->waitTime = WAIT_TIME_LOOP;
 
-    // this->vecTemp(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
-    // this->aIntCharMatrix(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
-    // this->vecChar(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
-    // this->vecPins(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
-    // this->matrix(BUILD_MATRIX_ROWS, BUILD_MATRIX_COLS, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
-    // this->aFrame(36, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
-    // this->aLastFrame(36, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
-    //this->vecTemp=VectorClass(0, 0, 100);
-   /* VectorClass aIntCharMatrix(0, VECTºOR_MIN_VALUE, VECTOR_MAX_VALUE);
-    VectorClass vecChar(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
-    VectorClass vecPins(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
-    VectorClass aFrame(36, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
-    VectorClass aLastFrame(36, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
-
-    MatrixClass matrix(BUILD_MATRIX_ROWS, BUILD_MATRIX_COLS, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
-
-
-    DriveMatrix dm();
-    ShowMatrix sm();
-    ProgmemManager pm();
-    AnimManager an();
-
-    //this->sm = ShowMatrix();
-    //this->dm = DriveMatrix();
-    //this->pm = ProgmemManager();
-    //this->an = AnimManager();
-    // difTime = 0;
-
+   
     #ifdef DEBUG_SERIAL
         Serial.begin(9600);
     #endif
@@ -63,7 +36,7 @@ BigWallMatrix::BigWallMatrix()
     #endif
 
     convProgToArray(this->vecPins, C_Pins, (sizeof(C_Pins) / 2));
-    this->vecPins.print();*/
+    this->vecPins.print();
 
 }
 /*
@@ -71,7 +44,7 @@ void BigWallMatrix::init()
 {
     
 }*/
-/*
+
 void BigWallMatrix::setText(String text)
 {
     this->strToShow = text;
@@ -105,7 +78,7 @@ void BigWallMatrix::nextFrame()
         dsd();
         dsl("LOOP in timeout");
         this->getTime();
-        DriveMatrix::fillArrrayOfChars(this->vecChar, this->strToShow);
+        dm.fillArrrayOfChars(this->vecChar, this->strToShow);
 
         if (this->contCharAdded > vecChar.getSize())
             this->contCharAdded = 0;
@@ -147,7 +120,7 @@ void BigWallMatrix::nextFrame()
     if (action == 0)
     {
         this->aFrame.reset();
-        dm.GetFrame(this->aFrame);
+        dm.GetFrame(this->matrix,this->aFrame);
         this->matrix.print();
     }
 
@@ -174,4 +147,4 @@ void BigWallMatrix::nextFrame()
     }
     ds("action=");
     dsl(action);
-}*/
+}
