@@ -24,10 +24,10 @@ private:
 #ifdef IS_LCDSCREEN
   MatrizLed pantalla;
 #endif
-
+  
   // String strToShow = "Bienvenidos a la EEST Nº2  de Junin Buenos Aires 2023";
   // String strToShow = "(a:efe1)(a:efe2)(a:efe3)(a:efe4)(a:efe5)(a:efe6)(a:efe7)(a:tec1)(a:tec2)(a:tec3)(a:tec4)(a:tec5)(a:tec6)(a:tec7)E.E.S.T. Nº2";
-  String strToShow = "(a:efe1:X4:T5)(a:efe2)(a:efe3)(a:efe4)(a:efe5)(a:efe6)(a:efe7)(a:tec1)(a:tec2)(a:tec3)(a:tec4)(a:tec5)(a:tec6)(a:tec7)E.E.S.T. Nº2";
+  String strToShow = "";
   // String strToShow = "abcdefghijklmnopqrstuvwxyz01234";
   // String strToShow = "Mauricio Pablo West";
   String lastStrToShow = "";
@@ -38,10 +38,16 @@ private:
 
   int numOfcharacter = 0;
   int contCharAdded = 0;
-  unsigned long time = 0;
-  unsigned long lastTime = 0;
+  unsigned long time = micros();
+  unsigned long lastTime = time;
   unsigned long difTime = 0;
-  unsigned long waitTime = 0;
+  unsigned long waitTime = WAIT_TIME_LOOP;
+
+
+      /*this->time = micros();
+    this->lastTime = time;
+    this->waitTime = WAIT_TIME_LOOP;*/
+
   char charReaded;
   char lastCharReaded;
   int action = 0;
@@ -70,7 +76,7 @@ public:
 
   // void init();
   
-  void setText(String vecPins);
+  void setText(String text);
   bool ifWaitTime();
   void getTime();
   void nextFrame();

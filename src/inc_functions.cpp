@@ -8,8 +8,13 @@ void convProgToArray(VectorClass &aIntCharMatrix, const int *phrase, int size)
   {
     element = ((int)pgm_read_word(phrase + i));
     aIntCharMatrix.push(element);
+    //aIntCharMatrix.set(i, element);
+   // ds(element);
+    //ds("-");
   }
   dsl(" ");
+  //aIntCharMatrix.print();
+ 
 }
 /*
 void convProgToArrayByFrame(VectorClass &aIntCharMatrix,const int *phrase, int size){
@@ -63,18 +68,18 @@ String concParamsOfString(char charReaded,String strOption,int &action)
   
   if (charReaded == '(')
   {
-    dss();ds("se encuentra (");ds(" contCharAdded: ");dsl(contCharAdded);
+    dss();ds("se encuentra (");ds(" charReaded: ");dsl(charReaded);
     strOption = "";
     action = 10;
-    //contCharAdded++;
+    //charReaded++;
   }
   else if (charReaded == ')')
   {
     dss();
     dsl("se encuentra )");
-    ds(" contCharAdded: ");
-    dsl(contCharAdded);
-    //contCharAdded++;
+    ds(" charReaded: ");
+    dsl(charReaded);
+    //charReaded++;
     //--ver-->pm.setIfisEnd(false);
     action = 15;
   }
@@ -87,10 +92,10 @@ String concParamsOfString(char charReaded,String strOption,int &action)
     ds("strOption:");
     dsl(strOption);
 
-    //contCharAdded++;
+    //charReaded++;
     ds("Entre a concatenacion de efectos ");
-    ds(" contCharAdded: ");
-    dsl(contCharAdded);
+    ds(" charReaded: ");
+    dsl(charReaded);
     ds(" strOption: ");
     dsl(strOption);
   }

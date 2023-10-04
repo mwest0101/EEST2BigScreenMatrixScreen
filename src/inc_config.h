@@ -13,7 +13,7 @@
   #define EL              C_END_LIN
   
   //#define DEBUG           true
-  //#define DEBUG_SERIAL true
+  #define DEBUG_SERIAL true
   //#define DEBUG_MATRIX    true
   //#define DEBUG_BY_VSCODE
   

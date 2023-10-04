@@ -12,9 +12,9 @@ BigWallMatrix::BigWallMatrix()
     MatrizLed vPantalla;
     
     #endif
-    this->time = micros();
-    this->lastTime = time;
-    this->waitTime = WAIT_TIME_LOOP;
+    // this->time = micros();
+    // this->lastTime = time;
+    // this->waitTime = WAIT_TIME_LOOP;
 
    
     #ifdef DEBUG_SERIAL
@@ -35,8 +35,8 @@ BigWallMatrix::BigWallMatrix()
         
     #endif
 
-    convProgToArray(this->vecPins, C_Pins, (sizeof(C_Pins) / 2));
-    this->vecPins.print();
+    convProgToArray(vecPins, C_Pins, (sizeof(C_Pins) / 2));
+    vecPins.print();
 
 }
 /*
@@ -78,11 +78,11 @@ void BigWallMatrix::nextFrame()
         dsd();
         dsl("LOOP in timeout");
         this->getTime();
-        dm.fillArrrayOfChars(this->vecChar, this->strToShow);
+        this->dm.fillArrrayOfChars(this->vecChar, this->strToShow);
 
         if (this->contCharAdded > vecChar.getSize())
             this->contCharAdded = 0;
-        this->canAddChar = dm.canAddChar();
+        this->canAddChar = this->dm.canAddChar();
         this->getIfisEnd = pm.getIfisEnd();
 
         ds("canAddChar=");
@@ -90,8 +90,8 @@ void BigWallMatrix::nextFrame()
         ds("getIfisEnd=");
         dsl(this->getIfisEnd);
 
-        // if (pm.getIfisEnd() && dm.canAddChar())
-        if (this->action != 15 && dm.canAddChar())
+        // if (pm.getIfisEnd() && this->dm.canAddChar())
+        if (this->action != 15 && this->dm.canAddChar())
         {
             dss();
             dsl("Inicio de proceso");
@@ -110,7 +110,7 @@ void BigWallMatrix::nextFrame()
     }
     if (action == 15)
     {
-        an.getAnim(this->aFrame, this->strOption);
+        this->an.getAnim(this->aFrame, this->strOption);
 
         dsl("Despues de if strOption");
         ds(" strOption: ");
@@ -120,7 +120,7 @@ void BigWallMatrix::nextFrame()
     if (action == 0)
     {
         this->aFrame.reset();
-        dm.GetFrame(this->matrix,this->aFrame);
+        this->dm.GetFrame(this->matrix,this->aFrame);
         this->matrix.print();
     }
 
@@ -131,16 +131,16 @@ void BigWallMatrix::nextFrame()
     }
 
     sm.PrintLedMatrix(aFrame, aLastFrame, vecPins);
-    if (action == 0 && dm.getPosLastChar() > 0)
+    if (action == 0 && this->dm.getPosLastChar() > 0)
     {
-        dm.moveMatrixToLeft(matrix);
+        this->dm.moveMatrixToLeft(this->matrix);
     }
 
     //}
-    // matrix.print();
-    if (an.getIfisEnd())
+    // this->matrix.print();
+    if (this->an.getIfisEnd())
     {
-        an.reset();
+        this->an.reset();
         strOption = "";
         action = 0;
         // action = 0;
