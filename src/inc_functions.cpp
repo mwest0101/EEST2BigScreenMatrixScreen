@@ -6,7 +6,8 @@ void convProgToArray(VectorClass &aIntCharMatrix, const int *phrase, int size)
   int element = 0;
   for (int i = 0; i < size; i++)
   {
-    element = ((int)pgm_read_word(phrase + i));
+    //element = ((int)pgm_read_word(phrase + i));
+    element = ((int)pgm_read_word(&phrase[i]));
     aIntCharMatrix.push(element);
     //aIntCharMatrix.set(i, element);
    // ds(element);
@@ -15,6 +16,22 @@ void convProgToArray(VectorClass &aIntCharMatrix, const int *phrase, int size)
   dsl(" ");
   //aIntCharMatrix.print();
  
+}
+void convProgToArray2(int *aIntCharMatrix, const int *phrase, int size)
+{
+  int element = 0;
+  for (int i = 0; i < size; i++)
+  {
+    element = ((int)pgm_read_word(&phrase[i]));
+    aIntCharMatrix[i]=element;
+        ds("(");
+        ds("i=");
+        ds(i);
+        ds("|");
+        ds(element);
+        ds("),");
+  }
+  dsl(" ");
 }
 /*
 void convProgToArrayByFrame(VectorClass &aIntCharMatrix,const int *phrase, int size){
