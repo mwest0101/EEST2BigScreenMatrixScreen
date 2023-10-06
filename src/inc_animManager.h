@@ -6,7 +6,7 @@
       
       int matrixCols=0;
       int contFrame=0;
-      bool isEndOfAnim=false;
+      bool isEndOfAnim=true;
   
     public:        
       AnimManager();      

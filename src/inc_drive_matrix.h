@@ -41,6 +41,7 @@
       void moveMatrixToLeft(MatrixClass &matrix);
       int getPosLastChar();
       bool canAddChar();
+      void setCanAddChar(bool value);
       int getMovMat();
       void getArrayOfCharsOfString(VectorClass &vecTemp,String strData); 
       int getContChars();

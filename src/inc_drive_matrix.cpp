@@ -67,26 +67,12 @@ void DriveMatrix::AddConsToMatrix(MatrixClass &matrix, VectorClass &aIntCharMatr
   int maxPosCol = 0;
   int cont = aIntCharMatrix.getSize();
   this->infMat[posInfMat] = caracter;
-  // dsi("caracter:");
-  // dsil(caracter);
-  // dsi("cont:");
-  // dsil(cont);
   for (int i = 0; i < cont; i++){
 
     value = aIntCharMatrix.get(i);
     if (value != EL && value != EA){
       
       matrix.set(relPosRow,(this->totPosX + relPosCols), value);
-      /*ds(" |");
-      
-      ds("t:");
-      ds(this->totPosX);
-      ds(" Y:");
-      ds(relPosRow);
-      ds(" X:");
-      ds(relPosCols);
-      ds(" (");*/
-      
       ds(value);
       ds("|");
       //dse(")");
@@ -97,19 +83,12 @@ void DriveMatrix::AddConsToMatrix(MatrixClass &matrix, VectorClass &aIntCharMatr
   
         dses(value);
       }
-      // ds("value:");ds(value);ds(" (i+1)=");dsl(i+1);
+      
       relPosCols++;
     }else{  
       ds("||");
-    /*  ds("t:");
-      ds(this->totPosX);
-      ds(" Y:");
-      ds(relPosRow);
-      ds(" X:");
-      ds(relPosCols);
-      ds(" (");*/
+
       dsl(value);
-      //dsl(")");
       
       relPosRow++;
       relPosCols = 0;
@@ -172,8 +151,6 @@ void DriveMatrix::moveMatrixToLeft(MatrixClass &matrix){
   this->totPosX--;
   if(this->totPosX<MATRIX_WIDTH){
     this->vCanAddChar=true;
-  }else{
-    this->vCanAddChar=false;
   }
 
 }
@@ -181,7 +158,9 @@ void DriveMatrix::moveMatrixToLeft(MatrixClass &matrix){
 int DriveMatrix::getPosLastChar(){
   return this->totPosX;
 }
-
+void DriveMatrix::setCanAddChar(bool value){
+  this->vCanAddChar=value;
+}
 bool DriveMatrix::canAddChar(){
   return this->vCanAddChar;
 }

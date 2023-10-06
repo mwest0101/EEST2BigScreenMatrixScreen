@@ -20,12 +20,12 @@ MatrizLed pantalla;
 #endif
 DriveMatrix dm;
 ShowMatrix sm;
-ProgmemManager pm;
+
 AnimManager an;
 // String strToShow = "Bienvenidos a la EEST Nº2  de Junin Buenos Aires 2023";
-//String strToShow = "(a:efe1)(a:efe2)(a:efe3)(a:efe4)(a:efe5)(a:efe6)(a:efe7)(a:tec1)(a:tec2)(a:tec3)(a:tec4)(a:tec5)(a:tec6)(a:tec7)E.E.S.T. Nº2";
-String strToShow = "(a:efe1)(a:efe2)(a:efe3)(a:efe4)(a:efe5)(a:efe6)(a:efe7)(a:tec1)(a:tec2)(a:tec3)(a:tec4)(a:tec5)(a:tec6)(a:tec7)E.E.S.T. Nº2";
-// String strToShow = "abcdefghijklmnopqrstuvwxyz01234";
+// String strToShow = "(a:efe1)(a:efe2)(a:efe3)(a:efe4)(a:efe5)(a:efe6)(a:efe7)(a:tec1)(a:tec2)(a:tec3)(a:tec4)(a:tec5)(a:tec6)(a:tec7)E.E.S.T. Nº2";
+// String strToShow = "(a:efe1)(a:efe2)(a:efe3)(a:efe4)(a:efe5)(a:efe6)(a:efe7)(a:tec1)(a:tec2)(a:tec3)(a:tec4)(a:tec5)(a:tec6)(a:tec7)E.E.S.T. Nº2";
+String strToShow = "abcdefghijklmnopqrstuvwxyz01234";
 // String strToShow = "Mauricio Pablo West";
 String lastStrToShow = "";
 int *test;
@@ -64,7 +64,7 @@ void setup()
 #endif
 
 #ifdef DEBUG_SERIAL
-    Serial.begin(9600);
+    Serial.begin(115200);
 #endif
 
 #ifdef DEBUG
@@ -76,160 +76,111 @@ void setup()
 #endif
     sm = ShowMatrix();
     dm = DriveMatrix();
-    pm = ProgmemManager();
+    
     an = AnimManager();
 
 #ifdef IS_LCDSCREEN
     pantalla.borrar();
     sm.setPantalla(pantalla);
 #endif
-
+    time = micros();
+    time = micros();
     convProgToArray(vecPins, C_Pins, (sizeof(C_Pins) / 2));
     vecPins.print();
+    difTime = waitTime;
 }
 // Secuencia de la matriz
 void loop()
 {
     time = micros();
-    difTime = time - lastTime;
+    dsd();
+    dsl("======LOOOOOP============");
+    dss();
+    ds("contCharAdded=");
+    dsl(contCharAdded);
+    ds("action=");
+    dsl(action);
+    ds("strOption=");
+    dsl(strOption);
 
     if (difTime >= waitTime)
     {
-        dsd();
+        
         dsl("LOOP in timeout");
         lastTime = time;
-        dm.fillArrrayOfChars(vecChar, strToShow);
-
-        if (contCharAdded > vecChar.getSize())
-            contCharAdded = 0;
-        canAddChar = dm.canAddChar();
-        getIfisEnd = pm.getIfisEnd();
-
-        ds("canAddChar=");
-        dsl(canAddChar);
-        ds("getIfisEnd=");
-        dsl(getIfisEnd);
-
-        //if (pm.getIfisEnd() && dm.canAddChar())
-        if(action!=15 && dm.canAddChar())
+        // if (pm.getIfisEnd() && dm.canAddChar())
+        if (dm.canAddChar() && an.getIfisEnd())
         {
-            dss();
-            dsl("Inicio de proceso");
-            charReaded = (char)vecChar.get(contCharAdded);
-            strOption=concParamsOfString(charReaded,strOption,action);
+            dm.fillArrrayOfChars(vecChar, strToShow);
+            if (contCharAdded > vecChar.getSize()) contCharAdded = 0;
+            
+            canAddChar = dm.canAddChar();
+            getIfisEnd = an.getIfisEnd();
+    
+            ds("canAddChar=");dsl(canAddChar);
+            ds("getIfisEnd=");dsl(getIfisEnd);
+            ds("action2=");dsl(action);
 
-            contCharAdded++;
-            // if (charReaded == '('){
-            //     dss();ds("se encuentra (");ds(" contCharAdded: ");dsl(contCharAdded);
-            //     strOption = "";
-            //     action = 10;
-            //     contCharAdded++;
-            // }else if (charReaded == ')'){
-            //     dss();dsl("se encuentra )");ds(" contCharAdded: ");dsl(contCharAdded);                
-            //     contCharAdded++;
-            //     pm.setIfisEnd(false);
-            //     action = 15;
-            // }
-            // else if (action == 10)
+
+            dsl("entro al selector");
+            // if (action!=15)
             // {
-
-            //     strOption = strOption + charReaded;
-            //     dss();
-            //     dsl("Concatena:");
-            //     ds("strOption:");
-            //     dsl(strOption);
-
-            //     contCharAdded++;
-            //     ds("Entre a concatenacion de efectos ");
-            //     ds(" contCharAdded: ");
-            //     dsl(contCharAdded);
-            //     ds(" strOption: ");
-            //     dsl(strOption);
-            // 
-            } else  {
-
+                dss();
+                dsl("Inicio de proceso");
+                charReaded = (char)vecChar.get(contCharAdded);
+                ds("charReaded=")
+                dsl(charReaded);
+                strOption = concParamsOfString(charReaded, strOption, action);
+                //contCharAdded++;
+            //}
+            if (action==0)
+            {
                 dss();
                 ds("Entra a captura de texto a concatenar:");
                 ds(charReaded);
                 dm.getValuesOfCharMatrixAndAddToMatrix(matrix, aIntCharMatrix, vecChar, contCharAdded);
-                contCharAdded++;
-                firstPass = 1;
-        }
-        
-        if (action == 15)
-        {
-            an.getAnim(aFrame,strOption);
-
-            //getAnim(VectorClass &aFrame,String strOption,ProgmemManager pm)
-            /*if (strOption == "a:pac1")
-            {
-                dsl("----->Paso por a:pac1");
-                aFrame.clear();
-                pm.convProgToArrayByFrame(aFrame, C_PACMAN_ANIM_01, (sizeof(C_PACMAN_ANIM_01) / 2));
+                dm.setCanAddChar(false);
+                //contCharAdded++;
+                //firstPass = 1;
             }
-            if (strOption == "a:pac2")
+            else if (action==15)
             {
-                dsl("----->Paso por a:pac2");
-                aFrame.clear();
-                pm.convProgToArrayByFrame(aFrame, C_PACMAN_ANIM_02, (sizeof(C_PACMAN_ANIM_02) / 2));
+                dss();
+                an.getAnim(aFrame, strOption);
+                dsl("Despues de if strOption");
+                ds(" strOption: ");
+                dsl(strOption);
+                an.setIfisEnd(false);
             }
-            if (strOption == "a:tet1")
-            {
-                dsl("----->Paso por a:tet1");
-                aFrame.clear();
-                pm.convProgToArrayByFrame(aFrame, C_TETRIS_ANIM_01, (sizeof(C_TETRIS_ANIM_01) / 2));
-            }
-            */
-            dsl("Despues de if strOption");
-            ds(" strOption: ");
-            dsl(strOption);
+            contCharAdded++;
         }
 
-        // action=0;
-        /*dsis("LastPoschar:");
-        dsil(dm.getPosLastChar());*/
-        
-        // if(action==0){
-        //-->matrix.print();
-        if (action == 0)
-        {
-            aFrame.reset();
-            dm.GetFrame(matrix, aFrame);
-            matrix.print();
-            
-        }
-        // dsl("aFrame------------------------>");
-        //aFrame.print();
-
-        // aLastFrame.print();
-
-        //-->vecPins.print();
-
-        // dsl("------------------------------>");
-
-        if (action == 0 || action == 15)
+        if (action==0)
         {
             dsl("Antes de imprimir");
-            aFrame.print();
+            aFrame.reset();
+            dm.GetFrame(matrix, aFrame);
         }
-
-        sm.PrintLedMatrix(aFrame, aLastFrame, vecPins);
-        if (action == 0 && dm.getPosLastChar() > 0)
-        {    
-            dm.moveMatrixToLeft(matrix);
-        }
-
-        //}
-        //matrix.print();
-        if (an.getIfisEnd())
+        if (action==0 || action==15)
         {
-            an.reset();
-            strOption="";
-            action=0;
-            // action = 0;
+            aFrame.print();
+            sm.PrintLedMatrix(aFrame, aLastFrame, vecPins);
+            matrix.print();
+            if (dm.getPosLastChar() > 0)
+                dm.moveMatrixToLeft(matrix);
+
+            //}
+            // matrix.print();
+            if (an.getIfisEnd())
+            {
+                dsl("Entro a reset");
+                an.reset();
+                strOption = "";
+                action = 0;                
+            }
+
+            
         }
-        
-        ds("action=");
-        dsl(action);
     }
+    difTime = time - lastTime;
 }

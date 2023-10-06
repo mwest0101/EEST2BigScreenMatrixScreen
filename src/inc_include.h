@@ -29,9 +29,7 @@
   #include "MatrixClass.cpp"
 
   #include "inc_functions.h"   
-  
-
-  #include "inc_progmem_manager.h"   
+    
   #include "inc_show_matrix.h"
   #include "inc_drive_matrix.h"
   #include "inc_config_letters.h"

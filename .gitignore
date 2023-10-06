@@ -5,3 +5,7 @@
 .vscode/launch.json
 .vscode/ipch
 /Logs/*
+.pio/*
+.vscode
+.vscode/*
+
