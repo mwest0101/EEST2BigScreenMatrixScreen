@@ -90,31 +90,20 @@ String concParamsOfString(char charReaded,String strOption,int &action)
     action = 10;
     //charReaded++;
   }
-  else if (charReaded == ')')
+  else if (charReaded == ')' && action==11)
   {
-    dss();
-    dsl("se encuentra )");
-    ds(" charReaded: ");
-    dsl(charReaded);
-    //charReaded++;
-    //--ver-->pm.setIfisEnd(false);
-    action = 15;
+    dss();dsl("se encuentra )");ds(" charReaded: ");dsl(charReaded);    
+    action = 19;
   }
-  else if (action == 10)
+  else if (action == 10 || action ==11)
   {
-
     strOption = strOption + charReaded;
-    dss();
-    dsl("Concatena:");
-    ds("strOption:");
-    dsl(strOption);
-
-    //charReaded++;
-    ds("Entre a concatenacion de efectos ");
-    ds(" charReaded: ");
-    dsl(charReaded);
-    ds(" strOption: ");
-    dsl(strOption);
+    dss();dsl("Concatena:");ds("strOption:");dsl(strOption);
+    ds("Entre a concatenacion de efectos ");ds(" charReaded: ");dsl(charReaded);
+    ds(" strOption: ");dsl(strOption);
+    action=11;
   }
+  
   return strOption;
+
 }

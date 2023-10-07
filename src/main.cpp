@@ -24,9 +24,9 @@ ShowMatrix sm;
 AnimManager an;
 // String strToShow = "Bienvenidos a la EEST Nº2  de Junin Buenos Aires 2023";
 // String strToShow = "(a:efe1)(a:efe2)(a:efe3)(a:efe4)(a:efe5)(a:efe6)(a:efe7)(a:tec1)(a:tec2)(a:tec3)(a:tec4)(a:tec5)(a:tec6)(a:tec7)E.E.S.T. Nº2";
-// String strToShow = "(a:efe1)(a:efe2)(a:efe3)(a:efe4)(a:efe5)(a:efe6)(a:efe7)(a:tec1)(a:tec2)(a:tec3)(a:tec4)(a:tec5)(a:tec6)(a:tec7)E.E.S.T. Nº2";
-String strToShow = "abcdefghijklmnopqrstuvwxyz01234";
-// String strToShow = "Mauricio Pablo West";
+String strToShow = "(a:efe1)(a:efe2)(a:efe3)(a:efe4)(a:efe5)(a:efe6)(a:efe7)(a:tec1)(a:tec2)(a:tec3)(a:tec4)(a:tec5)(a:tec6)(a:tec7)E.E.S.T. Nº2";
+// String strToShow = "abcdefghijklmnopqrstuvwxyz01234";
+//  String strToShow = "Mauricio Pablo West";
 String lastStrToShow = "";
 int *test;
 int oldCodSumTo = 0;
@@ -51,12 +51,13 @@ int action = 0;
 String strOption = "";
 bool getIfisEnd = false;
 bool canAddChar = false;
+bool getNextChar = true;
 
 void setup()
 {
     time = micros();
     lastTime = time;
-    difTime = 0;
+    difTime = WAIT_TIME_LOOP;
     waitTime = WAIT_TIME_LOOP;
 
 #ifndef WAIT_TIME_LOOP
@@ -64,7 +65,7 @@ void setup()
 #endif
 
 #ifdef DEBUG_SERIAL
-    Serial.begin(115200);
+    Serial.begin(9600);
 #endif
 
 #ifdef DEBUG
@@ -76,7 +77,7 @@ void setup()
 #endif
     sm = ShowMatrix();
     dm = DriveMatrix();
-    
+
     an = AnimManager();
 
 #ifdef IS_LCDSCREEN
@@ -84,7 +85,7 @@ void setup()
     sm.setPantalla(pantalla);
 #endif
     time = micros();
-    time = micros();
+
     convProgToArray(vecPins, C_Pins, (sizeof(C_Pins) / 2));
     vecPins.print();
     difTime = waitTime;
@@ -93,94 +94,105 @@ void setup()
 void loop()
 {
     time = micros();
+    dm.fillArrrayOfChars(vecChar, strToShow);
+
+    dsl();
+    dsl();
     dsd();
     dsl("======LOOOOOP============");
     dss();
+
     ds("contCharAdded=");
     dsl(contCharAdded);
-    ds("action=");
-    dsl(action);
+
     ds("strOption=");
     dsl(strOption);
+    canAddChar = dm.canAddChar();
+    getIfisEnd = an.getIfisEnd();
+    ds("canAddChar=");
+    dsl(canAddChar);
+    ds("getIfisEnd=");
+    dsl(getIfisEnd);
+
+    if (getNextChar)
+    {
+        
+        dsl("entro al selector");
+        dss();
+        dsl("Inicio de proceso");
+        if (contCharAdded > vecChar.getSize())
+            contCharAdded = 0;
+
+        charReaded = (char)vecChar.get(contCharAdded);
+
+        ds("charReaded=") dsl(charReaded);
+        strOption = concParamsOfString(charReaded, strOption, action);
+      
+        ds("action despues de concParamsOfString=");
+        dsl(action);
+        // contCharAdded++;
+        //}
+        if (action == 0)
+        {
+            dss();
+            ds("Entra a captura de texto a concatenar:");
+            ds(charReaded);
+            dm.getValuesOfCharMatrixAndAddToMatrix(matrix, aIntCharMatrix, vecChar, contCharAdded);
+            dm.setCanAddChar(false);
+            getNextChar = false;
+            // contCharAdded++;
+            // firstPass = 1;
+        }
+
+        if (action == 19)
+        {
+            dsl("Desactiva busqueda de caracteres")
+            getNextChar = false;
+            an.setIfisEnd(false);
+        }
+
+        contCharAdded++;
+    }
 
     if (difTime >= waitTime)
     {
-        
         dsl("LOOP in timeout");
         lastTime = time;
         // if (pm.getIfisEnd() && dm.canAddChar())
-        if (dm.canAddChar() && an.getIfisEnd())
+        if (action == 19)
         {
-            dm.fillArrrayOfChars(vecChar, strToShow);
-            if (contCharAdded > vecChar.getSize()) contCharAdded = 0;
+            an.getAnim(aFrame, strOption);
             
-            canAddChar = dm.canAddChar();
-            getIfisEnd = an.getIfisEnd();
-    
-            ds("canAddChar=");dsl(canAddChar);
-            ds("getIfisEnd=");dsl(getIfisEnd);
-            ds("action2=");dsl(action);
-
-
-            dsl("entro al selector");
-            // if (action!=15)
-            // {
-                dss();
-                dsl("Inicio de proceso");
-                charReaded = (char)vecChar.get(contCharAdded);
-                ds("charReaded=")
-                dsl(charReaded);
-                strOption = concParamsOfString(charReaded, strOption, action);
-                //contCharAdded++;
-            //}
-            if (action==0)
-            {
-                dss();
-                ds("Entra a captura de texto a concatenar:");
-                ds(charReaded);
-                dm.getValuesOfCharMatrixAndAddToMatrix(matrix, aIntCharMatrix, vecChar, contCharAdded);
-                dm.setCanAddChar(false);
-                //contCharAdded++;
-                //firstPass = 1;
-            }
-            else if (action==15)
-            {
-                dss();
-                an.getAnim(aFrame, strOption);
-                dsl("Despues de if strOption");
-                ds(" strOption: ");
-                dsl(strOption);
-                an.setIfisEnd(false);
-            }
-            contCharAdded++;
+            dss();
+            dsl("Despues de if strOption");
+            ds(" strOption: ");
+            dsl(strOption);
         }
-
-        if (action==0)
+        if (action == 0)
         {
-            dsl("Antes de imprimir");
             aFrame.reset();
             dm.GetFrame(matrix, aFrame);
+            dsl("Antes de imprimir");
         }
-        if (action==0 || action==15)
+        if (action == 0 || action == 19)
         {
             aFrame.print();
             sm.PrintLedMatrix(aFrame, aLastFrame, vecPins);
             matrix.print();
-            if (dm.getPosLastChar() > 0)
-                dm.moveMatrixToLeft(matrix);
-
-            //}
-            // matrix.print();
-            if (an.getIfisEnd())
-            {
-                dsl("Entro a reset");
-                an.reset();
-                strOption = "";
-                action = 0;                
-            }
-
-            
+        }
+        if (action == 0 && dm.getPosLastChar() > 0)
+        {
+            dm.moveMatrixToLeft(matrix);
+        }
+        if (an.getIfisEnd() && action==19)
+        {
+            an.reset();
+            dsl("Entro a reset");
+            strOption = "";
         }
     }
+    if (dm.canAddChar() && an.getIfisEnd())
+        getNextChar = true;
+
     difTime = time - lastTime;
 }

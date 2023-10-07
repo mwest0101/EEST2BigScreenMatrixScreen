@@ -33,7 +33,7 @@ void AnimManager::convProgToArrayByFrame(VectorClass &aFrame, const int *phrase,
     }
 
     this->contFrame++;
-    if (this->contFrame >= size) this->setIfisEnd(true);
+    if (this->contFrame > size) this->setIfisEnd(true);
     
   }
 
