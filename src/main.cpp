@@ -24,7 +24,8 @@ ShowMatrix sm;
 AnimManager an;
 // String strToShow = "Bienvenidos a la EEST Nº2  de Junin Buenos Aires 2023";
 // String strToShow = "(a:efe1)(a:efe2)(a:efe3)(a:efe4)(a:efe5)(a:efe6)(a:efe7)(a:tec1)(a:tec2)(a:tec3)(a:tec4)(a:tec5)(a:tec6)(a:tec7)E.E.S.T. Nº2";
-String strToShow = "(a:efe1)(a:efe2)(a:efe3)(a:efe4)(a:efe5)(a:efe6)(a:efe7)(a:tec1)(a:tec2)(a:tec3)(a:tec4)(a:tec5)(a:tec6)E.E.S.T. Nº2";
+//String strToShow = "(a:efe1)(a:efe2)(a:efe3)(a:efe4)(a:efe5)(a:efe6)(a:efe7)(a:tec1)(a:tec2)(a:tec3)(a:tec4)(a:tec5)(a:tec6)E.E.S.T. Nº2";
+String strToShow = "(a:efe1)(a:efe2)E.E.S.T. Nº2";
 //String strToShow = "(a:efe1)E.E.S.T. Nº2";
 // String strToShow = "abcdefghijklmnopqrstuvwxyz01234";
 //  String strToShow = "Mauricio Pablo West";
@@ -98,7 +99,7 @@ void loop()
     time = micros();
     dm.fillArrrayOfChars(vecChar, strToShow);
 
-    
+    dsl("");
     dsl("========================LOOOOOP=================================");
     
  
@@ -113,7 +114,7 @@ void loop()
     ds(canAddChar);
     ds(" |getIfisEnd=");
     dsl(getIfisEnd);
-    ds(" |actionAnterior=");dsl(action);
+    ds(" |actionAnterior=");ds(action);
         
 
 
@@ -159,46 +160,15 @@ void loop()
         dsl("LOOP in timeout");
         lastTime = time;
         // if (pm.getIfisEnd() && dm.canAddChar())
-        if (action == 19)
-        {
-            found=an.getAnim(aFrame, strOption);
-            
-            dss();
-            dsl("Despues de if strOption");
-            ds(" strOption: ");
-            dsl(strOption);
+        if (action == 19)                                           found=an.getAnim(aFrame, strOption); //{   found=an.getAnim(aFrame, strOption); dss();           dsl("Despues de if strOption");           ds(" strOption: ");           dsl(strOption);        }
+        if (action == 0) {                                          aFrame.reset();dm.GetFrame(matrix, aFrame);}//  { aFrame.reset(); dm.GetFrame(matrix, aFrame);dsl("Antes de imprimir");matrix.print();}
 
-        }
-        if (action == 0)
-        {
-            aFrame.reset();
-            dm.GetFrame(matrix, aFrame);
-            dsl("Antes de imprimir");
-            matrix.print();
-        }
-        if (found==1 && (action == 0 || action == 19))
-        {
-            aFrame.print();
-            sm.PrintLedMatrix(aFrame, aLastFrame, vecPins);
-            
-        }
-        if (action == 0 && dm.getPosLastChar() > 0)
-        {
-            dm.moveMatrixToLeft(matrix);
-        }
-        if (found==(-1) || (an.getIfAnimIsEnd() && action==19))
-        {
-            an.reset();
-            dsl("Entro a reset");
-            strOption = "";
-            action = 0;
-        }
-        
+        if (action == 0 || (found==1 && action == 19))              sm.PrintLedMatrix(aFrame, aLastFrame, vecPins); //{ aFrame.print(); sm.PrintLedMatrix(aFrame, aLastFrame, vecPins);}
+        if (action == 0 && dm.getPosLastChar() > 0)                 dm.moveMatrixToLeft(matrix); //{ dm.moveMatrixToLeft(matrix);}
+        if (found==(-1) || (an.getIfAnimIsEnd() && action==19)){    an.reset();dsl("Entro a reset");strOption = "";action = 0;}        
     }
-    if (found==(-1) || (dm.canAddChar() && an.getIfAnimIsEnd())){
-        found=0;
-        getNextChar = true;
-    }
+
+    if (found==(-1) || (dm.canAddChar() && an.getIfAnimIsEnd())){   found=0;getNextChar = true;}
 
     difTime = time - lastTime;
 }
