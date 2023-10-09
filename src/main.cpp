@@ -24,7 +24,8 @@ ShowMatrix sm;
 AnimManager an;
 // String strToShow = "Bienvenidos a la EEST Nº2  de Junin Buenos Aires 2023";
 // String strToShow = "(a:efe1)(a:efe2)(a:efe3)(a:efe4)(a:efe5)(a:efe6)(a:efe7)(a:tec1)(a:tec2)(a:tec3)(a:tec4)(a:tec5)(a:tec6)(a:tec7)E.E.S.T. Nº2";
-String strToShow = "(a:efe1)(a:efe2)(a:efe3)(a:efe4)(a:efe5)(a:efe6)(a:efe7)(a:tec1)(a:tec2)(a:tec3)(a:tec4)(a:tec5)(a:tec6)(a:tec7)E.E.S.T. Nº2";
+String strToShow = "(a:efe1)(a:efe2)(a:efe3)(a:efe4)(a:efe5)(a:efe6)(a:efe7)(a:tec1)(a:tec2)(a:tec3)(a:tec4)(a:tec5)(a:tec6)E.E.S.T. Nº2";
+//String strToShow = "(a:efe1)E.E.S.T. Nº2";
 // String strToShow = "abcdefghijklmnopqrstuvwxyz01234";
 //  String strToShow = "Mauricio Pablo West";
 String lastStrToShow = "";
@@ -52,6 +53,7 @@ String strOption = "";
 bool getIfisEnd = false;
 bool canAddChar = false;
 bool getNextChar = true;
+int found=0;
 
 void setup()
 {
@@ -65,7 +67,7 @@ void setup()
 #endif
 
 #ifdef DEBUG_SERIAL
-    Serial.begin(9600);
+    Serial.begin(115200);
 #endif
 
 #ifdef DEBUG
@@ -96,23 +98,24 @@ void loop()
     time = micros();
     dm.fillArrrayOfChars(vecChar, strToShow);
 
-    dsl();
-    dsl();
-    dsd();
-    dsl("======LOOOOOP============");
-    dss();
+    
+    dsl("========================LOOOOOP=================================");
+    
+ 
+    ds(" |contCharAdded=");
+    ds(contCharAdded);
 
-    ds("contCharAdded=");
-    dsl(contCharAdded);
-
-    ds("strOption=");
-    dsl(strOption);
+    ds(" |strOption=");
+    ds(strOption);
     canAddChar = dm.canAddChar();
-    getIfisEnd = an.getIfisEnd();
-    ds("canAddChar=");
-    dsl(canAddChar);
-    ds("getIfisEnd=");
+    getIfisEnd = an.getIfAnimIsEnd();
+    ds(" |canAddChar=");
+    ds(canAddChar);
+    ds(" |getIfisEnd=");
     dsl(getIfisEnd);
+    ds(" |actionAnterior=");dsl(action);
+        
+
 
     if (getNextChar)
     {
@@ -124,14 +127,12 @@ void loop()
             contCharAdded = 0;
 
         charReaded = (char)vecChar.get(contCharAdded);
-
-        ds("charReaded=") dsl(charReaded);
+ 
+        ds(" |charReaded=") ds(charReaded);
         strOption = concParamsOfString(charReaded, strOption, action);
-      
-        ds("action despues de concParamsOfString=");
-        dsl(action);
-        // contCharAdded++;
-        //}
+        ds(" |action=");dsl(action);
+        
+
         if (action == 0)
         {
             dss();
@@ -140,8 +141,7 @@ void loop()
             dm.getValuesOfCharMatrixAndAddToMatrix(matrix, aIntCharMatrix, vecChar, contCharAdded);
             dm.setCanAddChar(false);
             getNextChar = false;
-            // contCharAdded++;
-            // firstPass = 1;
+
         }
 
         if (action == 19)
@@ -161,38 +161,44 @@ void loop()
         // if (pm.getIfisEnd() && dm.canAddChar())
         if (action == 19)
         {
-            an.getAnim(aFrame, strOption);
+            found=an.getAnim(aFrame, strOption);
             
             dss();
             dsl("Despues de if strOption");
             ds(" strOption: ");
             dsl(strOption);
+
         }
         if (action == 0)
         {
             aFrame.reset();
             dm.GetFrame(matrix, aFrame);
             dsl("Antes de imprimir");
+            matrix.print();
         }
-        if (action == 0 || action == 19)
+        if (found==1 && (action == 0 || action == 19))
         {
             aFrame.print();
             sm.PrintLedMatrix(aFrame, aLastFrame, vecPins);
-            matrix.print();
+            
         }
         if (action == 0 && dm.getPosLastChar() > 0)
         {
             dm.moveMatrixToLeft(matrix);
         }
-        if (an.getIfisEnd() && action==19)
+        if (found==(-1) || (an.getIfAnimIsEnd() && action==19))
         {
             an.reset();
             dsl("Entro a reset");
             strOption = "";
+            action = 0;
         }
+        
     }
-    if (dm.canAddChar() && an.getIfisEnd())
+    if (found==(-1) || (dm.canAddChar() && an.getIfAnimIsEnd())){
+        found=0;
         getNextChar = true;
+    }
 
     difTime = time - lastTime;
 }
