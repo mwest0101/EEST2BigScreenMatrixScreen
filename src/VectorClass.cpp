@@ -22,6 +22,7 @@ public:
             data[i] = other.data[i];
         }
     }
+	
   VectorClass(int size, int minRange, int maxRange){
     this->size = size;
     this->minRange = minRange;

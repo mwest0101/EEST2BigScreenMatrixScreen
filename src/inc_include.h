@@ -26,7 +26,9 @@
   
   
   #include "VectorClass.cpp"
+  #include "VectorClassString.cpp"
   #include "MatrixClass.cpp"
+  #include "MatrixClassString.cpp"
 
   #include "inc_functions.h"   
     
