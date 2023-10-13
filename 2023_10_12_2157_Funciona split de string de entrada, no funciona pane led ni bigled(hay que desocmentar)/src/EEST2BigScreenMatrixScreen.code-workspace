@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "EEST2BigScreenMatrixScreen",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"yaml.customTags": [
+			"!script"
+		]
+	}
+}

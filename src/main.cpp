@@ -59,6 +59,16 @@ bool canAddChar = false;
 bool getNextChar = true;
 int found=0;
 unsigned int aLargoString=0;*/
+DriveMatrix dm;
+ShowMatrix sm;
+
+AnimManager an;
+Manager mn;
+int stateAction=0;
+String inputString2 = "|a:efe1;x:4;v:2|a:efe2;x:6;v:3|m:test de, texto|a:efe1;x:4;v:2|a:efe2;x:6m;v:3|m:test ,de, texto";
+    
+VectorClassString vecStrParam(0);
+//VectorClassString vecStrOne(0);
 
 void setup()
 {
@@ -75,6 +85,7 @@ void setup()
 #ifdef DEBUG_SERIAL
     Serial.begin(9600);
 #endif
+mn = Manager();
 
 /*<-(QUITA ESTO)
 #ifdef DEBUG
@@ -97,20 +108,29 @@ void setup()
     convProgToArray(vecPins, C_Pins, (sizeof(C_Pins) / 2));
     vecPins.print();
     difTime = waitTime;*/
-    String inputString2 = "(a:efe1,x:4,v:2)(a:efe2)(x:6)(v:3)test de, texto(a:efe1,x:4,v:2)(a:efe2)(x:6)(v:3)test ,de, texto(v:3)";
     
-    VectorClassString vecStr(0);
-    strReplace(inputString2,")(","-");
-    strReplace(inputString2,"(","-");
-    strReplace(inputString2,")","-");
-    splitStringToArrayNoEmpty(vecStr, inputString2, "-");
-    vecStr.print();
+    // strReplace(inputString2,")(","-");
+    // strReplace(inputString2,"(","-");
+    // strReplace(inputString2,")","-");
+    //splitStringToArrayNoEmpty(vecStr, inputString2, "|");
+    // getAction(vecStrParam,inputString2,stateAction);
+    // getAction(vecStrParam,inputString2,stateAction);
+    // getAction(vecStrParam,inputString2,stateAction);
+    // getAction(vecStrParam,inputString2,stateAction);
+    // getAction(vecStrParam,inputString2,stateAction);
+    // getAction(vecStrParam,inputString2,stateAction);
+    // getAction(vecStrParam,inputString2,stateAction);
+    // getAction(vecStrParam,inputString2,stateAction);
+    //vecStr.print();
+    mn.getAction(inputString2);
+    vecStrParam.print();
+    //proccesAction(vecStrParam,vecStrOne);
+    //setProccesAndParameters(vecStrOne);
 }
 // Secuencia de la matriz
 void loop()
 {
-    
-    
+
     /*
     time = micros();
     dm.fillArrrayOfChars(vecChar, strToShow);

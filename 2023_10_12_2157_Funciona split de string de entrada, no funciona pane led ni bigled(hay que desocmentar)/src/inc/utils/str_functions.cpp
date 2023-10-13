@@ -21,26 +21,14 @@ void splitStringToArrayNoEmpty(VectorClassString& dataArray, String inputString,
   while (commaIndex != -1) {
     
    // dataArray.push(inputString.substring(0, commaIndex));
-    ds5l("splitStringToArrayNoEmpty=1");
-
     strResult=inputString.substring(0, commaIndex);
     strResult.trim();
-    ds5l("splitStringToArrayNoEmpty=2");
-
     if(strResult!=""){
       dataArray.push(strResult);
-      //ds("strResult=");dsl(strResult);
     }
-    ds5l("splitStringToArrayNoEmpty=3");
-
     inputString = inputString.substring(commaIndex + 1);
     commaIndex = inputString.indexOf(delimiter);
   }
-  ds5l("splitStringToArrayNoEmpty=4");
-  
-  inputString.trim();
-  dataArray.push(inputString);
-
 
 }
 

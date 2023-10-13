@@ -29,7 +29,6 @@ void convProgToArray2(int* aIntCharMatrix, const int* phrase, int size) {
   }
   dsl(" ");
 }
-
 /*
 void convProgToArrayByFrame(VectorClass &aIntCharMatrix,const int *phrase, int size){
 
@@ -198,8 +197,6 @@ void stringTokeyAndValue(MatrixClassString& matStr, String inputString, String d
   }
   // Llamamos a la función para dividir el string
 }
-
-
 /*
 String concParamsOfString(char charReaded,String param,int &action)
 {
