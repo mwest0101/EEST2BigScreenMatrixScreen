@@ -1,43 +1,43 @@
 
 #include <Arduino.h>
-#include "inc_include.h"
-// #include "inc_include.h"
-#ifndef _VECTOR_CLASS_STRING_
-  #define _VECTOR_CLASS_STRING_
-
-class VectorClassString{
+#include "inc/include.h"
+#ifndef _VECTOR_CLASS_
+  #define _VECTOR_CLASS_
+class VectorClass{
 private:
-  int size;       // Tamaao del vector
-
+  int size;       // Tama�o del vector
+  int minRange;   // Valor m�nimo permitido
+  int maxRange;   // Valor m�ximo permitido
   int posActual;
   int sizeFixed;
 public:
-  String *data;      // Puntero al vector de datos
-  // Constructor: inicializa el vector y establece los lamites
+  int *data;      // Puntero al vector de datos
+  // Constructor: inicializa el vector y establece los l�mites
    //VectorClass() : data(nullptr), size(0) {}
     // Constructor de copia
-  VectorClassString(const VectorClassString& other) : size(other.size){
+  VectorClass(const VectorClass& other) : size(other.size){
         // Realizar una copia profunda de los datos
-        data = new String[size];
+        data = new int[size];
         for (int i = 0; i < size; i++){
             data[i] = other.data[i];
         }
     }
 	
-  VectorClassString(int size){
+  VectorClass(int size, int minRange, int maxRange){
     this->size = size;
-    
+    this->minRange = minRange;
+    this->maxRange = maxRange;
     this->posActual=0;
     this->sizeFixed = size;
-    this->data = new String[size];
+    this->data = new int[size];
     //ds5("Size=");
     //ds5l(size);
     for(int i=0; i<size; i++){
-      this->data[i] = "";
+      this->data[i] = 0;
     }
   }
   // Destructor: libera la memoria del vector
-  ~VectorClassString(){
+  ~VectorClass(){
     delete[] this->data;
   }
 //____________________________________________________________________
@@ -48,50 +48,51 @@ void clear(){
       delete[] data;
       // Crear un nuevo arreglo vacío
       this->size = 0;
-      
-      this->posActual=0;
-      this->sizeFixed = size;
-      data = new String[size];
+      data = new int[size];
       //size = sizeFixed;
       // Reinicializar todos los elementos a 0
       for (int i = 0; i < size; i++){
-        data[i] = "";
+        data[i] = 0;
       }
     }
     
   }
   void reset(){
     for(int i=0; i<size; i++){
-      this->data[i] = "";
+      this->data[i] = 0;
     }
   }
-  // Metodo para establecer un valor en una posician del vector
-  void set(int index, String value){
+  // M�todo para establecer un valor en una posici�n del vector
+  void set(int index, int value){
         
     if (index >= 0 && index < size){
-      
+      if (value >= minRange && value <= maxRange) {      
         this->data[index] = value;
 
+      } else{
+        ds5("Out of range, value=");
+        ds5l(value); 
+      }
     } else{
       ds5("Out of Index ");
       ds5l(index);
     }
   }
-  // Metodo para obtener el valor en una posician del vector
-  String get(int index){
+  // M�todo para obtener el valor en una posici�n del vector
+  int get(int index){
     if (index >= 0 && index < size){
       return this->data[index];
     } else{
       ds5("Out of Index ");
       ds5l(index);
     }
-    return ""; // O podraas lanzar una excepcian o manejar el error de otra manera
+    return 0; // O podr�as lanzar una excepci�n o manejar el error de otra manera
   }
-  // Metodo para agregar un valor al final del vector (push)
-  void push(String value){
+  // M�todo para agregar un valor al final del vector (push)
+  void push(int value){
     if (size >= 0){
-      // Crear un nuevo arreglo con un tamaao mayor
-      String *newData = new String[size + 1];
+      // Crear un nuevo arreglo con un tama�o mayor
+      int *newData = new int[size + 1];
       
       // Copiar los datos actuales al nuevo arreglo
       for (int i = 0; i < size; i++){
@@ -100,25 +101,25 @@ void clear(){
       
       // Agregar el nuevo valor al final del nuevo arreglo
       newData[size] = value;
-
+      
       // Liberar la memoria del arreglo antiguo
       delete[] data;
       
-      // Actualizar el puntero y el tamaao
+      // Actualizar el puntero y el tama�o
       data = newData;
       size++;
     } else{
-      // Si el tamaao actual es 0, simplemente establece el valor en la posician 0
+      // Si el tama�o actual es 0, simplemente establece el valor en la posici�n 0
       set(0, value);
     }
   }
-  // Metodo para eliminar el altimo valor del vector (pop)
+  // M�todo para eliminar el �ltimo valor del vector (pop)
   void pop(){
     if (size > 0){
-      // Crear un nuevo arreglo con un tamaao menor
-      String *newData = new String[size - 1];
+      // Crear un nuevo arreglo con un tama�o menor
+      int *newData = new int[size - 1];
       
-      // Copiar los datos actuales excepto el altimo al nuevo arreglo
+      // Copiar los datos actuales excepto el �ltimo al nuevo arreglo
       for (int i = 0; i < size; i++){
         newData[i] = data[i];
       }
@@ -126,7 +127,7 @@ void clear(){
       // Liberar la memoria del arreglo antiguo
       delete[] data;
       
-      // Actualizar el puntero y el tamaao
+      // Actualizar el puntero y el tama�o
       data = newData;
       size--;
     } else{
@@ -141,14 +142,18 @@ int getSize(){
 //____________________________________________________________________
 //------------Function------------------------------------------------
 void print(){
-    
+    ds5("i=");
+    for(int i = 0; i < size; i++){      
+      if(i<10) ds5(" ");
+      ds5(i);ds5("|");
+    }
+    ds5l("");
+    ds5("d=");
     for(int i = 0; i < size; i++){
-      ds5("[")
-      ds5(i);
-      ds5("]=")
-      ds5l(data[i]);
+      if(data[i]<10) ds5(" ");
+      ds5(data[i]);ds5("|");
     }
     ds5l("");
   }
 };
-#endif //_VECTOR_CLASS_STRING_
+#endif //_VECTOR_CLASS_

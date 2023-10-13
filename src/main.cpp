@@ -1,5 +1,5 @@
 ﻿#include <Arduino.h>
-#include "inc_include.h"
+#include "inc/include.h"
 /*<-(QUITA ESTO) int *aPins;
 int nElements = 0;
 // int *aFrame;
@@ -97,11 +97,13 @@ void setup()
     convProgToArray(vecPins, C_Pins, (sizeof(C_Pins) / 2));
     vecPins.print();
     difTime = waitTime;*/
-    String inputString2 = "(a:efe1,x:4,v:2)(a:efe2)(x:6)(v:3)test de, texto(a:efe1,x:4,v:2)(a:efe2)(x:6)(v:3)test ,de, texto";
+    String inputString2 = "(a:efe1,x:4,v:2)(a:efe2)(x:6)(v:3)test de, texto(a:efe1,x:4,v:2)(a:efe2)(x:6)(v:3)test ,de, texto(v:3)";
     
     VectorClassString vecStr(0);
     strReplace(inputString2,")(","-");
-    splitStringToArray(vecStr, inputString2, "-");
+    strReplace(inputString2,"(","-");
+    strReplace(inputString2,")","-");
+    splitStringToArrayNoEmpty(vecStr, inputString2, "-");
     vecStr.print();
 }
 // Secuencia de la matriz
