@@ -174,31 +174,64 @@ void splitStringWithVariosChar(VectorClassString& dataArray, String inputString,
   dataArray.push(inputString);
 }*/
 
-void stringTokeyAndValue(MatrixClassString& matStr, String inputString, String delimiter1, String delimiter2) {
+
+
+void getAction(VectorClassString &vecStrParam, String InString,int &stateAction){
+  
+  static int contParam=0;
 
   VectorClassString vecStr(0);
-  VectorClassString vecTemp(0);
-  VectorClassString keyValue(0);
-  String strVal1 = "";
-  String strVal2 = "";
-  splitStringToArray(vecStr, inputString, delimiter1);
-  // vecStr.print();
-  for (int i = 0; i < vecStr.getSize(); i++) {
-    vecTemp.clear();
-    VectorClassString keyValue(0);
-    splitStringToArray(vecTemp, vecStr.get(i), delimiter2);
-    // vecTemp.print();
-    strVal1 = vecTemp.get(0);
-    strVal2 = vecTemp.get(1);
-    ds5("matStr.getSizeRows=");ds5(" ");ds5l(matStr.getNumRows());
-
-    ds5(strVal1);ds5(" ");ds5l(strVal2);
-
-    matStr.push(strVal1, strVal2);
+  
+  
+  if (stateAction==0){
+    
+    splitStringToArrayNoEmpty(vecStr, InString, "|");
+    
+    stateAction++;
   }
-  // Llamamos a la función para dividir el string
+  
+  vecStrParam.clear();
+  
+  if (stateAction<=1){
+    
+    splitStringToArrayNoEmpty(vecStrParam, vecStr.get(contParam), ";");
+    //vecStrParam.print();
+  }
+
+  contParam++;
+
+  if(contParam==vecStr.getSize()) contParam=0;
+  //ds5("contParam=");ds5l(contParam);
+  //vecStrParam.print();
 }
 
+void proccesAction(VectorClassString &vecStrParam,VectorClassString &vecStrOne){
+  //VectorClassString vecStrOne(0);
+  //vecStrParam.clear();
+  vecStrOne.clear();
+  for(int i=0;i<vecStrParam.getSize();i++){
+    splitStringToArrayNoEmpty(vecStrOne, vecStrParam.get(i), ":");
+    
+  }
+  //vecStrOne.print();
+}
+
+/*
+void setProccesAndParameters(VectorClassString &vecStrOne){
+vecStrOne.print();
+int action=0;
+
+for(int i=0;i<vecStrOne.getSize();i++){
+  if(vecStrOne.get(i)=="a"){
+    action=2; //Is animation
+  }else if(vecStrOne.get(i)=="x"){
+    action=4; //Repite animation
+  }else if(vecStrOne.get(i)=="v"){
+    action=6; //Velocity animation
+  }else if(action==2){
+    an.getAnim(aFrame, vecStrOne.get(i));
+  }
+}*/
 
 /*
 String concParamsOfString(char charReaded,String param,int &action)

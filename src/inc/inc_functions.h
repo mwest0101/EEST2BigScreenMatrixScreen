@@ -9,6 +9,8 @@ void printMatrix(int vMatrix[]);
 int **CreateMatrix(int **matrix,int cols, int rows);
 void strToVector(String strIng,String *aStrsParam,String *aStrsValor);
 String concParamsOfString(char charReaded,String strOption,int &action);
+void getAction(VectorClassString &vecStrParam, String InString,int &stateAction);
+void proccesAction(VectorClassString &vecStrParam,VectorClassString &vecStrOne);
 
 //int **createMatrix(int rows,int cols);
 //int selectRandom(long[],int);

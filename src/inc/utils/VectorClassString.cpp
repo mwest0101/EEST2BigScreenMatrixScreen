@@ -146,7 +146,8 @@ void print(){
       ds5("[")
       ds5(i);
       ds5("]=")
-      ds5l(data[i]);
+      ds5(data[i]);
+      ds5(" ");
     }
     ds5l("");
   }
