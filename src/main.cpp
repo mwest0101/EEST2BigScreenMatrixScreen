@@ -18,10 +18,7 @@ int pinState = 0;
 #ifdef IS_LCDSCREEN
 MatrizLed pantalla;
 #endif
-DriveMatrix dm;
-ShowMatrix sm;
 
-AnimManager an;
 // String strToShow = "Bienvenidos a la EEST Nº2  de Junin Buenos Aires 2023";
 // String strToShow = "(a:efe1|a:efe2|a:efe3|a:efe4|a:efe5|a:efe6|a:efe7|tec1|tec2|tec3|tec4|tec5|tec6|tec7)E.E.S.T. Nº2";
 //String strToShow = "(a:efe1|a:efe2|a:efe3|a:efe4|a:efe5|a:efe6|a:efe7|tec1|tec2|tec3|tec4|tec5|tec6)E.E.S.T. Nº2";
@@ -64,6 +61,11 @@ ShowMatrix sm;
 
 AnimManager an;
 int stateAction=0;
+String effectOption="";
+String text="";
+int repeat=1;
+int velocity=5;
+
 
 void setup()
 {
@@ -103,15 +105,15 @@ void setup()
     convProgToArray(vecPins, C_Pins, (sizeof(C_Pins) / 2));
     vecPins.print();
     difTime = waitTime;*/
-    String inputString2 = "a:efe1;x:4;v:2|a:efe2;x:6;v:3|test de, texto|a:efe1;x:4;v:2";
-    
+    String inputString2 = "a:efe1;x:4;v:2|a:efe2;x:6;v:3|m:test de, texto|a:efe1;x:4;v:2";
+    String oneGroup="";
     VectorClassString vecStr(0);
     VectorClassString vecStrParam(0);
     VectorClassString vecStrOne(0);
   
-    getAction(vecStrParam, inputString2, stateAction);
+    oneGroup=getOneGroup(inputString2, stateAction);
     //vecStr.print();
-    proccesAction(vecStrParam,vecStrOne);
+    proccesAction(oneGroup,effectOption,text,velocity,repeat);
     vecStrOne.print();
 }
 

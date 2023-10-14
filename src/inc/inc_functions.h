@@ -9,8 +9,11 @@ void printMatrix(int vMatrix[]);
 int **CreateMatrix(int **matrix,int cols, int rows);
 void strToVector(String strIng,String *aStrsParam,String *aStrsValor);
 String concParamsOfString(char charReaded,String strOption,int &action);
-void getAction(VectorClassString &vecStrParam, String InString,int &stateAction);
-void proccesAction(VectorClassString &vecStrParam,VectorClassString &vecStrOne);
+String getOneGroup(String InString, int& stateAction) ;
+//void proccesAction(oneGroup,&effectOption,&text,&velocity,&repeat);
+void proccesAction(String strOneGroup,String &effectOption,String &text,int &velocity,int &repeat);
+void updateStateAndEffect(VectorClassString &vecStrOne, String &effectOption, String &text, int &velocity, int &repeat);
+
 
 //int **createMatrix(int rows,int cols);
 //int selectRandom(long[],int);

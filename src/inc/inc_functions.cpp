@@ -176,86 +176,88 @@ void splitStringWithVariosChar(VectorClassString& dataArray, String inputString,
 
 
 
-void getAction(VectorClassString &vecStrParam, String InString,int &stateAction){
-  
-  static int contParam=0;
-
+String getOneGroup(String InString, int& stateAction) {
+  static int contParam = 0;
   VectorClassString vecStr(0);
-  
-  
-  if (stateAction==0){
-    
+  String strResult = "";
+
+  if (stateAction == 0) {
     splitStringToArrayNoEmpty(vecStr, InString, "|");
-    
     stateAction++;
   }
-  
-  vecStrParam.clear();
-  
-  if (stateAction<=1){
-    
-    splitStringToArrayNoEmpty(vecStrParam, vecStr.get(contParam), ";");
-    //vecStrParam.print();
-  }
-
+  strResult = vecStr.get(contParam);
   contParam++;
-
-  if(contParam==vecStr.getSize()) contParam=0;
-  //ds5("contParam=");ds5l(contParam);
-  //vecStrParam.print();
+  if (contParam == vecStr.getSize()) contParam = 0;
+  return strResult;
 }
 
-void proccesAction(VectorClassString &vecStrParam,VectorClassString &vecStrOne){
-  //VectorClassString vecStrOne(0);
+void proccesAction(String strOneGroup, String &effectOption, String &text, int &velocity, int &repeat) {
+  VectorClassString vecStrOne(0);
+  VectorClassString vecStrParam(0);
+  String strParam = "";
+  String strOneParam = "";
   //vecStrParam.clear();
+  vecStrParam.clear();
   vecStrOne.clear();
-  for(int i=0;i<vecStrParam.getSize();i++){
-    splitStringToArrayNoEmpty(vecStrOne, vecStrParam.get(i), ":");
-    
+  
+  splitStringToArrayNoEmpty(vecStrParam, strOneGroup, ";");  
+
+  if (vecStrParam.getSize() > 1) {
+
+    for (int i = 0; i < vecStrParam.getSize();i++) {
+      splitStringToArrayNoEmpty(vecStrOne, vecStrParam.get(i), ":");
+
+      if (vecStrOne.getSize() > 1) {
+        updateStateAndEffect(vecStrOne, effectOption, text, velocity, repeat);
+      }      
+    }
   }
-  //vecStrOne.print();
+  
 }
 
-/*
-void setProccesAndParameters(VectorClassString &vecStrOne){
-vecStrOne.print();
-int action=0;
-
-for(int i=0;i<vecStrOne.getSize();i++){
-  if(vecStrOne.get(i)=="a"){
-    action=2; //Is animation
-  }else if(vecStrOne.get(i)=="x"){
-    action=4; //Repite animation
-  }else if(vecStrOne.get(i)=="v"){
-    action=6; //Velocity animation
-  }else if(action==2){
-    an.getAnim(aFrame, vecStrOne.get(i));
+void updateStateAndEffect(VectorClassString &vecStrOne, String &effectOption, String &text, int &velocity, int &repeat){
+  if(vecStrOne.get(0)=="a"){
+    effectOption=vecStrOne.get(1);
   }
-}*/
+  if(vecStrOne.get(0)=="x"){
+    repeat=vecStrOne.get(1).toInt();
+  }
+  if(vecStrOne.get(0)=="v"){
+    velocity=vecStrOne.get(1).toInt();
+  }
+  if(vecStrOne.get(0)=="m"){
+    text=vecStrOne.get(1);
+  }
+}
 
-/*
-String concParamsOfString(char charReaded,String param,int &action)
-{
 
-  if (charReaded == ':')
+
+
+
+
+  /*
+  String concParamsOfString(char charReaded,String param,int &action)
   {
 
-    param = "";
-    action = 10;
-    //charReaded++;
-  }else if (action == 10 || action ==11){
+    if (charReaded == ':')
+    {
 
-    param = param + charReaded;
-    dss();dsl("Concatena:");ds("strOption:");dsl(strOption);
-    ds("Entre a concatenacion de efectos ");ds(" charReaded: ");dsl(charReaded);
-    ds(" strOption: ");dsl(strOption);
-    action=11;
+      param = "";
+      action = 10;
+      //charReaded++;
+    }else if (action == 10 || action ==11){
 
-  }else if ((charReaded == ')' || charReaded == ':') && action==11){
-    dss();dsl("se encuentra )");ds(" charReaded: ");dsl(charReaded);
-    action = 19;
-  }
+      param = param + charReaded;
+      dss();dsl("Concatena:");ds("strOption:");dsl(strOption);
+      ds("Entre a concatenacion de efectos ");ds(" charReaded: ");dsl(charReaded);
+      ds(" strOption: ");dsl(strOption);
+      action=11;
 
-  return param;
+    }else if ((charReaded == ')' || charReaded == ':') && action==11){
+      dss();dsl("se encuentra )");ds(" charReaded: ");dsl(charReaded);
+      action = 19;
+    }
 
-}*/
+    return param;
+
+  }*/
