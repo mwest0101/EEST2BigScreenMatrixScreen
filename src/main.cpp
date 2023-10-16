@@ -35,7 +35,7 @@ int firstPass = 0;
 VectorClass vecTemp(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 VectorClass aIntCharMatrix(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 VectorClass vecChar(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
-VectorClass vecPins(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
+
 MatrixClass matrix(BUILD_MATRIX_ROWS, BUILD_MATRIX_COLS, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 VectorClass aFrame(36, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 VectorClass aLastFrame(36, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
@@ -43,10 +43,7 @@ String aPara[200];
 String aVals[200];
 int numOfcharacter = 0;
 int contCharAdded = 0;
-unsigned long time = 0;
-unsigned long lastTime = 0;
-unsigned long difTime = 0;
-unsigned long waitTime = 0;
+
 char charReaded;
 char lastCharReaded;
 int action = 0;
@@ -56,35 +53,47 @@ bool canAddChar = false;
 bool getNextChar = true;
 int found=0;
 unsigned int aLargoString=0;*/
+#ifdef IS_LCDSCREEN
+    MatrizLed pantalla;
+#endif
+
 DriveMatrix dm;
 ShowMatrix sm;
-
 AnimManager an;
+
 int stateAction=0;
 String effectOption="";
 String text="";
-int repeat=1;
-int velocity=5;
+int repeat=DEFAULT_REPEAT;
+int velocity=DEFAULT_VELOCITY;
 
+unsigned long time = 0;
+unsigned long lastTime = 0;
+unsigned long difTime = 0;
+unsigned long waitTime = 0;
+VectorClass vecPins(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
+
+
+String inputString2 = "a:aefe1;x:1;v:2|a:efe2;x:3;v:4|m:tést de, texto|a:efe1;x:4;v:2";
 
 void setup()
 {
-    /*<-(QUITA ESTO)time = micros();
+    time = micros();
     lastTime = time;
     difTime = WAIT_TIME_LOOP;
     waitTime = WAIT_TIME_LOOP;
 
-#ifndef WAIT_TIME_LOOP
-#define WAIT_TIME_LOOP 500000
-#endif
-*/
+    #ifndef WAIT_TIME_LOOP
+        #define WAIT_TIME_LOOP 500000
+    #endif
+
 
 #ifdef DEBUG_SERIAL
     Serial.begin(9600);
 #endif
 
 
-/*<-(QUITA ESTO)
+
 #ifdef DEBUG
     debug_init();
 #endif
@@ -104,31 +113,32 @@ void setup()
 
     convProgToArray(vecPins, C_Pins, (sizeof(C_Pins) / 2));
     vecPins.print();
-    difTime = waitTime;*/
-    String inputString2 = "a:aefe1;x:1;v:2|a:efe2;x:3;v:4|m:test de, texto|a:efe1;x:4;v:2";
-    String oneGroup="";
-    VectorClassString vecStr(0);
-    VectorClassString vecStrParam(0);
-    VectorClassString vecStrOne(0);
+    difTime = waitTime;
+
+   
+    // String oneGroup="";
+    // VectorClassString vecStr(0);
+    // VectorClassString vecStrParam(0);
+    // VectorClassString vecStrOne(0);
   
     //oneGroup=getOneGroup(inputString2, stateAction);
     //vecStr.print();
-    proccesAction(inputString2,effectOption,text,velocity,repeat);
-    vecStrOne.print();
-    proccesAction(inputString2,effectOption,text,velocity,repeat);
-    vecStrOne.print();
-    proccesAction(inputString2,effectOption,text,velocity,repeat);
-    vecStrOne.print();
-    proccesAction(inputString2,effectOption,text,velocity,repeat);
-    vecStrOne.print();
-    proccesAction(inputString2,effectOption,text,velocity,repeat);
-    vecStrOne.print();
-    proccesAction(inputString2,effectOption,text,velocity,repeat);
-    vecStrOne.print();
-    proccesAction(inputString2,effectOption,text,velocity,repeat);
-    vecStrOne.print();
-    proccesAction(inputString2,effectOption,text,velocity,repeat);
-    vecStrOne.print();
+    // proccesAction(inputString2,effectOption,text,velocity,repeat);
+    // vecStrOne.print();
+    // proccesAction(inputString2,effectOption,text,velocity,repeat);
+    // vecStrOne.print();
+    // proccesAction(inputString2,effectOption,text,velocity,repeat);
+    // vecStrOne.print();
+    // proccesAction(inputString2,effectOption,text,velocity,repeat);
+    // vecStrOne.print();
+    // proccesAction(inputString2,effectOption,text,velocity,repeat);
+    // vecStrOne.print();
+    // proccesAction(inputString2,effectOption,text,velocity,repeat);
+    // vecStrOne.print();
+    // proccesAction(inputString2,effectOption,text,velocity,repeat);
+    // vecStrOne.print();
+    // proccesAction(inputString2,effectOption,text,velocity,repeat);
+    // vecStrOne.print();
    
 
 
@@ -137,10 +147,14 @@ void setup()
 // Secuencia de la matriz
 void loop()
 {
+    proccesAction(inputString2,effectOption,text,velocity,repeat);
+    //vecStrOne.print();
+
 //Test de escirtura con teclado mecanico
 
-    /*
+    
     time = micros();
+    /*
     dm.fillArrrayOfChars(vecChar, strToShow);
 
     dsl("");dsl("========================LOOOOOP=================================");    
