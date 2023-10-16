@@ -22,6 +22,7 @@ class DriveMatrix {
   //int *aCharsBlock;
   int contChars = 0;
   bool vCanAddChar = true;
+  bool vIsInTheEnd = true;
   unsigned long codSumTot = 0;
   String lastStrToShow = "";
 
@@ -41,6 +42,7 @@ class DriveMatrix {
   void moveMatrixToLeft(MatrixClass& matrix);
   int getPosLastChar();
   bool canAddChar();
+  bool isAtTheEnd();
   void setCanAddChar(bool value);
   int getMovMat();
   void getArrayOfCharsOfString(VectorClass& vecTemp, String strData);

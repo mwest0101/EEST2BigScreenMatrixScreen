@@ -78,6 +78,8 @@ VectorClass aIntCharMatrix(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 
 MatrixClass matrix(BUILD_MATRIX_ROWS, BUILD_MATRIX_COLS, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 String inputString2 = "a:aefe1;x:1;v:2|a:efe2;x:3;v:4|m:tést de, texto|a:efe1;x:4;v:2";
+//String inputString2 = "a:aefe1;x:1;v:2|m:tést de, texto";
+//String inputString2 = "a:aefe1";
 String option="";
 void setup()
 {
@@ -122,18 +124,18 @@ void setup()
     // String oneGroup="";
     // VectorClassString vecStr(0);
     // VectorClassString vecStrParam(0);
-    // VectorClassString vecStrOne(0);
+     VectorClassString vecStrOne(0);
   
     //oneGroup=getOneGroup(inputString2, stateAction);
     //vecStr.print();
-    // proccesAction(inputString2,effectOption,text,velocity,repeat);
-    // vecStrOne.print();
-    // proccesAction(inputString2,effectOption,text,velocity,repeat);
-    // vecStrOne.print();
-    // proccesAction(inputString2,effectOption,text,velocity,repeat);
-    // vecStrOne.print();
-    // proccesAction(inputString2,effectOption,text,velocity,repeat);
-    // vecStrOne.print();
+    proccesAction(inputString2,option,effectOption,text,velocity,repeat);
+    vecStrOne.print();
+    proccesAction(inputString2,option,effectOption,text,velocity,repeat);
+    vecStrOne.print();
+    proccesAction(inputString2,option,effectOption,text,velocity,repeat);
+    vecStrOne.print();
+    proccesAction(inputString2,option,effectOption,text,velocity,repeat);
+    vecStrOne.print();
     // proccesAction(inputString2,effectOption,text,velocity,repeat);
     // vecStrOne.print();
     // proccesAction(inputString2,effectOption,text,velocity,repeat);
@@ -150,7 +152,7 @@ void setup()
 // Secuencia de la matriz
 void loop()
 {
-    if(effectOption=="" && text==""){
+   /* if(effectOption=="" && text==""){
         proccesAction(inputString2,option,effectOption,text,velocity,repeat);
     }
     //vecStrOne.print();
@@ -159,17 +161,19 @@ void loop()
 
     
     time = micros();
-    if(text!=""){
+    if(option=="m" && !dm.canAddChar()){
         vecChar.clear();
         dm.fillArrrayOfChars(vecChar, effectOption);    
     }
-    if(dm.canAddChar()){
+    if(option=="m" && dm.canAddChar()){
         dm.getValuesOfCharMatrixAndAddToMatrix(matrix, aIntCharMatrix, vecChar, contCharAdded);
         dm.setCanAddChar(false);
         contCharAdded++;
      //   getNextChar = false;
     }
+
     dm.moveMatrixToLeft(matrix);
+    */
     /*
     dm.fillArrrayOfChars(vecChar, strToShow);
 

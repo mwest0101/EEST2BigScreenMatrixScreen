@@ -162,6 +162,9 @@ void DriveMatrix::setCanAddChar(bool value) {
 bool DriveMatrix::canAddChar() {
   return this->vCanAddChar;
 }
+bool DriveMatrix::isAtTheEnd() {
+  return this->vIsInTheEnd;
+}
 //____________________________________________________________________
 //------------Function------------------------------------------------
 int DriveMatrix::getMovMat() {
