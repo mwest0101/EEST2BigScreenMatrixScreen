@@ -105,21 +105,39 @@ void setup()
     convProgToArray(vecPins, C_Pins, (sizeof(C_Pins) / 2));
     vecPins.print();
     difTime = waitTime;*/
-    String inputString2 = "a:efe1;x:4;v:2|a:efe2;x:6;v:3|m:test de, texto|a:efe1;x:4;v:2";
+    String inputString2 = "a:aefe1;x:1;v:2|a:efe2;x:3;v:4|m:test de, texto|a:efe1;x:4;v:2";
     String oneGroup="";
     VectorClassString vecStr(0);
     VectorClassString vecStrParam(0);
     VectorClassString vecStrOne(0);
   
-    oneGroup=getOneGroup(inputString2, stateAction);
+    //oneGroup=getOneGroup(inputString2, stateAction);
     //vecStr.print();
-    proccesAction(oneGroup,effectOption,text,velocity,repeat);
+    proccesAction(inputString2,effectOption,text,velocity,repeat);
     vecStrOne.print();
+    proccesAction(inputString2,effectOption,text,velocity,repeat);
+    vecStrOne.print();
+    proccesAction(inputString2,effectOption,text,velocity,repeat);
+    vecStrOne.print();
+    proccesAction(inputString2,effectOption,text,velocity,repeat);
+    vecStrOne.print();
+    proccesAction(inputString2,effectOption,text,velocity,repeat);
+    vecStrOne.print();
+    proccesAction(inputString2,effectOption,text,velocity,repeat);
+    vecStrOne.print();
+    proccesAction(inputString2,effectOption,text,velocity,repeat);
+    vecStrOne.print();
+    proccesAction(inputString2,effectOption,text,velocity,repeat);
+    vecStrOne.print();
+   
+
+
 }
 
 // Secuencia de la matriz
 void loop()
 {
+//Test de escirtura con teclado mecanico
 
     /*
     time = micros();

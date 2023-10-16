@@ -1,23 +1,26 @@
 
 #include <Arduino.h>
 #include "inc/include.h"
-void convProgToArray(VectorClass& aIntCharMatrix, const int* phrase, int size) {
+void convProgToArray(VectorClass &aIntCharMatrix, const int *phrase, int size)
+{
   int element = 0;
-  for (int i = 0; i < size; i++) {
-    //element = ((int)pgm_read_word(phrase + i));
+  for (int i = 0; i < size; i++)
+  {
+    // element = ((int)pgm_read_word(phrase + i));
     element = ((int)pgm_read_word(&phrase[i]));
     aIntCharMatrix.push(element);
-    //aIntCharMatrix.set(i, element);
-   // ds(element);
-    //ds("-");
+    // aIntCharMatrix.set(i, element);
+    // ds(element);
+    // ds("-");
   }
   dsl(" ");
-  //aIntCharMatrix.print();
-
+  // aIntCharMatrix.print();
 }
-void convProgToArray2(int* aIntCharMatrix, const int* phrase, int size) {
+void convProgToArray2(int *aIntCharMatrix, const int *phrase, int size)
+{
   int element = 0;
-  for (int i = 0; i < size; i++) {
+  for (int i = 0; i < size; i++)
+  {
     element = ((int)pgm_read_word(&phrase[i]));
     aIntCharMatrix[i] = element;
     ds("(");
@@ -44,33 +47,41 @@ void convProgToArrayByFrame(VectorClass &aIntCharMatrix,const int *phrase, int s
 }*/
 //____________________________________________________________________
 //------------Function------------------------------------------------
-void printMatrix(int* vMatrix) {
+void printMatrix(int *vMatrix)
+{
   int tam = vMatrix[0];
-  for (int i = 0; i < tam; i++) {
-    if (vMatrix[i] != EL && vMatrix[i] != EA) {
+  for (int i = 0; i < tam; i++)
+  {
+    if (vMatrix[i] != EL && vMatrix[i] != EA)
+    {
       ds3(vMatrix[i]);
     }
-    else {
+    else
+    {
       dsl("");
     }
   }
 }
 //____________________________________________________________________
 //------------Function------------------------------------------------
-int** CreateMatrix(int** matrix, int cols, int rows) {
+int **CreateMatrix(int **matrix, int cols, int rows)
+{
 
-  matrix = new int* [rows];
-  for (int i = 0; i < rows; i++) {
+  matrix = new int *[rows];
+  for (int i = 0; i < rows; i++)
+  {
 
     matrix[i] = new int[cols];
-    for (int j = 0; j < cols; j++) {
+    for (int j = 0; j < cols; j++)
+    {
       matrix[i][j] = 0;
     }
   }
   return matrix;
 }
 
-void strToVector(String strIng, String* aStrsParam, String* aStrsValor) {
+void strToVector(String strIng, String *aStrsParam, String *aStrsValor)
+{
   int size = strIng.length();
   String strtemp = "";
   String charTemp = "";
@@ -80,76 +91,94 @@ void strToVector(String strIng, String* aStrsParam, String* aStrsValor) {
   int cont = 0;
   dsl("strToVector");
 
-  for (int i = 0; i < size; i++) {
+  for (int i = 0; i < size; i++)
+  {
     charTemp = strIng[i];
     dsl("strToVector-->Entre for:");
 
-
-    if (charTemp == "(" && isText == false) {
+    if (charTemp == "(" && isText == false)
+    {
       isText = false;
       isParam = true;
     }
-    else if (isParam) {
-      if (charTemp == ":") {
+    else if (isParam)
+    {
+      if (charTemp == ":")
+      {
         aStrsParam[cont] = lastCharTemp;
-
       }
-      else if (charTemp == "|" || charTemp == ")") {
+      else if (charTemp == "|" || charTemp == ")")
+      {
         aStrsValor[cont] = strtemp;
         strtemp = "";
         cont++;
       }
-      if (charTemp == ")") {
+      if (charTemp == ")")
+      {
         isParam = false;
-
       }
     }
-    else {
-      if (isText == false) {
+    else
+    {
+      if (isText == false)
+      {
         aStrsParam[cont] = "t";
         isText = true;
       }
-      else {
+      else
+      {
         strtemp = strtemp + charTemp;
-
       }
-      if ((charTemp == "(" && isText == true) || (i == size - 1)) {
+      if ((charTemp == "(" && isText == true) || (i == size - 1))
+      {
         aStrsValor[cont] = strtemp;
         strtemp = "";
       }
     }
 
-
     lastCharTemp = charTemp;
     strtemp = strtemp + charTemp;
   }
-
 }
 
-String concParamsOfString(char charReaded, String strOption, int& action) {
+String concParamsOfString(char charReaded, String strOption, int &action)
+{
 
-  if (charReaded == '(') {
-    dss();ds("se encuentra (");ds(" charReaded: ");dsl(charReaded);
+  if (charReaded == '(')
+  {
+    dss();
+    ds("se encuentra (");
+    ds(" charReaded: ");
+    dsl(charReaded);
     strOption = "";
     action = 10;
-    //charReaded++;
+    // charReaded++;
   }
-  else if (action == 10 || action == 11) {
+  else if (action == 10 || action == 11)
+  {
 
     strOption = strOption + charReaded;
-    dss();dsl("Concatena:");ds("strOption:");dsl(strOption);
-    ds("Entre a concatenacion de efectos ");ds(" charReaded: ");dsl(charReaded);
-    ds(" strOption: ");dsl(strOption);
+    dss();
+    dsl("Concatena:");
+    ds("strOption:");
+    dsl(strOption);
+    ds("Entre a concatenacion de efectos ");
+    ds(" charReaded: ");
+    dsl(charReaded);
+    ds(" strOption: ");
+    dsl(strOption);
     action = 11;
-
   }
-  else if ((charReaded == ')' || charReaded == ':') && action == 11) {
-    dss();dsl("se encuentra )");ds(" charReaded: ");dsl(charReaded);
+  else if ((charReaded == ')' || charReaded == ':') && action == 11)
+  {
+    dss();
+    dsl("se encuentra )");
+    ds(" charReaded: ");
+    dsl(charReaded);
     action = 19;
   }
 
   return strOption;
-
 }
 
 /*
@@ -174,90 +203,146 @@ void splitStringWithVariosChar(VectorClassString& dataArray, String inputString,
   dataArray.push(inputString);
 }*/
 
-
-
+/*
 String getOneGroup(String InString, int& stateAction) {
   static int contParam = 0;
   VectorClassString vecStr(0);
   String strResult = "";
 
-  if (stateAction == 0) {
-    splitStringToArrayNoEmpty(vecStr, InString, "|");
-    stateAction++;
-  }
+  //if (stateAction == 0) {
+  splitStringToArrayNoEmpty(vecStr, InString, "|");
+  stateAction++;
+  //}
   strResult = vecStr.get(contParam);
   contParam++;
   if (contParam == vecStr.getSize()) contParam = 0;
   return strResult;
-}
+}*/
 
-void proccesAction(String strOneGroup, String &effectOption, String &text, int &velocity, int &repeat) {
+void proccesAction(String InString, String &effectOption, String &text, int &velocity, int &repeat)
+{
+  text="";
+  effectOption="";
+  velocity=DEFAULT_VELOCITY;
+  repeat=DEFAULT_REPEAT;
+
+  VectorClassString vecStr(0);
   VectorClassString vecStrOne(0);
   VectorClassString vecStrParam(0);
+  static int contParam = 0;
   String strParam = "";
   String strOneParam = "";
-  //vecStrParam.clear();
-  vecStrParam.clear();
-  vecStrOne.clear();
+  // vecStrParam.clear();
+  // vecStr.clear();
+  // vecStrParam.clear();
+  // vecStrOne.clear();
+  dss();
+  ds5("contParam=");
+  ds5l(contParam);
   
-  splitStringToArrayNoEmpty(vecStrParam, strOneGroup, ";");  
-
-  if (vecStrParam.getSize() > 1) {
-
-    for (int i = 0; i < vecStrParam.getSize();i++) {
-      splitStringToArrayNoEmpty(vecStrOne, vecStrParam.get(i), ":");
-
-      if (vecStrOne.getSize() > 1) {
-        updateStateAndEffect(vecStrOne, effectOption, text, velocity, repeat);
-      }      
-    }
-  }
   
-}
-
-void updateStateAndEffect(VectorClassString &vecStrOne, String &effectOption, String &text, int &velocity, int &repeat){
-  if(vecStrOne.get(0)=="a"){
-    effectOption=vecStrOne.get(1);
-  }
-  if(vecStrOne.get(0)=="x"){
-    repeat=vecStrOne.get(1).toInt();
-  }
-  if(vecStrOne.get(0)=="v"){
-    velocity=vecStrOne.get(1).toInt();
-  }
-  if(vecStrOne.get(0)=="m"){
-    text=vecStrOne.get(1);
-  }
-}
-
-
-
-
-
-
-  /*
-  String concParamsOfString(char charReaded,String param,int &action)
+  splitStringToArrayNoEmpty(vecStr, InString, "|");
+  //ds5l("Despues del separador | ");
+  //vecStr.print();
+  if (vecStr.getSize() > 1)
   {
-
-    if (charReaded == ':')
+    splitStringToArrayNoEmpty(vecStrParam, vecStr.get(contParam), ";");
+    //ds5l("Despues del separador ; ");
+    //vecStrParam.print();
+    
+    if (vecStrParam.getSize() > 1)
     {
 
-      param = "";
-      action = 10;
-      //charReaded++;
-    }else if (action == 10 || action ==11){
+      for (int i = 0; i < vecStrParam.getSize(); i++)
+      {
+        vecStrOne.clear();
+        splitStringToArrayNoEmpty(vecStrOne, vecStrParam.get(i), ":");
+        //ds5l("Despues del separador : ");
+        //vecStrOne.print();
 
-      param = param + charReaded;
-      dss();dsl("Concatena:");ds("strOption:");dsl(strOption);
-      ds("Entre a concatenacion de efectos ");ds(" charReaded: ");dsl(charReaded);
-      ds(" strOption: ");dsl(strOption);
-      action=11;
+        if (vecStrOne.getSize() > 1)
+        {
+          updateStateAndEffect(vecStrOne, effectOption, text, velocity, repeat);
 
-    }else if ((charReaded == ')' || charReaded == ':') && action==11){
-      dss();dsl("se encuentra )");ds(" charReaded: ");dsl(charReaded);
-      action = 19;
+        }
+      }
     }
+    else
+    {
+      splitStringToArrayNoEmpty(vecStrOne, vecStr.get(contParam), ":");
+      //ds5l("Despues del separador : 2 ");
+      //vecStrOne.print();
+      updateStateAndEffect(vecStrOne, effectOption, text, velocity, repeat);
+    }
+  }
+  else
+  {
+    splitStringToArrayNoEmpty(vecStrOne, InString, ":");
+    //ds5l("Despues del separador : 3 ");
+    //vecStrOne.print();
+    updateStateAndEffect(vecStrOne, effectOption, text, velocity, repeat);
+  }
+  ds5l(" ");
+  ds5("effectOption=[");ds5(effectOption);ds5("] ");
+  ds5("text=[");ds5(text);ds5("] ");
+  ds5("velocity=[");ds5(velocity);ds5("] ");
+  ds5("repeat=[");ds5(repeat);ds5l("] ");
+  contParam++;
+  if (contParam >= vecStr.getSize()) contParam = 0;
+}
 
-    return param;
+void updateStateAndEffect(VectorClassString &vecStrOne, String &effectOption, String &text, int &velocity, int &repeat)
+{
+  if (vecStrOne.get(0) == "a")
+  {
+    effectOption = vecStrOne.get(1);
+    ds5(" a=");
+    ds5(vecStrOne.get(1));
+  }
+  if (vecStrOne.get(0) == "x")
+  {
+    repeat = vecStrOne.get(1).toInt();
+    ds5(" x=");
+    ds5(vecStrOne.get(1));
+  }
+  if (vecStrOne.get(0) == "v")
+  {
+    velocity = vecStrOne.get(1).toInt();
+    ds5(" v=");
+    ds5(vecStrOne.get(1));
+  }
+  if (vecStrOne.get(0) == "m")
+  {
+    text = vecStrOne.get(1);
+    ds5( "m=");
+    ds5(vecStrOne.get(1));
+  }
+  
+}
 
-  }*/
+/*
+String concParamsOfString(char charReaded,String param,int &action)
+{
+
+  if (charReaded == ':')
+  {
+
+    param = "";
+    action = 10;
+    //charReaded++;
+  }else if (action == 10 || action ==11){
+
+    param = param + charReaded;
+    dss();dsl("Concatena:");ds("strOption:");dsl(strOption);
+    ds("Entre a concatenacion de efectos ");ds(" charReaded: ");dsl(charReaded);
+    ds(" strOption: ");dsl(strOption);
+    action=11;
+
+  }else if ((charReaded == ')' || charReaded == ':') && action==11){
+    dss();dsl("se encuentra )");ds(" charReaded: ");dsl(charReaded);
+    action = 19;
+  }
+
+  return param;
+
+}*/
