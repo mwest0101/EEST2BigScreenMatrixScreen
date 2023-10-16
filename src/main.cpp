@@ -33,7 +33,7 @@ int oldCodSumTo = 0;
 int contChars = 0;
 int firstPass = 0;
 VectorClass vecTemp(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
-VectorClass aIntCharMatrix(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
+
 VectorClass vecChar(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 
 MatrixClass matrix(BUILD_MATRIX_ROWS, BUILD_MATRIX_COLS, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
@@ -42,7 +42,7 @@ VectorClass aLastFrame(36, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 String aPara[200];
 String aVals[200];
 int numOfcharacter = 0;
-int contCharAdded = 0;
+
 
 char charReaded;
 char lastCharReaded;
@@ -66,16 +66,19 @@ String effectOption="";
 String text="";
 int repeat=DEFAULT_REPEAT;
 int velocity=DEFAULT_VELOCITY;
-
+int contCharAdded = 0;
+ 
 unsigned long time = 0;
 unsigned long lastTime = 0;
 unsigned long difTime = 0;
 unsigned long waitTime = 0;
 VectorClass vecPins(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
+VectorClass vecChar(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
+VectorClass aIntCharMatrix(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 
-
+MatrixClass matrix(BUILD_MATRIX_ROWS, BUILD_MATRIX_COLS, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 String inputString2 = "a:aefe1;x:1;v:2|a:efe2;x:3;v:4|m:tést de, texto|a:efe1;x:4;v:2";
-
+String option="";
 void setup()
 {
     time = micros();
@@ -147,13 +150,26 @@ void setup()
 // Secuencia de la matriz
 void loop()
 {
-    proccesAction(inputString2,effectOption,text,velocity,repeat);
+    if(effectOption=="" && text==""){
+        proccesAction(inputString2,option,effectOption,text,velocity,repeat);
+    }
     //vecStrOne.print();
 
 //Test de escirtura con teclado mecanico
 
     
     time = micros();
+    if(text!=""){
+        vecChar.clear();
+        dm.fillArrrayOfChars(vecChar, effectOption);    
+    }
+    if(dm.canAddChar()){
+        dm.getValuesOfCharMatrixAndAddToMatrix(matrix, aIntCharMatrix, vecChar, contCharAdded);
+        dm.setCanAddChar(false);
+        contCharAdded++;
+     //   getNextChar = false;
+    }
+    dm.moveMatrixToLeft(matrix);
     /*
     dm.fillArrrayOfChars(vecChar, strToShow);
 

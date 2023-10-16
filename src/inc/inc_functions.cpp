@@ -219,13 +219,13 @@ String getOneGroup(String InString, int& stateAction) {
   return strResult;
 }*/
 
-void proccesAction(String InString, String &effectOption, String &text, int &velocity, int &repeat)
+void proccesAction(String InString,String &option, String &effectOption, String &text, int &velocity, int &repeat)
 {
-  text="";
-  effectOption="";
-  velocity=DEFAULT_VELOCITY;
-  repeat=DEFAULT_REPEAT;
-
+  text = "";
+  effectOption = "";
+  velocity = DEFAULT_VELOCITY;
+  repeat = DEFAULT_REPEAT;
+  option="";
   VectorClassString vecStr(0);
   VectorClassString vecStrOne(0);
   VectorClassString vecStrParam(0);
@@ -239,17 +239,16 @@ void proccesAction(String InString, String &effectOption, String &text, int &vel
   dss();
   ds5("contParam=");
   ds5l(contParam);
-  
-  
+
   splitStringToArrayNoEmpty(vecStr, InString, "|");
-  //ds5l("Despues del separador | ");
-  //vecStr.print();
+  // ds5l("Despues del separador | ");
+  // vecStr.print();
   if (vecStr.getSize() > 1)
   {
     splitStringToArrayNoEmpty(vecStrParam, vecStr.get(contParam), ";");
-    //ds5l("Despues del separador ; ");
-    //vecStrParam.print();
-    
+    // ds5l("Despues del separador ; ");
+    // vecStrParam.print();
+
     if (vecStrParam.getSize() > 1)
     {
 
@@ -257,67 +256,81 @@ void proccesAction(String InString, String &effectOption, String &text, int &vel
       {
         vecStrOne.clear();
         splitStringToArrayNoEmpty(vecStrOne, vecStrParam.get(i), ":");
-        //ds5l("Despues del separador : ");
-        //vecStrOne.print();
+        // ds5l("Despues del separador : ");
+        // vecStrOne.print();
 
         if (vecStrOne.getSize() > 1)
         {
-          updateStateAndEffect(vecStrOne, effectOption, text, velocity, repeat);
-
+          updateStateAndEffect(vecStrOne,option, effectOption, text, velocity, repeat);
         }
       }
     }
     else
     {
       splitStringToArrayNoEmpty(vecStrOne, vecStr.get(contParam), ":");
-      //ds5l("Despues del separador : 2 ");
-      //vecStrOne.print();
-      updateStateAndEffect(vecStrOne, effectOption, text, velocity, repeat);
+      // ds5l("Despues del separador : 2 ");
+      // vecStrOne.print();
+      updateStateAndEffect(vecStrOne,option, effectOption, text, velocity, repeat);
     }
   }
   else
   {
     splitStringToArrayNoEmpty(vecStrOne, InString, ":");
-    //ds5l("Despues del separador : 3 ");
-    //vecStrOne.print();
-    updateStateAndEffect(vecStrOne, effectOption, text, velocity, repeat);
+    // ds5l("Despues del separador : 3 ");
+    // vecStrOne.print();
+    updateStateAndEffect(vecStrOne,option, effectOption, text, velocity, repeat);
   }
   ds5l(" ");
-  ds5("effectOption=[");ds5(effectOption);ds5("] ");
-  ds5("text=[");ds5(text);ds5("] ");
-  ds5("velocity=[");ds5(velocity);ds5("] ");
-  ds5("repeat=[");ds5(repeat);ds5l("] ");
+  ds5("option=[");
+  ds5(option);
+  ds5("] ");
+  ds5("effectOption=[");
+  ds5(effectOption);
+  ds5("] ");
+  ds5("text=[");
+  ds5(text);
+  ds5("] ");
+  ds5("velocity=[");
+  ds5(velocity);
+  ds5("] ");
+  ds5("repeat=[");
+  ds5(repeat);
+  ds5l("] ");
   contParam++;
-  if (contParam >= vecStr.getSize()) contParam = 0;
+  if (contParam >= vecStr.getSize())
+    contParam = 0;
 }
 
-void updateStateAndEffect(VectorClassString &vecStrOne, String &effectOption, String &text, int &velocity, int &repeat)
+void updateStateAndEffect(VectorClassString &vecStrOne,String &option, String &effectOption, String &text, int &velocity, int &repeat)
 {
-  if (vecStrOne.get(0) == "a")
+  String valueStr="";
+  option=vecStrOne.get(0);
+  valueStr=vecStrOne.get(21);
+
+  if (option == "a")
   {
-    effectOption = vecStrOne.get(1);
+    effectOption = valueStr;
     ds5(" a=");
-    ds5(vecStrOne.get(1));
+    ds5(valueStr);
   }
-  if (vecStrOne.get(0) == "x")
+  if (option == "x")
   {
-    repeat = vecStrOne.get(1).toInt();
+    repeat = valueStr.toInt();
     ds5(" x=");
-    ds5(vecStrOne.get(1));
+    ds5(valueStr);
   }
-  if (vecStrOne.get(0) == "v")
+  if (option == "v")
   {
-    velocity = vecStrOne.get(1).toInt();
+    velocity = valueStr.toInt();
     ds5(" v=");
-    ds5(vecStrOne.get(1));
+    ds5(valueStr);
   }
-  if (vecStrOne.get(0) == "m")
+  if (option == "m")
   {
-    text = vecStrOne.get(1);
-    ds5( "m=");
-    ds5(vecStrOne.get(1));
+    text = valueStr;
+    ds5("m=");
+    ds5(valueStr);
   }
-  
 }
 
 /*
