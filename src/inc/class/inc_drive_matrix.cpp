@@ -150,11 +150,26 @@ void DriveMatrix::moveMatrixToLeft(MatrixClass& matrix) {
   if (this->totPosX < MATRIX_WIDTH) {
     this->vCanAddChar = true;
   }
-
+  if (this->totPosX < MATRIX_WIDTH) {
+    this->IsStringEnd = true;
+  }
+  
 }
 
 int DriveMatrix::getPosLastChar() {
   return this->totPosX;
+}
+
+bool DriveMatrix::getIfIsStringEnd() {
+
+  return IsStringEnd;
+
+
+}
+bool DriveMatrix::setIfIsStringEnd(bool status) {
+ this->IsStringEnd=status;
+
+
 }
 void DriveMatrix::setCanAddChar(bool value) {
   this->vCanAddChar = value;
@@ -203,21 +218,22 @@ int DriveMatrix::getContChars() {
 void DriveMatrix::fillArrrayOfChars(VectorClass& vecChar, String strToShow) {
   //static String lastStrToShow="";
   String tempStr = "";
-  if (this->lastStrToShow != strToShow) {
-    dsil("Cambio el string");
-    tempStr = strToShow + MARQUE_SEPARATOR;
-    this->ResetInitPosMatrix();
-    this->getArrayOfCharsOfString(vecChar, tempStr);
-    //vecChar.print();
-    this->lastStrToShow = strToShow;
-  }
+  //if (this->lastStrToShow != strToShow) {
+  dsil("Cambio el string");
+  tempStr = strToShow + MARQUE_SEPARATOR;
+  this->ResetInitPosMatrix();
+  vecChar.clear();
+  this->getArrayOfCharsOfString(vecChar, tempStr);
+  //vecChar.print();
+  //this->lastStrToShow = strToShow;
+//}
 
 }
-void DriveMatrix::getValuesOfCharMatrixAndAddToMatrix(MatrixClass& matrix, VectorClass& aIntCharMatrix, VectorClass& vecChar, int contCharAdded) {
-  aIntCharMatrix.clear();
-  getCharMatrix(aIntCharMatrix, vecChar.get(contCharAdded));
-  // ds("aIntCharMatrix.getSize=");
-  // dsl(aIntCharMatrix.getSize());
-  this->AddConsToMatrix(matrix, aIntCharMatrix, vecChar.get(contCharAdded));
+// void DriveMatrix::getValuesOfCharMatrixAndAddToMatrix(MatrixClass& matrix, VectorClass& aIntCharMatrix, VectorClass& vecChar, int contCharAdded) {
+//   aIntCharMatrix.clear();
+//   getCharMatrix(aIntCharMatrix, vecChar.get(contCharAdded));
+//   // ds("aIntCharMatrix.getSize=");
+//   // dsl(aIntCharMatrix.getSize());
+//   this->AddConsToMatrix(matrix, aIntCharMatrix, vecChar.get(contCharAdded));
 
-}
+// }

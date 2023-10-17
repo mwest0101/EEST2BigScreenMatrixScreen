@@ -25,7 +25,7 @@ class DriveMatrix {
   bool vIsInTheEnd = true;
   unsigned long codSumTot = 0;
   String lastStrToShow = "";
-
+  bool IsStringEnd =false;
   public:
   DriveMatrix();
 
@@ -41,6 +41,8 @@ class DriveMatrix {
   //void moveMatrixToLeft();
   void moveMatrixToLeft(MatrixClass& matrix);
   int getPosLastChar();
+  bool getIfIsStringEnd();
+  bool setIfIsStringEnd(bool status);
   bool canAddChar();
   bool isAtTheEnd();
   void setCanAddChar(bool value);

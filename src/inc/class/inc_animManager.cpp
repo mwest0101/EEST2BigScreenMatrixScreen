@@ -5,7 +5,8 @@
 AnimManager::AnimManager(){
  
   this->contFrame=0;
-  this->isEndOfAnim=true;
+  this->isEndOfAnim=false;
+
   // Serial.println("");
 }
 
@@ -33,10 +34,12 @@ void AnimManager::convProgToArrayByFrame(VectorClass &aFrame, const int *phrase,
     }
 
     this->contFrame++;
-    if (this->contFrame >= size) this->setIfisEnd(true);
+    
     
   }
 
+  if (this->contFrame >= size) 
+    this->setIfisEnd(true);
   dsl(" ");
 }
 void AnimManager::setIfisEnd(bool value)
@@ -49,7 +52,7 @@ void AnimManager::reset()
 {
   ds4("Reset : contFrame=");
   ds4l(this->contFrame);
-  this->setIfisEnd(true);
+  this->setIfisEnd(false);
   this->contFrame = 0;
 }
 bool AnimManager::getIfAnimIsEnd()
@@ -68,6 +71,7 @@ bool AnimManager::getIfAnimIsEnd()
 int AnimManager::getAnim(VectorClass &aFrame,String strOption)
 {
   int found=-1;
+  //if(strOption != lastStrOption)
   if (strOption == "pac1"){dsl("->pac1");aFrame.clear();this->convProgToArrayByFrame(aFrame, C_PACMAN_ANIM_01, (sizeof(C_PACMAN_ANIM_01) / 2));found=1;}
   if (strOption == "pac2"){dsl("->pac2");aFrame.clear();this->convProgToArrayByFrame(aFrame, C_PACMAN_ANIM_02, (sizeof(C_PACMAN_ANIM_02) / 2));found=1;}
   if (strOption == "tet1"){dsl("->tet1");aFrame.clear();this->convProgToArrayByFrame(aFrame, C_TETRIS_ANIM_01, (sizeof(C_TETRIS_ANIM_01) / 2));found=1;}  
