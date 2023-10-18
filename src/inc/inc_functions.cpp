@@ -289,7 +289,7 @@ void updateStateAndEffect(VectorClassString& vecStrOne, String& option, String& 
     // ds5(" a=");
     // ds5(valueStr);
   }
-  if (optionTemp == "x") {
+  if (optionTemp == "r") {
     repeat = valueStr.toInt();
     // ds5(" x=");
     // ds5(valueStr);

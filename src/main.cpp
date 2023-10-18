@@ -26,7 +26,7 @@ MatrizLed pantalla;
 // String inputString2 = "a:efe1;x:1;v:2|a:efe2;x:3;v:4|m:tést de, texto|a:efe1;x:4;v:2";
 // String inputString2 = "(a:efe333|x:2|v:3|a:efe1|a:efe333|a:efe2)E.E.S.T. Nº2";
  //String inputString2 = "a:efe1|m:E.E.S.T. Nº2";
-String inputString2 = "a:pac1|a:pac2;v:8|a:efe2|m:Escuela de educacion tecnica;v:2";
+String inputString2 = "a:efe1;v:1;r:2|a:pac2|a:efe2;r:10;v:2|m:Escuela de educacion tecnica;v:5";
 // String inputString2 = "(a:efe1)E.E.S.T. Nº2";
 // String inputString2 = "abcdefghijklmnopqrstuvwxyz01234";
 // String inputString2 = "Mauricio Pablo West";
@@ -77,6 +77,8 @@ unsigned long time = 0;
 unsigned long lastTime = 0;
 unsigned long difTime = 0;
 unsigned long waitTime = 0;
+int repeatloop=0;
+int contRepeatLoop=0;
 VectorClass vecPins(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 VectorClass vecChar(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 VectorClass aIntCharMatrix(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
@@ -135,31 +137,7 @@ void setup() {
     loopVelocity=waitTime*DEFAULT_VELOCITY;
 
     ds("loopVelocity=");dsl(loopVelocity);
-    // String oneGroup="";
-    // VectorClassString vecStr(0);
-    // VectorClassString vecStrParam(0);
     VectorClassString vecStrOne(0);
-
-    //oneGroup=getOneGroup(inputString2, stateAction);
-    //vecStr.print();
-    /*proccesAction(inputString2,option,effectOption,text,velocity,repeat);
-    vecStrOne.print();
-    proccesAction(inputString2,option,effectOption,text,velocity,repeat);
-    vecStrOne.print();
-    proccesAction(inputString2,option,effectOption,text,velocity,repeat);
-    vecStrOne.print();
-    proccesAction(inputString2,option,effectOption,text,velocity,repeat);
-    vecStrOne.print();*/
-    // proccesAction(inputString2,effectOption,text,velocity,repeat);
-    // vecStrOne.print();
-    // proccesAction(inputString2,effectOption,text,velocity,repeat);
-    // vecStrOne.print();
-    // proccesAction(inputString2,effectOption,text,velocity,repeat);
-    // vecStrOne.print();
-    // proccesAction(inputString2,effectOption,text,velocity,repeat);
-    // vecStrOne.print();
-
-
 
 }
 
@@ -172,10 +150,13 @@ void loop() {
     ds("contLoop=");dsl(contLoop);
     contLoop++;
 
-    if (option == "") {
+    if (contRepeatLoop>=repeatloop) {
+        contRepeatLoop=0;
+        option == ""
         dsl("-->Step 01<--");
         proccesAction(inputString2, option, effectOption, text, velocity, repeat);
         loopVelocity=waitTime*velocity;
+        repeatloop=repeat;
     }
     //vecStrOne.print();
 
@@ -238,95 +219,19 @@ void loop() {
         if ((contCharAdded >= vecChar.getSize() && dm.getIfIsStringEnd()) || an.getIfAnimIsEnd()) {
             dsl("-->Step 07<--");
 
-            option = "";
+            //option = "";
             an.reset();
             dm.ResetInitPosMatrix();
             dm.setIfIsStringEnd(false);
             matrix.clear();
             contCharAdded = 0;
             dsl("Paso m por acá-> 4");
+            contRepeatLoop++;
         }
         lastTime=time;
     }
+    
     time = micros();
     difTime = time - lastTime;
-
-
-
-
-
-    /*
-    <------------------------------------------------------>
-    <------------------------------------------------------>
-    dm.fillArrrayOfChars(vecChar, strToShow);
-
-    dsl("");dsl("========================LOOOOOP=================================");
-    ds(" |contCharAdded=");ds(contCharAdded);ds(" |strOption=");ds(strOption);
-    canAddChar = dm.canAddChar();
-    getIfisEnd = an.getIfAnimIsEnd();
-    ds(" |canAddChar=");ds(canAddChar);ds(" |getIfisEnd=");dsl(getIfisEnd);ds(" |actionAnterior=");ds(action);
-
-    strToVector(strToShow,aPara,aVals);
-    */
-
-    /*<-(QUITA ESTO)
-    //aLargoString=(sizeof(aPara)/sizeof(aPara[0]));
-    strToVector(strToShow,aPara,aVals);
-    aLargoString=3;
-
-    for(unsigned int i;i<aLargoString;i++){
-        ds("[");ds(aPara[i])ds("]=");dsl(aVals[i]);
-    }
-
-    if (getNextChar)
-    {
-
-        dsl("entro al selector");dss();dsl("Inicio de proceso");
-        if (contCharAdded > vecChar.getSize()) contCharAdded = 0;
-        charReaded = (char)vecChar.get(contCharAdded);
-
-        ds(" |charReaded=") ds(charReaded);
-
-        strOption = concParamsOfString(charReaded, strOption, action);
-
-        ds(" |action=");dsl(action);
-
-        if (action == 0)
-        {
-            dss();ds("Entra a captura de texto a concatenar:");ds(charReaded);
-
-            dm.getValuesOfCharMatrixAndAddToMatrix(matrix, aIntCharMatrix, vecChar, contCharAdded);
-            dm.setCanAddChar(false);
-            getNextChar = false;
-
-        }
-
-        if (action == 19)
-        {
-            dsl("Desactiva busqueda de caracteres")
-            getNextChar = false;
-            an.setIfisEnd(false);
-        }
-
-        contCharAdded++;
-    }
-
-    if (difTime >= waitTime)
-    {
-        dsl("LOOP in timeout");
-        lastTime = time;
-        // if (pm.getIfisEnd() && dm.canAddChar())
-        if (action == 19)                                           found=an.getAnim(aFrame, strOption); //{   found=an.getAnim(aFrame, strOption); dss();           dsl("Despues de if strOption");           ds(" strOption: ");           dsl(strOption);        }
-        if (action == 0) {                                          aFrame.reset();dm.GetFrame(matrix, aFrame);}//  { aFrame.reset(); dm.GetFrame(matrix, aFrame);dsl("Antes de imprimir");matrix.print();}
-
-        if (action == 0 || (found==1 && action == 19))              sm.PrintLedMatrix(aFrame, aLastFrame, vecPins); //{ aFrame.print(); sm.PrintLedMatrix(aFrame, aLastFrame, vecPins);}
-        if (action == 0 && dm.getPosLastChar() > 0)                 dm.moveMatrixToLeft(matrix); //{ dm.moveMatrixToLeft(matrix);}
-        if (found==(-1) || (an.getIfAnimIsEnd() && action==19)){    an.reset();dsl("Entro a reset");strOption = "";action = 0;}
-    }
-
-    if (found==(-1) || (dm.canAddChar() && an.getIfAnimIsEnd())){   found=0;getNextChar = true;}
-
-    difTime = time - lastTime;
-    */
 
 }
