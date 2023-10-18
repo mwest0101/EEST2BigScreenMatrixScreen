@@ -21,12 +21,12 @@ MatrizLed pantalla;
 */
 
 // String inputString2 = "Bienvenidos a la EEST Nº2  de Junin Buenos Aires 2023";
-//String inputString2 = "a:efe1|a:efe2|a:efe3|a:efe4|a:efe5|a:efe6|a:efe7|a:tec1|a:tec2|a:tec3|a:tec4|a:tec5|a:tec6|a:tec7|E.E.S.T. Nº2";
+String inputString2 = "a:efe1|a:efe2|a:efe3|a:efe4|a:efe5|a:efe6|a:efe7|a:tec1|a:tec2|a:tec3|a:tec4|a:tec5|a:tec6|m:E.E.S.T. Nº2";
 // String inputString2 = "(a:efe1|a:efe2|a:efe3|a:efe4|a:efe5|a:efe6|a:efe7|tec1|tec2|tec3|tec4|tec5|tec6)E.E.S.T. Nº2";
 // String inputString2 = "a:efe1;x:1;v:2|a:efe2;x:3;v:4|m:tést de, texto|a:efe1;x:4;v:2";
 // String inputString2 = "(a:efe333|x:2|v:3|a:efe1|a:efe333|a:efe2)E.E.S.T. Nº2";
  //String inputString2 = "a:efe1|m:E.E.S.T. Nº2";
-String inputString2 = "a:efe2|m:E.";
+//String inputString2 = "a:efe2|m:E.";
 // String inputString2 = "(a:efe1)E.E.S.T. Nº2";
 // String inputString2 = "abcdefghijklmnopqrstuvwxyz01234";
 // String inputString2 = "Mauricio Pablo West";
