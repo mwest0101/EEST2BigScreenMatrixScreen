@@ -33,7 +33,7 @@
   //#define WAIT_TIME_LOOP    250000;
   //#define WAIT_TIME_LOOP    50000;
   //#define WAIT_TIME_LOOP    500000;
-  #define WAIT_TIME_LOOP    200000;
+  #define WAIT_TIME_LOOP    40000;
   #define MARQUE_SEPARATOR " ";
   
   #define DEFAULT_VELOCITY 5;
