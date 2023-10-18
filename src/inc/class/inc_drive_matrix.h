@@ -42,7 +42,7 @@ class DriveMatrix {
   void moveMatrixToLeft(MatrixClass& matrix);
   int getPosLastChar();
   bool getIfIsStringEnd();
-  bool setIfIsStringEnd(bool status);
+  void setIfIsStringEnd(bool status);
   bool canAddChar();
   bool isAtTheEnd();
   void setCanAddChar(bool value);

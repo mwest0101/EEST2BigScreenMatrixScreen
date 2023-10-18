@@ -55,8 +55,8 @@ void DriveMatrix::ResetInitPosMatrix() {
 //------------Function------------------------------------------------
 void DriveMatrix::AddConsToMatrix(MatrixClass& matrix, VectorClass& aIntCharMatrix, int caracter) {
 
-
-  dsis("AddConsToMatrix");
+  dss();
+  dsl("AddConsToMatrix");
   // ResetInitPosMatrix(); //sacar esto una vez probado que funciona
 
   int value = 0;
@@ -150,7 +150,7 @@ void DriveMatrix::moveMatrixToLeft(MatrixClass& matrix) {
   if (this->totPosX < MATRIX_WIDTH) {
     this->vCanAddChar = true;
   }
-  if (this->totPosX < MATRIX_WIDTH) {
+  if (this->totPosX <1) {
     this->IsStringEnd = true;
   }
   
@@ -166,11 +166,10 @@ bool DriveMatrix::getIfIsStringEnd() {
 
 
 }
-bool DriveMatrix::setIfIsStringEnd(bool status) {
+void DriveMatrix::setIfIsStringEnd(bool status) {
  this->IsStringEnd=status;
-
-
 }
+
 void DriveMatrix::setCanAddChar(bool value) {
   this->vCanAddChar = value;
 }
