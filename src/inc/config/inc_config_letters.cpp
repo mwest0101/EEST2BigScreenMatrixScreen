@@ -139,7 +139,7 @@ void getCharMatrix(VectorClass &aIntCharMatrix,int character){
       case   (33): convProgToArray(aIntCharMatrix,C_LET_sigExcCi,(sizeof(C_LET_sigExcCi)/2));dsl("Letter=!");break; 
       case (-132): convProgToArray(aIntCharMatrix,C_LET_num,(sizeof(C_LET_num)/2));dsl("Letter=º");break; 
       default:
-        convProgToArray(aIntCharMatrix,C_LET_ESP,(sizeof(C_LET_ESP)/2));dsl("Letter= ");break;
+        convProgToArray(aIntCharMatrix,C_LET_ESP,(sizeof(C_LET_ESP)/2));dsl("Letter=ESP");break;
  		    dsl("========================================================");
         dsl("==========Error=no encontrado el valor==================");
         dsl(character);

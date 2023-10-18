@@ -26,7 +26,7 @@ MatrizLed pantalla;
 // String inputString2 = "a:efe1;x:1;v:2|a:efe2;x:3;v:4|m:tést de, texto|a:efe1;x:4;v:2";
 // String inputString2 = "(a:efe333|x:2|v:3|a:efe1|a:efe333|a:efe2)E.E.S.T. Nº2";
  //String inputString2 = "a:efe1|m:E.E.S.T. Nº2";
- String inputString2 = "a:efe2|m:E.";
+String inputString2 = "a:efe2|m:E.";
 // String inputString2 = "(a:efe1)E.E.S.T. Nº2";
 // String inputString2 = "abcdefghijklmnopqrstuvwxyz01234";
 // String inputString2 = "Mauricio Pablo West";
@@ -90,7 +90,7 @@ String lastStrToShow = "";
 //String inputString2 = "a:aefe1";
 String option = "";
 int foundAnim = 0;
-int contLoop=0;
+int contLoop = 0;
 
 
 void setup() {
@@ -178,74 +178,77 @@ void loop() {
     //vecStrOne.print();
 
 //Test de escirtura con teclado mecanico
+    
+    if (difTime >= waitTime) {
+        
+        if (option == "m" && (lastStrToShow != text)) {
+            dsl("-->Step 02<--");
+            dm.fillArrrayOfChars(vecChar, text);
+            lastStrToShow = text;
 
-
-    time = micros();
-    if (option == "m" && (lastStrToShow != text)) {
-        dsl("-->Step 02<--");
-        dm.fillArrrayOfChars(vecChar, text);
-        lastStrToShow = text;
-
-    }
-    //--------------------------------------------------------------------
-    // Si la opcion es marquee y se puede agregar un caracter a la matriz 
-    // lo agrega    
-    if (option == "m" && dm.canAddChar() && contCharAdded<vecChar.getSize()) {
-        dsl("-->Step 03<--");
-        ds("contCharAdded=");dsl(contCharAdded);
-        aIntCharMatrix.clear();
-        getCharMatrix(aIntCharMatrix, vecChar.get(contCharAdded));        
-        dm.AddConsToMatrix(matrix, aIntCharMatrix, vecChar.get(contCharAdded));
-        dm.setCanAddChar(false);
-        contCharAdded++;
-    }
-    //--------------------------------------------------------------------
-    // si la opcion es marquee y se puede mover se mueve la matriz hacia 
-    // la izquierda hasta que llega a 0
-    ds5("option=");ds5l(option);
-
-
-    if (option == "m") {
-        dsl("-->Step 04<--");
-        matrix.print();
-        if (dm.getPosLastChar() > 0){
-             dm.GetFrame(matrix, aFrame);
-             dm.moveMatrixToLeft(matrix);
-             ds("dm.getPosLastChar()=");dsl(dm.getPosLastChar());
         }
-        dsl("Paso m por acá->m 1");
-    }
-    
-    ds5("an.getIfAnimIsEnd()=");ds5l(an.getIfAnimIsEnd());
+        //--------------------------------------------------------------------
+        // Si la opcion es marquee y se puede agregar un caracter a la matriz 
+        // lo agrega    
+        if (option == "m" && dm.canAddChar() && contCharAdded < vecChar.getSize()) {
+            dsl("-->Step 03<--");
+            ds("contCharAdded=");dsl(contCharAdded);
+            aIntCharMatrix.clear();
+            getCharMatrix(aIntCharMatrix, vecChar.get(contCharAdded));
+            dm.AddConsToMatrix(matrix, aIntCharMatrix, vecChar.get(contCharAdded));
+            dm.setCanAddChar(false);
+            contCharAdded++;
+        }
+        //--------------------------------------------------------------------
+        // si la opcion es marquee y se puede mover se mueve la matriz hacia 
+        // la izquierda hasta que llega a 0
+        ds5("option=");ds5l(option);
 
-    if (option == "a" && !an.getIfAnimIsEnd()) {
-        dsl("-->Step 05<--");
-        foundAnim = an.getAnim(aFrame, effectOption);
-        dsl("Paso m por acá->a 2");
-    }
-    
-    if (option=="a" || option=="m"){
-        dsl("-->Step 06<--");
-        sm.PrintLedMatrix(aFrame, aLastFrame, vecPins);
-        dsl("Paso m por acá-> 3");
-    }
-    ds5(" dm.getIfIsStringEnd()=");ds5l(dm.getIfIsStringEnd());
-    ds5(" an.getIfAnimIsEnd()=");ds5l(an.getIfAnimIsEnd());
-    
-    
-    if ((contCharAdded>=vecChar.getSize() && dm.getIfIsStringEnd()) || an.getIfAnimIsEnd()){
-        dsl("-->Step 07<--");
 
-        option ="";
-        an.reset();
-        dm.ResetInitPosMatrix();
-        dm.setIfIsStringEnd(false);
-        matrix.clear();
-        contCharAdded=0;
-        dsl("Paso m por acá-> 4");
-    }
+        if (option == "m") {
+            dsl("-->Step 04<--");
+            matrix.print();
+            if (dm.getPosLastChar() > 0) {
+                dm.GetFrame(matrix, aFrame);
+                dm.moveMatrixToLeft(matrix);
+                ds("dm.getPosLastChar()=");dsl(dm.getPosLastChar());
+            }
+            dsl("Paso m por acá->m 1");
+        }
 
-    
+        ds5("an.getIfAnimIsEnd()=");ds5l(an.getIfAnimIsEnd());
+
+        if (option == "a" && !an.getIfAnimIsEnd()) {
+            dsl("-->Step 05<--");
+            foundAnim = an.getAnim(aFrame, effectOption);
+            dsl("Paso m por acá->a 2");
+        }
+
+        if (option == "a" || option == "m") {
+            dsl("-->Step 06<--");
+            sm.PrintLedMatrix(aFrame, aLastFrame, vecPins);
+            dsl("Paso m por acá-> 3");
+        }
+        ds5(" dm.getIfIsStringEnd()=");ds5l(dm.getIfIsStringEnd());
+        ds5(" an.getIfAnimIsEnd()=");ds5l(an.getIfAnimIsEnd());
+
+
+        if ((contCharAdded >= vecChar.getSize() && dm.getIfIsStringEnd()) || an.getIfAnimIsEnd()) {
+            dsl("-->Step 07<--");
+
+            option = "";
+            an.reset();
+            dm.ResetInitPosMatrix();
+            dm.setIfIsStringEnd(false);
+            matrix.clear();
+            contCharAdded = 0;
+            dsl("Paso m por acá-> 4");
+        }
+        lastTime=time;
+    }
+    time = micros();
+    difTime = time - lastTime;
+
 
 
 
