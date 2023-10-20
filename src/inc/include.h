@@ -3,6 +3,8 @@
 #ifndef _INC_INCLUDES_H_
   #define _INC_INCLUDES_H_
   #include <Arduino.h>  
+  #include <SoftwareSerial.h>
+
   #include "config/inc_config.h"
   #include "config/inc_config_debugSerial.h"
   #include "config/inc_config_tetris.h"  

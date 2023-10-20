@@ -26,7 +26,8 @@ MatrizLed pantalla;
 // String inputString2 = "a:efe1;x:1;v:2|a:efe2;x:3;v:4|m:tést de, texto|a:efe1;x:4;v:2";
 // String inputString2 = "(a:efe333|x:2|v:3|a:efe1|a:efe333|a:efe2)E.E.S.T. Nº2";
  //String inputString2 = "a:efe1|m:E.E.S.T. Nº2";
-String inputString2 = "a:efe1;v:1;r:2|a:pac2|a:efe2;r:10;v:2|m:Escuela de educacion tecnica;v:5";
+//String inputString2 = "a:efe1;v:1;r:2|a:pac2|a:efe2;r:10;v:2|m:Escuela de educacion tecnica;v:5";
+String inputString2 = "a:efe1;v:1;r:2|m:Original";
 // String inputString2 = "(a:efe1)E.E.S.T. Nº2";
 // String inputString2 = "abcdefghijklmnopqrstuvwxyz01234";
 // String inputString2 = "Mauricio Pablo West";
@@ -77,8 +78,12 @@ unsigned long time = 0;
 unsigned long lastTime = 0;
 unsigned long difTime = 0;
 unsigned long waitTime = 0;
-int repeatloop=0;
-int contRepeatLoop=0;
+
+unsigned long lastTime2 = 0;
+unsigned long difTime2 = 0;
+
+int repeatloop = 0;
+int contRepeatLoop = 0;
 VectorClass vecPins(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 VectorClass vecChar(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 VectorClass aIntCharMatrix(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
@@ -88,12 +93,15 @@ VectorClass aLastFrame(36, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 MatrixClass matrix(BUILD_MATRIX_ROWS, BUILD_MATRIX_COLS, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 
 String lastStrToShow = "";
+String BTstrReceived = "";
+String lastBTstrReceived = "";
 //String inputString2 = "a:aefe1;x:1;v:2|m:tést de, texto";
 //String inputString2 = "a:aefe1";
 String option = "";
 int foundAnim = 0;
 int contLoop = 0;
-unsigned long loopVelocity=0;
+unsigned long loopVelocity = 0;
+SoftwareSerial BTSerial(52,53); 
 
 void setup() {
     time = micros();
@@ -101,32 +109,37 @@ void setup() {
     difTime = WAIT_TIME_LOOP;
     waitTime = WAIT_TIME_LOOP;
 
-#ifndef WAIT_TIME_LOOP
-#define WAIT_TIME_LOOP 500000
-#endif
+    #ifndef WAIT_TIME_LOOP
+    #define WAIT_TIME_LOOP 500000
+    #endif
+
+    
+    #ifdef DEBUG_SERIAL
+        Serial.begin(9600);
+    #endif
+    
+
+    //Serial.begin(9600);
+    BTSerial.begin(9600);
+
+        SoftwareSerial BTSerial(52, 53);  //10 RX, 11 tx
 
 
-#ifdef DEBUG_SERIAL
-    Serial.begin(9600);
-#endif
+    #ifdef DEBUG
+        debug_init();
+    #endif
+    #ifdef IS_LCDSCREEN
+        pantalla.begin(12, 11, 10, 1); // dataPin, clkPin, csPin, numero de matrices de 8x8
+        pantalla.setIntensidad(1);
+    #endif
+        sm = ShowMatrix();
+        dm = DriveMatrix();
+        an = AnimManager();
 
-
-
-#ifdef DEBUG
-    debug_init();
-#endif
-#ifdef IS_LCDSCREEN
-    pantalla.begin(12, 11, 10, 1); // dataPin, clkPin, csPin, numero de matrices de 8x8
-    pantalla.setIntensidad(1);
-#endif
-    sm = ShowMatrix();
-    dm = DriveMatrix();
-    an = AnimManager();
-
-#ifdef IS_LCDSCREEN
-    pantalla.borrar();
-    sm.setPantalla(pantalla);
-#endif
+    #ifdef IS_LCDSCREEN
+        pantalla.borrar();
+        sm.setPantalla(pantalla);
+    #endif
     time = micros();
 
     convProgToArray(vecPins, C_Pins, (sizeof(C_Pins) / 2));
@@ -134,7 +147,7 @@ void setup() {
 
 
     difTime = waitTime;
-    loopVelocity=waitTime*DEFAULT_VELOCITY;
+    loopVelocity = waitTime * DEFAULT_VELOCITY;
 
     ds("loopVelocity=");dsl(loopVelocity);
     VectorClassString vecStrOne(0);
@@ -143,27 +156,54 @@ void setup() {
 
 // Secuencia de la matriz
 void loop() {
+
     dsd();
     dsl("---LOOP---LOOP---LOOP---LOOP---LOOP---LOOP---LOOP---LOOP---");
     dsd();
     dss();
+    char charBT;
     ds("contLoop=");dsl(contLoop);
     contLoop++;
+    if (BTSerial.available()) {// si hay informacion disponible desde modulo
+        dsd();
+        dsd();
+        dss();
+        dsl("Capto datos de bluethot--------------------------------");
+        charBT=BTSerial.read();
+        Serial.write(charBT); // lee Bluetooth y envia a monitor serial de Arduino
+        BTstrReceived+=charBT;
+        //BTstrReceived=String(tempStrBluethoot);
+    }
+   if((difTime2>TIME_TO_GET_BT) && (lastBTstrReceived!=BTstrReceived) && (BTstrReceived!="")){//Asigno los datos recibidos por bluethot al string de efectos por defecto
+        Serial.println("------------------------------");
+        inputString2=BTstrReceived;
+        lastBTstrReceived=BTstrReceived;
+        repeatloop=1; 
+        Serial.println("Nuevo String");
+        Serial.println(BTstrReceived);
+        BTstrReceived="";   
+        lastTime2 = time;
+    }
+ 
+    /*
+    if (Serial.available()){ // si hay informacion disponible desde el monitor serial
+        BTSerial.write(Serial.read()); // lee monitor serial y envia a Bluetooth
+    }*/
 
-    if (contRepeatLoop>=repeatloop) {
-        contRepeatLoop=0;
-        option == ""
-        dsl("-->Step 01<--");
+    if (contRepeatLoop >= repeatloop) {
+        contRepeatLoop = 0;
+        option == "";
+            dsl("-->Step 01<--");
         proccesAction(inputString2, option, effectOption, text, velocity, repeat);
-        loopVelocity=waitTime*velocity;
-        repeatloop=repeat;
+        loopVelocity = waitTime * velocity;
+        repeatloop = repeat;
     }
     //vecStrOne.print();
 
 //Test de escirtura con teclado mecanico
-    
+
     if (difTime >= loopVelocity) {
-        
+
         if (option == "m" && (lastStrToShow != text)) {
             dsl("-->Step 02<--");
             dm.fillArrrayOfChars(vecChar, text);
@@ -228,10 +268,11 @@ void loop() {
             dsl("Paso m por acá-> 4");
             contRepeatLoop++;
         }
-        lastTime=time;
+        lastTime = time;
     }
-    
+
     time = micros();
     difTime = time - lastTime;
+    difTime2 = time - lastTime2;
 
 }
