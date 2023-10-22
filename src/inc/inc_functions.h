@@ -14,7 +14,7 @@ String concParamsOfString(char charReaded,String strOption,int &action);
 void proccesAction(String InString,String &option,String &effectOption,String &text,int &velocity,int &repeat);
 
 void updateStateAndEffect(VectorClassString &vecStrOne, String &option,String &effectOption, String &text, int &velocity, int &repeat);
-
+String getBluetoot(SoftwareSerial &BTSerial);
 
 //int **createMatrix(int rows,int cols);
 //int selectRandom(long[],int);

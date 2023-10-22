@@ -307,29 +307,74 @@ void updateStateAndEffect(VectorClassString& vecStrOne, String& option, String& 
   }
 }
 
-/*
-String concParamsOfString(char charReaded,String param,int &action)
-{
+String getBluetoot(SoftwareSerial &BTSerial){  
+  //static unsigned long time = 0;
 
-  if (charReaded == ':')
-  {
+  //static unsigned long difTime = 0;
+  //static unsigned long lastRead = 0;
+  //static unsigned long acumTime = 0;
+  //float promTime = 0.0;
+  static unsigned long cont= 0;
+  static String strRetrun="";
+  static String tempStr="";
+  static bool onePass=false;
+  char charBT='\0';
 
-    param = "";
-    action = 10;
-    //charReaded++;
-  }else if (action == 10 || action ==11){
-
-    param = param + charReaded;
-    dss();dsl("Concatena:");ds("strOption:");dsl(strOption);
-    ds("Entre a concatenacion de efectos ");ds(" charReaded: ");dsl(charReaded);
-    ds(" strOption: ");dsl(strOption);
-    action=11;
-
-  }else if ((charReaded == ')' || charReaded == ':') && action==11){
-    dss();dsl("se encuentra )");ds(" charReaded: ");dsl(charReaded);
-    action = 19;
+  //time = micros();  
+  
+  strRetrun="";
+  //Serial.println("Antes de tomar caracter");
+  if (BTSerial.available()) {// si hay informacion disponible desde modulo
+        //dsd();dsd();dss();dsl("Capto datos de bluethot--------------------------------");
+   
+      charBT=BTSerial.read();
+      //Serial.write(charBT); // lee Bluetooth y envia a monitor serial de Arduino
+      tempStr+=charBT;         
+      //Serial.print("getChar:");Serial.println(tempStr);
+      //acumTime=acumTime+(time-lastRead);
+      
+      cont++;
+      //promTime=((float)acumTime/(float)cont);
+      //lastRead=time;
+      
+      onePass=true;
+      //difTime=time-lastRead;  
+  }else if(onePass){
+    
+    //-descomentar-// difTime=time-lastRead;
+    //if(difTime!=TIME_TO_GET_BT && onePass) {
+    //if(time>((unsigned long)(promTime*2)) && onePass) {
+        strRetrun=tempStr;
+        Serial.println("Nuevo String");Serial.println(strRetrun);      
+        onePass=false;
+        tempStr="";
+    //}
   }
+  return strRetrun; 
+}
 
-  return param;
-
-}*/
+/*
+//    if((difTime>(promTime+TIME_TO_GET_BT)) && (lastBTstrReceived==BTstrReceived)){
+//   }else if((difTime2>TIME_TO_GET_BT) && (lastBTstrReceived!=BTstrReceived) && (BTstrReceived!="")){//Asigno los datos recibidos por bluethot al string de efectos por defecto
+      Serial.println("");
+      Serial.println("------------------------------");
+      
+      inputString2=BTstrReceived;
+      lastBTstrReceived=BTstrReceived;
+      
+      Serial.println("Nuevo String");
+      Serial.println("BTstrReceived: ");Serial.println(BTstrReceived);
+      bandStrReset=true;   
+      lastTime2 = time;
+      repeatloop=1; 
+      an.reset();
+      dm.ResetInitPosMatrix();
+      dm.setIfIsStringEnd(false);
+      dm.setCanAddChar(true);
+       
+      option="";
+      matrix.clear();
+      contCharAdded = 0;
+    }
+ 
+*/
