@@ -11,8 +11,8 @@ void strToVector(String strIng,String *aStrsParam,String *aStrsValor);
 String concParamsOfString(char charReaded,String strOption,int &action);
 //String getOneGroup(String InString, int& stateAction) ;
 //void proccesAction(oneGroup,&effectOption,&text,&velocity,&repeat);
-void proccesAction(String InString,String &option,String &effectOption,String &text,int &velocity,int &repeat);
-
+//void proccesAction(String InString,String &option,String &effectOption,String &text,int &velocity,int &repeat);
+void proccesAction(String InString, VectorClassString& vecStrOne);
 
 void updateStateAndEffect(VectorClassString& vecStrOne, String& option, String& effectOption, String& text, 
                           int& velocity, int& repeat,int& globalVelocity,String& globalStatus);

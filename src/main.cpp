@@ -85,6 +85,10 @@ String text = "";
 
 int repeat = DEFAULT_REPEAT;
 int velocity = DEFAULT_VELOCITY;
+int globalVelocity=0;
+String globalStatus="play";
+
+
 int contCharAdded = 0;
 
 unsigned long time = 0;
@@ -109,6 +113,8 @@ VectorClass vecChar(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 VectorClass aIntCharMatrix(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 VectorClass aFrame(36, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 VectorClass aLastFrame(36, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
+//VectorClassString vecStrOne(36, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
+VectorClassString vecStrOne(0);
 
 MatrixClass matrix(BUILD_MATRIX_ROWS, BUILD_MATRIX_COLS, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 
@@ -174,7 +180,7 @@ void setup() {
     loopVelocity = waitTime * DEFAULT_VELOCITY;
 
     ds("loopVelocity=");dsl(loopVelocity);
-    VectorClassString vecStrOne(0);
+    //VectorClassString vecStrOne(0);
 
 }
 
@@ -195,7 +201,23 @@ void loop() {
     if(strBt!="") {
         strBackup=inputString;
         inputString=strBt;
-        proccesAction(inputString, option, effectOption, text, velocity, repeat);
+        vecStrOne.clear();
+        proccesAction(inputString, vecStrOne);        
+        updateStateAndEffect(vecStrOne,option,effectOption,text,velocity,repeat,globalVelocity,globalStatus);
+        proccesAction(inputString, vecStrOne);        
+        updateStateAndEffect(vecStrOne,option,effectOption,text,velocity,repeat,globalVelocity,globalStatus);
+        proccesAction(inputString, vecStrOne);        
+        updateStateAndEffect(vecStrOne,option,effectOption,text,velocity,repeat,globalVelocity,globalStatus);
+            
+            
+            
+            
+
+        //updateStateAndEffect(vecStrOne, option, effectOption, text, velocity, repeat);
+      
+    
+
+        //proccesAction(inputString, option, effectOption, text, velocity, repeat);
         if  (option=="ip" || option=="iv"){
             ds("Es velocidad o reproduccion");
         }
