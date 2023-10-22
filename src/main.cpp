@@ -44,8 +44,6 @@ MatrizLed pantalla;
 #endif
 */
 
-//String inputString2 = "a:efe1|a:efe2|a:efe3|a:efe4|a:efe5|a:efe6|a:efe7|a:tec1|a:tec2|a:tec3|a:tec4|a:tec5|a:tec6|m:E.E.S.T. Nº2";
-String inputString2 = "a:efe1;v:1;r:2|m:Original";
 
 /*
 String lastStrToShow = "";
@@ -117,8 +115,11 @@ MatrixClass matrix(BUILD_MATRIX_ROWS, BUILD_MATRIX_COLS, VECTOR_MIN_VALUE, VECTO
 String lastStrToShow = "";
 String BTstrReceived = "";
 String lastBTstrReceived = "";
-//String inputString2 = "a:aefe1;x:1;v:2|m:tést de, texto";
-//String inputString2 = "a:aefe1";
+//String inputString = "a:aefe1;x:1;v:2|m:tést de, texto";
+//String inputString = "a:aefe1";
+//String inputString = "a:efe1|a:efe2|a:efe3|a:efe4|a:efe5|a:efe6|a:efe7|a:tec1|a:tec2|a:tec3|a:tec4|a:tec5|a:tec6|m:E.E.S.T. Nº2";
+String inputString = "a:efe1;v:1;r:2|m:Original";
+String strBackup="";
 String option = "";
 int foundAnim = 0;
 int contLoop = 0;
@@ -190,18 +191,27 @@ void loop() {
 
 
 
-    /*
-    DESCOMENTAR ESTO
+    
+    if(strBt!="") {
+        strBackup=inputString;
+        inputString=strBt;
+        proccesAction(inputString, option, effectOption, text, velocity, repeat);
+        if  (option=="ip" || option=="iv"){
+            ds("Es velocidad o reproduccion");
+        }
+    }
+    
+        /*
     if (contRepeatLoop >= repeatloop) {
         contRepeatLoop = 0;
         option == "";
             dsl("-->Step 01<--");
-        proccesAction(inputString2, option, effectOption, text, velocity, repeat);
+        proccesAction(inputString, option, effectOption, text, velocity, repeat);
         loopVelocity = waitTime * velocity;
         repeatloop = repeat;
-    }
-    FIN DESCOMENTAR ESTO
-    */
+    }*/
+    
+    
 
     //vecStrOne.print();
 

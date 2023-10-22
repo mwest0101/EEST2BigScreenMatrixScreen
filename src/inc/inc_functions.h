@@ -13,7 +13,9 @@ String concParamsOfString(char charReaded,String strOption,int &action);
 //void proccesAction(oneGroup,&effectOption,&text,&velocity,&repeat);
 void proccesAction(String InString,String &option,String &effectOption,String &text,int &velocity,int &repeat);
 
-void updateStateAndEffect(VectorClassString &vecStrOne, String &option,String &effectOption, String &text, int &velocity, int &repeat);
+
+void updateStateAndEffect(VectorClassString& vecStrOne, String& option, String& effectOption, String& text, 
+                          int& velocity, int& repeat,int& globalVelocity,String& globalStatus);
 String getBluetoot(SoftwareSerial &BTSerial);
 
 //int **createMatrix(int rows,int cols);

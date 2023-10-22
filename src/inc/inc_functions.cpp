@@ -193,7 +193,8 @@ String getOneGroup(String InString, int& stateAction) {
   return strResult;
 }*/
 
-void proccesAction(String InString, String& option, String& effectOption, String& text, int& velocity, int& repeat) {
+//void proccesAction(String InString, String& option, String& effectOption, String& text, int& velocity, int& repeat) {
+  void proccesAction(String InString, VectorClassString vecStrOne) {
   text = "";
   effectOption = "";
   velocity = DEFAULT_VELOCITY;
@@ -218,40 +219,20 @@ void proccesAction(String InString, String& option, String& effectOption, String
   vecStr.print();
   if (vecStr.getSize() > 0) {
     splitStringToArrayNoEmpty(vecStrParam, vecStr.get(contParam), ";");
-    //ds5l("Despues del separador ; ");
-    //vecStrParam.print();
 
-    // if (vecStrParam.getSize() > 1)
-    // {
 
     for (int i = 0; i < vecStrParam.getSize(); i++) {
       vecStrOne.clear();
       splitStringToArrayNoEmpty(vecStrOne, vecStrParam.get(i), ":");
-  //    ds5l("Despues del separador : ");
-//      vecStrOne.print();
+
 
       if (vecStrOne.getSize() > 0) {
         updateStateAndEffect(vecStrOne, option, effectOption, text, velocity, repeat);
       }
     }
-    // }
-    // else
-    // {
-    //   splitStringToArrayNoEmpty(vecStrOne, vecStr.get(contParam), ":");
-    //   // ds5l("Despues del separador : 2 ");
-    //   // vecStrOne.print();
-    //   updateStateAndEffect(vecStrOne,option, effectOption, text, velocity, repeat);
-    // }
-  }
-  /*
 
-  else
-  {
-    splitStringToArrayNoEmpty(vecStrOne, InString, ":");
-    // ds5l("Despues del separador : 3 ");
-    // vecStrOne.print();
-    updateStateAndEffect(vecStrOne,option, effectOption, text, velocity, repeat);
-  }*/
+  }
+
   ds5l(" ");
   ds5("option=[");
   ds5(option);
@@ -276,7 +257,8 @@ void proccesAction(String InString, String& option, String& effectOption, String
     contParam = 0;
 }
 
-void updateStateAndEffect(VectorClassString& vecStrOne, String& option, String& effectOption, String& text, int& velocity, int& repeat) {
+void updateStateAndEffect(VectorClassString& vecStrOne, String& option, String& effectOption, String& text, 
+                          int& velocity, int& repeat,int& globalVelocity,String& globalStatus) {
   String optionTemp = "";
   String valueStr = "";
   optionTemp = vecStrOne.get(0);
@@ -285,10 +267,15 @@ void updateStateAndEffect(VectorClassString& vecStrOne, String& option, String& 
   if (optionTemp == "a") {
     option = vecStrOne.get(0);
     effectOption = valueStr;
-    
+
     // ds5(" a=");
     // ds5(valueStr);
   }
+  if (optionTemp == "ip") {
+    option = vecStrOne.get(0);
+    globalStatus = valueStr;    
+  }
+  
   if (optionTemp == "r") {
     repeat = valueStr.toInt();
     // ds5(" x=");
@@ -307,74 +294,27 @@ void updateStateAndEffect(VectorClassString& vecStrOne, String& option, String& 
   }
 }
 
-String getBluetoot(SoftwareSerial &BTSerial){  
-  //static unsigned long time = 0;
+String getBluetoot(SoftwareSerial& BTSerial) {
 
-  //static unsigned long difTime = 0;
-  //static unsigned long lastRead = 0;
-  //static unsigned long acumTime = 0;
-  //float promTime = 0.0;
-  static unsigned long cont= 0;
-  static String strRetrun="";
-  static String tempStr="";
-  static bool onePass=false;
-  char charBT='\0';
 
-  //time = micros();  
-  
-  strRetrun="";
-  //Serial.println("Antes de tomar caracter");
-  if (BTSerial.available()) {// si hay informacion disponible desde modulo
-        //dsd();dsd();dss();dsl("Capto datos de bluethot--------------------------------");
-   
-      charBT=BTSerial.read();
-      //Serial.write(charBT); // lee Bluetooth y envia a monitor serial de Arduino
-      tempStr+=charBT;         
-      //Serial.print("getChar:");Serial.println(tempStr);
-      //acumTime=acumTime+(time-lastRead);
-      
-      cont++;
-      //promTime=((float)acumTime/(float)cont);
-      //lastRead=time;
-      
-      onePass=true;
-      //difTime=time-lastRead;  
-  }else if(onePass){
-    
-    //-descomentar-// difTime=time-lastRead;
-    //if(difTime!=TIME_TO_GET_BT && onePass) {
-    //if(time>((unsigned long)(promTime*2)) && onePass) {
-        strRetrun=tempStr;
-        Serial.println("Nuevo String");Serial.println(strRetrun);      
-        onePass=false;
-        tempStr="";
-    //}
+  static String strRetrun = "";
+  static String tempStr = "";
+  static bool onePass = false;
+  char charBT = '\0';
+  strRetrun = "";
+
+  if (BTSerial.available()) {
+    charBT = BTSerial.read();
+    tempStr += charBT;
+
+    onePass = true;
   }
-  return strRetrun; 
-}
+  else if (onePass) {
 
-/*
-//    if((difTime>(promTime+TIME_TO_GET_BT)) && (lastBTstrReceived==BTstrReceived)){
-//   }else if((difTime2>TIME_TO_GET_BT) && (lastBTstrReceived!=BTstrReceived) && (BTstrReceived!="")){//Asigno los datos recibidos por bluethot al string de efectos por defecto
-      Serial.println("");
-      Serial.println("------------------------------");
-      
-      inputString2=BTstrReceived;
-      lastBTstrReceived=BTstrReceived;
-      
-      Serial.println("Nuevo String");
-      Serial.println("BTstrReceived: ");Serial.println(BTstrReceived);
-      bandStrReset=true;   
-      lastTime2 = time;
-      repeatloop=1; 
-      an.reset();
-      dm.ResetInitPosMatrix();
-      dm.setIfIsStringEnd(false);
-      dm.setCanAddChar(true);
-       
-      option="";
-      matrix.clear();
-      contCharAdded = 0;
-    }
- 
-*/
+    strRetrun = tempStr;
+    ds("Nuevo String");dsl(strRetrun);
+    onePass = false;
+    tempStr = "";
+  }
+  return strRetrun;
+}
