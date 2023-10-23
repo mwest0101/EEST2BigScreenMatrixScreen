@@ -201,37 +201,24 @@ void loop() {
     if(strBt!="") {
         strBackup=inputString;
         inputString=strBt;
-        vecStrOne.clear();
         proccesAction(inputString, vecStrOne);        
         updateStateAndEffect(vecStrOne,option,effectOption,text,velocity,repeat,globalVelocity,globalStatus);
-        proccesAction(inputString, vecStrOne);        
-        updateStateAndEffect(vecStrOne,option,effectOption,text,velocity,repeat,globalVelocity,globalStatus);
-        proccesAction(inputString, vecStrOne);        
-        updateStateAndEffect(vecStrOne,option,effectOption,text,velocity,repeat,globalVelocity,globalStatus);
-            
-            
-            
-            
 
-        //updateStateAndEffect(vecStrOne, option, effectOption, text, velocity, repeat);
-      
-    
-
-        //proccesAction(inputString, option, effectOption, text, velocity, repeat);
-        if  (option=="ip" || option=="iv"){
-            ds("Es velocidad o reproduccion");
-        }
     }
     
-        /*
+        
     if (contRepeatLoop >= repeatloop) {
+        
         contRepeatLoop = 0;
         option == "";
             dsl("-->Step 01<--");
-        proccesAction(inputString, option, effectOption, text, velocity, repeat);
+  //      proccesAction(inputString, option, effectOption, text, velocity, repeat);
+        proccesAction(inputString, vecStrOne);        
+        updateStateAndEffect(vecStrOne,option,effectOption,text,velocity,repeat,globalVelocity,globalStatus);
+  
         loopVelocity = waitTime * velocity;
         repeatloop = repeat;
-    }*/
+    }
     
     
 
