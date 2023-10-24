@@ -155,141 +155,97 @@ String concParamsOfString(char charReaded, String strOption, int& action) {
   return strOption;
 }
 
-/*
-void remove(char *str, char findChar, char replaceChar) {
-  for (int i = 0; str[i] != '\0'; i++) {
-    if (str[i] == findChar) {
-      str[i] = replaceChar;
-    }
-  }
-}
-
-
-void splitStringWithVariosChar(VectorClassString& dataArray, String inputString, String delimiter) {
-  replaceCharInString(delimiter,'(','')
-  int commaIndex = inputString.indexOf(delimiter);
-
-  while (commaIndex != -1) {
-    dataArray.push(inputString.substring(0, commaIndex));
-    inputString = inputString.substring(commaIndex + 1);
-    commaIndex = inputString.indexOf(delimiter);
-  }
-  dataArray.push(inputString);
-}*/
-
-/*
-String getOneGroup(String InString, int& stateAction) {
-  static int contParam = 0;
-  VectorClassString vecStr(0);
-  String strResult = "";
-
-  //if (stateAction == 0) {
-  splitStringToArrayNoEmpty(vecStr, InString, "|");
-  stateAction++;
-  //}
-  strResult = vecStr.get(contParam);
-  contParam++;
-  if (contParam == vecStr.getSize()) contParam = 0;
-  return strResult;
-}*/
 
 //void proccesAction(String InString, String& option, String& effectOption, String& text, int& velocity, int& repeat) {
-  void proccesAction(String InString, VectorClassString& vecStrOne) {
-  // text = "";
-  // effectOption = "";
-  // velocity = DEFAULT_VELOCITY;
-  // repeat = DEFAULT_REPEAT;
-  // option = "";
+void proccesAction(String InString, VectorClassString &vecStrOne, int &sizeParams, int contParam) {
+
   VectorClassString vecStr(0);
-  // VectorClassString vecStrOne(0);
+
   VectorClassString vecStrParam(0);
-  static int contParam = 0;
+
   String strParam = "";
   String strOneParam = "";
-  // vecStrParam.clear();
-  // vecStr.clear();
-  // vecStrParam.clear();
-  // vecStrOne.clear();
-  dss();
-  //ds5("contParam=");
-  //ds5l(contParam);
-
   splitStringToArrayNoEmpty(vecStr, InString, "|");
-  //ds5l("Despues del separador | ");
-  
+
+  sizeParams=vecStr.getSize();
+
   if (vecStr.getSize() > 0) {
     splitStringToArrayNoEmpty(vecStrParam, vecStr.get(contParam), ";");
-    //vecStrParam.print();
     vecStrOne.clear();
     for (int i = 0; i < vecStrParam.getSize(); i++) {
-      //vecStrOne.clear();
       splitStringToArrayNoEmpty(vecStrOne, vecStrParam.get(i), ":");
-      //vecStrOne.print();
-
-      // if (vecStrOne.getSize() > 0) {
-      //   updateStateAndEffect(vecStrOne, option, effectOption, text, velocity, repeat);
-      // }*/
     }
 
   }
 
-  // ds5l(" ");
-  // ds5("option=[");ds5(option);ds5("] ");ds5("effectOption=[");ds5(effectOption);ds5("] ");ds5("text=[");ds5(text);ds5("] ");
-  // ds5("velocity=[");ds5(velocity);ds5("] ");ds5("repeat=[");ds5(repeat);ds5("] ");ds5(" contParam=[");ds5(contParam);ds5l("] ");
-  contParam++;
-  if (contParam >= vecStr.getSize())
-    contParam = 0;
 }
 
-void updateStateAndEffect(VectorClassString& vecStrOne, String& option, String& effectOption, String& text, 
-                          int& velocity, int& repeat,int& globalVelocity,String& globalStatus) {
+
+
+void updateStateAndEffect(VectorClassString &vecStrOne, String &option, String &effectOption, String &text,int &velocity, int &repeat, int &globalVelocity, String &globalStatus) {
   String value = "";
   String lastStrValue = "";
-  static int typeValue=0;
-  vecStrOne.print();
-  
-  if(vecStrOne.get(0) != "iv" && vecStrOne.get(0) != "ip"){
-      repeat = DEFAULT_REPEAT;
-      velocity = DEFAULT_VELOCITY;
-      option="";
-      effectOption="";
-      text="";
-      dsl("entro aca");
-  }else{
+  static int typeValue = 0;
+  //vecStrOne.print();
+
+  if (vecStrOne.get(0) != "iv" && vecStrOne.get(0) != "ip") {
+    repeat = DEFAULT_REPEAT;
+    velocity = DEFAULT_VELOCITY;
+    option = "";
+    effectOption = "";
+    text = "";
+    dsl("entro aca");
+  }
+  else {
     dsl("no entro aca");
   }
 
   for (int i = 0; i < vecStrOne.getSize(); i++) {
-    value = vecStrOne.get(i);    
+    value = vecStrOne.get(i);
     //dsl("paso por aca 0");
-   
+
     if (value == "a" || value == "m" || value == "r" || value == "v" || value == "ip" || value == "iv") {
-      if (value == "a" || value == "m" || value == "ip" || value == "iv"){
-        option = value;      
+      if (value == "a" || value == "m" || value == "ip" || value == "iv") {
+        option = value;
       }
       lastStrValue = value;
-      typeValue=1;
+      typeValue = 1;
       //dsl("paso por aca 1");
 
-    } else if(typeValue==1){
+    }
+    else if (typeValue == 1) {
       //dsl("paso por aca 2");
-      if(lastStrValue=="a"){effectOption=value;}
-      if(lastStrValue=="m"){text=value;}
-      if(lastStrValue=="v"){velocity=value.toInt();}
-      if(lastStrValue=="r"){repeat=value.toInt();}
-      if(lastStrValue=="ip"){globalStatus=value;}
-      if(lastStrValue=="iv"){globalVelocity=value.toInt();}
-      typeValue=0;
-      lastStrValue=value;
+      if (lastStrValue == "a") { effectOption = value; }
+      if (lastStrValue == "m") { text = value; }
+      if (lastStrValue == "v") { velocity = value.toInt(); }
+      if (lastStrValue == "r") { repeat = value.toInt(); }
+      if (lastStrValue == "ip") { globalStatus = value; }
+      if (lastStrValue == "iv") { globalVelocity = value.toInt(); }
+      typeValue = 0;
+      lastStrValue = value;
 
     }
-    
+
   }
   ds5l(" ");
   ds5("option=[");ds5(option);ds5("] ");ds5("effectOption=[");ds5(effectOption);ds5("] ");ds5("text=[");ds5(text);ds5("] ");
   ds5("velocity=[");ds5(velocity);ds5("] ");ds5("repeat=[");ds5(repeat);ds5("] ");
   ds5("globalVelocity=[");ds5(globalVelocity);ds5("] ");ds5("globalStatus=[");ds5(globalStatus);ds5l("] ");
 }
+void getAndSetParams(   String InString,        int &sizeParams, 
+                        int contParam,          String& option,
+                        String& effectOption,   String& text, 
+                        int& velocity,          int& repeat, 
+                        int& globalVelocity,    String& globalStatus){
+//void getAndSetParams(String InString,int& sizeParams, int &contParam, String& option,String& effectOption,String& text, int& velocity, int& repeat,int& globalVelocity,    String& globalStatus){
+
+  VectorClassString vecStrOne(0);
+  proccesAction(InString, vecStrOne,sizeParams, contParam);
+  vecStrOne.print();
+
+  updateStateAndEffect(vecStrOne, option, effectOption, text, velocity, repeat, globalVelocity, globalStatus);
+}
+
 
 String getBluetoot(SoftwareSerial& BTSerial) {
 
@@ -301,17 +257,26 @@ String getBluetoot(SoftwareSerial& BTSerial) {
   strRetrun = "";
 
   if (BTSerial.available()) {
+    
     charBT = BTSerial.read();
     tempStr += charBT;
-
+    //ds("Detect BT in: ");dsl(tempStr);
     onePass = true;
+    strRetrun="-1";
+    if (onePass && charBT=='\r' ) {
+      tempStr = tempStr.substring(0, tempStr.length() - 1);
+      strRetrun = tempStr;
+      ds("Nuevo String");dsl(strRetrun);
+      onePass = false;
+      tempStr = "";
+    }
   }
-  else if (onePass) {
-
-    strRetrun = tempStr;
-    ds("Nuevo String");dsl(strRetrun);
-    onePass = false;
-    tempStr = "";
-  }
+  //  else if (onePass && charBT=='\n' ) {
+  //   tempStr = tempStr.substring(0, tempStr.length() - 1);
+  //   strRetrun = tempStr;
+  //   ds("Nuevo String");dsl(strRetrun);
+  //   onePass = false;
+  //   tempStr = "";
+  // }
   return strRetrun;
 }
