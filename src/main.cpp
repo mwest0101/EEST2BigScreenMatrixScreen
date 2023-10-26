@@ -116,6 +116,8 @@ VectorClass vecChar(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 VectorClass aIntCharMatrix(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 VectorClass aFrame(36, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 VectorClass aLastFrame(36, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
+VectorClassString vecStr(0);
+
 //VectorClassString vecStrOne(36, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 VectorClassString vecStrFromBt(0);
 VectorClassString vecStrParam(0);
@@ -189,9 +191,9 @@ void setup() {
     ds("loopVelocity=");dsl(loopVelocity);
     //VectorClassString vecStrOne(0);
 
-    splitStringToArrayNoEmpty(vecStrParam, inputString, "|");
-
-
+    
+    proccesActionFull(inputString, vecStr,sizeParams);
+    vecStr.print();
 }
 
 // Secuencia de la matriz
@@ -222,7 +224,7 @@ void loop() {
     // strBt  es igual a  "-1" cuando esta armando el array
     // strBt  es difenrente de "" cuand se armo el array
         if(charBT=='$'){
-            vecStrFromBt.clear();
+            vecStr.clear();
         }
     if (strBt != "" && strBt != "-1") {
         dss();
@@ -241,7 +243,10 @@ void loop() {
         
         if (option == "a" || option == "m") {
             //inputString = strBt;
-            vecStrFromBt.push(strBt);
+            vecStr.push(strBt);
+        }else if(option == "iv" || option == "ip") {
+            ds("no se modifico vecStr:");
+            vecStr.print();
         }
 
         //ds("--->vecStrOne=");vecStrOne.print();
@@ -264,7 +269,8 @@ void loop() {
        strBt="";
     }
     if(charBT=='@'){
-        vecStrOne.print();
+        ds("Se modifico vecStr= ");vecStr.print();dsl();
+        vecStr.print();
     }
     //dsd();
     

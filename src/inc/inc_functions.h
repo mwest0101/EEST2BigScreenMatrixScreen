@@ -14,6 +14,7 @@ void strToVector(String strIng,String *aStrsParam,String *aStrsValor);
 //void proccesAction(String InString,String &option,String &effectOption,String &text,int &velocity,int &repeat);
 
 void proccesAction(String InString, VectorClassString& vecStrOne, int &sizeParams, int contParam);
+void proccesActionFull(String InString, VectorClassString &vecStr, int &sizeParams);
                     
 void updateStateAndEffect(VectorClassString& vecStrOne, String& option, String& effectOption, String& text, 
                           int& velocity, int& repeat,int& globalVelocity,String& globalStatus);

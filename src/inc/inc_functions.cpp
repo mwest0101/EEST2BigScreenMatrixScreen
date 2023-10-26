@@ -155,6 +155,10 @@ String concParamsOfString(char charReaded, String strOption, int& action) {
   return strOption;
 }*/
 
+void proccesActionFull(String InString, VectorClassString &vecStr, int &sizeParams) {  
+  splitStringToArrayNoEmpty(vecStr, InString, "|");
+  sizeParams=vecStr.getSize();
+}
 
 //void proccesAction(String InString, String& option, String& effectOption, String& text, int& velocity, int& repeat) {
 void proccesAction(String InString, VectorClassString &vecStrOne, int &sizeParams, int contParam) {
