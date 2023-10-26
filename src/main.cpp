@@ -118,6 +118,7 @@ VectorClass aFrame(36, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 VectorClass aLastFrame(36, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 //VectorClassString vecStrOne(36, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 VectorClassString vecStrFromBt(0);
+VectorClassString vecStrParam(0);
 
 MatrixClass matrix(BUILD_MATRIX_ROWS, BUILD_MATRIX_COLS, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 
@@ -188,6 +189,9 @@ void setup() {
     ds("loopVelocity=");dsl(loopVelocity);
     //VectorClassString vecStrOne(0);
 
+    splitStringToArrayNoEmpty(vecStrParam, inputString, "|");
+
+
 }
 
 // Secuencia de la matriz
@@ -229,9 +233,11 @@ void loop() {
         //dsl("strBt != "" -->Step 00<--");
         ds("strBt=");dsl(strBt);
         //ds("BT contParam=");ds(contParam);ds(" sizeParams=");dsl(sizeParams);
+        
         getAndSetParams(strBt,sizeParams,   0,    option,     effectOption, 
                          text,          velocity,     repeat,     globalVelocity, 
                          globalStatus);
+
         
         if (option == "a" || option == "m") {
             //inputString = strBt;
