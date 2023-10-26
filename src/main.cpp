@@ -193,7 +193,7 @@ void loop() {
     //dsf("---LOOP---LOOP---LOOP---LOOP---LOOP---LOOP---LOOP---LOOP---");
     //dsd();dsl("---LOOP---LOOP---LOOP---LOOP---LOOP---LOOP---LOOP---LOOP---");dsd();dss();
 
-    dsd();
+    //dsd();
     //ds("contLoop=");dsl(contLoop);
     contLoop++;
 
@@ -213,12 +213,14 @@ void loop() {
     */
     //dss();
     if (strBt != "" && strBt != "-1") {
+        dss();
         //    strBackup=inputString;
         // proccesAction(strBt, vecStrOne,contParam);
         // updateStateAndEffect(vecStrOne, option, effectOption, text, velocity, repeat, globalVelocity, globalStatus);
-        dss();
+        
         //dsl("strBt != "" -->Step 00<--");
-        ds("BT contParam=");ds(contParam);ds(" sizeParams=");dsl(sizeParams);
+        ds("strBt=");dsl(strBt);
+        //ds("BT contParam=");ds(contParam);ds(" sizeParams=");dsl(sizeParams);
         getAndSetParams(strBt,sizeParams,   0,    option,     effectOption, 
                          text,          velocity,     repeat,     globalVelocity, 
                          globalStatus);
@@ -241,11 +243,12 @@ void loop() {
         contParam++;
         if (contParam >= sizeParams) contParam = 0;
         */
+       strBt="";
     }
     //dsd();
     
     //Nuevo String|m:Ingrese Texto;r:1;v:5|iv:-1|iv:-2|iv:-1|iv:0|iv:1|iv:2|ip:Play|ip:Stop|ip:Play
-    
+    /* Quita esto
     if (contRepeat >= repeat && strBt != "-1") {
 
         
@@ -272,8 +275,8 @@ void loop() {
         contRepeat++;
     }
     
-
-
+    Quita esto
+   */
 
     //vecStrOne.print();
 

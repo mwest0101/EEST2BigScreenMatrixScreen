@@ -194,10 +194,10 @@ void updateStateAndEffect(VectorClassString &vecStrOne, String &option, String &
     option = "";
     effectOption = "";
     text = "";
-    dsl("entro aca");
+    //dsl("entro aca");
   }
   else {
-    dsl("no entro aca");
+    //dsl("no entro aca");
   }
 
   for (int i = 0; i < vecStrOne.getSize(); i++) {
@@ -241,7 +241,7 @@ void getAndSetParams(   String InString,        int &sizeParams,
 
   VectorClassString vecStrOne(0);
   proccesAction(InString, vecStrOne,sizeParams, contParam);
-  vecStrOne.print();
+  //vecStrOne.print();
 
   updateStateAndEffect(vecStrOne, option, effectOption, text, velocity, repeat, globalVelocity, globalStatus);
 }
@@ -261,14 +261,20 @@ String getBluetoot(SoftwareSerial& BTSerial) {
     charBT = BTSerial.read();
     tempStr += charBT;
     //ds("Detect BT in: ");dsl(tempStr);
+    //ds(charBT);
     onePass = true;
     strRetrun="-1";
-    if (onePass && charBT=='\r' ) {
+    if (onePass && charBT=='#' ) {
+      dsl();
       tempStr = tempStr.substring(0, tempStr.length() - 1);
       strRetrun = tempStr;
-      ds("Nuevo String");dsl(strRetrun);
+      ds("Nuevo String: ");dsl(strRetrun);
       onePass = false;
       tempStr = "";
+    }
+    if (charBT=='@' ) {
+      
+      ds("Fin transmission: ");ds("charBT=");dsl(charBT);
     }
   }
   //  else if (onePass && charBT=='\n' ) {
