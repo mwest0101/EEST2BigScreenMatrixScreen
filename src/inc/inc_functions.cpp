@@ -118,7 +118,7 @@ void strToVector(String strIng, String* aStrsParam, String* aStrsValor) {
     strtemp = strtemp + charTemp;
   }
 }
-
+/*
 String concParamsOfString(char charReaded, String strOption, int& action) {
 
   if (charReaded == '(') {
@@ -153,7 +153,7 @@ String concParamsOfString(char charReaded, String strOption, int& action) {
   }
 
   return strOption;
-}
+}*/
 
 
 //void proccesAction(String InString, String& option, String& effectOption, String& text, int& velocity, int& repeat) {
@@ -247,34 +247,33 @@ void getAndSetParams(   String InString,        int &sizeParams,
 }
 
 
-String getBluetoot(SoftwareSerial& BTSerial) {
+String getBluetoot(SoftwareSerial& BTSerial,char &charBT) {
 
 
   static String strRetrun = "";
   static String tempStr = "";
   static bool onePass = false;
-  char charBT = '\0';
+  //char charBT = '\0';
   strRetrun = "";
-
+  charBT='\0';
   if (BTSerial.available()) {
     
     charBT = BTSerial.read();
-    tempStr += charBT;
-    //ds("Detect BT in: ");dsl(tempStr);
-    //ds(charBT);
-    onePass = true;
-    strRetrun="-1";
-    if (onePass && charBT=='#' ) {
-      dsl();
-      tempStr = tempStr.substring(0, tempStr.length() - 1);
-      strRetrun = tempStr;
-      ds("Nuevo String: ");dsl(strRetrun);
-      onePass = false;
-      tempStr = "";
-    }
-    if (charBT=='@' ) {
-      
-      ds("Fin transmission: ");ds("charBT=");dsl(charBT);
+    if (charBT!='$' && charBT!='@'){
+      tempStr += charBT;
+      //ds("Detect BT in: ");dsl(tempStr);
+      //ds(charBT);
+      onePass = true;
+      strRetrun="-1";
+      if (onePass && charBT=='#' ) {
+        
+        dsd();
+        tempStr = tempStr.substring(0, tempStr.length() - 1);
+        strRetrun = tempStr;
+        ds("Nuevo String: ");dsl(strRetrun);
+        onePass = false;
+        tempStr = "";
+      }
     }
   }
   //  else if (onePass && charBT=='\n' ) {

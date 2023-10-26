@@ -117,7 +117,7 @@ VectorClass aIntCharMatrix(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 VectorClass aFrame(36, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 VectorClass aLastFrame(36, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 //VectorClassString vecStrOne(36, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
-VectorClassString vecStrOne(0);
+VectorClassString vecStrFromBt(0);
 
 MatrixClass matrix(BUILD_MATRIX_ROWS, BUILD_MATRIX_COLS, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 
@@ -135,7 +135,9 @@ int contLoop = 0;
 int loopVelocity = 0;
 SoftwareSerial BTSerial(52, 53);
 String strBt = "";
+char charBT='\0';
 int sizeParams=0;
+
 
 void setup() {
     time = micros();
@@ -196,8 +198,8 @@ void loop() {
     //dsd();
     //ds("contLoop=");dsl(contLoop);
     contLoop++;
-
-    strBt = getBluetoot(BTSerial);
+    
+    strBt = getBluetoot(BTSerial,charBT);
 
 
 
@@ -212,6 +214,12 @@ void loop() {
     }
     */
     //dss();
+
+    // strBt  es igual a  "-1" cuando esta armando el array
+    // strBt  es difenrente de "" cuand se armo el array
+        if(charBT=='$'){
+            vecStrFromBt.clear();
+        }
     if (strBt != "" && strBt != "-1") {
         dss();
         //    strBackup=inputString;
@@ -226,8 +234,12 @@ void loop() {
                          globalStatus);
         
         if (option == "a" || option == "m") {
-            inputString = strBt;
+            //inputString = strBt;
+            vecStrFromBt.push(strBt);
         }
+
+        //ds("--->vecStrOne=");vecStrOne.print();
+
         // proccesAction(inputString, vecStrOne,contParam);
         // updateStateAndEffect(vecStrOne, option, effectOption, text, velocity, repeat, globalVelocity, globalStatus);
          /*
@@ -244,6 +256,9 @@ void loop() {
         if (contParam >= sizeParams) contParam = 0;
         */
        strBt="";
+    }
+    if(charBT=='@'){
+        vecStrOne.print();
     }
     //dsd();
     

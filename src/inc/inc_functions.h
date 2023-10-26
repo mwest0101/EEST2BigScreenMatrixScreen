@@ -8,7 +8,7 @@ void printMatrix(int vMatrix[]);
 //int **CreateMatrix(int cols, int rows);
 int **CreateMatrix(int **matrix,int cols, int rows);
 void strToVector(String strIng,String *aStrsParam,String *aStrsValor);
-String concParamsOfString(char charReaded,String strOption,int &action);
+//String concParamsOfString(char charReaded,String strOption,int &action);
 //String getOneGroup(String InString, int& stateAction) ;
 //void proccesAction(oneGroup,&effectOption,&text,&velocity,&repeat);
 //void proccesAction(String InString,String &option,String &effectOption,String &text,int &velocity,int &repeat);
@@ -24,7 +24,7 @@ void getAndSetParams(   String InString,        int &sizeParams,
                         int& velocity,          int& repeat, 
                         int& globalVelocity,    String& globalStatus);
  
-String getBluetoot(SoftwareSerial &BTSerial);
+String getBluetoot(SoftwareSerial &BTSerial,char &charBT);
 
 //int **createMatrix(int rows,int cols);
 //int selectRandom(long[],int);
