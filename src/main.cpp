@@ -193,6 +193,9 @@ void setup() {
 
     
     proccesActionFull(inputString, vecStr,sizeParams);
+    sizeParams=vecStr.getSize();
+    ds("sizeParams=")dsl(sizeParams);
+
     vecStr.print();
 }
 
@@ -270,8 +273,23 @@ void loop() {
     }
     if(charBT=='@'){
         ds("Se modifico vecStr= ");vecStr.print();dsl();
+        sizeParams=vecStr.getSize();
         vecStr.print();
     }
+    ds("c=");ds(contParam);
+    getAndSetParamsOne(vecStr.get(contParam),    option,     effectOption, 
+                         text,          velocity,     repeat,     globalVelocity, 
+                         globalStatus);
+
+    contParam++;
+    if (contParam >= sizeParams) contParam = 0;  
+    /*
+
+    getAndSetParamsOne(vecStr.get(contParam),    option,     effectOption, 
+                         text,          velocity,     repeat,     globalVelocity, 
+                         globalStatus);
+    contParam++;
+    if (contParam >= sizeParams) contParam = 0;  */                       
     //dsd();
     
     //Nuevo String|m:Ingrese Texto;r:1;v:5|iv:-1|iv:-2|iv:-1|iv:0|iv:1|iv:2|ip:Play|ip:Stop|ip:Play

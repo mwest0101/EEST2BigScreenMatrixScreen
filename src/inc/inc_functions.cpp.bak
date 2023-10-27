@@ -183,32 +183,23 @@ void proccesAction(String InString, VectorClassString &vecStrOne, int &sizeParam
   }
 
 }
-
 void proccesActionOne(String InString, VectorClassString &vecStrOne) {
 
-  VectorClassString vecStr(0);
-
-  VectorClassString vecStrParam(0);
-
-  String strParam = "";
-  String strOneParam = "";
-  
-
-  
+    VectorClassString vecStrParam(0);
     splitStringToArrayNoEmpty(vecStrParam, InString, ";");
+    vecStrParam.print();
     vecStrOne.clear();
-    if(vecStrParam.getSize()>0){
+    if(vecStrParam.getSize()<1){
     for (int i = 0; i < vecStrParam.getSize(); i++) {
       splitStringToArrayNoEmpty(vecStrOne, vecStrParam.get(i), ":");
     }
     }else{
-      splitStringToArrayNoEmpty(vecStrOne, InString, ":");
+      splitStringToArrayNoEmpty(vecStrOne,InString , ":");
     }
+    vecStrOne.print();
 
-  
 
 }
-
 
 
 
@@ -258,37 +249,36 @@ void updateStateAndEffect(VectorClassString &vecStrOne, String &option, String &
 
   }
   ds5l(" ");
-  ds5("o=[");ds5(option);ds5("] ");ds5("e=[");ds5(effectOption);ds5("] ");ds5("t=[");ds5(text);ds5("] ");
-  ds5("v=[");ds5(velocity);ds5("] ");ds5("r=[");ds5(repeat);ds5("] ");
-  ds5("gv=[");ds5(globalVelocity);ds5("] ");ds5("gs=[");ds5(globalStatus);ds5l("] ");
+  ds5("option=[");ds5(option);ds5("] ");ds5("effectOption=[");ds5(effectOption);ds5("] ");ds5("text=[");ds5(text);ds5("] ");
+  ds5("velocity=[");ds5(velocity);ds5("] ");ds5("repeat=[");ds5(repeat);ds5("] ");
+  ds5("globalVelocity=[");ds5(globalVelocity);ds5("] ");ds5("globalStatus=[");ds5(globalStatus);ds5l("] ");
 }
+/*
 void getAndSetParams(   String InString,        int &sizeParams, 
                         int contParam,          String& option,
                         String& effectOption,   String& text, 
                         int& velocity,          int& repeat, 
                         int& globalVelocity,    String& globalStatus){
-//void getAndSetParams(String InString,int& sizeParams, int &contParam, String& option,String& effectOption,String& text, int& velocity, int& repeat,int& globalVelocity,    String& globalStatus){
+*/
 
-  VectorClassString vecStrOne(0);
-  proccesAction(InString, vecStrOne,sizeParams, contParam);
-  //vecStrOne.print();
 
-  updateStateAndEffect(vecStrOne, option, effectOption, text, velocity, repeat, globalVelocity, globalStatus);
-}
-void getAndSetParamsOne(   String InString,     String& option,
+void getAndSetParams(   String InString,        int &sizeParams, 
+                        String& option,
                         String& effectOption,   String& text, 
                         int& velocity,          int& repeat, 
-                        int& globalVelocity,    String& globalStatus){
-//void getAndSetParams(String InString,int& sizeParams, int &contParam, String& option,String& effectOption,String& text, int& velocity, int& repeat,int& globalVelocity,    String& globalStatus){
+                        int& globalVelocity,    String& globalStatus){                          
+ //void getAndSetParams(String InString,int& sizeParams, int &contParam, String& option,String& effectOption,String& text, int& velocity, int& repeat,int& globalVelocity,    String& globalStatus){
 
   VectorClassString vecStrOne(0);
-  proccesActionOne(InString, vecStrOne);
-  //vecStrOne.print();
+  //proccesAction(InString, vecStrOne,sizeParams, contParam);
+  void proccesActionOne(String InString, VectorClassString &vecStrOne);
+  
+  vecStrOne.print();
+  ds("InString: ");dsl(InString);
 
-  updateStateAndEffect(vecStrOne, option, effectOption, text, velocity, repeat, globalVelocity, globalStatus);
+  updateStateAndEffect(vecStrOne, option, effectOption, text, velocity, 
+                       repeat, globalVelocity, globalStatus);
 }
-
-
 
 
 String getBluetoot(SoftwareSerial& BTSerial,char &charBT) {
