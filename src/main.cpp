@@ -133,14 +133,14 @@ String lastBTstrReceived = "";
 String inputString = "a:efe1;v:1;r:2|m:Original";
 //String strBackup="";
 String option = "";
-int foundAnim = 0;
-int contLoop = 0;
-int loopVelocity = 0;
+unsigned long foundAnim = 0;
+unsigned long contLoop = 0;
+unsigned long loopVelocity = 0;
 SoftwareSerial BTSerial(52, 53);
 String strBt = "";
 char charBT='\0';
 int sizeParams=0;
-
+//int contLoop=0;
 
 void setup() {
     time = micros();
@@ -192,7 +192,7 @@ void setup() {
     //VectorClassString vecStrOne(0);
 
     
-    proccesActionFull(inputString, vecStr,sizeParams);
+    proccesActionFull(inputString, vecStr);
     sizeParams=vecStr.getSize();
     ds("sizeParams=")dsl(sizeParams);
 
@@ -206,6 +206,8 @@ void loop() {
 
     //dsd();
     //ds("contLoop=");dsl(contLoop);
+    time = micros();
+
     contLoop++;
     
     strBt = getBluetoot(BTSerial,charBT);
@@ -239,7 +241,7 @@ void loop() {
         ds("strBt=");dsl(strBt);
         //ds("BT contParam=");ds(contParam);ds(" sizeParams=");dsl(sizeParams);
         
-        getAndSetParams(strBt,sizeParams,   0,    option,     effectOption, 
+        getAndSetParams(strBt,   0,    option,     effectOption, 
                          text,          velocity,     repeat,     globalVelocity, 
                          globalStatus);
 
@@ -272,17 +274,28 @@ void loop() {
        strBt="";
     }
     if(charBT=='@'){
-        ds("Se modifico vecStr= ");vecStr.print();dsl();
+        
         sizeParams=vecStr.getSize();
-        vecStr.print();
+        ds("Se modifico vecStr= ");vecStr.print();dsl();
+        ds("Size vecStr= ");vecStr.getSize();dsl();
+        //vecStr.print();
     }
-    ds("c=");ds(contParam);
-    getAndSetParamsOne(vecStr.get(contParam),    option,     effectOption, 
-                         text,          velocity,     repeat,     globalVelocity, 
-                         globalStatus);
+    if (difTime >= loopVelocity) {
 
-    contParam++;
-    if (contParam >= sizeParams) contParam = 0;  
+    //if(contLoop>3000){
+        ds("c=");ds(contParam);
+        getAndSetParamsOne(vecStr.get(contParam),    option,     effectOption, 
+                            text,          velocity,     repeat,     globalVelocity, 
+                            globalStatus);
+
+        contParam++;
+        if (contParam >= sizeParams) contParam = 0;  
+        contLoop=0;
+
+        lastTime = time;
+    }
+
+    
     /*
 
     getAndSetParamsOne(vecStr.get(contParam),    option,     effectOption, 
@@ -399,8 +412,10 @@ void loop() {
     FIN DESCOMENTAR ESTO
     */
 
-    time = micros();
+    
     difTime = time - lastTime;
-    difTime2 = time - lastTime2;
+    
+
+    //difTime2 = time - lastTime2;
 
 }

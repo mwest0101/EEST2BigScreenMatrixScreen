@@ -155,13 +155,13 @@ String concParamsOfString(char charReaded, String strOption, int& action) {
   return strOption;
 }*/
 
-void proccesActionFull(String InString, VectorClassString &vecStr, int &sizeParams) {  
+void proccesActionFull(String InString, VectorClassString &vecStr) {  
   splitStringToArrayNoEmpty(vecStr, InString, "|");
-  sizeParams=vecStr.getSize();
+  
 }
 
 //void proccesAction(String InString, String& option, String& effectOption, String& text, int& velocity, int& repeat) {
-void proccesAction(String InString, VectorClassString &vecStrOne, int &sizeParams, int contParam) {
+void proccesAction(String InString, VectorClassString &vecStrOne, int contParam) {
 
   VectorClassString vecStr(0);
 
@@ -171,7 +171,7 @@ void proccesAction(String InString, VectorClassString &vecStrOne, int &sizeParam
   String strOneParam = "";
   splitStringToArrayNoEmpty(vecStr, InString, "|");
 
-  sizeParams=vecStr.getSize();
+  //sizeParams=vecStr.getSize();
 
   if (vecStr.getSize() > 0) {
     splitStringToArrayNoEmpty(vecStrParam, vecStr.get(contParam), ";");
@@ -262,7 +262,7 @@ void updateStateAndEffect(VectorClassString &vecStrOne, String &option, String &
   ds5("v=[");ds5(velocity);ds5("] ");ds5("r=[");ds5(repeat);ds5("] ");
   ds5("gv=[");ds5(globalVelocity);ds5("] ");ds5("gs=[");ds5(globalStatus);ds5l("] ");
 }
-void getAndSetParams(   String InString,        int &sizeParams, 
+void getAndSetParams(   String InString,         
                         int contParam,          String& option,
                         String& effectOption,   String& text, 
                         int& velocity,          int& repeat, 
@@ -270,7 +270,7 @@ void getAndSetParams(   String InString,        int &sizeParams,
 //void getAndSetParams(String InString,int& sizeParams, int &contParam, String& option,String& effectOption,String& text, int& velocity, int& repeat,int& globalVelocity,    String& globalStatus){
 
   VectorClassString vecStrOne(0);
-  proccesAction(InString, vecStrOne,sizeParams, contParam);
+  proccesAction(InString, vecStrOne, contParam);
   //vecStrOne.print();
 
   updateStateAndEffect(vecStrOne, option, effectOption, text, velocity, repeat, globalVelocity, globalStatus);
