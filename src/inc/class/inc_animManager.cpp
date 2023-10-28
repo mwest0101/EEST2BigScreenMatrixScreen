@@ -5,7 +5,7 @@
 AnimManager::AnimManager(){
  
   this->contFrame=0;
-  this->isEndOfAnim=false;
+  this->isEndOfAnim=true;
 
   // Serial.println("");
 }

@@ -25,7 +25,7 @@ class DriveMatrix {
   bool vIsInTheEnd = true;
   unsigned long codSumTot = 0;
   String lastStrToShow = "";
-  bool IsStringEnd =false;
+  bool IsStringEnd =true;
   public:
   DriveMatrix();
 
