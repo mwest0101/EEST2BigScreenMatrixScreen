@@ -82,7 +82,7 @@ AnimManager an;
 int stateAction = 0;
 String effectOption = "";
 String text = "";
-int contParam=0;
+int contParam = 0;
 
 int repeat = DEFAULT_REPEAT;
 int contRepeat = 0;
@@ -138,8 +138,8 @@ unsigned long contLoop = 0;
 unsigned long loopVelocity = 0;
 SoftwareSerial BTSerial(52, 53);
 String strBt = "";
-char charBT='\0';
-int sizeParams=0;
+char charBT = '\0';
+int sizeParams = 0;
 //int contLoop=0;
 
 void setup() {
@@ -191,9 +191,9 @@ void setup() {
     ds("loopVelocity=");dsl(loopVelocity);
     //VectorClassString vecStrOne(0);
 
-    
+
     proccesActionFull(inputString, vecStr);
-    sizeParams=vecStr.getSize();
+    sizeParams = vecStr.getSize();
     ds("sizeParams=")dsl(sizeParams);
 
     vecStr.print();
@@ -209,8 +209,8 @@ void loop() {
     time = micros();
 
     contLoop++;
-    
-    strBt = getBluetoot(BTSerial,charBT);
+
+    strBt = getBluetoot(BTSerial, charBT);
 
 
 
@@ -228,28 +228,29 @@ void loop() {
 
     // strBt  es igual a  "-1" cuando esta armando el array
     // strBt  es difenrente de "" cuand se armo el array
-        if(charBT=='$'){
-            vecStr.clear();
-        }
+    if (charBT == '$') {
+        vecStr.clear();
+    }
     if (strBt != "" && strBt != "-1") {
         dss();
         //    strBackup=inputString;
         // proccesAction(strBt, vecStrOne,contParam);
         // updateStateAndEffect(vecStrOne, option, effectOption, text, velocity, repeat, globalVelocity, globalStatus);
-        
+
         //dsl("strBt != "" -->Step 00<--");
         ds("strBt=");dsl(strBt);
         //ds("BT contParam=");ds(contParam);ds(" sizeParams=");dsl(sizeParams);
-        
-        getAndSetParams(strBt,   0,    option,     effectOption, 
-                         text,          velocity,     repeat,     globalVelocity, 
-                         globalStatus);
 
-        
+        getAndSetParams(strBt, 0, option, effectOption,
+            text, velocity, repeat, globalVelocity,
+            globalStatus);
+
+
         if (option == "a" || option == "m") {
             //inputString = strBt;
             vecStr.push(strBt);
-        }else if(option == "iv" || option == "ip") {
+        }
+        else if (option == "iv" || option == "ip") {
             ds("no se modifico vecStr:");
             vecStr.print();
         }
@@ -259,69 +260,126 @@ void loop() {
         // proccesAction(inputString, vecStrOne,contParam);
         // updateStateAndEffect(vecStrOne, option, effectOption, text, velocity, repeat, globalVelocity, globalStatus);
          /*
-         getAndSetParams(inputString,   contParam,    option,     effectOption, 
-                         text,          velocity,     repeat,     globalVelocity, 
+         getAndSetParams(inputString,   contParam,    option,     effectOption,
+                         text,          velocity,     repeat,     globalVelocity,
                          globalStatus);*/
-        /*
-        getAndSetParams(inputString,sizeParams,   contParam,    option,     effectOption, 
-                         text,          velocity,     repeat,     globalVelocity, 
-                         globalStatus);*/
-                                 
-        /*
-        contParam++;
-        if (contParam >= sizeParams) contParam = 0;
-        */
-       strBt="";
+                         /*
+                         getAndSetParams(inputString,sizeParams,   contParam,    option,     effectOption,
+                                          text,          velocity,     repeat,     globalVelocity,
+                                          globalStatus);*/
+
+                                          /*
+                                          contParam++;
+                                          if (contParam >= sizeParams) contParam = 0;
+                                          */
+        strBt = "";
     }
-    if(charBT=='@'){
-        
-        sizeParams=vecStr.getSize();
+    if (charBT == '@') {
+
+        sizeParams = vecStr.getSize();
         ds("Se modifico vecStr= ");vecStr.print();dsl();
         ds("Size vecStr= ");vecStr.getSize();dsl();
         //vecStr.print();
     }
     if (difTime >= loopVelocity) {
 
-    //if(contLoop>3000){
-        ds("c=");ds(contParam);
-        getAndSetParamsOne(vecStr.get(contParam),    option,     effectOption, 
-                            text,          velocity,     repeat,     globalVelocity, 
-                            globalStatus);
+        //if(contLoop>3000){
 
-        contParam++;
-        if (contParam >= sizeParams) contParam = 0;  
-        contLoop=0;
+
+
+
+
+
+        if (contRepeat >= repeat) {
+
+            //--------------------------------------------------------------------
+            // Si la opcion es marquee y se puede agregar un caracter a la matriz
+            // lo agrega
+            if (option == "m" && dm.canAddChar() && contCharAdded < vecChar.getSize()) {
+                dsl("-->Step 03<--");
+                ds("contCharAdded=");dsl(contCharAdded);
+                aIntCharMatrix.clear();
+                getCharMatrix(aIntCharMatrix, vecChar.get(contCharAdded));
+                dm.AddConsToMatrix(matrix, aIntCharMatrix, vecChar.get(contCharAdded));
+                dm.setCanAddChar(false);
+                contCharAdded++;
+            }
+            //--------------------------------------------------------------------
+
+
+            //--------------------------------------------------------------------
+            // si la opcion es marquee y se puede mover se mueve la matriz hacia
+            // la izquierda hasta que llega a 0
+
+
+            if (option == "m") {
+                dsl("-->Step 04<--");
+                matrix.print();
+                if (dm.getPosLastChar() > 0) {
+                    dm.GetFrame(matrix, aFrame);
+                    dm.moveMatrixToLeft(matrix);
+                    ds("dm.getPosLastChar()=");dsl(dm.getPosLastChar());
+                }
+                //dsl("Paso m por acá->m 1");
+            }
+            //--------------------------------------------------------------------
+
+            //--Enciende las luces o la matriz led.
+            if (option == "a" || option == "m") {
+                dsl("-->Step 06<--");
+                sm.PrintLedMatrix(aFrame, aLastFrame, vecPins);
+                dsl("Paso m por acá-> 3");
+            }
+
+        }
+        else {
+            ds("c=");ds(contParam);
+            getAndSetParamsOne(vecStr.get(contParam), option, effectOption, text, velocity, repeat, globalVelocity, globalStatus);
+
+            contParam++;
+            if (contParam >= sizeParams) contParam = 0;
+
+            if (option == "m" && (lastStrToShow != text)) {
+                dsl("Get the int codes and pass to array of each CHAR in the string");
+                dm.fillArrrayOfChars(vecChar, text);
+                lastStrToShow = text;
+            }
+        }
+
+
+
+        //contLoop=0;
 
         lastTime = time;
     }
 
-    
+
     /*
 
-    getAndSetParamsOne(vecStr.get(contParam),    option,     effectOption, 
-                         text,          velocity,     repeat,     globalVelocity, 
+    getAndSetParamsOne(vecStr.get(contParam),    option,     effectOption,
+                         text,          velocity,     repeat,     globalVelocity,
                          globalStatus);
     contParam++;
-    if (contParam >= sizeParams) contParam = 0;  */                       
+    if (contParam >= sizeParams) contParam = 0;  */
     //dsd();
-    
+
     //Nuevo String|m:Ingrese Texto;r:1;v:5|iv:-1|iv:-2|iv:-1|iv:0|iv:1|iv:2|ip:Play|ip:Stop|ip:Play
     /* Quita esto
     if (contRepeat >= repeat && strBt != "-1") {
 
-        
-        
+
+
         //contRepeat = 0;
         //option == "";
         dss();
-        
+
         dsl("contRepeat >= repeat != "" -->Step 01<--");
-        
+
         //      proccesAction(inputString, option, effectOption, text, velocity, repeat);
-        getAndSetParams(inputString, sizeParams, contParam,    option,     effectOption, 
-                         text,          velocity,     repeat,     globalVelocity, 
+        getAndSetParams(inputString, sizeParams, contParam,    option,     effectOption,
+                         text,          velocity,     repeat,     globalVelocity,
                          globalStatus);
-        
+
         loopVelocity = waitTime * (velocity + globalVelocity);
 
         ds("contParam=");ds(contParam);ds(" sizeParams=");dsl(sizeParams);
@@ -332,11 +390,11 @@ void loop() {
     }else{
         contRepeat++;
     }
-    
+
     Quita esto
    */
 
-    //vecStrOne.print();
+   //vecStrOne.print();
 
 //Test de escirtura con teclado mecanico
     /*
@@ -412,9 +470,9 @@ void loop() {
     FIN DESCOMENTAR ESTO
     */
 
-    
+
     difTime = time - lastTime;
-    
+
 
     //difTime2 = time - lastTime2;
 
