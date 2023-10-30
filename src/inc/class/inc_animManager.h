@@ -6,15 +6,15 @@
       
       int matrixCols=0;
       int contFrame=0;
-      bool isEndOfAnim=false;
+      bool isEndOfAnim=true;
   
     public:        
       AnimManager();      
       void convProgToArrayByFrame(VectorClass &aFrame, const int *phrase, int size);
       void setIfisEnd(bool value);
       void reset();
-      bool getIfisEnd();
-      void getAnim(VectorClass &aFrame,String strOption);
+      bool getIfAnimIsEnd();
+      int getAnim(VectorClass &aFrame,String strOption);
     
       
   };

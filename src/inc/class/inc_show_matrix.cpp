@@ -1,25 +1,21 @@
 
 #include <Arduino.h>
-#include "inc_include.h"
-ShowMatrix::ShowMatrix()
-{
+#include "inc/include.h"
+ShowMatrix::ShowMatrix() {
 
   dsl("");
 }
 #ifdef IS_LCDSCREEN
-void ShowMatrix::setPantalla(MatrizLed &vPantalla)
-{
+void ShowMatrix::setPantalla(MatrizLed& vPantalla) {
   this->pantalla = vPantalla;
 }
 #endif
-void ShowMatrix::InitShowMatrix(VectorClass vecPins)
-{
+void ShowMatrix::InitShowMatrix(VectorClass vecPins) {
 
   // aPins=vaPins;
   // nElements=nFrameElements;
   // VectorClass tempVectorLastFrame(35, 0, 10);
-  for (int i = 0; i < vecPins.getSize(); i++)
-  {
+  for (int i = 0; i < vecPins.getSize(); i++) {
 
     pinMode(vecPins.get(i), OUTPUT);
     // ds(vaPins[i]);
@@ -29,16 +25,14 @@ void ShowMatrix::InitShowMatrix(VectorClass vecPins)
 }
 //____________________________________________________________________
 //------------Function------------------------------------------------
-void ShowMatrix::PrintData(int data)
-{
+void ShowMatrix::PrintData(int data) {
 
   ds(data);
   ds("text");
 }
 //____________________________________________________________________
 //------------Function------------------------------------------------
-void ShowMatrix::PrintLed(int ledNum, int pintToActive, int ledState)
-{
+void ShowMatrix::PrintLed(int ledNum, int pintToActive, int ledState) {
 
 
 
@@ -61,7 +55,7 @@ void ShowMatrix::PrintLed(int ledNum, int pintToActive, int ledState)
    ds3("| ledState:");
    ds3l(ledState);*/
 
-   
+
 
   this->pantalla.setLed(0, posX, posY, ledState);
 
@@ -69,32 +63,27 @@ void ShowMatrix::PrintLed(int ledNum, int pintToActive, int ledState)
 }
 //____________________________________________________________________
 //------------Function------------------------------------------------
-void ShowMatrix::PrintLedMatrix(VectorClass &aFrame, VectorClass &aLastFrame, VectorClass &vecPins)
-{
+void ShowMatrix::PrintLedMatrix(VectorClass& aFrame, VectorClass& aLastFrame, VectorClass& vecPins) {
 
   int pinState = 0;
   int pinNum = 0;
   int posX = 0;
   int lastPosX = 0;
-  
+
   lastPosX = posX;
-  for (int i = 0; i < 35; i++)
-  {
+  for (int i = 0; i < 35; i++) {
 
     posX = (int)(i / MATRIX_WIDTH);
     pinState = aFrame.get(i);
     pinNum = vecPins.get(i);
-    if (pinState < 2)
-    {
-      if (lastPosX != posX)
-      {
+    if (pinState < 2) {
+      if (lastPosX != posX) {
         dsl(" ");
         lastPosX = posX;
       }
       //dsl("===>es igual");
-      if (aFrame.get(i) != aLastFrame.get(i))
-      {
-      //        dsl("===>es distinto");
+      if (aFrame.get(i) != aLastFrame.get(i)) {
+        //        dsl("===>es distinto");
         aLastFrame.set(i, aFrame.get(i)); // update the values of matriz temp to only update the changed values
         ShowMatrix::PrintLed(i, pinNum, pinState);
       }

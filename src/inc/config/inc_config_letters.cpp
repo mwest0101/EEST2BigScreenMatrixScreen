@@ -1,6 +1,6 @@
 ﻿
 #include <Arduino.h>
-#include "inc_include.h"
+#include "inc/include.h"
 #ifndef _INC_CONFIG_LETTERS_CPP_
 #define _INC_CONFIG_LETTERS_CPP_
 
@@ -130,7 +130,7 @@ void getCharMatrix(VectorClass &aIntCharMatrix,int character){
       case (-163): convProgToArray(aIntCharMatrix,C_LET_Uas,(sizeof(C_LET_Uas)/2));dsl("Letter=Uas");break; 
       case   (44): convProgToArray(aIntCharMatrix,C_LET_coma,(sizeof(C_LET_coma)/2));dsl("Letter=,");break; 
       case   (46): convProgToArray(aIntCharMatrix,C_LET_punto,(sizeof(C_LET_punto)/2));dsl("Letter=.");break; 
-      case   (58): convProgToArray(aIntCharMatrix,C_LET_dospuntos,(sizeof(C_LET_dospuntos)/2));dsl("Letter=.");break; 
+      // case   (58): convProgToArray(aIntCharMatrix,C_LET_dospuntos,(sizeof(C_LET_dospuntos)/2));dsl("Letter=.");break; 
       case   (95): convProgToArray(aIntCharMatrix,C_LET_barrinf,(sizeof(C_LET_barrinf)/2));dsl("Letter=_");break; 
       case   (45): convProgToArray(aIntCharMatrix,C_LET_barrmed,(sizeof(C_LET_barrmed)/2));dsl("Letter=-");break; 
       case (-127): convProgToArray(aIntCharMatrix,C_LET_sigPreAp,(sizeof(C_LET_sigPreAp)/2));dsl("Letter=¿");break; 
@@ -139,7 +139,7 @@ void getCharMatrix(VectorClass &aIntCharMatrix,int character){
       case   (33): convProgToArray(aIntCharMatrix,C_LET_sigExcCi,(sizeof(C_LET_sigExcCi)/2));dsl("Letter=!");break; 
       case (-132): convProgToArray(aIntCharMatrix,C_LET_num,(sizeof(C_LET_num)/2));dsl("Letter=º");break; 
       default:
-        convProgToArray(aIntCharMatrix,C_LET_ESP,(sizeof(C_LET_ESP)/2));dsl("Letter= ");break;
+        convProgToArray(aIntCharMatrix,C_LET_ESP,(sizeof(C_LET_ESP)/2));dsl("Letter=ESP");break;
  		    dsl("========================================================");
         dsl("==========Error=no encontrado el valor==================");
         dsl(character);

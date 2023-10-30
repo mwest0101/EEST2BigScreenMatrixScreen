@@ -1,38 +1,38 @@
 #include <Arduino.h>
-#include "inc_include.h"
-#ifndef _MATRIX_CLASS_
-#define _MATRIX_CLASS_
-class MatrixClass
+#include "inc/include.h"
+
+
+#ifndef _MATRIX_CLASS_STRING_
+  #define _MATRIX_CLASS_STRING_
+class MatrixClassString
 {
 
 private:
-  int **matrix;
+  String **matrix;
   int rows;
   int cols;
   int minValue;
   int maxValue;
 
 public:
-  MatrixClass(int rows, int cols, int min, int max)
+  MatrixClassString(int rows, int cols)
   {
 
     this->rows = rows;
     this->cols = cols;
 
-    this->minValue = min;
-    this->maxValue = max;
     // Inicializar la matrix con valuees aleatorios dentro del rango especificado
-    matrix = new int *[rows];
+    matrix = new String *[rows];
     for (int i = 0; i < rows; i++)
     {
-      matrix[i] = new int[cols];
+      matrix[i] = new String[cols];
       for (int j = 0; j < cols; j++)
       {
-        matrix[i][j] = 0;
+        matrix[i][j] = "";
       }
     }
   }
-  ~MatrixClass()
+  ~MatrixClassString()
   {
 
     // Liberar la memoria de la matrix
@@ -42,6 +42,8 @@ public:
     }
     delete[] matrix;
   }
+  // Metodo para agregar un valor al final del vector (push)
+
   //____________________________________________________________________
   //------------Function------------------------------------------------
   void print()
@@ -76,8 +78,6 @@ public:
       for (int j = 0; j < this->cols; j++)
       {
 
-        if (matrix[i][j] < 10)
-          ds5(" ");
         ds5(matrix[i][j]);
         ds5("|");
         // ds5(this->get(i, j));
@@ -102,14 +102,14 @@ public:
 
   //____________________________________________________________________
   //------------Function------------------------------------------------
-  int get(int rows, int cols)
+  String get(int rows, int cols)
   {
-    int value = -1;
+    String value = "";
     // Obtener el value de la matrix en una posici�n espec�fica
     if (rows >= 0 && rows < this->rows && cols >= 0 && cols < this->cols)
     {
       value = matrix[rows][cols];
-      /*ds5("MatrixClass.GET OK: ");
+      /*ds5("MatrixClassString.GET OK: ");
       ds5("row=:");
       ds5(rows);
       ds5(" col:");
@@ -121,7 +121,7 @@ public:
     else
     {
       // Manejar un value fuera de rango
-      ds5("MatrixClass.GET Out of index: ");
+      ds5("MatrixClassString.GET Out of index: ");
       ds5("row=:");
       ds5(rows);
       ds5(" col:");
@@ -132,27 +132,19 @@ public:
   }
   //____________________________________________________________________
   //------------Function------------------------------------------------
-  void set(int rows, int cols, int value)
+  void set(int rows, int cols, String value)
   {
 
     // Establecer el value de la matrix en una posici�n espec�fica
     if (rows >= 0 && rows < this->rows && cols >= 0 && cols < this->cols)
     {
       // matrix[rows][cols] = constrain(value, minValue, maxValue);
-      if (value >= minValue && value <= this->maxValue)
-      {
-        matrix[rows][cols] = value;
-      }
-      else
-      {
-        ds5("MatrixClass.SET: Value out of range");
-        ds5("Value: ");
-        ds5l(value);
-      }
+
+      matrix[rows][cols] = value;
     }
     else
     {
-      ds5("MatrixClass.SET Out of index: ");
+      ds5("MatrixClassString.SET Out of index: ");
       ds5("row=:");
       ds5(rows);
       ds5(" col:");
@@ -172,18 +164,69 @@ public:
     delete[] matrix;
     // Establecer la matriz a NULL para evitar problemas de doble liberación
     matrix = nullptr;
-    matrix = new int *[rows];
+    matrix = new String *[rows];
     for (int i = 0; i < rows; i++)
     {
-      matrix[i] = new int[cols];
+      matrix[i] = new String[cols];
       for (int j = 0; j < cols; j++)
       {
-        matrix[i][j] = 0;
+        matrix[i][j] = "";
       }
     }
     // Restablecer las dimensiones de la matriz a 0
     /*rows = 0;
     cols = 0;*/
   }
+  void push(String value1, String value2)
+  {
+    if (rows >= 0)
+    {
+
+      String **newMatrix = new String *[rows + 1];
+      for (int i = 0; i < rows; i++)
+      {
+        newMatrix[i] = new String[cols];
+        for (int j = 0; j < cols; j++)
+        {
+          newMatrix[i][j] = "";
+        }
+      }
+      newMatrix[rows][0] = value1;
+      newMatrix[rows][1] = value2;
+
+      for (int i = 0; i < rows; i++)
+      {
+        delete[] matrix[i];
+      }
+      delete[] matrix;
+      matrix = newMatrix;
+    }
+    else
+    {
+      set(0, 0, value1);
+      set(0, 1, value2);
+    }
+  }
+  /*
+  void pushVec(String value){
+
+    if (size >= 0){
+
+      String *newData = new String[size + 1];
+      for (int i = 0; i < size; i++){
+        newData[i] = data[i];
+      }
+
+
+
+      newData[size] = value;
+      delete[] data;
+      data = newData;
+      size++;
+    } else{
+      set(0, value);
+    }
+  }
+  */
 };
-#endif // _MATRIX_CLASS_
+#endif //_VECTOR_CLASS_STRING_

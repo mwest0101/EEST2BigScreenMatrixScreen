@@ -13,7 +13,7 @@
   #define EL              C_END_LIN
   
   //#define DEBUG           true
-  //#define DEBUG_SERIAL true
+  #define DEBUG_SERIAL true
   //#define DEBUG_MATRIX    true
   //#define DEBUG_BY_VSCODE
   
@@ -28,11 +28,22 @@
   #define VECTOR_MAX_VALUE 100
   #define VECTOR_MIN_VALUE 0
   
+  #define PIN_BT_RXD 52
+  #define PIN_BT_TXD 53
+  #define VECTOR_MIN_VALUE 0
+
 
   //#define WAIT_TIME_LOOP 1000000;
-  #define WAIT_TIME_LOOP    250000;
-  #define MARQUE_SEPARATOR "   ";
-
+  //#define WAIT_TIME_LOOP    250000;
+  //#define WAIT_TIME_LOOP    50000;
+  #define WAIT_TIME_LOOP    500000;
+  
+  //#define WAIT_TIME_LOOP    40000
+  #define TIME_TO_GET_BT    400000
+  #define MARQUE_SEPARATOR " ";
+  
+  #define DEFAULT_VELOCITY 5;
+  #define DEFAULT_REPEAT 1;
   
   
   static const int PROGMEM C_Pins[]={2,7,12,17,22,27,32,

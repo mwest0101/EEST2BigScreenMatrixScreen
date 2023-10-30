@@ -1,13 +1,13 @@
 
 #include <Arduino.h>
-#include "inc_include.h"
-DriveMatrix::DriveMatrix(){
-this->totPosX=MATRIX_WIDTH;
+#include "inc/include.h"
+DriveMatrix::DriveMatrix() {
+  this->totPosX = MATRIX_WIDTH;
   // Serial.println("");
 }
 //____________________________________________________________________
 //------------Function------------------------------------------------
-int **DriveMatrix::InitDriveMatrix(int **matrix, int cols, int rows){
+int** DriveMatrix::InitDriveMatrix(int** matrix, int cols, int rows) {
 
   matrixCols = cols;
   matrixRows = rows;
@@ -15,14 +15,13 @@ int **DriveMatrix::InitDriveMatrix(int **matrix, int cols, int rows){
   return matrix;
 }
 
-void DriveMatrix::Print(int **matrix){
+void DriveMatrix::Print(int** matrix) {
 
   dsl("__________________________________");
   dsl("----------Print Matrix------------");
-  for (int i = 0; i < matrixRows; i++){
+  for (int i = 0; i < matrixRows; i++) {
 
-    for (int j = 0; j < matrixCols; j++)
- {
+    for (int j = 0; j < matrixCols; j++) {
       ds(matrix[i][j]);ds(" ");
     }
     dsl("");
@@ -32,12 +31,11 @@ void DriveMatrix::Print(int **matrix){
 }
 //____________________________________________________________________
 //------------Function------------------------------------------------
-int **DriveMatrix::Clear(int **matrix){
+int** DriveMatrix::Clear(int** matrix) {
 
-  for (int i = 0; i < matrixRows; i++){
+  for (int i = 0; i < matrixRows; i++) {
 
-    for (int j = 0; j < matrixCols; j++)
- {
+    for (int j = 0; j < matrixCols; j++) {
       matrix[i][j] = 0;
     }
   }
@@ -46,7 +44,7 @@ int **DriveMatrix::Clear(int **matrix){
 }
 //____________________________________________________________________
 //------------Function------------------------------------------------
-void DriveMatrix::ResetInitPosMatrix(){
+void DriveMatrix::ResetInitPosMatrix() {
 
   this->totPosX = MATRIX_WIDTH;
   this->posInfMat = 0;
@@ -55,10 +53,10 @@ void DriveMatrix::ResetInitPosMatrix(){
 }
 //____________________________________________________________________
 //------------Function------------------------------------------------
-void DriveMatrix::AddConsToMatrix(MatrixClass &matrix, VectorClass &aIntCharMatrix, int caracter){
+void DriveMatrix::AddConsToMatrix(MatrixClass& matrix, VectorClass& aIntCharMatrix, int caracter) {
 
-  
-  dsis("AddConsToMatrix");
+  dss();
+  dsl("AddConsToMatrix");
   // ResetInitPosMatrix(); //sacar esto una vez probado que funciona
 
   int value = 0;
@@ -67,50 +65,29 @@ void DriveMatrix::AddConsToMatrix(MatrixClass &matrix, VectorClass &aIntCharMatr
   int maxPosCol = 0;
   int cont = aIntCharMatrix.getSize();
   this->infMat[posInfMat] = caracter;
-  // dsi("caracter:");
-  // dsil(caracter);
-  // dsi("cont:");
-  // dsil(cont);
-  for (int i = 0; i < cont; i++){
+  for (int i = 0; i < cont; i++) {
 
     value = aIntCharMatrix.get(i);
-    if (value != EL && value != EA){
-      
-      matrix.set(relPosRow,(this->totPosX + relPosCols), value);
-      /*ds(" |");
-      
-      ds("t:");
-      ds(this->totPosX);
-      ds(" Y:");
-      ds(relPosRow);
-      ds(" X:");
-      ds(relPosCols);
-      ds(" (");*/
-      
+    if (value != EL && value != EA) {
+
+      matrix.set(relPosRow, (this->totPosX + relPosCols), value);
       ds(value);
       ds("|");
       //dse(")");
       if (relPosCols > maxPosCol) maxPosCol = relPosCols;
 
-      if (value < 0 || value > 1)
-      {
-  
+      if (value < 0 || value > 1) {
+
         dses(value);
       }
-      // ds("value:");ds(value);ds(" (i+1)=");dsl(i+1);
+
       relPosCols++;
-    }else{  
+    }
+    else {
       ds("||");
-    /*  ds("t:");
-      ds(this->totPosX);
-      ds(" Y:");
-      ds(relPosRow);
-      ds(" X:");
-      ds(relPosCols);
-      ds(" (");*/
+
       dsl(value);
-      //dsl(")");
-      
+
       relPosRow++;
       relPosCols = 0;
     }
@@ -119,88 +96,109 @@ void DriveMatrix::AddConsToMatrix(MatrixClass &matrix, VectorClass &aIntCharMatr
   ds(this->totPosX);
   dsl(" ");
 
-  this->posInfMat =this->posInfMat+(maxPosCol + 1);
-  this->totPosX =this->totPosX+ (maxPosCol + 1);
+  this->posInfMat = this->posInfMat + (maxPosCol + 1);
+  this->totPosX = this->totPosX + (maxPosCol + 1);
   maxPosCol = 0;
   dsl(" ");
 }
 //____________________________________________________________________
 //------------Function------------------------------------------------
-void DriveMatrix::despIzq(){
+void DriveMatrix::despIzq() {
 
-  if (despMat < BUILD_MATRIX_COLS){
+  if (despMat < BUILD_MATRIX_COLS) {
 
     despMat++;
-  }else{
+  }
+  else {
 
     despMat = 0;
   }
 }
 //____________________________________________________________________
 //------------Function------------------------------------------------
-void DriveMatrix::GetFrame(MatrixClass &matrix,VectorClass &aFrame){
+void DriveMatrix::GetFrame(MatrixClass& matrix, VectorClass& aFrame) {
 
   //
-  
+
   //dsis("Inicio GetFrame");
   //int size = MATRIX_WIDTH * MATRIX_HEIGHT;
   //int *frame = (int *)calloc((size + 1), sizeof(int));
   int contPos = 0;
-  for (int i = 0; i < MATRIX_HEIGHT; i++){
+  for (int i = 0; i < MATRIX_HEIGHT; i++) {
 
-    for (int j = 0; j < MATRIX_WIDTH; j++)
- {
-      aFrame.set(contPos,matrix.get(i,j));
+    for (int j = 0; j < MATRIX_WIDTH; j++) {
+      aFrame.set(contPos, matrix.get(i, j));
       contPos++;
     }
     // dsl(" ");
   }
   //ds1("Fin GetFrame");
-  
+
 }
 //____________________________________________________________________
 //------------Function------------------------------------------------
-void DriveMatrix::moveMatrixToLeft(MatrixClass &matrix){
+void DriveMatrix::moveMatrixToLeft(MatrixClass& matrix) {
 
-  for (int i = 0; i < BUILD_MATRIX_ROWS; i++){
+  for (int i = 0; i < BUILD_MATRIX_ROWS; i++) {
 
-    for (int j = 0; j < ((BUILD_MATRIX_COLS) - 1); j++){
-      matrix.set(i,j,matrix.get(i,(j+1)));
+    for (int j = 0; j < ((BUILD_MATRIX_COLS)-1); j++) {
+      matrix.set(i, j, matrix.get(i, (j + 1)));
     }
     //movMat++;
   }
   this->totPosX--;
-  if(this->totPosX<MATRIX_WIDTH){
-    this->vCanAddChar=true;
-  }else{
-    this->vCanAddChar=false;
+  if (this->totPosX < MATRIX_WIDTH) {
+    setCanAddChar(true);
+    //this->vCanAddChar = true;
   }
-
+  if (this->totPosX <1) {
+    setIfIsStringEnd(true);
+    //this->IsStringEnd = true;
+  }
+  
 }
 
-int DriveMatrix::getPosLastChar(){
+int DriveMatrix::getPosLastChar() {
   return this->totPosX;
 }
 
-bool DriveMatrix::canAddChar(){
+bool DriveMatrix::getIfIsStringEnd() {
+
+  return IsStringEnd;
+
+
+}
+void DriveMatrix::setIfIsStringEnd(bool status) {  
+ this->IsStringEnd=status;
+ ds("setIfIsStringEnd=");dsl(IsStringEnd);
+}
+
+void DriveMatrix::setCanAddChar(bool value) {
+  
+  this->vCanAddChar = value;
+  ds("setCanAddChar=");dsl(vCanAddChar);
+}
+bool DriveMatrix::canAddChar() {
   return this->vCanAddChar;
+}
+bool DriveMatrix::isAtTheEnd() {
+  return this->vIsInTheEnd;
 }
 //____________________________________________________________________
 //------------Function------------------------------------------------
-int DriveMatrix::getMovMat(){
+int DriveMatrix::getMovMat() {
 
   return movMat;
 }
-void DriveMatrix::getArrayOfCharsOfString(VectorClass &vecTemp,String strData){
+void DriveMatrix::getArrayOfCharsOfString(VectorClass& vecTemp, String strData) {
 
   //VectorClass vecTemp(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
   int numOfcharacter = 0;
   this->contChars = 0;
-  for (unsigned int i = 0; i < strData.length(); i++){
+  for (unsigned int i = 0; i < strData.length(); i++) {
 
     numOfcharacter = calcNumberOfChar(strData[i]);
-    if (numOfcharacter != 0)
-    {
+    if (numOfcharacter != 0) {
       vecTemp.push(numOfcharacter);
       this->codSumTot = this->codSumTot + ((i * 10) + numOfcharacter);
       this->contChars++;
@@ -209,36 +207,37 @@ void DriveMatrix::getArrayOfCharsOfString(VectorClass &vecTemp,String strData){
     }
   }
 
-  
+
 }
-unsigned long DriveMatrix::getCodSumTo(){
+unsigned long DriveMatrix::getCodSumTo() {
 
   return this->codSumTot;
 }
 //____________________________________________________________________
 //------------Function------------------------------------------------
-int DriveMatrix::getContChars(){
+int DriveMatrix::getContChars() {
 
   return contChars;
 }
-void DriveMatrix::fillArrrayOfChars(VectorClass &vecChar,String strToShow){
-        //static String lastStrToShow="";
-        String tempStr="";
-        if (this->lastStrToShow != strToShow){
-          dsil("Cambio el string");
-            tempStr=strToShow+MARQUE_SEPARATOR;
-            this->ResetInitPosMatrix();    
-            this->getArrayOfCharsOfString(vecChar,tempStr);
-            //vecChar.print();
-            this->lastStrToShow = strToShow;
-        }
-        
-}
-void DriveMatrix::getValuesOfCharMatrixAndAddToMatrix(MatrixClass &matrix,VectorClass &aIntCharMatrix,VectorClass &vecChar,int contCharAdded){
-  aIntCharMatrix.clear();
-  getCharMatrix(aIntCharMatrix,vecChar.get(contCharAdded));
-  // ds("aIntCharMatrix.getSize=");
-  // dsl(aIntCharMatrix.getSize());
-  this->AddConsToMatrix(matrix,aIntCharMatrix, vecChar.get(contCharAdded));
+void DriveMatrix::fillArrrayOfChars(VectorClass& vecChar, String strToShow) {
+  //static String lastStrToShow="";
+  String tempStr = "";
+  //if (this->lastStrToShow != strToShow) {
+  dsil("Cambio el string");
+  tempStr = strToShow + MARQUE_SEPARATOR;
+  this->ResetInitPosMatrix();
+  vecChar.clear();
+  this->getArrayOfCharsOfString(vecChar, tempStr);
+  //vecChar.print();
+  //this->lastStrToShow = strToShow;
+//}
 
 }
+// void DriveMatrix::getValuesOfCharMatrixAndAddToMatrix(MatrixClass& matrix, VectorClass& aIntCharMatrix, VectorClass& vecChar, int contCharAdded) {
+//   aIntCharMatrix.clear();
+//   getCharMatrix(aIntCharMatrix, vecChar.get(contCharAdded));
+//   // ds("aIntCharMatrix.getSize=");
+//   // dsl(aIntCharMatrix.getSize());
+//   this->AddConsToMatrix(matrix, aIntCharMatrix, vecChar.get(contCharAdded));
+
+// }
