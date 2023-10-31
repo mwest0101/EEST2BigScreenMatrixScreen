@@ -147,7 +147,7 @@ void DriveMatrix::moveMatrixToLeft(MatrixClass& matrix) {
     //movMat++;
   }
   this->totPosX--;
-  if (this->totPosX < 1) {
+  if (this->totPosX < MATRIX_WIDTH) {
     setCanAddChar(true);
     //this->vCanAddChar = true;
   }
