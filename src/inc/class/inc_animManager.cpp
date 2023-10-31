@@ -52,7 +52,7 @@ void AnimManager::reset()
 {
   ds4("Reset : contFrame=");
   ds4l(this->contFrame);
-  this->setIfisEnd(false);
+  //this->setIfisEnd(false);
   this->contFrame = 0;
 }
 bool AnimManager::getIfAnimIsEnd()
