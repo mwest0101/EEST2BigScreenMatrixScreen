@@ -24,52 +24,6 @@
 
 #include <Arduino.h>
 #include "inc/include.h"
-/*<-(QUITA ESTO) int *aPins;
-int nElements = 0;
-// int *aFrame;
-int *aT2;
-int *busChars;
-int *aPacman;
-int *aPacman2;
-int *aPacman3;
-// static int * aChar;
-int *AChar;
-int *BChar;
-int posLetDesp = 0;
-// int * aFrame;
-// int **matrix;
-int pinState = 0;
-#ifdef IS_LCDSCREEN
-MatrizLed pantalla;
-#endif
-*/
-
-
-/*
-String lastStrToShow = "";
-int *test;
-int oldCodSumTo = 0;
-int contChars = 0;
-int firstPass = 0;
-
-VectorClass vecTemp(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
-VectorClass vecChar(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
-MatrixClass matrix(BUILD_MATRIX_ROWS, BUILD_MATRIX_COLS, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
-
-String aPara[200];
-String aVals[200];
-int numOfcharacter = 0;
-
-
-char charReaded;
-char lastCharReaded;
-int action = 0;
-String strOption = "";
-bool getIfisEnd = false;
-bool canAddChar = false;
-bool getNextChar = true;
-int found=0;
-unsigned int aLargoString=0;*/
 
 #ifdef IS_LCDSCREEN
 MatrizLed pantalla;
@@ -129,9 +83,9 @@ String BTstrReceived = "";
 String lastBTstrReceived = "";
 //String inputString = "a:aefe1;x:1;v:2|m:tést de, texto";
 //String inputString = "a:aefe1";
-//String inputString = "a:efe1|a:efe2|a:efe3|a:efe4|a:efe5|a:efe6|a:efe7|a:tec1|a:tec2|a:tec3|a:tec4|a:tec5|a:tec6|m:E.E.S.T. Nº2";
-String inputString = "a:efe1;v:1;r:2|m:Original";
-//String strBackup="";
+String inputString = "a:efe1|a:efe2|a:efe3|a:efe4|a:efe5|a:efe6|a:efe7|a:tec1|a:tec2|a:tec3|a:tec4|a:tec5|a:tec6|m:E.E.S.T. Nº2";
+//String inputString = "a:efe2;v:1;r:2|m:AB";
+
 String option = "";
 unsigned long foundAnim = 0;
 unsigned long contLoop = 0;
@@ -140,7 +94,7 @@ SoftwareSerial BTSerial(52, 53);
 String strBt = "";
 char charBT = '\0';
 int sizeParams = 0;
-//int contLoop=0;
+
 
 void setup() {
     dsd();
@@ -182,33 +136,19 @@ void setup() {
     sm.setPantalla(pantalla);
 #endif
     time = micros();
-
     convProgToArray(vecPins, C_Pins, (sizeof(C_Pins) / 2));
-    //vecPins.print();
-
-
     difTime = waitTime;
     loopVelocity = waitTime * DEFAULT_VELOCITY;
-
-    ds("loopVelocity=");dsl(loopVelocity);
-    //VectorClassString vecStrOne(0);
-
-
     proccesActionFull(inputString, vecStr);
     sizeParams = vecStr.getSize();
     ds("sizeParams=")dsl(sizeParams);
-
     vecStr.print();
 }
 
-// Secuencia de la matriz
 void loop() {
-    // dsd();
-    // dss();
-    // ds("contLoop=");dsl(contLoop);
     time = micros();
-
     contLoop++;
+
     //******************************************************************
     //*****CAPTURA DE BLUETHOT******************************************
     strBt = getBluetoot(BTSerial, charBT);
@@ -217,35 +157,28 @@ void loop() {
         vecStr.clear();
     }
     if (strBt != "" && strBt != "-1") {
-        dsl("--->(0)-----------");    
-        dss();
-        ds("strBt=");dsl(strBt);      
         getAndSetParams(strBt, 0, option, effectOption,
             text, velocity, repeat, globalVelocity,
             globalStatus);
 
 
         if (option == "a" || option == "m") {
-            //inputString = strBt;
             vecStr.push(strBt);
         }
         else if (option == "iv" || option == "ip") {
-            ds("no se modifico vecStr:");
             vecStr.print();
         }
-
-
         strBt = "";
     }
     if (charBT == '@') {
 
         sizeParams = vecStr.getSize();
-        ds("Se modifico vecStr= ");vecStr.print();dsl();
-        ds("Size vecStr= ");vecStr.getSize();dsl();
+        // ds("Se modifico vecStr= ");vecStr.print();dsl();
+        // ds("Size vecStr= ");vecStr.getSize();dsl();
         //contRepeat=repeat;
         //vecStr.print();
     }
-    
+
     //******************************************************************
 
 
@@ -254,91 +187,82 @@ void loop() {
     //*****CONTROL DE TIEMPO********************************************
 
     if (difTime >= loopVelocity) {
-        dss();
+        // dss();
 
-        //if(contLoop>3000){
-        dss()
-        dsl("--->(0)-----------");   
+        // //if(contLoop>3000){
+        // dss()
+        // dsl("--->(0)-----------");   
         ds("contRepeat=");ds(contRepeat);ds(" repeat=");dsl(repeat);
-        ds("contParam=");ds(contParam);ds(" sizeParams=");dsl(sizeParams);
+        // ds("contParam=");ds(contParam);ds(" sizeParams=");dsl(sizeParams);
+        // dsl("..####....####...##..##..######..........#####....####...#####....####...##...##.");
+        // dsl(".##..##..##..##..###.##....##............##..##..##..##..##..##..##..##..###.###.");
+        // dsl(".##......##..##..##.###....##............#####...######..#####...######..##.#.##.");
+        // dsl(".##..##..##..##..##..##....##............##......##..##..##..##..##..##..##...##.");
+        // dsl("..####....####...##..##....##....######..##......##..##..##..##..##..##..##...##.");
+        // dsl(".................................................................................");
 
-        if (contRepeat > (repeat-1)) {
+       
 
-            
-            contRepeat=0;
-            contParam++;
-            dsl("--->(0A)-----------");   
-            ds("contRepeat=");ds(contRepeat);ds(" contParam=");dsl(contParam);
-            if (contParam > (sizeParams-1)) {
-                
-                contParam = 0;
-                dsl("--->(0B)-----------");   
-                ds(" contParam=");dsl(contParam);
-            }
-            
-        }
         dss();
 
         //controla que haya terminado las animciones y marquee
         ds("Entro por tiempo=");dsl(contParam);
-        
-        ds("dm.getIfIsStringEnd()=");   ds(dm.getIfIsStringEnd());
-        ds(" an.getIfAnimIsEnd()");      dsl(an.getIfAnimIsEnd());
 
-        dsl("--->(1)-----------");    
-        if(dm.getIfIsStringEnd() && an.getIfAnimIsEnd()){
-            dsl("--->(2)-----------");    
+        // ds("dm.getIfIsStringEnd()=");   ds(dm.getIfIsStringEnd());
+        // ds(" an.getIfAnimIsEnd()");      dsl(an.getIfAnimIsEnd());
+
+        //dsl("--->(1)-----------");    
+        if (dm.getIfIsStringEnd() && an.getIfAnimIsEnd()) {
+            dsl("--->(2)-----------");
             ds("c=");ds(contParam);
             //toMA UN PARAMETRO DEL VECTOR DE PARAMETROS
             getAndSetParamsOne(vecStr.get(contParam), option, effectOption, text, velocity, repeat, globalVelocity, globalStatus);
-        
+
             if (option == "m" && (lastStrToShow != text)) {
-                dsl("--->(3)-----------");    
+                dsl("--->(2A)-----------");
                 // Get the int codes and pass to array of each CHAR in the string
                 dm.fillArrrayOfChars(vecChar, text);
                 lastStrToShow = text;
                 dm.setIfIsStringEnd(false);
             }
-            if(option=="a"){
-              an.setIfisEnd(false);  
+            if (option == "a") {
+                dsl("--->(2B)-----------");
+                an.setIfisEnd(false);
             }
         }
-  
+
         //--------------------------------------------------------------------            
         // Si la opcion es marquee y se puede agregar un caracter a la matriz
         // lo agrega
-        ds("option =");ds(option);
-        ds(" dm.canAddChar()=");ds(dm.canAddChar());
-        ds(" contCharAdded =");ds(contCharAdded);
-        ds(" vecChar.getSize()=");ds(vecChar.getSize());
-        dss()
-        dsl("--->(5)-----------");    
+        // ds("option =");ds(option);
+        // ds(" dm.canAddChar()=");ds(dm.canAddChar());
+        // ds(" contCharAdded =");ds(contCharAdded);
+        // ds(" vecChar.getSize()=");ds(vecChar.getSize());
+        // dss()
+        // dsl("--->(5)-----------");    
         if (option == "m" && dm.canAddChar() && contCharAdded < vecChar.getSize()) {
-            dsl("-->Step 03<--");
-            dsl("--->(6)-----------");    
-            //dsl()
-            dsl(".######..######..##..##..######.");
-            dsl("...##....##.......####.....##...");
-            dsl("...##....####......##......##...");
-            dsl("...##....##.......####.....##...");
-            dsl("...##....######..##..##....##...");
-            dsl("................................");
+
+            dsl("--->(3)-----------");
+            // //dsl()
+            // dsl(".######..######..##..##..######.");
+            // dsl("...##....##.......####.....##...");
+            // dsl("...##....####......##......##...");
+            // dsl("...##....##.......####.....##...");
+            // dsl("...##....######..##..##....##...");
+            // dsl("................................");
 
             ds("contCharAdded=");dsl(contCharAdded);
             aIntCharMatrix.clear();
             getCharMatrix(aIntCharMatrix, vecChar.get(contCharAdded));
             dm.AddConsToMatrix(matrix, aIntCharMatrix, vecChar.get(contCharAdded));
             dm.setCanAddChar(false);
-            
-            
+
+
             contCharAdded++;
         }
-        /*
-        if(contCharAdded>=vecChar.getSize()){
-            dsl("--->(7)-----------");    
-            contCharAdded = 0; 
-            dm.setIfIsStringEnd(true);
-        }*/
+
+
+
 
         //--------------------------------------------------------------------
 
@@ -347,189 +271,101 @@ void loop() {
             // si la opcion es marquee y se puede mover se mueve la matriz hacia
             // la izquierda hasta que llega a 0
         dss();
-        
+
         if (option == "m") {
-            dsl("-->Step 04<--");
-            dsl("--->(8)-----------");    
+
+            dsl("--->(4)-----------");
             matrix.print();
             if (dm.getPosLastChar() > 0) {
+                dsl("--->(4A)-----------");
                 dm.GetFrame(matrix, aFrame);
-                dm.moveMatrixToLeft(matrix);            
-            }            
-        }else if (option == "a" && !an.getIfAnimIsEnd()) {
-            dsl("--->(8a)-----------");  
-            dsl("-->Step 05<--");
-            dsl("..####...##..##..######..##...##.");
-            dsl(".##..##..###.##....##....###.###.");
-            dsl(".######..##.###....##....##.#.##.");
-            dsl(".##..##..##..##....##....##...##.");
-            dsl(".##..##..##..##..######..##...##.");
-            dsl(".................................");
+                dm.moveMatrixToLeft(matrix);
+            }
+        }
+        else if (option == "a" && !an.getIfAnimIsEnd()) {
+            dsl("--->(4B)-----------");
+
+            // dsl("..####...##..##..######..##...##.");
+            // dsl(".##..##..###.##....##....###.###.");
+            // dsl(".######..##.###....##....##.#.##.");
+            // dsl(".##..##..##..##....##....##...##.");
+            // dsl(".##..##..##..##..######..##...##.");
+            // dsl(".................................");
 
 
             foundAnim = an.getAnim(aFrame, effectOption);
-            dsl("Paso m por acá->a 2");
+            // dsl("Paso m por acá->a 2");
         }
 
-        dss();
-        //--Enciende las luces o la matriz led.
-        dsl("--->if(option == a || option == m sm.PrintLedMatrix");
+        // dss();
+        // //--Enciende las luces o la matriz led.
+        // dsl("--->if(option == a || option == m sm.PrintLedMatrix");
         if (option == "a" || option == "m") {
-            dsl("--->(9)-----------");    
-            sm.PrintLedMatrix(aFrame, aLastFrame, vecPins);        
+            dsl("--->(5)-----------");
+            sm.PrintLedMatrix(aFrame, aLastFrame, vecPins);
         }
-            
+        /*
+        if (contCharAdded >= vecChar.getSize()) {
+            dsl("--->(6)-----------");
+            contCharAdded = 0;
+            ds("Setea a 0 contCharAdded=");dsl(contCharAdded);
+            dm.setIfIsStringEnd(true);
+        }*/
 
         //si llegal final de los efectos o animaciones reinicializa todo y cuenta una repeticion
-        dss();
-        
-        dsl("--->(10)----------");    
-        ds("contCharAdded=")dsl(contCharAdded);
-        ds("vecChar.getSize()=")dsl(vecChar.getSize());
-        ds("dm.getIfIsStringEnd()=")dsl(dm.getIfIsStringEnd());
-        ds("an.getIfAnimIsEnd()=")dsl(an.getIfAnimIsEnd());                
+        // dss();
 
-        if ((contCharAdded >= vecChar.getSize() && dm.getIfIsStringEnd()) && an.getIfAnimIsEnd()) {
-            dsl("--->(11)----------");    
-            dsl("Entro a reset final");
+        // dsl("--->(10)----------");    
+        // ds("contCharAdded=")dsl(contCharAdded);
+        // ds("vecChar.getSize()=")dsl(vecChar.getSize());
+        // ds("dm.getIfIsStringEnd()=")dsl(dm.getIfIsStringEnd());
+        // ds("an.getIfAnimIsEnd()=")dsl(an.getIfAnimIsEnd());                
+        
+        // dm.getIfIsStringEnd()) && 
+        if ((contCharAdded >= vecChar.getSize() && option == "m") || (an.getIfAnimIsEnd() && option == "a")) {
+            dsl("--->(7)----------");
+            // dsl("Entro a reset final");
             an.reset();
+            contCharAdded = 0;
             dm.ResetInitPosMatrix();
             //dm.setIfIsStringEnd(false);
             dm.setIfIsStringEnd(true);
-            matrix.clear();                                
+            matrix.clear();
             contRepeat++;
-            contCharAdded = 0; 
+            contCharAdded = 0;
         }
+        dsl("--->(8)-----------");
+        ds("contParam=");ds(contParam);ds(" sizeParams=");dsl(sizeParams);
+        ds("contRepeat=");ds(contRepeat);ds(" repeat=");dsl(repeat);
+
+        if (contRepeat >= repeat) {
+
+
+            contRepeat = 0;
+            contParam++;
+            dsl("--->(9)-----------");
+            ds("contRepeat=");ds(contRepeat);ds(" contParam=");dsl(contParam);
+
+            if (contParam >= sizeParams) {
+
+                contParam = 0;
+                dsl("--->(1)-----------");
+                ds(" contParam=");dsl(contParam);
+            }
+        }
+    
+        // dsl("--->(11)----------");    
+        // ds("contRepeat=")dsl(contRepeat);
+        // ds("contCharAdded=")dsl(contCharAdded);
+        // ds("vecChar.getSize()=")dsl(vecChar.getSize());
+        // ds("dm.getIfIsStringEnd()=")dsl(dm.getIfIsStringEnd());
+        // ds("an.getIfAnimIsEnd()=")dsl(an.getIfAnimIsEnd());   
 
         //contLoop=0;
 
-     lastTime = time;
-    
+        lastTime = time;
+
     }
     difTime = time - lastTime;
-    //******************************************************************
-
-
-    /*
-
-    getAndSetParamsOne(vecStr.get(contParam),    option,     effectOption,
-                         text,          velocity,     repeat,     globalVelocity,
-                         globalStatus);
-    contParam++;
-    if (contParam >= sizeParams) contParam = 0;  */
-    //dsd();
-
-    //Nuevo String|m:Ingrese Texto;r:1;v:5|iv:-1|iv:-2|iv:-1|iv:0|iv:1|iv:2|ip:Play|ip:Stop|ip:Play
-    /* Quita esto
-    if (contRepeat >= repeat && strBt != "-1") {
-
-
-
-        //contRepeat = 0;
-        //option == "";
-        dss();
-
-        dsl("contRepeat >= repeat != "" -->Step 01<--");
-
-        //      proccesAction(inputString, option, effectOption, text, velocity, repeat);
-        getAndSetParams(inputString, sizeParams, contParam,    option,     effectOption,
-                         text,          velocity,     repeat,     globalVelocity,
-                         globalStatus);
-
-        loopVelocity = waitTime * (velocity + globalVelocity);
-
-        ds("contParam=");ds(contParam);ds(" sizeParams=");dsl(sizeParams);
-
-        contParam++;
-        if (contParam >= sizeParams) contParam = 0;
-
-    }else{
-        contRepeat++;
-    }
-
-    Quita esto
-   */
-
-   //vecStrOne.print();
-
-//Test de escirtura con teclado mecanico
-    /*
-    DESCOMENTAR ESTO
-    if (difTime >= loopVelocity) {
-
-        if (option == "m" && (lastStrToShow != text)) {
-            dsl("-->Step 02<--");
-            dm.fillArrrayOfChars(vecChar, text);
-            lastStrToShow = text;
-
-        }
-        //--------------------------------------------------------------------
-        // Si la opcion es marquee y se puede agregar un caracter a la matriz
-        // lo agrega
-        if (option == "m" && dm.canAddChar() && contCharAdded < vecChar.getSize()) {
-            dsl("-->Step 03<--");
-            ds("contCharAdded=");dsl(contCharAdded);
-            aIntCharMatrix.clear();
-            getCharMatrix(aIntCharMatrix, vecChar.get(contCharAdded));
-            dm.AddConsToMatrix(matrix, aIntCharMatrix, vecChar.get(contCharAdded));
-            dm.setCanAddChar(false);
-            contCharAdded++;
-        }
-        //--------------------------------------------------------------------
-        // si la opcion es marquee y se puede mover se mueve la matriz hacia
-        // la izquierda hasta que llega a 0
-        ds5("option=");ds5l(option);
-
-
-        if (option == "m") {
-            dsl("-->Step 04<--");
-            matrix.print();
-            if (dm.getPosLastChar() > 0) {
-                dm.GetFrame(matrix, aFrame);
-                dm.moveMatrixToLeft(matrix);
-                ds("dm.getPosLastChar()=");dsl(dm.getPosLastChar());
-            }
-            dsl("Paso m por acá->m 1");
-        }
-
-        ds5("an.getIfAnimIsEnd()=");ds5l(an.getIfAnimIsEnd());
-
-        if (option == "a" && !an.getIfAnimIsEnd()) {
-            dsl("-->Step 05<--");
-            foundAnim = an.getAnim(aFrame, effectOption);
-            dsl("Paso m por acá->a 2");
-        }
-
-        if (option == "a" || option == "m") {
-            dsl("-->Step 06<--");
-            sm.PrintLedMatrix(aFrame, aLastFrame, vecPins);
-            dsl("Paso m por acá-> 3");
-        }
-        ds5(" dm.getIfIsStringEnd()=");ds5l(dm.getIfIsStringEnd());
-        ds5(" an.getIfAnimIsEnd()=");ds5l(an.getIfAnimIsEnd());
-
-
-        if ((contCharAdded >= vecChar.getSize() && dm.getIfIsStringEnd()) || an.getIfAnimIsEnd()) {
-            dsl("-->Step 07<--");
-
-            //option = "";
-            an.reset();
-            dm.ResetInitPosMatrix();
-            dm.setIfIsStringEnd(false);
-            matrix.clear();
-            contCharAdded = 0;
-            dsl("Paso m por acá-> 4");
-            contRepeat++;
-        }
-        lastTime = time;
-    }
-    FIN DESCOMENTAR ESTO
-    */
-
-
-    
-
-
-    //difTime2 = time - lastTime2;
 
 }
