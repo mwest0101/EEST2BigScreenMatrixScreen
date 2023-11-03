@@ -13,7 +13,7 @@
   #define EL              C_END_LIN
   
   //#define DEBUG           true
-  #define DEBUG_SERIAL true
+  //#define DEBUG_SERIAL true
   //#define DEBUG_MATRIX    true
   //#define DEBUG_BY_VSCODE
   
@@ -35,7 +35,7 @@
 
   //#define WAIT_TIME_LOOP 1000000;
   //#define WAIT_TIME_LOOP      25000;
-  #define WAIT_TIME_LOOP      60000;
+  #define WAIT_TIME_LOOP      40000;
   //#define WAIT_TIME_LOOP    50000;
   //#define WAIT_TIME_LOOP    500000;
   
@@ -43,7 +43,7 @@
   #define TIME_TO_GET_BT    400000
   #define MARQUE_SEPARATOR " ";
   
-  #define DEFAULT_VELOCITY 5;
+  #define DEFAULT_VELOCITY 10;
   #define DEFAULT_REPEAT 1;
   
   

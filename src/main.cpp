@@ -82,6 +82,13 @@ int sizeParams = 0;
 bool isBtBuilding=false;
 bool isStrUpdatedByBt=false;
 
+
+String tempOption="";
+String tempEffectOption="";
+String tempText="";
+int tempVelocity=0;
+int tenoRepeat=0;
+
 void setup() {
     //ds("");
     dsl("------SETUP--------------------------");
@@ -159,19 +166,20 @@ void loop() {
         vecStr.clear();
         isBtBuilding=true;
     }else if (strBt != "" && strBt != "-1") {
-        
-        getAndSetParams(strBt,          0,          option,     effectOption,
-                        text,           velocity,   repeat,     globalVelocity,
+       
+
+        getAndSetParams(strBt,          0,          tempOption,     tempEffectOption,
+                        tempText,           tempVelocity,   tenoRepeat,     globalVelocity,
                         globalStatus);
 
 
-        if (option == "a" || option == "m") {
+        if (tempOption == "a" || tempOption == "m") {
             isBtBuilding=true;
             vecStr.push(strBt);
-            isStrUpdatedByBt=true;
+            //isStrUpdatedByBt=true;
             //vecStr.print();
             
-        }else if (option == "iv" || option == "ip") {
+        }else if (tempOption == "iv" || tempOption == "ip") {
             //vecStr.print();
             calcLoopTime =loopWaitTime*globalVelocity;
             ds("loopWaitTime=");dsl(loopWaitTime);            
@@ -179,7 +187,7 @@ void loop() {
             ds("calcLoopTime=");dsl(calcLoopTime);
 
             isBtBuilding=false;
-            isStrUpdatedByBt=true;
+            //isStrUpdatedByBt=true;
             ds("iv/ip:strBt=");dsl(strBt);
         }
         
@@ -213,7 +221,7 @@ void loop() {
         ds("Entro por tiempo=");dsl(contParam);
 
         //dsl("--->(1)-----------");    
-        if ((dm.getIfIsStringEnd() && an.getIfAnimIsEnd()) || isStrUpdatedByBt) {
+        if ((dm.getIfIsStringEnd() && an.getIfAnimIsEnd())) {
             dsl("--->(2)-----------");
             ds("c=");ds(contParam);
             //toMA UN PARAMETRO DEL VECTOR DE PARAMETROS
