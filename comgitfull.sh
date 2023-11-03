@@ -13,6 +13,6 @@ git push
 
 
 # Comprimir archivos, excluyendo .git, .rar y .gz
-tar --exclude='*.git' --exclude='*.rar' --exclude='*.gz' -czvf "$archivo_comprimido" *
+tar --exclude='*.git' --exclude='*.rar' --exclude='*.gz' --exclude='*.zip' -czvf "$archivo_comprimido" *
 
 echo "Proceso completado. Archivo comprimido y se ha realizado el commit y push."
