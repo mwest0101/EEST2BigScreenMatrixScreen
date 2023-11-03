@@ -1,6 +1,4 @@
-﻿
-
-// ╔══════════════════════════════════════════════════════════════════╗
+﻿// ╔══════════════════════════════════════════════════════════════════╗
 // ║   ____    _             __  __           _            _          ║
 // ║  |  _ \  (_)           |  \/  |         | |          (_)         ║
 // ║  | |_) |  _    __ _    | \  / |   __ _  | |_   _ __   _  __  __  ║
@@ -42,7 +40,7 @@ int repeat = DEFAULT_REPEAT;
 int contRepeat = 0;
 
 int velocity = DEFAULT_VELOCITY;
-int globalVelocity = 0;
+
 String globalStatus = "play";
 
 
@@ -51,28 +49,17 @@ int contCharAdded = 0;
 unsigned long time = 0;
 unsigned long lastTime = 0;
 unsigned long difTime = 0;
-unsigned long waitTime = 0;
+unsigned long loopWaitTime = 0;
 
-unsigned long lastTime2 = 0;
-unsigned long difTime2 = 0;
-
-double promTime2 = 0;
-
-unsigned long lastTime3 = 0;
-unsigned long difTime3 = 0;
 
 double promTime3 = 0;
-
-//int repeat = 0;
-
+unsigned long calcLoopTime=0;
 VectorClass vecPins(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 VectorClass vecChar(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 VectorClass aIntCharMatrix(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 VectorClass aFrame(36, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 VectorClass aLastFrame(36, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 VectorClassString vecStr(0);
-
-//VectorClassString vecStrOne(36, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 VectorClassString vecStrFromBt(0);
 VectorClassString vecStrParam(0);
 
@@ -81,28 +68,26 @@ MatrixClass matrix(BUILD_MATRIX_ROWS, BUILD_MATRIX_COLS, VECTOR_MIN_VALUE, VECTO
 String lastStrToShow = "";
 String BTstrReceived = "";
 String lastBTstrReceived = "";
-//String inputString = "a:aefe1;x:1;v:2|m:tést de, texto";
-//String inputString = "a:aefe1";
-String inputString = "a:efe1|a:efe2|a:efe3|a:efe4|a:efe5|a:efe6|a:efe7|a:tec1|a:tec2|a:tec3|a:tec4|a:tec5|a:tec6|m:E.E.S.T. Nº2";
-//String inputString = "a:efe2;v:1;r:2|m:AB";
+String inputString = "a:efe2;v:1;r:2|m:AB";
 
 String option = "";
 unsigned long foundAnim = 0;
 unsigned long contLoop = 0;
-unsigned long loopVelocity = 0;
+int loopVelocity = 0;
+int globalVelocity=0;
 SoftwareSerial BTSerial(52, 53);
 String strBt = "";
 char charBT = '\0';
 int sizeParams = 0;
-
+bool isBtBuilding=false;
+bool isStrUpdatedByBt=false;
 
 void setup() {
-    dsd();
+    //ds("");
     dsl("------SETUP--------------------------");
     time = micros();
     lastTime = time;
-    difTime = WAIT_TIME_LOOP;
-    waitTime = WAIT_TIME_LOOP;
+    
 
 #ifndef WAIT_TIME_LOOP
 #define WAIT_TIME_LOOP 500000
@@ -137,82 +122,98 @@ void setup() {
 #endif
     time = micros();
     convProgToArray(vecPins, C_Pins, (sizeof(C_Pins) / 2));
-    difTime = waitTime;
-    loopVelocity = waitTime * DEFAULT_VELOCITY;
+    
+    difTime = WAIT_TIME_LOOP;
+    loopWaitTime = WAIT_TIME_LOOP;
+
+    calcLoopTime =loopWaitTime*DEFAULT_VELOCITY;
+    difTime = calcLoopTime;
+
+    globalVelocity=DEFAULT_VELOCITY;
+
     proccesActionFull(inputString, vecStr);
     sizeParams = vecStr.getSize();
     ds("sizeParams=")dsl(sizeParams);
     vecStr.print();
+    
+
+    
+    
 }
 
 void loop() {
+   
+   
+   dsd();
+   dsl("LOOP");
+   dsd();
     time = micros();
     contLoop++;
 
     //******************************************************************
     //*****CAPTURA DE BLUETHOT******************************************
     strBt = getBluetoot(BTSerial, charBT);
-
+    
+    
     if (charBT == '$') {
         vecStr.clear();
-    }
-    if (strBt != "" && strBt != "-1") {
-        getAndSetParams(strBt, 0, option, effectOption,
-            text, velocity, repeat, globalVelocity,
-            globalStatus);
+        isBtBuilding=true;
+    }else if (strBt != "" && strBt != "-1") {
+        
+        getAndSetParams(strBt,          0,          option,     effectOption,
+                        text,           velocity,   repeat,     globalVelocity,
+                        globalStatus);
 
 
         if (option == "a" || option == "m") {
+            isBtBuilding=true;
             vecStr.push(strBt);
+            isStrUpdatedByBt=true;
+            //vecStr.print();
+            
+        }else if (option == "iv" || option == "ip") {
+            //vecStr.print();
+            calcLoopTime =loopWaitTime*globalVelocity;
+            ds("loopWaitTime=");dsl(loopWaitTime);            
+            ds("globalVelocity=");dsl(globalVelocity);                        
+            ds("calcLoopTime=");dsl(calcLoopTime);
+
+            isBtBuilding=false;
+            isStrUpdatedByBt=true;
+            ds("iv/ip:strBt=");dsl(strBt);
         }
-        else if (option == "iv" || option == "ip") {
-            vecStr.print();
-        }
+        
         strBt = "";
-    }
-    if (charBT == '@') {
-
+    }else if (charBT == '@') {
         sizeParams = vecStr.getSize();
-        // ds("Se modifico vecStr= ");vecStr.print();dsl();
-        // ds("Size vecStr= ");vecStr.getSize();dsl();
-        //contRepeat=repeat;
-        //vecStr.print();
+        ds("@:strBt=");dsl(strBt);
+        isBtBuilding=false;
     }
+    dss();
+    dsl("vecStr Antes de entrar")
+    vecStr.print();
+    dss();
+    
+    ds("globalVelocity=");dsl(globalVelocity);
+    //______________________________________________________________________
+    //--------CONTROL DE TIEMPO---------------------------------------------
+    
+    // calcLoopTime=(loopVelocity/loopWaitTime*globalVelocity);
+    // ds("calcLoopTime=");dsl(calcLoopTime);
+    ds("difTime=");ds(difTime);ds(" calcLoopTime=");dsl(calcLoopTime);
+    ds("isBtBuilding=");dsl(isBtBuilding);
+    ds("option=");dsl(option);
+    
+    if (!isBtBuilding && difTime >= calcLoopTime) {
 
-    //******************************************************************
+        
 
-
-
-    //******************************************************************
-    //*****CONTROL DE TIEMPO********************************************
-
-    if (difTime >= loopVelocity) {
-        // dss();
-
-        // //if(contLoop>3000){
-        // dss()
-        // dsl("--->(0)-----------");   
         ds("contRepeat=");ds(contRepeat);ds(" repeat=");dsl(repeat);
-        // ds("contParam=");ds(contParam);ds(" sizeParams=");dsl(sizeParams);
-        // dsl("..####....####...##..##..######..........#####....####...#####....####...##...##.");
-        // dsl(".##..##..##..##..###.##....##............##..##..##..##..##..##..##..##..###.###.");
-        // dsl(".##......##..##..##.###....##............#####...######..#####...######..##.#.##.");
-        // dsl(".##..##..##..##..##..##....##............##......##..##..##..##..##..##..##...##.");
-        // dsl("..####....####...##..##....##....######..##......##..##..##..##..##..##..##...##.");
-        // dsl(".................................................................................");
-
-       
-
-        dss();
-
-        //controla que haya terminado las animciones y marquee
+        
         ds("Entro por tiempo=");dsl(contParam);
 
-        // ds("dm.getIfIsStringEnd()=");   ds(dm.getIfIsStringEnd());
-        // ds(" an.getIfAnimIsEnd()");      dsl(an.getIfAnimIsEnd());
-
         //dsl("--->(1)-----------");    
-        if (dm.getIfIsStringEnd() && an.getIfAnimIsEnd()) {
+        if ((dm.getIfIsStringEnd() && an.getIfAnimIsEnd()) || isStrUpdatedByBt) {
             dsl("--->(2)-----------");
             ds("c=");ds(contParam);
             //toMA UN PARAMETRO DEL VECTOR DE PARAMETROS
@@ -224,32 +225,16 @@ void loop() {
                 dm.fillArrrayOfChars(vecChar, text);
                 lastStrToShow = text;
                 dm.setIfIsStringEnd(false);
-            }
-            if (option == "a") {
+            }else if (option == "a") {
                 dsl("--->(2B)-----------");
                 an.setIfisEnd(false);
             }
         }
 
-        //--------------------------------------------------------------------            
-        // Si la opcion es marquee y se puede agregar un caracter a la matriz
-        // lo agrega
-        // ds("option =");ds(option);
-        // ds(" dm.canAddChar()=");ds(dm.canAddChar());
-        // ds(" contCharAdded =");ds(contCharAdded);
-        // ds(" vecChar.getSize()=");ds(vecChar.getSize());
-        // dss()
-        // dsl("--->(5)-----------");    
+   
         if (option == "m" && dm.canAddChar() && contCharAdded < vecChar.getSize()) {
 
             dsl("--->(3)-----------");
-            // //dsl()
-            // dsl(".######..######..##..##..######.");
-            // dsl("...##....##.......####.....##...");
-            // dsl("...##....####......##......##...");
-            // dsl("...##....##.......####.....##...");
-            // dsl("...##....######..##..##....##...");
-            // dsl("................................");
 
             ds("contCharAdded=");dsl(contCharAdded);
             aIntCharMatrix.clear();
@@ -261,16 +246,10 @@ void loop() {
             contCharAdded++;
         }
 
-
-
-
-        //--------------------------------------------------------------------
-
-
             //--------------------------------------------------------------------
             // si la opcion es marquee y se puede mover se mueve la matriz hacia
             // la izquierda hasta que llega a 0
-        dss();
+
 
         if (option == "m") {
 
@@ -284,44 +263,15 @@ void loop() {
         }
         else if (option == "a" && !an.getIfAnimIsEnd()) {
             dsl("--->(4B)-----------");
-
-            // dsl("..####...##..##..######..##...##.");
-            // dsl(".##..##..###.##....##....###.###.");
-            // dsl(".######..##.###....##....##.#.##.");
-            // dsl(".##..##..##..##....##....##...##.");
-            // dsl(".##..##..##..##..######..##...##.");
-            // dsl(".................................");
-
-
             foundAnim = an.getAnim(aFrame, effectOption);
-            // dsl("Paso m por acá->a 2");
+
         }
 
-        // dss();
-        // //--Enciende las luces o la matriz led.
-        // dsl("--->if(option == a || option == m sm.PrintLedMatrix");
         if (option == "a" || option == "m") {
             dsl("--->(5)-----------");
             sm.PrintLedMatrix(aFrame, aLastFrame, vecPins);
-        }
-        /*
-        if (contCharAdded >= vecChar.getSize()) {
-            dsl("--->(6)-----------");
-            contCharAdded = 0;
-            ds("Setea a 0 contCharAdded=");dsl(contCharAdded);
-            dm.setIfIsStringEnd(true);
-        }*/
-
-        //si llegal final de los efectos o animaciones reinicializa todo y cuenta una repeticion
-        // dss();
-
-        // dsl("--->(10)----------");    
-        // ds("contCharAdded=")dsl(contCharAdded);
-        // ds("vecChar.getSize()=")dsl(vecChar.getSize());
-        // ds("dm.getIfIsStringEnd()=")dsl(dm.getIfIsStringEnd());
-        // ds("an.getIfAnimIsEnd()=")dsl(an.getIfAnimIsEnd());                
+        }       
         
-        // dm.getIfIsStringEnd()) && 
         if ((contCharAdded >= vecChar.getSize() && option == "m") || (an.getIfAnimIsEnd() && option == "a")) {
             dsl("--->(7)----------");
             // dsl("Entro a reset final");
@@ -339,8 +289,6 @@ void loop() {
         ds("contRepeat=");ds(contRepeat);ds(" repeat=");dsl(repeat);
 
         if (contRepeat >= repeat) {
-
-
             contRepeat = 0;
             contParam++;
             dsl("--->(9)-----------");
@@ -353,19 +301,12 @@ void loop() {
                 ds(" contParam=");dsl(contParam);
             }
         }
-    
-        // dsl("--->(11)----------");    
-        // ds("contRepeat=")dsl(contRepeat);
-        // ds("contCharAdded=")dsl(contCharAdded);
-        // ds("vecChar.getSize()=")dsl(vecChar.getSize());
-        // ds("dm.getIfIsStringEnd()=")dsl(dm.getIfIsStringEnd());
-        // ds("an.getIfAnimIsEnd()=")dsl(an.getIfAnimIsEnd());   
-
-        //contLoop=0;
 
         lastTime = time;
 
     }
+    
     difTime = time - lastTime;
-
+    
+  
 }
