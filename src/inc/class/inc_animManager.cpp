@@ -74,7 +74,9 @@ int AnimManager::getAnim(VectorClass &aFrame,String strOption)
   //if(strOption != lastStrOption)
   if (strOption == "pac1"){dsl("->pac1");aFrame.clear();this->convProgToArrayByFrame(aFrame, C_PACMAN_ANIM_01, (sizeof(C_PACMAN_ANIM_01) / 2));found=1;}
   if (strOption == "pac2"){dsl("->pac2");aFrame.clear();this->convProgToArrayByFrame(aFrame, C_PACMAN_ANIM_02, (sizeof(C_PACMAN_ANIM_02) / 2));found=1;}
+
   if (strOption == "tet1"){dsl("->tet1");aFrame.clear();this->convProgToArrayByFrame(aFrame, C_TETRIS_ANIM_01, (sizeof(C_TETRIS_ANIM_01) / 2));found=1;}  
+  
   if (strOption == "efe1"){dsl("->efe1");aFrame.clear();this->convProgToArrayByFrame(aFrame, C_EFECTOS_ANIM_01, (sizeof(C_EFECTOS_ANIM_01) / 2));found=1;}  
   if (strOption == "efe2"){dsl("->efe2");aFrame.clear();this->convProgToArrayByFrame(aFrame, C_EFECTOS_ANIM_02, (sizeof(C_EFECTOS_ANIM_02) / 2));found=1;}  
   if (strOption == "efe3"){dsl("->efe3");aFrame.clear();this->convProgToArrayByFrame(aFrame, C_EFECTOS_ANIM_03, (sizeof(C_EFECTOS_ANIM_03) / 2));found=1;}  

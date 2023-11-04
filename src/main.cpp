@@ -41,7 +41,7 @@ int contRepeat = 0;
 
 int velocity = DEFAULT_VELOCITY;
 
-String globalStatus = "play";
+String globalStatus = "Play";
 
 
 int contCharAdded = 0;
@@ -68,7 +68,11 @@ MatrixClass matrix(BUILD_MATRIX_ROWS, BUILD_MATRIX_COLS, VECTOR_MIN_VALUE, VECTO
 String lastStrToShow = "";
 String BTstrReceived = "";
 String lastBTstrReceived = "";
-String inputString = "a:efe2;v:1;r:2|m:AB";
+
+//String inputString = "a:efe2;v:1;r:2|m:AB";
+String inputString = "a:tet1;v:1;r:1|a:pac1;v:1;r:1|a:pac2;v:1;r:1|a:efe1;v:1;r:1|a:efe2;v:1;r:1|a:efe3;v:1;r:1|a:efe4;v:1;r:1|a:efe5;v:1;r:1|a:efe6;v:1;r:1|a:efe7;v:1;r:1|a:tec1;v:1;r:1|a:tec2;v:1;r:1|a:tec3;v:1;r:1|a:tec4;v:1;r:1|a:tec5;v:1;r:1|a:tec6;v:1;r:1|m:Escuela";
+
+
 
 String option = "";
 unsigned long foundAnim = 0;
@@ -88,6 +92,8 @@ String tempEffectOption="";
 String tempText="";
 int tempVelocity=0;
 int tenoRepeat=0;
+bool horizontalInvertFrame=false;
+bool verticalInvertFrame=false;
 
 void setup() {
     //ds("");
@@ -212,7 +218,7 @@ void loop() {
     ds("isBtBuilding=");dsl(isBtBuilding);
     ds("option=");dsl(option);
     
-    if (!isBtBuilding && difTime >= calcLoopTime) {
+    if (!isBtBuilding && difTime >= calcLoopTime && globalStatus=="Play") {
 
         
 
