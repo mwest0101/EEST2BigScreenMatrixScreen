@@ -41,7 +41,7 @@ int contRepeat = 0;
 
 int velocity = DEFAULT_VELOCITY;
 
-String globalStatus = "Play";
+
 
 
 int contCharAdded = 0;
@@ -78,8 +78,13 @@ String inputString = "a:tet1;v:1;r:1|m:Escuela";
 String option = "";
 unsigned long foundAnim = 0;
 unsigned long contLoop = 0;
-int loopVelocity = 0;
-int globalVelocity=0;
+int     loopVelocity = 0;
+int     globalVelocity=0;
+int     globalInvert=0;
+String  globalStatus = "Play";
+
+int     invert=0;
+
 SoftwareSerial BTSerial(52, 53);
 String strBt = "";
 char charBT = '\0';
@@ -92,8 +97,9 @@ String tempOption="";
 String tempEffectOption="";
 String tempText="";
 int tempVelocity=0;
-int tenoRepeat=0;
-bool horizontalInvertFrame=true;
+int tempRepeat=0;
+int tempInvert=0;
+bool horizontalInvertFrame=false;
 bool verticalInvertFrame=false;
 
 void setup() {
@@ -175,9 +181,10 @@ void loop() {
     }else if (strBt != "" && strBt != "-1") {
        
 
-        getAndSetParams(strBt,          0,          tempOption,     tempEffectOption,
-                        tempText,           tempVelocity,   tenoRepeat,     globalVelocity,
-                        globalStatus);
+        getAndSetParams( strBt               ,0                 ,tempOption
+                        ,tempEffectOption    ,tempText       
+                        ,tempVelocity        ,tempRepeat        ,tempInvert
+                        ,globalInvert        ,globalVelocity    ,globalStatus);
 
 
         if (tempOption == "a" || tempOption == "m") {
@@ -232,7 +239,15 @@ void loop() {
             dsl("--->(2)-----------");
             ds("c=");ds(contParam);
             //toMA UN PARAMETRO DEL VECTOR DE PARAMETROS
-            getAndSetParamsOne(vecStr.get(contParam), option, effectOption, text, velocity, repeat, globalVelocity, globalStatus);
+            getAndSetParamsOne( vecStr.get(contParam), option, 
+                                effectOption, text, 
+                                velocity, repeat,   invert,
+                                globalInvert, globalVelocity, globalStatus);
+
+
+
+
+
 
             if (option == "m" && (lastStrToShow != text)) {
                 dsl("--->(2A)-----------");

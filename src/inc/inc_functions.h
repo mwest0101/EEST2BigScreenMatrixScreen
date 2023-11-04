@@ -22,14 +22,17 @@ void updateStateAndEffect(VectorClassString& vecStrOne, String& option, String& 
 void getAndSetParams(   String InString, 
                         int contParam,          String& option,
                         String& effectOption,   String& text, 
-                        int& velocity,          int& repeat, 
-                        int& globalVelocity,    String& globalStatus);
+                        int& velocity,          int& repeat,        int &invert, 
+                        int& globalInvert,      int& globalVelocity,    
+                        String& globalStatus);
  
 
 void getAndSetParamsOne(   String InString,     String& option,
                         String& effectOption,   String& text, 
-                        int& velocity,          int& repeat, 
-                        int& globalVelocity,    String& globalStatus);
+                        int& velocity,          int& repeat,        int &invert,
+                        int& globalInvert,      int& globalVelocity,    
+                        String& globalStatus);
+
 void proccesActionOne(String InString, VectorClassString& vecStrOne);
  
 String getBluetoot(SoftwareSerial &BTSerial,char &charBT);

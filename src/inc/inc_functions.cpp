@@ -212,15 +212,21 @@ void proccesActionOne(String InString, VectorClassString &vecStrOne) {
 
 
 
-void updateStateAndEffect(VectorClassString &vecStrOne, String &option, String &effectOption, String &text,int &velocity, int &repeat, int &globalVelocity, String &globalStatus) {
+void updateStateAndEffect(VectorClassString &vecStrOne, 
+                          String &option,   String &effectOption, 
+                          String &text,     int &velocity, 
+                          int &repeat,      int &invert, 
+                          int &globalInvert,int &globalVelocity, String &globalStatus) {
+
   String value = "";
   String lastStrValue = "";
   static int typeValue = 0;
   //vecStrOne.print();
 
-  if (vecStrOne.get(0) != "iv" && vecStrOne.get(0) != "ip") {
+  if (vecStrOne.get(0) != "iv" && vecStrOne.get(0) != "ip" && vecStrOne.get(0) != "ii") {
     repeat = DEFAULT_REPEAT;
     velocity = DEFAULT_VELOCITY;
+    invert = 0;
     option = "";
     effectOption = "";
     text = "";
@@ -234,8 +240,8 @@ void updateStateAndEffect(VectorClassString &vecStrOne, String &option, String &
     value = vecStrOne.get(i);
     //dsl("paso por aca 0");
 
-    if (value == "a" || value == "m" || value == "r" || value == "v" || value == "ip" || value == "iv") {
-      if (value == "a" || value == "m" || value == "ip" || value == "iv") {
+    if (value == "a" || value == "m" || value == "r" || value == "i" || value == "v" || value == "ip" || value == "iv") {
+      if (value == "a" || value == "m" || value == "ip" || value == "iv" || value == "ii") {
         option = value;
       }
       lastStrValue = value;
@@ -249,7 +255,9 @@ void updateStateAndEffect(VectorClassString &vecStrOne, String &option, String &
       if (lastStrValue == "m") { text = value; }
       if (lastStrValue == "v") { velocity = value.toInt(); }
       if (lastStrValue == "r") { repeat = value.toInt(); }
+      if (lastStrValue == "i") { invert = value.toInt(); }
       if (lastStrValue == "ip") { globalStatus = value; }
+      if (lastStrValue == "ii") { globalVelocity = value.toInt(); }      
       if (lastStrValue == "iv") { globalVelocity = value.toInt(); }
       typeValue = 0;
       lastStrValue = value;
@@ -262,32 +270,41 @@ void updateStateAndEffect(VectorClassString &vecStrOne, String &option, String &
   ds5("v=[");ds5(velocity);ds5("] ");ds5("r=[");ds5(repeat);ds5("] ");
   ds5("gv=[");ds5(globalVelocity);ds5("] ");ds5("gs=[");ds5(globalStatus);ds5l("] ");
 }
+
+
 void getAndSetParams(   String InString,         
                         int contParam,          String& option,
                         String& effectOption,   String& text, 
-                        int& velocity,          int& repeat, 
-                        int& globalVelocity,    String& globalStatus){
-//void getAndSetParams(String InString,int& sizeParams, int &contParam, String& option,String& effectOption,String& text, int& velocity, int& repeat,int& globalVelocity,    String& globalStatus){
+                        int& velocity,          int& repeat, int &invert, 
+                        int &globalInvert,int& globalVelocity,    String& globalStatus){
+
 
   VectorClassString vecStrOne(0);
   proccesAction(InString, vecStrOne, contParam);
   //vecStrOne.print();
 
-  updateStateAndEffect(vecStrOne, option, effectOption, text, velocity, repeat, globalVelocity, globalStatus);
+  updateStateAndEffect(vecStrOne,     option,        effectOption, 
+                       text,          velocity,      repeat,        invert, 
+                       globalInvert,  globalVelocity, globalStatus);
 }
-void getAndSetParamsOne(   String InString,     String& option,
+
+
+void getAndSetParamsOne(String InString,     String& option,
                         String& effectOption,   String& text, 
-                        int& velocity,          int& repeat, 
-                        int& globalVelocity,    String& globalStatus){
-//void getAndSetParams(String InString,int& sizeParams, int &contParam, String& option,String& effectOption,String& text, int& velocity, int& repeat,int& globalVelocity,    String& globalStatus){
+                        int& velocity,          int& repeat, int &invert, 
+                        int &globalInvert,int& globalVelocity,    String& globalStatus){
+
+
 
   VectorClassString vecStrOne(0);
   proccesActionOne(InString, vecStrOne);
   //vecStrOne.print();
 
-  updateStateAndEffect(vecStrOne, option, effectOption, text, velocity, repeat, globalVelocity, globalStatus);
+  updateStateAndEffect(vecStrOne,     option,        effectOption, 
+                       text,          velocity,      repeat,        invert, 
+                       globalInvert,  globalVelocity, globalStatus);
 }
-
+                     
 
 
 
