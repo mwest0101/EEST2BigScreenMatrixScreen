@@ -24,6 +24,8 @@
       #endif
       void InitShowMatrix(VectorClass vecPins);
       void PrintLed(int ledNum,int pintToActive,int ledState);
+      void flipHorizontalFrame(VectorClass& aFrame);
+      void flipVerticalFrame(VectorClass& aFrame);
       void PrintData(int pinNumber);
       void PrintLedMatrix(VectorClass &aFrame,VectorClass &aLastFrame,VectorClass &vecPins);
       

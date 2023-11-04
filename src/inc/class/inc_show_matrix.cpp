@@ -61,6 +61,42 @@ void ShowMatrix::PrintLed(int ledNum, int pintToActive, int ledState) {
 
 #endif
 }
+//------------Function------------------------------------------------
+void ShowMatrix::flipHorizontalFrame(VectorClass& aFrame) {
+  VectorClass aFrameTemp(36, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
+  int posCalc = 6;
+  int contLine = 1;
+
+  for (int i = 0; i < 35; i++) {
+    contLine = (int)((i / 7) + 1);
+    posCalc = (contLine * 7) - (i % 7) - 1;
+
+    aFrameTemp.set(i, aFrame.get(posCalc));
+
+  }
+  for (int i = 0; i < 35; i++) {
+    aFrame.set(i, aFrameTemp.get(i));
+
+  }
+
+}
+//------------Function------------------------------------------------
+void ShowMatrix::flipVerticalFrame(VectorClass& aFrame) {
+  VectorClass aFrameTemp(36, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
+  int posCalc = 0;
+  int contLine = 1;
+
+  for (int i = 0; i < 35; i++) {
+    contLine=4-(int)(i/7);      
+    posCalc = (contLine*7)+(i%7);
+    aFrameTemp.set(i, aFrame.get(posCalc));
+  }
+  for (int i = 0; i < 35; i++) {
+    aFrame.set(i, aFrameTemp.get(i));
+  }
+
+}
+
 //____________________________________________________________________
 //------------Function------------------------------------------------
 void ShowMatrix::PrintLedMatrix(VectorClass& aFrame, VectorClass& aLastFrame, VectorClass& vecPins) {

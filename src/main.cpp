@@ -70,7 +70,8 @@ String BTstrReceived = "";
 String lastBTstrReceived = "";
 
 //String inputString = "a:efe2;v:1;r:2|m:AB";
-String inputString = "a:tet1;v:1;r:1|a:pac1;v:1;r:1|a:pac2;v:1;r:1|a:efe1;v:1;r:1|a:efe2;v:1;r:1|a:efe3;v:1;r:1|a:efe4;v:1;r:1|a:efe5;v:1;r:1|a:efe6;v:1;r:1|a:efe7;v:1;r:1|a:tec1;v:1;r:1|a:tec2;v:1;r:1|a:tec3;v:1;r:1|a:tec4;v:1;r:1|a:tec5;v:1;r:1|a:tec6;v:1;r:1|m:Escuela";
+//String inputString = "a:tet1;v:1;r:1|a:pac1;v:1;r:1|a:pac2;v:1;r:1|a:efe1;v:1;r:1|a:efe2;v:1;r:1|a:efe3;v:1;r:1|a:efe4;v:1;r:1|a:efe5;v:1;r:1|a:efe6;v:1;r:1|a:efe7;v:1;r:1|a:tec1;v:1;r:1|a:tec2;v:1;r:1|a:tec3;v:1;r:1|a:tec4;v:1;r:1|a:tec5;v:1;r:1|a:tec6;v:1;r:1|m:Escuela";
+String inputString = "a:tet1;v:1;r:1|m:Escuela";
 
 
 
@@ -92,7 +93,7 @@ String tempEffectOption="";
 String tempText="";
 int tempVelocity=0;
 int tenoRepeat=0;
-bool horizontalInvertFrame=false;
+bool horizontalInvertFrame=true;
 bool verticalInvertFrame=false;
 
 void setup() {
@@ -280,7 +281,9 @@ void loop() {
             foundAnim = an.getAnim(aFrame, effectOption);
 
         }
-
+        if(horizontalInvertFrame){
+            sm.flipVerticalFrame(aFrame);
+        }
         if (option == "a" || option == "m") {
             dsl("--->(5)-----------");
             sm.PrintLedMatrix(aFrame, aLastFrame, vecPins);
