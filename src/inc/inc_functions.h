@@ -16,22 +16,26 @@ void strToVector(String strIng,String *aStrsParam,String *aStrsValor);
 void proccesAction(String InString, VectorClassString& vecStrOne,  int contParam);
 void proccesActionFull(String InString, VectorClassString &vecStr);
                     
-void updateStateAndEffect(VectorClassString& vecStrOne, String& option, String& effectOption, String& text, 
-                          int& velocity, int& repeat,int& globalVelocity,String& globalStatus);
+void updateStateAndEffect(
+                    VectorClassString& vecStrOne,   String& option, 
+                    String& effectOption,           String& text, 
+                    int& velocity,                  int& repeat,
+                    int &invert, 
+                    int& globalControl,     int& globalInvert,  
+                    int& globalVelocity,    String& globalStatus);
 
-void getAndSetParams(   String InString, 
-                        int contParam,          String& option,
+void getAndSetParams(  String InString, int contParam, String& option,
                         String& effectOption,   String& text, 
-                        int& velocity,          int& repeat,        int &invert, 
-                        int& globalInvert,      int& globalVelocity,    
-                        String& globalStatus);
+                        int& velocity,          int& repeat,    int &invert, 
+                        int& globalControl,     int& globalInvert,  
+                        int& globalVelocity,    String& globalStatus);
  
 
-void getAndSetParamsOne(   String InString,     String& option,
+void getAndSetParamsOne(String InString,     String& option,
                         String& effectOption,   String& text, 
-                        int& velocity,          int& repeat,        int &invert,
-                        int& globalInvert,      int& globalVelocity,    
-                        String& globalStatus);
+                        int& velocity,          int& repeat,   int &invert,
+                        int& globalControl,     int& globalInvert,  
+                        int& globalVelocity,    String& globalStatus);
 
 void proccesActionOne(String InString, VectorClassString& vecStrOne);
  

@@ -81,6 +81,7 @@ unsigned long contLoop = 0;
 int     loopVelocity = 0;
 int     globalVelocity=0;
 int     globalInvert=0;
+int     globalControl=0;
 String  globalStatus = "Play";
 
 int     invert=0;
@@ -181,10 +182,11 @@ void loop() {
     }else if (strBt != "" && strBt != "-1") {
        
 
-        getAndSetParams( strBt               ,0                 ,tempOption
-                        ,tempEffectOption    ,tempText       
-                        ,tempVelocity        ,tempRepeat        ,tempInvert
-                        ,globalInvert        ,globalVelocity    ,globalStatus);
+        getAndSetParams(strBt               ,0              ,tempOption,
+                        tempEffectOption,   tempText,       
+                        tempVelocity,       tempRepeat      ,tempInvert,
+                        globalControl,      globalInvert,  
+                        globalVelocity,     globalStatus);
 
 
         if (tempOption == "a" || tempOption == "m") {
@@ -193,7 +195,9 @@ void loop() {
             //isStrUpdatedByBt=true;
             //vecStr.print();
             
-        }else if (tempOption == "iv" || tempOption == "ip") {
+        }else if (tempOption == "iv" || tempOption == "ip" || 
+                  tempOption == "ii" || tempOption == "ic") {
+                    
             //vecStr.print();
             calcLoopTime =loopWaitTime*globalVelocity;
             ds("loopWaitTime=");dsl(loopWaitTime);            
@@ -242,7 +246,8 @@ void loop() {
             getAndSetParamsOne( vecStr.get(contParam), option, 
                                 effectOption, text, 
                                 velocity, repeat,   invert,
-                                globalInvert, globalVelocity, globalStatus);
+                                globalControl,     globalInvert,  
+                                globalVelocity,    globalStatus);
 
 
 

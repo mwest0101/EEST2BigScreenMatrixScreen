@@ -212,11 +212,12 @@ void proccesActionOne(String InString, VectorClassString &vecStrOne) {
 
 
 
-void updateStateAndEffect(VectorClassString &vecStrOne, 
-                          String &option,   String &effectOption, 
-                          String &text,     int &velocity, 
-                          int &repeat,      int &invert, 
-                          int &globalInvert,int &globalVelocity, String &globalStatus) {
+void updateStateAndEffect(VectorClassString &vecStrOne,   String &option,   
+                          String &effectOption, String &text,    
+                          int &velocity,        int &repeat,      
+                          int &invert, 
+                          int& globalControl,     int& globalInvert,  
+                          int& globalVelocity,    String& globalStatus) {
 
   String value = "";
   String lastStrValue = "";
@@ -275,8 +276,9 @@ void updateStateAndEffect(VectorClassString &vecStrOne,
 void getAndSetParams(   String InString,         
                         int contParam,          String& option,
                         String& effectOption,   String& text, 
-                        int& velocity,          int& repeat, int &invert, 
-                        int &globalInvert,int& globalVelocity,    String& globalStatus){
+                        int& velocity,          int& repeat,    int &invert, 
+                        int& globalControl,     int& globalInvert,  
+                        int& globalVelocity,    String& globalStatus){
 
 
   VectorClassString vecStrOne(0);
@@ -285,14 +287,15 @@ void getAndSetParams(   String InString,
 
   updateStateAndEffect(vecStrOne,     option,        effectOption, 
                        text,          velocity,      repeat,        invert, 
-                       globalInvert,  globalVelocity, globalStatus);
+                       globalControl, globalInvert,  globalVelocity, globalStatus);
 }
 
 
 void getAndSetParamsOne(String InString,     String& option,
                         String& effectOption,   String& text, 
-                        int& velocity,          int& repeat, int &invert, 
-                        int &globalInvert,int& globalVelocity,    String& globalStatus){
+                        int& velocity,          int& repeat,   int &invert,
+                        int& globalControl,     int& globalInvert,  
+                        int& globalVelocity,    String& globalStatus){
 
 
 
@@ -302,7 +305,7 @@ void getAndSetParamsOne(String InString,     String& option,
 
   updateStateAndEffect(vecStrOne,     option,        effectOption, 
                        text,          velocity,      repeat,        invert, 
-                       globalInvert,  globalVelocity, globalStatus);
+                       globalControl, globalInvert,  globalVelocity, globalStatus);
 }
                      
 
