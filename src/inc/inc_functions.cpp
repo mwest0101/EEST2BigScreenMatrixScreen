@@ -29,18 +29,7 @@ void convProgToArray2(int* aIntCharMatrix, const int* phrase, int size) {
   dsl(" ");
 }
 
-/*
-void convProgToArrayByFrame(VectorClass &aIntCharMatrix,const int *phrase, int size){
 
-  int element=0;
-  static int i=0;
-  while (i<size and element!=EA){
-      element=((int)pgm_read_word(phrase + i));
-      aIntCharMatrix.push(element);
-      i++;
-  }
-  dsl(" ");
-}*/
 //____________________________________________________________________
 //------------Function------------------------------------------------
 void printMatrix(int* vMatrix) {
@@ -118,42 +107,7 @@ void strToVector(String strIng, String* aStrsParam, String* aStrsValor) {
     strtemp = strtemp + charTemp;
   }
 }
-/*
-String concParamsOfString(char charReaded, String strOption, int& action) {
 
-  if (charReaded == '(') {
-    dss();
-    ds("se encuentra (");
-    ds(" charReaded: ");
-    dsl(charReaded);
-    strOption = "";
-    action = 10;
-    // charReaded++;
-  }
-  else if (action == 10 || action == 11) {
-
-    strOption = strOption + charReaded;
-    dss();
-    dsl("Concatena:");
-    ds("strOption:");
-    dsl(strOption);
-    ds("Entre a concatenacion de efectos ");
-    ds(" charReaded: ");
-    dsl(charReaded);
-    ds(" strOption: ");
-    dsl(strOption);
-    action = 11;
-  }
-  else if ((charReaded == ')' || charReaded == ':') && action == 11) {
-    dss();
-    dsl("se encuentra )");
-    ds(" charReaded: ");
-    dsl(charReaded);
-    action = 19;
-  }
-
-  return strOption;
-}*/
 
 void proccesActionFull(String InString, VectorClassString &vecStr) {  
   splitStringToArrayNoEmpty(vecStr, InString, "|");
@@ -242,7 +196,7 @@ void updateStateAndEffect(VectorClassString &vecStrOne,   String &option,
     //dsl("paso por aca 0");
 
     if (value == "a" || value == "m" || value == "r" || value == "i" || value == "v" || value == "ip" || value == "iv") {
-      if (value == "a" || value == "m" || value == "ip" || value == "iv" || value == "ii") {
+      if (value == "a" || value == "m" || value == "ip" || value == "iv" || value == "ii" || value == "ic") {
         option = value;
       }
       lastStrValue = value;
@@ -257,9 +211,12 @@ void updateStateAndEffect(VectorClassString &vecStrOne,   String &option,
       if (lastStrValue == "v") { velocity = value.toInt(); }
       if (lastStrValue == "r") { repeat = value.toInt(); }
       if (lastStrValue == "i") { invert = value.toInt(); }
-      if (lastStrValue == "ip") { globalStatus = value; }
-      if (lastStrValue == "ii") { globalVelocity = value.toInt(); }      
+      
+      if (lastStrValue == "ic") { globalControl = value.toInt(); }      
+      if (lastStrValue == "ii") { globalInvert = value.toInt(); }      
       if (lastStrValue == "iv") { globalVelocity = value.toInt(); }
+      if (lastStrValue == "ip") { globalStatus = value; }
+
       typeValue = 0;
       lastStrValue = value;
 
@@ -269,7 +226,11 @@ void updateStateAndEffect(VectorClassString &vecStrOne,   String &option,
   ds5l(" ");
   ds5("o=[");ds5(option);ds5("] ");ds5("e=[");ds5(effectOption);ds5("] ");ds5("t=[");ds5(text);ds5("] ");
   ds5("v=[");ds5(velocity);ds5("] ");ds5("r=[");ds5(repeat);ds5("] ");
+  ds5("i=[");ds5(invert);ds5("] ");
+
+  ds5("gc=[");ds5(globalControl);ds5("] ");ds5("gi=[");ds5(globalInvert);ds5("] ");
   ds5("gv=[");ds5(globalVelocity);ds5("] ");ds5("gs=[");ds5(globalStatus);ds5l("] ");
+
 }
 
 

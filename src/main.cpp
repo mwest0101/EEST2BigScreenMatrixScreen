@@ -71,7 +71,7 @@ String lastBTstrReceived = "";
 
 //String inputString = "a:efe2;v:1;r:2|m:AB";
 //String inputString = "a:tet1;v:1;r:1|a:pac1;v:1;r:1|a:pac2;v:1;r:1|a:efe1;v:1;r:1|a:efe2;v:1;r:1|a:efe3;v:1;r:1|a:efe4;v:1;r:1|a:efe5;v:1;r:1|a:efe6;v:1;r:1|a:efe7;v:1;r:1|a:tec1;v:1;r:1|a:tec2;v:1;r:1|a:tec3;v:1;r:1|a:tec4;v:1;r:1|a:tec5;v:1;r:1|a:tec6;v:1;r:1|m:Escuela";
-String inputString = "a:tet1;v:1;r:1|m:Escuela";
+String inputString = "a:tet1;v:1;r:1;i:3|m:Escuela";
 
 
 
@@ -165,9 +165,11 @@ void setup() {
 void loop() {
    
    
+   /*
    dsd();
    dsl("LOOP");
    dsd();
+   */
     time = micros();
     contLoop++;
 
@@ -215,6 +217,9 @@ void loop() {
         ds("@:strBt=");dsl(strBt);
         isBtBuilding=false;
     }
+    /*
+        ---> quita este comentario
+
     dss();
     dsl("vecStr Antes de entrar")
     vecStr.print();
@@ -301,9 +306,14 @@ void loop() {
             foundAnim = an.getAnim(aFrame, effectOption);
 
         }
-        if(horizontalInvertFrame){
+        if(invert==1 || invert==3){
+            sm.flipHorizontalFrame(aFrame);
+        }
+
+        if(invert==2 || invert==3){
             sm.flipVerticalFrame(aFrame);
         }
+
         if (option == "a" || option == "m") {
             dsl("--->(5)-----------");
             sm.PrintLedMatrix(aFrame, aLastFrame, vecPins);
@@ -344,6 +354,6 @@ void loop() {
     }
     
     difTime = time - lastTime;
-    
+    */
   
 }
