@@ -1,13 +1,17 @@
 #!/bin/bash
 # Solicitar el nombre del archivo al usuario
 read -p "Ingrese el nombre del archivo: " nombre_archivo
-archivo_comprimido="${nombre_archivo}.tar.gz"
+
+fecha=$(date +"%Y%m%d%H%M%S")
+
+archivo_comprimido="$fecha_${nombre_archivo}.tar.gz"
+
 
 
 
 # Agregar archivos al repositorio Git
 git add .
-git commit -m "${nombre_archivo}"
+git commit -m "$fecha: ${nombre_archivo}"
 git push
 
 
