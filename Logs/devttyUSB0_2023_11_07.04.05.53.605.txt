@@ -4906,4 +4906,4148 @@ option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
 [0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
-------------------------------------------------------------
+----------------------------------------------------------------
+globalVelocity=10
+difTime=234088 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=257548 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=281008 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=304468 calcLoopTime=300000
+isBtBuilding=0
+option=a
+contRepeat=0 repeat=1
+Entro por tiempo=0
+--->(4B)-----------
+->tet1
+this->contFrame=1600
+0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 
+1 0 0 1 0 1 1 
+1 1 1 1 1 1 1 
+ 
+--->(5)-----------
+ 
+ 
+ 
+ 
+--->(8)-----------
+contParam=0 sizeParams=2
+contRepeat=0 repeat=1
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=0 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=47092 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=70128 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=93500 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=116876 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=140252 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=163716 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=187172 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=210632 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=234092 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=257552 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=281012 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=304472 calcLoopTime=300000
+isBtBuilding=0
+option=a
+contRepeat=0 repeat=1
+Entro por tiempo=0
+--->(4B)-----------
+->tet1
+this->contFrame=1640
+0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 
+1 0 0 1 0 1 1 
+0 0 0 0 0 0 0 
+ 
+--->(5)-----------
+ 
+ 
+ 
+ 
+--->(8)-----------
+contParam=0 sizeParams=2
+contRepeat=0 repeat=1
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=0 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=47088 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=70124 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=93500 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=116876 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=140248 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=163708 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=187168 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=210628 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=234096 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=257548 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=281008 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=304468 calcLoopTime=300000
+isBtBuilding=0
+option=a
+contRepeat=0 repeat=1
+Entro por tiempo=0
+--->(4B)-----------
+->tet1
+this->contFrame=1680
+0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 
+1 0 0 1 0 1 1 
+ 
+--->(5)-----------
+ 
+ 
+ 
+ 
+--->(8)-----------
+contParam=0 sizeParams=2
+contRepeat=0 repeat=1
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=0 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=47092 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=70128 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=93500 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=116876 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=140252 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=163712 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=187172 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=210632 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=234092 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=257552 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=281012 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=304472 calcLoopTime=300000
+isBtBuilding=0
+option=a
+contRepeat=0 repeat=1
+Entro por tiempo=0
+--->(4B)-----------
+->tet1
+this->contFrame=1720
+0 0 1 0 0 0 0 
+0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 
+1 0 0 1 0 1 1 
+ 
+--->(5)-----------
+ 
+ 
+ 
+ 
+--->(8)-----------
+contParam=0 sizeParams=2
+contRepeat=0 repeat=1
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=0 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=47088 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=70124 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=93500 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=116884 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=140248 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=163708 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=187168 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=210628 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=234088 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=257548 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=281008 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=304468 calcLoopTime=300000
+isBtBuilding=0
+option=a
+contRepeat=0 repeat=1
+Entro por tiempo=0
+--->(4B)-----------
+->tet1
+this->contFrame=1760
+0 0 1 0 0 0 0 
+0 0 1 0 0 0 0 
+0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 
+1 0 0 1 0 1 1 
+ 
+--->(5)-----------
+ 
+ 
+ 
+ 
+--->(8)-----------
+contParam=0 sizeParams=2
+contRepeat=0 repeat=1
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=0 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=47092 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=70128 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=93500 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=116876 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=140252 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=163720 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=187172 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=210632 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=234092 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=257552 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=281012 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=304472 calcLoopTime=300000
+isBtBuilding=0
+option=a
+contRepeat=0 repeat=1
+Entro por tiempo=0
+--->(4B)-----------
+->tet1
+this->contFrame=1800
+0 0 0 0 0 0 0 
+0 0 1 0 0 0 0 
+0 0 1 0 0 0 0 
+0 0 0 0 0 0 0 
+1 0 0 1 0 1 1 
+ 
+--->(5)-----------
+ 
+ 
+ 
+ 
+--->(8)-----------
+contParam=0 sizeParams=2
+contRepeat=0 repeat=1
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=0 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=47088 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=70124 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=93500 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=116876 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=140248 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=163708 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=187168 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=210628 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=234088 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=257548 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=281008 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=304468 calcLoopTime=300000
+isBtBuilding=0
+option=a
+contRepeat=0 repeat=1
+Entro por tiempo=0
+--->(4B)-----------
+->tet1
+this->contFrame=1840
+0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 
+0 0 1 0 0 0 0 
+0 0 1 0 0 0 0 
+1 0 0 1 0 1 1 
+ 
+--->(5)-----------
+ 
+ 
+ 
+ 
+--->(8)-----------
+contParam=0 sizeParams=2
+contRepeat=0 repeat=1
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=0 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=47092 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=70128 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=93500 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=116876 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=140252 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=163712 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=187172 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=210632 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=234092 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=257552 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=281012 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=304472 calcLoopTime=300000
+isBtBuilding=0
+option=a
+contRepeat=0 repeat=1
+Entro por tiempo=0
+--->(4B)-----------
+->tet1
+this->contFrame=1880
+0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 
+0 1 1 0 0 0 0 
+1 0 0 1 0 1 1 
+ 
+--->(5)-----------
+ 
+ 
+ 
+ 
+--->(8)-----------
+contParam=0 sizeParams=2
+contRepeat=0 repeat=1
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=0 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=47088 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=70124 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=93500 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=116876 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=140248 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=163708 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=187168 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=210628 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=234088 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=257548 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=281008 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=304468 calcLoopTime=300000
+isBtBuilding=0
+option=a
+contRepeat=0 repeat=1
+Entro por tiempo=0
+--->(4B)-----------
+->tet1
+this->contFrame=1920
+0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 
+1 1 1 1 0 1 1 
+ 
+--->(5)-----------
+ 
+ 
+ 
+ 
+--->(8)-----------
+contParam=0 sizeParams=2
+contRepeat=0 repeat=1
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=0 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=47092 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=70128 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=93500 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=116876 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=140252 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=163712 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=187172 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=210632 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=234092 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=257552 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=281012 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=304472 calcLoopTime=300000
+isBtBuilding=0
+option=a
+contRepeat=0 repeat=1
+Entro por tiempo=0
+--->(4B)-----------
+->tet1
+this->contFrame=1960
+0 0 1 0 0 0 0 
+0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 
+1 1 1 1 0 1 1 
+ 
+--->(5)-----------
+ 
+ 
+ 
+ 
+--->(8)-----------
+contParam=0 sizeParams=2
+contRepeat=0 repeat=1
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=0 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=47088 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=70124 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=93500 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=116876 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=140248 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=163708 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=187168 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=210628 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=234088 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=257548 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=281008 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=304468 calcLoopTime=300000
+isBtBuilding=0
+option=a
+contRepeat=0 repeat=1
+Entro por tiempo=0
+--->(4B)-----------
+->tet1
+this->contFrame=2000
+0 0 0 0 0 0 0 
+0 0 1 0 0 0 0 
+0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 
+1 1 1 1 0 1 1 
+ 
+--->(5)-----------
+ 
+ 
+ 
+ 
+--->(8)-----------
+contParam=0 sizeParams=2
+contRepeat=0 repeat=1
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=0 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=47092 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=70128 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=93500 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=116876 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=140252 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=163712 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=187172 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=210632 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=234092 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=257552 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=281020 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=304472 calcLoopTime=300000
+isBtBuilding=0
+option=a
+contRepeat=0 repeat=1
+Entro por tiempo=0
+--->(4B)-----------
+->tet1
+this->contFrame=2040
+0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 
+0 0 1 0 0 0 0 
+0 0 0 0 0 0 0 
+1 1 1 1 0 1 1 
+ 
+--->(5)-----------
+ 
+ 
+ 
+ 
+--->(8)-----------
+contParam=0 sizeParams=2
+contRepeat=0 repeat=1
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=0 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=47088 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=70124 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=93500 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=116876 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=140248 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=163708 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=187168 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=210628 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=234088 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=257548 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=281008 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=304468 calcLoopTime=300000
+isBtBuilding=0
+option=a
+contRepeat=0 repeat=1
+Entro por tiempo=0
+--->(4B)-----------
+->tet1
+this->contFrame=2080
+0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 
+0 0 0 1 0 0 0 
+0 0 0 0 0 0 0 
+1 1 1 1 0 1 1 
+ 
+--->(5)-----------
+ 
+ 
+ 
+ 
+--->(8)-----------
+contParam=0 sizeParams=2
+contRepeat=0 repeat=1
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=0 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=47092 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=70128 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=93500 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=116876 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=140252 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=163712 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=187172 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=210632 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=234092 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=257552 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=281012 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=304472 calcLoopTime=300000
+isBtBuilding=0
+option=a
+contRepeat=0 repeat=1
+Entro por tiempo=0
+--->(4B)-----------
+->tet1
+this->contFrame=2120
+0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 
+0 0 0 0 1 0 0 
+1 1 1 1 0 1 1 
+ 
+--->(5)-----------
+ 
+ 
+ 
+ 
+--->(8)-----------
+contParam=0 sizeParams=2
+contRepeat=0 repeat=1
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=0 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=47088 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=70124 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=93500 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=116876 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=140248 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=163708 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=187168 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=210636 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=234088 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=257548 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=281008 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=304468 calcLoopTime=300000
+isBtBuilding=0
+option=a
+contRepeat=0 repeat=1
+Entro por tiempo=0
+--->(4B)-----------
+->tet1
+this->contFrame=2160
+0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 
+1 1 1 1 1 1 1 
+ 
+--->(5)-----------
+ 
+ 
+ 
+ 
+--->(8)-----------
+contParam=0 sizeParams=2
+contRepeat=0 repeat=1
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=0 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=47092 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=70128 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=93500 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=116876 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=140252 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=163712 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=187172 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=210632 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=234092 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=257552 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=281012 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=304472 calcLoopTime=300000
+isBtBuilding=0
+option=a
+contRepeat=0 repeat=1
+Entro por tiempo=0
+--->(4B)-----------
+->tet1
+this->contFrame=2200
+0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 
+ 
+--->(5)-----------
+ 
+ 
+ 
+ 
+--->(8)-----------
+contParam=0 sizeParams=2
+contRepeat=0 repeat=1
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=0 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=47088 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=70124 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=93500 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=116876 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=140248 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=163708 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=187168 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=210628 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=234088 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=257548 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=281008 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=304468 calcLoopTime=300000
+isBtBuilding=0
+option=a
+contRepeat=0 repeat=1
+Entro por tiempo=0
+--->(4B)-----------
+->tet1
+this->contFrame=2240
+0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 
+1 1 1 1 1 1 1 
+ 
+--->(5)-----------
+ 
+ 
+ 
+ 
+--->(8)-----------
+contParam=0 sizeParams=2
+contRepeat=0 repeat=1
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=0 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=47092 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=70128 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=93500 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=116876 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=140260 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=163712 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=187172 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=210632 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=234092 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=257552 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=281012 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=304472 calcLoopTime=300000
+isBtBuilding=0
+option=a
+contRepeat=0 repeat=1
+Entro por tiempo=0
+--->(4B)-----------
+->tet1
+this->contFrame=2280
+0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 
+ 
+--->(5)-----------
+ 
+ 
+ 
+ 
+--->(8)-----------
+contParam=0 sizeParams=2
+contRepeat=0 repeat=1
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=0 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=47088 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=70124 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=93500 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=116876 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=140248 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=163708 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=187168 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=210628 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=234088 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=257548 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=281008 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=304468 calcLoopTime=300000
+isBtBuilding=0
+option=a
+contRepeat=0 repeat=1
+Entro por tiempo=0
+--->(4B)-----------
+->tet1
+this->contFrame=2320
+0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 
+1 1 1 1 1 1 1 
+ 
+--->(5)-----------
+ 
+ 
+ 
+ 
+--->(8)-----------
+contParam=0 sizeParams=2
+contRepeat=0 repeat=1
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=0 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=47092 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=70128 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=93500 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=116876 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=140252 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=163712 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=187172 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=210632 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=234092 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=257552 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=281012 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=304472 calcLoopTime=300000
+isBtBuilding=0
+option=a
+contRepeat=0 repeat=1
+Entro por tiempo=0
+--->(4B)-----------
+->tet1
+this->contFrame=2360
+0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 
+ 
+--->(5)-----------
+ 
+ 
+ 
+ 
+--->(7)----------
+Reset : contFrame=0
+setIfIsStringEnd=1
+--->(8)-----------
+contParam=0 sizeParams=2
+contRepeat=1 repeat=1
+--->(9)-----------
+contRepeat=0 contParam=1
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=0 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=56100 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=79136 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=102508 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=125884 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=149344 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=172804 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=196264 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=219724 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=243184 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=266644 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=290104 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=313572 calcLoopTime=300000
+isBtBuilding=0
+option=a
+contRepeat=0 repeat=1
+Entro por tiempo=1
+--->(2)-----------
+c=1 
+o=[m] e=[] t=[Escuela] v=[10] r=[1] i=[0] gc=[0] gi=[0] gv=[10] gs=[Play] 
+gm=[Pres] --->(2A)-----------
+Cambio el string
+setIfIsStringEnd=0
+--->(3)-----------
+contCharAdded=0
+
+getCharMatrix | Letter=:69  
+ 
+Letter=E
+----------------------------------------------------------------
+AddConsToMatrix
+1|1|1|0|||8
+1|0|0|0|||8
+1|1|1|0|||8
+1|0|0|0|||8
+1|1|1|0|||9
+this->totPosX:7 
+ 
+setCanAddChar=0
+--->(4)-----------
+============================================================
+this->rows:5 this->cols:21
+ 
+===== 0| 1| 2| 3| 4| 5| 6| 7| 8| 9|10|11|12|13|14|15|16|17|18|19|20|
+---------------------------------------------------------------
+ 0 =  0| 0| 0| 0| 0| 0| 0| 1| 1| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 1 =  0| 0| 0| 0| 0| 0| 0| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 2 =  0| 0| 0| 0| 0| 0| 0| 1| 1| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 3 =  0| 0| 0| 0| 0| 0| 0| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 4 =  0| 0| 0| 0| 0| 0| 0| 1| 1| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+--->(4A)-----------
+--->(5)-----------
+ 
+ 
+ 
+ 
+--->(8)-----------
+contParam=1 sizeParams=2
+contRepeat=0 repeat=1
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=0 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=125632 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=148664 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=172132 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=195584 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=219044 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=242504 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=265964 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=289424 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=312884 calcLoopTime=300000
+isBtBuilding=0
+option=m
+contRepeat=0 repeat=1
+Entro por tiempo=1
+--->(4)-----------
+============================================================
+this->rows:5 this->cols:21
+ 
+===== 0| 1| 2| 3| 4| 5| 6| 7| 8| 9|10|11|12|13|14|15|16|17|18|19|20|
+---------------------------------------------------------------
+ 0 =  0| 0| 0| 0| 0| 0| 1| 1| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 1 =  0| 0| 0| 0| 0| 0| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 2 =  0| 0| 0| 0| 0| 0| 1| 1| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 3 =  0| 0| 0| 0| 0| 0| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 4 =  0| 0| 0| 0| 0| 0| 1| 1| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+--->(4A)-----------
+--->(5)-----------
+ 
+ 
+ 
+ 
+--->(8)-----------
+contParam=1 sizeParams=2
+contRepeat=0 repeat=1
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=0 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=88316 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=111352 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=134728 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=158188 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=181648 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=205108 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=228568 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=252028 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=275488 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=298948 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=322408 calcLoopTime=300000
+isBtBuilding=0
+option=m
+contRepeat=0 repeat=1
+Entro por tiempo=1
+--->(4)-----------
+============================================================
+this->rows:5 this->cols:21
+ 
+===== 0| 1| 2| 3| 4| 5| 6| 7| 8| 9|10|11|12|13|14|15|16|17|18|19|20|
+---------------------------------------------------------------
+ 0 =  0| 0| 0| 0| 0| 1| 1| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 1 =  0| 0| 0| 0| 0| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 2 =  0| 0| 0| 0| 0| 1| 1| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 3 =  0| 0| 0| 0| 0| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 4 =  0| 0| 0| 0| 0| 1| 1| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+--->(4A)-----------
+--->(5)-----------
+ 
+ 
+ 
+ 
+--->(8)-----------
+contParam=1 sizeParams=2
+contRepeat=0 repeat=1
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=0 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=88312 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=111348 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=134724 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=158184 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=181644 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=205104 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=228564 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=252024 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=275484 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=298944 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=322404 calcLoopTime=300000
+isBtBuilding=0
+option=m
+contRepeat=0 repeat=1
+Entro por tiempo=1
+--->(4)-----------
+============================================================
+this->rows:5 this->cols:21
+ 
+===== 0| 1| 2| 3| 4| 5| 6| 7| 8| 9|10|11|12|13|14|15|16|17|18|19|20|
+---------------------------------------------------------------
+ 0 =  0| 0| 0| 0| 1| 1| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 1 =  0| 0| 0| 0| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 2 =  0| 0| 0| 0| 1| 1| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 3 =  0| 0| 0| 0| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 4 =  0| 0| 0| 0| 1| 1| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+--->(4A)-----------
+--->(5)-----------
+ 
+ 
+ 
+ 
+--->(8)-----------
+contParam=1 sizeParams=2
+contRepeat=0 repeat=1
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=0 g=0
+option=m
+-----------------calcLoopTime=300000
+isBtBuildin-----------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=88316 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=111348 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=134724 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=158184 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=181644 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=205104 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=228564 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=252032 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=275484 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=298944 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=322404 calcLoopTime=300000
+isBtBuilding=0
+option=m
+contRepeat=0 repeat=1
+Entro por tiempo=1
+--->(4)-----------
+============================================================
+this->rows:5 this->cols:21
+ 
+===== 0| 1| 2| 3| 4| 5| 6| 7| 8| 9|10|11|12|13|14|15|16|17|18|19|20|
+---------------------------------------------------------------
+ 0 =  0| 0| 0| 1| 1| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 1 =  0| 0| 0| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 2 =  0| 0| 0| 1| 1| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 3 =  0| 0| 0| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 4 =  0| 0| 0| 1| 1| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+--->(4A)-----------
+setCanAddChar=1
+--->(5)-----------
+ 
+ 
+ 
+ 
+--->(8)-----------
+contParam=1 sizeParams=2
+contRepeat=0 repeat=1
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=0 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=89760 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=112796 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=136172 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=159632 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=183092 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=206552 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=230012 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=253472 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=276932 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=300400 calcLoopTime=300000
+isBtBuilding=0
+option=m
+contRepeat=0 repeat=1
+Entro por tiempo=1
+--->(3)-----------
+contCharAdded=1
+
+getCharMatrix | Letter=:115  
+ 
+Letter=s
+----------------------------------------------------------------
+AddConsToMatrix
+0|0|0|||8
+1|1|0|||8
+1|0|0|||8
+0|1|0|||8
+1|1|0|||9
+this->totPosX:6 
+ 
+setCanAddChar=0
+--->(4)-----------
+============================================================
+this->rows:5 this->cols:21
+ 
+===== 0| 1| 2| 3| 4| 5| 6| 7| 8| 9|10|11|12|13|14|15|16|17|18|19|20|
+---------------------------------------------------------------
+ 0 =  0| 0| 1| 1| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 1 =  0| 0| 1| 0| 0| 0| 1| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 2 =  0| 0| 1| 1| 1| 0| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 3 =  0| 0| 1| 0| 0| 0| 0| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 4 =  0| 0| 1| 1| 1| 0| 1| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+--->(4A)-----------
+--->(5)-----------
+ 
+ 
+ 
+ 
+--->(8)-----------
+contParam=1 sizeParams=2
+contRepeat=0 repeat=1
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=0 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=111520 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=134120 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=157580 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=181040 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=204500 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=227960 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=251420 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=274880 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=298340 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=321800 calcLoopTime=300000
+isBtBuilding=0
+option=m
+contRepeat=0 repeat=1
+Entro por tiempo=1
+--->(4)-----------
+============================================================
+this->rows:5 this->cols:21
+ 
+===== 0| 1| 2| 3| 4| 5| 6| 7| 8| 9|10|11|12|13|14|15|16|17|18|19|20|
+---------------------------------------------------------------
+ 0 =  0| 1| 1| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 1 =  0| 1| 0| 0| 0| 1| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 2 =  0| 1| 1| 1| 0| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 3 =  0| 1| 0| 0| 0| 0| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 4 =  0| 1| 1| 1| 0| 1| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+--->(4A)-----------
+--->(5)-----------
+ 
+ 
+ 
+ 
+--->(8)-----------
+contParam=1 sizeParams=2
+contRepeat=0 repeat=1
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=0 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=90348 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=112940 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=136316 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=159776 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=183240 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=206696 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=230156 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=253616 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=277076 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=300536 calcLoopTime=300000
+isBtBuilding=0
+option=m
+contRepeat=0 repeat=1
+Entro por tiempo=1
+--->(4)-----------
+============================================================
+this->rows:5 this->cols:21
+ 
+===== 0| 1| 2| 3| 4| 5| 6| 7| 8| 9|10|11|12|13|14|15|16|17|18|19|20|
+---------------------------------------------------------------
+ 0 =  1| 1| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 1 =  1| 0| 0| 0| 1| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 2 =  1| 1| 1| 0| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 3 =  1| 0| 0| 0| 0| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 4 =  1| 1| 1| 0| 1| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+--->(4A)-----------
+setCanAddChar=1
+--->(5)-----------
+ 
+ 
+ 
+ 
+--->(8)-----------
+contParam=1 sizeParams=2
+contRepeat=0 repeat=1
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=0 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=93084 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=115672 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=139048 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=162508 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=185968 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=209436 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=232888 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=256348 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=279808 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=303268 calcLoopTime=300000
+isBtBuilding=0
+option=m
+contRepeat=0 repeat=1
+Entro por tiempo=1
+--->(3)-----------
+contCharAdded=2
+
+getCharMatrix | Letter=:99  
+ 
+Letter=c
+----------------------------------------------------------------
+AddConsToMatrix
+0|0|0|||8
+1|1|0|||8
+1|0|0|||8
+1|0|0|||8
+1|1|0|||9
+this->totPosX:6 
+ 
+setCanAddChar=0
+--->(4)-----------
+============================================================
+this->rows:5 this->cols:21
+ 
+===== 0| 1| 2| 3| 4| 5| 6| 7| 8| 9|10|11|12|13|14|15|16|17|18|19|20|
+---------------------------------------------------------------
+ 0 =  1| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 1 =  0| 0| 0| 1| 1| 0| 1| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 2 =  1| 1| 0| 1| 0| 0| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 3 =  0| 0| 0| 0| 1| 0| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 4 =  1| 1| 0| 1| 1| 0| 1| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+--->(4A)-----------
+--->(5)-----------
+ 
+ 
+ 
+ 
+--->(8)-----------
+contParam=1 sizeParams=2
+contRepeat=0 repeat=1
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=0 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=113148 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=135736 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=159204 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=182656 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=206116 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=229576 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=253036 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=276496 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=299956 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=323416 calcLoopTime=300000
+isBtBuilding=0
+option=m
+contRepeat=0 repeat=1
+Entro por tiempo=1
+--->(4)-----------
+============================================================
+this->rows:5 this->cols:21
+ 
+===== 0| 1| 2| 3| 4| 5| 6| 7| 8| 9|10|11|12|13|14|15|16|17|18|19|20|
+---------------------------------------------------------------
+ 0 =  1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 1 =  0| 0| 1| 1| 0| 1| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 2 =  1| 0| 1| 0| 0| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 3 =  0| 0| 0| 1| 0| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 4 =  1| 0| 1| 1| 0| 1| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+--->(4A)-----------
+--->(5)-----------
+ 
+ 
+ 
+ 
+--->(8)-----------
+contParam=1 sizeParams=2
+contRepeat=0 repeat=1
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=0 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=91216 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=113808 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=137180 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=160640 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=184100 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=207568 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=231020 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=254480 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=277940 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=301400 calcLoopTime=300000
+isBtBuilding=0
+option=m
+contRepeat=0 repeat=1
+Entro por tiempo=1
+--->(4)-----------
+============================================================
+this->rows:5 this->cols:21
+ 
+===== 0| 1| 2| 3| 4| 5| 6| 7| 8| 9|10|11|12|13|14|15|16|17|18|19|20|
+---------------------------------------------------------------
+ 0 =  0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 1 =  0| 1| 1| 0| 1| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 2 =  0| 1| 0| 0| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 3 =  0| 0| 1| 0| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 4 =  0| 1| 1| 0| 1| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+--->(4A)-----------
+setCanAddChar=1
+--->(5)-----------
+ 
+ 
+ 
+ 
+--->(8)-----------
+contParam=1 sizeParams=2
+contRepeat=0 repeat=1
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=0 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=93512 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=116112 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=139488 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=162948 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=186408 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=209868 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=233328 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=256788 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=280248 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=303708 calcLoopTime=300000
+isBtBuilding=0
+option=m
+contRepeat=0 repeat=1
+Entro por tiempo=1
+--->(3)-----------
+contCharAdded=3
+
+getCharMatrix | Letter=:117  
+ 
+Letter=u
+----------------------------------------------------------------
+AddConsToMatrix
+0|0|0|0|||8
+1|0|1|0|||8
+1|0|1|0|||8
+1|0|1|0|||8
+1|1|1|0|||9
+this->totPosX:6 
+ 
+setCanAddChar=0
+--->(4)-----------
+============================================================
+this->rows:5 this->cols:21
+ 
+===== 0| 1| 2| 3| 4| 5| 6| 7| 8| 9|10|11|12|13|14|15|16|17|18|19|20|
+---------------------------------------------------------------
+ 0 =  0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 1 =  1| 1| 0| 1| 1| 0| 1| 0| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 2 =  1| 0| 0| 1| 0| 0| 1| 0| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 3 =  0| 1| 0| 1| 0| 0| 1| 0| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 4 =  1| 1| 0| 1| 1| 0| 1| 1| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+--->(4A)-----------
+--->(5)-----------
+ 
+ 
+ 
+ 
+--->(8)-----------
+contParam=1 sizeParams=2
+contRepeat=0 repeat=1
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=0 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=115368 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=137956 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=161416 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=184876 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=208336 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=231796 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=255256 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=278716 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=302176 calcLoopTime=300000
+isBtBuilding=0
+option=m
+contRepeat=0 repeat=1
+Entro por tiempo=1
+--->(4)-----------
+============================================================
+this->rows:5 this->cols:21
+ 
+===== 0| 1| 2| 3| 4| 5| 6| 7| 8| 9|10|11|12|13|14|15|16|17|18|19|20|
+---------------------------------------------------------------
+ 0 =  0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 1 =  1| 0| 1| 1| 0| 1| 0| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 2 =  0| 0| 1| 0| 0| 1| 0| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 3 =  1| 0| 1| 0| 0| 1| 0| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 4 =  1| 0| 1| 1| 0| 1| 1| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+--->(4A)-----------
+--->(5)-----------
+ 
+ 
+ 
+ 
+--->(8)-----------
+contParam=1 sizeParams=2
+contRepeat=0 repeat=1
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=0 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=92504 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=115092 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=138468 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=161928 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=185388 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=208856 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=232308 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=255768 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=279228 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=302688 calcLoopTime=300000
+isBtBuilding=0
+option=m
+contRepeat=0 repeat=1
+Entro por tiempo=1
+--->(4)-----------
+============================================================
+this->rows:5 this->cols:21
+ 
+===== 0| 1| 2| 3| 4| 5| 6| 7| 8| 9|10|11|12|13|14|15|16|17|18|19|20|
+---------------------------------------------------------------
+ 0 =  0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 1 =  0| 1| 1| 0| 1| 0| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 2 =  0| 1| 0| 0| 1| 0| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 3 =  0| 1| 0| 0| 1| 0| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 4 =  0| 1| 1| 0| 1| 1| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+--->(4A)-----------
+--->(5)-----------
+ 
+ 
+ 
+ 
+--->(8)-----------
+contParam=1 sizeParams=2
+contRepeat=0 repeat=1
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=0 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=92920 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=115512 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=138884 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=162344 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=185812 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=209264 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=232724 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=256184 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=279644 calcLoopTime=300000
+isBtBuilding=0
+option=m
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=303104 calcLoopTime=300000
+isBtBuilding=0
+option=m
+contRepeat=0 repeat=1
+Entro por tiempo=1
+--->(4)-----------
+============================================================
+this->rows:5 this->cols:21
+ 
+===== 0| 1| 2| 3| 4| 5| 6| 7| 8| 9|10|11|12|13|14|15|16|17|18|19|20|
+---------------------------------------------------------------
+ 0 =  0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 1 =  1| 1| 0| 1| 0| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 2 =  1| 0| 0| 1| 0| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 3 =  1| 0| 0| 1| 0| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+ 4 =  1| 1| 0| 1| 1| 1| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0| 0|
+--->(4A)-----------
+setCanAddChar=1
+--->(5)-----------
+ 
+ 
+ 
+ 
+--->(8)-----------
+contParam=1 sizeParams=2
+contRepeat=0 repeat=1
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=0 calcLoopTime=300000
+isB
