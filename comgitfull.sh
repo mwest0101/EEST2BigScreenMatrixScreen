@@ -4,6 +4,8 @@ read -p "Ingrese el nombre del archivo: " nombre_archivo
 
 fecha=$(date +"%Y%m%d%H%M%S")
 
+echo "Archivo a comprimir $archivo_comprimido"
+
 archivo_comprimido="$fecha_${nombre_archivo}.tar.gz"
 
 echo "____ ____ ___ _  _ ____ _    _ ___  ____ _  _ ___  ____    ____ _ ___"
