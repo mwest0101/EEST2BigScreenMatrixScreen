@@ -6,7 +6,7 @@ fecha=$(date +"%Y%m%d%H%M%S")
 
 
 
-archivo_comprimido="$fecha_${nombre_archivo}.tar.gz"
+archivo_comprimido="${fecha}_${nombre_archivo}.tar.gz"
 
 echo "Archivo a comprimir $archivo_comprimido"
 
