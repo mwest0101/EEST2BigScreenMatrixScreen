@@ -1,3 +1,37 @@
+// ╔══════════════════════════════════════════════════════════════════╗
+// ║   ____    _             __  __           _            _          ║
+// ║  |  _ \  (_)           |  \/  |         | |          (_)         ║
+// ║  | |_) |  _    __ _    | \  / |   __ _  | |_   _ __   _  __  __  ║
+// ║  |  _ <  | |  / _` |   | |\/| |  / _` | | __| | '__| | | \ \/ /  ║
+// ║  | |_) | | | | (_| |   | |  | | | (_| | | |_  | |    | |  >  <   ║
+// ║  |____/  |_|  \__, |   |_|  |_|  \__,_|  \__| |_|    |_| /_/\_\  ║
+// ║                __/ |                                             ║
+// ║               |___/                                              ║
+// ║                                                                  ║
+// ║  _         _____   _____      _____                           _  ║
+// ║ | |       / ____| |  __ \    |  __ \                         | | ║
+// ║ | |      | |      | |  | |   | |__) |   __ _   _ __     ___  | | ║
+// ║ | |      | |      | |  | |   |  ___/   / _` | | '_ \   / _ \ | | ║
+// ║ | |____  | |____  | |__| |   | |      | (_| | | | | | |  __/ | | ║
+// ║ |______|  \_____| |_____/    |_|       \__,_| |_| |_|  \___| |_| ║
+// ║                                                                  ║
+// ║  Software:                                                       ║
+// ║      Desarrollo de Aplicaciones.                                 ║  
+// ║      App para mobiles y sistema arduino desarrollado por:        ║
+// ║      WTDev ( Prof: Mauricio West)                                ║
+// ║      https://wtdevelopments.github.io/                           ║
+// ║      https://github.com/mwest0101/EEST2BigScreenMatrixScreen     ║
+// ║                                                                  ║
+// ║  Hardware:                                                       ║
+// ║      Desarrollado por:                                           ║
+// ║          Escuela Tecnica 2 de Junin (Bs. As) Argentina           ║            
+// ║          Alumnos de 7º Año de la tecnicatura informatica y       ║
+// ║          programación .                                          ║
+// ║                                                                  ║
+// ║  Año:    2023                                                    ║
+// ║                                                                  ║
+// ╚══════════════════════════════════════════════════════════════════╝
+
 
 #include <Arduino.h>
 #include "inc/include.h"
@@ -182,6 +216,7 @@ void updateStateAndEffect(VectorClassString &vecStrOne,   String &option,
   if (vecStrOne.get(0) != "iv" && vecStrOne.get(0) != "ip" && vecStrOne.get(0) != "ii" && value != "ic" && value != "im") {
     repeat = DEFAULT_REPEAT;
     velocity = DEFAULT_VELOCITY;
+    globalVelocity = DEFAULT_VELOCITY;
     invert = 0;
     option = "";
     effectOption = "";
@@ -318,3 +353,48 @@ String getBluetoot(SoftwareSerial& BTSerial,char &charBT) {
   // }
   return strRetrun;
 }
+
+unsigned long  calcLoopTime(int velocity,int globalVelocity) {
+  int calcLoopTime=0;
+  int loopWaitTime = WAIT_TIME_LOOP;
+  int defaultVelocity=DEFAULT_VELOCITY;
+  
+  calcLoopTime =loopWaitTime*(velocity+(defaultVelocity-globalVelocity));
+  return calcLoopTime;
+}
+
+
+
+// ╔══════════════════════════════════════════════════════════════════╗
+// ║   ____    _             __  __           _            _          ║
+// ║  |  _ \  (_)           |  \/  |         | |          (_)         ║
+// ║  | |_) |  _    __ _    | \  / |   __ _  | |_   _ __   _  __  __  ║
+// ║  |  _ <  | |  / _` |   | |\/| |  / _` | | __| | '__| | | \ \/ /  ║
+// ║  | |_) | | | | (_| |   | |  | | | (_| | | |_  | |    | |  >  <   ║
+// ║  |____/  |_|  \__, |   |_|  |_|  \__,_|  \__| |_|    |_| /_/\_\  ║
+// ║                __/ |                                             ║
+// ║               |___/                                              ║
+// ║                                                                  ║
+// ║  _         _____   _____      _____                           _  ║
+// ║ | |       / ____| |  __ \    |  __ \                         | | ║
+// ║ | |      | |      | |  | |   | |__) |   __ _   _ __     ___  | | ║
+// ║ | |      | |      | |  | |   |  ___/   / _` | | '_ \   / _ \ | | ║
+// ║ | |____  | |____  | |__| |   | |      | (_| | | | | | |  __/ | | ║
+// ║ |______|  \_____| |_____/    |_|       \__,_| |_| |_|  \___| |_| ║
+// ║                                                                  ║
+// ║  Software:                                                       ║
+// ║      Desarrollo de Aplicaciones.                                 ║  
+// ║      App para mobiles y sistema arduino desarrollado por:        ║
+// ║      WTDev ( Prof: Mauricio West)                                ║
+// ║      https://wtdevelopments.github.io/                           ║
+// ║      https://github.com/mwest0101/EEST2BigScreenMatrixScreen     ║
+// ║                                                                  ║
+// ║  Hardware:                                                       ║
+// ║      Desarrollado por:                                           ║
+// ║          Escuela Tecnica 2 de Junin (Bs. As) Argentina           ║            
+// ║          Alumnos de 7º Año de la tecnicatura informatica y       ║
+// ║          programación .                                          ║
+// ║                                                                  ║
+// ║  Año:    2023                                                    ║
+// ║                                                                  ║
+// ╚══════════════════════════════════════════════════════════════════╝

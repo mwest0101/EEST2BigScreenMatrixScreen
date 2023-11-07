@@ -43,6 +43,8 @@ void getAndSetParamsOne(String InString,     String& option,
 void proccesActionOne(String InString, VectorClassString& vecStrOne);
  
 String getBluetoot(SoftwareSerial &BTSerial,char &charBT);
+unsigned long calcLoopTime(int velocity,int globalVelocity);
+
 
 //int **createMatrix(int rows,int cols);
 //int selectRandom(long[],int);

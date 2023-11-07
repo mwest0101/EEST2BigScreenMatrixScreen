@@ -15,10 +15,26 @@
 // ║ | |____  | |____  | |__| |   | |      | (_| | | | | | |  __/ | | ║
 // ║ |______|  \_____| |_____/    |_|       \__,_| |_| |_|  \___| |_| ║
 // ║                                                                  ║
+// ║  Software:                                                       ║
+// ║      Desarrollo de Aplicaciones.                                 ║  
+// ║      App para mobiles y sistema arduino desarrollado por:        ║
+// ║      WTDev ( Prof: Mauricio West)                                ║
+// ║      https://wtdevelopments.github.io/                           ║
+// ║      https://github.com/mwest0101/EEST2BigScreenMatrixScreen     ║
 // ║                                                                  ║
+// ║  Hardware:                                                       ║
+// ║      Desarrollado por:                                           ║
+// ║          Escuela Tecnica 2 de Junin (Bs. As) Argentina           ║            
+// ║          Alumnos de 7º Año de la tecnicatura informatica y       ║
+// ║          programación .                                          ║
 // ║                                                                  ║
+// ║  Año:    2023                                                    ║
 // ║                                                                  ║
 // ╚══════════════════════════════════════════════════════════════════╝
+
+
+         
+
 
 #include <Arduino.h>
 #include "inc/include.h"
@@ -53,7 +69,7 @@ unsigned long loopWaitTime = 0;
 
 
 double promTime3 = 0;
-unsigned long calcLoopTime=0;
+unsigned long  loopTime=0;
 VectorClass vecPins(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 VectorClass vecChar(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 VectorClass aIntCharMatrix(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
@@ -71,7 +87,7 @@ String lastBTstrReceived = "";
 
 //String inputString = "a:efe2;v:1;r:2|m:AB";
 //String inputString = "a:tet1;v:1;r:1|a:pac1;v:1;r:1|a:pac2;v:1;r:1|a:efe1;v:1;r:1|a:efe2;v:1;r:1|a:efe3;v:1;r:1|a:efe4;v:1;r:1|a:efe5;v:1;r:1|a:efe6;v:1;r:1|a:efe7;v:1;r:1|a:tec1;v:1;r:1|a:tec2;v:1;r:1|a:tec3;v:1;r:1|a:tec4;v:1;r:1|a:tec5;v:1;r:1|a:tec6;v:1;r:1|m:Escuela";
-String inputString = "a:tet1;v:1;r:1;i:0|m:Escuela";
+String inputString = "a:tet1;v:10;r:1;i:1|m:Escuela";
 
 
 
@@ -149,10 +165,12 @@ void setup() {
     convProgToArray(vecPins, C_Pins, (sizeof(C_Pins) / 2));
     
     difTime = WAIT_TIME_LOOP;
-    loopWaitTime = WAIT_TIME_LOOP;
+    //loopWaitTime = WAIT_TIME_LOOP;
 
-    calcLoopTime =loopWaitTime*DEFAULT_VELOCITY;
-    difTime = calcLoopTime;
+    //loopTime =loopWaitTime*DEFAULT_VELOCITY;
+    loopTime =calcLoopTime(velocity,globalVelocity);
+
+    difTime = loopTime;
 
     globalVelocity=DEFAULT_VELOCITY;
 
@@ -206,10 +224,11 @@ void loop() {
                   tempOption == "ii" || tempOption == "ic") {
                     
             //vecStr.print();
-            calcLoopTime =loopWaitTime*globalVelocity;
+            loopTime =calcLoopTime(velocity,globalVelocity);
+
             ds("loopWaitTime=");dsl(loopWaitTime);            
             ds("globalVelocity=");dsl(globalVelocity);                        
-            ds("calcLoopTime=");dsl(calcLoopTime);
+            ds("loopTime=");dsl(loopTime);
 
             isBtBuilding=false;
             //isStrUpdatedByBt=true;
@@ -234,14 +253,14 @@ void loop() {
     //______________________________________________________________________
     //--------CONTROL DE TIEMPO---------------------------------------------
     
-    // calcLoopTime=(loopVelocity/loopWaitTime*globalVelocity);
-    // ds("calcLoopTime=");dsl(calcLoopTime);
-    ds("difTime=");ds(difTime);ds(" calcLoopTime=");dsl(calcLoopTime);
+    // loopTime=(loopVelocity/loopWaitTime*globalVelocity);
+    // ds("loopTime=");dsl(loopTime);
+    ds("difTime=");ds(difTime);ds(" loopTime=");dsl(loopTime);
     ds("isBtBuilding=");dsl(isBtBuilding);
     ds("option=");dsl(option);
     //================================================================
     //==MAIN DE MARQUE Y EFECTOS======================================
-    if (!isBtBuilding && difTime >= calcLoopTime && (globalMode=="Pres" || globalMode=="Flip") && globalStatus=="Play") {
+    if (!isBtBuilding && difTime >= loopTime && (globalMode=="Pres" || globalMode=="Flip") && globalStatus=="Play") {
 
         
 
@@ -251,6 +270,10 @@ void loop() {
 
         //dsl("--->(1)-----------");    
         if ((dm.getIfIsStringEnd() && an.getIfAnimIsEnd())) {
+            dsd();
+            dsd();
+            dsl("New parameter");
+            dsd();
             dsl("--->(2)-----------");
             ds("c=");ds(contParam);
             //toMA UN PARAMETRO DEL VECTOR DE PARAMETROS
@@ -272,10 +295,14 @@ void loop() {
                 dm.fillArrrayOfChars(vecChar, text);
                 lastStrToShow = text;
                 dm.setIfIsStringEnd(false);
+                
             }else if (option == "a") {
                 dsl("--->(2B)-----------");
+                
                 an.setIfisEnd(false);
             }
+            //loopTime =loopWaitTime*(velocity+(DEFAULT_VELOCITY-globalVelocity));
+            loopTime =calcLoopTime(velocity,globalVelocity);
         }
 
    
@@ -368,7 +395,7 @@ void loop() {
     
     /*
     //================================================================
-     if (!isBtBuilding && difTime >= calcLoopTime && globalStatus=="Play") {
+     if (!isBtBuilding && difTime >= loopTime && globalStatus=="Play") {
 
      
         lastTime = time;
@@ -383,3 +410,43 @@ void loop() {
     
   
 }
+
+
+
+
+
+
+
+// ╔══════════════════════════════════════════════════════════════════╗
+// ║   ____    _             __  __           _            _          ║
+// ║  |  _ \  (_)           |  \/  |         | |          (_)         ║
+// ║  | |_) |  _    __ _    | \  / |   __ _  | |_   _ __   _  __  __  ║
+// ║  |  _ <  | |  / _` |   | |\/| |  / _` | | __| | '__| | | \ \/ /  ║
+// ║  | |_) | | | | (_| |   | |  | | | (_| | | |_  | |    | |  >  <   ║
+// ║  |____/  |_|  \__, |   |_|  |_|  \__,_|  \__| |_|    |_| /_/\_\  ║
+// ║                __/ |                                             ║
+// ║               |___/                                              ║
+// ║                                                                  ║
+// ║  _         _____   _____      _____                           _  ║
+// ║ | |       / ____| |  __ \    |  __ \                         | | ║
+// ║ | |      | |      | |  | |   | |__) |   __ _   _ __     ___  | | ║
+// ║ | |      | |      | |  | |   |  ___/   / _` | | '_ \   / _ \ | | ║
+// ║ | |____  | |____  | |__| |   | |      | (_| | | | | | |  __/ | | ║
+// ║ |______|  \_____| |_____/    |_|       \__,_| |_| |_|  \___| |_| ║
+// ║                                                                  ║
+// ║  Software:                                                       ║
+// ║      Desarrollo de Aplicaciones.                                 ║  
+// ║      App para mobiles y sistema arduino desarrollado por:        ║
+// ║      WTDev ( Prof: Mauricio West)                                ║
+// ║      https://wtdevelopments.github.io/                           ║
+// ║      https://github.com/mwest0101/EEST2BigScreenMatrixScreen     ║
+// ║                                                                  ║
+// ║  Hardware:                                                       ║
+// ║      Desarrollado por:                                           ║
+// ║          Escuela Tecnica 2 de Junin (Bs. As) Argentina           ║            
+// ║          Alumnos de 7º Año de la tecnicatura informatica y       ║
+// ║          programación .                                          ║
+// ║                                                                  ║
+// ║  Año:    2023                                                    ║
+// ║                                                                  ║
+// ╚══════════════════════════════════════════════════════════════════╝
