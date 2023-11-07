@@ -22,20 +22,23 @@ void updateStateAndEffect(
                     int& velocity,                  int& repeat,
                     int &invert, 
                     int& globalControl,     int& globalInvert,  
-                    int& globalVelocity,    String& globalStatus);
+                    int& globalVelocity,    String& globalStatus,
+                    String& globalMode);
 
 void getAndSetParams(  String InString, int contParam, String& option,
                         String& effectOption,   String& text, 
                         int& velocity,          int& repeat,    int &invert, 
                         int& globalControl,     int& globalInvert,  
-                        int& globalVelocity,    String& globalStatus);
+                        int& globalVelocity,    String& globalStatus,
+                        String& globalMode);
  
 
 void getAndSetParamsOne(String InString,     String& option,
                         String& effectOption,   String& text, 
                         int& velocity,          int& repeat,   int &invert,
                         int& globalControl,     int& globalInvert,  
-                        int& globalVelocity,    String& globalStatus);
+                        int& globalVelocity,    String& globalStatus,
+                        String& globalMode);
 
 void proccesActionOne(String InString, VectorClassString& vecStrOne);
  

@@ -1,11 +1,11 @@
-怘�
+n怘�
 
  
 sizeParams=2
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=300000 calcLoopTime=300000
@@ -15,8 +15,8 @@ contRepeat=0 repeat=1
 Entro por tiempo=0
 --->(2)-----------
 c=0 
-o=[a] e=[tet1] t=[] v=[1] r=[1] i=[3] gc=[0] gi=[0] gv=[10] gs=[Play] 
---->(2B)-----------
+o=[a] e=[tet1] t=[] v=[1] r=[1] i=[0] gc=[0] gi=[0] gv=[10] gs=[Play] 
+gm=[Pres] --->(2B)-----------
 --->(4B)-----------
 ->tet1
 this->contFrame=0
@@ -36,7 +36,7 @@ contParam=0 sizeParams=2
 contRepeat=0 repeat=1
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=0 calcLoopTime=300000
@@ -44,98 +44,98 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=57540 calcLoopTime=300000
+difTime=58472 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=80576 calcLoopTime=300000
+difTime=81508 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=103952 calcLoopTime=300000
+difTime=104884 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=127328 calcLoopTime=300000
+difTime=128256 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=150788 calcLoopTime=300000
+difTime=151716 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=174248 calcLoopTime=300000
+difTime=175176 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=197708 calcLoopTime=300000
+difTime=198636 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=221168 calcLoopTime=300000
+difTime=222096 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=244628 calcLoopTime=300000
+difTime=245556 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=268088 calcLoopTime=300000
+difTime=269016 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=291548 calcLoopTime=300000
+difTime=292476 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=315008 calcLoopTime=300000
+difTime=315936 calcLoopTime=300000
 isBtBuilding=0
 option=a
 contRepeat=0 repeat=1
@@ -159,7 +159,7 @@ contParam=0 sizeParams=2
 contRepeat=0 repeat=1
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=0 calcLoopTime=300000
@@ -167,7 +167,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=46920 calcLoopTime=300000
@@ -175,31 +175,31 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=69952 calcLoopTime=300000
+difTime=69956 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=93336 calcLoopTime=300000
+difTime=93332 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=116704 calcLoopTime=300000
+difTime=116708 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=140080 calcLoopTime=300000
@@ -207,7 +207,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=163540 calcLoopTime=300000
@@ -215,7 +215,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=187000 calcLoopTime=300000
@@ -223,7 +223,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=210460 calcLoopTime=300000
@@ -231,7 +231,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=233920 calcLoopTime=300000
@@ -239,7 +239,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=257380 calcLoopTime=300000
@@ -247,7 +247,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=280840 calcLoopTime=300000
@@ -255,7 +255,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=304300 calcLoopTime=300000
@@ -282,7 +282,7 @@ contParam=0 sizeParams=2
 contRepeat=0 repeat=1
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=0 calcLoopTime=300000
@@ -290,7 +290,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=46920 calcLoopTime=300000
@@ -298,31 +298,31 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=69952 calcLoopTime=300000
+difTime=69956 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=93328 calcLoopTime=300000
+difTime=93340 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=116704 calcLoopTime=300000
+difTime=116708 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=140080 calcLoopTime=300000
@@ -330,7 +330,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=163540 calcLoopTime=300000
@@ -338,7 +338,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=187000 calcLoopTime=300000
@@ -346,7 +346,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=210460 calcLoopTime=300000
@@ -354,7 +354,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=233920 calcLoopTime=300000
@@ -362,7 +362,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=257380 calcLoopTime=300000
@@ -370,7 +370,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=280840 calcLoopTime=300000
@@ -378,7 +378,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=304300 calcLoopTime=300000
@@ -405,7 +405,7 @@ contParam=0 sizeParams=2
 contRepeat=0 repeat=1
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=0 calcLoopTime=300000
@@ -413,15 +413,15 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=47004 calcLoopTime=300000
+difTime=47008 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=70040 calcLoopTime=300000
@@ -429,82 +429,82 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=93412 calcLoopTime=300000
+difTime=93416 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=116788 calcLoopTime=300000
+difTime=116800 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=140164 calcLoopTime=300000
+difTime=140168 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=163624 calcLoopTime=300000
+difTime=163628 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=187084 calcLoopTime=300000
+difTime=187088 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=210544 calcLoopTime=300000
+difTime=210548 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=234004 calcLoopTime=300000
+difTime=234008 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=257464 calcLoopTime=300000
+difTime=257468 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=280924 calcLoopTime=300000
+difTime=280928 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=304384 calcLoopTime=300000
+difTime=304388 calcLoopTime=300000
 isBtBuilding=0
 option=a
 contRepeat=0 repeat=1
@@ -528,7 +528,7 @@ contParam=0 sizeParams=2
 contRepeat=0 repeat=1
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=0 calcLoopTime=300000
@@ -536,15 +536,15 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=47004 calcLoopTime=300000
+difTime=47012 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=70040 calcLoopTime=300000
@@ -552,15 +552,15 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=93416 calcLoopTime=300000
+difTime=93412 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=116788 calcLoopTime=300000
@@ -568,7 +568,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=140164 calcLoopTime=300000
@@ -576,7 +576,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=163624 calcLoopTime=300000
@@ -584,7 +584,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=187084 calcLoopTime=300000
@@ -592,7 +592,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=210544 calcLoopTime=300000
@@ -600,7 +600,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=234004 calcLoopTime=300000
@@ -608,7 +608,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=257464 calcLoopTime=300000
@@ -616,7 +616,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=280924 calcLoopTime=300000
@@ -624,7 +624,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=304384 calcLoopTime=300000
@@ -651,7 +651,7 @@ contParam=0 sizeParams=2
 contRepeat=0 repeat=1
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=0 calcLoopTime=300000
@@ -659,7 +659,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=47004 calcLoopTime=300000
@@ -667,7 +667,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=70040 calcLoopTime=300000
@@ -675,7 +675,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=93416 calcLoopTime=300000
@@ -683,15 +683,15 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=116792 calcLoopTime=300000
+difTime=116788 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=140164 calcLoopTime=300000
@@ -699,7 +699,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=163624 calcLoopTime=300000
@@ -707,7 +707,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=187084 calcLoopTime=300000
@@ -715,7 +715,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=210544 calcLoopTime=300000
@@ -723,7 +723,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=234004 calcLoopTime=300000
@@ -731,7 +731,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=257464 calcLoopTime=300000
@@ -739,7 +739,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=280924 calcLoopTime=300000
@@ -747,7 +747,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=304384 calcLoopTime=300000
@@ -774,7 +774,7 @@ contParam=0 sizeParams=2
 contRepeat=0 repeat=1
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=0 calcLoopTime=300000
@@ -782,15 +782,15 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=47008 calcLoopTime=300000
+difTime=47004 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=70040 calcLoopTime=300000
@@ -798,82 +798,82 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
-----------------------------------------------------------------
-globalVelocity=10
-difTime=93416 calcLoopTime=300000
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+-------------------000
 isBtBuilding=0
 option=a
-----------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------
+globalVelocity=10
+difTime=93416 calcLoopTime=300
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
-----------------------------------------------------------------
+[0]=a:t
 globalVelocity=10
 difTime=116792 calcLoopTime=300000
 isBtBuilding=0
 option=a
-----------------------------------------------------------------
+-------------et1;v:1;r:1;i:0 [1]=m:Escuela 
+-------------------------------------------------------------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=140168 calcLoopTime=300000
+difTime=140164 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=163628 calcLoopTime=300000
+difTime=163624 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=187088 calcLoopTime=300000
+difTime=187084 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=210548 calcLoopTime=300000
+difTime=210544 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=234008 calcLoopTime=300000
+difTime=234004 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=257468 calcLoopTime=300000
+difTime=257464 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=280928 calcLoopTime=300000
+difTime=280924 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=304388 calcLoopTime=300000
+difTime=304384 calcLoopTime=300000
 isBtBuilding=0
 option=a
 contRepeat=0 repeat=1
@@ -897,7 +897,7 @@ contParam=0 sizeParams=2
 contRepeat=0 repeat=1
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=0 calcLoopTime=300000
@@ -905,15 +905,15 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=47004 calcLoopTime=300000
+difTime=47008 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=70040 calcLoopTime=300000
@@ -921,82 +921,82 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=93412 calcLoopTime=300000
+difTime=93416 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=116788 calcLoopTime=300000
+difTime=116792 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=140164 calcLoopTime=300000
+difTime=140168 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=163624 calcLoopTime=300000
+difTime=163628 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=187084 calcLoopTime=300000
+difTime=187088 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=210544 calcLoopTime=300000
+difTime=210548 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=234004 calcLoopTime=300000
+difTime=234008 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=257464 calcLoopTime=300000
+difTime=257476 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=280932 calcLoopTime=300000
+difTime=280928 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=304384 calcLoopTime=300000
+difTime=304388 calcLoopTime=300000
 isBtBuilding=0
 option=a
 contRepeat=0 repeat=1
@@ -1020,7 +1020,7 @@ contParam=0 sizeParams=2
 contRepeat=0 repeat=1
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=0 calcLoopTime=300000
@@ -1028,7 +1028,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=47004 calcLoopTime=300000
@@ -1036,7 +1036,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=70040 calcLoopTime=300000
@@ -1044,15 +1044,15 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=93416 calcLoopTime=300000
+difTime=93412 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=116788 calcLoopTime=300000
@@ -1060,7 +1060,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=140164 calcLoopTime=300000
@@ -1068,7 +1068,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=163624 calcLoopTime=300000
@@ -1076,7 +1076,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=187084 calcLoopTime=300000
@@ -1084,7 +1084,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=210544 calcLoopTime=300000
@@ -1092,7 +1092,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=234004 calcLoopTime=300000
@@ -1100,7 +1100,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=257464 calcLoopTime=300000
@@ -1108,7 +1108,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=280924 calcLoopTime=300000
@@ -1116,10 +1116,10 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=304384 calcLoopTime=300000
+difTime=304392 calcLoopTime=300000
 isBtBuilding=0
 option=a
 contRepeat=0 repeat=1
@@ -1143,7 +1143,7 @@ contParam=0 sizeParams=2
 contRepeat=0 repeat=1
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=0 calcLoopTime=300000
@@ -1151,98 +1151,98 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=46996 calcLoopTime=300000
+difTime=47004 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=70032 calcLoopTime=300000
+difTime=70040 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=93408 calcLoopTime=300000
+difTime=93416 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=116784 calcLoopTime=300000
+difTime=116788 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=140156 calcLoopTime=300000
+difTime=140164 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=163616 calcLoopTime=300000
+difTime=163624 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=187076 calcLoopTime=300000
+difTime=187084 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=210536 calcLoopTime=300000
+difTime=210544 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=233996 calcLoopTime=300000
+difTime=234004 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=257456 calcLoopTime=300000
+difTime=257464 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=280916 calcLoopTime=300000
+difTime=280924 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=304376 calcLoopTime=300000
+difTime=304384 calcLoopTime=300000
 isBtBuilding=0
 option=a
 contRepeat=0 repeat=1
@@ -1266,7 +1266,7 @@ contParam=0 sizeParams=2
 contRepeat=0 repeat=1
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=0 calcLoopTime=300000
@@ -1274,15 +1274,15 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=47008 calcLoopTime=300000
+difTime=47004 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=70040 calcLoopTime=300000
@@ -1290,7 +1290,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=93416 calcLoopTime=300000
@@ -1298,7 +1298,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=116792 calcLoopTime=300000
@@ -1306,66 +1306,66 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=140168 calcLoopTime=300000
+difTime=140164 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=163628 calcLoopTime=300000
+difTime=163624 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=187088 calcLoopTime=300000
+difTime=187084 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=210548 calcLoopTime=300000
+difTime=210544 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=234008 calcLoopTime=300000
+difTime=234004 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=257468 calcLoopTime=300000
+difTime=257464 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=280928 calcLoopTime=300000
+difTime=280924 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=304388 calcLoopTime=300000
+difTime=304384 calcLoopTime=300000
 isBtBuilding=0
 option=a
 contRepeat=0 repeat=1
@@ -1389,7 +1389,7 @@ contParam=0 sizeParams=2
 contRepeat=0 repeat=1
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=0 calcLoopTime=300000
@@ -1397,15 +1397,15 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=47004 calcLoopTime=300000
+difTime=47008 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=70040 calcLoopTime=300000
@@ -1413,39 +1413,39 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=93412 calcLoopTime=300000
+difTime=93416 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=116788 calcLoopTime=300000
+difTime=116792 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=140164 calcLoopTime=300000
+difTime=140168 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=163624 calcLoopTime=300000
+difTime=163632 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=187088 calcLoopTime=300000
@@ -1453,42 +1453,42 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=210544 calcLoopTime=300000
+difTime=210548 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=234004 calcLoopTime=300000
+difTime=234008 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=257464 calcLoopTime=300000
+difTime=257468 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=280924 calcLoopTime=300000
+difTime=280928 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=304384 calcLoopTime=300000
+difTime=304388 calcLoopTime=300000
 isBtBuilding=0
 option=a
 contRepeat=0 repeat=1
@@ -1512,7 +1512,7 @@ contParam=0 sizeParams=2
 contRepeat=0 repeat=1
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=0 calcLoopTime=300000
@@ -1520,7 +1520,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=47004 calcLoopTime=300000
@@ -1528,7 +1528,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=70040 calcLoopTime=300000
@@ -1536,15 +1536,15 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=93416 calcLoopTime=300000
+difTime=93412 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=116788 calcLoopTime=300000
@@ -1552,7 +1552,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=140164 calcLoopTime=300000
@@ -1560,7 +1560,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=163624 calcLoopTime=300000
@@ -1568,7 +1568,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=187084 calcLoopTime=300000
@@ -1576,23 +1576,23 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=210544 calcLoopTime=300000
+difTime=210552 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=234012 calcLoopTime=300000
+difTime=234004 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=257464 calcLoopTime=300000
@@ -1600,7 +1600,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=280924 calcLoopTime=300000
@@ -1608,7 +1608,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=304384 calcLoopTime=300000
@@ -1635,7 +1635,7 @@ contParam=0 sizeParams=2
 contRepeat=0 repeat=1
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=0 calcLoopTime=300000
@@ -1643,7 +1643,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=47004 calcLoopTime=300000
@@ -1651,7 +1651,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=70040 calcLoopTime=300000
@@ -1659,7 +1659,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=93416 calcLoopTime=300000
@@ -1667,15 +1667,15 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=116792 calcLoopTime=300000
+difTime=116788 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=140164 calcLoopTime=300000
@@ -1683,7 +1683,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=163624 calcLoopTime=300000
@@ -1691,7 +1691,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=187084 calcLoopTime=300000
@@ -1699,7 +1699,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=210544 calcLoopTime=300000
@@ -1707,7 +1707,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=234004 calcLoopTime=300000
@@ -1715,7 +1715,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=257464 calcLoopTime=300000
@@ -1723,7 +1723,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=280924 calcLoopTime=300000
@@ -1731,7 +1731,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=304384 calcLoopTime=300000
@@ -1758,7 +1758,7 @@ contParam=0 sizeParams=2
 contRepeat=0 repeat=1
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=0 calcLoopTime=300000
@@ -1766,15 +1766,15 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=47008 calcLoopTime=300000
+difTime=47004 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=70040 calcLoopTime=300000
@@ -1782,7 +1782,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=93416 calcLoopTime=300000
@@ -1790,7 +1790,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=116792 calcLoopTime=300000
@@ -1798,66 +1798,66 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=140168 calcLoopTime=300000
+difTime=140164 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=163628 calcLoopTime=300000
+difTime=163624 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=187088 calcLoopTime=300000
+difTime=187084 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=210548 calcLoopTime=300000
+difTime=210544 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=234008 calcLoopTime=300000
+difTime=234004 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=257468 calcLoopTime=300000
+difTime=257464 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=280928 calcLoopTime=300000
+difTime=280924 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=304388 calcLoopTime=300000
+difTime=304384 calcLoopTime=300000
 isBtBuilding=0
 option=a
 contRepeat=0 repeat=1
@@ -1881,7 +1881,7 @@ contParam=0 sizeParams=2
 contRepeat=0 repeat=1
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=0 calcLoopTime=300000
@@ -1889,15 +1889,15 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=47004 calcLoopTime=300000
+difTime=47008 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=70040 calcLoopTime=300000
@@ -1905,82 +1905,82 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=93412 calcLoopTime=300000
+difTime=93416 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=116796 calcLoopTime=300000
+difTime=116792 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=140164 calcLoopTime=300000
+difTime=140168 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=163624 calcLoopTime=300000
+difTime=163628 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=187084 calcLoopTime=300000
+difTime=187088 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
-----------------------------------------------------------------
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:E--------------------------------scuela 
+--------------------------------
 globalVelocity=10
-difTime=210544 calcLoopTime=300000
+difTime=210548 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=234004 calcLoopTime=300000
+difTime=234008 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=257464 calcLoopTime=300000
+difTime=257468 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=280924 calcLoopTime=300000
+difTime=280928 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=304384 calcLoopTime=300000
+difTime=304388 calcLoopTime=300000
 isBtBuilding=0
 option=a
 contRepeat=0 repeat=1
@@ -2004,7 +2004,7 @@ contParam=0 sizeParams=2
 contRepeat=0 repeat=1
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=0 calcLoopTime=300000
@@ -2012,7 +2012,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=47004 calcLoopTime=300000
@@ -2020,7 +2020,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=70040 calcLoopTime=300000
@@ -2028,15 +2028,15 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=93416 calcLoopTime=300000
+difTime=93412 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=116788 calcLoopTime=300000
@@ -2044,15 +2044,15 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=140172 calcLoopTime=300000
+difTime=140164 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=163624 calcLoopTime=300000
@@ -2060,7 +2060,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=187084 calcLoopTime=300000
@@ -2068,7 +2068,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=210544 calcLoopTime=300000
@@ -2076,7 +2076,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=234004 calcLoopTime=300000
@@ -2084,7 +2084,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=257464 calcLoopTime=300000
@@ -2092,7 +2092,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=280924 calcLoopTime=300000
@@ -2100,7 +2100,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=304384 calcLoopTime=300000
@@ -2127,7 +2127,7 @@ contParam=0 sizeParams=2
 contRepeat=0 repeat=1
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=0 calcLoopTime=300000
@@ -2135,7 +2135,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=47004 calcLoopTime=300000
@@ -2143,7 +2143,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=70040 calcLoopTime=300000
@@ -2151,7 +2151,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=93416 calcLoopTime=300000
@@ -2159,15 +2159,15 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=116792 calcLoopTime=300000
+difTime=116788 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=140164 calcLoopTime=300000
@@ -2175,7 +2175,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=163624 calcLoopTime=300000
@@ -2183,7 +2183,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=187084 calcLoopTime=300000
@@ -2191,7 +2191,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=210544 calcLoopTime=300000
@@ -2199,7 +2199,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=234004 calcLoopTime=300000
@@ -2207,7 +2207,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=257464 calcLoopTime=300000
@@ -2215,7 +2215,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=280924 calcLoopTime=300000
@@ -2223,7 +2223,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=304384 calcLoopTime=300000
@@ -2250,7 +2250,7 @@ contParam=0 sizeParams=2
 contRepeat=0 repeat=1
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=0 calcLoopTime=300000
@@ -2258,15 +2258,15 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=47008 calcLoopTime=300000
+difTime=47004 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=70040 calcLoopTime=300000
@@ -2274,7 +2274,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=93416 calcLoopTime=300000
@@ -2282,7 +2282,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=116792 calcLoopTime=300000
@@ -2290,66 +2290,66 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=140168 calcLoopTime=300000
+difTime=140164 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=163628 calcLoopTime=300000
+difTime=163624 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=187088 calcLoopTime=300000
+difTime=187084 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=210548 calcLoopTime=300000
+difTime=210544 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=234008 calcLoopTime=300000
+difTime=234004 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=257468 calcLoopTime=300000
+difTime=257464 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=280928 calcLoopTime=300000
+difTime=280924 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=304388 calcLoopTime=300000
+difTime=304384 calcLoopTime=300000
 isBtBuilding=0
 option=a
 contRepeat=0 repeat=1
@@ -2373,7 +2373,7 @@ contParam=0 sizeParams=2
 contRepeat=0 repeat=1
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=0 calcLoopTime=300000
@@ -2381,98 +2381,98 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=47004 calcLoopTime=300000
+difTime=47008 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=70048 calcLoopTime=300000
+difTime=70040 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=93412 calcLoopTime=300000
+difTime=93416 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=116788 calcLoopTime=300000
+difTime=116792 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=140164 calcLoopTime=300000
+difTime=140168 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=163624 calcLoopTime=300000
+difTime=163628 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=187084 calcLoopTime=300000
+difTime=187088 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=210544 calcLoopTime=300000
+difTime=210548 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=234004 calcLoopTime=300000
+difTime=234008 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=257464 calcLoopTime=300000
+difTime=257468 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=280924 calcLoopTime=300000
+difTime=280928 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=304384 calcLoopTime=300000
+difTime=304388 calcLoopTime=300000
 isBtBuilding=0
 option=a
 contRepeat=0 repeat=1
@@ -2496,7 +2496,7 @@ contParam=0 sizeParams=2
 contRepeat=0 repeat=1
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=0 calcLoopTime=300000
@@ -2504,7 +2504,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=47004 calcLoopTime=300000
@@ -2512,7 +2512,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=70040 calcLoopTime=300000
@@ -2520,15 +2520,15 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=93424 calcLoopTime=300000
+difTime=93412 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=116788 calcLoopTime=300000
@@ -2536,7 +2536,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=140164 calcLoopTime=300000
@@ -2544,7 +2544,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=163624 calcLoopTime=300000
@@ -2552,7 +2552,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=187084 calcLoopTime=300000
@@ -2560,7 +2560,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=210544 calcLoopTime=300000
@@ -2568,7 +2568,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=234004 calcLoopTime=300000
@@ -2576,7 +2576,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=257464 calcLoopTime=300000
@@ -2584,18 +2584,18 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=280924 calcLoopTime=300000
+difTime=280928 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=304388 calcLoopTime=300000
+difTime=304384 calcLoopTime=300000
 isBtBuilding=0
 option=a
 contRepeat=0 repeat=1
@@ -2619,7 +2619,7 @@ contParam=0 sizeParams=2
 contRepeat=0 repeat=1
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=0 calcLoopTime=300000
@@ -2627,7 +2627,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=47004 calcLoopTime=300000
@@ -2635,7 +2635,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=70040 calcLoopTime=300000
@@ -2643,7 +2643,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=93416 calcLoopTime=300000
@@ -2651,15 +2651,15 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=116792 calcLoopTime=300000
+difTime=116788 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=140164 calcLoopTime=300000
@@ -2667,7 +2667,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=163624 calcLoopTime=300000
@@ -2675,7 +2675,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=187084 calcLoopTime=300000
@@ -2683,7 +2683,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=210544 calcLoopTime=300000
@@ -2691,7 +2691,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=234004 calcLoopTime=300000
@@ -2699,7 +2699,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=257464 calcLoopTime=300000
@@ -2707,7 +2707,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=280924 calcLoopTime=300000
@@ -2715,7 +2715,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=304384 calcLoopTime=300000
@@ -2742,7 +2742,7 @@ contParam=0 sizeParams=2
 contRepeat=0 repeat=1
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=0 calcLoopTime=300000
@@ -2750,98 +2750,98 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=47016 calcLoopTime=300000
+difTime=46996 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=70040 calcLoopTime=300000
+difTime=70032 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=93416 calcLoopTime=300000
+difTime=93408 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=116792 calcLoopTime=300000
+difTime=116784 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=140168 calcLoopTime=300000
+difTime=140156 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=163628 calcLoopTime=300000
+difTime=163616 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=187088 calcLoopTime=300000
+difTime=187076 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=210548 calcLoopTime=300000
+difTime=210536 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=234008 calcLoopTime=300000
+difTime=233996 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=257468 calcLoopTime=300000
+difTime=257456 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=280928 calcLoopTime=300000
+difTime=280916 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=304388 calcLoopTime=300000
+difTime=304376 calcLoopTime=300000
 isBtBuilding=0
 option=a
 contRepeat=0 repeat=1
@@ -2865,7 +2865,7 @@ contParam=0 sizeParams=2
 contRepeat=0 repeat=1
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=0 calcLoopTime=300000
@@ -2873,15 +2873,15 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=47004 calcLoopTime=300000
+difTime=47008 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=70040 calcLoopTime=300000
@@ -2889,82 +2889,82 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=93412 calcLoopTime=300000
+difTime=93416 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=116788 calcLoopTime=300000
+difTime=116792 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=140164 calcLoopTime=300000
+difTime=140168 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=163624 calcLoopTime=300000
+difTime=163628 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=187084 calcLoopTime=300000
+difTime=187088 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=210544 calcLoopTime=300000
+difTime=210548 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=234004 calcLoopTime=300000
+difTime=234008 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=257464 calcLoopTime=300000
+difTime=257468 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=280924 calcLoopTime=300000
+difTime=280928 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=304384 calcLoopTime=300000
+difTime=304388 calcLoopTime=300000
 isBtBuilding=0
 option=a
 contRepeat=0 repeat=1
@@ -2988,7 +2988,7 @@ contParam=0 sizeParams=2
 contRepeat=0 repeat=1
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=0 calcLoopTime=300000
@@ -2996,7 +2996,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=47004 calcLoopTime=300000
@@ -3004,7 +3004,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=70040 calcLoopTime=300000
@@ -3012,15 +3012,15 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=93416 calcLoopTime=300000
+difTime=93412 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=116788 calcLoopTime=300000
@@ -3028,7 +3028,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=140164 calcLoopTime=300000
@@ -3036,7 +3036,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=163624 calcLoopTime=300000
@@ -3044,7 +3044,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=187084 calcLoopTime=300000
@@ -3052,7 +3052,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=210544 calcLoopTime=300000
@@ -3060,7 +3060,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=234004 calcLoopTime=300000
@@ -3068,7 +3068,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=257464 calcLoopTime=300000
@@ -3076,7 +3076,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=280924 calcLoopTime=300000
@@ -3084,7 +3084,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=304384 calcLoopTime=300000
@@ -3111,7 +3111,7 @@ contParam=0 sizeParams=2
 contRepeat=0 repeat=1
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=0 calcLoopTime=300000
@@ -3119,15 +3119,15 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=47092 calcLoopTime=300000
+difTime=47088 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=70124 calcLoopTime=300000
@@ -3135,7 +3135,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=93500 calcLoopTime=300000
@@ -3143,7 +3143,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=116876 calcLoopTime=300000
@@ -3151,66 +3151,66 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=140252 calcLoopTime=300000
+difTime=140248 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=163712 calcLoopTime=300000
+difTime=163708 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=187172 calcLoopTime=300000
+difTime=187168 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=210632 calcLoopTime=300000
+difTime=210628 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=234092 calcLoopTime=300000
+difTime=234088 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=257552 calcLoopTime=300000
+difTime=257556 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=281020 calcLoopTime=300000
+difTime=281008 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=304472 calcLoopTime=300000
+difTime=304468 calcLoopTime=300000
 isBtBuilding=0
 option=a
 contRepeat=0 repeat=1
@@ -3234,7 +3234,7 @@ contParam=0 sizeParams=2
 contRepeat=0 repeat=1
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=0 calcLoopTime=300000
@@ -3242,23 +3242,23 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=47088 calcLoopTime=300000
+difTime=47092 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=70124 calcLoopTime=300000
+difTime=70128 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=93500 calcLoopTime=300000
@@ -3266,74 +3266,74 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=116872 calcLoopTime=300000
+difTime=116876 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=140248 calcLoopTime=300000
+difTime=140252 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=163708 calcLoopTime=300000
+difTime=163712 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=187168 calcLoopTime=300000
+difTime=187172 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=210628 calcLoopTime=300000
+difTime=210632 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=234088 calcLoopTime=300000
+difTime=234092 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=257548 calcLoopTime=300000
+difTime=257552 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=281008 calcLoopTime=300000
+difTime=281012 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=304468 calcLoopTime=300000
+difTime=304472 calcLoopTime=300000
 isBtBuilding=0
 option=a
 contRepeat=0 repeat=1
@@ -3357,7 +3357,7 @@ contParam=0 sizeParams=2
 contRepeat=0 repeat=1
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=0 calcLoopTime=300000
@@ -3365,15 +3365,15 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=47092 calcLoopTime=300000
+difTime=47088 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=70124 calcLoopTime=300000
@@ -3381,7 +3381,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=93500 calcLoopTime=300000
@@ -3389,7 +3389,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=116876 calcLoopTime=300000
@@ -3397,66 +3397,66 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=140252 calcLoopTime=300000
+difTime=140248 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=163712 calcLoopTime=300000
+difTime=163708 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=187172 calcLoopTime=300000
+difTime=187168 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=210632 calcLoopTime=300000
+difTime=210628 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=234092 calcLoopTime=300000
+difTime=234088 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=257552 calcLoopTime=300000
+difTime=257548 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=281012 calcLoopTime=300000
+difTime=281008 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=304472 calcLoopTime=300000
+difTime=304468 calcLoopTime=300000
 isBtBuilding=0
 option=a
 contRepeat=0 repeat=1
@@ -3480,7 +3480,7 @@ contParam=0 sizeParams=2
 contRepeat=0 repeat=1
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=0 calcLoopTime=300000
@@ -3488,23 +3488,23 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=47088 calcLoopTime=300000
+difTime=47092 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=70124 calcLoopTime=300000
+difTime=70128 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=93500 calcLoopTime=300000
@@ -3512,74 +3512,74 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=116872 calcLoopTime=300000
+difTime=116876 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=140248 calcLoopTime=300000
+difTime=140252 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=163708 calcLoopTime=300000
+difTime=163712 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=187168 calcLoopTime=300000
+difTime=187180 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=210636 calcLoopTime=300000
+difTime=210632 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=234088 calcLoopTime=300000
+difTime=234092 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=257548 calcLoopTime=300000
+difTime=257552 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=281008 calcLoopTime=300000
+difTime=281012 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=304468 calcLoopTime=300000
+difTime=304472 calcLoopTime=300000
 isBtBuilding=0
 option=a
 contRepeat=0 repeat=1
@@ -3603,7 +3603,7 @@ contParam=0 sizeParams=2
 contRepeat=0 repeat=1
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=0 calcLoopTime=300000
@@ -3611,15 +3611,15 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=47092 calcLoopTime=300000
+difTime=47088 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=70124 calcLoopTime=300000
@@ -3627,7 +3627,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=93500 calcLoopTime=300000
@@ -3635,7 +3635,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=116876 calcLoopTime=300000
@@ -3643,66 +3643,66 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=140252 calcLoopTime=300000
+difTime=140248 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=163712 calcLoopTime=300000
+difTime=163708 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=187172 calcLoopTime=300000
+difTime=187168 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=210632 calcLoopTime=300000
+difTime=210628 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=234092 calcLoopTime=300000
+difTime=234088 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=257552 calcLoopTime=300000
+difTime=257548 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=281012 calcLoopTime=300000
+difTime=281008 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=304472 calcLoopTime=300000
+difTime=304468 calcLoopTime=300000
 isBtBuilding=0
 option=a
 contRepeat=0 repeat=1
@@ -3726,7 +3726,7 @@ contParam=0 sizeParams=2
 contRepeat=0 repeat=1
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=0 calcLoopTime=300000
@@ -3734,98 +3734,98 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=47088 calcLoopTime=300000
+difTime=47092 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=70124 calcLoopTime=300000
+difTime=70128 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=93500 calcLoopTime=300000
+difTime=93508 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=116872 calcLoopTime=300000
+difTime=116876 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=140248 calcLoopTime=300000
+difTime=140252 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=163708 calcLoopTime=300000
+difTime=163712 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=187168 calcLoopTime=300000
+difTime=187172 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=210628 calcLoopTime=300000
+difTime=210632 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=234088 calcLoopTime=300000
+difTime=234092 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=257548 calcLoopTime=300000
+difTime=257552 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=281008 calcLoopTime=300000
+difTime=281012 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=304468 calcLoopTime=300000
+difTime=304472 calcLoopTime=300000
 isBtBuilding=0
 option=a
 contRepeat=0 repeat=1
@@ -3849,7 +3849,7 @@ contParam=0 sizeParams=2
 contRepeat=0 repeat=1
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=0 calcLoopTime=300000
@@ -3857,15 +3857,15 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=47288 calcLoopTime=300000
+difTime=47088 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=70124 calcLoopTime=300000
@@ -3873,7 +3873,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=93500 calcLoopTime=300000
@@ -3881,7 +3881,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=116876 calcLoopTime=300000
@@ -3889,66 +3889,66 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=140260 calcLoopTime=300000
+difTime=140248 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=163712 calcLoopTime=300000
+difTime=163708 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=187172 calcLoopTime=300000
+difTime=187168 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=210632 calcLoopTime=300000
+difTime=210628 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=234092 calcLoopTime=300000
+difTime=234088 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=257552 calcLoopTime=300000
+difTime=257548 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=281012 calcLoopTime=300000
+difTime=281008 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=304472 calcLoopTime=300000
+difTime=304468 calcLoopTime=300000
 isBtBuilding=0
 option=a
 contRepeat=0 repeat=1
@@ -3972,7 +3972,7 @@ contParam=0 sizeParams=2
 contRepeat=0 repeat=1
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=0 calcLoopTime=300000
@@ -3980,23 +3980,23 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=47088 calcLoopTime=300000
+difTime=47092 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=70124 calcLoopTime=300000
+difTime=70128 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=93500 calcLoopTime=300000
@@ -4004,74 +4004,74 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=116872 calcLoopTime=300000
+difTime=116876 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=140248 calcLoopTime=300000
+difTime=140252 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=163708 calcLoopTime=300000
+difTime=163712 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=187168 calcLoopTime=300000
+difTime=187172 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=210628 calcLoopTime=300000
+difTime=210632 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=234088 calcLoopTime=300000
+difTime=234092 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=257548 calcLoopTime=300000
+difTime=257552 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=281008 calcLoopTime=300000
+difTime=281012 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=304468 calcLoopTime=300000
+difTime=304472 calcLoopTime=300000
 isBtBuilding=0
 option=a
 contRepeat=0 repeat=1
@@ -4095,7 +4095,7 @@ contParam=0 sizeParams=2
 contRepeat=0 repeat=1
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=0 calcLoopTime=300000
@@ -4103,23 +4103,23 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=47092 calcLoopTime=300000
+difTime=47088 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=70132 calcLoopTime=300000
+difTime=70124 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=93500 calcLoopTime=300000
@@ -4127,7 +4127,7 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=116876 calcLoopTime=300000
@@ -4135,66 +4135,66 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=140252 calcLoopTime=300000
+difTime=140248 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=163712 calcLoopTime=300000
+difTime=163708 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=187172 calcLoopTime=300000
+difTime=187168 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=210632 calcLoopTime=300000
+difTime=210628 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=234092 calcLoopTime=300000
+difTime=234088 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=257552 calcLoopTime=300000
+difTime=257548 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=281012 calcLoopTime=300000
+difTime=281008 calcLoopTime=300000
 isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=304472 calcLoopTime=300000
+difTime=304468 calcLoopTime=300000
 isBtBuilding=0
 option=a
 contRepeat=0 repeat=1
@@ -4218,7 +4218,7 @@ contParam=0 sizeParams=2
 contRepeat=0 repeat=1
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
 difTime=0 calcLoopTime=300000
@@ -4226,7 +4226,684 @@ isBtBuilding=0
 option=a
 ----------------------------------------------------------------
 vecStr Antes de entrar
-[0]=a:tet1;v:1;r:1;i:3 [1]=m:Escuela 
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
 ----------------------------------------------------------------
 globalVelocity=10
-difTime=
+difTime=47092 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=70128 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=93500 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=116876 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=140252 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=163712 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=187172 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=210632 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=234092 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=257552 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=281012 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=304480 calcLoopTime=300000
+isBtBuilding=0
+option=a
+contRepeat=0 repeat=1
+Entro por tiempo=0
+--->(4B)-----------
+->tet1
+this->contFrame=1400
+0 0 0 1 1 0 0 
+0 0 0 0 1 0 0 
+0 0 0 0 0 0 0 
+1 0 0 1 0 0 0 
+1 1 1 1 1 1 0 
+ 
+--->(5)-----------
+ 
+ 
+ 
+ 
+--->(8)-----------
+contParam=0 sizeParams=2
+contRepeat=0 repeat=1
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=0 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=47088 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=70124 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=93500 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=116876 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=140248 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=163708 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=187168 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=210628 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=234088 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=257548 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=281008 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=304468 calcLoopTime=300000
+isBtBuilding=0
+option=a
+contRepeat=0 repeat=1
+Entro por tiempo=0
+--->(4B)-----------
+->tet1
+this->contFrame=1440
+0 0 0 0 0 0 0 
+0 0 0 0 1 1 0 
+0 0 0 0 0 1 0 
+1 0 0 1 0 0 0 
+1 1 1 1 1 1 0 
+ 
+--->(5)-----------
+ 
+ 
+ 
+ 
+--->(8)-----------
+contParam=0 sizeParams=2
+contRepeat=0 repeat=1
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=0 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=47092 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=70128 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=93500 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=116876 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=140252 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=163712 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=187172 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=210632 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=234092 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=257552 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=281012 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=304472 calcLoopTime=300000
+isBtBuilding=0
+option=a
+contRepeat=0 repeat=1
+Entro por tiempo=0
+--->(4B)-----------
+->tet1
+this->contFrame=1480
+0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 
+0 0 0 0 0 1 1 
+1 0 0 1 0 0 1 
+1 1 1 1 1 1 0 
+ 
+--->(5)-----------
+ 
+ 
+ 
+ 
+--->(8)-----------
+contParam=0 sizeParams=2
+contRepeat=0 repeat=1
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=0 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=47088 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=70124 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=93500 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=116876 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=140248 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=163708 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=187168 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=210628 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=234096 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=257548 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=281008 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=304468 calcLoopTime=300000
+isBtBuilding=0
+option=a
+contRepeat=0 repeat=1
+Entro por tiempo=0
+--->(4B)-----------
+->tet1
+this->contFrame=1520
+0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 
+1 0 0 1 0 1 1 
+1 1 1 1 1 1 1 
+ 
+--->(5)-----------
+ 
+ 
+ 
+ 
+--->(8)-----------
+contParam=0 sizeParams=2
+contRepeat=0 repeat=1
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=0 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=47092 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=70128 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=93500 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=116876 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=140252 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=163712 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=187172 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=210632 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=234092 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=257552 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=281012 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=304480 calcLoopTime=300000
+isBtBuilding=0
+option=a
+contRepeat=0 repeat=1
+Entro por tiempo=0
+--->(4B)-----------
+->tet1
+this->contFrame=1560
+0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 
+1 0 0 1 0 1 1 
+0 0 0 0 0 0 0 
+ 
+--->(5)-----------
+ 
+ 
+ 
+ 
+--->(8)-----------
+contParam=0 sizeParams=2
+contRepeat=0 repeat=1
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=0 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=47088 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=70124 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=93500 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=116876 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=140248 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=163708 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=187168 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+----------------------------------------------------------------
+globalVelocity=10
+difTime=210628 calcLoopTime=300000
+isBtBuilding=0
+option=a
+----------------------------------------------------------------
+vecStr Antes de entrar
+[0]=a:tet1;v:1;r:1;i:0 [1]=m:Escuela 
+------------------------------------------------------------

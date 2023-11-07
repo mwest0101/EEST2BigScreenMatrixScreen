@@ -171,14 +171,15 @@ void updateStateAndEffect(VectorClassString &vecStrOne,   String &option,
                           int &velocity,        int &repeat,      
                           int &invert, 
                           int& globalControl,     int& globalInvert,  
-                          int& globalVelocity,    String& globalStatus) {
+                          int& globalVelocity,    String& globalStatus,
+                          String& globalMode) {
 
   String value = "";
   String lastStrValue = "";
   static int typeValue = 0;
   //vecStrOne.print();
 
-  if (vecStrOne.get(0) != "iv" && vecStrOne.get(0) != "ip" && vecStrOne.get(0) != "ii") {
+  if (vecStrOne.get(0) != "iv" && vecStrOne.get(0) != "ip" && vecStrOne.get(0) != "ii" && value != "ic" && value != "im") {
     repeat = DEFAULT_REPEAT;
     velocity = DEFAULT_VELOCITY;
     invert = 0;
@@ -195,8 +196,8 @@ void updateStateAndEffect(VectorClassString &vecStrOne,   String &option,
     value = vecStrOne.get(i);
     //dsl("paso por aca 0");
 
-    if (value == "a" || value == "m" || value == "r" || value == "i" || value == "v" || value == "ip" || value == "iv" || value == "ii" || value == "ic") {
-      if (value == "a" || value == "m" || value == "ip" || value == "iv" || value == "ii" || value == "ic") {
+    if (value == "a" || value == "m" || value == "r" || value == "i" || value == "v" || value == "ip" || value == "iv" || value == "ii" || value == "ic" || value == "im") {
+      if (value == "a" || value == "m" || value == "ip" || value == "iv" || value == "ii" || value == "ic" || value == "im") {
         option = value;
       }
       lastStrValue = value;
@@ -216,6 +217,7 @@ void updateStateAndEffect(VectorClassString &vecStrOne,   String &option,
       if (lastStrValue == "ii") { globalInvert = value.toInt(); }      
       if (lastStrValue == "iv") { globalVelocity = value.toInt(); }
       if (lastStrValue == "ip") { globalStatus = value; }
+      if (lastStrValue == "im") { globalMode = value; }
 
       typeValue = 0;
       lastStrValue = value;
@@ -230,6 +232,8 @@ void updateStateAndEffect(VectorClassString &vecStrOne,   String &option,
 
   ds5("gc=[");ds5(globalControl);ds5("] ");ds5("gi=[");ds5(globalInvert);ds5("] ");
   ds5("gv=[");ds5(globalVelocity);ds5("] ");ds5("gs=[");ds5(globalStatus);ds5l("] ");
+  ds5("gm=[");ds5(globalMode);ds5("] ");
+  
 
 }
 
@@ -239,7 +243,8 @@ void getAndSetParams(   String InString,
                         String& effectOption,   String& text, 
                         int& velocity,          int& repeat,    int &invert, 
                         int& globalControl,     int& globalInvert,  
-                        int& globalVelocity,    String& globalStatus){
+                        int& globalVelocity,    String& globalStatus,
+                        String& globalMode){
 
 
   VectorClassString vecStrOne(0);
@@ -248,7 +253,8 @@ void getAndSetParams(   String InString,
 
   updateStateAndEffect(vecStrOne,     option,        effectOption, 
                        text,          velocity,      repeat,        invert, 
-                       globalControl, globalInvert,  globalVelocity, globalStatus);
+                       globalControl, globalInvert,  globalVelocity, globalStatus,
+                       globalMode);
 }
 
 
@@ -256,7 +262,8 @@ void getAndSetParamsOne(String InString,     String& option,
                         String& effectOption,   String& text, 
                         int& velocity,          int& repeat,   int &invert,
                         int& globalControl,     int& globalInvert,  
-                        int& globalVelocity,    String& globalStatus){
+                        int& globalVelocity,    String& globalStatus,
+                        String& globalMode){
 
 
 
@@ -266,7 +273,8 @@ void getAndSetParamsOne(String InString,     String& option,
 
   updateStateAndEffect(vecStrOne,     option,        effectOption, 
                        text,          velocity,      repeat,        invert, 
-                       globalControl, globalInvert,  globalVelocity, globalStatus);
+                       globalControl, globalInvert,  globalVelocity, globalStatus,
+                       globalMode);
 }
                      
 

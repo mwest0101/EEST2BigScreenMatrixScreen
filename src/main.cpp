@@ -83,6 +83,7 @@ int     globalVelocity=0;
 int     globalInvert=0;
 int     globalControl=0;
 String  globalStatus = "Play";
+String  globalMode="Pres";
 
 int     invert=0;
 
@@ -191,7 +192,8 @@ void loop() {
                         tempEffectOption,   tempText,       
                         tempVelocity,       tempRepeat      ,tempInvert,
                         globalControl,      globalInvert,  
-                        globalVelocity,     globalStatus);
+                        globalVelocity,     globalStatus,
+                        globalMode);
 
 
         if (tempOption == "a" || tempOption == "m") {
@@ -222,7 +224,7 @@ void loop() {
     }
     
     
-
+    
     dss();
     dsl("vecStr Antes de entrar")
     vecStr.print();
@@ -237,8 +239,9 @@ void loop() {
     ds("difTime=");ds(difTime);ds(" calcLoopTime=");dsl(calcLoopTime);
     ds("isBtBuilding=");dsl(isBtBuilding);
     ds("option=");dsl(option);
-    
-    if (!isBtBuilding && difTime >= calcLoopTime && globalStatus=="Play") {
+    //================================================================
+    //==MAIN DE MARQUE Y EFECTOS======================================
+    if (!isBtBuilding && difTime >= calcLoopTime && (globalMode=="Pres" || globalMode=="Flip") && globalStatus=="Play") {
 
         
 
@@ -255,7 +258,8 @@ void loop() {
                                 effectOption, text, 
                                 velocity, repeat,   invert,
                                 globalControl,     globalInvert,  
-                                globalVelocity,    globalStatus);
+                                globalVelocity,    globalStatus,
+                                globalMode);
 
 
 
@@ -361,6 +365,19 @@ void loop() {
         lastTime = time;
 
     }
+    
+    /*
+    //================================================================
+     if (!isBtBuilding && difTime >= calcLoopTime && globalStatus=="Play") {
+
+     
+        lastTime = time;
+
+    }*/
+    
+    //================================================================
+    //==MAIN DE DIBUJO======================================
+    
     
     difTime = time - lastTime;
     
