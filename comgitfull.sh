@@ -6,6 +6,10 @@ fecha=$(date +"%Y%m%d%H%M%S")
 
 archivo_comprimido="$fecha_${nombre_archivo}.tar.gz"
 
+echo "____ ____ ___ _  _ ____ _    _ ___  ____ _  _ ___  ____    ____ _ ___"
+echo "|__| |     |  |  | |__| |    |   /  |__| |\ | |  \ |  |    | __ |  | "
+echo "|  | |___  |  |__| |  | |___ |  /__ |  | | \| |__/ |__|    |__] |  | "
+echo ""
 
 
 
@@ -13,6 +17,12 @@ archivo_comprimido="$fecha_${nombre_archivo}.tar.gz"
 git add .
 git commit -m "$fecha: ${nombre_archivo}"
 git push
+
+echo "____ ____ _  _ ___  ____ _ _  _ _ ____ _  _ ___  ____"
+echo "|    |  | |\/| |__] |__/ | |\/| | |___ |\ | |  \ |  |"
+echo "|___ |__| |  | |    |  \ | |  | | |___ | \| |__/ |__|"
+echo ""
+
 
 
 
