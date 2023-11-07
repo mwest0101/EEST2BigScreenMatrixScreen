@@ -195,7 +195,7 @@ void updateStateAndEffect(VectorClassString &vecStrOne,   String &option,
     value = vecStrOne.get(i);
     //dsl("paso por aca 0");
 
-    if (value == "a" || value == "m" || value == "r" || value == "i" || value == "v" || value == "ip" || value == "iv") {
+    if (value == "a" || value == "m" || value == "r" || value == "i" || value == "v" || value == "ip" || value == "iv" || value == "ii" || value == "ic") {
       if (value == "a" || value == "m" || value == "ip" || value == "iv" || value == "ii" || value == "ic") {
         option = value;
       }

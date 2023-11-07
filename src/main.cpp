@@ -71,7 +71,7 @@ String lastBTstrReceived = "";
 
 //String inputString = "a:efe2;v:1;r:2|m:AB";
 //String inputString = "a:tet1;v:1;r:1|a:pac1;v:1;r:1|a:pac2;v:1;r:1|a:efe1;v:1;r:1|a:efe2;v:1;r:1|a:efe3;v:1;r:1|a:efe4;v:1;r:1|a:efe5;v:1;r:1|a:efe6;v:1;r:1|a:efe7;v:1;r:1|a:tec1;v:1;r:1|a:tec2;v:1;r:1|a:tec3;v:1;r:1|a:tec4;v:1;r:1|a:tec5;v:1;r:1|a:tec6;v:1;r:1|m:Escuela";
-String inputString = "a:tet1;v:1;r:1;i:3|m:Escuela";
+String inputString = "a:tet1;v:1;r:1;i:0|m:Escuela";
 
 
 
@@ -100,8 +100,11 @@ String tempText="";
 int tempVelocity=0;
 int tempRepeat=0;
 int tempInvert=0;
+int calcDirection=0;
 bool horizontalInvertFrame=false;
 bool verticalInvertFrame=false;
+int bandInvVert=1;
+int bandInvHori=1;
 
 void setup() {
     //ds("");
@@ -217,8 +220,8 @@ void loop() {
         ds("@:strBt=");dsl(strBt);
         isBtBuilding=false;
     }
-    /*
-        ---> quita este comentario
+    
+    
 
     dss();
     dsl("vecStr Antes de entrar")
@@ -306,14 +309,20 @@ void loop() {
             foundAnim = an.getAnim(aFrame, effectOption);
 
         }
-        if(invert==1 || invert==3){
-            sm.flipHorizontalFrame(aFrame);
-        }
 
-        if(invert==2 || invert==3){
-            sm.flipVerticalFrame(aFrame);
-        }
+        calcDirection=invert*globalInvert;
+        
+        //if(globalInvert==1 || globalInvert==3){
+        bandInvHori=1;
+        if(invert==1        || invert==3)       bandInvHori*=-1;        
+        if(globalInvert==1  || globalInvert==3) bandInvHori*=-1;
+        if (bandInvHori==-1) sm.flipHorizontalFrame(aFrame);
 
+        bandInvVert=1;
+        if(invert==2        || invert==3)       bandInvVert*=-1;        
+        if(globalInvert==2  || globalInvert==3) bandInvVert*=-1;
+        if (bandInvVert==-1) sm.flipVerticalFrame(aFrame);
+        
         if (option == "a" || option == "m") {
             dsl("--->(5)-----------");
             sm.PrintLedMatrix(aFrame, aLastFrame, vecPins);
@@ -354,6 +363,6 @@ void loop() {
     }
     
     difTime = time - lastTime;
-    */
+    
   
 }
