@@ -62,14 +62,14 @@ int velocity = DEFAULT_VELOCITY;
 
 int contCharAdded = 0;
 
-unsigned long time = 0;
-unsigned long lastTime = 0;
-unsigned long difTime = 0;
-unsigned long loopWaitTime = 0;
+long time = 0;
+long lastTime = 0;
+long difTime = 0;
+long loopWaitTime = 0;
 
 
 double promTime3 = 0;
-unsigned long  loopTime=0;
+long  loopTime=0;
 VectorClass vecPins(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 VectorClass vecChar(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 VectorClass aIntCharMatrix(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
@@ -95,7 +95,7 @@ String option = "";
 unsigned long foundAnim = 0;
 unsigned long contLoop = 0;
 int     loopVelocity = 0;
-int     globalVelocity=0;
+int     globalVelocity=DEFAULT_VELOCITY;
 int     globalInvert=0;
 int     globalControl=0;
 String  globalStatus = "Play";
@@ -261,6 +261,7 @@ void loop() {
     //================================================================
     //==MAIN DE MARQUE Y EFECTOS======================================
     if (!isBtBuilding && difTime >= loopTime && (globalMode=="Pres" || globalMode=="Flip") && globalStatus=="Play") {
+//    if (!isBtBuilding && difTime >= 2000 && (globalMode=="Pres" || globalMode=="Flip") && globalStatus=="Play") {
 
         
 
