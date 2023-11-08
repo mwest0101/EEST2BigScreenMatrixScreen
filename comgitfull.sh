@@ -5,7 +5,7 @@ read -p "Ingrese el nombre del archivo: " nombre_archivo
 fecha=$(date +"%Y%m%d%H%M%S")
 
 
-ruta_destino="Backups"
+ruta_destino="./Backups"
 archivo_comprimido="${fecha}_${nombre_archivo}.tar.gz"
 
 echo "Archivo a comprimir $archivo_comprimido"
