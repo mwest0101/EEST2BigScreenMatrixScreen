@@ -37,6 +37,7 @@
     
   #include "inc/class/inc_show_matrix.h"
   #include "inc/class/inc_drive_matrix.h"
+  #include "inc/class/inc_draw_screen.h"
   #include "inc/config/inc_config_letters.h"
   #include "inc/class/inc_animManager.h"   
   

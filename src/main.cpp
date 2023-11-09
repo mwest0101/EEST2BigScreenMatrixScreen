@@ -35,7 +35,7 @@
 // ╚══════════════════════════════════════════════════════════════════╝
 
 
-         
+
 
 
 #include <Arduino.h>
@@ -71,7 +71,7 @@ long loopWaitTime = 0;
 
 
 double promTime3 = 0;
-long  loopTime=0;
+long  loopTime = 0;
 VectorClass vecPins(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 VectorClass vecChar(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 VectorClass aIntCharMatrix(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
@@ -97,40 +97,40 @@ String option = "";
 unsigned long foundAnim = 0;
 unsigned long contLoop = 0;
 int     loopVelocity = 0;
-int     globalVelocity=DEFAULT_VELOCITY;
-int     globalInvert=0;
-int     globalControl=0;
+int     globalVelocity = DEFAULT_VELOCITY;
+int     globalInvert = 0;
+int     globalControl = 0;
 String  globalStatus = "Play_Pres";
-String  globalMode="Pres";
+String  globalMode = "Pres";
 
-int     invert=0;
+int     invert = 0;
 
 SoftwareSerial BTSerial(52, 53);
 String strBt = "";
 char charBT = '\0';
 int sizeParams = 0;
-bool isBtBuilding=false;
-bool isStrUpdatedByBt=false;
+bool isBtBuilding = false;
+bool isStrUpdatedByBt = false;
 
 
-String tempOption="";
-String tempEffectOption="";
-String tempText="";
-int tempVelocity=0;
-int tempRepeat=0;
-int tempInvert=0;
-int calcDirection=0;
-bool horizontalInvertFrame=false;
-bool verticalInvertFrame=false;
-int bandInvVert=1;
-int bandInvHori=1;
+String tempOption = "";
+String tempEffectOption = "";
+String tempText = "";
+int tempVelocity = 0;
+int tempRepeat = 0;
+int tempInvert = 0;
+int calcDirection = 0;
+bool horizontalInvertFrame = false;
+bool verticalInvertFrame = false;
+int bandInvVert = 1;
+int bandInvHori = 1;
 
 void setup() {
     //ds("");
     dsl("------SETUP--------------------------");
     time = micros();
     lastTime = time;
-    
+
 
 #ifndef WAIT_TIME_LOOP
 #define WAIT_TIME_LOOP 500000
@@ -165,97 +165,100 @@ void setup() {
 #endif
     time = micros();
     convProgToArray(vecPins, C_Pins, (sizeof(C_Pins) / 2));
-    
+
     difTime = WAIT_TIME_LOOP;
     //loopWaitTime = WAIT_TIME_LOOP;
 
     //loopTime =loopWaitTime*DEFAULT_VELOCITY;
     //loopTime =calcLoopTime(velocity,globalVelocity);
-    
+
 
     difTime = loopTime;
 
-    globalVelocity=DEFAULT_VELOCITY;
+    globalVelocity = DEFAULT_VELOCITY;
 
     proccesActionFull(inputString, vecStr);
     sizeParams = vecStr.getSize();
     ds("sizeParams=")dsl(sizeParams);
     vecStr.print();
-    
 
-    
-    
+
+
+
 }
 
 void loop() {
-   
-   
-   /*
-   dsd();
-   dsl("LOOP");
-   dsd();
-   */
+
+
+    /*
+    dsd();
+    dsl("LOOP");
+    dsd();
+    */
     time = micros();
     contLoop++;
 
     //******************************************************************
     //*****CAPTURA DE BLUETHOT******************************************
     strBt = getBluetoot(BTSerial, charBT);
-    
-    
+
+
     if (charBT == '$') {
         vecStr.clear();
-        isBtBuilding=true;
-    }else if (strBt != "" && strBt != "-1") {
-       
+        isBtBuilding = true;
+    }
+    else if (strBt != "" && strBt != "-1") {
 
-        getAndSetParams(strBt               ,0              ,tempOption,
-                        tempEffectOption,   tempText,       
-                        tempVelocity,       tempRepeat      ,tempInvert,
-                        globalControl,      globalInvert,  
-                        globalVelocity,     globalStatus,
-                        globalMode);
+
+        getAndSetParams(strBt, 0, tempOption,
+            tempEffectOption, tempText,
+            tempVelocity, tempRepeat, tempInvert,
+            globalControl, globalInvert,
+            globalVelocity, globalStatus,
+            globalMode);
 
 
         if (tempOption == "a" || tempOption == "m") {
-            isBtBuilding=true;
+            isBtBuilding = true;
             vecStr.push(strBt);
             //isStrUpdatedByBt=true;
             //vecStr.print();
-            
-        }else if (tempOption == "iv" || tempOption == "ip" || 
-                  tempOption == "ii" || tempOption == "ic") {
-                    
+
+        }
+        else if (tempOption == "iv" || tempOption == "ip" ||
+            tempOption == "ii" || tempOption == "ic") {
+
             //vecStr.print();
             //loopTime =calcLoopTime(velocity,globalVelocity);
 
-            ds("loopWaitTime=");dsl(loopWaitTime);            
-            ds("globalVelocity=");dsl(globalVelocity);                        
+            ds("loopWaitTime=");dsl(loopWaitTime);
+            ds("globalVelocity=");dsl(globalVelocity);
             ds("loopTime=");dsl(loopTime);
 
-            isBtBuilding=false;
+            isBtBuilding = false;
             //isStrUpdatedByBt=true;
             ds("iv/ip:strBt=");dsl(strBt);
         }
-        
+
         strBt = "";
-    }else if (charBT == '@') {
+    }
+    else if (charBT == '@') {
         sizeParams = vecStr.getSize();
         ds("@:strBt=");dsl(strBt);
-        isBtBuilding=false;
+        isBtBuilding = false;
     }
-    
-    
+
+
     //loopTime =calcLoopTime(velocity,globalVelocity);
     dss();
     dsl("vecStr Antes de entrar")
-    vecStr.print();
+        vecStr.print();
     dss();
-    
+
     ds("globalVelocity=");dsl(globalVelocity);
     //______________________________________________________________________
     //--------CONTROL DE TIEMPO---------------------------------------------
-    
+
     // loopTime=(loopVelocity/loopWaitTime*globalVelocity);
     // ds("loopTime=");dsl(loopTime);
     ds("difTime=");ds(difTime);ds(" loopTime=");dsl(loopTime);
@@ -264,17 +267,11 @@ void loop() {
     //================================================================
     //==MAIN DE MARQUE Y EFECTOS======================================
 
-    loopTime =calcLoopTime(velocity,globalVelocity);
+    loopTime = calcLoopTime(velocity, globalVelocity);
 
-    if (!isBtBuilding               && (difTime >= loopTime)    && 
-//        (globalMode=="Pres"         || globalMode=="Flip")      && 
-        (globalStatus=="Play_Pres"  || globalStatus=="Play_Flip")) {
-//    if (!isBtBuilding && difTime >= 2000 && (globalMode=="Pres" || globalMode=="Flip") && globalStatus=="Play") {
-
+    if (!isBtBuilding && (difTime >= loopTime) && (globalStatus == "Play_Pres" || globalStatus == "Play_Flip")) {
         
-
         ds("contRepeat=");ds(contRepeat);ds(" repeat=");dsl(repeat);
-        
         ds("Entro por tiempo=");dsl(contParam);
 
         //dsl("--->(1)-----------");    
@@ -286,12 +283,12 @@ void loop() {
             dsl("--->(2)-----------");
             ds("c=");ds(contParam);
             //toMA UN PARAMETRO DEL VECTOR DE PARAMETROS
-            getAndSetParamsOne( vecStr.get(contParam), option, 
-                                effectOption, text, 
-                                velocity, repeat,   invert,
-                                globalControl,     globalInvert,  
-                                globalVelocity,    globalStatus,
-                                globalMode);
+            getAndSetParamsOne(vecStr.get(contParam), option,
+                effectOption, text,
+                velocity, repeat, invert,
+                globalControl, globalInvert,
+                globalVelocity, globalStatus,
+                globalMode);
 
 
 
@@ -304,10 +301,11 @@ void loop() {
                 dm.fillArrrayOfChars(vecChar, text);
                 lastStrToShow = text;
                 dm.setIfIsStringEnd(false);
-                
-            }else if (option == "a") {
+
+            }
+            else if (option == "a") {
                 dsl("--->(2B)-----------");
-                
+
                 an.setIfisEnd(false);
             }
             //loopTime =loopWaitTime*(velocity+(DEFAULT_VELOCITY-globalVelocity));
@@ -329,9 +327,9 @@ void loop() {
             contCharAdded++;
         }
 
-            //--------------------------------------------------------------------
-            // si la opcion es marquee y se puede mover se mueve la matriz hacia
-            // la izquierda hasta que llega a 0
+        //--------------------------------------------------------------------
+        // si la opcion es marquee y se puede mover se mueve la matriz hacia
+        // la izquierda hasta que llega a 0
 
 
         if (option == "m") {
@@ -350,24 +348,24 @@ void loop() {
 
         }
 
-        calcDirection=invert*globalInvert;
-        
-        //if(globalInvert==1 || globalInvert==3){
-        bandInvHori=1;
-        if(invert==1        || invert==3)       bandInvHori*=-1;        
-        if(globalInvert==1  || globalInvert==3) bandInvHori*=-1;
-        if (bandInvHori==-1) sm.flipHorizontalFrame(aFrame);
+        calcDirection = invert * globalInvert;
 
-        bandInvVert=1;
-        if(invert==2        || invert==3)       bandInvVert*=-1;        
-        if(globalInvert==2  || globalInvert==3) bandInvVert*=-1;
-        if (bandInvVert==-1) sm.flipVerticalFrame(aFrame);
-        
+        //if(globalInvert==1 || globalInvert==3){
+        bandInvHori = 1;
+        if (invert == 1 || invert == 3)       bandInvHori *= -1;
+        if (globalInvert == 1 || globalInvert == 3) bandInvHori *= -1;
+        if (bandInvHori == -1) sm.flipHorizontalFrame(aFrame);
+
+        bandInvVert = 1;
+        if (invert == 2 || invert == 3)       bandInvVert *= -1;
+        if (globalInvert == 2 || globalInvert == 3) bandInvVert *= -1;
+        if (bandInvVert == -1) sm.flipVerticalFrame(aFrame);
+
         if (option == "a" || option == "m") {
             dsl("--->(5)-----------");
             sm.PrintLedMatrix(aFrame, aLastFrame, vecPins);
-        }       
-        
+        }
+
         if ((contCharAdded >= vecChar.getSize() && option == "m") || (an.getIfAnimIsEnd() && option == "a")) {
             dsl("--->(7)----------");
             // dsl("Entro a reset final");
@@ -400,24 +398,25 @@ void loop() {
 
         lastTime = time;
 
+    }else if (!isBtBuilding && (difTime >= loopTime) && globalStatus == "Play_Draw") {
+
     }
-    
     /*
     //================================================================
      if (!isBtBuilding && difTime >= loopTime && globalStatus=="Play") {
 
-     
+
         lastTime = time;
 
     }*/
-    
+
     //================================================================
     //==MAIN DE DIBUJO======================================
-    
-    
+
+
     difTime = time - lastTime;
-    
-  
+
+
 }
 
 
