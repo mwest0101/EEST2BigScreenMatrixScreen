@@ -19,6 +19,7 @@
 // ║      Desarrollo de Aplicaciones.                                 ║  
 // ║      App para mobiles y sistema arduino desarrollado por:        ║
 // ║      WTDev ( Prof: Mauricio West)                                ║
+// ║      Email: mauriciowest@gmail.com                               ║
 // ║      https://wtdevelopments.github.io/                           ║
 // ║      https://github.com/mwest0101/EEST2BigScreenMatrixScreen     ║
 // ║                                                                  ║
@@ -27,6 +28,7 @@
 // ║          Escuela Tecnica 2 de Junin (Bs. As) Argentina           ║            
 // ║          Alumnos de 7º Año de la tecnicatura informatica y       ║
 // ║          programación .                                          ║
+// ║          https://www.facebook.com/tecnica2junin                  ║
 // ║                                                                  ║
 // ║  Año:    2023                                                    ║
 // ║                                                                  ║
@@ -87,7 +89,7 @@ String lastBTstrReceived = "";
 
 //String inputString = "a:efe2;v:1;r:2|m:AB";
 //String inputString = "a:tet1;v:1;r:1|a:pac1;v:1;r:1|a:pac2;v:1;r:1|a:efe1;v:1;r:1|a:efe2;v:1;r:1|a:efe3;v:1;r:1|a:efe4;v:1;r:1|a:efe5;v:1;r:1|a:efe6;v:1;r:1|a:efe7;v:1;r:1|a:tec1;v:1;r:1|a:tec2;v:1;r:1|a:tec3;v:1;r:1|a:tec4;v:1;r:1|a:tec5;v:1;r:1|a:tec6;v:1;r:1|m:Escuela";
-String inputString = "a:tet1;v:10;r:1;i:1|m:Escuela";
+String inputString = "a:tet1;v:5;r:1;i:1|m:Escuela";
 
 
 
@@ -98,7 +100,7 @@ int     loopVelocity = 0;
 int     globalVelocity=DEFAULT_VELOCITY;
 int     globalInvert=0;
 int     globalControl=0;
-String  globalStatus = "Play";
+String  globalStatus = "Play_Pres";
 String  globalMode="Pres";
 
 int     invert=0;
@@ -168,7 +170,8 @@ void setup() {
     //loopWaitTime = WAIT_TIME_LOOP;
 
     //loopTime =loopWaitTime*DEFAULT_VELOCITY;
-    loopTime =calcLoopTime(velocity,globalVelocity);
+    //loopTime =calcLoopTime(velocity,globalVelocity);
+    
 
     difTime = loopTime;
 
@@ -224,7 +227,7 @@ void loop() {
                   tempOption == "ii" || tempOption == "ic") {
                     
             //vecStr.print();
-            loopTime =calcLoopTime(velocity,globalVelocity);
+            //loopTime =calcLoopTime(velocity,globalVelocity);
 
             ds("loopWaitTime=");dsl(loopWaitTime);            
             ds("globalVelocity=");dsl(globalVelocity);                        
@@ -243,7 +246,7 @@ void loop() {
     }
     
     
-    
+    //loopTime =calcLoopTime(velocity,globalVelocity);
     dss();
     dsl("vecStr Antes de entrar")
     vecStr.print();
@@ -260,7 +263,12 @@ void loop() {
     ds("option=");dsl(option);
     //================================================================
     //==MAIN DE MARQUE Y EFECTOS======================================
-    if (!isBtBuilding && difTime >= loopTime && (globalMode=="Pres" || globalMode=="Flip") && globalStatus=="Play") {
+
+    loopTime =calcLoopTime(velocity,globalVelocity);
+
+    if (!isBtBuilding               && (difTime >= loopTime)    && 
+//        (globalMode=="Pres"         || globalMode=="Flip")      && 
+        (globalStatus=="Play_Pres"  || globalStatus=="Play_Flip")) {
 //    if (!isBtBuilding && difTime >= 2000 && (globalMode=="Pres" || globalMode=="Flip") && globalStatus=="Play") {
 
         
@@ -303,10 +311,10 @@ void loop() {
                 an.setIfisEnd(false);
             }
             //loopTime =loopWaitTime*(velocity+(DEFAULT_VELOCITY-globalVelocity));
-            loopTime =calcLoopTime(velocity,globalVelocity);
+        //    loopTime =calcLoopTime(velocity,globalVelocity);
         }
 
-   
+        //loopTime =calcLoopTime(velocity,globalVelocity);
         if (option == "m" && dm.canAddChar() && contCharAdded < vecChar.getSize()) {
 
             dsl("--->(3)-----------");
@@ -418,6 +426,21 @@ void loop() {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // ╔══════════════════════════════════════════════════════════════════╗
 // ║   ____    _             __  __           _            _          ║
 // ║  |  _ \  (_)           |  \/  |         | |          (_)         ║
@@ -439,6 +462,7 @@ void loop() {
 // ║      Desarrollo de Aplicaciones.                                 ║  
 // ║      App para mobiles y sistema arduino desarrollado por:        ║
 // ║      WTDev ( Prof: Mauricio West)                                ║
+// ║      Email: mauriciowest@gmail.com                               ║
 // ║      https://wtdevelopments.github.io/                           ║
 // ║      https://github.com/mwest0101/EEST2BigScreenMatrixScreen     ║
 // ║                                                                  ║
@@ -447,6 +471,7 @@ void loop() {
 // ║          Escuela Tecnica 2 de Junin (Bs. As) Argentina           ║            
 // ║          Alumnos de 7º Año de la tecnicatura informatica y       ║
 // ║          programación .                                          ║
+// ║          https://www.facebook.com/tecnica2junin                  ║
 // ║                                                                  ║
 // ║  Año:    2023                                                    ║
 // ║                                                                  ║

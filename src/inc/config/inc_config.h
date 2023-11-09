@@ -13,7 +13,7 @@
   #define EL              C_END_LIN
   
   //#define DEBUG           true
-  //#define DEBUG_SERIAL true
+  #define DEBUG_SERIAL true
   //#define DEBUG_MATRIX    true
   //#define DEBUG_BY_VSCODE
   
@@ -35,7 +35,15 @@
 
   //#define WAIT_TIME_LOOP 1000000;
   //#define WAIT_TIME_LOOP      25000;
-  #define WAIT_TIME_LOOP      40000;
+  
+  //#define WAIT_TIME_LOOP      2000000;
+  //#define WAIT_TIME_LOOP      200000;
+  #define WAIT_TIME_LOOP_MAX      2000000;
+  #define WAIT_TIME_LOOP_MIN      50000;
+
+  
+  //#define WAIT_TIME_LOOP      20000;
+  //#define WAIT_TIME_LOOP      400;
   //#define WAIT_TIME_LOOP      10;
   //#define WAIT_TIME_LOOP    50000;
   //#define WAIT_TIME_LOOP    500000;
@@ -53,6 +61,7 @@
                                       4,9,14,19,24,29,34,
                                       5,10,15,20,25,30,35,
                                       6,11,16,21,26,31,36};
+
   static const int PROGMEM C_EMPTY[]={O,O,O,O,O,O,O,
                                       O,O,O,O,O,O,O,
                                       O,O,O,O,O,O,O,

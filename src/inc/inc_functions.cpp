@@ -354,36 +354,33 @@ String getBluetoot(SoftwareSerial& BTSerial,char &charBT) {
   return strRetrun;
 }
 
-long  calcLoopTime(long velocity,long globalVelocity) {
-  long calcLoopTime=0;
-  long loopWaitTime = WAIT_TIME_LOOP;
-  long defaultVelocity=DEFAULT_VELOCITY;
-  long calcMult=0;
-  //calcMult=velocity+(defaultVelocity-globalVelocity);
-  /*
-  calcMult=-9----------------------------------------------------------------
-  calcLoopTime=30000 loopWaitTime=30000
-  velocity=10 - defaultVelocity=10 + globalVelocity=5  5
-
-  velocity=10 - defaultVelocity=10 + globalVelocity=15   15
-  velocity=10 - defaultVelocity=10 + globalVelocity=15   15
+long  calcLoopTime(long velocity,long globalVelocity) {  
+  unsigned long  calcLoopTime=0;  
+  unsigned long defaultVelocity=DEFAULT_VELOCITY;
+  
+  unsigned long waitTimeLoopMax=WAIT_TIME_LOOP_MAX;
+  unsigned long waitTimeLoopMin=WAIT_TIME_LOOP_MIN;
 
   
+  unsigned long calcMult=0;
+  unsigned long difVelocity=0;
+  unsigned long waitTimeMin=0;
 
-  */
-  calcMult=velocity-defaultVelocity+globalVelocity+1;
+  difVelocity=waitTimeLoopMax-waitTimeLoopMin;
+  difVelocity=difVelocity/10;  
+  calcMult=velocity-defaultVelocity+globalVelocity;
 
-  ds("calcMult=");ds(calcMult);
-  if(calcMult<1) calcMult=1;
-  //if(calcMult>(defaultVelocity*2)) defaultVelocity=(defaultVelocity*2);
+  if(calcMult<6){difVelocity=difVelocity/2;}
 
-  calcLoopTime =loopWaitTime*calcMult;
-  //calcLoopTime =pow(calcMult,loopWaitTime);
+  calcLoopTime=waitTimeMin+(difVelocity*calcMult);
 
+
+  
   dss();
-  ds("calcLoopTime=");ds(calcLoopTime);
-  ds(" loopWaitTime=");dsl(loopWaitTime);
-  ds("velocity=");dsl(velocity);
+  ds("calcMult=");dsl(calcMult);
+  ds(" calcLoopTime=");ds(calcLoopTime);
+  ds(" difVelocity=");ds(difVelocity);  
+  ds(" velocity=");dsl(velocity);
   ds(" defaultVelocity=");ds(defaultVelocity);
   ds(" globalVelocity=");dsl(globalVelocity);
   dss();
