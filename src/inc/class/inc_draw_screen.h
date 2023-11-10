@@ -20,6 +20,9 @@ class DrawScreen {
   int* aPins;
   int maxWidth=7;
   int maxHeight=5;
+  bool startDraw=false;
+
+
  
 
 
@@ -35,7 +38,15 @@ class DrawScreen {
   void SetMaxWidth(int maxWidth);
   int GetMaxHeight();
   void SetMaxHeight(int maxHeight);
-
+  
+  bool GetStartDraw();
+  void SetStartDraw(bool value);
+  void incX();
+  void decX();
+  void incY();
+  void decY();
+  void stampPixel();
+  
   DrawScreen();
 
   void setPantalla(MatrizLed& vPantalla);

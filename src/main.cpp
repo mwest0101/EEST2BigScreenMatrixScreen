@@ -412,14 +412,14 @@ void loop() {
     }
     */
    
-    /*
+    
     //================================================================
-     if (!isBtBuilding && difTime >= loopTime && globalStatus=="Play") {
+     if (!isBtBuilding && globalStatus=="Play_Draw") {
 
 
         lastTime = time;
 
-    }*/
+    }
 
     //================================================================
     //==MAIN DE DIBUJO======================================

@@ -43,7 +43,34 @@ void DrawScreen::setPixY(int pixY) {
   void DrawScreen::SetMaxHeight(int maxHeight) {
     this->maxHeight = maxHeight;
   }
+  bool DrawScreen::GetStartDraw(){
+    return this->startDraw;
+  }
 
+  void DrawScreen::SetStartDraw(bool value) {
+    this->startDraw=value;
+  }
+
+
+  void DrawScreen::incX(){
+    this->setPixX(this->pixX++);
+  }
+  void DrawScreen::decX(){
+    this->setPixX(this->pixX--);
+    
+  }
+  void DrawScreen::incY(){
+    
+    this->setPixX(this->pixY++);
+  }
+  void DrawScreen::decY(){
+    
+    this->setPixX(this->pixY--);
+  }
+
+  void DrawScreen::stampPixel(){
+    this->setPix(this->pixX,this->pixY,1);
+  }
 DrawScreen::DrawScreen() {
   //this.vecPins = new VectorClass(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 
@@ -69,9 +96,7 @@ void DrawScreen::setPix(int x, int y, bool status) {
   this->setPixX(x);
   this->setPixY(y);
   posInArray=GetPosArray(x,y);
-
-  vecScreens[posInArray]=status;
-  
+  vecScreens[posInArray]=status;  
 }
 
 void DrawScreen::PrintPixel(int numPixel,int ledState){
