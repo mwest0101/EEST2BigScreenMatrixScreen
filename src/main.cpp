@@ -48,7 +48,7 @@ MatrizLed pantalla;
 DriveMatrix dm;
 ShowMatrix sm;
 AnimManager an;
-DrawScreen ds;
+DrawScreen dr;
 
 
 int stateAction = 0;
@@ -160,11 +160,12 @@ void setup() {
     sm = ShowMatrix();
     dm = DriveMatrix();
     an = AnimManager();
-    ds = DrawScreen();
+    dr = DrawScreen();
 
 #ifdef IS_LCDSCREEN
     pantalla.borrar();
     sm.setPantalla(pantalla);
+    dr.setPantalla(pantalla);
 #endif
     time = micros();
     convProgToArray(vecPins, C_Pins, (sizeof(C_Pins) / 2));
@@ -184,7 +185,12 @@ void setup() {
     sizeParams = vecStr.getSize();
     ds("sizeParams=")dsl(sizeParams);
     vecStr.print();
+    dr.setPix(1,1,1);
+    dr.setPix(7,1,1);
+    dr.setPix(1,5,1);
+    dr.setPix(7,5,1);
 
+    dr.Print();
 
 
 

@@ -7,13 +7,24 @@ int DrawScreen::getPixX() {
 }
 void DrawScreen::setPixX(int pixX) {
   this->pixX = pixX;
+  if(pixY<1 || pixY>this->GetMaxHeight()){
+    ds("DrawScreen::X Out of range:: ");dsl(pixX);
+    
+    
+  }else{
+    this->pixX = pixX;
+  }
 }
 
 int DrawScreen::getPixY() {
   return this->pixY;
 }
 void DrawScreen::setPixY(int pixY) {
-  this->pixY = pixY;
+  if(pixY<1 || pixY>this->GetMaxHeight()){
+    ds("DrawScreen::Y Out of range: ");dsl(pixY);    
+  }else{
+    this->pixY = pixY;
+  }
 }
 
 
@@ -36,8 +47,6 @@ void DrawScreen::setPixY(int pixY) {
 DrawScreen::DrawScreen() {
   //this.vecPins = new VectorClass(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 
-  convProgToArray(this->vecPins, C_Pins, (sizeof(C_Pins) / 2));
-
   dsl("");
 }
 
@@ -49,13 +58,10 @@ void DrawScreen::setPantalla(MatrizLed& vPantalla) {
 
 int DrawScreen::GetPosArray(int x, int y ){
 
-  if(x<GetMaxWidth() && y<GetMaxHeight()){
-    return (y*7)+(x%7);
-  }else{
-    if(x>=GetMaxWidth()){ds("Bad pos X to led: ");dsl(x);}
-    if(y>=GetMaxHeight()){ds("Bad pos y to led: ");dsl(y);}
-    return -1;
-  }
+  
+    return ((y-1)*7)+((x-1)%7);
+  
+  
 }
 
 void DrawScreen::setPix(int x, int y, bool status) {
@@ -64,7 +70,7 @@ void DrawScreen::setPix(int x, int y, bool status) {
   this->setPixY(y);
   posInArray=GetPosArray(x,y);
 
-  vecScreens.set(posInArray,status);
+  vecScreens[posInArray]=status;
   
 }
 
@@ -78,18 +84,18 @@ void DrawScreen::PrintPixel(int numPixel,int ledState){
   #endif
 
   #ifdef IS_BIGSCREEN
-    digitalWrite(pintToActive, ledState);
+    digitalWrite(vecPins[numPixel], ledState);
   #endif
 
   //this->pantalla.setLed(0, posX, posY, ledState);
 }
 
-void DrawScreen::PrintFrame(){
+void DrawScreen::Print(){
   int sizeArray=V_SCR_SIZE;
 
   for (int i = 0; i < sizeArray; i++) {
 
-    PrintPixel(i,vecScreens.get(i));
+    PrintPixel(i,vecScreens[i]);
   }
 
     /*

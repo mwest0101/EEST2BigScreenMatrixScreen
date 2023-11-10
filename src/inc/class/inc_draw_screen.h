@@ -6,8 +6,12 @@
 
 class DrawScreen {
   private:
-  VectorClass vecPins = VectorClass(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
-  VectorClass vecScreens = VectorClass(V_SCR_SIZE, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
+  
+
+  int vecPins[V_SCR_SIZE]={2,7,12,17,22,27,32,3,8,13,18,23,28,33,4,9,14,19,24,29,34,5,10,15,20,25,30,35,6,11,16,21,26,31,36};
+
+  int vecScreens[V_SCR_SIZE]={O,O,O,O,O,O,O,O,O,O,O,O,O,O,O,O,O,O,O,O,O,O,O,O,O,O,O,O,O,O,O,O,O,O,O};  
+
   static int pin;
   int pixX;
   int pixY;
@@ -38,7 +42,7 @@ class DrawScreen {
   int GetPosArray(int x, int y );
   void setPix(int x, int y, bool status);
   void PrintPixel(int numPixel,int ledState);
-  void PrintFrame();
+  void Print();
 
 };
 
