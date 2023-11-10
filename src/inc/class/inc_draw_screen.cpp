@@ -63,9 +63,50 @@ void DrawScreen::setPix(int x, int y, bool status) {
   this->setPixX(x);
   this->setPixY(y);
   posInArray=GetPosArray(x,y);
+
   vecScreens.set(posInArray,status);
-  //digitalWrite(pintToActive, ledState);
+  
+}
+
+void DrawScreen::PrintPixel(int numPixel,int ledState){
+  #ifdef IS_LCDSCREEN    
+    int posX = 0;
+    int posY = 0;
+    posX = (int)(numPixel / 7);
+    posY = (int)(numPixel % 7);    
+    pantalla.setLed(0, posX, posY, ledState);
+  #endif
+
+  #ifdef IS_BIGSCREEN
+    digitalWrite(pintToActive, ledState);
+  #endif
 
   //this->pantalla.setLed(0, posX, posY, ledState);
 }
 
+void DrawScreen::PrintFrame(){
+  int sizeArray=V_SCR_SIZE;
+
+  for (int i = 0; i < sizeArray; i++) {
+
+    PrintPixel(i,vecScreens.get(i));
+  }
+
+    /*
+    posX = (int)(i / MATRIX_WIDTH);
+    pinState = aFrame.get(i);
+    pinNum = vecPins.get(i);
+    if (pinState < 2) {
+      if (lastPosX != posX) {
+        dsl(" ");
+        lastPosX = posX;
+      }
+      //dsl("===>es igual");
+      if (aFrame.get(i) != aLastFrame.get(i)) {
+        //        dsl("===>es distinto");
+        aLastFrame.set(i, aFrame.get(i)); // update the values of matriz temp to only update the changed values
+        ShowMatrix::PrintLed(i, pinNum, pinState);
+      }
+    }*/
+  
+}

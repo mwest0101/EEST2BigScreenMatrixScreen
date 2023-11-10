@@ -2,11 +2,12 @@
 #ifndef _INC_DRAW_SCREEN_H_
 #define _INC_DRAW_SCREEN_H_
 
+#define V_SCR_SIZE 35
 
 class DrawScreen {
   private:
   VectorClass vecPins = VectorClass(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
-  VectorClass vecScreens = VectorClass(36, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
+  VectorClass vecScreens = VectorClass(V_SCR_SIZE, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
   static int pin;
   int pixX;
   int pixY;
@@ -34,9 +35,12 @@ class DrawScreen {
   DrawScreen();
 
   void setPantalla(MatrizLed& vPantalla);
-  int DrawScreen::GetPosArray(int x, int y );
+  int GetPosArray(int x, int y );
   void setPix(int x, int y, bool status);
-
+  void PrintPixel(int numPixel,int ledState);
+  void PrintFrame();
 
 };
+
+
 #endif /* _INC_DRAW_SCREEN_H_ */

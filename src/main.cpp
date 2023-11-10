@@ -48,6 +48,8 @@ MatrizLed pantalla;
 DriveMatrix dm;
 ShowMatrix sm;
 AnimManager an;
+DrawScreen ds;
+
 
 int stateAction = 0;
 String effectOption = "";
@@ -75,8 +77,8 @@ long  loopTime = 0;
 VectorClass vecPins(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 VectorClass vecChar(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 VectorClass aIntCharMatrix(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
-VectorClass aFrame(36, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
-VectorClass aLastFrame(36, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
+VectorClass aFrame(V_SCR_SIZE, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
+VectorClass aLastFrame(V_SCR_SIZE, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 VectorClassString vecStr(0);
 VectorClassString vecStrFromBt(0);
 VectorClassString vecStrParam(0);
@@ -158,6 +160,7 @@ void setup() {
     sm = ShowMatrix();
     dm = DriveMatrix();
     an = AnimManager();
+    ds = DrawScreen();
 
 #ifdef IS_LCDSCREEN
     pantalla.borrar();
@@ -195,11 +198,11 @@ void loop() {
     dsl("LOOP");
     dsd();
     */
+   /*
     time = micros();
     contLoop++;
 
-    //******************************************************************
-    //*****CAPTURA DE BLUETHOT******************************************
+    
     strBt = getBluetoot(BTSerial, charBT);
 
 
@@ -401,6 +404,8 @@ void loop() {
     }else if (!isBtBuilding && (difTime >= loopTime) && globalStatus == "Play_Draw") {
 
     }
+    */
+   
     /*
     //================================================================
      if (!isBtBuilding && difTime >= loopTime && globalStatus=="Play") {
