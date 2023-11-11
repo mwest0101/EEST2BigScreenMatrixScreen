@@ -3,7 +3,7 @@
 #define _INC_DRAW_SCREEN_H_
 
 #define V_SCR_SIZE 35
-#define TIME_CURSOR_BLINK 2000
+#define TIME_CURSOR_BLINK 800000
 //#define DEBUG_DRAW_SCREEN
 
 #ifndef ds
@@ -35,15 +35,11 @@ class DrawScreen {
   int pixY;
   int pixTempX;
   int pixTempY;
-  int cursorState;
-  int timeCursorBlink;
-  int timeLapse;
-  int time;
-
-
-
-
-
+  bool cursorState;
+  unsigned long timeCursorBlink;
+  unsigned long timeLapse;
+  unsigned long timeLast;
+  unsigned long time;
 
 
 
@@ -73,18 +69,17 @@ class DrawScreen {
   void SetPixTempY(int pixTempY);
 
 
-  int getCursorState();
-  void setCursorState(int cursorState);
+  bool getCursorState();
+  void setCursorState(bool cursorState);
 
-  int getTimeCursorBlink();
-  void setTimeCursorBlink(int timeCursorBlink);
-
-  int getTimeLapse();
-  void setTimeLapse(int timeLapse);
-
-  int getTime();
-  void setTime(int time);
-
+  unsigned long getTimeCursorBlink();
+  void setTimeCursorBlink(unsigned long timeCursorBlink);
+  unsigned long getTimeLapse();
+  void setTimeLapse(unsigned long timeLapse);
+  unsigned long getTime();
+  void setTime(unsigned long time);
+  unsigned long getTimeLast();
+  void setTimeLast(unsigned long timeLast);
 
   int GetMaxWidth();
   void SetMaxWidth(int maxWidth);
