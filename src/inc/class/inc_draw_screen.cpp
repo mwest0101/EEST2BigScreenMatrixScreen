@@ -14,7 +14,7 @@ void DrawScreen::setPixX(int pixX) {
   }else{
 
     this->pixX = (pixX-1);
-    ds("DrawScreen::X Setted to:");dsl(this->pixX);
+    //ds("DrawScreen::X Setted to:");dsl(this->pixX);
   }
 }
 
@@ -27,10 +27,68 @@ void DrawScreen::setPixY(int pixY) {
     ds("DrawScreen::Y Out of range: ");dsl(pixY);    
   }else{
     this->pixY = (pixY-1);
-    ds("DrawScreen::Y Setted to:");dsl(this->pixY);
+    //ds("DrawScreen::Y Setted to:");dsl(this->pixY);
   }
 }
+  int DrawScreen::GetPixTempX(){
+    return this->pixTempX;
+  }
 
+  void DrawScreen::SetPixTempX(int pixTempX) {
+    if(pixTempX<1 || pixTempX>this->GetMaxHeight()){
+      ds("DrawScreen::Y Out of range: ");dsl(pixY);    
+    }else{
+      this->pixTempX = (pixTempX-1);
+    //ds("DrawScreen::Y Setted to:");dsl(this->pixY);
+    }
+
+    
+  }
+
+  int DrawScreen::GetPixTempY() {
+    return this->pixTempY;
+  }
+
+  void DrawScreen::SetPixTempY(int pixTempY) {
+    if(pixTempY<1 || pixTempY>this->GetMaxHeight()){
+      ds("DrawScreen::Y Out of range: ");dsl(pixY);    
+    }else{
+      this->pixTempY = (pixTempY-1);
+    
+    }
+    
+  }
+  int DrawScreen::getCursorState() {
+    return this->cursorState;
+  }
+
+  void DrawScreen::setCursorState(int cursorState) {
+    this->cursorState = cursorState;
+  }
+
+  int DrawScreen::getTimeCursorBlink() {
+    return this->timeCursorBlink;
+  }
+
+  void DrawScreen::setTimeCursorBlink(int timeCursorBlink) {
+    this->timeCursorBlink = timeCursorBlink;
+  }
+
+  int DrawScreen::getTimeLapse() {
+    return this->timeLapse;
+  }
+
+  void DrawScreen::setTimeLapse(int timeLapse) {
+    this->timeLapse = timeLapse;
+  }
+
+  int DrawScreen::getTime() {
+    return this->time;
+  }
+
+  void DrawScreen::setTime(int time) {
+    this->time = time;
+  }
 
  int DrawScreen::GetMaxWidth(){
     return this->maxWidth;
@@ -77,6 +135,7 @@ void DrawScreen::setPixY(int pixY) {
   }
 DrawScreen::DrawScreen() {
   //this.vecPins = new VectorClass(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
+  this->timeCursorBlink=TIME_CURSOR_BLINK;
 
   dsl("");
 }
@@ -97,58 +156,89 @@ void DrawScreen::setPix(int x, int y, bool status) {
   this->setPixY(y);  
   
   posInArray=GetPosArray();
-  ds("DrawScreen::setPix : GetPosArray():");dsl(GetPosArray());
+  //ds("DrawScreen::setPix : GetPosArray():");dsl(GetPosArray());
 
   vecScreens[posInArray]=status;  
 }
 
-void DrawScreen::PrintPixel(int x,int y,int ledState){
+void DrawScreen::setCursor(int x, int y, int ledState) {
+  
+  this->SetPixTempX(x);
+  this->SetPixTempY(y);  
+  this->PrintDirect(this->GetPixTempX(),this->GetPixTempY(),ledState);
+  //posInArray=GetPosArray();
+  //ds("DrawScreen::setPix : GetPosArray():");dsl(GetPosArray());
+
+  //vecScreens[posInArray]=status;  
+}
+
+void DrawScreen::Print(int x,int y,int ledState){
+  
+  
+  if(x<1 || x>this->GetMaxWidth()){
+    ds("DrawScreen::PrintPixel X Out of range:: ");dsl(x);    
+  
+  }else if(y<1 || y>this->GetMaxHeight()){
+    ds("DrawScreen::PrintPixel Y Out of range:: ");dsl(y);    
+  }else{
+    x=x-1;
+    y=y-1;
+    
+    ds("x:");ds(x);
+    ds(" y:");dsl(y);
+    this->PrintDirect(x,y,ledState);
+
+  }
+  
+}
+void DrawScreen::PrintDirect(int x, int y, int ledState){
   #ifdef IS_LCDSCREEN      
-    pantalla.setLed(0, x, y, ledState);
+    pantalla.setLed(0, y, x, ledState);
   #endif
 
   #ifdef IS_BIGSCREEN
     int numPixel=0;
-    numPixel=(posY*7)+posX;    
+    numPixel=(y*7)+x;    
     digitalWrite(vecPins[numPixel], ledState);
   #endif
-
-  
 }
 
 void DrawScreen::PrintPixelByFrame(int numPixel,int ledState){
   #ifdef IS_LCDSCREEN    
-    int posX = 0;
     int posY = 0;
-    posX = (int)(numPixel / 7);
-    posY = (int)(numPixel % 7);    
-    pantalla.setLed(0, posX, posY, ledState);
+    int posX = 0;
+    posY = (int)(numPixel / 7);
+    posX = (int)(numPixel % 7);    
+    
+    //ds("posY:");ds(posY);ds(" posX:");ds(posX);ds(" ledState:");dsl(ledState);
+
+    pantalla.setLed(0, posY, posX, ledState);
   #endif
 
   #ifdef IS_BIGSCREEN
     digitalWrite(vecPins[numPixel], ledState);
   #endif
 
-  //this->pantalla.setLed(0, posX, posY, ledState);
+  //this->pantalla.setLed(0, posY, posX, ledState);
 }
 
 
-void DrawScreen::Print(){
+void DrawScreen::PrintFrame(){
   int sizeArray=V_SCR_SIZE;
 
   for (int i = 0; i < sizeArray; i++) {
-    ds("DrawScreen::Print : vecScreens[i]:");dsl(vecScreens[i]);
+    //ds("DrawScreen::Print : vecScreens[i]:");dsl(vecScreens[i]);
     PrintPixelByFrame(i,vecScreens[i]);
   }
 
     /*
-    posX = (int)(i / MATRIX_WIDTH);
+    posY = (int)(i / MATRIX_WIDTH);
     pinState = aFrame.get(i);
     pinNum = vecPins.get(i);
     if (pinState < 2) {
-      if (lastPosX != posX) {
+      if (lastPosY != posY) {
         dsl(" ");
-        lastPosX = posX;
+        lastPosY = posY;
       }
       //dsl("===>es igual");
       if (aFrame.get(i) != aLastFrame.get(i)) {

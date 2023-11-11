@@ -3,6 +3,24 @@
 #define _INC_DRAW_SCREEN_H_
 
 #define V_SCR_SIZE 35
+#define TIME_CURSOR_BLINK 2000
+//#define DEBUG_DRAW_SCREEN
+
+#ifndef ds
+  #ifdef DEBUG_DRAW_SCREEN
+    #define ds(x)     Serial.print(x);
+  #else
+    #define ds(x)
+  #endif
+#endif
+#ifndef dsl
+  #ifdef DEBUG_DRAW_SCREEN
+    #define dsl(x)     Serial.println(x);
+  #else
+    #define dsl(x)
+  #endif
+#endif
+
 
 class DrawScreen {
   private:
@@ -15,6 +33,20 @@ class DrawScreen {
   static int pin;
   int pixX;
   int pixY;
+  int pixTempX;
+  int pixTempY;
+  int cursorState;
+  int timeCursorBlink;
+  int timeLapse;
+  int time;
+
+
+
+
+
+
+
+
   MatrizLed pantalla;
   int aLastFrameEmpty = 0;
   int* aPins;
@@ -34,6 +66,26 @@ class DrawScreen {
   int getPixY();
   void setPixY(int pixY);
 
+
+  int GetPixTempX();
+  void SetPixTempX(int pixTempX);
+  int GetPixTempY();
+  void SetPixTempY(int pixTempY);
+
+
+  int getCursorState();
+  void setCursorState(int cursorState);
+
+  int getTimeCursorBlink();
+  void setTimeCursorBlink(int timeCursorBlink);
+
+  int getTimeLapse();
+  void setTimeLapse(int timeLapse);
+
+  int getTime();
+  void setTime(int time);
+
+
   int GetMaxWidth();
   void SetMaxWidth(int maxWidth);
   int GetMaxHeight();
@@ -52,9 +104,11 @@ class DrawScreen {
   void setPantalla(MatrizLed& vPantalla);
   int GetPosArray();
   void setPix(int x, int y, bool status);
-  void PrintPixel(int x,int y,int ledState);
+  void setCursor(int x, int y, int ledState);
+  void Print(int x,int y,int ledState);
+  void PrintDirect(int x,int y,int ledState);
   void PrintPixelByFrame(int numPixel,int ledState);
-  void Print();
+  void PrintFrame();
 
 };
 

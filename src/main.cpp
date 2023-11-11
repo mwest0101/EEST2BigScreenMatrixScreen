@@ -185,15 +185,16 @@ void setup() {
     sizeParams = vecStr.getSize();
     ds("sizeParams=")dsl(sizeParams);
     vecStr.print();
-    dr.setPix(1,1,1);
+
+    /*dr.setPix(1,1,1);
     dr.setPix(7,1,1);
     dr.setPix(1,5,1);
     dr.setPix(7,5,1);
     
 
-    dr.Print();
+    dr.PrintFrame();
 
-    //dr.PrintPixel(4,3,1);
+    dr.Print(4,3,1);*/
 
 }
 
@@ -416,6 +417,7 @@ void loop() {
     }
     */
    
+    dr.setCursor(4,3,1);
     
     //================================================================
      if (!isBtBuilding && globalStatus=="Play_Draw") {
