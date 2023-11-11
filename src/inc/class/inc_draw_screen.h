@@ -50,9 +50,10 @@ class DrawScreen {
   DrawScreen();
 
   void setPantalla(MatrizLed& vPantalla);
-  int GetPosArray(int x, int y );
+  int GetPosArray();
   void setPix(int x, int y, bool status);
-  void PrintPixel(int numPixel,int ledState);
+  void PrintPixel(int x,int y,int ledState);
+  void PrintPixelByFrame(int numPixel,int ledState);
   void Print();
 
 };

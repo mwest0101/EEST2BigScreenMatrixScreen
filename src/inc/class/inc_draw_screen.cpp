@@ -7,12 +7,14 @@ int DrawScreen::getPixX() {
 }
 void DrawScreen::setPixX(int pixX) {
   this->pixX = pixX;
-  if(pixY<1 || pixY>this->GetMaxHeight()){
+  if(pixX<1 || pixX>this->GetMaxWidth()){
     ds("DrawScreen::X Out of range:: ");dsl(pixX);
     
     
   }else{
-    this->pixX = pixX;
+
+    this->pixX = (pixX-1);
+    ds("DrawScreen::X Setted to:");dsl(this->pixX);
   }
 }
 
@@ -20,10 +22,12 @@ int DrawScreen::getPixY() {
   return this->pixY;
 }
 void DrawScreen::setPixY(int pixY) {
+  
   if(pixY<1 || pixY>this->GetMaxHeight()){
     ds("DrawScreen::Y Out of range: ");dsl(pixY);    
   }else{
-    this->pixY = pixY;
+    this->pixY = (pixY-1);
+    ds("DrawScreen::Y Setted to:");dsl(this->pixY);
   }
 }
 
@@ -83,23 +87,36 @@ void DrawScreen::setPantalla(MatrizLed& vPantalla) {
   this->pantalla = vPantalla;
 }
 
-int DrawScreen::GetPosArray(int x, int y ){
-
-  
-    return ((y-1)*7)+((x-1)%7);
-  
-  
+int DrawScreen::GetPosArray(){
+    return (this->getPixY()*7)+(this->getPixX()%7);    
 }
 
 void DrawScreen::setPix(int x, int y, bool status) {
-  int posInArray=-1;
+  int posInArray=0;
   this->setPixX(x);
-  this->setPixY(y);
-  posInArray=GetPosArray(x,y);
+  this->setPixY(y);  
+  
+  posInArray=GetPosArray();
+  ds("DrawScreen::setPix : GetPosArray():");dsl(GetPosArray());
+
   vecScreens[posInArray]=status;  
 }
 
-void DrawScreen::PrintPixel(int numPixel,int ledState){
+void DrawScreen::PrintPixel(int x,int y,int ledState){
+  #ifdef IS_LCDSCREEN      
+    pantalla.setLed(0, x, y, ledState);
+  #endif
+
+  #ifdef IS_BIGSCREEN
+    int numPixel=0;
+    numPixel=(posY*7)+posX;    
+    digitalWrite(vecPins[numPixel], ledState);
+  #endif
+
+  
+}
+
+void DrawScreen::PrintPixelByFrame(int numPixel,int ledState){
   #ifdef IS_LCDSCREEN    
     int posX = 0;
     int posY = 0;
@@ -115,12 +132,13 @@ void DrawScreen::PrintPixel(int numPixel,int ledState){
   //this->pantalla.setLed(0, posX, posY, ledState);
 }
 
+
 void DrawScreen::Print(){
   int sizeArray=V_SCR_SIZE;
 
   for (int i = 0; i < sizeArray; i++) {
-
-    PrintPixel(i,vecScreens[i]);
+    ds("DrawScreen::Print : vecScreens[i]:");dsl(vecScreens[i]);
+    PrintPixelByFrame(i,vecScreens[i]);
   }
 
     /*

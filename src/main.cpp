@@ -189,10 +189,11 @@ void setup() {
     dr.setPix(7,1,1);
     dr.setPix(1,5,1);
     dr.setPix(7,5,1);
+    
 
     dr.Print();
 
-
+    //dr.PrintPixel(4,3,1);
 
 }
 
@@ -256,7 +257,10 @@ void loop() {
         ds("@:strBt=");dsl(strBt);
         isBtBuilding = false;
     }
+*/
 
+    
+/*
 
     //loopTime =calcLoopTime(velocity,globalVelocity);
     dss();
