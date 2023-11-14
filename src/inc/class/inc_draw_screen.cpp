@@ -68,6 +68,15 @@ void DrawScreen::setPixY(int vPixY) {
     this->timeCursorBlink = vTimeCursorBlink;
   }
 
+  
+  // unsigned long DrawScreen::getTimeCursorFinal() {
+  //   return this->timeCursorFinal;
+  // }
+
+  // void DrawScreen::setTimeCursorFinal(unsigned long vTimeCursorFinal) {
+  //   this->timeCursorFinal = vTimeCursorFinal;
+  // }
+
   unsigned long DrawScreen::getTimeLapse() {
     return this->timeLapse;
   }
@@ -152,6 +161,8 @@ void DrawScreen::setPixY(int vPixY) {
 DrawScreen::DrawScreen() {
   //this.vecPins = new VectorClass(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
   this->setTimeCursorBlink(TIME_CURSOR_BLINK);
+  
+
   this->setTime(micros());
   this->setTimeLast(this->getTime());
 
@@ -163,17 +174,21 @@ DrawScreen::DrawScreen() {
 void DrawScreen::setPantalla(MatrizLed& vPantalla) {
   this->pantalla = vPantalla;
 }
-
+int DrawScreen::GetPosArray(int x,int y){
+    //return (this->getPixY()*7)+(this->getPixX()%7);    
+    return (y*7)+(x%7);    
+}
+/*
 int DrawScreen::GetPosArray(){
     return (this->getPixY()*7)+(this->getPixX()%7);    
-}
+}*/
 
 void DrawScreen::setPix(int x, int y, bool status) {
   int posInArray=0;
   this->setPixX(x);
   this->setPixY(y);  
   
-  posInArray=GetPosArray();
+  posInArray=this->GetPosArray(x,y);
   //ds("DrawScreen::setPix : GetPosArray():");dsl(GetPosArray());
 
   vecScreens[posInArray]=status;  
@@ -198,6 +213,8 @@ void DrawScreen::setPosCursor(int x, int y) {
 
 void DrawScreen::UpdateCursor(){
   this->setTime(micros());
+    
+
   
   //ds("DrawScreen::setCursor this->getTimeLapse():");dsl(this->getTimeLapse())
   //ds("DrawScreen::setCursor this->getTimeCursorBlink():");dsl(this->getTimeCursorBlink())
@@ -216,7 +233,14 @@ void DrawScreen::UpdateCursor(){
     //ds("DrawScreen::setPix : GetPosArray():");dsl(GetPosArray());
     this->setTimeLast(this->getTime());
   }
+  
+  //Si el lugar donde esta el cursor paradoesta en marcado cambia la velocidad
 
+  if (vecScreens[this->GetPosArray(this->GetPixTempX(),this->GetPixTempY())]==1){
+    this->setTimeCursorBlink(TIME_CURSOR_BLINK_FAST);
+  }else{
+     this->setTimeCursorBlink(TIME_CURSOR_BLINK);
+  }
   //vecScreens[posInArray]=status; 
   this->setTimeLapse(this->getTime()- this->getTimeLast());
 }
@@ -271,14 +295,22 @@ void DrawScreen::PrintPixelByFrame(int numPixel,int ledState){
   //this->pantalla.setLed(0, posY, posX, ledState);
 }
 
+void DrawScreen::StampCursorInFrame(){
+  this->setPix(this->GetPixTempX(),this->GetPixTempY(), 1);
+}
 
 void DrawScreen::PrintFrame(){
   int sizeArray=V_SCR_SIZE;
 
   for (int i = 0; i < sizeArray; i++) {
     //ds("DrawScreen::Print : vecScreens[i]:");dsl(vecScreens[i]);
-    PrintPixelByFrame(i,vecScreens[i]);
+    if (i!=this->GetPosArray(this->GetPixTempX(),this->GetPixTempY())){
+      PrintPixelByFrame(i,vecScreens[i]);
+    }
   }
+
+
+
 
     /*
     posY = (int)(i / MATRIX_WIDTH);

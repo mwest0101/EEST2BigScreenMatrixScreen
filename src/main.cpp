@@ -438,11 +438,14 @@ void loop() {
             if(globalControl ==2){dr.incX();globalControl=-1;dsl("Entre2");}
             if(globalControl ==3){dr.incY();globalControl=-1;dsl("Entre3");}
             if(globalControl ==4){dr.decX();globalControl=-1;dsl("Entre4");}
+            if(globalControl ==0){dr.StampCursorInFrame();globalControl=-1;dsl("Entre4");}
             //if(globalControl ==0) dr.defX();
 
             
         }
+        dr.PrintFrame();
         dr.UpdateCursor();
+        
 
     }
 

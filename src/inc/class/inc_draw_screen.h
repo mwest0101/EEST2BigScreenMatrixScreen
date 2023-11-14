@@ -4,6 +4,7 @@
 
 #define V_SCR_SIZE 35
 #define TIME_CURSOR_BLINK 800000
+#define TIME_CURSOR_BLINK_FAST 200000
 //#define DEBUG_DRAW_SCREEN
 
 #ifndef ds
@@ -37,6 +38,7 @@ class DrawScreen {
   int pixTempY;
   bool cursorState;
   unsigned long timeCursorBlink;
+  unsigned long timeCursorFinal;
   unsigned long timeLapse;
   unsigned long timeLast;
   unsigned long time;
@@ -74,6 +76,8 @@ class DrawScreen {
 
   unsigned long getTimeCursorBlink();
   void setTimeCursorBlink(unsigned long vTimeCursorBlink);
+  // unsigned long getTimeCursorFinal();
+  // void setTimeCursorFinal(unsigned long vTimeCursorFinal);
   unsigned long getTimeLapse();
   void setTimeLapse(unsigned long vTimeLapse);
   unsigned long getTime();
@@ -97,7 +101,7 @@ class DrawScreen {
   DrawScreen();
 
   void setPantalla(MatrizLed& vPantalla);
-  int GetPosArray();
+  int GetPosArray(int x,int y);
   void setPix(int x, int y, bool status);
   void setCursor(int x, int y, int ledState);
   void setPosCursor(int x, int y);
@@ -105,6 +109,7 @@ class DrawScreen {
   void Print(int x,int y,int ledState);
   void PrintDirect(int x,int y,int ledState);
   void PrintPixelByFrame(int numPixel,int ledState);
+  void StampCursorInFrame();
   void PrintFrame();
 
 };
