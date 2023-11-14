@@ -116,17 +116,24 @@ void DrawScreen::setPixY(int vPixY) {
 
   void DrawScreen::incX(){
 
+    this->PrintDirect(this->GetPixTempX(),this->GetPixTempY(),0);
+    this->setCursorState(true);
 
     this->SetPixTempX(this->GetPixTempX()+1);
     //this->pixTempX=this->pixTempX+1;
   }
   void DrawScreen::decX(){
-    
+    this->PrintDirect(this->GetPixTempX(),this->GetPixTempY(),0);
+    this->setCursorState(true);
+
     this->SetPixTempX(this->GetPixTempX()-1);
     
   }
 
   void DrawScreen::incY(){
+    
+    this->PrintDirect(this->GetPixTempX(),this->GetPixTempY(),0);
+    this->setCursorState(true);
 
     //this->pixTempY=this->pixTempY+1;
     this->SetPixTempY(this->GetPixTempY()+1);
@@ -134,7 +141,9 @@ void DrawScreen::setPixY(int vPixY) {
     
   }
   void DrawScreen::decY(){
-    
+    this->PrintDirect(this->GetPixTempX(),this->GetPixTempY(),0);
+    this->setCursorState(true);
+
     this->SetPixTempY(this->GetPixTempY()-1);
   } 
   
@@ -173,18 +182,11 @@ void DrawScreen::setPix(int x, int y, bool status) {
 void DrawScreen::setCursor(int x, int y, int ledState) {
   
 
-  this->setPosCursor(x, y); 
+  this->SetPixTempX(x);
+  this->SetPixTempY(y);  
   this->setCursorState(ledState);
   //this->UpdateCursor();
 }
-
-  void DrawScreen::stampPixel(){
-    this->setCursor(this->GetPixTempX(),this->GetPixTempY(),1);
-  }
-  void DrawScreen::clearPixel(){
-    this->setCursor(this->GetPixTempX(),this->GetPixTempY(),0);
-  }
-
 void DrawScreen::setPosCursor(int x, int y) {
   
 
@@ -202,11 +204,11 @@ void DrawScreen::UpdateCursor(){
 
   if(this->getTimeLapse()>this->getTimeCursorBlink()){
     if(this->getCursorState()){
-      this->stampPixel();
+      this->PrintDirect(this->GetPixTempX(),this->GetPixTempY(),1);
       this->setCursorState(false);
       //dsl("DrawScreen::setCursor Cursor state true");
     }else{
-      this->clearPixel();
+      this->PrintDirect(this->GetPixTempX(),this->GetPixTempY(),0);
       this->setCursorState(true);
       //dsl("DrawScreen::setCursor Cursor state false");
     }

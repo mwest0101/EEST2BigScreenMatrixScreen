@@ -92,7 +92,7 @@ class DrawScreen {
   void decX();
   void incY();
   void decY();
-  
+  void stampPixel();
   
   DrawScreen();
 
@@ -100,9 +100,6 @@ class DrawScreen {
   int GetPosArray();
   void setPix(int x, int y, bool status);
   void setCursor(int x, int y, int ledState);
-  void stampPixel();
-  void clearPixel();
-
   void setPosCursor(int x, int y);
   void UpdateCursor();
   void Print(int x,int y,int ledState);
