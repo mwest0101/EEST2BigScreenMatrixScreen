@@ -7,9 +7,6 @@
 
   #include "config/inc_config.h"
   #include "config/inc_config_debugSerial.h"
-  #include "config/inc_config_tetris.h"  
-  #include "config/inc_config_pacman.h"
-  #include "config/inc_config_t2_build.h"
   #include "config/inc_config_effects.h"
 
   #include <stdlib.h>
