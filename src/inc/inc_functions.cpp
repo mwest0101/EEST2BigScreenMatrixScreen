@@ -231,10 +231,15 @@ void updateStateAndEffect(VectorClassString &vecStrOne,   String &option,
     value = vecStrOne.get(i);
     //dsl("paso por aca 0");
 
-    if (value == "a" || value == "m" || value == "r" || value == "i" || value == "v" || value == "ip" || value == "iv" || value == "ii" || value == "ic" || value == "im") {
-      if (value == "a" || value == "m" || value == "ip" || value == "iv" || value == "ii" || value == "ic" || value == "im") {
+    if (value == "a" || value == "m" || 
+        value == "r" || value == "i" || value == "v" || 
+        value == "ip" || value == "iv" || value == "ii" ||
+        value == "ic" || value == "id" || value == "im") {
+
+      if (value != "r" || value != "i" || value != "v") {
         option = value;
       }
+
       lastStrValue = value;
       typeValue = 1;
       //dsl("paso por aca 1");
@@ -249,6 +254,7 @@ void updateStateAndEffect(VectorClassString &vecStrOne,   String &option,
       if (lastStrValue == "i") { invert = value.toInt(); }
       
       if (lastStrValue == "ic") { globalControl = value.toInt(); }      
+      if (lastStrValue == "id") { globalControl = value.toInt(); }      
       if (lastStrValue == "ii") { globalInvert = value.toInt(); }      
       if (lastStrValue == "iv") { globalVelocity = value.toInt(); }
       if (lastStrValue == "ip") { globalStatus = value; }
@@ -307,9 +313,9 @@ void getAndSetParamsOne(String InString,     String& option,
   //vecStrOne.print();
 
   updateStateAndEffect(vecStrOne,     option,        effectOption, 
-                       text,          velocity,      repeat,        invert, 
-                       globalControl, globalInvert,  globalVelocity, globalStatus,
-                       globalMode);
+                       text,          velocity,      repeat,        
+                       invert,        globalControl, globalInvert,  
+                       globalVelocity,globalStatus,  globalMode);
 }
                      
 

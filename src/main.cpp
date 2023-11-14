@@ -195,6 +195,12 @@ void setup() {
     dr.PrintFrame();
 
     dr.Print(4,3,1);*/
+    //dr.setCursor(4,3,1);
+    // dr.SetPixTempX(4);
+    // dr.SetPixTempY(3);  
+
+    dr.setPosCursor(4,3);
+
 
 }
 
@@ -206,7 +212,7 @@ void loop() {
     dsl("LOOP");
     dsd();
     */
-   /*
+   
     time = micros();
     contLoop++;
 
@@ -237,13 +243,14 @@ void loop() {
 
         }
         else if (tempOption == "iv" || tempOption == "ip" ||
-            tempOption == "ii" || tempOption == "ic") {
+            tempOption == "ii" || tempOption == "ic" || tempOption == "id") {
 
             //vecStr.print();
             //loopTime =calcLoopTime(velocity,globalVelocity);
 
             ds("loopWaitTime=");dsl(loopWaitTime);
             ds("globalVelocity=");dsl(globalVelocity);
+            ds("globalControl=");dsl(globalControl);
             ds("loopTime=");dsl(loopTime);
 
             isBtBuilding = false;
@@ -258,7 +265,7 @@ void loop() {
         ds("@:strBt=");dsl(strBt);
         isBtBuilding = false;
     }
-*/
+
 
     
 /*
@@ -417,13 +424,25 @@ void loop() {
     }
     */
    
-    dr.setCursor(4,3,1);
+    
     
     //================================================================
      if (!isBtBuilding && globalStatus=="Play_Draw") {
 
 
         lastTime = time;
+        //ds("tempOption=");dsl(tempOption);
+        if(tempOption == "id"){
+            //dsl("entre a tmepOption=id");
+            if(globalControl ==1){dr.decY();globalControl=-1;dsl("Entre1");}
+            if(globalControl ==2){dr.incX();globalControl=-1;dsl("Entre2");}
+            if(globalControl ==3){dr.incY();globalControl=-1;dsl("Entre3");}
+            if(globalControl ==4){dr.decX();globalControl=-1;dsl("Entre4");}
+            //if(globalControl ==0) dr.defX();
+
+            
+        }
+        dr.UpdateCursor();
 
     }
 

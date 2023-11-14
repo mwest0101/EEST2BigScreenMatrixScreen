@@ -64,27 +64,27 @@ class DrawScreen {
 
 
   int GetPixTempX();
-  void SetPixTempX(int pixTempX);
+  void SetPixTempX(int vPixTempX);
   int GetPixTempY();
-  void SetPixTempY(int pixTempY);
+  void SetPixTempY(int vPixTempY);
 
 
   bool getCursorState();
-  void setCursorState(bool cursorState);
+  void setCursorState(bool vCursorState);
 
   unsigned long getTimeCursorBlink();
-  void setTimeCursorBlink(unsigned long timeCursorBlink);
+  void setTimeCursorBlink(unsigned long vTimeCursorBlink);
   unsigned long getTimeLapse();
-  void setTimeLapse(unsigned long timeLapse);
+  void setTimeLapse(unsigned long vTimeLapse);
   unsigned long getTime();
-  void setTime(unsigned long time);
+  void setTime(unsigned long vTime);
   unsigned long getTimeLast();
-  void setTimeLast(unsigned long timeLast);
+  void setTimeLast(unsigned long vTimeLast);
 
   int GetMaxWidth();
-  void SetMaxWidth(int maxWidth);
+  void SetMaxWidth(int vMaxWidth);
   int GetMaxHeight();
-  void SetMaxHeight(int maxHeight);
+  void SetMaxHeight(int vMaxHeight);
   
   bool GetStartDraw();
   void SetStartDraw(bool value);
@@ -92,7 +92,7 @@ class DrawScreen {
   void decX();
   void incY();
   void decY();
-  void stampPixel();
+  
   
   DrawScreen();
 
@@ -100,6 +100,11 @@ class DrawScreen {
   int GetPosArray();
   void setPix(int x, int y, bool status);
   void setCursor(int x, int y, int ledState);
+  void stampPixel();
+  void clearPixel();
+
+  void setPosCursor(int x, int y);
+  void UpdateCursor();
   void Print(int x,int y,int ledState);
   void PrintDirect(int x,int y,int ledState);
   void PrintPixelByFrame(int numPixel,int ledState);

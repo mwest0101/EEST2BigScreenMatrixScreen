@@ -5,108 +5,105 @@
 int DrawScreen::getPixX() {
   return this->pixX;
 }
-void DrawScreen::setPixX(int pixX) {
-  this->pixX = pixX;
-  if(pixX<1 || pixX>this->GetMaxWidth()){
-    ds("DrawScreen::X Out of range:: ");dsl(pixX);        
+void DrawScreen::setPixX(int vPixX) {
+
+  if(vPixX>=0 && vPixX<this->GetMaxWidth()){
+    this->pixX = vPixX;
   }else{
-    this->pixX = (pixX-1);
-    //ds("DrawScreen::X Setted to:");dsl(this->pixX);
+    ds("DrawScreen::Y Out of range: ");dsl(vPixX);       
   }
 }
 
 int DrawScreen::getPixY() {
   return this->pixY;
 }
-void DrawScreen::setPixY(int pixY) {
-  
-  if(pixY<1 || pixY>this->GetMaxHeight()){
-    ds("DrawScreen::Y Out of range: ");dsl(pixY);    
+void DrawScreen::setPixY(int vPixY) {  
+  if(vPixY>=0 && vPixY<this->GetMaxHeight()){
+    this->pixY = vPixY;
   }else{
-    this->pixY = (pixY-1);
-    //ds("DrawScreen::Y Setted to:");dsl(this->pixY);
-  }
+    ds("DrawScreen::Y Out of range: ");dsl(vPixY);       
+  }    
 }
   int DrawScreen::GetPixTempX(){
+    //ds("this->pixTempX=");dsl(this->pixTempX);
     return this->pixTempX;
   }
 
-  void DrawScreen::SetPixTempX(int pixTempX) {
-    if(pixTempX<1 || pixTempX>this->GetMaxHeight()){
-      ds("DrawScreen::Y Out of range: ");dsl(pixY);    
-    }else{
-      this->pixTempX = (pixTempX-1);
-    //ds("DrawScreen::Y Setted to:");dsl(this->pixY);
-    }
-
+  void DrawScreen::SetPixTempX(int vPixTempX) {
     
+    if(vPixTempX>=0 && vPixTempX<this->GetMaxWidth()){
+      this->pixTempX = vPixTempX;
+    }else{
+      ds("DrawScreen::Y Out of range: ");dsl(vPixTempX);       
+    }        
   }
 
   int DrawScreen::GetPixTempY() {
+    //ds("this->pixTempY=");dsl(this->pixTempY);
     return this->pixTempY;
   }
 
-  void DrawScreen::SetPixTempY(int pixTempY) {
-    if(pixTempY<1 || pixTempY>this->GetMaxHeight()){
-      ds("DrawScreen::Y Out of range: ");dsl(pixY);    
+  void DrawScreen::SetPixTempY(int vPixTempY) {
+    if(vPixTempY>=0 && vPixTempY<this->GetMaxHeight()){
+      this->pixTempY = vPixTempY;
     }else{
-      this->pixTempY = (pixTempY-1);
-    
-    }
+      ds("DrawScreen::Y Out of range: ");dsl(vPixTempY);       
+    }     
     
   }
+
   bool DrawScreen::getCursorState() {
     return this->cursorState;
   }
 
-  void DrawScreen::setCursorState(bool cursorState) {
-    this->cursorState = cursorState;
+  void DrawScreen::setCursorState(bool vCursorState) {
+    this->cursorState = vCursorState;
   }
 
   unsigned long DrawScreen::getTimeCursorBlink() {
     return this->timeCursorBlink;
   }
 
-  void DrawScreen::setTimeCursorBlink(unsigned long timeCursorBlink) {
-    this->timeCursorBlink = timeCursorBlink;
+  void DrawScreen::setTimeCursorBlink(unsigned long vTimeCursorBlink) {
+    this->timeCursorBlink = vTimeCursorBlink;
   }
 
   unsigned long DrawScreen::getTimeLapse() {
     return this->timeLapse;
   }
 
-  void DrawScreen::setTimeLapse(unsigned long timeLapse) {
-    this->timeLapse = timeLapse;
+  void DrawScreen::setTimeLapse(unsigned long vTimeLapse) {
+    this->timeLapse = vTimeLapse;
   }
 
   unsigned long DrawScreen::getTime() {
     return this->time;
   }
 
-  void DrawScreen::setTime(unsigned long time) {
-    this->time = time;
+  void DrawScreen::setTime(unsigned long vTime) {
+    this->time = vTime;
   }
   unsigned long DrawScreen::getTimeLast() {
     return this->timeLast;
   }
 
-  void DrawScreen::setTimeLast(unsigned long timeLast) {
-    this->timeLast = timeLast;
+  void DrawScreen::setTimeLast(unsigned long vTimeLast) {
+    this->timeLast = vTimeLast;
   }
  int DrawScreen::GetMaxWidth(){
     return this->maxWidth;
   }
 
-  void DrawScreen::SetMaxWidth(int maxWidth) {
-    this->maxWidth = maxWidth;
+  void DrawScreen::SetMaxWidth(int vMaxWidth) {
+    this->maxWidth = vMaxWidth;
   }
 
   int DrawScreen::GetMaxHeight(){
     return this->maxHeight;
   }
 
-  void DrawScreen::SetMaxHeight(int maxHeight) {
-    this->maxHeight = maxHeight;
+  void DrawScreen::SetMaxHeight(int vMaxHeight) {
+    this->maxHeight = vMaxHeight;
   }
   bool DrawScreen::GetStartDraw(){
     return this->startDraw;
@@ -118,24 +115,31 @@ void DrawScreen::setPixY(int pixY) {
 
 
   void DrawScreen::incX(){
-    this->setPixX(this->pixX++);
+
+
+    this->SetPixTempX(this->GetPixTempX()+1);
+    //this->pixTempX=this->pixTempX+1;
   }
   void DrawScreen::decX(){
-    this->setPixX(this->pixX--);
+    
+    this->SetPixTempX(this->GetPixTempX()-1);
     
   }
+
   void DrawScreen::incY(){
+
+    //this->pixTempY=this->pixTempY+1;
+    this->SetPixTempY(this->GetPixTempY()+1);
+
     
-    this->setPixX(this->pixY++);
   }
   void DrawScreen::decY(){
     
-    this->setPixX(this->pixY--);
-  }
+    this->SetPixTempY(this->GetPixTempY()-1);
+  } 
+  
 
-  void DrawScreen::stampPixel(){
-    this->setPix(this->pixX,this->pixY,1);
-  }
+
 DrawScreen::DrawScreen() {
   //this.vecPins = new VectorClass(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
   this->setTimeCursorBlink(TIME_CURSOR_BLINK);
@@ -167,22 +171,44 @@ void DrawScreen::setPix(int x, int y, bool status) {
 }
 
 void DrawScreen::setCursor(int x, int y, int ledState) {
-  this->setTime(micros());
+  
 
-  this->SetPixTempX(x);
-  this->SetPixTempY(y);  
-  ds("DrawScreen::setCursor this->getTimeLapse():");dsl(this->getTimeLapse())
-  ds("DrawScreen::setCursor this->getTimeCursorBlink():");dsl(this->getTimeCursorBlink())
+  this->setPosCursor(x, y); 
+  this->setCursorState(ledState);
+  //this->UpdateCursor();
+}
+
+  void DrawScreen::stampPixel(){
+    this->setCursor(this->GetPixTempX(),this->GetPixTempY(),1);
+  }
+  void DrawScreen::clearPixel(){
+    this->setCursor(this->GetPixTempX(),this->GetPixTempY(),0);
+  }
+
+void DrawScreen::setPosCursor(int x, int y) {
+  
+
+  this->SetPixTempX(x-1);
+  this->SetPixTempY(y-1);  
+  
+  //this->UpdateCursor();
+}
+
+void DrawScreen::UpdateCursor(){
+  this->setTime(micros());
+  
+  //ds("DrawScreen::setCursor this->getTimeLapse():");dsl(this->getTimeLapse())
+  //ds("DrawScreen::setCursor this->getTimeCursorBlink():");dsl(this->getTimeCursorBlink())
 
   if(this->getTimeLapse()>this->getTimeCursorBlink()){
     if(this->getCursorState()){
-      this->PrintDirect(this->GetPixTempX(),this->GetPixTempY(),1);
+      this->stampPixel();
       this->setCursorState(false);
-      dsl("DrawScreen::setCursor Cursor state true");
+      //dsl("DrawScreen::setCursor Cursor state true");
     }else{
-      this->PrintDirect(this->GetPixTempX(),this->GetPixTempY(),0);
+      this->clearPixel();
       this->setCursorState(true);
-      dsl("DrawScreen::setCursor Cursor state false");
+      //dsl("DrawScreen::setCursor Cursor state false");
     }
     //posInArray=GetPosArray();
     //ds("DrawScreen::setPix : GetPosArray():");dsl(GetPosArray());
