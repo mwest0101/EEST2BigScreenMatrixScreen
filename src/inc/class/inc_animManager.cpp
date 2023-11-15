@@ -68,30 +68,50 @@ bool AnimManager::getIfAnimIsEnd()
 
   return this->isEndOfAnim;
 }
+/*
+void setConsToArray(VectorClass &aFrame){
+
+}*/
 int AnimManager::getAnim(VectorClass &aFrame,String strOption)
 {
-  int found=-1;
+  int               found=-1;
   //if(strOption != lastStrOption)
-  if (strOption == "pac1"){dsl("->pac1");aFrame.clear();this->convProgToArrayByFrame(aFrame, C_PACMAN_ANIM_01, (sizeof(C_PACMAN_ANIM_01) / 2));found=1;}
-  if (strOption == "pac2"){dsl("->pac2");aFrame.clear();this->convProgToArrayByFrame(aFrame, C_PACMAN_ANIM_02, (sizeof(C_PACMAN_ANIM_02) / 2));found=1;}
+  
+   
 
-  if (strOption == "tet1"){dsl("->tet1");aFrame.clear();this->convProgToArrayByFrame(aFrame, C_TETRIS_ANIM_01, (sizeof(C_TETRIS_ANIM_01) / 2));found=1;}  
+
+  if (strOption == "ark1"){dsl("->ark1");aFrame.clear();this->convProgToArrayByFrame(aFrame, C_ANIM_004_ARKANOID,           (sizeof(C_ANIM_004_ARKANOID) / 2));             found=1;}
+  if (strOption == "pon1"){dsl("->pon1");aFrame.clear();this->convProgToArrayByFrame(aFrame, C_ANIM_005_PONG,               (sizeof(C_ANIM_005_PONG) / 2));                 found=1;}
+  if (strOption == "sna1"){dsl("->sna1");aFrame.clear();this->convProgToArrayByFrame(aFrame, C_ANIM_006_SNAKE,              (sizeof(C_ANIM_006_SNAKE) / 2));                found=1;}
+  if (strOption == "tet1"){dsl("->tet1");aFrame.clear();this->convProgToArrayByFrame(aFrame, C_ANIM_001_TETRIS,             (sizeof(C_ANIM_001_TETRIS) / 2));               found=1;}
+  if (strOption == "tet2"){dsl("->tet2");aFrame.clear();this->convProgToArrayByFrame(aFrame, C_ANIM_002_TETRIS,             (sizeof(C_ANIM_002_TETRIS) / 2));               found=1;}
+  if (strOption == "tet3"){dsl("->tet3");aFrame.clear();this->convProgToArrayByFrame(aFrame, C_ANIM_003_TETRIS,             (sizeof(C_ANIM_003_TETRIS) / 2));               found=1;}
+  if (strOption == "pac1"){dsl("->pac1");aFrame.clear();this->convProgToArrayByFrame(aFrame, C_ANIM_001_PACMAN,             (sizeof(C_ANIM_001_PACMAN) / 2));               found=1;}
+  if (strOption == "pac2"){dsl("->pac2");aFrame.clear();this->convProgToArrayByFrame(aFrame, C_ANIM_002_PACMAN,             (sizeof(C_ANIM_002_PACMAN) / 2));               found=1;}
+  if (strOption == "pac3"){dsl("->pac3");aFrame.clear();this->convProgToArrayByFrame(aFrame, C_ANIM_003_PACMAN_PHANTOM,     (sizeof(C_ANIM_003_PACMAN_PHANTOM) / 2));       found=1;}
+
+  if (strOption == "efe1"){dsl("->efe1");aFrame.clear();this->convProgToArrayByFrame(aFrame, C_ANIM_001_EFFECT_EXPLODE_RECT,(sizeof(C_ANIM_001_EFFECT_EXPLODE_RECT) / 2));  found=1;}
+  if (strOption == "efe2"){dsl("->efe2");aFrame.clear();this->convProgToArrayByFrame(aFrame, C_ANIM_002_EFFECT_CRUX_ROTATE, (sizeof(C_ANIM_002_EFFECT_CRUX_ROTATE) / 2));   found=1;}
+  if (strOption == "efe3"){dsl("->efe3");aFrame.clear();this->convProgToArrayByFrame(aFrame, C_ANIM_003_EFFECT_RECT_ZOOM,   (sizeof(C_ANIM_003_EFFECT_RECT_ZOOM) / 2));     found=1;}
+  if (strOption == "efe4"){dsl("->efe4");aFrame.clear();this->convProgToArrayByFrame(aFrame, C_ANIM_010_EFFECT_BALL_BOUNCE, (sizeof(C_ANIM_010_EFFECT_BALL_BOUNCE) / 2));   found=1;}
+  if (strOption == "efe5"){dsl("->efe5");aFrame.clear();this->convProgToArrayByFrame(aFrame, C_ANIM_012_EFFECT_RAIN,        (sizeof(C_ANIM_012_EFFECT_RAIN) / 2));          found=1;}
+
+  if (strOption == "t2n1" ){dsl("->t2b1");aFrame.clear();this->convProgToArrayByFrame(aFrame, C_ANIM_001_T2_BUILD,           (sizeof(C_ANIM_001_T2_BUILD) / 2));           found=1;}
+  if (strOption == "t2n2" ){dsl("->t2u1");aFrame.clear();this->convProgToArrayByFrame(aFrame, C_ANIM_002_T2_UPDOWN,          (sizeof(C_ANIM_002_T2_UPDOWN) / 2));          found=1;}
+  if (strOption == "t2n3" ){dsl("->t2f1");aFrame.clear();this->convProgToArrayByFrame(aFrame, C_ANIM_003_T2_FADE,            (sizeof(C_ANIM_003_T2_FADE) / 2));            found=1;}
+  if (strOption == "t2n4" ){dsl("->t2d1");aFrame.clear();this->convProgToArrayByFrame(aFrame, C_ANIM_004_T2_DESINTEGRATE,    (sizeof(C_ANIM_004_T2_DESINTEGRATE) / 2));    found=1;}
+  if (strOption == "t2n5" ){dsl("->t2b2");aFrame.clear();this->convProgToArrayByFrame(aFrame, C_ANIM_005_T2_BUILD,           (sizeof(C_ANIM_005_T2_BUILD) / 2));           found=1;}
+  if (strOption == "t2n6" ){dsl("->t2b3");aFrame.clear();this->convProgToArrayByFrame(aFrame, C_ANIM_006_T2_BUILD,           (sizeof(C_ANIM_006_T2_BUILD) / 2));           found=1;}
+  if (strOption == "t2n7" ){dsl("->t2b4");aFrame.clear();this->convProgToArrayByFrame(aFrame, C_ANIM_007_T2_BUILD,           (sizeof(C_ANIM_007_T2_BUILD) / 2));           found=1;}
+  if (strOption == "t2n8" ){dsl("->t2d2");aFrame.clear();this->convProgToArrayByFrame(aFrame, C_ANIM_008_T2_DOWN,            (sizeof(C_ANIM_008_T2_DOWN) / 2));            found=1;}
+  if (strOption == "t2n9" ){dsl("->t2f2");aFrame.clear();this->convProgToArrayByFrame(aFrame, C_ANIM_009_T2_FADE_DOWN,       (sizeof(C_ANIM_009_T2_FADE_DOWN) / 2));       found=1;}
+  if (strOption == "t2n10"){ dsl("->t2d3");aFrame.clear();this->convProgToArrayByFrame(aFrame, C_ANIM_010_T2_DESINTEGRATE,    (sizeof(C_ANIM_010_T2_DESINTEGRATE) / 2));    found=1;}
+  if (strOption == "t2n11"){ dsl("->t2b5");aFrame.clear();this->convProgToArrayByFrame(aFrame, C_ANIM_011_T2_BUILD,           (sizeof(C_ANIM_011_T2_BUILD) / 2));           found=1;}
+  if (strOption == "t2n12"){ dsl("->t2b6");aFrame.clear();this->convProgToArrayByFrame(aFrame, C_ANIM_012_T2_BUILD_INVERTED,  (sizeof(C_ANIM_012_T2_BUILD_INVERTED) / 2));  found=1;}
+
   
-  if (strOption == "efe1"){dsl("->efe1");aFrame.clear();this->convProgToArrayByFrame(aFrame, C_EFECTOS_ANIM_01, (sizeof(C_EFECTOS_ANIM_01) / 2));found=1;}  
-  if (strOption == "efe2"){dsl("->efe2");aFrame.clear();this->convProgToArrayByFrame(aFrame, C_EFECTOS_ANIM_02, (sizeof(C_EFECTOS_ANIM_02) / 2));found=1;}  
-  if (strOption == "efe3"){dsl("->efe3");aFrame.clear();this->convProgToArrayByFrame(aFrame, C_EFECTOS_ANIM_03, (sizeof(C_EFECTOS_ANIM_03) / 2));found=1;}  
-  if (strOption == "efe4"){dsl("->efe4");aFrame.clear();this->convProgToArrayByFrame(aFrame, C_EFECTOS_ANIM_04, (sizeof(C_EFECTOS_ANIM_04) / 2));found=1;}  
-  if (strOption == "efe5"){dsl("->efe5");aFrame.clear();this->convProgToArrayByFrame(aFrame, C_EFECTOS_ANIM_05, (sizeof(C_EFECTOS_ANIM_05) / 2));found=1;}  
-  if (strOption == "efe6"){dsl("->efe6");aFrame.clear();this->convProgToArrayByFrame(aFrame, C_EFECTOS_ANIM_06, (sizeof(C_EFECTOS_ANIM_06) / 2));found=1;}  
-  if (strOption == "efe7"){dsl("->efe7");aFrame.clear();this->convProgToArrayByFrame(aFrame, C_EFECTOS_ANIM_07, (sizeof(C_EFECTOS_ANIM_07) / 2));found=1;}  
   
-  if (strOption == "tec1"){dsl("->tec1");aFrame.clear();this->convProgToArrayByFrame(aFrame, C_T2_BUILD_01, (sizeof(C_T2_BUILD_01) / 2));found=1;}  
-  if (strOption == "tec2"){dsl("->tec2");aFrame.clear();this->convProgToArrayByFrame(aFrame, C_T2_BUILD_02, (sizeof(C_T2_BUILD_02) / 2));found=1;}  
-  if (strOption == "tec3"){dsl("->tec3");aFrame.clear();this->convProgToArrayByFrame(aFrame, C_T2_BUILD_03, (sizeof(C_T2_BUILD_03) / 2));found=1;}  
-  if (strOption == "tec4"){dsl("->tec4");aFrame.clear();this->convProgToArrayByFrame(aFrame, C_T2_BUILD_04, (sizeof(C_T2_BUILD_04) / 2));found=1;}  
-  if (strOption == "tec5"){dsl("->tec5");aFrame.clear();this->convProgToArrayByFrame(aFrame, C_T2_BUILD_05, (sizeof(C_T2_BUILD_05) / 2));found=1;}  
-  if (strOption == "tec6"){dsl("->tec6");aFrame.clear();this->convProgToArrayByFrame(aFrame, C_T2_BUILD_06, (sizeof(C_T2_BUILD_06) / 2));found=1;}  
-  return found;
+  return              found;
 
   
 }

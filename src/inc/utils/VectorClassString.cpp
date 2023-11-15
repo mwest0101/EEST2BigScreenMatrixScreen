@@ -147,7 +147,7 @@ void print(){
       ds5(i);
       ds5("]=")
       ds5(data[i]);
-      ds5(" ");
+      ds5l(" ");
     }
     ds5l("");
   }

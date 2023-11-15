@@ -66,14 +66,14 @@ int velocity = DEFAULT_VELOCITY;
 
 int contCharAdded = 0;
 
-long time = 0;
-long lastTime = 0;
-long difTime = 0;
-long loopWaitTime = 0;
+unsigned long time = 0;
+unsigned long lastTime = 0;
+unsigned long difTime = 0;
+unsigned long loopWaitTime = 0;
 
 
 double promTime3 = 0;
-long  loopTime = 0;
+unsigned long  loopTime = 0;
 VectorClass vecPins(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 VectorClass vecChar(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 VectorClass aIntCharMatrix(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
@@ -90,8 +90,8 @@ String BTstrReceived = "";
 String lastBTstrReceived = "";
 
 //String inputString = "a:efe2;v:1;r:2|m:AB";
-//String inputString = "a:tet1;v:1;r:1|a:pac1;v:1;r:1|a:pac2;v:1;r:1|a:efe1;v:1;r:1|a:efe2;v:1;r:1|a:efe3;v:1;r:1|a:efe4;v:1;r:1|a:efe5;v:1;r:1|a:efe6;v:1;r:1|a:efe7;v:1;r:1|a:tec1;v:1;r:1|a:tec2;v:1;r:1|a:tec3;v:1;r:1|a:tec4;v:1;r:1|a:tec5;v:1;r:1|a:tec6;v:1;r:1|m:Escuela";
-String inputString = "a:tet1;v:5;r:1;i:1|m:Escuela";
+String inputString = "a:efe1;v:1;r:1|a:efe2;v:1;r:1|a:efe3;v:1;r:1|a:efe4;v:1;r:1|a:efe5;v:1;r:1|a:efe3;v:1;r:1|a:efe4;v:1;r:1|a:efe5;v:1;r:1|a:efe6;v:1;r:1|a:efe7;v:1;r:1|a:tec1;v:1;r:1|a:tec2;v:1;r:1|a:tec3;v:1;r:1|a:tec4;v:1;r:1|a:tec5;v:1;r:1|a:tec6;v:1;r:1|m:Escuela";
+//String inputString = "a:tet1;v:5;r:1;i:1|m:Escuela";
 
 
 
@@ -268,7 +268,7 @@ void loop() {
 
 
     
-/*
+
 
     //loopTime =calcLoopTime(velocity,globalVelocity);
     dss();
@@ -419,15 +419,7 @@ void loop() {
 
         lastTime = time;
 
-    }else if (!isBtBuilding && (difTime >= loopTime) && globalStatus == "Play_Draw") {
-
-    }
-    */
-   
-    
-    
-    //================================================================
-     if (!isBtBuilding && globalStatus=="Play_Draw") {
+    }else if (!isBtBuilding && globalStatus=="Play_Draw") {
 
 
         lastTime = time;
