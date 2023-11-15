@@ -242,8 +242,9 @@ void loop() {
             //vecStr.print();
 
         }
-        else if (tempOption == "iv" || tempOption == "ip" ||
-            tempOption == "ii" || tempOption == "ic" || tempOption == "id") {
+        else if (tempOption == "iv" || tempOption == "ip" ||  tempOption == "ii" || 
+                 tempOption == "ic" || tempOption == "id") {
+
 
             //vecStr.print();
             //loopTime =calcLoopTime(velocity,globalVelocity);
@@ -273,7 +274,7 @@ void loop() {
     //loopTime =calcLoopTime(velocity,globalVelocity);
     dss();
     dsl("vecStr Antes de entrar")
-        vecStr.print();
+        //vecStr.print();
     dss();
 
     ds("globalVelocity=");dsl(globalVelocity);
@@ -387,7 +388,9 @@ void loop() {
             sm.PrintLedMatrix(aFrame, aLastFrame, vecPins);
         }
 
-        if ((contCharAdded >= vecChar.getSize() && option == "m") || (an.getIfAnimIsEnd() && option == "a")) {
+        if ((contCharAdded >= vecChar.getSize() && option == "m") || 
+            (an.getIfAnimIsEnd() && option == "a")) {
+                
             dsl("--->(7)----------");
             // dsl("Entro a reset final");
             an.reset();
@@ -399,6 +402,7 @@ void loop() {
             contRepeat++;
             contCharAdded = 0;
         }
+
         dsl("--->(8)-----------");
         ds("contParam=");ds(contParam);ds(" sizeParams=");dsl(sizeParams);
         ds("contRepeat=");ds(contRepeat);ds(" repeat=");dsl(repeat);
