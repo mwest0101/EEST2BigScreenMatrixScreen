@@ -123,16 +123,17 @@ int AnimManager::getAnim(VectorClass &aFrame,String strOption)
   if (strOption == "tet1"){dsl("->tet1"); this->convProgToArrayByFrame(aFrame, C_ANIM_001_TETRIS,             (sizeof(C_ANIM_001_TETRIS) / 2));               found=1;}
   if (strOption == "tet2"){dsl("->tet2"); this->convProgToArrayByFrame(aFrame, C_ANIM_002_TETRIS,             (sizeof(C_ANIM_002_TETRIS) / 2));               found=1;}
   if (strOption == "tet3"){dsl("->tet3"); this->convProgToArrayByFrame(aFrame, C_ANIM_003_TETRIS,             (sizeof(C_ANIM_003_TETRIS) / 2));               found=1;}
+  
   if (strOption == "pac1"){dsl("->pac1"); this->convProgToArrayByFrame(aFrame, C_ANIM_001_PACMAN,             (sizeof(C_ANIM_001_PACMAN) / 2));               found=1;}
   if (strOption == "pac2"){dsl("->pac2"); this->convProgToArrayByFrame(aFrame, C_ANIM_002_PACMAN,             (sizeof(C_ANIM_002_PACMAN) / 2));               found=1;}
   if (strOption == "pac3"){dsl("->pac3"); this->convProgToArrayByFrame(aFrame, C_ANIM_003_PACMAN_PHANTOM,     (sizeof(C_ANIM_003_PACMAN_PHANTOM) / 2));       found=1;}
-
+  
   if (strOption == "efe1"){dsl("->efe1"); this->convProgToArrayByFrame(aFrame, C_ANIM_001_EFFECT_EXPLODE_RECT,(sizeof(C_ANIM_001_EFFECT_EXPLODE_RECT) / 2));  found=1;}
   if (strOption == "efe2"){dsl("->efe2"); this->convProgToArrayByFrame(aFrame, C_ANIM_002_EFFECT_CRUX_ROTATE, (sizeof(C_ANIM_002_EFFECT_CRUX_ROTATE) / 2));   found=1;}
   if (strOption == "efe3"){dsl("->efe3"); this->convProgToArrayByFrame(aFrame, C_ANIM_003_EFFECT_RECT_ZOOM,   (sizeof(C_ANIM_003_EFFECT_RECT_ZOOM) / 2));     found=1;}
   if (strOption == "efe4"){dsl("->efe4"); this->convProgToArrayByFrame(aFrame, C_ANIM_010_EFFECT_BALL_BOUNCE, (sizeof(C_ANIM_010_EFFECT_BALL_BOUNCE) / 2));   found=1;}
   if (strOption == "efe5"){dsl("->efe5"); this->convProgToArrayByFrame(aFrame, C_ANIM_012_EFFECT_RAIN,        (sizeof(C_ANIM_012_EFFECT_RAIN) / 2));          found=1;}
-
+  
   if (strOption == "t2n1" ){dsl("->t2b1"); this->convProgToArrayByFrame(aFrame, C_ANIM_001_T2_BUILD,           (sizeof(C_ANIM_001_T2_BUILD) / 2));           found=1;}
   if (strOption == "t2n2" ){dsl("->t2u1"); this->convProgToArrayByFrame(aFrame, C_ANIM_002_T2_UPDOWN,          (sizeof(C_ANIM_002_T2_UPDOWN) / 2));          found=1;}
   if (strOption == "t2n3" ){dsl("->t2f1"); this->convProgToArrayByFrame(aFrame, C_ANIM_003_T2_FADE,            (sizeof(C_ANIM_003_T2_FADE) / 2));            found=1;}
@@ -146,7 +147,33 @@ int AnimManager::getAnim(VectorClass &aFrame,String strOption)
   if (strOption == "t2n11"){ dsl("->t2b5");this->convProgToArrayByFrame(aFrame, C_ANIM_011_T2_BUILD,           (sizeof(C_ANIM_011_T2_BUILD) / 2));           found=1;}
   if (strOption == "t2n12"){ dsl("->t2b6");this->convProgToArrayByFrame(aFrame, C_ANIM_012_T2_BUILD_INVERTED,  (sizeof(C_ANIM_012_T2_BUILD_INVERTED) / 2));  found=1;}
 
+
+
+if (strOption == "car1"){ dsl("->car1");this->convProgToArrayByFrame(aFrame, C_ANIM_004_CAR_TRAK,             (sizeof(C_ANIM_004_CAR_TRAK) / 2));  found=1;}
+if (strOption == "car2"){ dsl("->car2");this->convProgToArrayByFrame(aFrame, C_ANIM_005_CAR_UP,               (sizeof(C_ANIM_005_CAR_UP) / 2));  found=1;}
+if (strOption == "car3"){ dsl("->car3");this->convProgToArrayByFrame(aFrame, C_ANIM_006_CAR_DOWN,             (sizeof(C_ANIM_006_CAR_DOWN) / 2));  found=1;}
+if (strOption == "car4"){ dsl("->car4");this->convProgToArrayByFrame(aFrame, C_ANIM_007_CAR_FIXED,            (sizeof(C_ANIM_007_CAR_FIXED) / 2));  found=1;}
+if (strOption == "car5"){ dsl("->car5");this->convProgToArrayByFrame(aFrame, C_ANIM_008_CAR_FIXED_ROCK,       (sizeof(C_ANIM_008_CAR_FIXED_ROCK) / 2));  found=1;}
+if (strOption == "car6"){ dsl("->car6");this->convProgToArrayByFrame(aFrame, C_ANIM_009_CAR_MOVE_RIGH,        (sizeof(C_ANIM_009_CAR_MOVE_RIGH) / 2));  found=1;}
+if (strOption == "car7"){ dsl("->car7");this->convProgToArrayByFrame(aFrame, C_ANIM_010_CAR_MOVE_LEFT,        (sizeof(C_ANIM_010_CAR_MOVE_LEFT) / 2));  found=1;}
+if (strOption == "car8"){ dsl("->car8");this->convProgToArrayByFrame(aFrame, C_ANIM_011_CAR_PASS_OTHER_CAR,   (sizeof(C_ANIM_011_CAR_PASS_OTHER_CAR) / 2));  found=1;}
+if (strOption == "car9"){ dsl("->car9");this->convProgToArrayByFrame(aFrame, C_ANIM_012_CAR_PASS_OTHER_CAR2,  (sizeof(C_ANIM_012_CAR_PASS_OTHER_CAR2) / 2));  found=1;}
+if (strOption == "car10"){ dsl("->car10");this->convProgToArrayByFrame(aFrame, C_ANIM_013_CAR_MOVE_LEFT_RIGHT,  (sizeof(C_ANIM_013_CAR_MOVE_LEFT_RIGHT) / 2));  found=1;}
+
   
+
+
+
+
+
+
+
+
+
+
+
+
+
   //ds("AnimManager::getAnim 01 - found=");
   //dsl(found);
   

@@ -92,11 +92,17 @@ String lastBTstrReceived = "";
 
 //String inputString = "a:efe2;v:1;r:2|m:AB";
 //String inputString = "a:efe1;v:1;r:1|a:efe2;v:1;r:1|m:Escuela";
-String inputString = "a:efe1;v:1;r:1|a:efe22;v:1;r:1|a:efe3;v:1;r:1|m:Escuela";
-//String inputString = "a:tet1;v:5;r:1;i:1|m:Escuela";
+//String inputString = "a:efe1;v:1;r:1|a:efe22;v:1;r:1|a:efe3;v:1;r:1|m:Escuela";
+
+String inputString = "a:ark1;v:5;r1|a:pon1;v:5;r1|a:sna1;v:5;r1|a:tet1;v:5;r1|a:tet2;v:5;r1|a:tet3;v:5;r1|a:pac1;v:5;r1|a:pac2;v:5;r1|a:pac3;v:5;r1|a:efe1;v:5;r1|a:efe2;v:5;r1|a:efe3;v:5;r1|a:efe4;v:5;r1|a:efe5;v:5;r1|a:t2n1;v:5;r1|a:t2n2;v:5;r1|a:t2n3;v:5;r1|a:t2n4;v:5;r1|a:t2n5;v:5;r1|a:t2n6;v:5;r1|a:t2n7;v:5;r1|a:t2n8;v:5;r1|a:t2n9;v:5;r1|a:t2n10;v:5;r1|a:t2n11;v:5;r1|a:t2n12;v:5;r1|m,:Texto";
 
 
 
+/*
+
+
+
+*/
 String option = "";
 int foundAnim = 0;
 unsigned long contLoop = 0;
@@ -182,8 +188,50 @@ void setup() {
     difTime = loopTime;
 
     globalVelocity = DEFAULT_VELOCITY;
+    proccesActionFull(inputString, vecStr); // Pasa inputString a vector
+    
+    /*
+    
+    //proccesActionFull(inputString, vecStr); // Pasa inputString a vector
+    vecStr.push("a:ark1;v:5;r1");
+    vecStr.push("a:pon1;v:5;r1");
+    vecStr.push("a:sna1;v:5;r1");
+    vecStr.push("a:tet1;v:5;r1");
+    vecStr.push("a:tet2;v:5;r1");
+    vecStr.push("a:tet3;v:5;r1");
+    vecStr.push("a:pac1;v:5;r1");
+    vecStr.push("a:pac2;v:5;r1");
+    vecStr.push("a:pac3;v:5;r1");
+    vecStr.push("a:car1;v:5;r1");
+    vecStr.push("a:car2;v:5;r1");
+    vecStr.push("a:car3;v:5;r1");
+    vecStr.push("a:car4;v:5;r1");
+    vecStr.push("a:car5;v:5;r1");
+    vecStr.push("a:car6;v:5;r1");
+    vecStr.push("a:car7;v:5;r1");
+    vecStr.push("a:car8;v:5;r1");
+    vecStr.push("a:car9;v:5;r1");
+    vecStr.push("a:car10;v:5;r1");   
 
-    proccesActionFull(inputString, vecStr);
+    vecStr.push("a:efe1;v:5;r1");
+    vecStr.push("a:efe2;v:5;r1");
+    vecStr.push("a:efe3;v:5;r1");
+    vecStr.push("a:efe4;v:5;r1");
+    vecStr.push("a:efe5;v:5;r1");
+
+    vecStr.push("a:t2n1;v:5;r1");
+    vecStr.push("a:t2n2;v:5;r1");
+    vecStr.push("a:t2n3;v:5;r1");
+    vecStr.push("a:t2n4;v:5;r1");
+    vecStr.push("a:t2n5;v:5;r1");
+    vecStr.push("a:t2n6;v:5;r1");
+    vecStr.push("a:t2n7;v:5;r1");
+    vecStr.push("a:t2n8;v:5;r1");
+    vecStr.push("a:t2n9;v:5;r1");
+    vecStr.push("a:t2n10;v:5;r1");
+    vecStr.push("a:t2n11;v:5;r1");
+    vecStr.push("a:t2n12;v:5;r1");
+*/
     sizeParams = vecStr.getSize();
     ds("sizeParams=")dsl(sizeParams);
     //vecStr.print();
