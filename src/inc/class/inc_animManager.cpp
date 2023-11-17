@@ -154,16 +154,11 @@ if (strOption == "car2"){ dsl("->car2");this->convProgToArrayByFrame(aFrame, C_A
 if (strOption == "car3"){ dsl("->car3");this->convProgToArrayByFrame(aFrame, C_ANIM_006_CAR_DOWN,             (sizeof(C_ANIM_006_CAR_DOWN) / 2));  found=1;}
 if (strOption == "car4"){ dsl("->car4");this->convProgToArrayByFrame(aFrame, C_ANIM_007_CAR_FIXED,            (sizeof(C_ANIM_007_CAR_FIXED) / 2));  found=1;}
 if (strOption == "car5"){ dsl("->car5");this->convProgToArrayByFrame(aFrame, C_ANIM_008_CAR_FIXED_ROCK,       (sizeof(C_ANIM_008_CAR_FIXED_ROCK) / 2));  found=1;}
-if (strOption == "car6"){ dsl("->car6");this->convProgToArrayByFrame(aFrame, C_ANIM_009_CAR_MOVE_RIGH,        (sizeof(C_ANIM_009_CAR_MOVE_RIGH) / 2));  found=1;}
-if (strOption == "car7"){ dsl("->car7");this->convProgToArrayByFrame(aFrame, C_ANIM_010_CAR_MOVE_LEFT,        (sizeof(C_ANIM_010_CAR_MOVE_LEFT) / 2));  found=1;}
-if (strOption == "car8"){ dsl("->car8");this->convProgToArrayByFrame(aFrame, C_ANIM_011_CAR_PASS_OTHER_CAR,   (sizeof(C_ANIM_011_CAR_PASS_OTHER_CAR) / 2));  found=1;}
-if (strOption == "car9"){ dsl("->car9");this->convProgToArrayByFrame(aFrame, C_ANIM_012_CAR_PASS_OTHER_CAR2,  (sizeof(C_ANIM_012_CAR_PASS_OTHER_CAR2) / 2));  found=1;}
-if (strOption == "car10"){ dsl("->car10");this->convProgToArrayByFrame(aFrame, C_ANIM_013_CAR_MOVE_LEFT_RIGHT,  (sizeof(C_ANIM_013_CAR_MOVE_LEFT_RIGHT) / 2));  found=1;}
-
-  
-
-
-
+// if (strOption == "car6"){ dsl("->car6");this->convProgToArrayByFrame(aFrame, C_ANIM_009_CAR_MOVE_RIGH,        (sizeof(C_ANIM_009_CAR_MOVE_RIGH) / 2));  found=1;}
+// if (strOption == "car7"){ dsl("->car7");this->convProgToArrayByFrame(aFrame, C_ANIM_010_CAR_MOVE_LEFT,        (sizeof(C_ANIM_010_CAR_MOVE_LEFT) / 2));  found=1;}
+// if (strOption == "car8"){ dsl("->car8");this->convProgToArrayByFrame(aFrame, C_ANIM_011_CAR_PASS_OTHER_CAR,   (sizeof(C_ANIM_011_CAR_PASS_OTHER_CAR) / 2));  found=1;}
+// if (strOption == "car9"){ dsl("->car9");this->convProgToArrayByFrame(aFrame, C_ANIM_012_CAR_PASS_OTHER_CAR2,  (sizeof(C_ANIM_012_CAR_PASS_OTHER_CAR2) / 2));  found=1;}
+// if (strOption == "car10"){ dsl("->car10");this->convProgToArrayByFrame(aFrame, C_ANIM_013_CAR_MOVE_LEFT_RIGHT,  (sizeof(C_ANIM_013_CAR_MOVE_LEFT_RIGHT) / 2));  found=1;}
 
 
 

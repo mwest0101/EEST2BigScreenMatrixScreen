@@ -375,10 +375,11 @@ long  calcLoopTime(long velocity,long globalVelocity) {
   unsigned long calcMult=0;
   unsigned long difVelocity=0;
   unsigned long waitTimeMin=0;
+  
 
   difVelocity=waitTimeLoopMax-waitTimeLoopMin;
   difVelocity=difVelocity/10;  
-  calcMult=velocity-defaultVelocity+globalVelocity;
+  calcMult=((defaultVelocity*2)-velocity)-defaultVelocity+globalVelocity;
 
   if(calcMult<6){difVelocity=difVelocity/2;}
 

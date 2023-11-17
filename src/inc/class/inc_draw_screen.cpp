@@ -344,27 +344,15 @@ void DrawScreen::PrintFrame(){
       PrintPixelByFrame(i,vecScreens[i]);
     }
   }
-
-
-
-
-    /*
-    posY = (int)(i / MATRIX_WIDTH);
-    pinState = aFrame.get(i);
-    pinNum = vecPins.get(i);
-    if (pinState < 2) {
-      if (lastPosY != posY) {
-        dsl(" ");
-        lastPosY = posY;
-      }
-      //dsl("===>es igual");
-      if (aFrame.get(i) != aLastFrame.get(i)) {
-        //        dsl("===>es distinto");
-        aLastFrame.set(i, aFrame.get(i)); // update the values of matriz temp to only update the changed values
-        ShowMatrix::PrintLed(i, pinNum, pinState);
-      }
-    }*/
   
+}
+
+void DrawScreen::ResetFrame(){
+  int sizeArray=V_SCR_SIZE;
+  for (int i = 0; i < sizeArray; i++) {
+    this->vecScreens[i]=0;        
+  }
+  this->PrintFrame();
 }
 
 

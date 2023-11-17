@@ -94,7 +94,8 @@ String lastBTstrReceived = "";
 //String inputString = "a:efe1;v:1;r:1|a:efe2;v:1;r:1|m:Escuela";
 //String inputString = "a:efe1;v:1;r:1|a:efe22;v:1;r:1|a:efe3;v:1;r:1|m:Escuela";
 
-String inputString = "a:ark1;v:5;r1|a:pon1;v:5;r1|a:sna1;v:5;r1|a:tet1;v:5;r1|a:tet2;v:5;r1|a:tet3;v:5;r1|a:pac1;v:5;r1|a:pac2;v:5;r1|a:pac3;v:5;r1|a:efe1;v:5;r1|a:efe2;v:5;r1|a:efe3;v:5;r1|a:efe4;v:5;r1|a:efe5;v:5;r1|a:t2n1;v:5;r1|a:t2n2;v:5;r1|a:t2n3;v:5;r1|a:t2n4;v:5;r1|a:t2n5;v:5;r1|a:t2n6;v:5;r1|a:t2n7;v:5;r1|a:t2n8;v:5;r1|a:t2n9;v:5;r1|a:t2n10;v:5;r1|a:t2n11;v:5;r1|a:t2n12;v:5;r1|m,:Texto";
+//String inputString = "a:ark1;v:5;r1|a:pon1;v:5;r1|a:sna1;v:5;r1|a:tet1;v:5;r1|a:tet2;v:5;r1|a:tet3;v:5;r1|a:pac1;v:5;r1|a:pac2;v:5;r1|a:pac3;v:5;r1|a:efe1;v:5;r1|a:efe2;v:5;r1|a:efe3;v:5;r1|a:efe4;v:5;r1|a:efe5;v:5;r1|a:t2n1;v:5;r1|a:t2n2;v:5;r1|a:t2n3;v:5;r1|a:t2n4;v:5;r1|a:t2n5;v:5;r1|a:t2n6;v:5;r1|a:t2n7;v:5;r1|a:t2n8;v:5;r1|a:t2n9;v:5;r1|a:t2n10;v:5;r1|a:t2n11;v:5;r1|a:t2n12;v:5;r1|m,:Texto";
+//String inputString = "a:car1;v:1;r1|a:car2;v:9;r1|a:car3;v:1;r1|a:car4;v:5;r1|a:car5;v:5;r1";
 
 
 
@@ -112,6 +113,12 @@ int     globalInvert = 0;
 int     globalControl = 0;
 String  globalStatus = "Play_Pres";
 String  globalMode = "Pres";
+
+int     globalVelocity2 = DEFAULT_VELOCITY;
+int     globalInvert2 = 0;
+int     globalControl2 = 0;
+String  globalStatus2 = "Play_Pres";
+String  globalMode2 = "Pres";
 
 int     invert = 0;
 
@@ -188,17 +195,47 @@ void setup() {
     difTime = loopTime;
 
     globalVelocity = DEFAULT_VELOCITY;
-    proccesActionFull(inputString, vecStr); // Pasa inputString a vector
+    //proccesActionFull(inputString, vecStr); // Pasa inputString a vector
     
-    /*
+    //*
     
     //proccesActionFull(inputString, vecStr); // Pasa inputString a vector
-    vecStr.push("a:ark1;v:5;r1");
-    vecStr.push("a:pon1;v:5;r1");
-    vecStr.push("a:sna1;v:5;r1");
+    vecStr.push("a:efe1;v:5;r1");
+    vecStr.push("a:t2n1");
+    vecStr.push("m:Escuela de educacion Tecnica Nº 2");
+    vecStr.push("a:pac1");
+    vecStr.push("a:pac3");
+    vecStr.push("m:Especializada en");
+    vecStr.push("m:Informatica");
+    vecStr.push("a:efe2;v:5;r4");
+    vecStr.push("m:Programación");
+    vecStr.push("a:efe3;v:5;r1");
+    vecStr.push("m:Robotica");
+    vecStr.push("a:efe4;v:5;r1");
+    
+    vecStr.push("a:car1;v:5;r2");
+    vecStr.push("a:car2;v:5;r1");
+    vecStr.push("a:car4;v:5;r4");
+    vecStr.push("a:car3;v:5;r1");
+    
+    vecStr.push("a:t2n3;v:5;r1");
     vecStr.push("a:tet1;v:5;r1");
-    vecStr.push("a:tet2;v:5;r1");
-    vecStr.push("a:tet3;v:5;r1");
+    vecStr.push("m:75 años");
+    vecStr.push("a:tet1;v:5;r1");
+    vecStr.push("a:t2n4;v:5;r1");
+    vecStr.push("a:pon2;v:5;r1");
+    vecStr.push("a:t2n5;v:5;r1");
+    vecStr.push("a:sna1;v:5;r1");
+    vecStr.push("a:t2n5;v:5;r1");
+    vecStr.push("m:Impresión 3D");
+    vecStr.push("a:t2n6;v:5;r1");
+    vecStr.push("m:Especializacion");
+    vecStr.push("a:t2n7;v:5;r1");
+    vecStr.push("a:ark1;v:5;r1");
+    vecStr.push("m:Practicas");
+    
+  
+    /*
     vecStr.push("a:pac1;v:5;r1");
     vecStr.push("a:pac2;v:5;r1");
     vecStr.push("a:pac3;v:5;r1");
@@ -375,9 +412,9 @@ void loop() {
             getAndSetParamsOne(vecStr.get(contParam), option,
                 effectOption, text,
                 velocity, repeat, invert,
-                globalControl, globalInvert,
-                globalVelocity, globalStatus,
-                globalMode);
+                globalControl2, globalInvert2,
+                globalVelocity2, globalStatus2,
+                globalMode2);
 
   
                 ds("contParam=");ds(contParam);
@@ -532,11 +569,12 @@ void loop() {
         //ds("tempOption=");dsl(tempOption);
         if(tempOption == "id"){
             //dsl("entre a tmepOption=id");
-            if(globalControl ==1){dr.decY();globalControl=-1;dsl("Entre1");}
-            if(globalControl ==2){dr.incX();globalControl=-1;dsl("Entre2");}
-            if(globalControl ==3){dr.incY();globalControl=-1;dsl("Entre3");}
-            if(globalControl ==4){dr.decX();globalControl=-1;dsl("Entre4");}
-            if(globalControl ==0){dr.StampCursorInFrame();globalControl=-1;dsl("Entre4");}
+            if(globalControl ==1){dr.decY();globalControl=-1;dsl("globalControl 1 ");}
+            if(globalControl ==2){dr.incX();globalControl=-1;dsl("globalControl 2 ");}
+            if(globalControl ==3){dr.incY();globalControl=-1;dsl("globalControl 3 ");}
+            if(globalControl ==4){dr.decX();globalControl=-1;dsl("globalControl 4 ");}
+            if(globalControl ==0){dr.StampCursorInFrame();globalControl=-1;dsl("globalControl 0 ");}
+            if(globalControl ==9){dr.ResetFrame();globalControl=-1;dsl("globalControl 9 ");}
             //if(globalControl ==0) dr.defX();
 
             

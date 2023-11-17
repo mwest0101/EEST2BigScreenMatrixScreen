@@ -147,6 +147,7 @@ class DrawScreen {
   void PrintPixelByFrame(int numPixel,int ledState);
   void StampCursorInFrame();
   void PrintFrame();
+  void ResetFrame();
 
 };
 
