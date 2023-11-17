@@ -1,4 +1,5 @@
-﻿// ╔══════════════════════════════════════════════════════════════════╗
+﻿
+// ╔══════════════════════════════════════════════════════════════════╗
 // ║   ____    _             __  __           _            _          ║
 // ║  |  _ \  (_)           |  \/  |         | |          (_)         ║
 // ║  | |_) |  _    __ _    | \  / |   __ _  | |_   _ __   _  __  __  ║
@@ -90,13 +91,14 @@ String BTstrReceived = "";
 String lastBTstrReceived = "";
 
 //String inputString = "a:efe2;v:1;r:2|m:AB";
-String inputString = "a:efe1;v:1;r:1|a:efe2;v:1;r:1|a:efe3;v:1;r:1|a:efe4;v:1;r:1|a:efe5;v:1;r:1|a:efe3;v:1;r:1|a:efe4;v:1;r:1|a:efe5;v:1;r:1|a:efe6;v:1;r:1|a:efe7;v:1;r:1|a:tec1;v:1;r:1|a:tec2;v:1;r:1|a:tec3;v:1;r:1|a:tec4;v:1;r:1|a:tec5;v:1;r:1|a:tec6;v:1;r:1|m:Escuela";
+//String inputString = "a:efe1;v:1;r:1|a:efe2;v:1;r:1|m:Escuela";
+String inputString = "a:efe1;v:1;r:1|a:efe22;v:1;r:1|a:efe3;v:1;r:1|m:Escuela";
 //String inputString = "a:tet1;v:5;r:1;i:1|m:Escuela";
 
 
 
 String option = "";
-unsigned long foundAnim = 0;
+int foundAnim = 0;
 unsigned long contLoop = 0;
 int     loopVelocity = 0;
 int     globalVelocity = DEFAULT_VELOCITY;
@@ -184,7 +186,7 @@ void setup() {
     proccesActionFull(inputString, vecStr);
     sizeParams = vecStr.getSize();
     ds("sizeParams=")dsl(sizeParams);
-    vecStr.print();
+    //vecStr.print();
 
     /*dr.setPix(1,1,1);
     dr.setPix(7,1,1);
@@ -207,19 +209,26 @@ void setup() {
 void loop() {
 
 
-    /*
+    
+    dsd();
+    dsd();
     dsd();
     dsl("LOOP");
+    ds("ContLoop=");
+    dsl(contLoop);
+    
     dsd();
-    */
+    
    
     time = micros();
-    contLoop++;
+   
 
     
     strBt = getBluetoot(BTSerial, charBT);
 
-
+    /*
+    
+    */
     if (charBT == '$') {
         vecStr.clear();
         isBtBuilding = true;
@@ -292,12 +301,22 @@ void loop() {
     loopTime = calcLoopTime(velocity, globalVelocity);
 
     if (!isBtBuilding && (difTime >= loopTime) && (globalStatus == "Play_Pres" || globalStatus == "Play_Flip")) {
-        
+        contLoop++;
         ds("contRepeat=");ds(contRepeat);ds(" repeat=");dsl(repeat);
         ds("Entro por tiempo=");dsl(contParam);
 
         //dsl("--->(1)-----------");    
-        if ((dm.getIfIsStringEnd() && an.getIfAnimIsEnd())) {
+        //foundAnim==(-1)
+
+
+        dss();
+        ds(" dm.getIfIsStringEnd()=");
+        ds(dm.getIfIsStringEnd());
+        ds(" an.getIfAnimIsEnd()=");
+        dsl(an.getIfAnimIsEnd());
+
+        if (dm.getIfIsStringEnd() && an.getIfAnimIsEnd()){
+            
             dsd();
             dsd();
             dsl("New parameter");
@@ -312,9 +331,15 @@ void loop() {
                 globalVelocity, globalStatus,
                 globalMode);
 
-
-
-
+  
+                ds("contParam=");ds(contParam);
+                ds(" option=");ds(option);
+                ds(" effectOption=");ds(effectOption);
+                ds(" text=");ds(text);
+                ds(" velocity=");ds(velocity);
+                ds(" repeat=");ds(repeat);
+                ds(" invert=");dsl(invert);
+                
 
 
             if (option == "m" && (lastStrToShow != text)) {
@@ -367,35 +392,62 @@ void loop() {
         else if (option == "a" && !an.getIfAnimIsEnd()) {
             dsl("--->(4B)-----------");
             foundAnim = an.getAnim(aFrame, effectOption);
-
+            //if(foundAnim == NULL) {
         }
 
-        calcDirection = invert * globalInvert;
-
+        ds("Main::getAnim 03 - foundAnim=");
+        dsl(foundAnim);
+  
+        if(foundAnim==-1){
+            dss();
+            dsl("No se encontro esa animacion");
+            dm.setIfIsStringEnd(true);
+            an.setIfisEnd(true);
+            
+        }
+        //calcDirection = invert * globalInvert;
+        //if(foundAnim!=(-1)){
+        InvertFrame(aFrame,sm,invert,globalInvert);
+            
+        //}
         //if(globalInvert==1 || globalInvert==3){
-        bandInvHori = 1;
-        if (invert == 1 || invert == 3)       bandInvHori *= -1;
-        if (globalInvert == 1 || globalInvert == 3) bandInvHori *= -1;
-        if (bandInvHori == -1) sm.flipHorizontalFrame(aFrame);
 
-        bandInvVert = 1;
-        if (invert == 2 || invert == 3)       bandInvVert *= -1;
-        if (globalInvert == 2 || globalInvert == 3) bandInvVert *= -1;
-        if (bandInvVert == -1) sm.flipVerticalFrame(aFrame);
+        // void invetFrame(aFrame, int invert,int bandInvHori,int bandInvVert){
+        //     bandInvHori = 1;
+        //     if (invert == 1 || invert == 3)       bandInvHori *= -1;
+        //     if (globalInvert == 1 || globalInvert == 3) bandInvHori *= -1;
+        //     if (bandInvHori == -1) sm.flipHorizontalFrame(aFrame);
 
-        if (option == "a" || option == "m") {
+        //     bandInvVert = 1;
+        //     if (invert == 2 || invert == 3)       bandInvVert *= -1;
+        //     if (globalInvert == 2 || globalInvert == 3) bandInvVert *= -1;
+        //     if (bandInvVert == -1) sm.flipVerticalFrame(aFrame);
+        // }
+
+        // bandInvHori = 1;
+        // if (invert == 1 || invert == 3)       bandInvHori *= -1;
+        // if (globalInvert == 1 || globalInvert == 3) bandInvHori *= -1;
+        // if (bandInvHori == -1) sm.flipHorizontalFrame(aFrame);
+
+        // bandInvVert = 1;
+        // if (invert == 2 || invert == 3)       bandInvVert *= -1;
+        // if (globalInvert == 2 || globalInvert == 3) bandInvVert *= -1;
+        // if (bandInvVert == -1) sm.flipVerticalFrame(aFrame);
+
+        if ((option == "a" && foundAnim!=-1) || option == "m") {
             dsl("--->(5)-----------");
             sm.PrintLedMatrix(aFrame, aLastFrame, vecPins);
         }
 
         if ((contCharAdded >= vecChar.getSize() && option == "m") || 
             (an.getIfAnimIsEnd() && option == "a")) {
-                
+            
             dsl("--->(7)----------");
             // dsl("Entro a reset final");
             an.reset();
             contCharAdded = 0;
             dm.ResetInitPosMatrix();
+            
             //dm.setIfIsStringEnd(false);
             dm.setIfIsStringEnd(true);
             matrix.clear();
@@ -407,7 +459,9 @@ void loop() {
         ds("contParam=");ds(contParam);ds(" sizeParams=");dsl(sizeParams);
         ds("contRepeat=");ds(contRepeat);ds(" repeat=");dsl(repeat);
 
-        if (contRepeat >= repeat) {
+        if ((foundAnim==-1) || (contRepeat >= repeat)) {
+            
+            
             contRepeat = 0;
             contParam++;
             dsl("--->(9)-----------");

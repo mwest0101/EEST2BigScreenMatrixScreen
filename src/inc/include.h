@@ -31,10 +31,11 @@
   #include "inc/utils/MatrixClass.cpp"
   #include "inc/utils/MatrixClassString.cpp"
 
-  #include "inc_functions.h"   
+  #include "inc/class/inc_show_matrix.h"
+  #include "inc_functions.h"     
   #include "inc/utils/str_functions.h"   
     
-  #include "inc/class/inc_show_matrix.h"
+  
   #include "inc/class/inc_drive_matrix.h"
   #include "inc/class/inc_draw_screen.h"
   #include "inc/config/inc_config_letters.h"

@@ -1,3 +1,4 @@
+
 // ╔══════════════════════════════════════════════════════════════════╗
 // ║   ____    _             __  __           _            _          ║
 // ║  |  _ \  (_)           |  \/  |         | |          (_)         ║
@@ -19,6 +20,7 @@
 // ║      Desarrollo de Aplicaciones.                                 ║  
 // ║      App para mobiles y sistema arduino desarrollado por:        ║
 // ║      WTDev ( Prof: Mauricio West)                                ║
+// ║      Email: mauriciowest@gmail.com                               ║
 // ║      https://wtdevelopments.github.io/                           ║
 // ║      https://github.com/mwest0101/EEST2BigScreenMatrixScreen     ║
 // ║                                                                  ║
@@ -27,6 +29,7 @@
 // ║          Escuela Tecnica 2 de Junin (Bs. As) Argentina           ║            
 // ║          Alumnos de 7º Año de la tecnicatura informatica y       ║
 // ║          programación .                                          ║
+// ║          https://www.facebook.com/tecnica2junin                  ║
 // ║                                                                  ║
 // ║  Año:    2023                                                    ║
 // ║                                                                  ║
@@ -35,6 +38,7 @@
 
 #include <Arduino.h>
 #include "inc/include.h"
+
 void convProgToArray(VectorClass& aIntCharMatrix, const int* phrase, int size) {
   int element = 0;
   for (int i = 0; i < size; i++) {
@@ -236,7 +240,7 @@ void updateStateAndEffect(VectorClassString &vecStrOne,   String &option,
         value == "ip" || value == "iv" || value == "ii" ||
         value == "ic" || value == "id" || value == "im") {
 
-      if (value != "r" || value != "i" || value != "v") {
+      if (value != "r" && value != "i" && value != "v") {
         option = value;
       }
 
@@ -395,6 +399,18 @@ long  calcLoopTime(long velocity,long globalVelocity) {
   return calcLoopTime;
 }
 
+void InvertFrame(VectorClass& aFrame,ShowMatrix& sm, int invert,int globalInvert){
+      int bandInvHori = 1;
+      int bandInvVert = 1;
+
+      if (invert == 1 || invert == 3)       bandInvHori *= -1;
+      if (globalInvert == 1 || globalInvert == 3) bandInvHori *= -1;
+      if (bandInvHori == -1) sm.flipHorizontalFrame(aFrame);
+      
+      if (invert == 2 || invert == 3)       bandInvVert *= -1;
+      if (globalInvert == 2 || globalInvert == 3) bandInvVert *= -1;
+      if (bandInvVert == -1) sm.flipVerticalFrame(aFrame);
+}
 
 
 // ╔══════════════════════════════════════════════════════════════════╗
@@ -418,6 +434,7 @@ long  calcLoopTime(long velocity,long globalVelocity) {
 // ║      Desarrollo de Aplicaciones.                                 ║  
 // ║      App para mobiles y sistema arduino desarrollado por:        ║
 // ║      WTDev ( Prof: Mauricio West)                                ║
+// ║      Email: mauriciowest@gmail.com                               ║
 // ║      https://wtdevelopments.github.io/                           ║
 // ║      https://github.com/mwest0101/EEST2BigScreenMatrixScreen     ║
 // ║                                                                  ║
@@ -426,6 +443,7 @@ long  calcLoopTime(long velocity,long globalVelocity) {
 // ║          Escuela Tecnica 2 de Junin (Bs. As) Argentina           ║            
 // ║          Alumnos de 7º Año de la tecnicatura informatica y       ║
 // ║          programación .                                          ║
+// ║          https://www.facebook.com/tecnica2junin                  ║
 // ║                                                                  ║
 // ║  Año:    2023                                                    ║
 // ║                                                                  ║

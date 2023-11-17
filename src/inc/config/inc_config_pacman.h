@@ -1,4 +1,5 @@
-﻿
+//#include "inc_include.h"
+
 // ╔══════════════════════════════════════════════════════════════════╗
 // ║   ____    _             __  __           _            _          ║
 // ║  |  _ \  (_)           |  \/  |         | |          (_)         ║
@@ -35,17 +36,11 @@
 // ║                                                                  ║
 // ╚══════════════════════════════════════════════════════════════════╝
 
-#ifndef _INC_UTILS_STR_FUNCTIONS_H_
-#define _INC_UTILS_STR_FUNCTIONS_H_
-
-    void splitStringToArray(VectorClassString& dataArray, String inputString, String delimiter);
-    void splitStringToArrayNoEmpty(VectorClassString& dataArray, String inputString, String delimiter);
-    void stringTokeyAndValue(MatrixClassString& matStr, String inputString, String delimiter1, String delimiter2);
-    void charReplace(char *str, char findChar, char replaceChar);
-    void strReplace(String &str, const String &find, const String &replace);
-    
-#endif /* _INC_UTILS_STR_FUNCTIONS_H_ */
-
+#ifndef INC_CONFIG_PACMAN_H
+#define INC_CONFIG_PACMAN_H    
+static const int PROGMEM C_PACMAN_ANIM_01[]={O,O,O,O,O,O,O,EL,I,O,O,O,O,O,O,EL,O,O,O,O,O,O,O,EL,I,O,O,O,O,O,O,EL,O,O,O,O,O,O,O,EA,I,O,O,O,O,O,O,EL,I,I,O,O,O,O,O,EL,I,I,O,O,O,O,O,EL,I,I,O,O,O,O,O,EL,I,O,O,O,O,O,O,EA,I,O,O,O,O,O,O,EL,I,I,O,O,O,O,O,EL,O,O,O,O,O,O,O,EL,I,I,O,O,O,O,O,EL,I,O,O,O,O,O,O,EA,I,I,O,O,O,O,O,EL,I,O,O,O,O,O,O,EL,O,O,O,O,O,O,O,EL,I,O,O,O,O,O,O,EL,I,I,O,O,O,O,O,EA,I,I,O,O,O,O,O,EL,I,I,I,O,O,O,O,EL,O,O,O,O,O,O,O,EL,I,I,I,O,O,O,O,EL,I,I,O,O,O,O,O,EA,I,I,I,O,O,O,O,EL,O,I,I,I,O,O,O,EL,I,I,I,I,O,O,O,EL,I,I,I,I,O,O,O,EL,I,I,I,O,O,O,O,EA,I,I,I,O,O,O,O,EL,O,I,I,I,O,O,O,EL,I,O,O,O,O,O,O,EL,I,I,I,I,O,O,O,EL,I,I,I,O,O,O,O,EA,O,I,I,I,O,O,O,EL,I,O,I,O,O,O,O,EL,I,I,O,O,O,O,O,EL,I,I,I,O,O,O,O,EL,O,I,I,I,O,O,O,EA,O,I,I,I,O,O,O,EL,I,O,I,I,I,O,O,EL,I,I,O,O,O,O,O,EL,I,I,I,I,I,O,O,EL,O,I,I,I,O,O,O,EA,O,O,I,I,I,O,O,EL,O,I,O,I,I,I,O,EL,O,I,I,I,I,I,O,EL,O,I,I,I,I,I,O,EL,O,O,I,I,I,O,O,EA,O,O,I,I,I,O,O,EL,O,I,O,I,I,I,O,EL,O,I,I,O,O,O,O,EL,O,I,I,I,I,I,O,EL,O,O,I,I,I,O,O,EA,O,O,O,I,I,I,O,EL,O,O,I,O,I,O,O,EL,O,O,I,I,O,O,O,EL,O,O,I,I,I,O,O,EL,O,O,O,I,I,I,O,EA,O,O,O,I,I,I,O,EL,O,O,I,O,I,I,I,EL,O,O,I,I,O,O,O,EL,O,O,I,I,I,I,I,EL,O,O,O,I,I,I,O,EA,O,O,O,O,I,I,I,EL,O,O,O,I,O,I,I,EL,O,O,O,I,I,I,I,EL,O,O,O,I,I,I,I,EL,O,O,O,O,I,I,I,EA,O,O,O,O,I,I,I,EL,O,O,O,I,O,I,I,EL,O,O,O,I,I,O,O,EL,O,O,O,I,I,I,I,EL,O,O,O,O,I,I,I,EA,O,O,O,O,O,I,I,EL,O,O,O,O,I,O,I,EL,O,O,O,O,I,I,O,EL,O,O,O,O,I,I,I,EL,O,O,O,O,O,I,I,EA,O,O,O,O,O,I,I,EL,O,O,O,O,I,O,I,EL,O,O,O,O,I,I,O,EL,O,O,O,O,I,I,I,EL,O,O,O,O,O,I,I,EA,O,O,O,O,O,O,I,EL,O,O,O,O,O,I,O,EL,O,O,O,O,O,I,I,EL,O,O,O,O,O,I,I,EL,O,O,O,O,O,O,I,EA,O,O,O,O,O,O,I,EL,O,O,O,O,O,I,O,EL,O,O,O,O,O,I,I,EL,O,O,O,O,O,I,I,EL,O,O,O,O,O,O,I,EA,O,O,O,O,O,O,O,EL,O,O,O,O,O,O,I,EL,O,O,O,O,O,O,I,EL,O,O,O,O,O,O,I,EL,O,O,O,O,O,O,O,EA,O,O,O,O,O,O,O,EL,O,O,O,O,O,O,O,EL,O,O,O,O,O,O,O,EL,O,O,O,O,O,O,O,EL,O,O,O,O,O,O,O,EA};
+static const int PROGMEM C_PACMAN_ANIM_02[]={O,O,O,O,O,O,O,EL,O,O,O,O,O,O,I,EL,O,O,O,O,O,O,O,EL,O,O,O,O,O,O,I,EL,O,O,O,O,O,O,O,EA,O,O,O,O,O,O,I,EL,O,O,O,O,O,I,I,EL,O,O,O,O,O,I,I,EL,O,O,O,O,O,I,I,EL,O,O,O,O,O,O,I,EA,O,O,O,O,O,O,I,EL,O,O,O,O,O,I,I,EL,O,O,O,O,O,O,O,EL,O,O,O,O,O,I,I,EL,O,O,O,O,O,O,I,EA,O,O,O,O,O,I,I,EL,O,O,O,O,O,O,I,EL,O,O,O,O,O,O,O,EL,O,O,O,O,O,O,I,EL,O,O,O,O,O,I,I,EA,O,O,O,O,O,I,I,EL,O,O,O,O,I,I,I,EL,O,O,O,O,O,O,O,EL,O,O,O,O,I,I,I,EL,O,O,O,O,O,I,I,EA,O,O,O,O,I,I,I,EL,O,O,O,I,I,I,O,EL,O,O,O,I,I,I,I,EL,O,O,O,I,I,I,I,EL,O,O,O,O,I,I,I,EA,O,O,O,O,I,I,I,EL,O,O,O,I,I,I,O,EL,O,O,O,O,O,O,I,EL,O,O,O,I,I,I,I,EL,O,O,O,O,I,I,I,EA,O,O,O,I,I,I,O,EL,O,O,O,O,I,O,I,EL,O,O,O,O,O,I,I,EL,O,O,O,O,I,I,I,EL,O,O,O,I,I,I,O,EA,O,O,O,I,I,I,O,EL,O,O,I,I,I,O,I,EL,O,O,O,O,O,I,I,EL,O,O,I,I,I,I,I,EL,O,O,O,I,I,I,O,EA,O,O,I,I,I,O,O,EL,O,I,I,I,O,I,O,EL,O,I,I,I,I,I,O,EL,O,I,I,I,I,I,O,EL,O,O,I,I,I,O,O,EA,O,O,I,I,I,O,O,EL,O,I,I,I,O,I,O,EL,O,O,O,O,I,I,O,EL,O,I,I,I,I,I,O,EL,O,O,I,I,I,O,O,EA,O,I,I,I,O,O,O,EL,O,O,I,O,I,O,O,EL,O,O,O,I,I,O,O,EL,O,O,I,I,I,O,O,EL,O,I,I,I,O,O,O,EA,O,I,I,I,O,O,O,EL,I,I,I,O,I,O,O,EL,O,O,O,I,I,O,O,EL,I,I,I,I,I,O,O,EL,O,I,I,I,O,O,O,EA,I,I,I,O,O,O,O,EL,I,I,O,I,O,O,O,EL,I,I,I,I,O,O,O,EL,I,I,I,I,O,O,O,EL,I,I,I,O,O,O,O,EA,I,I,I,O,O,O,O,EL,I,I,O,I,O,O,O,EL,O,O,I,I,O,O,O,EL,I,I,I,I,O,O,O,EL,I,I,I,O,O,O,O,EA,I,I,O,O,O,O,O,EL,I,O,I,O,O,O,O,EL,O,I,I,O,O,O,O,EL,I,I,I,O,O,O,O,EL,I,I,O,O,O,O,O,EA,I,I,O,O,O,O,O,EL,I,O,I,O,O,O,O,EL,O,I,I,O,O,O,O,EL,I,I,I,O,O,O,O,EL,I,I,O,O,O,O,O,EA,I,O,O,O,O,O,O,EL,O,I,O,O,O,O,O,EL,I,I,O,O,O,O,O,EL,I,I,O,O,O,O,O,EL,I,O,O,O,O,O,O,EA,I,O,O,O,O,O,O,EL,O,I,O,O,O,O,O,EL,I,I,O,O,O,O,O,EL,I,I,O,O,O,O,O,EL,I,O,O,O,O,O,O,EA,O,O,O,O,O,O,O,EL,I,O,O,O,O,O,O,EL,I,O,O,O,O,O,O,EL,I,O,O,O,O,O,O,EL,O,O,O,O,O,O,O,EA,O,O,O,O,O,O,O,EL,O,O,O,O,O,O,O,EL,O,O,O,O,O,O,O,EL,O,O,O,O,O,O,O,EL,O,O,O,O,O,O,O,EA};
+#endif /* INC_CONFIG_PACMAN_H */
 
 
 // ╔══════════════════════════════════════════════════════════════════╗
