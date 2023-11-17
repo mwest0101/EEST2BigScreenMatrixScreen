@@ -58,7 +58,7 @@
       #ifdef IS_LCDSCREEN
         void setPantalla(MatrizLed &vPantalla);
       #endif
-      void InitShowMatrix(VectorClass vecPins);
+      void InitShowMatrix(VectorClass& vecPins);
       void PrintLed(int ledNum,int pintToActive,int ledState);
       void flipHorizontalFrame(VectorClass& aFrame);
       void flipVerticalFrame(VectorClass& aFrame);

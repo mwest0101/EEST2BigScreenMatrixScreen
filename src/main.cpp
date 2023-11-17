@@ -160,14 +160,17 @@ void setup() {
 
 
     //Serial.begin(9600);
+    
+    
     BTSerial.begin(9600);
 
-    SoftwareSerial BTSerial(PIN_BT_RXD, PIN_BT_TXD);  //10 RX, 11 tx
+    //SoftwareSerial BTSerial(PIN_BT_RXD, PIN_BT_TXD);  //10 RX, 11 tx
 
 
 #ifdef DEBUG
     debug_init();
 #endif
+
 #ifdef IS_LCDSCREEN
     pantalla.begin(12, 11, 10, 1); // dataPin, clkPin, csPin, numero de matrices de 8x8
     pantalla.setIntensidad(1);
@@ -182,9 +185,12 @@ void setup() {
     sm.setPantalla(pantalla);
     dr.setPantalla(pantalla);
 #endif
+
     time = micros();
     convProgToArray(vecPins, C_Pins, (sizeof(C_Pins) / 2));
-
+#ifdef IS_BIGSCREEN
+sm.InitShowMatrix(vecPins);
+#endif
     difTime = WAIT_TIME_LOOP;
     //loopWaitTime = WAIT_TIME_LOOP;
 
@@ -200,10 +206,12 @@ void setup() {
     //*
     
     //proccesActionFull(inputString, vecStr); // Pasa inputString a vector
-    vecStr.push("a:efe1;v:5;r1");
     vecStr.push("a:t2n1");
-    vecStr.push("m:Escuela de educacion Tecnica Nº 2");
+    vecStr.push("a:efe1;v:5;r1");
+    vecStr.push("m:E.E.S.T. Nº 2");
+    vecStr.push("a:t2n3");
     vecStr.push("a:pac1");
+    vecStr.push("m:Escuela de educacion Tecnica Nº 2");
     vecStr.push("a:pac3");
     vecStr.push("m:Especializada en");
     vecStr.push("m:Informatica");
@@ -233,8 +241,10 @@ void setup() {
     vecStr.push("a:t2n7;v:5;r1");
     vecStr.push("a:ark1;v:5;r1");
     vecStr.push("m:Practicas");
-    
-  
+    vecStr.push("a:t2n8;v:5;r1");
+    vecStr.push("m:E.E.S.T. Nº 2");
+    vecStr.push("a:t2n9;v:5;r1");
+
     /*
     vecStr.push("a:pac1;v:5;r1");
     vecStr.push("a:pac2;v:5;r1");
@@ -282,7 +292,7 @@ void setup() {
     dr.PrintFrame();
 
     dr.Print(4,3,1);*/
-    //dr.setCursor(4,3,1);
+    dr.setCursor(4,3,1);
     // dr.SetPixTempX(4);
     // dr.SetPixTempY(3);  
 
@@ -314,6 +324,7 @@ void loop() {
     /*
     
     */
+   
     if (charBT == '$') {
         vecStr.clear();
         isBtBuilding = true;
@@ -361,7 +372,7 @@ void loop() {
         isBtBuilding = false;
     }
 
-
+   
     
 
 

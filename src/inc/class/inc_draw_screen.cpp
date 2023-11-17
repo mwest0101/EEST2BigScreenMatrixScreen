@@ -206,10 +206,12 @@ DrawScreen::DrawScreen() {
 }
 
 
-
+#ifdef IS_LCDSCREEN
 void DrawScreen::setPantalla(MatrizLed& vPantalla) {
   this->pantalla = vPantalla;
 }
+#endif
+
 int DrawScreen::GetPosArray(int x,int y){
     //return (this->getPixY()*7)+(this->getPixX()%7);    
     return (y*7)+(x%7);    
@@ -257,11 +259,11 @@ void DrawScreen::UpdateCursor(){
 
   if(this->getTimeLapse()>this->getTimeCursorBlink()){
     if(this->getCursorState()){
-      this->PrintDirect(this->GetPixTempX(),this->GetPixTempY(),1);
+      this->PrintDirect(this->GetPixTempX(),this->GetPixTempY(),I);
       this->setCursorState(false);
       //dsl("DrawScreen::setCursor Cursor state true");
     }else{
-      this->PrintDirect(this->GetPixTempX(),this->GetPixTempY(),0);
+      this->PrintDirect(this->GetPixTempX(),this->GetPixTempY(),O);
       this->setCursorState(true);
       //dsl("DrawScreen::setCursor Cursor state false");
     }
@@ -332,7 +334,7 @@ void DrawScreen::PrintPixelByFrame(int numPixel,int ledState){
 }
 
 void DrawScreen::StampCursorInFrame(){
-  this->setPix(this->GetPixTempX(),this->GetPixTempY(), 1);
+  this->setPix(this->GetPixTempX(),this->GetPixTempY(), I);
 }
 
 void DrawScreen::PrintFrame(){
@@ -350,7 +352,7 @@ void DrawScreen::PrintFrame(){
 void DrawScreen::ResetFrame(){
   int sizeArray=V_SCR_SIZE;
   for (int i = 0; i < sizeArray; i++) {
-    this->vecScreens[i]=0;        
+    this->vecScreens[i]=O;        
   }
   this->PrintFrame();
 }

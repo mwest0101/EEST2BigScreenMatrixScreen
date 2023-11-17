@@ -1,6 +1,0 @@
-怘�怘�
-
-
- 
-sizeParams=2
-[0]=a:tet1;v:5;r:1;i:1 [1]=m:Escuela 

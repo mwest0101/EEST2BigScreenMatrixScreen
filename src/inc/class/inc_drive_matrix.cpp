@@ -72,7 +72,7 @@ int** DriveMatrix::Clear(int** matrix) {
   for (int i = 0; i < matrixRows; i++) {
 
     for (int j = 0; j < matrixCols; j++) {
-      matrix[i][j] = 0;
+      matrix[i][j] = O;
     }
   }
   ResetInitPosMatrix();

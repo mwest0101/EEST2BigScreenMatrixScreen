@@ -46,16 +46,20 @@ void ShowMatrix::setPantalla(MatrizLed& vPantalla) {
   this->pantalla = vPantalla;
 }
 #endif
-void ShowMatrix::InitShowMatrix(VectorClass vecPins) {
+void ShowMatrix::InitShowMatrix(VectorClass& vecPins) {
 
   // aPins=vaPins;
   // nElements=nFrameElements;
   // VectorClass tempVectorLastFrame(35, 0, 10);
+  dsl("Inicializacion de pines");
   for (int i = 0; i < vecPins.getSize(); i++) {
 
     pinMode(vecPins.get(i), OUTPUT);
-    // ds(vaPins[i]);
+     ds(" vp=");
+     ds(vecPins.get(i));
+     
   }
+  dsl("");
   // dsl("");
   // tempVectorLastFrame = convProgToArray(C_EMPTY, 0, (sizeof(C_EMPTY) / 2));
 }
@@ -73,8 +77,15 @@ void ShowMatrix::PrintLed(int ledNum, int pintToActive, int ledState) {
 
 
 #ifdef IS_BIGSCREEN
-
+  dsd();
   digitalWrite(pintToActive, ledState);
+  ds("ShowMatrix::PrintLed:");
+  ds(" pintToActive:");
+  ds(pintToActive);ds(" ");
+  ds(" ledState:");
+  dsl(ledState);
+  dss();
+
 #endif
 
 #ifdef IS_LCDSCREEN

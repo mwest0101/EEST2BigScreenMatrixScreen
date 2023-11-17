@@ -57,8 +57,12 @@
     #define dsl(x)
   #endif
 #endif
-
-
+#ifndef C_PIN_ENABLED
+  #define C_PIN_ENABLED  0
+  #define C_PIN_DISABLED 1       
+  #define O               C_PIN_DISABLED
+  #define I               C_PIN_ENABLED
+#endif
 class DrawScreen {
   private:
   
@@ -80,8 +84,11 @@ class DrawScreen {
   unsigned long time;
 
 
-
+  #ifdef IS_LCDSCREEN
   MatrizLed pantalla;
+
+  #endif
+
   int aLastFrameEmpty = 0;
   int* aPins;
   int maxWidth=7;
@@ -135,8 +142,9 @@ class DrawScreen {
   void stampPixel();
   
   DrawScreen();
-
+  #ifdef IS_LCDSCREEN
   void setPantalla(MatrizLed& vPantalla);
+  #endif
   int GetPosArray(int x,int y);
   void setPix(int x, int y, bool status);
   void setCursor(int x, int y, int ledState);
