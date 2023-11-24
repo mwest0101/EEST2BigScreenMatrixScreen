@@ -40,7 +40,7 @@
 
 #define V_SCR_SIZE 35
 #define TIME_CURSOR_BLINK 800000
-#define TIME_CURSOR_BLINK_FAST 200000
+#define TIME_CURSOR_BLINK_FAST 400000
 //#define DEBUG_DRAW_SCREEN
 
 #ifndef ds
@@ -57,9 +57,20 @@
     #define dsl(x)
   #endif
 #endif
+#define IS_LCDSCREEN    true
+
+
 #ifndef C_PIN_ENABLED
-  #define C_PIN_ENABLED  0
-  #define C_PIN_DISABLED 1       
+  //#define IS_BIGSCREEN    true
+
+  #ifdef IS_BIGSCREEN
+    #define C_PIN_ENABLED  0
+    #define C_PIN_DISABLED 1
+  #else
+    #define C_PIN_ENABLED  1
+    #define C_PIN_DISABLED 0
+  #endif
+
   #define O               C_PIN_DISABLED
   #define I               C_PIN_ENABLED
 #endif

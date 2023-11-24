@@ -206,44 +206,58 @@ sm.InitShowMatrix(vecPins);
     //*
     
     //proccesActionFull(inputString, vecStr); // Pasa inputString a vector
-    vecStr.push("a:t2n1");
-    vecStr.push("a:efe1;v:5;r1");
-    vecStr.push("m:E.E.S.T. Nº 2");
-    vecStr.push("a:t2n3");
-    vecStr.push("a:pac1");
-    vecStr.push("m:Escuela de educacion Tecnica Nº 2");
-    vecStr.push("a:pac3");
-    vecStr.push("m:Especializada en");
-    vecStr.push("m:Informatica");
-    vecStr.push("a:efe2;v:5;r4");
-    vecStr.push("m:Programación");
-    vecStr.push("a:efe3;v:5;r1");
-    vecStr.push("m:Robotica");
-    vecStr.push("a:efe4;v:5;r1");
-    
-    vecStr.push("a:car1;v:5;r2");
-    vecStr.push("a:car2;v:5;r1");
-    vecStr.push("a:car4;v:5;r4");
-    vecStr.push("a:car3;v:5;r1");
-    
+    vecStr.push("a:t2n2;v:5;r1");
     vecStr.push("a:t2n3;v:5;r1");
-    vecStr.push("a:tet1;v:5;r1");
-    vecStr.push("m:75 años");
-    vecStr.push("a:tet1;v:5;r1");
-    vecStr.push("a:t2n4;v:5;r1");
-    vecStr.push("a:pon2;v:5;r1");
-    vecStr.push("a:t2n5;v:5;r1");
-    vecStr.push("a:sna1;v:5;r1");
-    vecStr.push("a:t2n5;v:5;r1");
-    vecStr.push("m:Impresión 3D");
-    vecStr.push("a:t2n6;v:5;r1");
-    vecStr.push("m:Especializacion");
-    vecStr.push("a:t2n7;v:5;r1");
-    vecStr.push("a:ark1;v:5;r1");
-    vecStr.push("m:Practicas");
+    vecStr.push("m:EEST Nº2");
     vecStr.push("a:t2n8;v:5;r1");
-    vecStr.push("m:E.E.S.T. Nº 2");
-    vecStr.push("a:t2n9;v:5;r1");
+    vecStr.push("m:75 AÑOS");
+    vecStr.push("a:pac3;v:7;r1");
+    vecStr.push("a:efe1;v:7;r1");    
+    vecStr.push("m:TECNICA");
+    vecStr.push("a:t2n4;v:5;r1");
+    vecStr.push("a:tet3;v:5;r1");
+    vecStr.push("m:PROGRAMACION");
+    vecStr.push("a:t2n5;v:5;r1");
+    vecStr.push("a:ark1;v:5;r1");
+    vecStr.push("m:ROBOTICA");
+    vecStr.push("a:t2n6;v:5;r1");
+    vecStr.push("a:pon1;v:5;r1");
+    vecStr.push("m:IMPRESION 3D ");
+    // vecStr.push("a:t2n3");
+    // vecStr.push("a:pac1");
+    // vecStr.push("m:Escuela de educacion Tecnica Nº 2");
+    // vecStr.push("a:pac3");
+    // vecStr.push("m:Especializada en");
+    // vecStr.push("m:Informatica");
+    // vecStr.push("a:efe2;v:5;r4");
+    // vecStr.push("m:Programación");
+    // vecStr.push("a:efe3;v:5;r1");
+    // vecStr.push("m:Robotica");
+    // vecStr.push("a:efe4;v:5;r1");
+    
+    // vecStr.push("a:car1;v:5;r2");
+    // vecStr.push("a:car2;v:5;r1");
+    // vecStr.push("a:car4;v:5;r4");
+    // vecStr.push("a:car3;v:5;r1");
+    
+    // vecStr.push("a:t2n3;v:5;r1");
+    // vecStr.push("a:tet1;v:5;r1");
+    // vecStr.push("m:75 años");
+    // vecStr.push("a:tet1;v:5;r1");
+    // vecStr.push("a:t2n4;v:5;r1");
+    // vecStr.push("a:pon2;v:5;r1");
+    // vecStr.push("a:t2n5;v:5;r1");
+    // vecStr.push("a:sna1;v:5;r1");
+    // vecStr.push("a:t2n5;v:5;r1");
+    // vecStr.push("m:Impresión 3D");
+    // vecStr.push("a:t2n6;v:5;r1");
+    // vecStr.push("m:Especializacion");
+    // vecStr.push("a:t2n7;v:5;r1");
+    // vecStr.push("a:ark1;v:5;r1");
+    // vecStr.push("m:Practicas");
+    // vecStr.push("a:t2n8;v:5;r1");
+    // vecStr.push("m:E.E.S.T. Nº 2");
+    // vecStr.push("a:t2n9;v:5;r1");
 
     /*
     vecStr.push("a:pac1;v:5;r1");
@@ -303,7 +317,7 @@ sm.InitShowMatrix(vecPins);
 
 void loop() {
 
-
+    
     
     dsd();
     dsd();
@@ -395,7 +409,7 @@ void loop() {
     //==MAIN DE MARQUE Y EFECTOS======================================
 
     loopTime = calcLoopTime(velocity, globalVelocity);
-
+    
     if (!isBtBuilding && (difTime >= loopTime) && (globalStatus == "Play_Pres" || globalStatus == "Play_Flip")) {
         contLoop++;
         ds("contRepeat=");ds(contRepeat);ds(" repeat=");dsl(repeat);

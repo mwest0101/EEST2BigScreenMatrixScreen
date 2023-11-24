@@ -126,7 +126,8 @@ int AnimManager::getAnim(VectorClass &aFrame,String strOption)
   
   if (strOption == "pac1"){dsl("->pac1"); this->convProgToArrayByFrame(aFrame, C_ANIM_001_PACMAN,             (sizeof(C_ANIM_001_PACMAN) / 2));               found=1;}
   if (strOption == "pac2"){dsl("->pac2"); this->convProgToArrayByFrame(aFrame, C_ANIM_002_PACMAN,             (sizeof(C_ANIM_002_PACMAN) / 2));               found=1;}
-  if (strOption == "pac3"){dsl("->pac3"); this->convProgToArrayByFrame(aFrame, C_ANIM_003_PACMAN_PHANTOM,     (sizeof(C_ANIM_003_PACMAN_PHANTOM) / 2));       found=1;}
+  if (strOption == "pac2"){dsl("->pac2"); this->convProgToArrayByFrame(aFrame, C_ANIM_003_PACMAN_PHANTOM,     (sizeof(C_ANIM_003_PACMAN_PHANTOM) / 2));       found=1;}
+  
   
   if (strOption == "efe1"){dsl("->efe1"); this->convProgToArrayByFrame(aFrame, C_ANIM_001_EFFECT_EXPLODE_RECT,(sizeof(C_ANIM_001_EFFECT_EXPLODE_RECT) / 2));  found=1;}
   if (strOption == "efe2"){dsl("->efe2"); this->convProgToArrayByFrame(aFrame, C_ANIM_002_EFFECT_CRUX_ROTATE, (sizeof(C_ANIM_002_EFFECT_CRUX_ROTATE) / 2));   found=1;}
@@ -134,26 +135,28 @@ int AnimManager::getAnim(VectorClass &aFrame,String strOption)
   if (strOption == "efe4"){dsl("->efe4"); this->convProgToArrayByFrame(aFrame, C_ANIM_010_EFFECT_BALL_BOUNCE, (sizeof(C_ANIM_010_EFFECT_BALL_BOUNCE) / 2));   found=1;}
   if (strOption == "efe5"){dsl("->efe5"); this->convProgToArrayByFrame(aFrame, C_ANIM_012_EFFECT_RAIN,        (sizeof(C_ANIM_012_EFFECT_RAIN) / 2));          found=1;}
   
-  if (strOption == "t2n1" ){dsl("->t2b1"); this->convProgToArrayByFrame(aFrame, C_ANIM_001_T2_BUILD,           (sizeof(C_ANIM_001_T2_BUILD) / 2));           found=1;}
-  if (strOption == "t2n2" ){dsl("->t2u1"); this->convProgToArrayByFrame(aFrame, C_ANIM_002_T2_UPDOWN,          (sizeof(C_ANIM_002_T2_UPDOWN) / 2));          found=1;}
-  if (strOption == "t2n3" ){dsl("->t2f1"); this->convProgToArrayByFrame(aFrame, C_ANIM_003_T2_FADE,            (sizeof(C_ANIM_003_T2_FADE) / 2));            found=1;}
-  if (strOption == "t2n4" ){dsl("->t2d1"); this->convProgToArrayByFrame(aFrame, C_ANIM_004_T2_DESINTEGRATE,    (sizeof(C_ANIM_004_T2_DESINTEGRATE) / 2));    found=1;}
-  if (strOption == "t2n5" ){dsl("->t2b2"); this->convProgToArrayByFrame(aFrame, C_ANIM_005_T2_BUILD,           (sizeof(C_ANIM_005_T2_BUILD) / 2));           found=1;}
-  if (strOption == "t2n6" ){dsl("->t2b3"); this->convProgToArrayByFrame(aFrame, C_ANIM_006_T2_BUILD,           (sizeof(C_ANIM_006_T2_BUILD) / 2));           found=1;}
-  if (strOption == "t2n7" ){dsl("->t2b4"); this->convProgToArrayByFrame(aFrame, C_ANIM_007_T2_BUILD,           (sizeof(C_ANIM_007_T2_BUILD) / 2));           found=1;}
-  if (strOption == "t2n8" ){dsl("->t2d2"); this->convProgToArrayByFrame(aFrame, C_ANIM_008_T2_DOWN,            (sizeof(C_ANIM_008_T2_DOWN) / 2));            found=1;}
-  if (strOption == "t2n9" ){dsl("->t2f2"); this->convProgToArrayByFrame(aFrame, C_ANIM_009_T2_FADE_DOWN,       (sizeof(C_ANIM_009_T2_FADE_DOWN) / 2));       found=1;}
-  if (strOption == "t2n10"){ dsl("->t2d3");this->convProgToArrayByFrame(aFrame, C_ANIM_010_T2_DESINTEGRATE,    (sizeof(C_ANIM_010_T2_DESINTEGRATE) / 2));    found=1;}
-  if (strOption == "t2n11"){ dsl("->t2b5");this->convProgToArrayByFrame(aFrame, C_ANIM_011_T2_BUILD,           (sizeof(C_ANIM_011_T2_BUILD) / 2));           found=1;}
-  if (strOption == "t2n12"){ dsl("->t2b6");this->convProgToArrayByFrame(aFrame, C_ANIM_012_T2_BUILD_INVERTED,  (sizeof(C_ANIM_012_T2_BUILD_INVERTED) / 2));  found=1;}
+  if (strOption == "t2n1" ){dsl("->t2n1"); this->convProgToArrayByFrame(aFrame, C_ANIM_001_T2_BUILD,           (sizeof(C_ANIM_001_T2_BUILD) / 2));           found=1;}
+  if (strOption == "t2n2" ){dsl("->t2n2"); this->convProgToArrayByFrame(aFrame, C_ANIM_002_T2_UPDOWN,          (sizeof(C_ANIM_002_T2_UPDOWN) / 2));          found=1;}
+  if (strOption == "t2n3" ){dsl("->t2n3"); this->convProgToArrayByFrame(aFrame, C_ANIM_002_T2_DOWNDOWN,        (sizeof(C_ANIM_002_T2_DOWNDOWN) / 2));          found=1;}
+  
+  if (strOption == "t2n4" ){dsl("->t2n4"); this->convProgToArrayByFrame(aFrame, C_ANIM_003_T2_FADE,            (sizeof(C_ANIM_003_T2_FADE) / 2));            found=1;}
+  if (strOption == "t2n5" ){dsl("->t2n5"); this->convProgToArrayByFrame(aFrame, C_ANIM_004_T2_DESINTEGRATE,    (sizeof(C_ANIM_004_T2_DESINTEGRATE) / 2));    found=1;}
+  if (strOption == "t2n6" ){dsl("->t2n6"); this->convProgToArrayByFrame(aFrame, C_ANIM_005_T2_BUILD,           (sizeof(C_ANIM_005_T2_BUILD) / 2));           found=1;}
+  if (strOption == "t2n7" ){dsl("->t2n7"); this->convProgToArrayByFrame(aFrame, C_ANIM_006_T2_BUILD,           (sizeof(C_ANIM_006_T2_BUILD) / 2));           found=1;}
+  if (strOption == "t2n8" ){dsl("->t2n8"); this->convProgToArrayByFrame(aFrame, C_ANIM_007_T2_BUILD,           (sizeof(C_ANIM_007_T2_BUILD) / 2));           found=1;}
+  if (strOption == "t2n9" ){dsl("->t2n9"); this->convProgToArrayByFrame(aFrame, C_ANIM_008_T2_DOWN,            (sizeof(C_ANIM_008_T2_DOWN) / 2));            found=1;}
+  if (strOption == "t2n10" ){dsl("->t2n10"); this->convProgToArrayByFrame(aFrame, C_ANIM_009_T2_FADE_DOWN,       (sizeof(C_ANIM_009_T2_FADE_DOWN) / 2));       found=1;}
+  if (strOption == "t2n11"){ dsl("->t2n11");this->convProgToArrayByFrame(aFrame, C_ANIM_010_T2_DESINTEGRATE,    (sizeof(C_ANIM_010_T2_DESINTEGRATE) / 2));    found=1;}
+  if (strOption == "t2n12"){ dsl("->t2n12");this->convProgToArrayByFrame(aFrame, C_ANIM_011_T2_BUILD,           (sizeof(C_ANIM_011_T2_BUILD) / 2));           found=1;}
+  if (strOption == "t2n13"){ dsl("->t2n13");this->convProgToArrayByFrame(aFrame, C_ANIM_012_T2_BUILD_INVERTED,  (sizeof(C_ANIM_012_T2_BUILD_INVERTED) / 2));  found=1;}
 
 
 
-if (strOption == "car1"){ dsl("->car1");this->convProgToArrayByFrame(aFrame, C_ANIM_004_CAR_TRAK,             (sizeof(C_ANIM_004_CAR_TRAK) / 2));  found=1;}
-if (strOption == "car2"){ dsl("->car2");this->convProgToArrayByFrame(aFrame, C_ANIM_005_CAR_UP,               (sizeof(C_ANIM_005_CAR_UP) / 2));  found=1;}
-if (strOption == "car3"){ dsl("->car3");this->convProgToArrayByFrame(aFrame, C_ANIM_006_CAR_DOWN,             (sizeof(C_ANIM_006_CAR_DOWN) / 2));  found=1;}
-if (strOption == "car4"){ dsl("->car4");this->convProgToArrayByFrame(aFrame, C_ANIM_007_CAR_FIXED,            (sizeof(C_ANIM_007_CAR_FIXED) / 2));  found=1;}
-if (strOption == "car5"){ dsl("->car5");this->convProgToArrayByFrame(aFrame, C_ANIM_008_CAR_FIXED_ROCK,       (sizeof(C_ANIM_008_CAR_FIXED_ROCK) / 2));  found=1;}
+// if (strOption == "car1"){ dsl("->car1");this->convProgToArrayByFrame(aFrame, C_ANIM_004_CAR_TRAK,             (sizeof(C_ANIM_004_CAR_TRAK) / 2));  found=1;}
+// if (strOption == "car2"){ dsl("->car2");this->convProgToArrayByFrame(aFrame, C_ANIM_005_CAR_UP,               (sizeof(C_ANIM_005_CAR_UP) / 2));  found=1;}
+// if (strOption == "car3"){ dsl("->car3");this->convProgToArrayByFrame(aFrame, C_ANIM_006_CAR_DOWN,             (sizeof(C_ANIM_006_CAR_DOWN) / 2));  found=1;}
+// if (strOption == "car4"){ dsl("->car4");this->convProgToArrayByFrame(aFrame, C_ANIM_007_CAR_FIXED,            (sizeof(C_ANIM_007_CAR_FIXED) / 2));  found=1;}
+// if (strOption == "car5"){ dsl("->car5");this->convProgToArrayByFrame(aFrame, C_ANIM_008_CAR_FIXED_ROCK,       (sizeof(C_ANIM_008_CAR_FIXED_ROCK) / 2));  found=1;}
 // if (strOption == "car6"){ dsl("->car6");this->convProgToArrayByFrame(aFrame, C_ANIM_009_CAR_MOVE_RIGH,        (sizeof(C_ANIM_009_CAR_MOVE_RIGH) / 2));  found=1;}
 // if (strOption == "car7"){ dsl("->car7");this->convProgToArrayByFrame(aFrame, C_ANIM_010_CAR_MOVE_LEFT,        (sizeof(C_ANIM_010_CAR_MOVE_LEFT) / 2));  found=1;}
 // if (strOption == "car8"){ dsl("->car8");this->convProgToArrayByFrame(aFrame, C_ANIM_011_CAR_PASS_OTHER_CAR,   (sizeof(C_ANIM_011_CAR_PASS_OTHER_CAR) / 2));  found=1;}

@@ -39,23 +39,34 @@
 #ifndef _INC_CONFIG_H_
   #define _INC_CONFIG_H_ 
    
-  #define C_PIN_ENABLED  0
-  #define C_PIN_DISABLED 1
-  #define C_END_ARR      9  
-  #define C_END_LIN      8
+
          
+  
+  
+  //#define DEBUG           true
+  //#define DEBUG_SERIAL true
+  //#define DEBUG_MATRIX    true
+  //#define DEBUG_BY_VSCODE
+  
+  #define IS_LCDSCREEN    true
+  //#define IS_BIGSCREEN    true
+
+  #ifdef IS_BIGSCREEN
+    #define C_PIN_ENABLED  0
+    #define C_PIN_DISABLED 1
+  #else
+    #define C_PIN_ENABLED  1
+    #define C_PIN_DISABLED 0
+  #endif
+
+    #define C_END_ARR      9  
+    #define C_END_LIN      8
+  
   #define O               C_PIN_DISABLED
   #define I               C_PIN_ENABLED
   #define EA              C_END_ARR
   #define EL              C_END_LIN
-  
-  //#define DEBUG           true
-  #define DEBUG_SERIAL true
-  //#define DEBUG_MATRIX    true
-  //#define DEBUG_BY_VSCODE
-  
-  //#define IS_LCDSCREEN    true
-  #define IS_BIGSCREEN    true
+
   #define MATRIX_WIDTH 7
   #define MATRIX_HEIGHT 5
   
@@ -75,9 +86,10 @@
   
   //#define WAIT_TIME_LOOP      2000000;
   //#define WAIT_TIME_LOOP      200000;
-  #define WAIT_TIME_LOOP_MAX      8000000;
-  #define WAIT_TIME_LOOP_MIN      200000;
-
+  // #define WAIT_TIME_LOOP_MAX      4000000; //Tiempo estmido para panel lento
+  // #define WAIT_TIME_LOOP_MIN      100000;  //Tiempo estmido para panel lento
+  #define WAIT_TIME_LOOP_MAX      2000000; //Tiempo estmido para panel lento
+  #define WAIT_TIME_LOOP_MIN      50000;  //Tiempo estmido para panel lento
   
   //#define WAIT_TIME_LOOP      20000;
   //#define WAIT_TIME_LOOP      400;
