@@ -48,8 +48,8 @@
   //#define DEBUG_MATRIX    true
   //#define DEBUG_BY_VSCODE
   
-  #define IS_LCDSCREEN    true
-  //#define IS_BIGSCREEN    true
+  //#define IS_LCDSCREEN    true
+  #define IS_BIGSCREEN    true
 
   #ifdef IS_BIGSCREEN
     #define C_PIN_ENABLED  0
@@ -80,24 +80,10 @@
   #define PIN_BT_TXD 53
   #define VECTOR_MIN_VALUE 0
 
-
-  //#define WAIT_TIME_LOOP 1000000;
-  //#define WAIT_TIME_LOOP      25000;
+  #define WAIT_TIME_LOOP_MAX      4000000; //Tiempo estmido para panel lento
+  #define WAIT_TIME_LOOP_MIN      100000;  //Tiempo estmido para panel lento
   
-  //#define WAIT_TIME_LOOP      2000000;
-  //#define WAIT_TIME_LOOP      200000;
-  // #define WAIT_TIME_LOOP_MAX      4000000; //Tiempo estmido para panel lento
-  // #define WAIT_TIME_LOOP_MIN      100000;  //Tiempo estmido para panel lento
-  #define WAIT_TIME_LOOP_MAX      2000000; //Tiempo estmido para panel lento
-  #define WAIT_TIME_LOOP_MIN      50000;  //Tiempo estmido para panel lento
-  
-  //#define WAIT_TIME_LOOP      20000;
-  //#define WAIT_TIME_LOOP      400;
-  //#define WAIT_TIME_LOOP      10;
-  //#define WAIT_TIME_LOOP    50000;
-  //#define WAIT_TIME_LOOP    500000;
-  
-  //#define WAIT_TIME_LOOP    40000
+ 
   #define TIME_TO_GET_BT    400000
   #define MARQUE_SEPARATOR " ";
   

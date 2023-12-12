@@ -75,16 +75,16 @@ unsigned long loopWaitTime = 0;
 
 double promTime3 = 0;
 unsigned long  loopTime = 0;
-VectorClass vecPins(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
-VectorClass vecChar(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
-VectorClass aIntCharMatrix(0, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
-VectorClass aFrame(V_SCR_SIZE, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
-VectorClass aLastFrame(V_SCR_SIZE, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
+VectorClass vecPins(0, O,VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
+VectorClass vecChar(0, O,VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
+VectorClass aIntCharMatrix(0, O,VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
+VectorClass aFrame(V_SCR_SIZE, O,VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
+VectorClass aLastFrame(V_SCR_SIZE, O,VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 VectorClassString vecStr(0);
 VectorClassString vecStrFromBt(0);
 VectorClassString vecStrParam(0);
 
-MatrixClass matrix(BUILD_MATRIX_ROWS, BUILD_MATRIX_COLS, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
+MatrixClass matrix(BUILD_MATRIX_ROWS, BUILD_MATRIX_COLS,O,VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
 
 String lastStrToShow = "";
 String BTstrReceived = "";
@@ -211,8 +211,8 @@ sm.InitShowMatrix(vecPins);
     vecStr.push("m:EEST Nº2");
     vecStr.push("a:t2n8;v:5;r1");
     vecStr.push("m:75 AÑOS");
-    vecStr.push("a:pac3;v:7;r1");
-    vecStr.push("a:efe1;v:7;r1");    
+    vecStr.push("a:pac3;v:5;r1");
+    vecStr.push("a:efe1;v:5;r1");    
     vecStr.push("m:TECNICA");
     vecStr.push("a:t2n4;v:5;r1");
     vecStr.push("a:tet3;v:5;r1");
@@ -515,35 +515,9 @@ void loop() {
             an.setIfisEnd(true);
             
         }
-        //calcDirection = invert * globalInvert;
-        //if(foundAnim!=(-1)){
+       
         InvertFrame(aFrame,sm,invert,globalInvert);
             
-        //}
-        //if(globalInvert==1 || globalInvert==3){
-
-        // void invetFrame(aFrame, int invert,int bandInvHori,int bandInvVert){
-        //     bandInvHori = 1;
-        //     if (invert == 1 || invert == 3)       bandInvHori *= -1;
-        //     if (globalInvert == 1 || globalInvert == 3) bandInvHori *= -1;
-        //     if (bandInvHori == -1) sm.flipHorizontalFrame(aFrame);
-
-        //     bandInvVert = 1;
-        //     if (invert == 2 || invert == 3)       bandInvVert *= -1;
-        //     if (globalInvert == 2 || globalInvert == 3) bandInvVert *= -1;
-        //     if (bandInvVert == -1) sm.flipVerticalFrame(aFrame);
-        // }
-
-        // bandInvHori = 1;
-        // if (invert == 1 || invert == 3)       bandInvHori *= -1;
-        // if (globalInvert == 1 || globalInvert == 3) bandInvHori *= -1;
-        // if (bandInvHori == -1) sm.flipHorizontalFrame(aFrame);
-
-        // bandInvVert = 1;
-        // if (invert == 2 || invert == 3)       bandInvVert *= -1;
-        // if (globalInvert == 2 || globalInvert == 3) bandInvVert *= -1;
-        // if (bandInvVert == -1) sm.flipVerticalFrame(aFrame);
-
         if ((option == "a" && foundAnim!=-1) || option == "m") {
             dsl("--->(5)-----------");
             sm.PrintLedMatrix(aFrame, aLastFrame, vecPins);

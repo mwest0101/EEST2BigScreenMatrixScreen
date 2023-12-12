@@ -48,11 +48,12 @@ private:
   int cols;
   int minValue;
   int maxValue;
+  int defValue;
 
 public:
-  MatrixClass(int rows, int cols, int min, int max)
+  MatrixClass(int rows, int cols,int defValue, int min, int max)
   {
-
+    this->defValue=defValue;
     this->rows = rows;
     this->cols = cols;
 
@@ -65,7 +66,7 @@ public:
       matrix[i] = new int[cols];
       for (int j = 0; j < cols; j++)
       {
-        matrix[i][j] = 0;
+        matrix[i][j] = this->defValue;
       }
     }
   }
@@ -215,7 +216,7 @@ public:
       matrix[i] = new int[cols];
       for (int j = 0; j < cols; j++)
       {
-        matrix[i][j] = 0;
+        matrix[i][j] = this->defValue;
       }
     }
     // Restablecer las dimensiones de la matriz a 0

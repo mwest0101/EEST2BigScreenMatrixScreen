@@ -57,7 +57,7 @@
     #define dsl(x)
   #endif
 #endif
-#define IS_LCDSCREEN    true
+//#define IS_LCDSCREEN    true
 
 
 #ifndef C_PIN_ENABLED
@@ -96,8 +96,7 @@ class DrawScreen {
 
 
   #ifdef IS_LCDSCREEN
-  MatrizLed pantalla;
-
+    MatrizLed pantalla;
   #endif
 
   int aLastFrameEmpty = 0;

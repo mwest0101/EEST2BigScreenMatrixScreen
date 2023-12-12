@@ -46,6 +46,7 @@ private:
   int maxRange;   // Valor m�ximo permitido
   int posActual;
   int sizeFixed;
+  int defValue;
 public:
   int *data;      // Puntero al vector de datos
   // Constructor: inicializa el vector y establece los l�mites
@@ -59,17 +60,18 @@ public:
         }
     }
 	
-  VectorClass(int size, int minRange, int maxRange){
+  VectorClass(int size, int defValue,int minRange, int maxRange){
     this->size = size;
     this->minRange = minRange;
     this->maxRange = maxRange;
+    this->defValue=defValue;
     this->posActual=0;
     this->sizeFixed = size;
     this->data = new int[size];
     //ds5("Size=");
     //ds5l(size);
     for(int i=0; i<size; i++){
-      this->data[i] = 0;
+      this->data[i] = this->defValue;
     }
   }
   // Destructor: libera la memoria del vector
@@ -88,14 +90,14 @@ void clear(){
       //size = sizeFixed;
       // Reinicializar todos los elementos a 0
       for (int i = 0; i < size; i++){
-        data[i] = 0;
+        data[i] = this->defValue;
       }
     }
     
   }
   void reset(){
     for(int i=0; i<size; i++){
-      this->data[i] = 0;
+      this->data[i] = this->defValue;
     }
   }
   // M�todo para establecer un valor en una posici�n del vector

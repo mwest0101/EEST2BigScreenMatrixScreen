@@ -110,7 +110,7 @@ void ShowMatrix::PrintLed(int ledNum, int pintToActive, int ledState) {
 }
 //------------Function------------------------------------------------
 void ShowMatrix::flipHorizontalFrame(VectorClass& aFrame) {
-  VectorClass aFrameTemp(36, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
+  VectorClass aFrameTemp(36, O,VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
   int posCalc = 6;
   int contLine = 1;
 
@@ -129,7 +129,7 @@ void ShowMatrix::flipHorizontalFrame(VectorClass& aFrame) {
 }
 //------------Function------------------------------------------------
 void ShowMatrix::flipVerticalFrame(VectorClass& aFrame) {
-  VectorClass aFrameTemp(36, VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
+  VectorClass aFrameTemp(36, O,VECTOR_MIN_VALUE, VECTOR_MAX_VALUE);
   int posCalc = 0;
   int contLine = 1;
 
