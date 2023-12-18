@@ -55,6 +55,7 @@ void ShowMatrix::InitShowMatrix(VectorClass& vecPins) {
   for (int i = 0; i < vecPins.getSize(); i++) {
 
     pinMode(vecPins.get(i), OUTPUT);
+    //digitalWrite(vecPins.get(i), O);
      ds(" vp=");
      ds(vecPins.get(i));
      

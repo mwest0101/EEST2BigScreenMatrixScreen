@@ -143,6 +143,16 @@ int bandInvVert = 1;
 int bandInvHori = 1;
 
 void setup() {
+    // vecPins.clear();
+    // vecChar.clear();
+    // aIntCharMatrix.clear();
+    // aFrame.clear();
+    // aLastFrame.clear();
+    // vecStr.clear();
+    // vecStrFromBt.clear();
+    // vecStrParam.clear();
+    // matrix.clear();
+
     //ds("");
     dsl("------SETUP--------------------------");
     time = micros();
@@ -206,23 +216,31 @@ sm.InitShowMatrix(vecPins);
     //*
     
     //proccesActionFull(inputString, vecStr); // Pasa inputString a vector
+    vecStr.push("a:clearscr;v:5;r1");
     vecStr.push("a:t2n2;v:5;r1");
     vecStr.push("a:t2n3;v:5;r1");
     vecStr.push("m:EEST Nº2");
-    vecStr.push("a:t2n8;v:5;r1");
-    vecStr.push("m:75 AÑOS");
-    vecStr.push("a:pac3;v:5;r1");
-    vecStr.push("a:efe1;v:5;r1");    
-    vecStr.push("m:TECNICA");
-    vecStr.push("a:t2n4;v:5;r1");
+
+    vecStr.push("a:t2n2;v:5;r1");
+    vecStr.push("a:t2n3;v:5;r1");
     vecStr.push("a:tet3;v:5;r1");
-    vecStr.push("m:PROGRAMACION");
-    vecStr.push("a:t2n5;v:5;r1");
+
+    vecStr.push("a:t2n2;v:5;r1");
+    vecStr.push("a:t2n3;v:5;r1");
+    vecStr.push("m:75 AÑOS");
+
+    vecStr.push("a:t2n2;v:5;r1");
+    vecStr.push("a:t2n3;v:5;r1");
     vecStr.push("a:ark1;v:5;r1");
-    vecStr.push("m:ROBOTICA");
-    vecStr.push("a:t2n6;v:5;r1");
+
+    vecStr.push("a:t2n2;v:5;r1");
+    vecStr.push("a:t2n3;v:5;r1");
+    vecStr.push("a:pac3;v:5;r1");
+
+    vecStr.push("a:t2n2;v:5;r1");
+    vecStr.push("a:t2n3;v:5;r1");
     vecStr.push("a:pon1;v:5;r1");
-    vecStr.push("m:IMPRESION 3D ");
+
     // vecStr.push("a:t2n3");
     // vecStr.push("a:pac1");
     // vecStr.push("m:Escuela de educacion Tecnica Nº 2");

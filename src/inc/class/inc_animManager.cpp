@@ -117,6 +117,9 @@ int AnimManager::getAnim(VectorClass &aFrame,String strOption)
   ds("AnimManager::getAnim 00 - found=");
   ds(found);ds(" strOption=");dsl(strOption);
   aFrame.clear();
+  // C_EMPTY
+  if (strOption == "clearscr"){dsl("->clearscr"); this->convProgToArrayByFrame(aFrame, CLEARSCR,           (sizeof(CLEARSCR) / 2));             found=1;}
+  
   if (strOption == "ark1"){dsl("->ark1"); this->convProgToArrayByFrame(aFrame, C_ANIM_004_ARKANOID,           (sizeof(C_ANIM_004_ARKANOID) / 2));             found=1;}
   if (strOption == "pon1"){dsl("->pon1"); this->convProgToArrayByFrame(aFrame, C_ANIM_005_PONG,               (sizeof(C_ANIM_005_PONG) / 2));                 found=1;}
   if (strOption == "sna1"){dsl("->sna1"); this->convProgToArrayByFrame(aFrame, C_ANIM_006_SNAKE,              (sizeof(C_ANIM_006_SNAKE) / 2));                found=1;}
